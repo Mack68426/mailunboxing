@@ -1,0 +1,6 @@
+emails
+data
+mbox*/
+*.tar.gz
+.*
+!.gitignore
