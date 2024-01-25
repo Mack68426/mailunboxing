@@ -1,6 +1,10 @@
-emails
-data
+emails/
+data/
 mbox*/
-*.tar.gz
+
 .*
 !.gitignore
+
+*.tar.gz
+*.txt
+*-test.py
