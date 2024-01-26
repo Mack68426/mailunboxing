@@ -22,6 +22,8 @@ proj_dir = os.path.dirname(__file__)
 path_to_extract = "/mails/"
 list_name = '6lo'
 
+tar_file = 'mbox0122_ast_b.tar.gz'
+data_dir = tar_file[:-7] + "/" + list_name
 
 
 # 解壓縮資料檔
@@ -77,47 +79,49 @@ def split_mbox(mbox_obj: mailbox.mbox) -> List[mailbox.mboxMessage]:
 
     return message_files
 
-def save_message_as(message: mailbox.mboxMessage, out_dir=".", filename: str or None=None, ext_name="txt"):
-    # handle exception
-    if isinstance(message, (mailbox.mboxMessage, Message)):
+def save_message_as(message: mailbox.mboxMessage, folder_name=".", filename: str or None=None, ext_name="txt"):
+    # handle type exception
+    if not isinstance(message, (mailbox.mboxMessage, Message)):
         raise TypeError("The type of passing message is wrong.\n")
+    
+    # handle file extension
+    if len(filename.split(".")) > 1:
+        filename = filename.split(".")[0]
     
     # convert the datetime in email to python's datetime
     if filename is None: 
         filename = parsedate_to_datetime(message["date"])
     
-    while not os.path.exists(f"{out_dir}/{filename}/"):
-        os.makedirs(f"{out_dir}/{filename}/", exist_ok=True)
-    
-    with open("{}.{}".format(filename, ext_name), "w", encoding="UTF-8") as file:
+    with open(f"{folder_name}/{filename}.{ext_name}", "w", encoding="UTF-8") as file:
         file.write(message.as_string())
 
-def save_mbox_as_eml(mbox_obj: mailbox.mbox, out_dir="."):
-    if isinstance(mbox_obj, mailbox.mbox):
-        raise TypeError("The passing object is not a instance of mbox.\n")
 
+def save_mbox_as_eml(mbox_path: str, path_to_save="."):
+    # handle exception
+    if not isinstance(mbox_path, str):
+        raise TypeError("The passing object is not a instance of str.\n")
     
+    for index, message in enumerate(mailbox.mbox(mbox_path), 1):
+        folder_name = re.search(r"\d\d\d\d-\d\d", mbox_path).group()
+        eml_filename = folder_name + "-%s" % index
+
+        # create the output directories if it doesn't exist 
+        while not os.path.exists(f"{path_to_save}/{folder_name}/"):
+            os.makedirs(f"{path_to_save}/{folder_name}/", exist_ok=True)
+
+        save_message_as(message, folder_name=folder_name, filename=eml_filename, ext_name="eml")
+
 
 def mboxtoeml_main():
-    tar_file = 'mbox0122_ast_b.tar.gz'
-    data_dir = tar_file[:-7] + "/" + list_name
-    mbox_files = [file.name for file in pathlib.Path(data_dir).iterdir()]
-    mbox_name = f"{data_dir}/2013-05.mbox"
-    mbox = mailbox.mbox(mbox_name)
+    mbox_filenames = [file.name for file in pathlib.Path(data_dir).iterdir()]
+    mbox_filename = f"{data_dir}/2013-05.mbox"
     
     # extract the tarfile
     if not pathlib.Path(data_dir).exists():
         extract_tarfile(tar_file)
 
-    for msg in split_mbox(mbox):
-        save_message_as(msg, out_dir=path_to_extract)
-
-    # convert mbox to eml, maybe?
-    # for mboxfile in mbox_files:
-    #     mbox = mailbox.mbox(mboxfile)
-        
-    #     for msg in split_mbox(mbox):
-    #         save_message_as(msg, out_dir=path_to_extract, ext_name="eml")
+    # convert mbox to emls to directed dir
+    save_mbox_as_eml(mbox_filename)
     
 
 

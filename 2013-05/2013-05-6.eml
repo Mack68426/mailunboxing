@@ -1,0 +1,71 @@
+Return-Path: <ulrich@herberg.name>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix)
+ with ESMTP id 4B2A621F92E3 for <6lo@ietfa.amsl.com>;
+ Fri, 24 May 2013 14:01:58 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.615
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.615 tagged_above=-999 required=5 tests=[AWL=0.362,
+ BAYES_00=-2.599, FM_FORGED_GMAIL=0.622, RCVD_IN_DNSWL_LOW=-1]
+Received: from mail.ietf.org ([12.22.58.30]) by localhost (ietfa.amsl.com
+ [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id b3AqKvo6ieIZ for
+ <6lo@ietfa.amsl.com>; Fri, 24 May 2013 14:01:53 -0700 (PDT)
+Received: from mail-vc0-f178.google.com (mail-vc0-f178.google.com
+ [209.85.220.178]) by ietfa.amsl.com (Postfix) with ESMTP id C7B0621F90AC for
+ <6lo@ietf.org>; Fri, 24 May 2013 14:01:50 -0700 (PDT)
+Received: by mail-vc0-f178.google.com with SMTP id id13so3466998vcb.37 for
+ <6lo@ietf.org>; Fri, 24 May 2013 14:01:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=herberg.name; s=dkim;
+ h=mime-version:date:message-id:subject:from:to:content-type;
+ bh=nmvPTWKxdXCzu9Nk9KLS53pD1u+DdZ+I1EhEguO0il0=;
+ b=m7Js81aEEJOk81Qta6aLVw/GmhtLOoAfgtz4n8KjhwTziG3Qfr9I/08i5hRY3zi7LW
+ V+pAGPRN4L81Hvo0lh5fxl9kGn57cL2UMGS1h6QP876cF/MGaX1yjnyX71SDZrT06C/h
+ qJDOhWCgWAL/jwMEg6kmB4hYW0eDl1JFgjL/A=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=20120113;
+ h=mime-version:date:message-id:subject:from:to:content-type
+ :x-gm-message-state; bh=nmvPTWKxdXCzu9Nk9KLS53pD1u+DdZ+I1EhEguO0il0=;
+ b=dYkBTUHIGC6EpVQ5d9a8vmOHNNWg2iqQD94Yv10v2Vij4sGh1H0aoSwWIfIPSJbydO
+ xBGAtReRkjmELF5ovZNNpxMFCeKSSR77mncU4vi9hpEcP8qDPXloKIyTeB4e28JkV5tE
+ IajTMvxkQ2jNN6ZOnAGC2ukd6crWB7y2Xh5UP7/xMSWKHX7S2Fzwp8W3CiSHE8WtQB5E
+ IMkbmgE7OG7KgdoWCqkTTK49A8146zuTuOlUo9XG57yT55Jvppl0cAGI26cIdlwCqltM
+ DZsvuYtcaQM4imxdL0kBfcfWxAo4r3xZJGWyvQz9dOSowNGiB+gL/uPEykwIfq87ihKU gzJg==
+MIME-Version: 1.0
+X-Received: by 10.52.68.11 with SMTP id r11mr3799188vdt.93.1369429309112;
+ Fri, 24 May 2013 14:01:49 -0700 (PDT)
+Received: by 10.220.195.134 with HTTP; Fri, 24 May 2013 14:01:48 -0700 (PDT)
+Date: Fri, 24 May 2013 14:01:48 -0700
+Message-ID: <CAK=bVC_12it7mLW=AcQ7k9p3S5sCG_LBS2gkRy=Bj3-BPF1w+g@mail.gmail.com>
+From: Ulrich Herberg <ulrich@herberg.name>
+To: 6lo@ietf.org
+Content-Type: text/plain; charset=ISO-8859-1
+X-Gm-Message-State: ALoCoQn9IS59knXwQTB74rHl4RaM6jEzxD1PIixHI/ko0hAcWffA86L1vN4XURAlQ/bawH9rVenS
+Subject: [6lo] New mailing list
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: "Mailing list for discussion of a WG for Internet Area issues in IPv6
+ over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>,
+ <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/6lo>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>,
+ <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 24 May 2013 21:01:58 -0000
+
+Hello,
+
+I think this is a good idea to set up this mailing list, and I believe
+that there is interest in continuing work in the 6lowpan area.
+
+One question: What will happen to the existing 6lowpan WG? Is there a
+date set when it will be closed?
+
+Regards
+Ulrich
+
