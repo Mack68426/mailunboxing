@@ -5,6 +5,7 @@ import tarfile
 import mailbox
 from email.utils import parsedate_to_datetime
 
+# TODO: convert the .mbox files to .eml files without untarring 
 # TODO: make a same tool in command line with `csplit` command
 
 project_dir = os.path.dirname(__file__)
