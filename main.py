@@ -5,6 +5,7 @@ import tarfile
 import mailbox
 from email.utils import parsedate_to_datetime
 
+# TODO: make a same tool in command line with `csplit` command
 
 project_dir = os.path.dirname(__file__)
 
@@ -28,7 +29,7 @@ def extract_tarfile(file_path, out_dir="."):
 # the main converter converting `.mbox` file to `.eml` files
 def mbox_to_eml(mboxfile_path, out_dir='.') -> None:
 
-    # new folder name built by mbox
+    # new folder name built by mbox filename
     folder_name = re.search(r"\d\d\d\d-\d\d", mboxfile_path).group()
 
     # create folders to store email files by mbox
@@ -57,6 +58,30 @@ def main():
     
     mbox_to_eml(test_mbox_file_path, out_dir=f"{mailbox_dir}/{list_name}")
 
+
+def read_tar_main():
+    list_name = "6lo"
+    resource_dir = "resource" # store extracted data
+    tar_file = 'mbox0122_ast_b.tar.gz'
+    tar_path = f"{resource_dir}/{tar_file}"
+
+    
+    with tarfile.open(tar_path, "r:gz") as tar:
+        # tar.list(verbose=False) # ${tarFilename}/${emailListName}/YYYY-mm.mbox
+        
+        # get the filename without extension
+        outfile_path = re.search("\d\d\d\d-\d\d", member.name).group()
+        
+        #handle the file extension
+        if not outfile_path.endswith(".mbox"):
+            outfile_path = outfile_path + ".eml"
+        
+        # write 
+        for member in tar.getmembers():
+            mbox_file = open(f"emails/{outfile_path}", "wb")
+            mbox_file.write(tar.extractfile(member).read())
+            mbox_file.close()
+        
 
 if __name__ == "__main__":
     main()
