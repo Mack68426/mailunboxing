@@ -2,16 +2,24 @@
 #   read mbox members from tar.gz and
 #   access each the message content in the members
 import os
+import pathlib
 import re
 import tarfile
 
 import mailbox
+from email import *
+from email.message import Message
 from email.utils import parsedate_to_datetime
 
 # TODO: convert the .mbox files to .eml files without untarring 
 # TODO: make a same tool in command line with `csplit` command
 
-project_dir = os.path.dirname(__file__)
+# project_dir = os.path.dirname(__file__)
+list_name = '6lo'
+resource_dir = "resource" # store extracted data
+mailbox_dir = "emails" # store .eml files dsorted by mbox
+tar_file = 'mbox0122_ast_b.tar.gz'
+_test_mbox_file_path = f"{resource_dir}/{tar_file[:-7]}/{list_name}/2013-05.mbox"
 
 # 解壓縮資料檔
 # unpack the compressed data file
@@ -27,7 +35,7 @@ def extract_tarfile(file_path, out_dir="."):
     # item_files = [item.name for item in tar]
     tar.extractall(out_dir)
     
-    # close the file
+
     tar.close()
 
 # the main converter converting `.mbox` file to `.eml` files
@@ -49,12 +57,8 @@ def mbox_to_eml(mboxfile_path, out_dir='.') -> None:
 
 
 
-def test_direct_read():
-    list_name = '6lo'
-    resource_dir = "resource" # store extracted data
-    mailbox_dir = "emails" # store .eml files dsorted by mbox
-
-    tar_file = 'mbox0122_ast_b.tar.gz'
+# TODO: 直接從壓縮檔中的項目擷取email內容
+def _direct_read_tar():
     tar_path = f"{resource_dir}/{tar_file}"
 
     with tarfile.open(tar_path, "r:*") as tar:
@@ -63,39 +67,74 @@ def test_direct_read():
                       if re.search(path_pattern, name) 
                       else None for name in tar.getnames()]
         
-        for mbox_file in mbox_files:
-            # filename = re.search(path_pattern, mbox_file).group()
-            try:
-                for mbox in mailbox.mbox(mbox_file):
-                    pass
+        mailboxes = [name for name in tar.getnames()]
+        messages = [msg for mbox in mailboxes for msg in mailbox.mbox(mbox)]
 
-            except Exception as e:
-                print(str(e))
+        
+        try:
+            # read each the member content from tar.gz
+            for member in tar.getmembers(): # walk through each member
+                file = tar.extractfile(member.name)
+                content = file.read() # member content in binary
+                filename = re.search(path_pattern, member.name).group() #output file name
+
+                f = open(f"{mailbox_dir}/{list_name}/{filename}.box", "wb")
+                f.write(content)
+                f.close()
+
+            # split the mbox file to multiple
+
+        except Exception as e:
+            print(str(e))
     
-# converting one mbox file to emls files to target dir
+# parse each message in single mbox file
+def parse_message(message: Message):
+    
+    m = {key.lower(): message.get(key, "N/A") for key in message.keys()}
+
+    mail_info = {
+        "date"       : m.pop("date"),
+        "subject"    : m.pop("subject"),
+        "from"       : m.pop("from"),
+        "to"         : m.get("to"),
+        "in_reply_to": m.get("in-reply-to"),
+        # "content"   : m.pop("content"),
+        "other"      : ";".join([*m.keys()])
+    }
+
+    return mail_info
+        
+
 def main():
-    list_name = '6lo'
-    resource_dir = "resource" # store extracted data
-    mailbox_dir = "emails" # store .eml files dsorted by mbox
-    
-    tar_file = 'mbox0122_ast_b.tar.gz'
-    tar_path = f"{resource_dir}/{tar_file}"
-    
     test_mbox_file_path = f"{resource_dir}/{tar_file[:-7]}/{list_name}/2013-05.mbox"
+    tar_path = f"{resource_dir}/{tar_file}"
+    mbox_pattern = r"\d\d\d\d-\d\d.mbox"
 
-
-    tar = tarfile.open(tar_path, "r:*")
-    mbox_files = [member.name for member in tar.getmembers()]
-    
-    # extract the tar.gz to located dir 
+    # extract the mbox files in tar.gz to target directory
     extract_tarfile(tar_path, resource_dir)
     
-    # for mbox_file in mbox_files:
-    mbox_to_eml(test_mbox_file_path, out_dir=f"{mailbox_dir}/{list_name}")
+    mboxfiles = [f"{filename}" for filename in pathlib.Path(f"{resource_dir}/{tar_file[:-7]}/{list_name}/").iterdir()]
+    
+    # store the .mbox files to mailbox.mbox objects
+    mboxes = [mailbox.mbox(mbox) for mbox in mboxfiles]
 
-       
+    # parse the all message in each mboxfile from tar.gz 
+    messages = [parse_message(msg) for mbox in mboxes for msg in mbox]
+    
+    for mbox in mboxfiles:
+        # split mbox to multiple eml files
+        mbox_to_eml(mbox, )
+        
 
-    tar.close()
+    # for index, msg in enumerate(mailbox.mbox(test_mbox_file_path)):
+        # watching the email thread and header
+        # print("No.", index)
+        # print("Subject:"); print(msg["Subject"], end="\n\n")
+        # print("From:"); print(msg["from"], end="\n\n")
+        # print("To:"); print(msg["to"], end="\n\n")
+        # print("Reply To:"); print(msg["reply-to"], end="\n\n")
+        # print("In Reply To:"); print(msg["in-reply-to"], end="\n\n") # ***We only need to see the address in "In-Reply-To" field
+        # print("\n")
 
 if __name__ == "__main__":
     main()
