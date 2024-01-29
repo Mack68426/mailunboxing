@@ -1,3 +1,6 @@
+# OBJECTIVE:
+#   read mbox members from tar.gz and
+#   access each the message content in the members
 import os
 import re
 import tarfile
@@ -45,44 +48,54 @@ def mbox_to_eml(mboxfile_path, out_dir='.') -> None:
             file.write(message.as_string())
 
 
+
+def test_direct_read():
+    list_name = '6lo'
+    resource_dir = "resource" # store extracted data
+    mailbox_dir = "emails" # store .eml files dsorted by mbox
+
+    tar_file = 'mbox0122_ast_b.tar.gz'
+    tar_path = f"{resource_dir}/{tar_file}"
+
+    with tarfile.open(tar_path, "r:*") as tar:
+        path_pattern = r"\d\d\d\d-\d\d.mbox"
+        mbox_files = [re.search(path_pattern, name).group() 
+                      if re.search(path_pattern, name) 
+                      else None for name in tar.getnames()]
+        
+        for mbox_file in mbox_files:
+            # filename = re.search(path_pattern, mbox_file).group()
+            try:
+                for mbox in mailbox.mbox(mbox_file):
+                    pass
+
+            except Exception as e:
+                print(str(e))
+    
 # converting one mbox file to emls files to target dir
 def main():
     list_name = '6lo'
     resource_dir = "resource" # store extracted data
     mailbox_dir = "emails" # store .eml files dsorted by mbox
+    
     tar_file = 'mbox0122_ast_b.tar.gz'
     tar_path = f"{resource_dir}/{tar_file}"
     
     test_mbox_file_path = f"{resource_dir}/{tar_file[:-7]}/{list_name}/2013-05.mbox"
 
+
+    tar = tarfile.open(tar_path, "r:*")
+    mbox_files = [member.name for member in tar.getmembers()]
+    
+    # extract the tar.gz to located dir 
     extract_tarfile(tar_path, resource_dir)
     
+    # for mbox_file in mbox_files:
     mbox_to_eml(test_mbox_file_path, out_dir=f"{mailbox_dir}/{list_name}")
 
+       
 
-def read_tar_main():
-    list_name = "6lo"
-    resource_dir = "resource" # store extracted data
-    tar_file = 'mbox0122_ast_b.tar.gz'
-    tar_path = f"{resource_dir}/{tar_file}"
-
-    
-    with tarfile.open(tar_path, "r:gz") as tar:
-        # tar.list(verbose=False) # ${tarFilename}/${emailListName}/YYYY-mm.mbox
-        
-        # get the filename without extension
-        outfile_path = re.search("\d\d\d\d-\d\d", member.name).group()
-        
-        #handle the file extension
-        if not outfile_path.endswith(".mbox"):
-            outfile_path = outfile_path + ".eml"
-        
-        # write 
-        for member in tar.getmembers():
-            mbox_file = open(f"emails/{outfile_path}", "wb")
-            mbox_file.write(tar.extractfile(member).read())
-            mbox_file.close()
-        
+    tar.close()
 
 if __name__ == "__main__":
     main()

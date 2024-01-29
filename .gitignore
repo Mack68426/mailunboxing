@@ -8,3 +8,4 @@ mbox*/
 *.tar.gz
 *.txt
 *-test.py
+_*.py
