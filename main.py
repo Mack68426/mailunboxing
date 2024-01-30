@@ -41,7 +41,7 @@ def extract_tarfile(file_path, out_dir="."):
 # the main converter converting `.mbox` file to `.eml` files
 def mbox_to_eml(mboxfile_path, out_dir='.') -> None:
 
-    # new folder name built by mbox filename
+    # new folder built by mbox filename
     folder_name = re.search(r"\d\d\d\d-\d\d", mboxfile_path).group()
 
     # create folders to store email files by mbox
@@ -86,7 +86,19 @@ def _direct_read_tar():
 
         except Exception as e:
             print(str(e))
+
+def get_message_content(message: Message):
+    content = ""
     
+    for part in message.walk(): # walk through all the submessages in parent message
+        if part.get_content_type() in ["text/plain", "text/html"]:
+            print(part.get_payload()) # the raw text
+            content += part.get_payload()
+
+    return content
+
+
+
 # parse each message in single mbox file
 def parse_message(message: Message):
     m = {key.lower(): message.get(key) for key in message.keys()}
@@ -114,7 +126,7 @@ def main():
     
     mboxfiles = [f"{filename}" for filename in pathlib.Path(f"{resource_dir}/{tar_file[:-7]}/{list_name}/").iterdir()]
     
-    # store the .mbox files to mailbox.mbox objects
+    # create the .mbox files to mailbox.mbox objects
     mboxes = [mailbox.mbox(mbox) for mbox in mboxfiles]
 
     # parse the all message in each mboxfile from tar.gz 
@@ -122,7 +134,7 @@ def main():
     
     for mbox in mboxfiles:
         # split mbox to multiple eml files
-        mbox_to_eml(mbox, )
+        mbox_to_eml(mbox, f"{mailbox_dir}/{list_name}")
         
 
     # for index, msg in enumerate(mailbox.mbox(test_mbox_file_path)):
@@ -132,7 +144,9 @@ def main():
         # print("From:"); print(msg["from"], end="\n\n")
         # print("To:"); print(msg["to"], end="\n\n")
         # print("Reply To:"); print(msg["reply-to"], end="\n\n")
-        # print("In Reply To:"); print(msg["in-reply-to"], end="\n\n") # ***We only need to see the address in "In-Reply-To" field
+        # We only need to see the address in "In-Reply-To" field
+        # for checking the "parent message" in email thread 
+        # print("In Reply To:"); print(msg["in-reply-to"], end="\n\n") 
         # print("\n")
 
 if __name__ == "__main__":
