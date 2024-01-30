@@ -58,7 +58,7 @@ def mbox_to_eml(mboxfile_path, out_dir='.') -> None:
 
 
 # TODO: 直接從壓縮檔中的項目擷取email內容
-def _direct_read_tar():
+def _test_direct_read():
     tar_path = f"{resource_dir}/{tar_file}"
 
     with tarfile.open(tar_path, "r:*") as tar:
@@ -89,17 +89,16 @@ def _direct_read_tar():
     
 # parse each message in single mbox file
 def parse_message(message: Message):
+    m = {key.lower(): message.get(key) for key in message.keys()}
     
-    m = {key.lower(): message.get(key, "N/A") for key in message.keys()}
-
     mail_info = {
-        "date"       : m.pop("date"),
-        "subject"    : m.pop("subject"),
-        "from"       : m.pop("from"),
-        "to"         : m.get("to"),
-        "in_reply_to": m.get("in-reply-to"),
-        # "content"   : m.pop("content"),
-        "other"      : ";".join([*m.keys()])
+        "date": m.pop("date"),
+        "subject": m.pop("subject"),
+        "from": m.pop("from"),
+        "to" : m.get("to", "[No-Receiver or CC]"),
+        "reply-to": m.get("reply-to") or m.get("in-reply-to") or "[No Reply]",
+        # "content": m.pop("content"),
+        "other": ";".join([*m])
     }
 
     return mail_info
