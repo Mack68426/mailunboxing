@@ -58,7 +58,7 @@ def mbox_to_eml(mboxfile_path, out_dir='.') -> None:
 
 
 # TODO: 直接從壓縮檔中的項目擷取email內容
-def _test_direct_read():
+def _direct_read_tar():
     tar_path = f"{resource_dir}/{tar_file}"
 
     with tarfile.open(tar_path, "r:*") as tar:
