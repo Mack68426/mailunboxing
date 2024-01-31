@@ -147,6 +147,7 @@ def main():
     # create the .mbox files to mailbox.mbox objects
     # mboxes = [mailbox.mbox(mbox) for mbox in mboxfiles]
     
+<<<<<<< HEAD
     # parse the all message in each mboxfile from resource dir
     # messages = [parse_message(msg) for mbox in mboxes for msg in mbox]
     
@@ -158,6 +159,11 @@ def main():
             message_info = parse_message(message)
 
             print(message_info)
+=======
+    # for mbox_file in mboxfiles:
+    #     # split mbox to multiple eml files
+    #     mbox_to_eml(mbox_file, f"{mailbox_dir}/{list_name}")
+>>>>>>> 21b94661530f7603535071c35896dc436b328059
 
 
 if __name__ == "__main__":
