@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # OBJECTIVE:
 #   read mbox members from tar.gz and
 #   access each the message content in the members
@@ -52,10 +53,11 @@ def mbox_to_eml(mboxfile_path, out_dir='.') -> None:
 
     # read the .mbox file and split it
     for index, message in enumerate(mailbox.mbox(mboxfile_path), 1):
-
+        eml_filename = f"{out_dir}/{folder_name}/{folder_name}-{index}.eml"
+        
         # create email files one by one 
-        with open(f"{out_dir}/{folder_name}/{folder_name}-{index}.eml", "w", encoding="utf-8") as file:
-            file.write(message.as_string())
+        with open(eml_filename, "wb+") as file:
+            file.write(message.as_bytes())
 
 
 
@@ -96,11 +98,11 @@ def get_message_content(message: Message):
         if part.get_content_type() in ["text/plain", "text/html"]:
             # payload = part.get_payload()          # the raw text(str)
             payload = part.get_payload(decode=True) # the raw text(bytes)
+            encoding = detect(payload)["encoding"] # check the encoding type
             # print("payload coding", detect(payload)["encoding"])
-            
-            content += str(payload, encoding="utf-8") # FIXME UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1354: invalid start byte
+            content += payload.decode(encoding if encoding else "utf-8", errors="ignore") # FIXME UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1354: invalid start byte
 
-    return content
+    return content.encode()
 
 
 # parse each message in single mbox file
@@ -112,7 +114,7 @@ def parse_message(message: Message):
         "date": m.pop("date"),
         "subject": m.pop("subject"),
         "from": m.pop("from"),
-        "to" : m.pop("to"),
+        "to" : m.pop("to", "[No Receiver]"),
         "reply": m.pop("in-reply-to", "[No parent message]"),
         "content": text_content,
         "other": ";".join([*m])
@@ -151,13 +153,14 @@ def main():
     # messages = [parse_message(msg) for mbox in mboxes for msg in mbox]
     
     for mbox_file in mboxfiles:
+        print("current file:", mbox_file)
         # split mbox to multiple eml files
         mbox_to_eml(mbox_file, f"{mailbox_dir}/{list_name}")
 
         for message in mailbox.mbox(mbox_file):
             message_info = parse_message(message)
 
-            print(message_info)
+            # print(message_info)
 
 
 if __name__ == "__main__":
