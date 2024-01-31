@@ -94,11 +94,11 @@ def get_message_content(message: Message):
     
     for part in message.walk(): # walk through all the submessages in parent message
         if part.get_content_type() in ["text/plain", "text/html"]:
-            print(part.get_payload()) # the raw text
-            # print(type(part.get_payload()))
-            # print(part, file=open("1.txt","w"))
-            payload = part.get_payload(decode=True)
-            content += payload.decode()
+            # payload = part.get_payload()          # the raw text(str)
+            payload = part.get_payload(decode=True) # the raw text(bytes)
+            # print("payload coding", detect(payload)["encoding"])
+            
+            content += str(payload, encoding="utf-8") # FIXME UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1354: invalid start byte
 
     return content
 
@@ -145,13 +145,19 @@ def main():
     mboxfiles = [f"{filename}" for filename in pathlib.Path(f"{resource_dir}/{tar_file[:-7]}/{list_name}/").iterdir()]
     
     # create the .mbox files to mailbox.mbox objects
-    mboxes = [mailbox.mbox(mbox) for mbox in mboxfiles]
-    # parse the all message in each mboxfile from resource dir
-    messages = [parse_message(msg) for mbox in mboxes for msg in mbox]
+    # mboxes = [mailbox.mbox(mbox) for mbox in mboxfiles]
     
-    # for mbox_file in mboxfiles:
-    #     # split mbox to multiple eml files
-    #     mbox_to_eml(mbox_file, f"{mailbox_dir}/{list_name}")
+    # parse the all message in each mboxfile from resource dir
+    # messages = [parse_message(msg) for mbox in mboxes for msg in mbox]
+    
+    for mbox_file in mboxfiles:
+        # split mbox to multiple eml files
+        mbox_to_eml(mbox_file, f"{mailbox_dir}/{list_name}")
+
+        for message in mailbox.mbox(mbox_file):
+            message_info = parse_message(message)
+
+            print(message_info)
 
 
 if __name__ == "__main__":
