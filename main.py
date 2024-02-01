@@ -1,23 +1,20 @@
 # -*- coding: utf-8 -*-
+
 # OBJECTIVE:
 #   read mbox members from tar.gz and
 #   access each the message content in the members
+
+# TODO: convert the .mbox files to .eml files without untarring 
+# TODO: make a same tool in command line with `csplit` command
 import os
 import pathlib
 import re
 import tarfile
 import mailbox
 from chardet import detect
-from email import *
-from email.parser import BytesParser
-from email.policy import *
 from email.message import Message
-from email.utils import parsedate_to_datetime
 
-# TODO: convert the .mbox files to .eml files without untarring 
-# TODO: make a same tool in command line with `csplit` command
 
-# project_dir = os.path.dirname(__file__)
 list_name = '6lo'
 resource_dir = "resource" # store extracted data
 mailbox_dir = "emails" # store .eml files dsorted by mbox
@@ -63,33 +60,7 @@ def mbox_to_eml(mboxfile_path, out_dir='.') -> None:
 
 # TODO: 直接從壓縮檔中的項目擷取email內容
 def _direct_read_tar():
-    tar_path = f"{resource_dir}/{tar_file}"
-
-    with tarfile.open(tar_path, "r:*") as tar:
-        path_pattern = r"\d\d\d\d-\d\d.mbox"
-        mbox_files = [re.search(path_pattern, name).group() 
-                      if re.search(path_pattern, name) 
-                      else None for name in tar.getnames()]
-        
-        mailboxes = [name for name in tar.getnames()]
-        messages = [msg for mbox in mailboxes for msg in mailbox.mbox(mbox)]
-
-        
-        try:
-            # read each the member content from tar.gz
-            for member in tar.getmembers(): # walk through each member
-                file = tar.extractfile(member.name)
-                content = file.read() # member content in binary
-                filename = re.search(path_pattern, member.name).group() #output file name
-
-                f = open(f"{mailbox_dir}/{list_name}/{filename}.box", "wb")
-                f.write(content)
-                f.close()
-
-            # split the mbox file to multiple
-
-        except Exception as e:
-            print(str(e))
+    pass
 
 def get_message_content(message: Message):
     content = ""
@@ -100,7 +71,7 @@ def get_message_content(message: Message):
             payload = part.get_payload(decode=True) # the raw text(bytes)
             encoding = detect(payload)["encoding"] # check the encoding type
             # print("payload coding", detect(payload)["encoding"])
-            content += payload.decode(encoding if encoding else "utf-8", errors="ignore") # FIXME UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 1354: invalid start byte
+            content += payload.decode(encoding if encoding else "utf-8", errors="ignore")
 
     return content.encode()
 
@@ -137,20 +108,15 @@ def _peek_thread():
         print("\n")
 
 def main():
-    test_mbox_file_path = f"{resource_dir}/{tar_file[:-7]}/{list_name}/2013-05.mbox"
     tar_path = f"{resource_dir}/{tar_file}"
-    mbox_pattern = r"\d\d\d\d-\d\d.mbox"
 
+    # 將壓縮資料檔案解壓縮到目地資料夾
     # extract the mbox files in tar.gz to target directory
     extract_tarfile(tar_path, resource_dir)
     
+    # 列出目的目錄下的所有.mbox檔案
+    # list all the mbox files in the target dir
     mboxfiles = [f"{filename}" for filename in pathlib.Path(f"{resource_dir}/{tar_file[:-7]}/{list_name}/").iterdir()]
-    
-    # create the .mbox files to mailbox.mbox objects
-    # mboxes = [mailbox.mbox(mbox) for mbox in mboxfiles]
-    
-    # parse the all message in each mboxfile from resource dir
-    # messages = [parse_message(msg) for mbox in mboxes for msg in mbox]
     
     for mbox_file in mboxfiles:
         print("current file:", mbox_file)
@@ -160,7 +126,7 @@ def main():
         for message in mailbox.mbox(mbox_file):
             message_info = parse_message(message)
 
-            # print(message_info)
+            print(message_info)
 
 
 if __name__ == "__main__":
