@@ -6,20 +6,22 @@
 
 # TODO: convert the .mbox files to .eml files without untarring 
 # TODO: make a same tool in command line with `csplit` command
+
 import os
 import pathlib
 import re
+import csv
 import tarfile
 import mailbox
 from chardet import detect
 from email.message import Message
-
 
 list_name = '6lo'
 resource_dir = "resource" # store extracted data
 mailbox_dir = "emails" # store .eml files dsorted by mbox
 tar_file = 'mbox0122_ast_b.tar.gz'
 _test_mbox_file_path = f"{resource_dir}/{tar_file[:-7]}/{list_name}/2013-05.mbox"
+
 
 # 解壓縮資料檔
 # unpack the compressed data file
@@ -57,11 +59,6 @@ def mbox_to_eml(mboxfile_path, out_dir='.') -> None:
             file.write(message.as_bytes())
 
 
-
-# TODO: 直接從壓縮檔中的項目擷取email內容
-def _direct_read_tar():
-    pass
-
 def get_message_content(message: Message):
     content = ""
     
@@ -75,11 +72,10 @@ def get_message_content(message: Message):
 
     return content.encode()
 
-
-# parse each message in single mbox file
+# get the infomation from each message in single mbox file
 def parse_message(message: Message):
     text_content = get_message_content(message)
-    m = dict(map(lambda k: (k.lower(), message.get(k, "N/A")), message.keys()))
+    m = {k.lower(): message.get(k, "N/A") for k in message.keys()}
 
     mail_info = {
         "date": m.pop("date"),
@@ -93,22 +89,9 @@ def parse_message(message: Message):
 
     return mail_info
 
-def _peek_thread():
-    for index, msg in enumerate(mailbox.mbox(_test_mbox_file_path)):
-        # watching the email thread and header
-        print("No.", index)
-        print("Subject:"); print(msg["Subject"], end="\n\n")
-        print("From:"); print(msg["from"], end="\n\n")
-        print("To:"); print(msg["to"], end="\n\n")
-        print("Reply To:"); print(msg["reply-to"], end="\n\n")
-        
-        # We only need to see the address in "In-Reply-To" field
-        # for checking the "parent message" in email thread 
-        print("In Reply To:"); print(msg["in-reply-to"], end="\n\n") 
-        print("\n")
-
 def main():
-    tar_path = f"{resource_dir}/{tar_file}"
+
+    tar_path = f"{resource_dir}/{tar_file}" # 壓縮檔路徑
 
     # 將壓縮資料檔案解壓縮到目地資料夾
     # extract the mbox files in tar.gz to target directory
@@ -118,15 +101,22 @@ def main():
     # list all the mbox files in the target dir
     mboxfiles = [f"{filename}" for filename in pathlib.Path(f"{resource_dir}/{tar_file[:-7]}/{list_name}/").iterdir()]
     
+
+    csvfile = open(f"{resource_dir}/{list_name}.csv", "w+")
+    
     for mbox_file in mboxfiles:
-        print("current file:", mbox_file)
+        # print("current file:", mbox_file)
+        
         # split mbox to multiple eml files
-        mbox_to_eml(mbox_file, f"{mailbox_dir}/{list_name}")
+        # mbox_to_eml(mbox_file, f"{mailbox_dir}/{list_name}")
 
         for message in mailbox.mbox(mbox_file):
             message_info = parse_message(message)
-
-            print(message_info)
+            writer = csv.DictWriter(csvfile, message_info.keys())
+            writer.writeheader()
+            writer.writerow(message_info)
+    
+    csvfile.close()
 
 
 if __name__ == "__main__":
