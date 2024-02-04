@@ -103,6 +103,8 @@ def main():
     
 
     csvfile = open(f"{resource_dir}/{list_name}.csv", "w+")
+    writer = csv.DictWriter(csvfile, ["date", "subject", "from", "to", "reply", "content", "other"])
+    writer.writeheader()
     
     for mbox_file in mboxfiles:
         # print("current file:", mbox_file)
@@ -112,8 +114,6 @@ def main():
 
         for message in mailbox.mbox(mbox_file):
             message_info = parse_message(message)
-            writer = csv.DictWriter(csvfile, message_info.keys())
-            writer.writeheader()
             writer.writerow(message_info)
     
     csvfile.close()
