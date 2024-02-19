@@ -7,7 +7,12 @@ import pandas as pd
 data = pd.read_csv("resource/6lo.csv")
 data.index += 1
 
-data.head(10)
+data.head(5)
 
 # %%
 data.head(10)["other"]
+
+
+# %%
+data.count(axis=1)
+# %%

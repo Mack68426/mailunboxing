@@ -18,7 +18,7 @@ from email.message import Message
 
 list_name = '6lo'
 resource_dir = "resource" # store extracted data
-mailbox_dir = "emails" # store .eml files dsorted by mbox
+mailbox_dir = "FTP" # store .eml files dsorted by mbox
 tar_file = 'mbox0122_ast_b.tar.gz'
 _test_mbox_file_path = f"{resource_dir}/{tar_file[:-7]}/{list_name}/2013-05.mbox"
 
@@ -55,8 +55,8 @@ def mbox_to_eml(mboxfile_path, out_dir='.') -> None:
         eml_filename = f"{out_dir}/{folder_name}/{folder_name}-{index}.eml"
         
         # create email files one by one 
-        with open(eml_filename, "wb+") as file:
-            file.write(message.as_bytes())
+        with open(eml_filename, "w+", encoding="UTF-8") as file:
+            file.write(message.as_string())
 
 
 def get_message_content(message: Message):
@@ -70,7 +70,7 @@ def get_message_content(message: Message):
             # print("payload coding", detect(payload)["encoding"])
             content += payload.decode(encoding if encoding else "utf-8", errors="ignore")
 
-    return content.encode()
+    return content.encode().decode()
 
 # get the infomation from each message in single mbox file
 def parse_message(message: Message):
@@ -102,12 +102,11 @@ def main():
     mboxfiles = [f"{filename}" for filename in pathlib.Path(f"{resource_dir}/{tar_file[:-7]}/{list_name}/").iterdir()]
     
 
-    csvfile = open(f"{resource_dir}/{list_name}.csv", "w+")
+    csvfile = open(f"{resource_dir}/{list_name}.csv", "w+", encoding="utf-8", newline='')
     writer = csv.DictWriter(csvfile, ["date", "subject", "from", "to", "reply", "content", "other"])
     writer.writeheader()
     
     for mbox_file in mboxfiles:
-        # print("current file:", mbox_file)
         
         # split mbox to multiple eml files
         # mbox_to_eml(mbox_file, f"{mailbox_dir}/{list_name}")

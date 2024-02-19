@@ -1,7 +1,7 @@
 emails/
 resource/
 mbox*/
-
+FTP/
 .*
 !.gitignore
 
