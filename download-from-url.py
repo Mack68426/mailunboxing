@@ -2,16 +2,23 @@
 import re
 import os
 import requests
+from bs4 import BeautifulSoup
 
 baseurl = "https://www.ietf.org/ietf-ftp/ietf-mail-archive/6lo/"
 headers = {"User-Agent" : "Mozilla/5.0"}
 dir = "FTP/6lo/"
 
-response = requests.get(f"{baseurl}", headers=headers)
 
-os.makedirs(dir, exist_ok=True)
-
-for date in re.findall("\d\d\d\d-\d\d", response.text):
+def download_from_url():
+    os.makedirs(dir, exist_ok=True)
     
-    with open(f"{dir}/6lo_{date}.eml", "w+") as file:
-        file.write(response.text)
+    page = requests.get(f"{baseurl}", headers=headers)
+    
+    for file_date in re.findall(r"\d\d\d\d-\d\d", page.text):
+        response = requests.get(f"{baseurl}{file_date}.mail", headers=headers, stream=True)
+
+        with open(f"{dir}/{file_date}.eml", "w+") as file:
+            file.write(response.text)
+
+if __name__ == "__main__":
+    download_from_url()
