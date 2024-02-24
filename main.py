@@ -1,4 +1,4 @@
-# BUG: `.mail` file is kind of weird and is not as same as `.eml` file
+# ** See comment in parse_mail_from_file: 87 **
 import mailbox
 import os
 import csv
@@ -46,10 +46,10 @@ def parse_message(message: Message):
 
 # still in process 
 # preprocessing downloaded email data through url
-def save_to_csv(out_dir = '.'):
+def export(out_dir: str = '.', _format: str = "csv"):
     
-    with open(f"{out_dir}/{list_name}.csv", "w+", newline='') as csv_file:    
-        writer = csv.DictWriter(csv_file, ["date", "subject", "from", "to", "reply", "content", "other"])
+    with open(f"{out_dir}/{list_name}.{_format.lower()}", "w+", newline='') as csv_file:    
+        writer = csv.DictWriter(csv_file, ["date", "subject", "from", "to", "reply", "content"])
         writer.writeheader()
         
         for name in os.listdir(f"{resource_dir}/{list_name}"):
@@ -58,23 +58,9 @@ def save_to_csv(out_dir = '.'):
             message_info = parse_message(message)
             writer.writerow(message_info)
 
-def read_email_from_file(file_path: str):
-    content = ""
-    try:
-        file = open(file_path, "r", encoding="UTF-8")
-
-        content = file.read()
-        # print(content)
-
-    except Exception as e:
-        print(str(e))
-    
-    finally:
-        return content
-
 
 # process the `.mail` file and get the basic information.
-def parse_from_mail(mail_dirname):
+def parse_mail_from_file(mail_dirname):
 
     # 列出目的目錄下的所有.mbox檔案
     # list all the mbox files in the target dir
@@ -82,7 +68,8 @@ def parse_from_mail(mail_dirname):
         csvfile = open(f"{resource_dir}/{list_name}.csv", "w+", encoding="utf-8", newline='')
         writer = csv.DictWriter(csvfile, ["date", "subject", "from", "to", "reply", "content", "other"])
         writer.writeheader()
-    
+
+        # trying to use mbox to parse the message in `.mail` files
         for mbox_file in [f"{filename}" for filename in pathlib.Path(mail_dirname).iterdir()]:
             for message in mailbox.mbox(mbox_file):
                 message_info = parse_message(message)
@@ -95,5 +82,6 @@ def parse_from_mail(mail_dirname):
         csvfile.close()
 
 
+
 if __name__ == "__main__":
-    parse_from_mail(f"{resource_dir}/{list_name}")
+    parse_mail_from_file(f"{resource_dir}/{list_name}")

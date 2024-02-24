@@ -13,7 +13,7 @@ list_name = "6lo"
 out_dir = "FTP/6lo/"
 
 
-# the main converter converting `.mail` file to `.eml` files
+# the converter converting `.mail` file to `.eml` files
 def mail_to_eml(mailfile_path, out_dir='.', exist_ok = False) -> None:
 
     # new folder built by mbox filename
@@ -33,24 +33,27 @@ def mail_to_eml(mailfile_path, out_dir='.', exist_ok = False) -> None:
 
 
 def download_from_url(url):
-    os.makedirs(dir, exist_ok=True)
+    os.makedirs(out_dir, exist_ok=True)
     
     page = requests.get(f"{url}", headers=headers)
     
     for file_date in re.findall(r"\d\d\d\d-\d\d", page.text):
         response = requests.get(f"{url}{file_date}.mail", headers=headers, stream=True)
 
-        with open(f"{dir}/{file_date}.mail", "w+") as file:
+        with open(f"{out_dir}/{file_date}.mail", "w+") as file:
             file.write(response.text)
 
+def main() -> None:
 
-
-if __name__ == "__main__":
-    mboxfiles = [f"{filename}" for filename in pathlib.Path(out_dir).iterdir()]
-
+    # download email files from url under the "ietf.org" domain to disk
     download_from_url(baseurl)
 
-    for mbox_file in mboxfiles:
+    # mboxfiles = [f"{filename}" for filename in pathlib.Path(out_dir).iterdir()]
+    
+    # for mbox_file in mboxfiles:
         
-        # split mbox to multiple eml files
-        mail_to_eml(mbox_file, f"out/{list_name}", exist_ok=True)
+    #     # split .mail to multiple eml files
+    #     mail_to_eml(mbox_file, f"out/{list_name}", exist_ok=True)
+
+if __name__ == "__main__":
+    main()
