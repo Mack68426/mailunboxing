@@ -48,12 +48,6 @@ def main() -> None:
     # download email files from url under the "ietf.org" domain to disk
     download_from_url(baseurl)
 
-    # mboxfiles = [f"{filename}" for filename in pathlib.Path(out_dir).iterdir()]
-    
-    # for mbox_file in mboxfiles:
-        
-    #     # split .mail to multiple eml files
-    #     mail_to_eml(mbox_file, f"out/{list_name}", exist_ok=True)
 
 if __name__ == "__main__":
     main()
