@@ -5,12 +5,14 @@ import email
 import pathlib
 import re
 from chardet import detect
-from email.message import Message
+from email.message import EmailMessage, Message
 from email.policy import *
 list_name = '6lo'
 resource_dir = "FTP" # store extracted data
 
-# get the body in the email file
+
+
+# get the body in the email message
 def get_message_body(message: Message):
     content = ""
     # walk_though_staff = [ part for part in message.walk()]
@@ -21,12 +23,12 @@ def get_message_body(message: Message):
             payload = part.get_payload(decode=True) # the raw text(bytes)
             encoding = detect(payload)["encoding"] # check the encoding type
             # print("payload coding", detect(payload)["encoding"])
-            content = payload.decode(encoding if encoding else "utf-8", errors="ignore")
+            content += payload.decode(encoding if encoding else "utf-8", errors="ignore")
 
     return content.encode().decode()
 
-# get the infomation from each message in single mbox file
-def get_message_info(message: Message):
+# get the infomation from each message in single mail file
+def get_message_info(message: EmailMessage):
     mail_info = {}
     
     try:
@@ -40,7 +42,6 @@ def get_message_info(message: Message):
             "to" : m.get("to", "[No Receiver]"),
             "reply": m.get("in-reply-to", "[No parent message]"),
             "content": text_content,
-
         }
     
     except Exception as e:
@@ -50,7 +51,7 @@ def get_message_info(message: Message):
 
 
 
-# preprocessing downloaded email data through url
+# export the processed email data downloaded through url
 def export(out_dir: str = '.', _format: str = "csv"):
     
     with open(f"{out_dir}/{list_name}.{_format.lower()}", "w+",encoding="utf-8", newline='') as csv_file:    
@@ -63,7 +64,7 @@ def export(out_dir: str = '.', _format: str = "csv"):
                 # get the basic information(ex: subject, to, from...) from an email
                 message_info = get_message_info(message)
 
-            writer.writerow(message_info)
+                writer.writerow(message_info)
 
 def main() -> None:
 

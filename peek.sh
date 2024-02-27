@@ -1,15 +1,16 @@
 #! /usr/bin/bash
 
-if [ ! $1 ]; then
-    echo you have to input a file name\n
+FILE="view-csv.py"
+
+if [ ! $FILE ]; then
+    echo $"You have to input a file name\n"
     exit
 fi
-FILE=$1
 
 if [ -f $FILE ]; then
-    python3 view-csv
+    python3 $FILE
 
 else
-    echo The file does not exist\n
+    echo $"The file does not exist\n"
 fi
 

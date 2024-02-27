@@ -1,7 +1,7 @@
 #! /usr/bin/bash
 
 if [ ! -d "FTP" ]; then
-    python3 download-from-url.py
+    python3 download.py
     sleep 2s
     echo Download successfully\n
 fi
