@@ -1,441 +1,123 @@
 date,subject,from,to,reply,content
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
+"Tue, 01 Nov 2016 20:50:32 +0100",[6lo] [Fwd: New Version Notification for draft-gomez-6lo-blemesh-02.txt],Carles Gomez Montenegro <carlesgo@entel.upc.edu>,6lo@ietf.org,[No parent message],"Dear 6lo WG,
+
+We submitted an update of draft-gomez-6lo-blemesh.
+
+The main changes are related with terminology improvement for a better
+alignment with Bluetooth SIG activities, and also to emphasize the fact
+that we are assuming use of the Bluetooth Internet Protocol Support
+Profile, IPSP (note that RFC 7668 already assumed use of IPSP).
+
+Feedback is very welcome!
+
+Cheers,
+
+Carles
+
+
+---------------------------- Original Message ----------------------------
+Subject: New Version Notification for draft-gomez-6lo-blemesh-02.txt
+From:    internet-drafts@ietf.org
+Date:    Mon, October 31, 2016 10:00 am
+To:      ""Seyed Darroudi"" <sm.darroudi@entel.upc.edu>
+         ""Teemu Savolainen"" <teemu.savolainen@nokia.com>
+         ""Carles Gomez"" <carlesgo@entel.upc.edu>
+         ""Seyed Mahdi Darroudi"" <sm.darroudi@entel.upc.edu>
+--------------------------------------------------------------------------
+
+
+A new version of I-D, draft-gomez-6lo-blemesh-02.txt
+has been successfully submitted by Carles Gomez and posted to the
+IETF repository.
+
+Name:		draft-gomez-6lo-blemesh
+Revision:	02
+Title:		IPv6 Mesh over Bluetooth(R) Low Energy using IPSP
+Document date:	2016-10-31
+Group:		Individual Submission
+Pages:		10
+URL:           
+https://www.ietf.org/internet-drafts/draft-gomez-6lo-blemesh-02.txt
+Status:         https://datatracker.ietf.org/doc/draft-gomez-6lo-blemesh/
+Htmlized:       https://tools.ietf.org/html/draft-gomez-6lo-blemesh-02
+Diff:           https://www.ietf.org/rfcdiff?url2=draft-gomez-6lo-blemesh-02
+
+Abstract:
+   RFC 7668 describes the adaptation of 6LoWPAN techniques to enable
+   IPv6 over Bluetooth low energy networks that follow the star
+   topology.  However, recent Bluetooth specifications allow the
+   formation of extended topologies as well.  This document specifies
+   the mechanisms needed to enable IPv6 over mesh networks composed of
+   Bluetooth low energy links established by using the Bluetooth
+   Internet Protocol Support Profile.
+
+
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+The IETF Secretariat
+
+
+
+"
+"Tue, 01 Nov 2016 21:46:27 +0100",Re: [6lo] draft-gomez-6lo-optimized-fragmentation-header-00,Carles Gomez Montenegro <carlesgo@entel.upc.edu>,"""Dale R. Worley"" <worley@ariadne.com>",<87twc0nxoa.fsf@hobgoblin.ariadne.com>,"Hi Dale,
+
+Thanks for your e-mail, and sorry for the late response.
+
+Well, Pascal already replied, so I'll just add some additional comment
+(inline):
+
+> ""Carles Gomez Montenegro"" <carlesgo@entel.upc.edu> writes:
+>> This document proposes a more lightweight and compact 6LoWPAN
+>> fragmentation header, compared with the one defined in RFC 4944.
+>
+> This seems like an improvement to me, though I'm new here.
+
+Thanks!
+
+> But this is a good time to ask my newbie question:  I see this
+> definition of the ""datagram size"" field:
+>
+>    datagram_size: This 11-bit field encodes the size of the entire IP
+>    packet before link-layer fragmentation (but after IP layer
+>    fragmentation).  For IPv6, the datagram size SHALL be 40 octets (the
+>    size of the uncompressed IPv6 header) more than the value of Payload
+>    Length in the IPv6 header [RFC4944] of the packet.  Note that this
+>    packet may already be fragmented by hosts involved in the
+>    communication, i.e., this field needs to encode a maximum length of
+>    1280 octets (the required by IPv6).
+>
+> Naively, it seems to me that link fragmentation is at a layer lower than
+> link compression (e.g., LOWPAN_IPHC), so this datagram_size value is the
+> length of the IPv6 packet (possibly an IPv6 fragment) as compressed by
+> LOWPAN_IPHC.  If that is so, the above text isn't quite right, as
+> e.g. the compressed packet might be shorter than the (reconstructed)
+> Payload Length in the IPv6 header.
+
+Well, the text is the same as in RFC 4944. I get your idea, but
+datagram_size was actually defined as the size of the uncompressed IPv6
+packet.
+
+I understand that the advantage was that the receiver could determine
+exactly how much buffer space was needed for the packet reassembly.
+
+Cheers,
+
+Carles
+
+> Now maybe I'm wrong, and ""datagram size"" is the length of the
+> uncompressed IPv6 packet, but then I don't see how the receiver is to
+> know when all of the fragments have arrived.
+>
+> Dale
+>
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+
+
+"
