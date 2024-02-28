@@ -1,3 +1,4 @@
+# specific directory
 emails/
 resource/
 mbox*/
@@ -5,7 +6,11 @@ FTP/
 .*
 !.gitignore
 
+# specific files
 *.tar.gz
 *.txt
+*.csv
+
+# special rules
 *-test.py
 _*.py
