@@ -7,9 +7,9 @@ FTP/
 !.gitignore
 
 # specific files
+*.csv
 *.tar.gz
 *.txt
-*.csv
 
 # special rules
 *-test.py
