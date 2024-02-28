@@ -1,0 +1,657 @@
+
+From nobody Mon Dec 13 02:20:55 2021
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 998E73A0433; Mon, 13 Dec 2021 02:20:48 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.41.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: 6lo@ietf.org
+Message-ID: <163939084853.9199.11464497364307888924@ietfa.amsl.com>
+Date: Mon, 13 Dec 2021 02:20:48 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/2njsnLLKG0N99Ghwr0Aoewu2OwA>
+Subject: [6lo] I-D Action: draft-ietf-6lo-multicast-registration-03.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 13 Dec 2021 10:20:49 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : IPv6 Neighbor Discovery Multicast Address Listener Registration
+        Author          : Pascal Thubert
+	Filename        : draft-ietf-6lo-multicast-registration-03.txt
+	Pages           : 26
+	Date            : 2021-12-13
+
+Abstract:
+   This document updates RFC 8505 to enable a listener to register an
+   IPv6 anycast or and subscribe to an IPv6 multicast address; the draft
+   updates RFC 6550 (RPL) to add a new Non-Storing Multicast Mode and a
+   new support for anycast addresses in Storing and Non-Storing Modes.
+   This document extends RFC 9010 to enable the 6LR to inject the
+   anycast and multicast addresses in RPL.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-multicast-registration/
+
+There is also an HTML version available at:
+https://www.ietf.org/archive/id/draft-ietf-6lo-multicast-registration-03.html
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-multicast-registration-03
+
+
+Internet-Drafts are also available by rsync at rsync.ietf.org::internet-drafts
+
+
+
+From nobody Mon Dec 13 02:31:51 2021
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id C41963A067B for <6lo@ietfa.amsl.com>; Mon, 13 Dec 2021 02:31:49 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -9.596
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.596 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com header.b=jHZXeRTp; dkim=pass (1024-bit key) header.d=cisco.onmicrosoft.com header.b=ZgGM49Br
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id ZS4WPnRpkXyI for <6lo@ietfa.amsl.com>; Mon, 13 Dec 2021 02:31:44 -0800 (PST)
+Received: from rcdn-iport-2.cisco.com (rcdn-iport-2.cisco.com [173.37.86.73]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id C81573A0652 for <6lo@ietf.org>; Mon, 13 Dec 2021 02:31:44 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=1878; q=dns/txt; s=iport; t=1639391504; x=1640601104; h=from:to:subject:date:message-id:references:in-reply-to: content-transfer-encoding:mime-version; bh=MD6O+lUWt9Ela5kaqRKaCaxTK3rQHqTZj6PA13rkgNk=; b=jHZXeRTp89fuViXSWT4Fbeth47hguez7+t1d1KsTA6Ew1NI5XLRJjH1N a/W9Jnoc5ie5Xsj15jci2PhQqOt6q7Y87/fwr1yRZtUqdTl+8Z8aETOvv 7GszYSQ3bc+GxiJBAJjDwUk9zEfE1Yr7xpykKm+voJXmvID9y9LXHR9hy A=;
+IronPort-PHdr: =?us-ascii?q?A9a23=3A55FD+B+cbenJdv9uWCXoyV9kXcBvk7n3PwtA7?= =?us-ascii?q?J0hhvoOd6m45J3tMQTZ4ukll17GW4jXqpcmw+rbuqztQyoMtJCGtn1RfJlFT?= =?us-ascii?q?RRQj8IQkkQpC9KEDkuuKvnsYmQ6Ec1OWUUj8Wu8NB1eGd31YBvZpXjhhQM?= =?us-ascii?q?=3D?=
+IronPort-Data: =?us-ascii?q?A9a23=3A5vDZ9q2amJE8ElAVy/bD5cNzkn2cJEfYwER7X?= =?us-ascii?q?KvMYLTBsI5bp2EOxjRJWmiDM6nYMWH3f4hyYYzi8x4Fv8WAxtYySgZo3Hw8F?= =?us-ascii?q?HgiRegpqji6wuYcB84ZRyH6ZBoPA/42N5+QfKjYcleG/k30a+K49iEmvU21b?= =?us-ascii?q?uOU5NDsa3gZqTBMEE/NuTo78wIIqtYAbeqRWmthivuqyyHrA2JJ7hYvWo4iB?= =?us-ascii?q?w1vnzs01Bj6kGtwUlXT/pmntneG/5UeJMp3ya1csxLFrodo8u6SH44vzZmj9?= =?us-ascii?q?W/fuhwqEN7gwvDwc1YBRfjZOg3mZnh+Avf5xEMd4H1plP9naJLwam8P49mNt?= =?us-ascii?q?8htyMhHuIasYQwoJabL3u8aVnG0FgkvYvAfqOCaeSLXXcu7iheun2HX66tqC?= =?us-ascii?q?2k3MJEWvOFtDglzGVYwQNwWRgqIi+Tzy7WhR6w8wM8iN8LseogYvxldIfjiJ?= =?us-ascii?q?a5Oafj+r2/iv7e0BAsNu/0=3D?=
+IronPort-HdrOrdr: =?us-ascii?q?A9a23=3AscGubat95n28xQOihX3s/9Yh7skC1IMji2?= =?us-ascii?q?hC6mlwRA09TyXGraGTdaUguyMc1gx/ZJh5o6H+BEDyewKjyXcT2/hRAV7CZn?= =?us-ascii?q?iphILMFuFfBOTZskXd86OVzJ8n6U4NSdkaNDS0NykHsS+Y2nj5Lz9D+qj8zE?= =?us-ascii?q?nAv463pB0BIXAIGsNdBkVCe3um+yZNNW577O8CZeOhD7181lydkBosH6CGL0?= =?us-ascii?q?hAe9KGi8zAlZrgbxJDLQUg8hOygTSh76O/OwSE3z8FOgk/gosKwCzgqUjU96?= =?us-ascii?q?+ju/a0xlv3zGnI9albn9Pn159qGNGMsM4IMT/h4zzYJriJGofy+Qzdktvfr2?= =?us-ascii?q?rCo+O85SvI+P4Dsk85S1vF5ScFHTOQiArGpUWSkmNwykGT0PARDAhKe/apw7?= =?us-ascii?q?gpKCcwLyEbzY1BOGUh5RPFi3MfN2KyoA3to9fPTB1kjUyyvD4rlvMSlWVWVc?= =?us-ascii?q?8EZKZWtpF3xjIZLH4sJlOw1GkcKpglMCgc3ocgTXqKK3TC+mV/yt2lWXo+Wh?= =?us-ascii?q?+AX0gZo8SQlzxbhmpwwUcUzNEW2i5ozuNzd7BUo+Dfdqh4nrBHScEbKap7Ge?= =?us-ascii?q?caWMOyTmjAWwjFPm6eKUnuUKsHJ3XOoZjq56hd3pDnRLUYiJ8p3JjRWlJRsm?= =?us-ascii?q?A/P0roFM2VxZVOtgvARW2sNA6dgv22J6IJ84EUaICbRBFreWpe5fdI+c9vcP?= =?us-ascii?q?Ezc8zDTK5rPw=3D=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0DBBwBUILdh/5BdJa1agQmBWYFSVAd?= =?us-ascii?q?4WjcxiA4DhTmFDl2CJQODWJdBgS6BJQNUCwEBAQ0BASoNCgQBAYFNgzkCgyI?= =?us-ascii?q?CJTQJDgECBAEBARIBAQUBAQECAQYEgQkThWgNhkIBAQEBAwEBEC4BASwMCwQ?= =?us-ascii?q?CAQgRBAEBDSInCxsBAQUDAgQTCBqCUIJlAy8BDqRFAYE6AoofeIEzgQGCCAE?= =?us-ascii?q?BBgQEgTYBAwIOQYMAGII1AwaBOoMOiyQnHIFJRIFYgmc+gmMBAQEBAReBSIN?= =?us-ascii?q?Ngi6RfQolLYEDBFECFEc9gSU6oFOLfJJMCoNAimOUYxWDb6NhliwfgiOKO5k?= =?us-ascii?q?jAgQCBAUCDgEBBoFhO4FZcBUaIYJpURkPkhKFFIVKdAI2AgYBCgEBAwmQcAE?= =?us-ascii?q?B?=
+X-IronPort-AV: E=Sophos;i="5.88,202,1635206400"; d="scan'208";a="975187502"
+Received: from rcdn-core-8.cisco.com ([173.37.93.144]) by rcdn-iport-2.cisco.com with ESMTP/TLS/DHE-RSA-SEED-SHA; 13 Dec 2021 10:31:43 +0000
+Received: from mail.cisco.com (xbe-rcd-004.cisco.com [173.37.102.19]) by rcdn-core-8.cisco.com (8.15.2/8.15.2) with ESMTPS id 1BDAVhea009853 (version=TLSv1.2 cipher=AES256-SHA bits=256 verify=OK) for <6lo@ietf.org>; Mon, 13 Dec 2021 10:31:43 GMT
+Received: from xfe-rcd-001.cisco.com (173.37.227.249) by xbe-rcd-004.cisco.com (173.37.102.19) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.986.14; Mon, 13 Dec 2021 04:31:43 -0600
+Received: from xfe-rtp-002.cisco.com (64.101.210.232) by xfe-rcd-001.cisco.com (173.37.227.249) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.986.14; Mon, 13 Dec 2021 04:31:43 -0600
+Received: from NAM11-CO1-obe.outbound.protection.outlook.com (64.101.32.56) by xfe-rtp-002.cisco.com (64.101.210.232) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.986.14 via Frontend Transport; Mon, 13 Dec 2021 05:31:42 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; b=hRDqXqvkvzihKdhdhUlplmOQuIRy0V8j33XaE5F3GyQwT3eRZ+Y0B25uE9FxL+Ay/5Ij4p01P2deQH9hQIH5BouOFeQqn9iHqhGCtyfNHzUL/KLu2Otm501djpHREExcaMaWim8ccUKBaRt0qfr1KvQhBIiQ/jxTTV09E9nc3+MwEFN4o1Ku2OK5vpppDH1GSPZr6xyySKHFnLX09tq7dO1qw4jHNmxGxo/oBziV2DdZh9LdgO3CAiVVByn194FXL3HfnhoPbqiqR6xysrJF7b/916haQ9u4Ql/x6rXy1nSBv/klk1zYZaXEU6K9Zi08asy13lkcsqjmHnOrL6F9Zg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;  s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1; bh=fv+vd6pUy4Hg/H69fxxuUd+YY+ChRqdOBkR/pBdaPAM=; b=JJ3J37bpooJHtZwRTc9crj1v8SGZf2MQTdrfxYegl6AGyy6FmcINHrzeHc8ryUhQd7cupM/hF0B1CV4h8pAJIpaSf+FlpTcXBy+PuZ4CIhPMlN/Fjj+Ex3q7jPhTuI6o4mbzIaKsbuOh+jMdE/GIZHL9qNcg1CRE9r40V1zyNfDdkm8AYAbqpYmvCEoD/iocMl+cwmQqEIVe5GWlR5TCi6xgXusLKdvPAuxAIBpgFKxJ5k2G+M0RiSXoLEESOf3nu8vpufejGJ5gH/2yl/Dk19LYcDxD48jYtfToDFpS1yPF1LycWBRSkKCWp6bZ4b7bOvJbza44NIdqKk83aYrIAA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=cisco.com; dmarc=pass action=none header.from=cisco.com; dkim=pass header.d=cisco.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cisco.onmicrosoft.com;  s=selector2-cisco-onmicrosoft-com; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=fv+vd6pUy4Hg/H69fxxuUd+YY+ChRqdOBkR/pBdaPAM=; b=ZgGM49BrxBXzuQ3yD3iooxOGAFRGNkg44yRXMBYXz87apGbC5h8BCQnCBbbdwzNKMGtnavdpLdOSscire+hSYK0Xbt4dhEqahl8TvuWADN28HwxNxeS5/MwAmuEZ5f5sNBtD+URjwBeHPGmMn9rRtr7XkGGsNR5KUUCs9VR3L7w=
+Received: from CO1PR11MB4881.namprd11.prod.outlook.com (2603:10b6:303:91::20) by CO1PR11MB4852.namprd11.prod.outlook.com (2603:10b6:303:9f::10) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4778.16; Mon, 13 Dec 2021 10:31:41 +0000
+Received: from CO1PR11MB4881.namprd11.prod.outlook.com ([fe80::1022:cca:7c3a:66d0]) by CO1PR11MB4881.namprd11.prod.outlook.com ([fe80::1022:cca:7c3a:66d0%5]) with mapi id 15.20.4778.017; Mon, 13 Dec 2021 10:31:41 +0000
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: "'6lo@ietf.org'" <6lo@ietf.org>
+Thread-Topic: [6lo] I-D Action: draft-ietf-6lo-multicast-registration-03.txt
+Thread-Index: AQHX8AtGEO6O9v8o60W3A3O61a396KwwOFPQ
+Date: Mon, 13 Dec 2021 10:31:26 +0000
+Deferred-Delivery: Mon, 13 Dec 2021 10:30:34 +0000
+Message-ID: <CO1PR11MB48812A1CCF15E587CBD723B0D8749@CO1PR11MB4881.namprd11.prod.outlook.com>
+References: <163939084853.9199.11464497364307888924@ietfa.amsl.com>
+In-Reply-To: <163939084853.9199.11464497364307888924@ietfa.amsl.com>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+authentication-results: dkim=none (message not signed) header.d=none;dmarc=none action=none header.from=cisco.com;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: f7c33c9a-994d-4ca6-6ab9-08d9be23c0cb
+x-ms-traffictypediagnostic: CO1PR11MB4852:EE_
+x-microsoft-antispam-prvs: <CO1PR11MB48524248F77C853847DAF58DD8749@CO1PR11MB4852.namprd11.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:7691;
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: I9eerr6wMqy+WHTizH70Ef/zoVTi+NPb0rks9Jh91hrYbauiClwLdZtMJ2iVn399IBze06nySZPVmzm6dbt28qhWrF9K1tdw0CAfor9GMD2AJs9JGpkrfvSN+lRVSBSm6NdxV2uHeP3+EBDMU8F2/qYIjYANe+/8zH2xnWCzfshoF56zKimS+SWiFPITuo7Fn4YoCHLfT/tgRW95xy4Z9UIj4g0kGbAVsmuZgt2HleNIZCPtFDDmpKQzGS0OCXqOfY9b7YTXNl7JN0JkGaYMQYL77zuh89vdeonxk9mQPskDxz+kQMTFG7uZ3oiw2GGt8X/HtSdZiwptBjYrU1CFgl3O1bvxyeirBDxmO2CaYQ1FY0ZLmJu2Kzg6SvzdlIlCF5yVN1HAM4QirNouW3FpyH8OA5v7eRkPfFPaPujuow1yMrGr80TJgv945da+HOtaSWjew+wdF8jjJHdJsZ3a8TBwFnpCZ6ixjp16TvBJokvGO280d7tkZH6hF0ZTUD0vfk/QQe5BPPZYsFWstgJU1FpIEpgMu69cFEaw8OUvWfRqZVLHiU7S1VdXuRmhPKc+r1ER65htQZeTSOsuX6TTzqfurc+It/aB5QLWUQwE40GzUU/y8HjC9i+q2SJc0zgYxyiShs/rQ07vQ4Nnn01JxuBtcfv31FW7EAr7PBGKpZY/sDTmTCpISHxfkcdQObFiZ6JH1hPq8bVCc1EpQU2WID7J4MHL3tQGOlk8+BHw3gF8kh8Nf3HaP2q7yg4MYz6m93sHQWcaHNOX8UE0Ma4GNwgONOWU5OZSUoGzgpR3dYUYHXO+b8WWk6GI6u9g6P8kMWoC5Lsf64NP7sq/Md43Mg==
+x-forefront-antispam-report: CIP:255.255.255.255; CTRY:; LANG:en; SCL:1; SRV:;  IPV:NLI; SFV:NSPM; H:CO1PR11MB4881.namprd11.prod.outlook.com; PTR:; CAT:NONE;  SFS:(366004)(66574015)(66946007)(5660300002)(6506007)(4001150100001)(86362001)(55016003)(8936002)(83380400001)(186003)(508600001)(66446008)(64756008)(8676002)(966005)(53546011)(33656002)(52536014)(66556008)(76116006)(66476007)(2906002)(316002)(7696005)(38070700005)(38100700002)(9686003)(6916009)(71200400001)(6666004)(122000001)(491001); DIR:OUT; SFP:1101; 
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: =?iso-8859-1?Q?k1ENlYSxzhMehAuJFAsXAl3MEvaoo9tbD+EcYEkQ+EGsoikyG51SZM00qr?= =?iso-8859-1?Q?Go1fAHAnj/SaNvGFs/j+MI2r2ia3omOzwqjVtwcw6HdDpoP3dEvAJ/F9Kh?= =?iso-8859-1?Q?+L53sximU6WTSzny/DKSbRB9ZCUgItmi6CxpX0ZllPjcNYwAwoyMm4kTXY?= =?iso-8859-1?Q?NYNrQj6QR2kHqdog/QfvcZyY3nXokWgARSBfy6ZaHii+6IoYLs91tkZv71?= =?iso-8859-1?Q?kj608zka9jHkjrE17wbe7kt1+BlgjfOGbhfQhns/JBqnbT5BwceP/sliIw?= =?iso-8859-1?Q?5ivNVIdJyTZzWZYL+zYgWi3v6dYIHYlJ2h8tJZZLrnqU9I26FF+PPXobY/?= =?iso-8859-1?Q?0N1d/cU5woYSEz57pIhXfnkWfyzHPSWegcQa8j2072equRt2hyU5mbxuPy?= =?iso-8859-1?Q?KFk0Rh/pOOhYju1CF/M8fee1DShMuckAcImMDpzpNfaNJ7nRwsg+nFfjdZ?= =?iso-8859-1?Q?QLHJdj1jZzfnrjRj7qimhPsNEvoCdyhDH1CjEXmrf8hhWzPVd816gJXQ4I?= =?iso-8859-1?Q?TtEbGID5VWlO4cKxRit0boCw4jk0lw5/hNv4KQxdQmnpp+3TH2vwOEiCkp?= =?iso-8859-1?Q?PKpZUzuroraGMEe28Ml+FPfaR0McgRLoGMvwedonA4OY7zknNhb3uoosln?= =?iso-8859-1?Q?MdvpVlNvqCKzCJkC8/sxQ54MerbH1GIgJ3H3oU01e3A2qou5FYfjeo+aNI?= =?iso-8859-1?Q?yU0CBg2TRV2/Y38he4ud5NfBn0mISsFLJO2hbAch+dBQOdnImHIg0bgDEn?= =?iso-8859-1?Q?AdloPErxJCZ8ovHHzCLT9pNcivW6yo1I+7cpkaA9tqca49rP0/wOsdx8X+?= =?iso-8859-1?Q?of9K/v0LS4f1RWfDzTkAXlHRAUdwce15FHPYbYEjlvLatGPZLw3iKFOmK3?= =?iso-8859-1?Q?EcDCT9nduPKutm/TKdJwzcyGYEXPfkf0rGfgaxcfZa53FhFKuwM2igQu28?= =?iso-8859-1?Q?4TrYRB8uQ8N+SH/zxAPSluovKygfIV1HxxfOfipF0FP3/pbt2nD6sD/gNf?= =?iso-8859-1?Q?ZUY4mgh5Hmvp2B7gMVha6GtVfxXnLQrIHuC69BaKMWQJ1Wi3VQk8qFoNPS?= =?iso-8859-1?Q?oh3VcLmS4airQaeEWyDifVQ7twrd4kg4bO4E7bvimy1EuKp5VH35RwnAW/?= =?iso-8859-1?Q?nQ87tf3dqtNd3xFpU5OnrA4agw5EPT7+umnwgG+LkR0FyL9HOVuoL9gSxq?= =?iso-8859-1?Q?YaNlUWNeeY77eKz7T/J5lFR5LhlOtrV1xxVE6ULhpy/S4ut/5LYHlW8YKQ?= =?iso-8859-1?Q?1upWx29+j5KQCf4L84GVbLhb8Pg2fy2RjJ09IzrwoQ0pvAZE/pGQbgYH/8?= =?iso-8859-1?Q?V6ax7A2+ZCoi6Ke4+xvqWNWKtX19CG1ftRgKpausqhl6CyeqbBIxAF/HUJ?= =?iso-8859-1?Q?9y90l2gZriE2VIh669ikw8eyo0t8BDox+Mf+80pRlL+x6M2IocBM/U2I3p?= =?iso-8859-1?Q?tPEo/WNBgcG0RJfcm1zSAKrPuAJfgRqd2PSfO8wottjmOeiCxcxlfUzJUD?= =?iso-8859-1?Q?sPIWrIf2RiXytUY+t9FtBHy2wh/XF4Q2TD8cWCQMeX/KdFXzwm8Yg0pO34?= =?iso-8859-1?Q?/vIg3iy1f3svIMsn922EWWWn8l4k0lhrQLHQXXot75ldByaC1Co+WlPdME?= =?iso-8859-1?Q?IiEtEkW70TYMn+o2i2+4SbctPEM4u7W/ktFa2PDL52qegM2/wpmuou4f/L?= =?iso-8859-1?Q?JTrYQX3TTUHeTTzfRwYfrCLxGPpKaRj7YydDRBIa31HExOY12kliOjpQZP?= =?iso-8859-1?Q?u6LKRcTPbPKcosDT0m7uUp9fE=3D?=
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CO1PR11MB4881.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: f7c33c9a-994d-4ca6-6ab9-08d9be23c0cb
+X-MS-Exchange-CrossTenant-originalarrivaltime: 13 Dec 2021 10:31:41.6387 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 5ae1af62-9505-4097-a69a-c1553ef7840e
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: IiGgkSkUuVhq2hh1fFkYnR1Z1GlUVtJDN57/1S2LHQWrr8ek2PjiWSqzgzeP00horxi8ULLDfCxyY+MmTyK8BA==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO1PR11MB4852
+X-OriginatorOrg: cisco.com
+X-Outbound-SMTP-Client: 173.37.102.19, xbe-rcd-004.cisco.com
+X-Outbound-Node: rcdn-core-8.cisco.com
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/78s3t3WMTMNlEZx3OEautg9mirw>
+Subject: [6lo] FW: I-D Action: draft-ietf-6lo-multicast-registration-03.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 13 Dec 2021 10:31:50 -0000
+
+This update indicates how RFC 892_ can be used to block unwanted subscriber=
+s to unicast and multicast addresses.=20
+
+Comments welcome!
+
+Pascal
+
+-----Original Message-----
+From: 6lo <6lo-bounces@ietf.org> On Behalf Of internet-drafts@ietf.org
+Sent: lundi 13 d=E9cembre 2021 11:21
+To: i-d-announce@ietf.org
+Cc: 6lo@ietf.org
+Subject: [6lo] I-D Action: draft-ietf-6lo-multicast-registration-03.txt
+
+
+A New Internet-Draft is available from the on-line Internet-Drafts director=
+ies.
+This draft is a work item of the IPv6 over Networks of Resource-constrained=
+ Nodes WG of the IETF.
+
+        Title           : IPv6 Neighbor Discovery Multicast Address Listene=
+r Registration
+        Author          : Pascal Thubert
+	Filename        : draft-ietf-6lo-multicast-registration-03.txt
+	Pages           : 26
+	Date            : 2021-12-13
+
+Abstract:
+   This document updates RFC 8505 to enable a listener to register an
+   IPv6 anycast or and subscribe to an IPv6 multicast address; the draft
+   updates RFC 6550 (RPL) to add a new Non-Storing Multicast Mode and a
+   new support for anycast addresses in Storing and Non-Storing Modes.
+   This document extends RFC 9010 to enable the 6LR to inject the
+   anycast and multicast addresses in RPL.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-multicast-registration/
+
+There is also an HTML version available at:
+https://www.ietf.org/archive/id/draft-ietf-6lo-multicast-registration-03.ht=
+ml
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-multicast-registration-0=
+3
+
+
+Internet-Drafts are also available by rsync at rsync.ietf.org::internet-dra=
+fts
+
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org
+https://www.ietf.org/mailman/listinfo/6lo
+
+
+From nobody Mon Dec 13 09:46:31 2021
+Return-Path: <wwwrun@rfc-editor.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id A4F5C3A08C7; Mon, 13 Dec 2021 09:46:25 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.901
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.901 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id aWf2nCVFmGiU; Mon, 13 Dec 2021 09:46:20 -0800 (PST)
+Received: from rfc-editor.org (rfc-editor.org [4.31.198.49]) (using TLSv1.2 with cipher ADH-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 4083B3A0948; Mon, 13 Dec 2021 09:46:20 -0800 (PST)
+Received: by rfc-editor.org (Postfix, from userid 499) id 1C5EF1D46; Mon, 13 Dec 2021 09:46:20 -0800 (PST)
+To: ietf-announce@ietf.org, rfc-dist@rfc-editor.org
+From: rfc-editor@rfc-editor.org
+Cc: rfc-editor@rfc-editor.org, drafts-update-ref@iana.org, 6lo@ietf.org
+Content-type: text/plain; charset=UTF-8
+Message-Id: <20211213174620.1C5EF1D46@rfc-editor.org>
+Date: Mon, 13 Dec 2021 09:46:20 -0800 (PST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/47VXkaePV9Ln8gKX-4pLcZtphcQ>
+Subject: [6lo] =?utf-8?q?RFC_9159_on_IPv6_Mesh_over_BLUETOOTH=28R=29_Low_?= =?utf-8?q?Energy_Using_the_Internet_Protocol_Support_Profile_=28IPSP=29?=
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 13 Dec 2021 17:46:26 -0000
+
+A new Request for Comments is now available in online RFC libraries.
+
+        
+        RFC 9159
+
+        Title:      IPv6 Mesh over BLUETOOTH(R) Low 
+                    Energy Using the Internet Protocol Support 
+                    Profile (IPSP) 
+        Author:     C. Gomez,
+                    S.M. Darroudi,
+                    T. Savolainen,
+                    M. Spoerk
+        Status:     Standards Track
+        Stream:     IETF
+        Date:       December 2021
+        Mailbox:    carlesgo@entel.upc.edu,
+                    sm.darroudi@entel.upc.edu,
+                    tsavo.stds@gmail.com,
+                    michael.spoerk@tugraz.at
+        Pages:      14
+        Updates/Obsoletes/SeeAlso:   None
+
+        I-D Tag:    draft-ietf-6lo-blemesh-10.txt
+
+        URL:        https://www.rfc-editor.org/info/rfc9159
+
+        DOI:        10.17487/RFC9159
+
+RFC 7668 describes the adaptation of IPv6 over Low-Power Wireless
+Personal Area Network (6LoWPAN) techniques to enable IPv6 over
+Bluetooth Low Energy (Bluetooth LE) networks that follow the star
+topology. However, recent Bluetooth specifications allow the
+formation of extended topologies as well. This document specifies
+mechanisms that are needed to enable IPv6 mesh over Bluetooth LE
+links established by using the Bluetooth Internet Protocol Support
+Profile (IPSP). This document does not specify the routing protocol
+to be used in an IPv6 mesh over Bluetooth LE links.
+
+This document is a product of the IPv6 over Networks of Resource-constrained Nodes Working Group of the IETF.
+
+This is now a Proposed Standard.
+
+STANDARDS TRACK: This document specifies an Internet Standards Track
+protocol for the Internet community, and requests discussion and suggestions
+for improvements.  Please refer to the current edition of the Official
+Internet Protocol Standards (https://www.rfc-editor.org/standards) for the 
+standardization state and status of this protocol.  Distribution of this 
+memo is unlimited.
+
+This announcement is sent to the IETF-Announce and rfc-dist lists.
+To subscribe or unsubscribe, see
+  https://www.ietf.org/mailman/listinfo/ietf-announce
+  https://mailman.rfc-editor.org/mailman/listinfo/rfc-dist
+
+For searching the RFC series, see https://www.rfc-editor.org/search
+For downloading RFCs, see https://www.rfc-editor.org/retrieve/bulk
+
+Requests for special distribution should be addressed to either the
+author of the RFC in question, or to rfc-editor@rfc-editor.org.  Unless
+specifically noted otherwise on the RFC itself, all RFCs are for
+unlimited distribution.
+
+
+The RFC Editor Team
+Association Management Solutions, LLC
+
+
+
+From nobody Tue Dec 14 01:10:12 2021
+Return-Path: <ggx@gigix.net>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 1BCB33A0871 for <6lo@ietfa.amsl.com>; Tue, 14 Dec 2021 01:10:10 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.898
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.898 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, HTML_MESSAGE=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=unavailable autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gigix-net.20210112.gappssmtp.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 3jCEhlSwcEbM for <6lo@ietfa.amsl.com>; Tue, 14 Dec 2021 01:10:05 -0800 (PST)
+Received: from mail-wr1-x436.google.com (mail-wr1-x436.google.com [IPv6:2a00:1450:4864:20::436]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 096683A0878 for <6lo@ietf.org>; Tue, 14 Dec 2021 01:10:04 -0800 (PST)
+Received: by mail-wr1-x436.google.com with SMTP id c4so31167357wrd.9 for <6lo@ietf.org>; Tue, 14 Dec 2021 01:10:04 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gigix-net.20210112.gappssmtp.com; s=20210112; h=from:mime-version:subject:date:references:cc:to:message-id; bh=Rjfg6hGtsE3WSapPT3SW7dJI2b9vvHfuiu1lx8AGknE=; b=5fcYTVP/FVQDfDKODO7ylFY9I+HU55ZkrEYeHhvvu3kRHTMaX+rlcxo+OXHtyVx22E 4PVgyUPDAsngM/nMVuGlkGcKCVeVQ+3EB1niqeM6rOT8wLd2tBJiSR0rGiYfA/A/ULG0 +11ThDwo2c4nDP4eplUKwNDRbd8QL3bIS+Yq30BOw0QtVWPPH5PTqnu20dK4nYLzBnPg eCS7vvjZTK0EX1sAhNF23lckvAvXrDGELvMGkAIP76puat1zdESIpEyINgq/GrNygpeg KuJlgyS72af8oW+RW6O19GtGjqwrjmyHLzyak2BvxIQ/TtrxDgCL12oSRDtkDDbCtaNu /Odg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20210112; h=x-gm-message-state:from:mime-version:subject:date:references:cc:to :message-id; bh=Rjfg6hGtsE3WSapPT3SW7dJI2b9vvHfuiu1lx8AGknE=; b=A+CAEhMJUQmd66qPuTfubgBlIYIPzdVpnFvXuxtz46/WTUQpXV/d2EAhPVwL7cWsmg 0f4iKC0ztaKFZT9WVxWCagyX0RCa+2R8hZG4JkNntYZBRO3S/hUQlbPEuU1ZLCs+BjDg LoElTPfAkmdXPvVdjN85OiWmprWFRIEEEoU5l1nAQZhzAcXVW39cE0NSkypJ9tB615my XQLrtNGUGWHuHTvx7ZL/vg8aMVWHeViSjtvQ5+F1Rrtuqq1+A3aa8TIOeGP3Pxkyv7ou eHtDIC+BWMmXwc3e/P7iWM1GNha1m9JTjkpJtUMU6Bey+YkwDFn1mVkOvsvmCgXBL+G6 9L1w==
+X-Gm-Message-State: AOAM532p7l6JahfMA0hMKvzcfOOMxLabfKvlK8pe8oEkrCWrKsNdPAbk q/kDzskTyNE7ta69/mySbVg1vrq+xJ3hQg==
+X-Google-Smtp-Source: ABdhPJwnb7eQBWz0tyMIX6imSeEVWet+p3wzAfTGPQpU+EBY/kmdWAsXuu3PyWqtC+DXo/lU5Mz9Rw==
+X-Received: by 2002:adf:ec83:: with SMTP id z3mr4227027wrn.713.1639472997942;  Tue, 14 Dec 2021 01:09:57 -0800 (PST)
+Received: from smtpclient.apple ([2a01:e0a:1ec:470:81f:6f57:b760:b7ed]) by smtp.gmail.com with ESMTPSA id o5sm12965077wrx.83.2021.12.14.01.09.56 (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128); Tue, 14 Dec 2021 01:09:56 -0800 (PST)
+From: Luigi Iannone <ggx@gigix.net>
+Content-Type: multipart/alternative; boundary="Apple-Mail=_02EC470A-CE5A-439C-BE0A-389EEF447D80"
+Mime-Version: 1.0 (Mac OS X Mail 15.0 \(3693.40.0.1.81\))
+Date: Tue, 14 Dec 2021 10:09:56 +0100
+References: <163947083158.6429.2357688889865772513@ietfa.amsl.com>
+Cc: draft-li-6lo-native-short-address@ietf.org
+To: 6lo@ietf.org
+Message-Id: <C9ED0872-39CD-4DB0-B88D-C65270CD1895@gigix.net>
+X-Mailer: Apple Mail (2.3693.40.0.1.81)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/DpCuY1O7JBOwsmvYjVMp84pnnqo>
+Subject: [6lo] Fwd: I-D Action: draft-li-6lo-native-short-address-01.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 14 Dec 2021 09:10:10 -0000
+
+--Apple-Mail=_02EC470A-CE5A-439C-BE0A-389EEF447D80
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=us-ascii
+
+Hi All,
+
+We just submitted a new revision of the NSA document.
+Thanks for all the received feedback.
+
+The main changes concern:
+
+- Revising the text throughout the whole document to make clear that we =
+talk about forwarding operation, not routing (previous text was =
+misleading), hence completely in the scope of 6lo WG.
+
+- Thanks lot  to Pascal T. (whom helped through a long private email =
+exchange) the applicability of NSA has been clarified by adding text. =
+Also, text has been added to clarify the properties of the allocation =
+function, namely the fact that the proposed function is simple but not =
+optimal and other optimized allocation functions can be developed in the =
+future (hence the request to IANA to set up a registry for this =
+purpose).
+
+While we believe that the document is becoming mature, we still welcome =
+any feedback people can send us.
+
+Thanks
+
+Ciao
+
+L.=20
+(On behalf of all authors)
+
+> Begin forwarded message:
+>=20
+> From: internet-drafts@ietf.org
+> Subject: I-D Action: draft-li-6lo-native-short-address-01.txt
+> Date: 14 December 2021 at 09:33:51 CET
+> To: <i-d-announce@ietf.org>
+> Reply-To: internet-drafts@ietf.org
+>=20
+>=20
+> A New Internet-Draft is available from the on-line Internet-Drafts =
+directories.
+>=20
+>=20
+>        Title           : Native Short Addressing for Low power and =
+Lossy Networks Expansion
+>        Authors         : Guangpeng Li
+>                          David Lou
+>                          Luigi Iannone
+>                          Peng Liu
+>                          Rong Long
+> 	Filename        : draft-li-6lo-native-short-address-01.txt
+> 	Pages           : 22
+> 	Date            : 2021-12-14
+>=20
+> Abstract:
+>   This document specifies mechanisms of NSA (Native Short Address) =
+that
+>   enables IP packet transmission over links where the transmission of =
+a
+>   full length address may not be desirable.  This document focuses on
+>   carrying IP packets across a LLN (Low power and Lossy Network), in
+>   which the topology is relatively static where nodes' location is
+>   fixed and the connection between nodes is rather stable.  The =
+changes
+>   in the logical topology are only caused by non-frequent =
+disconnection
+>   in the link due to some reasons.  The specifications details NSA
+>   address allocation, forwarding mechanism, header format design,
+>   including length-variable fields, and IPv6 interconnection support.
+>=20
+>=20
+> The IETF datatracker status page for this draft is:
+> https://datatracker.ietf.org/doc/draft-li-6lo-native-short-address/
+>=20
+> There is also an htmlized version available at:
+> =
+https://datatracker.ietf.org/doc/html/draft-li-6lo-native-short-address-01=
+
+>=20
+> A diff from the previous version is available at:
+> https://www.ietf.org/rfcdiff?url2=3Ddraft-li-6lo-native-short-address-01=
+
+>=20
+>=20
+> Internet-Drafts are also available by rsync at =
+rsync.ietf.org::internet-drafts
+>=20
+>=20
+> _______________________________________________
+> I-D-Announce mailing list
+> I-D-Announce@ietf.org
+> https://www.ietf.org/mailman/listinfo/i-d-announce
+> Internet-Draft directories: http://www.ietf.org/shadow.html
+> or ftp://ftp.ietf.org/ietf/1shadow-sites.txt
+
+
+--Apple-Mail=_02EC470A-CE5A-439C-BE0A-389EEF447D80
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=us-ascii
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dus-ascii"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" class=3D"">Hi =
+All,<div class=3D""><br class=3D""></div><div class=3D"">We just =
+submitted a new revision of the NSA document.</div><div class=3D"">Thanks =
+for all the received feedback.</div><div class=3D""><br =
+class=3D""></div><div class=3D"">The main changes concern:</div><div =
+class=3D""><br class=3D""></div><div class=3D"">- Revising the text =
+throughout the whole document to make clear that we talk about =
+forwarding operation, not routing (previous text was misleading), hence =
+completely in the scope of 6lo WG.</div><div class=3D""><br =
+class=3D""></div><div class=3D"">- Thanks lot &nbsp;to Pascal T. (whom =
+helped through a long private email exchange) the applicability of NSA =
+has been clarified by adding text. Also, text has been added to clarify =
+the properties of the allocation function, namely the fact that the =
+proposed function is simple but not optimal and other optimized =
+allocation functions can be developed in the future (hence the request =
+to IANA to set up a registry for this purpose).</div><div class=3D""><br =
+class=3D""></div><div class=3D"">While we believe that the document is =
+becoming mature, we still welcome any feedback people can send =
+us.</div><div class=3D""><br class=3D""></div><div =
+class=3D"">Thanks</div><div class=3D""><br class=3D""></div><div =
+class=3D"">Ciao</div><div class=3D""><br class=3D""></div><div =
+class=3D"">L.&nbsp;</div><div class=3D"">(On behalf of all =
+authors)</div><div class=3D""><div><br class=3D""><blockquote =
+type=3D"cite" class=3D""><div class=3D"">Begin forwarded =
+message:</div><br class=3D"Apple-interchange-newline"><div =
+style=3D"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; =
+margin-left: 0px;" class=3D""><span style=3D"font-family: =
+-webkit-system-font, Helvetica Neue, Helvetica, sans-serif; =
+color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">From: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D""><a =
+href=3D"mailto:internet-drafts@ietf.org" =
+class=3D"">internet-drafts@ietf.org</a><br class=3D""></span></div><div =
+style=3D"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; =
+margin-left: 0px;" class=3D""><span style=3D"font-family: =
+-webkit-system-font, Helvetica Neue, Helvetica, sans-serif; =
+color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">Subject: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D""><b class=3D"">I-D Action: =
+draft-li-6lo-native-short-address-01.txt</b><br =
+class=3D""></span></div><div style=3D"margin-top: 0px; margin-right: =
+0px; margin-bottom: 0px; margin-left: 0px;" class=3D""><span =
+style=3D"font-family: -webkit-system-font, Helvetica Neue, Helvetica, =
+sans-serif; color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">Date: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D"">14 December 2021 at 09:33:51 =
+CET<br class=3D""></span></div><div style=3D"margin-top: 0px; =
+margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=3D""><span=
+ style=3D"font-family: -webkit-system-font, Helvetica Neue, Helvetica, =
+sans-serif; color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">To: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D"">&lt;<a =
+href=3D"mailto:i-d-announce@ietf.org" =
+class=3D"">i-d-announce@ietf.org</a>&gt;<br class=3D""></span></div><div =
+style=3D"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; =
+margin-left: 0px;" class=3D""><span style=3D"font-family: =
+-webkit-system-font, Helvetica Neue, Helvetica, sans-serif; =
+color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">Reply-To: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D""><a =
+href=3D"mailto:internet-drafts@ietf.org" =
+class=3D"">internet-drafts@ietf.org</a><br class=3D""></span></div><br =
+class=3D""><div class=3D""><div class=3D""><br class=3D"">A New =
+Internet-Draft is available from the on-line Internet-Drafts =
+directories.<br class=3D""><br class=3D""><br class=3D""> =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Title =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Native =
+Short Addressing for Low power and Lossy Networks Expansion<br class=3D"">=
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Authors =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Guangpeng Li<br =
+class=3D""> =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;David Lou<br class=3D""> =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;Luigi Iannone<br class=3D""> =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;Peng Liu<br class=3D""> =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;Rong Long<br class=3D""><span class=3D"Apple-tab-span" =
+style=3D"white-space:pre">	</span>Filename =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: =
+draft-li-6lo-native-short-address-01.txt<br class=3D""><span =
+class=3D"Apple-tab-span" style=3D"white-space:pre">	</span>Pages =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 22<br =
+class=3D""><span class=3D"Apple-tab-span" style=3D"white-space:pre">	=
+</span>Date =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: =
+2021-12-14<br class=3D""><br class=3D"">Abstract:<br class=3D""> =
+&nbsp;&nbsp;This document specifies mechanisms of NSA (Native Short =
+Address) that<br class=3D""> &nbsp;&nbsp;enables IP packet transmission =
+over links where the transmission of a<br class=3D""> &nbsp;&nbsp;full =
+length address may not be desirable. &nbsp;This document focuses on<br =
+class=3D""> &nbsp;&nbsp;carrying IP packets across a LLN (Low power and =
+Lossy Network), in<br class=3D""> &nbsp;&nbsp;which the topology is =
+relatively static where nodes' location is<br class=3D""> =
+&nbsp;&nbsp;fixed and the connection between nodes is rather stable. =
+&nbsp;The changes<br class=3D""> &nbsp;&nbsp;in the logical topology are =
+only caused by non-frequent disconnection<br class=3D""> &nbsp;&nbsp;in =
+the link due to some reasons. &nbsp;The specifications details NSA<br =
+class=3D""> &nbsp;&nbsp;address allocation, forwarding mechanism, header =
+format design,<br class=3D""> &nbsp;&nbsp;including length-variable =
+fields, and IPv6 interconnection support.<br class=3D""><br class=3D""><br=
+ class=3D"">The IETF datatracker status page for this draft is:<br =
+class=3D""><a =
+href=3D"https://datatracker.ietf.org/doc/draft-li-6lo-native-short-address=
+/" =
+class=3D"">https://datatracker.ietf.org/doc/draft-li-6lo-native-short-addr=
+ess/</a><br class=3D""><br class=3D"">There is also an htmlized version =
+available at:<br =
+class=3D"">https://datatracker.ietf.org/doc/html/draft-li-6lo-native-short=
+-address-01<br class=3D""><br class=3D"">A diff from the previous =
+version is available at:<br =
+class=3D"">https://www.ietf.org/rfcdiff?url2=3Ddraft-li-6lo-native-short-a=
+ddress-01<br class=3D""><br class=3D""><br class=3D"">Internet-Drafts =
+are also available by rsync at rsync.ietf.org::internet-drafts<br =
+class=3D""><br class=3D""><br =
+class=3D"">_______________________________________________<br =
+class=3D"">I-D-Announce mailing list<br =
+class=3D"">I-D-Announce@ietf.org<br =
+class=3D"">https://www.ietf.org/mailman/listinfo/i-d-announce<br =
+class=3D"">Internet-Draft directories: =
+http://www.ietf.org/shadow.html<br class=3D"">or =
+ftp://ftp.ietf.org/ietf/1shadow-sites.txt<br =
+class=3D""></div></div></blockquote></div><br =
+class=3D""></div></body></html>=
+
+--Apple-Mail=_02EC470A-CE5A-439C-BE0A-389EEF447D80--
+
+
+From nobody Fri Dec 31 01:54:36 2021
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id A59703A1281; Fri, 31 Dec 2021 01:54:33 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.41.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: 6lo@ietf.org
+Message-ID: <164094447359.23361.3880151428772794026@ietfa.amsl.com>
+Date: Fri, 31 Dec 2021 01:54:33 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/ztKhYSkV781sXObnBNMftLmtlQE>
+Subject: [6lo] I-D Action: draft-ietf-6lo-plc-07.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 31 Dec 2021 09:54:34 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : Transmission of IPv6 Packets over PLC Networks
+        Authors         : Jianqiang Hou
+                          Bing Liu
+                          Yong-Geun Hong
+                          Xiaojun Tang
+                          Charles E. Perkins
+	Filename        : draft-ietf-6lo-plc-07.txt
+	Pages           : 23
+	Date            : 2021-12-31
+
+Abstract:
+   Power Line Communication (PLC), namely using the electric-power lines
+   for indoor and outdoor communications, has been widely applied to
+   support Advanced Metering Infrastructure (AMI), especially smart
+   meters for electricity.  The existing electricity infrastructure
+   facilitates the expansion of PLC deployments due to its potential
+   advantages in terms of cost and convenience.  Moreover, a wide
+   variety of accessible devices raises the potential demand of IPv6 for
+   future applications.  This document describes how IPv6 packets are
+   transported over constrained PLC networks, such as ITU-T G.9903, IEEE
+   1901.1 and IEEE 1901.2.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+There is also an htmlized version available at:
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-plc-07
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-plc-07
+
+
+Internet-Drafts are also available by rsync at rsync.ietf.org::internet-drafts
+
+

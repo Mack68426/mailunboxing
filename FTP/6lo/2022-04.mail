@@ -1,0 +1,646 @@
+
+From nobody Fri Apr  1 03:07:03 2022
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 213F53A0BD1 for <6lo@ietfa.amsl.com>; Fri,  1 Apr 2022 03:07:00 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.907
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.907 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id fzTHkjP_WcS2 for <6lo@ietfa.amsl.com>; Fri,  1 Apr 2022 03:06:56 -0700 (PDT)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 1CC093A0C0B for <6lo@ietf.org>; Fri,  1 Apr 2022 03:06:55 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1.1) with ESMTP id 231A6eXR028746; Fri, 1 Apr 2022 12:06:40 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id C020E1D53C1; Fri,  1 Apr 2022 12:06:39 +0200 (CEST)
+Received: from 79.158.126.207 by webmail.entel.upc.edu with HTTP; Fri, 1 Apr 2022 12:06:41 +0200
+Message-ID: <447d74dad1c69ecbd2dbf5bd010577ec.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <c95ea00ea1dd416fbb0d5551b3f6d6e4@huawei.com>
+References: <b57462023c9a488b91400b6a591ab37d.squirrel@webmail.entel.upc.edu> <c95ea00ea1dd416fbb0d5551b3f6d6e4@huawei.com>
+Date: Fri, 1 Apr 2022 12:06:41 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: "Liguangpeng (Roc, Network Technology Laboratory)" <liguangpeng@huawei.com>
+Cc: "6lo@ietf.org" <6lo@ietf.org>, "Luigi IANNONE" <luigi.iannone@huawei.com>
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.103.5 at dash
+X-Virus-Status: Clean
+X-Greylist: Delayed for 24:03:50 by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Fri, 01 Apr 2022 12:06:40 +0200 (CEST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/0Wy_Xq3r6ExdZBX6lvfy-8oVceA>
+Subject: Re: [6lo] Initial version of the minutes from 6lo at IETF 113
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 01 Apr 2022 10:07:00 -0000
+
+Dear Guangpeng,
+
+Thanks for your message!
+
+You are right.
+
+After double checking the recording, we have updated the minutes as follows:
+
+OLD:
+     Carles: other additions needed to the draft?
+     Guangpeng: security
+
+NEW:
+     Carles: is this technology for constrained devices?
+     Guangpeng: used in industrial equipment
+
+The new version of the minutes can be found here:
+https://datatracker.ietf.org/meeting/113/materials/minutes-113-6lo-01.txt
+
+Should you have further comments, please do not hesitate to let us know.
+
+Cheers,
+
+Shwetha and Carles
+
+
+
+
+
+> Dear Chairs and all,
+>
+> Thanks chairs and minutes takers. Maybe it's fault of my pronunciation, I
+> don't think we discussed any topic about security. If I remembered, in
+> that time we discussed constrained devices and more general case, which
+> one is the typical use cases of APL. Maybe we should correct the following
+> lines a bit.
+>
+> [11:40] Native Short Address for LLN Expansion (Luigi Iannone ) 15 min
+>
+>     goes through changes since IETF112
+>     applicability mostly in static deployment, otherwise, need to
+> renumber.
+>     next: will try to evaluate gain with this approach; will respond to
+> latest comments.
+>     then will consider asking for adoption
+>     Carles: draft states applicability for static deployment of wired
+> technologies. PLC?
+>     Luigi: some others, will do literature review
+>     Guangpeng: PLC, also APL (Advanced Physical Layer) which is extension
+> of 802.3cg
+>>    Carles: other additions needed to the draft?
+>>    Guangpeng: security
+>     Peng Liu: support this work
+>
+> Thanks,
+> Guangpeng Li
+
+
+
+From nobody Tue Apr  5 14:05:16 2022
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 175D63A11AA; Tue,  5 Apr 2022 14:04:58 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Robert Sparks via Datatracker <noreply@ietf.org>
+To: <secdir@ietf.org>
+Cc: 6lo@ietf.org, draft-ietf-6lo-use-cases.all@ietf.org, last-call@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.46.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <164919269800.5647.13515861264060312018@ietfa.amsl.com>
+Reply-To: Robert Sparks <rjsparks@nostrum.com>
+Date: Tue, 05 Apr 2022 14:04:58 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/a0TrTj9jyFQddhdCfkaGOIveZXQ>
+Subject: [6lo] Secdir last call review of draft-ietf-6lo-use-cases-12
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 05 Apr 2022 21:04:58 -0000
+
+Reviewer: Robert Sparks
+Review result: Has Issues
+
+I have reviewed this document as part of the security directorate's ongoing
+effort to review all IETF documents being processed by the IESG. These comments
+were written primarily for the benefit of the security area directors. Document
+editors and WG chairs should treat these comments just like any other last call
+comments.
+
+This document has issues to address before publication as an Informational RFC
+
+Issues:
+
+>From the abstract: "The document targets an audience who would like to
+understand and evaluate running end-to-end IPv6 over the constrained node
+networks for local or Internet connectivity."
+
+Its security considerations section claims "Security considerations are not
+directly applicable to this document". Yet the text of the draft has several
+places that rightly call out thing like "there exist implications for privacy",
+"privacy also becomes a serious issue", and "the assumption is that L2 security
+must be present." A summary of these things in the security considerations
+section seems prudent. At _least_ call out again the assumption about L2
+security.
+
+The "Security Requirement"A summary of these things in the security
+considerations section seems prudent. At _least_ call out again the assumption
+about L2 security.
+
+The "Security Requirement" row in Table 2 is not well explained. The values in
+that row are explained at all. (For instance, the word "Partially" appears
+exactly once in the document - it is unclear what it means).
+
+Nits/Comments:
+
+Appendix A is neither introduced nor referenced from the body of the document.
+Why is it here?
+
+I'm a little concerned about some of the technology descriptions possibly
+moving beyond simple facts into interpretation or even marketing. The last
+paragraph of section 2.5 is a particularly strong example. Look for phrases
+section 4 that include "targets" or "targeted by" and make sure that's what the
+organizations ins that define those technologies say (consider references).
+
+At 'superior "range"', why is range in quotes? Think about restructuring the
+sentences that use 'superior' to avoid the connotation of "better than". All
+this document really needs to acknowledge is "goes further".
+
+
+
+
+From nobody Tue Apr  5 14:09:49 2022
+Return-Path: <rjsparks@nostrum.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id D97BC3A11B7; Tue,  5 Apr 2022 14:09:46 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.09
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.09 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, NICE_REPLY_A=-0.001, T_SCC_BODY_TEXT_LINE=-0.01, T_SPF_HELO_PERMERROR=0.01, T_SPF_PERMERROR=0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=nostrum.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id qeRICcPBd6aB; Tue,  5 Apr 2022 14:09:42 -0700 (PDT)
+Received: from nostrum.com (raven-v6.nostrum.com [IPv6:2001:470:d:1130::1]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 2D8763A11BB; Tue,  5 Apr 2022 14:09:41 -0700 (PDT)
+Received: from [192.168.1.114] ([47.186.48.51]) (authenticated bits=0) by nostrum.com (8.17.1/8.16.1) with ESMTPSA id 235L9dZt077330 (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384 bits=256 verify=NO); Tue, 5 Apr 2022 16:09:39 -0500 (CDT) (envelope-from rjsparks@nostrum.com)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=nostrum.com; s=default; t=1649192979; bh=GNeigeFFHIykbOOc9FIQ/I9x269P75yAm/Hw27BvRns=; h=Date:Subject:To:Cc:References:From:In-Reply-To; b=Er+6Ne+9sOFA2R7jsuP6L9OjWgUA398kN6gDOLr20a8gtalvyuTxJJSE640m3515U 5r25cMO5i1zXQ2PXZfr7z5wb9L84zhXnDm+ibOxmqSoW+Eb63SomXMs+h9u0lSvFWT ERiCtE5m3tn44hoBTPLV0sxBGa5kSC7JyuOjsqOM=
+X-Authentication-Warning: raven.nostrum.com: Host [47.186.48.51] claimed to be [192.168.1.114]
+Message-ID: <f79d9aba-618c-5d08-8a4e-744616097e6c@nostrum.com>
+Date: Tue, 5 Apr 2022 16:09:33 -0500
+MIME-Version: 1.0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Thunderbird/91.7.0
+Content-Language: en-US
+To: secdir@ietf.org
+Cc: last-call@ietf.org, draft-ietf-6lo-use-cases.all@ietf.org, 6lo@ietf.org
+References: <164919269800.5647.13515861264060312018@ietfa.amsl.com>
+From: Robert Sparks <rjsparks@nostrum.com>
+In-Reply-To: <164919269800.5647.13515861264060312018@ietfa.amsl.com>
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/fpFFCnInV6LQvINtwI-_ohjQHqc>
+Subject: Re: [6lo] [secdir] Secdir last call review of draft-ietf-6lo-use-cases-12
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 05 Apr 2022 21:09:47 -0000
+
+Apologies, there's an edit-buffer glitch below, corrected in what's 
+uploaded at 
+https://datatracker.ietf.org/doc/review-ietf-6lo-use-cases-12-secdir-lc-sparks-2022-04-05/.
+
+On 4/5/22 4:04 PM, Robert Sparks via Datatracker wrote:
+> Reviewer: Robert Sparks
+> Review result: Has Issues
+>
+> I have reviewed this document as part of the security directorate's ongoing
+> effort to review all IETF documents being processed by the IESG. These comments
+> were written primarily for the benefit of the security area directors. Document
+> editors and WG chairs should treat these comments just like any other last call
+> comments.
+>
+> This document has issues to address before publication as an Informational RFC
+>
+> Issues:
+>
+> >From the abstract: "The document targets an audience who would like to
+> understand and evaluate running end-to-end IPv6 over the constrained node
+> networks for local or Internet connectivity."
+>
+> Its security considerations section claims "Security considerations are not
+> directly applicable to this document". Yet the text of the draft has several
+> places that rightly call out thing like "there exist implications for privacy",
+> "privacy also becomes a serious issue", and "the assumption is that L2 security
+> must be present." A summary of these things in the security considerations
+> section seems prudent. At _least_ call out again the assumption about L2
+> security.
+>
+> The "Security Requirement"A summary of these things in the security
+> considerations section seems prudent. At _least_ call out again the assumption
+> about L2 security.
+>
+> The "Security Requirement" row in Table 2 is not well explained. The values in
+> that row are explained at all. (For instance, the word "Partially" appears
+> exactly once in the document - it is unclear what it means).
+>
+> Nits/Comments:
+>
+> Appendix A is neither introduced nor referenced from the body of the document.
+> Why is it here?
+>
+> I'm a little concerned about some of the technology descriptions possibly
+> moving beyond simple facts into interpretation or even marketing. The last
+> paragraph of section 2.5 is a particularly strong example. Look for phrases
+> section 4 that include "targets" or "targeted by" and make sure that's what the
+> organizations ins that define those technologies say (consider references).
+>
+> At 'superior "range"', why is range in quotes? Think about restructuring the
+> sentences that use 'superior' to avoid the connotation of "better than". All
+> this document really needs to acknowledge is "goes further".
+>
+>
+>
+> _______________________________________________
+> secdir mailing list
+> secdir@ietf.org
+> https://www.ietf.org/mailman/listinfo/secdir
+> wiki: https://trac.ietf.org/trac/sec/wiki/SecDirReview
+
+
+From nobody Tue Apr  5 23:33:39 2022
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id C08A23A1169; Tue,  5 Apr 2022 23:33:36 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+From: Peter Yee via Datatracker <noreply@ietf.org>
+To: <gen-art@ietf.org>
+Cc: 6lo@ietf.org, draft-ietf-6lo-use-cases.all@ietf.org, last-call@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.46.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <164922681668.19418.17473471229907975510@ietfa.amsl.com>
+Reply-To: Peter Yee <peter@akayla.com>
+Date: Tue, 05 Apr 2022 23:33:36 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/01mksj2ijZA-21vBSmvmPNeYpI4>
+Subject: [6lo] Genart last call review of draft-ietf-6lo-use-cases-12
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 06 Apr 2022 06:33:37 -0000
+
+Reviewer: Peter Yee
+Review result: Ready with Issues
+
+I am the assigned Gen-ART reviewer for this draft. The General Area
+Review Team (Gen-ART) reviews all IETF documents being processed
+by the IESG for the IETF Chair.  Please treat these comments just
+like any other last call comments.
+
+For more information, please see the FAQ at
+
+<https://trac.ietf.org/trac/gen/wiki/GenArtfaq>.
+
+Document: draft-ietf-6lo-use-cases-12
+Reviewer: Peter Yee
+Review Date: 2022-04-05
+IETF LC End Date: 2022-04-06
+IESG Telechat date: Not scheduled for a telechat
+
+Summary: This informational document describes various networking technologies
+that can be used in 6lo networks, their characteristics, and example use cases.
+There some issues and nits that should be address prior to publication. [Ready
+with issues]
+
+Major issues: None
+
+Minor issues:
+
+Page 7, 1st paragraph, 2nd sentence: “Internet” is not an application. And use
+of the Internet does not imply a requirement for high data rates either. I’d
+drop that so-called “application”.
+
+Page 7, 3rd paragraph, 3rd sentence: This is not a good reference. That is a
+specification that makes the claim given in the sentence, but it is not
+substantiated here or there. Furthermore, being based on the broken security in
+IEEE 802.15.4 (ask Tero Kivinen) at the time of IEEE 1901.2’s publication is
+probably not a selling point now. If IEEE 1902.2 supports layering over an IEEE
+802.15.4-2020 network possibly with IEEE 802.15.4y (aka Security Next
+Generation, which added stronger crypto), then it might be worth mentioning.
+
+Page 7, 4th paragraph, last sentence: in regards to “frequencies”, I assume
+that the 500 kHz is not in reference to the AC frequency but rather the
+signaling frequency. It wasn’t completely clear in this context but may not be
+worth addressing either.
+
+Page 8, Table 2: for security requirement, how does “high” security differ from
+other security? These terms are a bit nebulous.
+
+Page 8, Table 2: for data rate, how does “small” compare to “infrequent”? I
+don’t know how to rank these terms. I’m not sure “Data Rate” is the right row
+header for the values given.
+
+Page 11, 1st bullet item, 4th sentence: instead of “different levels of
+security”, consider using “other security mechanisms”. I have troubles
+comparing the levels of “hardware-level security” and “certificates for initial
+booting process”.
+
+Page 12, 12th bullet item: what does “energy friendliness” mean? Perhaps you
+could use “low energy usage” if that’s what you are trying to convey?
+
+Page 16, section 5.3, 1st paragraph, 2nd sentence: I will point out that in the
+home environment, these cordless telephone base stations are almost never
+connected to a data network. Thus, it seems that pre-existing Fixed Parts
+aren’t particularly valuable to this scenario. Use of DECT-ULE for 6lo use
+cases will almost certainly require a Fixed Part that has a data network
+connection.
+
+Page 18, section 5.5, 2nd paragraph, 2nd sentence: I’m confused here. You just
+mentioned wearable devices. Now you say that these devices are densely
+installed at home. Which one is it? Or are these *other* devices that are
+talking about in this sentence? If so, change “The” to “Other”.
+
+Page 18, section 5.5, 3rd paragraph, last sentence: why do the hackers have to
+be hidden? LTE traffic can be heard for quite a distance. A listening hacker
+wouldn’t have to be hidden. Where a hidden listener would be required would be
+near an NFC connection because of the very short distances involved and the
+difficulty with placing a listening device near enough to pick up the
+emanations.
+
+Page 26, Appendix A: I don’t understand how these dimensions fit in with
+section 3. Why aren’t they merged? These seem like additional considerations.
+If they don’t belong in section 3, then how do they tie back to the rest of the
+document?
+
+Page 27, 4th bullet item, 2nd sentence: a buffering mechanism isn’t strictly
+required. Another option would be to tell the application to throttle its
+generation of data, if appropriate to the application. Or compression of the
+data might suffice.
+
+Page 27, 7th bullet item, 1st sentence: I would delete “6lo”. I would think
+that time synchronization would be importance to the application making up the
+use case, regardless of the use of 6lo. For the second sentence, I don’t
+understand what “transferred with time synchronization” means. If it has been
+recorded with “exact time”, then a timestamp presumably exists. Then it’s not
+clear what time synchronization is required for.
+
+Page 27, 9th bullet item, last sentence: How do continuous and periodic work
+together? The latter would seem to imply a discontinuity. It’s not clear what
+this sentence means.
+
+Page 27, 10th bullet item: What are these “external operations”?
+
+Page 28, 1st bullet item: Are you implying that PLC and MS/TP devices don’t
+require firmware updates because they aren’t “over the air”?
+
+Page 28, 2nd bullet item, last sentence: These aren’t necessarily
+contradictory. You’ve already pointed out the PLC networks are easy to deploy
+because of the existing power wires. And these devices are mains powered. Smart
+grid meters, on the other hand, are mains powered but use a wireless connection
+for easy and quick deployment. I’d probably delete this sentence or consider
+rethinking it.
+
+Nits/editorial comments:
+
+General:
+
+For each use of “e.g.” (particularly) and “i.e.”, ensure that a comma follows.
+
+Drop all uses of “etc.”. In almost every case, it appears after something else
+in the sentence that already was indicative of the incomplete nature of the
+preceding list.
+
+Specific:
+
+Page 3, first (partial?) paragraph, 2nd sentence: Change “2016” to “2021” in
+“IEEE Std 802.15.9-2016”. The 2016 specification was a Recommended Practice and
+has been replaced by the 2021 version, which is a Standard. Insert “a” before
+“multiplexing”.
+
+Page 3, first (partial?) paragraph, 5th sentence: append an “s” to
+“specification”.
+
+Page 3, last bullet item: change “of” to “about”.
+
+Page 4, section 2.1, last sentence: delete “The”.
+
+Page 4, section 2.2, 1st paragraph, 2nd sentence: insert “The” before
+“Bluetooth SIG”.
+
+Page 4, section 2.2, 1st paragraph, 3rd sentence: append an “s” after
+“connection”.
+
+Page 4, section 2.2, 2nd paragraph, last sentence: change “is being” to “has
+been”, considering that RFC 9159 has been published.
+
+Page 5, section 2.3, 1st paragraph: change “low power” to “low-power”. Change
+“circuit switched” to “circuit-switched”. Change “packet mode” to “packet-mode”.
+
+Page 5, section 2.3, 3rd paragraph, 3rd sentence: insert “and” before security.
+
+Page 5, section 2.3, 5th paragraph, 2nd sentence: append a comma to “However”.
+
+Page 6, section 2.5, 1st paragraph, 2nd sentence: insert a hyphen between
+“consumer” and “level”.
+
+Page 6, section 2.6, 2nd paragraph: move “below” after “table”.
+
+Page 7, Table 1: insert a space into the IEEE specification names (e.g.,
+IEEE1901 -> IEEE 1901).
+
+Page 7, 1st paragraph, 1st sentence: insert “it” before “is”. Before the word
+“effective”, considering inserting “only” or “also” depending on what makes
+sense in the context of the “but”.
+
+Page 7, 1st paragraph, 2nd sentence: append an “s” after “rate”. Delete the
+colon. Make “Audio” and “Gaming” lower case.
+
+Page 7, 2nd paragraph, 3rd sentence: insert “IEEE 1901” at the beginning of the
+sentence unless all broadband networks operate on OFDM. If that’s the case,
+then delete the sentence entirely.
+
+Page 7, 3rd paragraph, 1st sentence: change “less” to “a lower”.
+
+Page 7, 3rd paragraph, 2nd sentence: delete the colon. Rewrite the applications
+in lower case. Insert “and” before “smart grid”.
+
+Page 7, 3rd paragraph, 3rd sentence: delete “standard”.
+
+Page 8, section 2.7, 1st sentence: insert “the” before “above”. Change
+“clauses” to “subsections”. IETF doesn’t use the term clause like IEEE does.
+
+Page 8, section 2.7, 2nd sentence: insert “the” before “dominant”.
+
+Page 9, section 3, title: insert “an” before “IPv6”.
+
+Page 9, section 3, 1st paragraph, last sentence: insert “the” before “6LoWPAN”.
+
+Page 9, 1st bullet item, 1st sentence: insert “the” before “Addressing” and
+make “Addressing” lower case. Append a comma after “addresses”.
+
+Page 9, 1st bullet item, last sentence: insert “for” before “when”. Append a
+comma to “broadcast”. Delete “and”. Change “try” to “trying”.
+
+Page 9, 2nd bullet item, 3rd sentence: change “most” to “greatest”. Change
+“optimum” to “optimal”.
+
+Page 9, 2nd bullet item, 4th sentence: insert “and” between “[RFC8163]” and
+“[RFC8105]”.
+
+Page 10, 3rd bullet item, last sentence: append “RFC” after “latter” to make it
+clear what is the latter.
+
+Page 11, 1st partial paragraph, 1st partial sentence: insert “and” between
+“[RFC8163],” and “[RFC8105]”.
+
+Page 11, 1st partial paragraph, 1st full sentence: change “to” to “also”.
+Change “compress” to “compressing”. Delete the “also” following that. Put a
+period at the end of the sentence.
+
+Page 11, 1st bullet item, 4th sentence: insert “The” before “6lo”. Change “is
+working” to “has worked”. Change “at” to “in the”.
+
+Page 11, 1st bullet item, 4th sentence: insert “the” before “initial”.
+
+Page 11, 2nd bullet item, 2nd sentence: insert “the” before “ESC”.
+
+Page 11, section 4.1, 1st paragraph, 1st sentence: delete “the”. Delete
+“standard”.
+
+Page 11, section 4.1, 1st paragraph, 3rd sentence: insert “mains-“ before
+“powered”. Both types of devices are powered. You could also use “grid-“, I
+guess, since “mains” is more of a British usage.
+
+Page 11, section 4.1, bullet list: don’t capitalize the items in the bullet
+list beyond the first word except where those are well-known terms that require
+the capitalization. Even AMI doesn’t appear to be consistently used with
+capitalization.
+
+Page 12, 6th bullet item: append a comma after “Conditioning”.
+
+Page 12, 8th bullet item: change “IEEE802” to “IEEE P802” or “IEEE 802”. The
+“P” standards for project. Insert “and” before “ETSI”.
+
+Page 12, 14th bullet item: change “long term” to “long-term”.
+
+Page 12, last paragraph: expand the use of “FAN”. I presume it is “Field Area
+Networks”.
+
+Page 13, section 4.3, 1st paragraph, 2nd sentence: change the hyphen in
+“highly-reliable” to a space.
+
+Page 13, section 4.3, 1st paragraph, 4th sentence: delete an extraneous space
+after appending the previously noted comma after “e.g.”.
+
+Page 13, section 4.3, bullet list: Use lower case after the first word in each
+item.
+
+Page 14, section 4.4, 1st paragraph, 1st sentence: insert “the” before
+“HomePlug”. Change “long distance” to “long-distance”.
+
+Page 15, 1st paragraph: insert “The” before “Netricity”. Delete “PLC standard”.
+
+Page 15, 1st paragraph, 2nd sentence: insert “an” before “IPv6”.
+
+Page 15, 1st paragraph, 3rd sentence: expand the acronym “MRHOF”. Change “the
+own” to “their own”.
+
+Page 15, section 5.1, 2nd paragraph: change “Variety” to “A variety”. Append a
+comma after “curtains”.
+
+Page 16, 1st paragraph, 3rd sentence: change “specially” to “especially”.
+
+Page 16, section 5.2, 1st paragraph, last sentence: append a comma following
+“wellness”.
+
+Page 16, last paragraph, last sentence: change “the” to “this”.
+
+Page 17, section 5.3, 3rd sentence: change “specially” to “especially”. Insert
+“and” before “healthcare”.
+
+Page 17, section 5.4, 1st paragraph, 2nd sentence: append a comma after “open”.
+
+Page 17, section 5.4, 1st paragraph, 3rd sentence: insert a hyphen between
+“low” and “cost”. Then append a comma after “low-cost”. Delete the hyphen in
+“inter-connect”.
+
+Page 17, section 5.4, 1st paragraph, last sentence: change “high speed” to
+“high-speed”.
+
+Page 18, 1st paragraph, last sentence: append a comma after “home-run”. Change
+“Cat-5 style” to “Cat 5-style”
+
+Page 18, 3rd paragraph, last sentence: change “low cost” to “low-cost”.
+
+Page 18, section 5.5, 2nd paragraph, 4th sentence: change “LCDs” to “displays”
+so that there isn’t an unnecessary constraint on the display technology in the
+example.
+
+Page 19, section 5.6, 2nd paragraph, last sentence: make the list of items
+following “area of” lower case. Append a comma after “management”.
+
+Page 19, section 5.6, 3rd paragraph, 2nd sentence: insert “a” before “WAN”.
+Append a comma following “Ethernet”.
+
+Page 19, section 5.6, 4th paragraph, 1st sentence: insert “and” between “labor”
+and “operational”.
+
+Page 19, section 5.6, 4th paragraph, 2nd sentence: change “charge” to
+“charging”. Append a comma after “theft”.
+
+Page 19, section 5.6, last paragraph, 1st sentence: append an “s” to “rate”.
+Then append a comma to “rates”.
+
+Page 20, 1st paragraph, 1st sentence: insert “A” before “WASA”. Append an “s”
+to “amount”. Insert “a” before “wide”.
+
+Page 20, 1st paragraph, 2nd sentence: append a comma after “controlling”.
+
+Page 26, Appendix A, 1st paragraph, 1st sentence: Delete “The”.
+
+Page 27, 4th bullet item, 1st sentence: change “more” to “a higher”.
+
+Page 27, 6th bullet item, 2nd sentence: insert “be” before “moved.
+
+Page 27, 8th bullet item: append a comma after “example”. Delete “service”.
+
+Page 27, 9th bullet item, 2nd sentence: append an “s” to “case”. Append an “s”
+to “length”.
+
+Page 27, 10th bullet item: change the second “the” to “a”.
+
+Page 28, 1st bullet item, 2nd sentence: append a comma after “cases”. Change
+“are” to “is”.
+
+Page 28, 2nd bullet item, 2nd sentence: append an “s” after “requirement”.
+Insert “the” before “6lo”.
+
+
+

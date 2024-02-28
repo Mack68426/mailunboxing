@@ -1,0 +1,2147 @@
+
+From nobody Mon Feb  1 07:20:52 2021
+Return-Path: <iesg-secretary@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id BEF633A120A; Mon,  1 Feb 2021 07:20:46 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: The IESG <iesg-secretary@ietf.org>
+To: "IETF-Announce" <ietf-announce@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.24.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+CC: 6lo-chairs@ietf.org, 6lo@ietf.org, Carles Gomez <carlesgo@entel.upc.edu>,  carlesgo@entel.upc.edu, draft-ietf-6lo-plc@ietf.org, ek.ietf@gmail.com
+Reply-To: last-call@ietf.org
+Sender: <iesg-secretary@ietf.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Message-ID: <161219284623.29779.16495156698411360270@ietfa.amsl.com>
+Date: Mon, 01 Feb 2021 07:20:46 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/f59y8rMg-p_aCKYSSEtBzoJK4qQ>
+Subject: [6lo] Last Call: <draft-ietf-6lo-plc-05.txt> (Transmission of IPv6 Packets over PLC Networks) to Proposed Standard
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 01 Feb 2021 15:20:47 -0000
+
+The IESG has received a request from the IPv6 over Networks of
+Resource-constrained Nodes WG (6lo) to consider the following document: -
+'Transmission of IPv6 Packets over PLC Networks'
+  <draft-ietf-6lo-plc-05.txt> as Proposed Standard
+
+The IESG plans to make a decision in the next few weeks, and solicits final
+comments on this action. Please send substantive comments to the
+last-call@ietf.org mailing lists by 2021-02-15. Exceptionally, comments may
+be sent to iesg@ietf.org instead. In either case, please retain the beginning
+of the Subject line to allow automated sorting.
+
+Abstract
+
+
+   Power Line Communication (PLC), namely using the electric-power lines
+   for indoor and outdoor communications, has been widely applied to
+   support Advanced Metering Infrastructure (AMI), especially smart
+   meters for electricity.  The inherent advantage of existing
+   electricity infrastructure facilitates the expansion of PLC
+   deployments, and moreover, a wide variety of accessible devices
+   raises the potential demand of IPv6 for future applications.  This
+   document describes how IPv6 packets are transported over constrained
+   PLC networks, such as ITU-T G.9903, IEEE 1901.1 and IEEE 1901.2.
+
+
+
+
+The file can be obtained via
+https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+
+
+No IPR declarations have been submitted directly on this I-D.
+
+
+
+
+
+
+From nobody Sat Feb  6 12:11:34 2021
+Return-Path: <cabo@tzi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 144183AC879; Sat,  6 Feb 2021 12:11:29 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.899
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.899 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id eA61a7J7zP_p; Sat,  6 Feb 2021 12:11:26 -0800 (PST)
+Received: from gabriel-vm-2.zfn.uni-bremen.de (gabriel-vm-2.zfn.uni-bremen.de [134.102.50.17]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 615D43AC805; Sat,  6 Feb 2021 12:11:26 -0800 (PST)
+Received: from [192.168.217.152] (p5089a828.dip0.t-ipconnect.de [80.137.168.40]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by gabriel-vm-2.zfn.uni-bremen.de (Postfix) with ESMTPSA id 4DY3Mc5vpBzyXT; Sat,  6 Feb 2021 21:11:24 +0100 (CET)
+From: Carsten Bormann <cabo@tzi.org>
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Mime-Version: 1.0 (Mac OS X Mail 14.0 \(3654.60.0.2.21\))
+Date: Sat, 6 Feb 2021 21:11:24 +0100
+Message-Id: <0A309E52-C70F-4555-B21B-D9A5721C98A5@tzi.org>
+To: 6lo@ietf.org, 6tisch@ietf.org, lp-wan@ietf.org, lwip@ietf.org, roll@ietf.org
+X-Mailer: Apple Mail (2.3654.60.0.2.21)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/S2YqejDeiO0WvYOljCQfJlFbgOk>
+Subject: [6lo] Constrained Node/Network Cluster @ IETF110: DRAFT AGENDA
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 06 Feb 2021 20:11:29 -0000
+
+Here is my usual eclectic condensed agenda based on the DRAFT AGENDA
+for IETF110.  Remember that there is still quite some potential for
+changes.
+
+The IoT-relevant conflicts that meet the eye this time are LAKE/RATS,
+IOTOPS/COSE, CORE/DANISH, in order from hurtful to disastrous
+(ROLL/SUIT and LPWAN/RATS are probably bearable).
+
+All times *on my agenda* are in UTC (the default page is UTC+0100).
+https://datatracker.ietf.org/meeting/agenda-utc might be handy.
+
+Gr=C3=BC=C3=9Fe, Carsten
+
+
+MONDAY, March 1, 2021
+
+1600-1800  Hackathon Kickoff
+Rm 1    	GEN	hackathon	Hackathon
+
+THURSDAY, March 4, 2021
+
+1700-1900  Technology Deep Dive
+Rm 1    		tdd	Technology Deep Dive
+
+FRIDAY, March 5, 2021
+
+1600-1800  Hackathon Closing
+Rm 1    	GEN	hackathon	Hackathon
+
+MONDAY, March 8, 2021
+
+1200-1400  Session I
+Rm 1    	ART	dispatch	Dispatch WG - Joint with ARTAREA
+Rm 2    	IRTF	irtfopen	IRTF Open Meeting
+Rm 6    	RTG	raw	Reliable and Available Wireless WG
+Rm 8    	SEC	emu	EAP Method Update WG
+
+1430-1530  Session II
+Rm 1    	ART ***	asdf	A Semantic Definition Format for Data =
+and Interactions of Things WG
+Rm 3    	IRTF	panrg	Path Aware Networking RG
+Rm 5    	RTG	detnet	Deterministic Networking WG
+Rm 7    	SEC	mls	Messaging Layer Security WG
+
+1600-1800  Session III
+Rm 2    	ART ***	core	Constrained RESTful Environments WG
+Rm 7    	SEC	tls	Transport Layer Security WG
+Rm 8    	TSV	tsvwg	Transport Area Working Group WG
+
+TUESDAY, March 9, 2021
+
+1200-1400  Session I
+Rm 1    	ART	webtrans	WebTransport WG
+Rm 3    	INT	6man	IPv6 Maintenance WG
+Rm 6    	RTG	bier	Bit Indexed Explicit Replication WG
+Rm 8    	SEC ***	lake	Lightweight Authenticated Key Exchange =
+WG
+Rm 9    	SEC ***	rats	Remote ATtestation ProcedureS WG
+
+1430-1530  Session II
+Rm 3    	OPS ***	iotops	IOT Operations WG
+Rm 4    	RTG	babel	Babel routing protocol WG
+Rm 5    	RTG	detnet	Deterministic Networking WG
+Rm 7    	SEC	acme	Automated Certificate Management =
+Environment WG
+Rm 8    	SEC ***	cose	CBOR Object Signing and Encryption WG
+
+1600-1800  Session III
+Rm 3    	INT ***	drip	Drone Remote ID Protocol WG
+Rm 5    	OPS	v6ops	IPv6 Operations WG
+Rm 8    	SEC	gnap	Grant Negotiation and Authorization =
+Protocol WG
+
+WEDNESDAY, March 10, 2021
+
+1200-1400  Session I
+Rm 1    	ART	jsonpath	JSON Path WG
+Rm 2    	INT	intarea	Internet Area Working Group WG
+Rm 3    	IRTF	icnrg	Information-Centric Networking
+Rm 8    	SEC	privacypass	Privacy Pass WG
+Rm 9    	TSV	quic	QUIC WG
+
+1430-1530  Session II
+Rm 4    	INT ***	lpwan	IPv6 over Low Power Wide-Area Networks =
+WG
+Rm 5    	IRTF	qirg	Quantum Internet Research Group
+Rm 6    	OPS	anima	Autonomic Networking Integrated Model =
+and Approach WG
+Rm 8    	SEC ***	rats	Remote ATtestation ProcedureS WG
+Rm 9    	TSV	tsvwg	Transport Area Working Group WG
+
+THURSDAY, March 11, 2021
+
+1200-1400  Session I
+Rm 2    	INT ***	6lo	IPv6 over Networks of =
+Resource-constrained Nodes WG
+Rm 3    	INT	add	Adaptive DNS Discovery WG
+Rm 4    	INT	dnssd	Extensions for Scalable DNS Service =
+Discovery WG - Joint with HOMENET
+Rm 4    	INT	homenet	Home Networking WG - Joint with DNSSD
+Rm 8    	SEC	saag	Security Area Open Meeting
+Rm 9    	TSV	tsvarea	Transport Area Open Meeting
+
+1430-1530  Session II
+Rm 1    	ART	wpack	Web Packaging WG
+Rm 4    	IRTF	pearg	Privacy Enhancements and Assessments =
+Research Group
+Rm 5    	RTG ***	roll	Routing Over Low power and Lossy =
+networks WG
+Rm 6    	SEC	openpgp	Open Specification for Pretty Good =
+Privacy WG
+Rm 7    	SEC ***	suit	Software Updates for Internet of Things =
+WG
+
+1600-1800  Session III
+Rm 2    	INT	6man	IPv6 Maintenance WG
+Rm 4    	IRTF***	t2trg	Thing-to-Thing
+Rm 7    	RTG	rtgarea	Routing Area Open Meeting  - Joint with =
+RTGWG
+Rm 8    	SEC	secdispatch	Security Dispatch WG
+Rm 9    	TSV	masque	Multiplexed Application Substrate over =
+QUIC Encryption WG
+
+FRIDAY, March 12, 2021
+
+1200-1400  Session I
+Rm 1    	ART ***	core	Constrained RESTful Environments WG
+Rm 3    	IRTF	cfrg	Crypto Forum
+Rm 7    	RTG	rift	Routing In Fat Trees WG
+Rm 8    	SEC ***	danish	DANE AutheNtication for Iot Service =
+Hardening BOF
+
+1430-1530  Session II
+Rm 1    	ART ***	cbor	Concise Binary Object Representation =
+Maintenance and Extensions WG
+Rm 3    	INT	add	Adaptive DNS Discovery WG
+Rm 5    	IRTF	maprg	Measurement and Analysis for Protocols
+
+1600-1800  Session III
+Rm 2    	ART	httpapi	Building Blocks for HTTP APIs WG
+Rm 3    	IRTF	coinrg	Computing in the Network Research Group
+Rm 7    	SEC ***	ace	Authentication and Authorization for =
+Constrained Environments WG
+
+
+
+From nobody Fri Feb 12 02:01:10 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 7B4763A14F1; Fri, 12 Feb 2021 02:01:08 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Dan Romascanu via Datatracker <noreply@ietf.org>
+To: <ops-dir@ietf.org>
+Cc: 6lo@ietf.org, draft-ietf-6lo-plc.all@ietf.org, last-call@ietf.org, dromasca@gmail.com
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.25.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <161312406846.4387.15224651257821067404@ietfa.amsl.com>
+Reply-To: Dan Romascanu <dromasca@gmail.com>
+Date: Fri, 12 Feb 2021 02:01:08 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/xzDiiUWAyMRJSa4-GxTKLqEPpO8>
+Subject: [6lo] Opsdir last call review of draft-ietf-6lo-plc-05
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 12 Feb 2021 10:01:09 -0000
+
+Reviewer: Dan Romascanu
+Review result: Has Issues
+
+This document describes how IPv6 packets are transported over constrained Power
+Line Communication (PLC) networks. It is a clear and well-written document and
+its content is relevant for all operators that will have such networks under
+their administration. I have however one concern that I would suggest the OPS
+AD to clarify before approving this document. There is no mention in the
+document of the operational and manageability aspects. How will these networks
+be managed, monitored, troubleshooted?  Which existing OAM protocols and
+procedures apply and will extensions be needed? Are there / will there be any
+new new interface types ("ifType" values) required as per RFC 8892? Maybe other
+documents exist in the IEEE or ITU-T that document these aspects - if so it
+would be useful to reference them. If other documents are in planning in the
+IETF on this respect - please clarify.
+
+
+
+From nobody Fri Feb 12 16:38:50 2021
+Return-Path: <agenda@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 0471C3A123C; Fri, 12 Feb 2021 16:33:35 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: "\"IETF Secretariat\"" <agenda@ietf.org>
+To: <6lo-chairs@ietf.org>, <carlesgo@entel.upc.edu>
+Cc: 6lo@ietf.org, ek.ietf@gmail.com
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.25.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <161317641500.31337.13019828313496947444@ietfa.amsl.com>
+Date: Fri, 12 Feb 2021 16:33:35 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/M4WlIlkNSVkSkeXyW8gQpAw_ayM>
+Subject: [6lo] 6lo - Requested session has been scheduled for IETF 110
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 13 Feb 2021 00:33:45 -0000
+
+Dear Carles Gomez,
+
+The session(s) that you have requested have been scheduled.
+Below is the scheduled session information followed by
+the original request. 
+
+
+    6lo Session 1 (1:00 requested)
+    Thursday, 11 March 2021, Session I 1300-1500
+    Room Name: Room 2 size: 502
+    ---------------------------------------------
+
+
+iCalendar: https://datatracker.ietf.org/meeting/110/sessions/6lo.ics
+
+Request Information:
+
+
+---------------------------------------------------------
+Working Group Name: IPv6 over Networks of Resource-constrained Nodes
+Area Name: Internet Area
+Session Requester: Carles Gomez
+
+
+Number of Sessions: 1
+Length of Session(s):  1 Hour
+Number of Attendees: 50
+Conflicts to Avoid: 
+ Chair Conflict: tcpm ippm rats
+ Technology Overlap: lwig lpwan intarea roll core 6tisch 6man ipwave ace detnet icnrg t2trg iccrg manet cbor homenet v6ops lake anima raw
+
+
+
+
+
+
+People who must be present:
+  Carles Gomez
+  Erik Kline
+  Shwetha Bhandari
+
+Resources Requested:
+
+Special Requests:
+  Please also avoid collision with IoT-related BOFs.
+---------------------------------------------------------
+
+
+
+From nobody Sat Feb 13 00:04:53 2021
+Return-Path: <cabo@tzi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 66DF23A03FA; Sat, 13 Feb 2021 00:04:52 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.919
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.919 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H4=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id epg86mUjvgyb; Sat, 13 Feb 2021 00:04:49 -0800 (PST)
+Received: from gabriel-vm-2.zfn.uni-bremen.de (gabriel-vm-2.zfn.uni-bremen.de [134.102.50.17]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 21F643A03C9; Sat, 13 Feb 2021 00:04:48 -0800 (PST)
+Received: from [192.168.217.152] (p5089a828.dip0.t-ipconnect.de [80.137.168.40]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by gabriel-vm-2.zfn.uni-bremen.de (Postfix) with ESMTPSA id 4Dd2Q4425ZzyT7; Sat, 13 Feb 2021 08:42:20 +0100 (CET)
+From: Carsten Bormann <cabo@tzi.org>
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Mime-Version: 1.0 (Mac OS X Mail 14.0 \(3654.60.0.2.21\))
+Date: Sat, 13 Feb 2021 08:42:20 +0100
+Message-Id: <527A2B57-A9CD-45D3-AFA7-6B31973E56AD@tzi.org>
+To: 6lo@ietf.org, 6tisch@ietf.org, lp-wan@ietf.org, lwip@ietf.org, roll@ietf.org
+X-Mailer: Apple Mail (2.3654.60.0.2.21)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/KXML_Lu_9u8gdMRJ26xAMGsKxdI>
+Subject: [6lo] Constrained Node/Network Cluster @ IETF110: "FINAL" AGENDA
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 13 Feb 2021 08:04:52 -0000
+
+Here is my usual eclectic condensed agenda based on the "FINAL" AGENDA
+for IETF110.  Remember that further agenda changes can still happen.
+
+A number of changes have been made with respect to the draft agenda.
+CBOR has moved to Monday into what was ASDF's slot, and ASDF is now on
+top of IOTOPS (ugh).  COSE has moved into Friday's middle slot that
+had been used by CBOR.  Other conflicts that remain are LAKE/RATS,
+CORE/DANISH -- you just can't do both IoT application layer and IoT
+security this time (ROLL/SUIT and LPWAN/RATS are probably bearable).
+
+All times *on my agenda* are in UTC (the default page is UTC+0100).
+https://datatracker.ietf.org/meeting/agenda-utc might be handy, and
+the main agenda tool now has an awesome timezone selection tool.
+Note that both EU and US are still on winter time (standard time)
+then; the US moves forward on Mar 14 with the EU following Mar 28 --
+we'll have two weeks of confusion this time right after the IETF.
+
+Gr=C3=BC=C3=9Fe, Carsten
+
+MONDAY, March 1, 2021
+
+1600-1800  Hackathon Kickoff
+Rm 1    	GEN	hackathon	Hackathon
+
+THURSDAY, March 4, 2021
+
+1700-1900  Technology Deep Dive
+Rm 1    		tdd	Technology Deep Dive
+
+FRIDAY, March 5, 2021
+
+1600-1800  Hackathon Closing
+Rm 1    	GEN	hackathon	Hackathon
+
+MONDAY, March 8, 2021
+
+1200-1400  Session I
+Rm 1    	ART	dispatch	Dispatch WG - Joint with ARTAREA
+Rm 2    	IRTF	irtfopen	IRTF Open Meeting
+Rm 6    	RTG	raw	Reliable and Available Wireless WG
+Rm 8    	SEC	emu	EAP Method Update WG
+
+1430-1530  Session II
+Rm 1    	ART ***	cbor	Concise Binary Object Representation =
+Maintenance and Extensions WG
+Rm 2    	IRTF	maprg	Measurement and Analysis for Protocols
+Rm 3    	RTG	detnet	Deterministic Networking WG
+Rm 5    	RTG	rift	Routing In Fat Trees WG
+Rm 6    	SEC	mls	Messaging Layer Security WG
+
+1600-1800  Session III
+Rm 2    	ART ***	core	Constrained RESTful Environments WG
+Rm 3    	ART	webtrans	WebTransport WG
+Rm 7    	SEC	tls	Transport Layer Security WG
+Rm 8    	TSV	tsvwg	Transport Area Working Group WG
+
+TUESDAY, March 9, 2021
+
+1200-1400  Session I
+Rm 3    	INT	6man	IPv6 Maintenance WG
+Rm 6    	RTG	bier	Bit Indexed Explicit Replication WG
+Rm 8    	SEC ***	lake	Lightweight Authenticated Key Exchange =
+WG
+Rm 9    	SEC ***	rats	Remote ATtestation ProcedureS WG
+
+1430-1530  Session II
+Rm 1    	ART ***	asdf	A Semantic Definition Format for Data =
+and Interactions of Things WG
+Rm 4    	INT	add	Adaptive DNS Discovery WG
+Rm 5    	OPS ***	iotops	IOT Operations WG
+Rm 6    	RTG	babel	Babel routing protocol WG
+Rm 7    	RTG	detnet	Deterministic Networking WG
+Rm 9    	SEC	acme	Automated Certificate Management =
+Environment WG
+
+1600-1800  Session III
+Rm 3    	INT ***	drip	Drone Remote ID Protocol WG
+Rm 5    	OPS	v6ops	IPv6 Operations WG
+Rm 8    	SEC	gnap	Grant Negotiation and Authorization =
+Protocol WG
+Rm 9    	TSV	masque	Multiplexed Application Substrate over =
+QUIC Encryption WG
+
+WEDNESDAY, March 10, 2021
+
+1200-1400  Session I
+Rm 2    	ART	jsonpath	JSON Path WG
+Rm 3    	IRTF	icnrg	Information-Centric Networking
+Rm 8    	SEC ***	teep	Trusted Execution Environment =
+Provisioning WG
+Rm 9    	TSV	quic	QUIC WG
+
+1430-1530  Session II
+Rm 4    	INT ***	lpwan	IPv6 over Low Power Wide-Area Networks =
+WG
+Rm 5    	IRTF	qirg	Quantum Internet Research Group
+Rm 6    	OPS	anima	Autonomic Networking Integrated Model =
+and Approach WG
+Rm 8    	SEC ***	rats	Remote ATtestation ProcedureS WG
+Rm 9    	TSV	tsvwg	Transport Area Working Group WG
+
+THURSDAY, March 11, 2021
+
+1200-1400  Session I
+Rm 2    	INT ***	6lo	IPv6 over Networks of =
+Resource-constrained Nodes WG
+Rm 3    	INT	add	Adaptive DNS Discovery WG
+Rm 4    	INT	dnssd	Extensions for Scalable DNS Service =
+Discovery WG - Joint with HOMENET
+Rm 4    	INT	homenet	Home Networking WG - Joint with DNSSD
+Rm 8    	SEC	saag	Security Area Open Meeting
+Rm 9    	TSV	tsvarea	Transport Area Open Meeting
+
+1430-1530  Session II
+Rm 3    	IRTF	panrg	Path Aware Networking RG
+Rm 6    	RTG ***	roll	Routing Over Low power and Lossy =
+networks WG
+Rm 7    	SEC	openpgp	Open Specification for Pretty Good =
+Privacy WG
+Rm 8    	SEC ***	suit	Software Updates for Internet of Things =
+WG
+
+1600-1800  Session III
+Rm 2    	INT	6man	IPv6 Maintenance WG
+Rm 4    	IRTF***	t2trg	Thing-to-Thing
+Rm 7    	RTG	rtgarea	Routing Area Open Meeting  - Joint with =
+RTGWG
+Rm 8    	SEC	secdispatch	Security Dispatch WG
+
+FRIDAY, March 12, 2021
+
+1200-1400  Session I
+Rm 1    	ART ***	core	Constrained RESTful Environments WG
+Rm 3    	IRTF	cfrg	Crypto Forum
+Rm 7    	SEC ***	danish	DANE AutheNtication for Iot Service =
+Hardening BOF
+
+1430-1530  Session II
+Rm 3    	ART	wpack	Web Packaging WG
+Rm 4    	INT	intarea	Internet Area Working Group WG
+Rm 6    	IRTF	pearg	Privacy Enhancements and Assessments =
+Research Group
+Rm 8    	SEC ***	cose	CBOR Object Signing and Encryption WG
+
+1600-1800  Session III
+Rm 1    	ART	httpapi	Building Blocks for HTTP APIs WG
+Rm 2    	IRTF	coinrg	Computing in the Network Research Group
+Rm 6    	SEC ***	ace	Authentication and Authorization for =
+Constrained Environments WG
+Rm 8    	SEC	privacypass	Privacy Pass WG
+
+
+From nobody Sun Feb 14 14:50:10 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 138483A0CE1; Sun, 14 Feb 2021 14:50:09 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Robert Sparks via Datatracker <noreply@ietf.org>
+To: <secdir@ietf.org>
+Cc: 6lo@ietf.org, draft-ietf-6lo-plc.all@ietf.org, last-call@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.25.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <161334300902.2919.6271890974537335347@ietfa.amsl.com>
+Reply-To: Robert Sparks <rjsparks@nostrum.com>
+Date: Sun, 14 Feb 2021 14:50:09 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/8-4lXeF0SmM2wncbqznS8I9uVZg>
+Subject: [6lo] Secdir last call review of draft-ietf-6lo-plc-05
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sun, 14 Feb 2021 22:50:09 -0000
+
+Reviewer: Robert Sparks
+Review result: Has Issues
+
+I have reviewed this document as part of the security directorate's ongoing
+effort to review all IETF documents being processed by the IESG. These comments
+were written primarily for the benefit of the security area directors. Document
+editors and WG chairs should treat these comments just like any other last call
+comments.
+
+This document has issues that should be addressed before publication as
+Proposed Standard RFC.
+
+Document reviewed: draft-ietf-6lo-plc-05
+
+This document's primary point is to standardize mappings of ipv6 identifiers
+for using ipv6 over IEEE 1901.1, 1901.2, and IT-T G.9903 networks.
+
+Those standards are not publicy available, and I have not reviewed how these
+mappings and the security mechanisms in those protocols interact.
+
+The document has content that is not needed for its purpose. Section 5 in
+particular might be useful in an informational RFC, but is has no impact on
+someone implementing what this document is trying to standardize.
+
+The security considerations section speaks primarily to generic considerations
+for 6lo-like networks. There is no specific discussion of the impact of the
+identifier mappings with the underlying protocols, in particular the
+constraints that don't allow using the full number of bits of entropy in the
+identifiers in those underlying protocols. There is only a passing mention of
+RFC8065.
+
+Implementors are advised to "look at" RFC8604 when considering building stable
+addresses, but this document specifies doing things that RFC8604 recommends
+against (see the use of RFC2464, for example). More discussion seems warranted.
+
+There is a short mention of the possibility of acquiring a network encryption
+key during onboarding but there's no discussion about what that means for these
+specific layer-2 protocols.
+
+Editorial comments:
+
+At section 4.6, the first paragraph can make its point more clearly. All that's
+needed to say is that the lower layers handle segmentation and reassembly, but
+the adaptation layer still needs to be ready to do so in the lower layer cant
+handle the 1280 octet MTU. At the last paragraph, when you say "referring to"
+do you mean "as specified in"?
+
+At section 7, "For security consideration, link layer security is guaranteed in
+every PLC technology." needs clarification. Do you mean the three protocols
+discussed here provide link layer security? Or do you mean to say that if
+anyone plans to provide an adaptation layer to some other PLC protocol, that it
+must provide link layer security? Or do you mean something else?
+
+Nit: Expand LLN on first use.
+
+
+
+From nobody Mon Feb 15 23:35:36 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id F00893A0FD9; Mon, 15 Feb 2021 23:35:34 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Meral Shirazipour via Datatracker <noreply@ietf.org>
+To: <gen-art@ietf.org>
+Cc: 6lo@ietf.org, draft-ietf-6lo-plc.all@ietf.org, last-call@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.25.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <161346093492.24845.8498364727030638597@ietfa.amsl.com>
+Reply-To: Meral Shirazipour <meral.shirazipour@ericsson.com>
+Date: Mon, 15 Feb 2021 23:35:34 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/jtVEUiz11uMcTxS3iNbPdhtaBRA>
+Subject: [6lo] Genart last call review of draft-ietf-6lo-plc-05
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 16 Feb 2021 07:35:35 -0000
+
+Reviewer: Meral Shirazipour
+Review result: Almost Ready
+
+I am the assigned Gen-ART reviewer for this draft. The General Area Review Team
+(Gen-ART) reviews all IETF documents being processed by the IESG for the IETF
+Chair.  Please treat these comments just like any other last call comments.
+
+For more information, please see the FAQ at
+
+<https://trac.ietf.org/trac/gen/wiki/GenArtfaq>.
+
+Document: draft-ietf-6lo-plc-05
+
+Reviewer: Meral Shirazipour
+Review Date: 2021-02-15
+IETF LC End Date: 2021-02-15
+IESG Telechat date: NA
+
+Summary: This draft is ready to be published as Standards Track RFC , no more
+comments other than those mentioned on the list already.
+
+Major issues:
+
+Minor issues:
+
+Nits/editorial comments:
+
+Best Regards,
+Meral
+---
+Meral Shirazipour
+Ericsson
+www.ericsson.com
+
+
+
+From nobody Tue Feb 16 08:04:17 2021
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 4DE993A0912 for <6lo@ietfa.amsl.com>; Tue, 16 Feb 2021 08:04:16 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.196
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.196 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H4=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id ksctUbWGPBvj for <6lo@ietfa.amsl.com>; Tue, 16 Feb 2021 08:04:14 -0800 (PST)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id A3CFD3A09A4 for <6lo@ietf.org>; Tue, 16 Feb 2021 08:03:53 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 11GG3pe9013923 for <6lo@ietf.org>; Tue, 16 Feb 2021 17:03:51 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id 459B01D53C1 for <6lo@ietf.org>; Tue, 16 Feb 2021 17:03:51 +0100 (CET)
+Received: from 10.192.137.220 by webmail.entel.upc.edu with HTTP; Tue, 16 Feb 2021 17:03:51 +0100
+Message-ID: <c4f185a4eab73e073608ae0e63bce942.squirrel@webmail.entel.upc.edu>
+Date: Tue, 16 Feb 2021 17:03:51 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at violet
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Tue, 16 Feb 2021 17:03:51 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/wCsgq4v-_DiFxRvzaeyhFqj43wQ>
+Subject: [6lo] Call for agenda items - 6Lo session at IETF 110
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 16 Feb 2021 16:04:16 -0000
+
+Dear 6Lo WG,
+
+As you may have seen, a 6Lo WG session has been scheduled for IETF 110.
+The coordinates of the session are:
+
+- Day:   Thursday, 11th March
+- Time:  13:00-15:00 (UTC +01)
+- Room:  2
+
+Please send your request to present updates of existing drafts or new
+drafts by Tuesday, 23rd February 2021.
+
+Please include:
+
+- Draft name and a short description
+- Presenter name
+- Purpose of the presentation
+- Time needed for the presentation
+
+Thanks,
+
+Shwetha and Carles
+
+
+From nobody Fri Feb 19 17:15:19 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 567353A0BC5; Fri, 19 Feb 2021 17:15:14 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+From: Joseph Touch via Datatracker <noreply@ietf.org>
+To: <tsv-art@ietf.org>
+Cc: 6lo@ietf.org, draft-ietf-6lo-plc.all@ietf.org, last-call@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.26.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <161378371431.3198.14769807764668038244@ietfa.amsl.com>
+Reply-To: Joseph Touch <touch@strayalpha.com>
+Date: Fri, 19 Feb 2021 17:15:14 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/pB40QL4pr8MbUJjEr54FCRMHJpQ>
+Subject: [6lo] Tsvart last call review of draft-ietf-6lo-plc-05
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 20 Feb 2021 01:15:14 -0000
+
+Reviewer: Joseph Touch
+Review result: Ready with Issues
+
+This document has been reviewed as part of the transport area review team's
+ongoing effort to review key IETF documents. These comments were written
+primarily for the transport area directors, but are copied to the document's
+authors and WG to allow them to address any issues raised and also to the IETF
+discussion list for information.
+
+When done at the time of IETF Last Call, the authors should consider this
+review as part of the last-call comments they receive. Please always CC
+tsv-art@ietf.org if you reply to or forward this review.
+
+---
+
+The only significant transport issue in this doc is the issue of MTU support.
+Secs 3.3 and 4.6 refers to underlying frag/reassembly per RFC4944. First, these
+sections seem redundant; normative requirements should appear in only one
+section if both are retained.
+
+More notably, the use of a 16-bit tag in that spec is already known to be
+problematic for IPv4 fragmentation and could cause problems here as well, e.g.,
+per RFC4963. This issue should be addressed, notably if there is a reason why a
+16-bit tag is considered sufficient for this use it should be stated or some
+other shim layer should be proposed with a more robust tag (e.g., 32 bits).
+
+Some minor additional suggestions follow:
+
+The intro refers to “6lo”; this term should be defined before being used. The
+scenarios should include a citation if available. Similarly, LLN should be
+defined. Work that did not receive consensus might be mentioned elsewhere or
+even omitted completely, but seems premature in the intro. Also, “the previous
+work” in the last sentence is ambiguous; it would be useful to refer to the
+RFCs, the draft, or whatever else to which it refers.
+
+Sec 3 includes “Moreover, recently a new …”, which seems redundant; it might be
+just “A new…”. Again, this section (and later ones too) refers to “6lo” as a
+category of sorts, which needs to be defined (and included in the
+acronym/terminology list).
+
+
+
+
+From nobody Sun Feb 21 20:06:02 2021
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 979213A0CD9; Sun, 21 Feb 2021 20:05:57 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.26.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: 6lo@ietf.org
+Message-ID: <161396675757.17010.1325049724274357693@ietfa.amsl.com>
+Date: Sun, 21 Feb 2021 20:05:57 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/nJP-jqliOC6rA42O1VPBg-7rXAA>
+Subject: [6lo] I-D Action: draft-ietf-6lo-use-cases-10.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 22 Feb 2021 04:05:58 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : IPv6 over Constrained Node Networks (6lo) Applicability & Use cases
+        Authors         : Yong-Geun Hong
+                          Carles Gomez
+                          Abdur Rashid Sangi
+                          Samita Chakrabarti
+	Filename        : draft-ietf-6lo-use-cases-10.txt
+	Pages           : 28
+	Date            : 2021-02-21
+
+Abstract:
+   This document describes the applicability of IPv6 over constrained
+   node networks (6lo) and provides practical deployment examples.  In
+   addition to IEEE 802.15.4, various link layer technologies such as
+   ITU-T G.9959 (Z-Wave), Bluetooth Low Energy, DECT-ULE, MS/TP, NFC,
+   and PLC are used as examples.  The document targets an audience who
+   would like to understand and evaluate running end-to-end IPv6 over
+   the constrained node networks for local or Internet connectivity.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-use-cases/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-use-cases-10
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-use-cases-10
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-use-cases-10
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+
+From nobody Sun Feb 21 20:30:59 2021
+Return-Path: <yonggeun.hong@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 2DB8B3A0D63 for <6lo@ietfa.amsl.com>; Sun, 21 Feb 2021 20:30:58 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.096
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.096 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_BLOCKED=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 5p7I_gZJfjfA for <6lo@ietfa.amsl.com>; Sun, 21 Feb 2021 20:30:56 -0800 (PST)
+Received: from mail-lj1-x236.google.com (mail-lj1-x236.google.com [IPv6:2a00:1450:4864:20::236]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 267DB3A0D5D for <6lo@ietf.org>; Sun, 21 Feb 2021 20:30:56 -0800 (PST)
+Received: by mail-lj1-x236.google.com with SMTP id a17so54284874ljq.2 for <6lo@ietf.org>; Sun, 21 Feb 2021 20:30:55 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:references:in-reply-to:from:date:message-id:subject:to;  bh=2BlxObXXnOK2JX0/BO09DxYaSE9+RkfUFq+KrL1ol/c=; b=CCt+Vdq1du4XXOKjhECmP21X6E3iRd7utU4eKTbM5e0QJJupsyJXHchNeEFO/hubWi 27UtloEOR6WCA/gd/PY8MYe5DaZTGzZjEdQsPG58YYs4aZKs7ehOna9bSJaX69HkG8p+ uQC4WZH5VivqoG7+fFCq/rTx9uo2ysomoqlfFjA//CGyl/tqYBz4cVi85PjD8UZ9SUuy +o2Ls3YE+vHlBGiEOnLknROiBUhMech2FCeplZSCU8e1YsLOLNUEl5fwkEbevUSx+x+x jalrcCgHDaQa1CHJkf/IvSPfTImbD9uTAjNaTytyLSRgHqH8qQ1/YNDXtPgKcu3d/E5y GjBg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:references:in-reply-to:from:date :message-id:subject:to; bh=2BlxObXXnOK2JX0/BO09DxYaSE9+RkfUFq+KrL1ol/c=; b=eiuYXALemLwqcWndEGu10WIpwG71HIJr0/2qfWYYEuNCSx5oP1UWLYk0qNcC6HnJdg uisXjNT99yulLMowFGbcA3Yei+PDNlLludrYwHzT2M3DchimHy4JEYGx+2ZUukwvSHhh zlxN6mdaMbsA33aoQIELOkhm2suoUS+4F78Imscxq+hvs6YcZTAHC1uguvLPIKCv+5Tt 8BqT5FIE/iD5BSkZt0iIP7CNo7NWtvWe/BzuxUADU9qOosX9f2H/4ocLPpJR6x1lHHRA 6wCkDK+huF7jnPe0Cze0RC2kgcSdJlT3hQR8QSINNbTWnjC0dX/g/5vSqUNhBFAI1WXW nLvA==
+X-Gm-Message-State: AOAM533Oc4eQ3JN2jeAcmiKwRdlRTsdhDIaRE7MpQzzoeYOxU+GE//Q9 NeBGnfUNBwTvYRHOkN2jJ0AUTst2UM7TyMLml71zdgCyGb0=
+X-Google-Smtp-Source: ABdhPJwE+VOQDMZWSyclFZRN45PUONa9gRddCcQ4qDVwAu6ZqCcLU7PteohRZhUcSGA4Am+Frtm8jMNuoQ4uAly/csA=
+X-Received: by 2002:a19:f814:: with SMTP id a20mr12267922lff.212.1613968253785;  Sun, 21 Feb 2021 20:30:53 -0800 (PST)
+MIME-Version: 1.0
+References: <161396675757.17010.1325049724274357693@ietfa.amsl.com>
+In-Reply-To: <161396675757.17010.1325049724274357693@ietfa.amsl.com>
+From: Yong-Geun Hong <yonggeun.hong@gmail.com>
+Date: Mon, 22 Feb 2021 13:30:43 +0900
+Message-ID: <CACt2foFGHppiWT6=QPOQ5+WSLJqh-9fq_+SJxfo4S_q9vD0Ywg@mail.gmail.com>
+To: lo <6lo@ietf.org>
+Content-Type: multipart/alternative; boundary="0000000000007219a905bbe5449b"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/3ae2kD4TSzmMQeBBQqGebTNaqlM>
+Subject: [6lo] Fwd:  I-D Action: draft-ietf-6lo-use-cases-10.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 22 Feb 2021 04:30:58 -0000
+
+--0000000000007219a905bbe5449b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear all.
+
+We have submitted the 6lo use cases draft (version-10) and this version is
+intended to address the 2nd WGLC comments
+by Kerry Lynn, S.V.R. Anand, Seyed Mahdi Darroudi, Pascal Thubert and
+Jianqiang Hou.
+
+Thanks for Kerry Lynn, S.V.R. Anand, Seyed Mahdi Darroudi, Pascal Thubert
+and Jianqiang Hou for valuable comments and these comments are
+very helpful to improve the draft.
+
+Best regards.
+
+Yong-Geun.
+
+---------- Forwarded message ---------
+=EB=B3=B4=EB=82=B8=EC=82=AC=EB=9E=8C: <internet-drafts@ietf.org>
+Date: 2021=EB=85=84 2=EC=9B=94 22=EC=9D=BC (=EC=9B=94) =EC=98=A4=ED=9B=84 1=
+:06
+Subject: [6lo] I-D Action: draft-ietf-6lo-use-cases-10.txt
+To: <i-d-announce@ietf.org>
+Cc: <6lo@ietf.org>
+
+
+
+A New Internet-Draft is available from the on-line Internet-Drafts
+directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained
+Nodes WG of the IETF.
+
+        Title           : IPv6 over Constrained Node Networks (6lo)
+Applicability & Use cases
+        Authors         : Yong-Geun Hong
+                          Carles Gomez
+                          Abdur Rashid Sangi
+                          Samita Chakrabarti
+        Filename        : draft-ietf-6lo-use-cases-10.txt
+        Pages           : 28
+        Date            : 2021-02-21
+
+Abstract:
+   This document describes the applicability of IPv6 over constrained
+   node networks (6lo) and provides practical deployment examples.  In
+   addition to IEEE 802.15.4, various link layer technologies such as
+   ITU-T G.9959 (Z-Wave), Bluetooth Low Energy, DECT-ULE, MS/TP, NFC,
+   and PLC are used as examples.  The document targets an audience who
+   would like to understand and evaluate running end-to-end IPv6 over
+   the constrained node networks for local or Internet connectivity.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-use-cases/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-use-cases-10
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-use-cases-10
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-use-cases-10
+
+
+Please note that it may take a couple of minutes from the time of submissio=
+n
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org
+https://www.ietf.org/mailman/listinfo/6lo
+
+--0000000000007219a905bbe5449b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Dear all.<div><br></div><div>We have submitted the 6lo use=
+ cases draft (version-10) and this version is intended to address the 2nd W=
+GLC comments=C2=A0<br>by Kerry Lynn, S.V.R. Anand, Seyed Mahdi Darroudi, Pa=
+scal Thubert and Jianqiang Hou.</div><div><br></div><div>Thanks for Kerry L=
+ynn, S.V.R. Anand, Seyed Mahdi Darroudi, Pascal Thubert and Jianqiang Hou f=
+or valuable comments and these comments are=C2=A0<br>very helpful to improv=
+e the draft.</div><div><br></div><div>Best regards.</div><div><br></div><di=
+v>Yong-Geun.=C2=A0<br><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=
+=3D"gmail_attr">---------- Forwarded message ---------<br>=EB=B3=B4=EB=82=
+=B8=EC=82=AC=EB=9E=8C: <span dir=3D"auto">&lt;<a href=3D"mailto:internet-dr=
+afts@ietf.org">internet-drafts@ietf.org</a>&gt;</span><br>Date: 2021=EB=85=
+=84 2=EC=9B=94 22=EC=9D=BC (=EC=9B=94) =EC=98=A4=ED=9B=84 1:06<br>Subject: =
+[6lo] I-D Action: draft-ietf-6lo-use-cases-10.txt<br>To:  &lt;<a href=3D"ma=
+ilto:i-d-announce@ietf.org">i-d-announce@ietf.org</a>&gt;<br>Cc:  &lt;<a hr=
+ef=3D"mailto:6lo@ietf.org">6lo@ietf.org</a>&gt;<br></div><br><br><br>
+A New Internet-Draft is available from the on-line Internet-Drafts director=
+ies.<br>
+This draft is a work item of the IPv6 over Networks of Resource-constrained=
+ Nodes WG of the IETF.<br>
+<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Title=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0:=
+ IPv6 over Constrained Node Networks (6lo) Applicability &amp; Use cases<br=
+>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Authors=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0: Yong=
+-Geun Hong<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 Carles Gomez<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 Abdur Rashid Sangi<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 Samita Chakrabarti<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Filename=C2=A0 =C2=A0 =C2=A0 =C2=A0 : draft-iet=
+f-6lo-use-cases-10.txt<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Pages=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0:=
+ 28<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Date=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 :=
+ 2021-02-21<br>
+<br>
+Abstract:<br>
+=C2=A0 =C2=A0This document describes the applicability of IPv6 over constra=
+ined<br>
+=C2=A0 =C2=A0node networks (6lo) and provides practical deployment examples=
+.=C2=A0 In<br>
+=C2=A0 =C2=A0addition to IEEE 802.15.4, various link layer technologies suc=
+h as<br>
+=C2=A0 =C2=A0ITU-T G.9959 (Z-Wave), Bluetooth Low Energy, DECT-ULE, MS/TP, =
+NFC,<br>
+=C2=A0 =C2=A0and PLC are used as examples.=C2=A0 The document targets an au=
+dience who<br>
+=C2=A0 =C2=A0would like to understand and evaluate running end-to-end IPv6 =
+over<br>
+=C2=A0 =C2=A0the constrained node networks for local or Internet connectivi=
+ty.<br>
+<br>
+<br>
+The IETF datatracker status page for this draft is:<br>
+<a href=3D"https://datatracker.ietf.org/doc/draft-ietf-6lo-use-cases/" rel=
+=3D"noreferrer" target=3D"_blank">https://datatracker.ietf.org/doc/draft-ie=
+tf-6lo-use-cases/</a><br>
+<br>
+There are also htmlized versions available at:<br>
+<a href=3D"https://tools.ietf.org/html/draft-ietf-6lo-use-cases-10" rel=3D"=
+noreferrer" target=3D"_blank">https://tools.ietf.org/html/draft-ietf-6lo-us=
+e-cases-10</a><br>
+<a href=3D"https://datatracker.ietf.org/doc/html/draft-ietf-6lo-use-cases-1=
+0" rel=3D"noreferrer" target=3D"_blank">https://datatracker.ietf.org/doc/ht=
+ml/draft-ietf-6lo-use-cases-10</a><br>
+<br>
+A diff from the previous version is available at:<br>
+<a href=3D"https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-use-cases-10"=
+ rel=3D"noreferrer" target=3D"_blank">https://www.ietf.org/rfcdiff?url2=3Dd=
+raft-ietf-6lo-use-cases-10</a><br>
+<br>
+<br>
+Please note that it may take a couple of minutes from the time of submissio=
+n<br>
+until the htmlized version and diff are available at <a href=3D"http://tool=
+s.ietf.org" rel=3D"noreferrer" target=3D"_blank">tools.ietf.org</a>.<br>
+<br>
+Internet-Drafts are also available by anonymous FTP at:<br>
+<a href=3D"ftp://ftp.ietf.org/internet-drafts/" rel=3D"noreferrer" target=
+=3D"_blank">ftp://ftp.ietf.org/internet-drafts/</a><br>
+<br>
+<br>
+_______________________________________________<br>
+6lo mailing list<br>
+<a href=3D"mailto:6lo@ietf.org" target=3D"_blank">6lo@ietf.org</a><br>
+<a href=3D"https://www.ietf.org/mailman/listinfo/6lo" rel=3D"noreferrer" ta=
+rget=3D"_blank">https://www.ietf.org/mailman/listinfo/6lo</a><br>
+</div></div></div>
+
+--0000000000007219a905bbe5449b--
+
+
+From nobody Mon Feb 22 02:32:32 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 4975A3A127E; Mon, 22 Feb 2021 02:32:26 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Robert Wilton via Datatracker <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-blemesh@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org, JADHAV Rahul <rahul.ietf@gmail.com>, rahul.ietf@gmail.com
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.26.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: Robert Wilton <rwilton@cisco.com>
+Message-ID: <161398994628.13197.12765674149782791923@ietfa.amsl.com>
+Date: Mon, 22 Feb 2021 02:32:26 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/bvHGoYu0-elh6-tvsV6-GmjeS6Y>
+Subject: [6lo] Robert Wilton's No Objection on draft-ietf-6lo-blemesh-09: (with COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 22 Feb 2021 10:32:26 -0000
+
+Robert Wilton has entered the following ballot position for
+draft-ietf-6lo-blemesh-09: No Objection
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/iesg/statement/discuss-criteria.html
+for more information about IESG DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-blemesh/
+
+
+
+----------------------------------------------------------------------
+COMMENT:
+----------------------------------------------------------------------
+
+Hi,
+
+Thank you for this document.
+
+A couple of minor comments relating to the diagram in 3.2 (figure 2):
+
+(1) It wasn't clear to me why the top left node was a 6LR rather than a 6LN. 
+If this is deliberate, it might be worth a sentence to explain the purpose
+here. (2) I initially found the bubble around the v6 Mesh to be confusing  - I
+thought that it means that all the nodes are interconnected.  I'm not sure
+whether the bubble really helps the diagram, and probably could be removed, of
+if it is kept, I would suggest adding more space between the bubble line and
+the mesh network inside so that the bubble line isn't confused as representing
+links between the nodes.
+
+Regards,
+Rob
+
+
+
+
+From nobody Tue Feb 23 15:55:44 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 3F02A3A11BF; Tue, 23 Feb 2021 15:55:42 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Martin Duke via Datatracker <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-blemesh@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org, JADHAV Rahul <rahul.ietf@gmail.com>, rahul.ietf@gmail.com
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.26.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: Martin Duke <martin.h.duke@gmail.com>
+Message-ID: <161412454173.21320.1024712833153341251@ietfa.amsl.com>
+Date: Tue, 23 Feb 2021 15:55:42 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/0VD1-gVPp-h_bcTodZL3PV1Hopc>
+Subject: [6lo] Martin Duke's Discuss on draft-ietf-6lo-blemesh-09: (with DISCUSS)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 23 Feb 2021 23:55:42 -0000
+
+Martin Duke has entered the following ballot position for
+draft-ietf-6lo-blemesh-09: Discuss
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/iesg/statement/discuss-criteria.html
+for more information about IESG DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-blemesh/
+
+
+
+----------------------------------------------------------------------
+DISCUSS:
+----------------------------------------------------------------------
+
+I found this paragraph in Section 3.1 to be hand-wavy:
+
+"Note that this specification allows using different MTUs in different
+   links.  If an implementation requires use of the same MTU on every
+   one of its links, and a new node with a smaller MTU is added to the
+   network, a renegotiation of one or more links can occur.  In the
+   worst case, the renegotiations could cascade network-wide.  In that
+   case, implementers need to assess the impact of such phenomenon."
+
+What are the consequences of link "renegotiation"? If every MTU downgrade
+results in a storm of messages, that's a bad property. Is the use case where
+the MTU must be the same on all links an important one? If not, simply
+requiring hosts to handle this case seems way cleaner.
+
+
+
+
+
+
+From nobody Wed Feb 24 07:58:29 2021
+Return-Path: <alissa@cooperw.in>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 633B93A1752; Wed, 24 Feb 2021 07:58:20 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.097
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.097 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, HTML_MESSAGE=0.001, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=cooperw.in header.b=RDvoWiHh; dkim=pass (2048-bit key) header.d=messagingengine.com header.b=Ap/5SB+Z
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id i67kPRezqOGM; Wed, 24 Feb 2021 07:58:18 -0800 (PST)
+Received: from wout2-smtp.messagingengine.com (wout2-smtp.messagingengine.com [64.147.123.25]) (using TLSv1.2 with cipher ADH-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 09C0E3A16E7; Wed, 24 Feb 2021 07:58:17 -0800 (PST)
+Received: from compute3.internal (compute3.nyi.internal [10.202.2.43]) by mailout.west.internal (Postfix) with ESMTP id 0311AE8F; Wed, 24 Feb 2021 10:58:15 -0500 (EST)
+Received: from mailfrontend1 ([10.202.2.162]) by compute3.internal (MEProxy); Wed, 24 Feb 2021 10:58:16 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cooperw.in; h= content-type:mime-version:subject:from:in-reply-to:date:cc :message-id:references:to; s=fm2; bh=u64cIDI1UWwmp7WbD6tyd6+8bTe +2JfyMB/SbLzhEjA=; b=RDvoWiHhipSNDJpMy38ixHkfcDCpr6g+sqGPyp5yp3j mOgHyCyhN3ON5tDEdIfJSlchi4WoPYfgdHl3tqn5HnI6/TvOsQDZ2id9k7IffoU9 3parG6BDWo1DzmsJISWc6SuXnYfq35UGHhtruPdiptFijx7VUcOGua1dh2pm7s7A g9mRvJMJmvw24ohNYPuQyfpC181ixE8KR4zvkDJEIEvN+qYxZ7gj6iX8SGSIk/P9 uPY8cdK0RSKja8QBcDxZyGw4c0TPUrqYi6ngbHM1gVJWyCy7yM9/VDFS5SWSQH0L q0f8xcdj8JyT2/Mu5IVeVgU+5JHv/VMJX9bd1C3hZyw==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d= messagingengine.com; h=cc:content-type:date:from:in-reply-to :message-id:mime-version:references:subject:to:x-me-proxy :x-me-proxy:x-me-sender:x-me-sender:x-sasl-enc; s=fm2; bh=u64cID I1UWwmp7WbD6tyd6+8bTe+2JfyMB/SbLzhEjA=; b=Ap/5SB+ZNvAWzrJMfDJHoe UmC2PIpm42NAmw5CW8vJ87VrmvYlH/xhIF5OWWLOf62BIQG5EJh++GG+w0S2AJ8D HA/pzTgCjM6slbd8Ndu3n8SBI9orwqYLA6TOpezpIkd8zjnhnHR5ATxuiNUAOIj1 PQIcuL791U41xdClLjKaciapVM48qW153X7XHbY6G6VdjsJjy54kpYT6qpeSen8u hBiryiYM3xZfQydWwvMUyhty/de5muXmE3Av+Ct496Lx+dWvewDInsWn9DESGCkw jPzsI5GsOg4VTswRmbt6nZKkjxw8ndGxfxdXnNBBIJhITq8j6dMFwZEs/SN/9shA ==
+X-ME-Sender: <xms:lnc2YIkKtQcvHVM5Pw2AqKgR-4oZzONzFVKCc2s_IUSeEeXoGwSVdQ> <xme:lnc2YH2uzrvhBqIhArIc-jg5OxK5at8fSs39eKRWrCCgxWPxyj_ojJy7O9emX7wez WHe6E_V8fOcg6W3MQ>
+X-ME-Proxy-Cause: gggruggvucftvghtrhhoucdtuddrgeduledrkeejgdekudcutefuodetggdotefrodftvf curfhrohhfihhlvgemucfhrghsthforghilhdpqfgfvfdpuffrtefokffrpgfnqfghnecu uegrihhlohhuthemuceftddtnecusecvtfgvtghiphhivghnthhsucdlqddutddtmdenuc fjughrpegtggfuhffrjgffkfhfvffosegrtdhmrehhtddvnecuhfhrohhmpeetlhhishhs rgcuvehoohhpvghruceorghlihhsshgrsegtohhophgvrhifrdhinheqnecuggftrfgrth htvghrnhepjeekudetkeegveektdetfefffefggfdtleejleekgeeltefhjeegtdfghfeg uedvnecuffhomhgrihhnpehivghtfhdrohhrghenucfkphepudejfedrfeekrdduudejrd ekgeenucevlhhushhtvghrufhiiigvpedtnecurfgrrhgrmhepmhgrihhlfhhrohhmpegr lhhishhsrgestghoohhpvghrfidrihhn
+X-ME-Proxy: <xmx:lnc2YGrxYOAlN21KbLOMmxhPHvoY4EhPb2osc2R6T4Gm3Xpk4Pip9Q> <xmx:lnc2YElyx2BlQLPV2eSp5bltA7tFCC-ywsq3Iry2a-OXzJDtPrtG8g> <xmx:lnc2YG0DKUtSst4qfrmQOR-5AtqxycYQpvcd65uNnyKE93W79jmOgQ> <xmx:l3c2YLyBEVrvWoahyuaYHpRL_EmXRUpoxfaVCVVnDKOGsZVJKa0v5g>
+Received: from rtp-alcoop-nitro2.cisco.com (unknown [173.38.117.84]) by mail.messagingengine.com (Postfix) with ESMTPA id EF77B240067; Wed, 24 Feb 2021 10:58:13 -0500 (EST)
+Content-Type: multipart/alternative; boundary="Apple-Mail=_5B036407-0DE7-45CA-A534-C41A119E39AA"
+Mime-Version: 1.0 (Mac OS X Mail 13.4 \(3608.120.23.2.4\))
+From: Alissa Cooper <alissa@cooperw.in>
+X-Priority: 3 (Normal)
+In-Reply-To: <4d07e6443cb2b1d0bd76033bb92872b0.squirrel@webmail.entel.upc.edu>
+Date: Wed, 24 Feb 2021 10:58:13 -0500
+Cc: Last Call <last-call@ietf.org>, General Area Review Team <gen-art@ietf.org>, draft-ietf-6lo-blemesh.all@ietf.org, 6lo@ietf.org
+Message-Id: <8D46BEED-1F65-4B93-95AE-14B1D4E570F5@cooperw.in>
+References: <160711595155.19658.8436612763808758937@ietfa.amsl.com> <4d07e6443cb2b1d0bd76033bb92872b0.squirrel@webmail.entel.upc.edu>
+To: Carles Gomez Montenegro <carlesgo@entel.upc.edu>, Pete Resnick <resnick@episteme.net>
+X-Mailer: Apple Mail (2.3608.120.23.2.4)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/GmC7o6Xm4TiDMXGJrI6eeuavhbA>
+Subject: Re: [6lo] [Gen-art] Genart last call review of draft-ietf-6lo-blemesh-08
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 24 Feb 2021 15:58:21 -0000
+
+--Apple-Mail=_5B036407-0DE7-45CA-A534-C41A119E39AA
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=us-ascii
+
+Pete, thanks for your review. Carles, thanks for making the updates. I =
+entered a No Objection ballot.
+
+Alissa
+
+
+> On Dec 8, 2020, at 3:37 AM, Carles Gomez Montenegro =
+<carlesgo@entel.upc.edu> wrote:
+>=20
+> Hi Pete,
+>=20
+> Thanks a lot for your review of the draft!
+>=20
+> We just submitted -09, which aims at addressing the last round of =
+review
+> comments, including yours:
+> https://tools.ietf.org/html/draft-ietf-6lo-blemesh-09 =
+<https://tools.ietf.org/html/draft-ietf-6lo-blemesh-09>
+> https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-blemesh-09 =
+<https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-blemesh-09>
+>=20
+> Please find below our inline responses to your comments:
+>=20
+>> Reviewer: Pete Resnick
+>> Review result: Ready with Issues
+>>=20
+>> I am the assigned Gen-ART reviewer for this draft. The General Area
+>> Review Team (Gen-ART) reviews all IETF documents being processed
+>> by the IESG for the IETF Chair.  Please treat these comments just
+>> like any other last call comments.
+>>=20
+>> For more information, please see the FAQ at
+>>=20
+>> <https://trac.ietf.org/trac/gen/wiki/GenArtfaq>.
+>>=20
+>> Document: draft-ietf-6lo-blemesh-08
+>> Reviewer: Pete Resnick
+>> Review Date: 2020-12-04
+>> IETF LC End Date: 2020-10-21
+>> IESG Telechat date: Not scheduled for a telechat
+>>=20
+>> Summary: Looks good to me, with two items that seemed confusing =
+enough
+>> that
+>> they should be addressed.
+>>=20
+>> Note that this review is being done well after the close of the Last =
+Call.
+>> Since this is not yet scheduled for a telechat, the AD asked that I =
+go
+>> ahead
+>> and complete the review anyway.
+>>=20
+>> Major issues: None
+>>=20
+>> Minor issues:
+>>=20
+>> 3.3.2, #4:
+>>=20
+>>   Implementations of this specification MAY support
+>>   the features described in sections 8.1 and 8.2 of RFC 6775, as
+>>   updated by RFC 8505, unless some alternative ("substitute") from =
+some
+>>   other specification is supported by the implementation.
+>>=20
+>> This bit confused me. I think it was the "unless". Do you mean it MAY
+>> support
+>> the 6775/8505 features, or MAY support some substitute, or MAY =
+support
+>> neither,
+>> or do you mean that it MUST support either the 6775/8505 features or =
+MUST
+>> support some substitute? I think you want to rewrite this to make it =
+clear
+>> which one you mean.
+>=20
+> Agreed. We modified the text as follows:
+>=20
+> NEW:
+>   Implementations of this specification MUST either
+>   support the features described in sections 8.1 and 8.2 of RFC 6775,
+>   as updated by RFC 8505, or some alternative ("substitute") =
+mechanism.
+>=20
+>> 3.3.3, last two paragraphs:
+>>=20
+>>   When a 6LN transmits a packet, with a non-link-local source address
+>>   that the 6LN has registered with EARO in the next-hop router for =
+the
+>>   indicated prefix, the source address MUST be fully elided if it is
+>>   the latest address that the 6LN has registered for the indicated
+>>   prefix (SAC=3D1, SAM=3D11).  If the source non-link-local address =
+is not
+>>   the latest registered by the 6LN, then the 64 bits of the IID SHALL
+>>   be fully carried in-line (SAC=3D1, SAM=3D01) or if the first 48 =
+bits of
+>>   the IID match with the latest address registered by the 6LN, then =
+the
+>>   last 16 bits of the IID SHALL be carried in-line (SAC=3D1, SAM=3D10).=
+
+>>=20
+>>   When a router transmits a packet to a neighboring 6LN, with a non-
+>>   link-local destination address, the router MUST fully elide the
+>>   destination IPv6 address if the destination address is the latest
+>>   registered by the 6LN with EARO for the indicated context (DAC=3D1,
+>>   DAM=3D11).  If the destination address is a non-link-local address =
+and
+>>   not the latest registered, then the 6LN MUST either include the IID
+>>   part fully in-line (DAM=3D01) or, if the first 48 bits of the IID =
+match
+>>   to the latest registered address, then elide those 48 bits =
+(DAM=3D10).
+>>=20
+>> Both of these were a bit confusing to me. I think you want to reverse =
+the
+>> order
+>> of the last two choices. Say something like (for the first =
+paragraph), "If
+>> the
+>> source non-link-local address is not the latest registered by the 6LN =
+and
+>> the
+>> first 48 bits match..., then the last 16 bits SHALL be carried =
+in-line.
+>> Otherwise, if first 48 bits do not match, then the 64 bits shall be
+>> carried
+>> inline." Similarly for the second. As it is, it takes a while to =
+figure
+>> out
+>> what it means.
+>=20
+> We modified the two paragraphs as per your suggestion.
+>=20
+>> Nits/editorial comments: Do fix the reference nits noted by the nits =
+tool;
+>> they
+>> appear to be simple typos.
+>=20
+> Done!
+>=20
+> Cheers,
+>=20
+> Carles (on behalf of the authors)
+>=20
+> _______________________________________________
+> Gen-art mailing list
+> Gen-art@ietf.org <mailto:Gen-art@ietf.org>
+> https://www.ietf.org/mailman/listinfo/gen-art =
+<https://www.ietf.org/mailman/listinfo/gen-art>
+
+--Apple-Mail=_5B036407-0DE7-45CA-A534-C41A119E39AA
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=us-ascii
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dus-ascii"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" class=3D"">Pete,=
+ thanks for your review. Carles, thanks for making the updates. I =
+entered a No Objection ballot.<div class=3D""><br class=3D""></div><div =
+class=3D"">Alissa</div><div class=3D""><br class=3D""><div><br =
+class=3D""><blockquote type=3D"cite" class=3D""><div class=3D"">On Dec =
+8, 2020, at 3:37 AM, Carles Gomez Montenegro &lt;<a =
+href=3D"mailto:carlesgo@entel.upc.edu" =
+class=3D"">carlesgo@entel.upc.edu</a>&gt; wrote:</div><br =
+class=3D"Apple-interchange-newline"><div class=3D""><span =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none; float: none; =
+display: inline !important;" class=3D"">Hi Pete,</span><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><span =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none; float: none; =
+display: inline !important;" class=3D"">Thanks a lot for your review of =
+the draft!</span><br style=3D"caret-color: rgb(0, 0, 0); font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none;" class=3D""><br style=3D"caret-color: rgb(0, 0, 0); font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none;" class=3D""><span style=3D"caret-color: rgb(0, 0, 0); font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none; float: none; display: inline !important;" class=3D"">We just =
+submitted -09, which aims at addressing the last round of =
+review</span><br style=3D"caret-color: rgb(0, 0, 0); font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none;" class=3D""><span style=3D"caret-color: rgb(0, 0, 0); font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none; float: none; display: inline !important;" class=3D"">comments, =
+including yours:</span><br style=3D"caret-color: rgb(0, 0, 0); =
+font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><a =
+href=3D"https://tools.ietf.org/html/draft-ietf-6lo-blemesh-09" =
+style=3D"font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+orphans: auto; text-align: start; text-indent: 0px; text-transform: =
+none; white-space: normal; widows: auto; word-spacing: 0px; =
+-webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;" =
+class=3D"">https://tools.ietf.org/html/draft-ietf-6lo-blemesh-09</a><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><a =
+href=3D"https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-blemesh-09" =
+style=3D"font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+orphans: auto; text-align: start; text-indent: 0px; text-transform: =
+none; white-space: normal; widows: auto; word-spacing: 0px; =
+-webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;" =
+class=3D"">https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-blemesh-09</=
+a><br style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; =
+font-size: 12px; font-style: normal; font-variant-caps: normal; =
+font-weight: normal; letter-spacing: normal; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none;" class=3D""><br style=3D"caret-color: rgb(0, 0, 0); font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none;" class=3D""><span style=3D"caret-color: rgb(0, 0, 0); font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none; float: none; display: inline !important;" class=3D"">Please find =
+below our inline responses to your comments:</span><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" =
+class=3D""><blockquote type=3D"cite" style=3D"font-family: Helvetica; =
+font-size: 12px; font-style: normal; font-variant-caps: normal; =
+font-weight: normal; letter-spacing: normal; orphans: auto; text-align: =
+start; text-indent: 0px; text-transform: none; white-space: normal; =
+widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" =
+class=3D"">Reviewer: Pete Resnick<br class=3D"">Review result: Ready =
+with Issues<br class=3D""><br class=3D"">I am the assigned Gen-ART =
+reviewer for this draft. The General Area<br class=3D"">Review Team =
+(Gen-ART) reviews all IETF documents being processed<br class=3D"">by =
+the IESG for the IETF Chair. &nbsp;Please treat these comments just<br =
+class=3D"">like any other last call comments.<br class=3D""><br =
+class=3D"">For more information, please see the FAQ at<br class=3D""><br =
+class=3D"">&lt;<a href=3D"https://trac.ietf.org/trac/gen/wiki/GenArtfaq" =
+class=3D"">https://trac.ietf.org/trac/gen/wiki/GenArtfaq</a>&gt;.<br =
+class=3D""><br class=3D"">Document: draft-ietf-6lo-blemesh-08<br =
+class=3D"">Reviewer: Pete Resnick<br class=3D"">Review Date: =
+2020-12-04<br class=3D"">IETF LC End Date: 2020-10-21<br class=3D"">IESG =
+Telechat date: Not scheduled for a telechat<br class=3D""><br =
+class=3D"">Summary: Looks good to me, with two items that seemed =
+confusing enough<br class=3D"">that<br class=3D"">they should be =
+addressed.<br class=3D""><br class=3D"">Note that this review is being =
+done well after the close of the Last Call.<br class=3D"">Since this is =
+not yet scheduled for a telechat, the AD asked that I go<br =
+class=3D"">ahead<br class=3D"">and complete the review anyway.<br =
+class=3D""><br class=3D"">Major issues: None<br class=3D""><br =
+class=3D"">Minor issues:<br class=3D""><br class=3D"">3.3.2, #4:<br =
+class=3D""><br class=3D"">&nbsp;&nbsp;Implementations of this =
+specification MAY support<br class=3D"">&nbsp;&nbsp;the features =
+described in sections 8.1 and 8.2 of RFC 6775, as<br =
+class=3D"">&nbsp;&nbsp;updated by RFC 8505, unless some alternative =
+("substitute") from some<br class=3D"">&nbsp;&nbsp;other specification =
+is supported by the implementation.<br class=3D""><br class=3D"">This =
+bit confused me. I think it was the "unless". Do you mean it MAY<br =
+class=3D"">support<br class=3D"">the 6775/8505 features, or MAY support =
+some substitute, or MAY support<br class=3D"">neither,<br class=3D"">or =
+do you mean that it MUST support either the 6775/8505 features or =
+MUST<br class=3D"">support some substitute? I think you want to rewrite =
+this to make it clear<br class=3D"">which one you mean.<br =
+class=3D""></blockquote><br style=3D"caret-color: rgb(0, 0, 0); =
+font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><span style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none; float: none; display: inline !important;" =
+class=3D"">Agreed. We modified the text as follows:</span><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><span =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none; float: none; =
+display: inline !important;" class=3D"">NEW:</span><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><span =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none; float: none; =
+display: inline !important;" class=3D"">&nbsp;&nbsp;Implementations of =
+this specification MUST either</span><br style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><span style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none; float: none; display: inline !important;" =
+class=3D"">&nbsp;&nbsp;support the features described in sections 8.1 =
+and 8.2 of RFC 6775,</span><br style=3D"caret-color: rgb(0, 0, 0); =
+font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><span style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none; float: none; display: inline !important;" =
+class=3D"">&nbsp;&nbsp;as updated by RFC 8505, or some alternative =
+("substitute") mechanism.</span><br style=3D"caret-color: rgb(0, 0, 0); =
+font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><br style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><blockquote type=3D"cite" =
+style=3D"font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+orphans: auto; text-align: start; text-indent: 0px; text-transform: =
+none; white-space: normal; widows: auto; word-spacing: 0px; =
+-webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D"">3.3.3, last two paragraphs:<br =
+class=3D""><br class=3D"">&nbsp;&nbsp;When a 6LN transmits a packet, =
+with a non-link-local source address<br class=3D"">&nbsp;&nbsp;that the =
+6LN has registered with EARO in the next-hop router for the<br =
+class=3D"">&nbsp;&nbsp;indicated prefix, the source address MUST be =
+fully elided if it is<br class=3D"">&nbsp;&nbsp;the latest address that =
+the 6LN has registered for the indicated<br class=3D"">&nbsp;&nbsp;prefix =
+(SAC=3D1, SAM=3D11). &nbsp;If the source non-link-local address is =
+not<br class=3D"">&nbsp;&nbsp;the latest registered by the 6LN, then the =
+64 bits of the IID SHALL<br class=3D"">&nbsp;&nbsp;be fully carried =
+in-line (SAC=3D1, SAM=3D01) or if the first 48 bits of<br =
+class=3D"">&nbsp;&nbsp;the IID match with the latest address registered =
+by the 6LN, then the<br class=3D"">&nbsp;&nbsp;last 16 bits of the IID =
+SHALL be carried in-line (SAC=3D1, SAM=3D10).<br class=3D""><br =
+class=3D"">&nbsp;&nbsp;When a router transmits a packet to a neighboring =
+6LN, with a non-<br class=3D"">&nbsp;&nbsp;link-local destination =
+address, the router MUST fully elide the<br =
+class=3D"">&nbsp;&nbsp;destination IPv6 address if the destination =
+address is the latest<br class=3D"">&nbsp;&nbsp;registered by the 6LN =
+with EARO for the indicated context (DAC=3D1,<br =
+class=3D"">&nbsp;&nbsp;DAM=3D11). &nbsp;If the destination address is a =
+non-link-local address and<br class=3D"">&nbsp;&nbsp;not the latest =
+registered, then the 6LN MUST either include the IID<br =
+class=3D"">&nbsp;&nbsp;part fully in-line (DAM=3D01) or, if the first 48 =
+bits of the IID match<br class=3D"">&nbsp;&nbsp;to the latest registered =
+address, then elide those 48 bits (DAM=3D10).<br class=3D""><br =
+class=3D"">Both of these were a bit confusing to me. I think you want to =
+reverse the<br class=3D"">order<br class=3D"">of the last two choices. =
+Say something like (for the first paragraph), "If<br class=3D"">the<br =
+class=3D"">source non-link-local address is not the latest registered by =
+the 6LN and<br class=3D"">the<br class=3D"">first 48 bits match..., then =
+the last 16 bits SHALL be carried in-line.<br class=3D"">Otherwise, if =
+first 48 bits do not match, then the 64 bits shall be<br =
+class=3D"">carried<br class=3D"">inline." Similarly for the second. As =
+it is, it takes a while to figure<br class=3D"">out<br class=3D"">what =
+it means.<br class=3D""></blockquote><br style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><span style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none; float: none; display: inline !important;" =
+class=3D"">We modified the two paragraphs as per your =
+suggestion.</span><br style=3D"caret-color: rgb(0, 0, 0); font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none;" class=3D""><br style=3D"caret-color: rgb(0, 0, 0); font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: =
+none;" class=3D""><blockquote type=3D"cite" style=3D"font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; orphans: auto; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" =
+class=3D"">Nits/editorial comments: Do fix the reference nits noted by =
+the nits tool;<br class=3D"">they<br class=3D"">appear to be simple =
+typos.<br class=3D""></blockquote><br style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><span style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none; float: none; display: inline !important;" =
+class=3D"">Done!</span><br style=3D"caret-color: rgb(0, 0, 0); =
+font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><br style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><span style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none; float: none; display: inline !important;" =
+class=3D"">Cheers,</span><br style=3D"caret-color: rgb(0, 0, 0); =
+font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><br style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none;" class=3D""><span style=3D"caret-color: rgb(0, 0, =
+0); font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none; float: none; display: inline !important;" =
+class=3D"">Carles (on behalf of the authors)</span><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><span =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none; float: none; =
+display: inline !important;" =
+class=3D"">_______________________________________________</span><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><span =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none; float: none; =
+display: inline !important;" class=3D"">Gen-art mailing list</span><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><a =
+href=3D"mailto:Gen-art@ietf.org" style=3D"font-family: Helvetica; =
+font-size: 12px; font-style: normal; font-variant-caps: normal; =
+font-weight: normal; letter-spacing: normal; orphans: auto; text-align: =
+start; text-indent: 0px; text-transform: none; white-space: normal; =
+widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; =
+-webkit-text-stroke-width: 0px;" class=3D"">Gen-art@ietf.org</a><br =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration: none;" class=3D""><a =
+href=3D"https://www.ietf.org/mailman/listinfo/gen-art" =
+style=3D"font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+orphans: auto; text-align: start; text-indent: 0px; text-transform: =
+none; white-space: normal; widows: auto; word-spacing: 0px; =
+-webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;" =
+class=3D"">https://www.ietf.org/mailman/listinfo/gen-art</a></div></blockq=
+uote></div><br class=3D""></div></body></html>=
+
+--Apple-Mail=_5B036407-0DE7-45CA-A534-C41A119E39AA--
+
+
+From nobody Wed Feb 24 16:55:58 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 6FE003A0990; Wed, 24 Feb 2021 16:55:52 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Benjamin Kaduk via Datatracker <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-blemesh@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org, JADHAV Rahul <rahul.ietf@gmail.com>, rahul.ietf@gmail.com
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.26.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: Benjamin Kaduk <kaduk@mit.edu>
+Message-ID: <161421455243.10769.8266309895985939749@ietfa.amsl.com>
+Date: Wed, 24 Feb 2021 16:55:52 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/pD-IbykBEM0PwKEKAMFEgktpxKU>
+Subject: [6lo] Benjamin Kaduk's Discuss on draft-ietf-6lo-blemesh-09: (with DISCUSS and COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 25 Feb 2021 00:55:53 -0000
+
+Benjamin Kaduk has entered the following ballot position for
+draft-ietf-6lo-blemesh-09: Discuss
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/iesg/statement/discuss-criteria.html
+for more information about IESG DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-blemesh/
+
+
+
+----------------------------------------------------------------------
+DISCUSS:
+----------------------------------------------------------------------
+
+I may well just be confused about this, but let's discuss and find out.
+Section 3.3.2 says "[a]s per RFC 8505, a 6LN MUST NOT register its
+link-local address."  Which part of RFC 8505 says this?  Section 5.6
+thereof seems to enumerate some cases where link-local addresses MUST
+(not MUST NOT) be registered, and there's not much other discussion of
+link-local addresses that I saw.
+
+
+----------------------------------------------------------------------
+COMMENT:
+----------------------------------------------------------------------
+
+I support Martin (D)'s Discuss (though I think maybe the use-case that
+is in question is the non-homogeneous-MTU case).  At a minimum the
+security considerations should be discussing this scenario as a risk,
+but ideally it could be avoided altogether.
+
+(I also agree with Martin (V)'s comment.)
+
+Section 3.1
+
+   Similarly to RFC 7668, fragmentation functionality from 6LoWPAN
+   standards is not used for IPv6 mesh over Bluetooth LE links.
+   Bluetooth LE's fragmentation support provided by L2CAP is used when
+   necessary.
+
+I don't really understand why it's necessary to say "when necessary".
+If IPv6 requires an MTU of 1280 octets but the BLE link is doing 247 or
+less, doesn't the L2CAP fragmentation always need to be enabled for the
+IPv6 mesh?
+
+Section 3.2
+
+Is it worth reiterating that with the multi-link subnet model, the
+routers have to take on responsibility for tracking multicast state and
+forwarding multicast/broadcast in a loop-free manner?  I think we do
+talk about most of that elsewhere, but it could be useful to tie that in
+with the tradeoffs that went into this decision.
+
+(Does the "loop-free" part place any constraints on the IPv6 routing
+protocol(s) that can be used with IPv6 mesh over BLE?)
+
+Section 3.3.2
+
+   1.  A Bluetooth LE 6LN SHOULD register its non-link-local addresses
+   with its routers by sending a Neighbor Solicitation (NS) message with
+   the Extended Address Registration Option (EARO) and process the
+   Neighbor Advertisement (NA) accordingly.  Note that in some cases
+   (e.g., very short-lived connections) it may not be worthwhile for a
+   6LN to send an NS with EARO for registering its address.  However,
+   the consequences of not registering the address (including non-
+   reachability of the 6LN, and absence of DAD) need to be carefully
+   considered.  [...]
+
+Where can an exhaustive list of the consequences of not registering be
+found?
+It might also be helpful to give an example of something that a 6LN
+might do on such a very-short-lived connection where the non-link-local
+address is not registered (since, obviously, only link-local traffic
+would be possible).
+
+Section 3.3.3
+
+   To enable efficient header compression, when the 6LBR sends a Router
+   Advertisement it MAY include a 6LoWPAN Context Option (6CO) [RFC6775]
+   matching each address prefix advertised via a Prefix Information
+   Option (PIO) [RFC4861] for use in stateless address
+   autoconfiguration.  Note that 6CO is not needed for context-based
+   compression when context is pre-provisioned or provided by out-of-
+   band means.
+
+I see that in RFC 7668 sending 6CO in this situation was MUST-level
+required.  Is the reasoning behind the weakening of the requirement just
+the stated scenarios where pre-provisioned context renders the in-band
+context indication superfluous?  If so, it might be possible to reword
+to be more clear about expectations.  If not, some additional discussion
+of the reasoning might be helpful.
+
+Section 8
+
+   connection with each 6LR (Step 3).  After establishment of those link
+   layer connections (and after reception of Router Advertisements from
+   the 6LBR), Step 4, the 6LRs start operating as routers, and also
+   initiate the IPSP Router role (note: whether the IPSP Node role is
+   kept running simultaneously is an implementation decision).  Then,
+
+(nit/editorial) The theme seems to be that "step N" is in parentheses
+after the description of the step, done everywhere except for step 4.
+So maybe " the 6LRs start operating as routers, and also initiate the
+IPSP Router role (Step 4) (note: whether the IPSP Node role is kept
+running simultaneously is an implementation decision)"?
+
+
+
+
+From nobody Fri Feb 26 00:49:45 2021
+Return-Path: <shwetha.bhandari@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id CF0AB3A0C85 for <6lo@ietfa.amsl.com>; Fri, 26 Feb 2021 00:49:43 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.087
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.087 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, T_KAM_HTML_FONT_INVALID=0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id sLp1cdwEovzj for <6lo@ietfa.amsl.com>; Fri, 26 Feb 2021 00:49:42 -0800 (PST)
+Received: from mail-yb1-xb2d.google.com (mail-yb1-xb2d.google.com [IPv6:2607:f8b0:4864:20::b2d]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 68EEF3A0C36 for <6lo@ietf.org>; Fri, 26 Feb 2021 00:49:42 -0800 (PST)
+Received: by mail-yb1-xb2d.google.com with SMTP id u75so8182289ybi.10 for <6lo@ietf.org>; Fri, 26 Feb 2021 00:49:42 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:from:date:message-id:subject:to; bh=VwPx7AOirs+pWkJRXiuYpMxtGj3GNe9xh1EC47sRLsk=; b=GZhE63aOrxmdFcYLVBGBob7JzMhNFx8hpJZPfkbbcKrNXJ10lWJ5eNHFnFXn0OIs/Y z3KBnminncyBTA2Ds1hHVQ7XYCdrXckraWhUoYAAlyse8R92e8C4jX1PjwNINS7V+DQU 0pJ8zb4L/leZXhy34xfQ7+Y/kuey7whaWjXrdB/zyf0GJdhAixfNJ/lpmHFBQMn45DKc qavyflFq2NsZ7JE6mS99SB8qQtSRQjW5FacsOf2Rigfhqqys1d2u3EB15rCQcMjbTfJz ZIKqDSoqOyQTQV6mPXP7rudSGp+cfQtrcdOlPRSLgHmxsGVMX64S22vjb4eBlsMWvMuq nWzw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=VwPx7AOirs+pWkJRXiuYpMxtGj3GNe9xh1EC47sRLsk=; b=hHngKXzRojtnQktK7fFHfu+RX+i2NJQDl7UcW4XjR6o+vA1GiJV+xUtGMl58UZieu9 uWN/jCu8gtI2YPa/+QTYd9C692ArOF6wM0f3vQMqUq0GkWDxaPgta78kxGFNw/y84QQ5 jPZyaL+ilUGw8Ts8N7/OKe9W3E0Lsn5C9uAWsCa8TKYcQQZfpFLSkposW2pPHOmnwbdd mUOcwwZ412BFdxhl4KRKwirdGxw00yYAkzHUvqP+Wf7QaryV+SXdhRR0kVRffyRE9ezo 3l8Db9SBAB0aibLYh1eHh/1eyfsUgTgob/4qWkmVTyFuSslCWh7y1qB5as3vIN+7xwf2 uYKg==
+X-Gm-Message-State: AOAM532YhbJmRFj+IxTvnzSQC+mVjIzYSL6YHBmCj9bY0ecFw1Ij1n1L oEAnedkY/O3dKHc35dUzv878N83nmSnGKgLwzbeEb0qTat4=
+X-Google-Smtp-Source: ABdhPJwMQ7F5olET00bfRwNg+fKczfZrpaYAWNj3LMkyWKKW87gCVsYgpqafTPejiG+Q75RZnBID7iBwWbHwnFh2W3U=
+X-Received: by 2002:a5b:7cd:: with SMTP id t13mr2801544ybq.417.1614329381270;  Fri, 26 Feb 2021 00:49:41 -0800 (PST)
+MIME-Version: 1.0
+From: Shwetha <shwetha.bhandari@gmail.com>
+Date: Fri, 26 Feb 2021 14:19:30 +0530
+Message-ID: <CA+SnWFE8CLyh-VjEh+t70o+EbWZ5J6tGfTTvOW3zG7Xos0J8Aw@mail.gmail.com>
+To: 6lo@ietf.org
+Content-Type: multipart/alternative; boundary="0000000000005235de05bc39591a"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/897lXU0taQKNLDpn7XPMtu4qc_4>
+Subject: [6lo] Draft agenda for 6lo @ IETF 110
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 26 Feb 2021 08:49:44 -0000
+
+--0000000000005235de05bc39591a
+Content-Type: text/plain; charset="UTF-8"
+
+Dear 6Lo WG,
+
+We have IETF 110 online 6lo session scheduled for Thursday, March 11,
+2021 13:00-15:00 (UTC).
+
+Following is the draft agenda for the meeting:
+
+https://datatracker.ietf.org/meeting/110/materials/agenda-110-6lo-00.txt.
+
+We need a couple of minute takers and a jabber scribe. Please let us
+know if you would like to volunteer! This will be very much
+appreciated.
+
+Presenters,
+
+Please share or upload [1] your slides (in .pdf) by March 8th 2021.
+
+
+Thanks,
+Carles and Shwetha
+
+[1] There is a datatracker feature that allows a logged in user to
+upload slides and suggest the chairs that they be added to a session via a
+"Propose Slides" button. Feel free to use this feature
+viahttps://datatracker.ietf.org/meeting/110/session/6lo.
+
+--0000000000005235de05bc39591a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><pre style=3D"white-space:pre-wrap;box-sizing:border-box;f=
+ont-size:12.25px;margin-top:0px;margin-bottom:1rem;overflow:auto;color:rgb(=
+33,37,41);word-break:normal;padding:0px">Dear 6Lo WG,
+</pre><pre style=3D"white-space:pre-wrap;box-sizing:border-box;font-size:12=
+.25px;margin-top:0px;margin-bottom:1rem;overflow:auto;color:rgb(33,37,41);w=
+ord-break:normal;padding:0px">We have IETF 110 online 6lo session scheduled=
+ for Thursday, March 11, 2021 13:00-15:00 (UTC).</pre><pre style=3D"white-s=
+pace:pre-wrap;box-sizing:border-box;font-size:12.25px;margin-top:0px;margin=
+-bottom:1rem;overflow:auto;color:rgb(33,37,41);word-break:normal;padding:0p=
+x">Following is the draft agenda for the meeting:</pre><pre style=3D"white-=
+space:pre-wrap;color:rgb(0,0,0)"><a href=3D"https://datatracker.ietf.org/me=
+eting/110/materials/agenda-110-6lo-00.txt" target=3D"_blank">https://datatr=
+acker.ietf.org/meeting/110/materials/agenda-110-6lo-00.txt</a>.</pre><pre s=
+tyle=3D"white-space:pre-wrap;color:rgb(0,0,0)"><pre style=3D"white-space:pr=
+e-wrap;box-sizing:border-box;font-size:12.25px;margin-top:0px;margin-bottom=
+:1rem;overflow:auto;color:rgb(33,37,41);word-break:normal;padding:0px">We n=
+eed a couple of minute takers and a jabber scribe. Please let us know if yo=
+u would like to volunteer! This will be very much appreciated.</pre></pre><=
+pre style=3D"white-space:pre-wrap;box-sizing:border-box;font-size:12.25px;m=
+argin-top:0px;margin-bottom:1rem;overflow:auto;color:rgb(33,37,41);word-bre=
+ak:normal;padding:0px">Presenters,</pre><pre style=3D"white-space:pre-wrap;=
+box-sizing:border-box;font-size:12.25px;margin-top:0px;margin-bottom:1rem;o=
+verflow:auto;color:rgb(33,37,41);word-break:normal;padding:0px"><span style=
+=3D"color:rgb(34,34,34);font-size:small;white-space:normal">Please share or=
+ upload [1] your slides (in .pdf) by March 8th 2021.</span>
+
+
+Thanks,
+Carles and Shwetha</pre><pre style=3D"white-space:pre-wrap;box-sizing:borde=
+r-box;font-size:12.25px;margin-top:0px;margin-bottom:1rem;overflow:auto;col=
+or:rgb(33,37,41);word-break:normal;padding:0px"><pre style=3D"white-space:p=
+re-wrap;box-sizing:border-box;margin-top:0px;margin-bottom:1rem;overflow:au=
+to;word-break:normal;padding:0px">[1] There is a datatracker feature that a=
+llows a logged in user to
+upload slides and suggest the chairs that they be added to a session via a
+&quot;Propose Slides&quot; button. Feel free to use this feature via
+<a href=3D"https://datatracker.ietf.org/meeting/110/session/6lo" rel=3D"nof=
+ollow" target=3D"_blank" style=3D"color:rgb(51,122,183);box-sizing:border-b=
+ox;text-decoration-line:none;background-color:transparent">https://datatrac=
+ker.ietf.org/meeting/110/session/6lo</a>.</pre></pre></div>
+
+--0000000000005235de05bc39591a--
+

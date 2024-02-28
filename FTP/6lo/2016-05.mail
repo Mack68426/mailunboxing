@@ -1,0 +1,4296 @@
+
+From nobody Mon May  9 07:25:36 2016
+Return-Path: <thomas.watteyne@inria.fr>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 3126712D1DB; Mon,  9 May 2016 07:25:27 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -7.915
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.915 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, RP_MATCHES_RCVD=-0.996] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Y5VeafitNbfP; Mon,  9 May 2016 07:25:23 -0700 (PDT)
+Received: from mail3-relais-sop.national.inria.fr (mail3-relais-sop.national.inria.fr [192.134.164.104]) (using TLSv1.2 with cipher RC4-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 34D1212D1DF; Mon,  9 May 2016 07:25:21 -0700 (PDT)
+X-IronPort-AV: E=Sophos;i="5.24,601,1454972400";  d="scan'208,217";a="177115026"
+Received: from mail-lf0-f52.google.com ([209.85.215.52]) by mail3-relais-sop.national.inria.fr with ESMTP/TLS/AES128-GCM-SHA256; 09 May 2016 16:25:18 +0200
+Received: by mail-lf0-f52.google.com with SMTP id m64so201625519lfd.1; Mon, 09 May 2016 07:25:18 -0700 (PDT)
+X-Gm-Message-State: AOPr4FUsCUgP3XAKVm+CA09Pr52eklszPWr6EfvRSsbv50vq9wR0Bl4wgUlE78HtH963mT62ZjdBNVDCySprmw==
+X-Received: by 10.112.72.193 with SMTP id f1mr14879932lbv.114.1462803918260; Mon, 09 May 2016 07:25:18 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.25.149.195 with HTTP; Mon, 9 May 2016 07:24:58 -0700 (PDT)
+In-Reply-To: <1789787799.3163737.1461858490879.JavaMail.yahoo@mail.yahoo.com>
+References: <CAH7SZV9WVaURLVVdO8O3=vN64k_b5pC9c+pj5gLrF6722drZkg@mail.gmail.com> <1789787799.3163737.1461858490879.JavaMail.yahoo@mail.yahoo.com>
+From: Thomas Watteyne <thomas.watteyne@inria.fr>
+Date: Mon, 9 May 2016 16:24:58 +0200
+X-Gmail-Original-Message-ID: <CADJ9OA_AOQDNJQ-xX2L2T2v+STFqZMF=FenvMyirGo8e0_mzCw@mail.gmail.com>
+Message-ID: <CADJ9OA_AOQDNJQ-xX2L2T2v+STFqZMF=FenvMyirGo8e0_mzCw@mail.gmail.com>
+To: nalini.elkins@insidethestack.com
+Content-Type: multipart/alternative; boundary=001a11c33d9eec95390532699350
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/Mp1ybRM1ohAph0kyGjFIbVvle_E>
+Cc: Routing Over Low Power and Lossy Networks <roll@ietf.org>, "Prof. Diego Dujovne" <diego.dujovne@mail.udp.cl>, Jari Arkko <jari.arkko@piuha.net>, "6lo@ietf.org" <6lo@ietf.org>, Alexa Morris <amorris@amsl.com>, "6tisch@ietf.org" <6tisch@ietf.org>, "mentoring-coordinators@ietf.org" <mentoring-coordinators@ietf.org>
+Subject: Re: [6lo] [6tisch] Remote Mentoring: Internet Draft Review Team: 6tisch: Portugese / English
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 09 May 2016 14:25:27 -0000
+
+--001a11c33d9eec95390532699350
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Nalini,
+
+Thanks for putting this together, this is great. Please do encourage them
+to post comments also on the IETF MLs.
+
+Although I'm in the Paris timezone and I don't speak Portuguese, feel free
+to have me CC'ed on their discussion with Diego.
+
+Thomas
+
+On Thu, Apr 28, 2016 at 5:48 PM, <nalini.elkins@insidethestack.com> wrote:
+
+> Diego,
+>
+> Thanks very much for your help.
+>
+> I will make the introduction.
+>
+> Nalini Elkins
+> Inside Products, Inc.
+> www.insidethestack.com
+> (831) 659-8360
+>
+>
+> ------------------------------
+> *From:* Prof. Diego Dujovne <diego.dujovne@mail.udp.cl>
+> *To:* Nalini Elkins <nalini.elkins@insidethestack.com>
+> *Cc:* Routing Over Low Power and Lossy Networks <roll@ietf.org>; Jari
+> Arkko <jari.arkko@piuha.net>; "6lo@ietf.org" <6lo@ietf.org>; Alexa Morris
+> <amorris@amsl.com>; "6tisch@ietf.org" <6tisch@ietf.org>; "
+> mentoring-coordinators@ietf.org" <mentoring-coordinators@ietf.org>
+> *Sent:* Thursday, April 28, 2016 8:24 AM
+> *Subject:* Re: [6tisch] Remote Mentoring: Internet Draft Review Team:
+> 6tisch: Portugese / English
+>
+> Nalini,
+>          I can help with this draft, you can send them
+> my email address to start the discussion. I'm not in
+> Brazil (I'm in Chile), but we may be able to arrange
+> a videoconf if necessary, given that we do not have
+> a huge time difference.
+>          Regards,
+>
+>                                     Diego Dujovne
+>
+> 2016-04-28 11:46 GMT-03:00 <nalini.elkins@insidethestack.com>:
+>
+> Roll / 6tisch / 6lo People,
+>
+> We are forming teams of new-ish people to start working together to revie=
+w
+> drafts and pose comments on the list.
+>
+> The second team in this set of WGs to be formed is comprised of 2 people
+> from Brazil.  They wish to study drafts in the 6lo/ 6tisch/ roll WGs.  Th=
+e
+> discussions will be conducted in Portugese or English.
+>
+> The first draft they are reading is:
+>
+>
+> draft-ietf-6tisch-minimal-15.
+>
+> They are to read the draft and have 5 questions ready for discussion.
+> (They have started.) The questions can be either things they do not
+> understand, things they think need to be clearer in the draft or need to =
+be
+> fixed.
+>
+> I will take either of the following, please let me know.
+>
+> 1.  If you will be able to help them in Brazil time zone in a webinar in
+> Portugese / English.  Commitment is one hour per month live and some emai=
+l
+> contact.
+>
+> 2.  If you will be able to help them via email support only.
+>
+> Please help, if you can.
+>
+> BTW, the Spanish DNSOP team has a mentor & is started.
+>
+> Thank you all very much.
+>
+>
+> Nalini Elkins
+> IETF Mentoring Team
+> Inside Products, Inc.
+> www.insidethestack.com
+> (831) 659-8360
+>
+> _______________________________________________
+> 6tisch mailing list
+> 6tisch@ietf.org
+> https://www.ietf.org/mailman/listinfo/6tisch
+>
+>
+>
+>
+> --
+> DIEGO DUJOVNE
+> Acad=C3=A9mico Escuela de Ingenier=C3=ADa en Inform=C3=A1tica y Telecomun=
+icaciones
+> Facultad de Ingenier=C3=ADa UDP
+> www.ingenieria.udp.cl
+> (56 2) 676 8125
+>
+> _______________________________________________
+> 6tisch mailing list
+> 6tisch@ietf.org
+> https://www.ietf.org/mailman/listinfo/6tisch
+>
+>
+>
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+>
+
+
+--=20
+_______________________________________
+
+Thomas Watteyne, PhD
+Research Scientist & Innovator, Inria
+Sr Networking Design Eng, Linear Tech
+Founder & co-lead, UC Berkeley OpenWSN
+Co-chair, IETF 6TiSCH
+
+www.thomaswatteyne.com
+_______________________________________
+
+--001a11c33d9eec95390532699350
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Nalini,<div><br></div><div>Thanks for putting this togethe=
+r, this is great. Please do encourage them to post comments also on the IET=
+F MLs.</div><div><br></div><div>Although I&#39;m in the Paris timezone and =
+I don&#39;t speak Portuguese, feel free to have me CC&#39;ed on their discu=
+ssion with Diego.</div><div><br></div><div>Thomas</div></div><div class=3D"=
+gmail_extra"><br><div class=3D"gmail_quote">On Thu, Apr 28, 2016 at 5:48 PM=
+,  <span dir=3D"ltr">&lt;<a href=3D"mailto:nalini.elkins@insidethestack.com=
+" target=3D"_blank">nalini.elkins@insidethestack.com</a>&gt;</span> wrote:<=
+br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left=
+:1px #ccc solid;padding-left:1ex"><div><div style=3D"color:#000;background-=
+color:#fff;font-family:HelveticaNeue-Light,Helvetica Neue Light,Helvetica N=
+eue,Helvetica,Arial,Lucida Grande,sans-serif;font-size:16px"><div><span>Die=
+go,</span></div><div><span><br></span></div><div><span>Thanks very much for=
+ your help.</span></div><div></div><div>=C2=A0</div><div><div>I will make t=
+he introduction.</div><div><br></div><div>Nalini Elkins</div><span class=3D=
+""><div>Inside Products, Inc.</div><div><a href=3D"http://www.insidethestac=
+k.com" target=3D"_blank">www.insidethestack.com</a></div><div><a href=3D"te=
+l:%28831%29%20659-8360" value=3D"+18316598360" target=3D"_blank">(831) 659-=
+8360</a></div></span></div><div><br><br></div><div style=3D"display:block">=
+  <div style=3D"font-family:HelveticaNeue-Light,Helvetica Neue Light,Helvet=
+ica Neue,Helvetica,Arial,Lucida Grande,sans-serif;font-size:16px"> <div sty=
+le=3D"font-family:HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grand=
+e,sans-serif;font-size:16px"> <div dir=3D"ltr"> <font size=3D"2" face=3D"Ar=
+ial"> <hr size=3D"1"> <b><span style=3D"font-weight:bold">From:</span></b> =
+Prof. Diego Dujovne &lt;<a href=3D"mailto:diego.dujovne@mail.udp.cl" target=
+=3D"_blank">diego.dujovne@mail.udp.cl</a>&gt;<br> <b><span style=3D"font-we=
+ight:bold">To:</span></b> Nalini Elkins &lt;<a href=3D"mailto:nalini.elkins=
+@insidethestack.com" target=3D"_blank">nalini.elkins@insidethestack.com</a>=
+&gt; <br><b><span style=3D"font-weight:bold">Cc:</span></b> Routing Over Lo=
+w Power and Lossy Networks &lt;<a href=3D"mailto:roll@ietf.org" target=3D"_=
+blank">roll@ietf.org</a>&gt;; Jari Arkko &lt;<a href=3D"mailto:jari.arkko@p=
+iuha.net" target=3D"_blank">jari.arkko@piuha.net</a>&gt;; &quot;<a href=3D"=
+mailto:6lo@ietf.org" target=3D"_blank">6lo@ietf.org</a>&quot; &lt;<a href=
+=3D"mailto:6lo@ietf.org" target=3D"_blank">6lo@ietf.org</a>&gt;; Alexa Morr=
+is &lt;<a href=3D"mailto:amorris@amsl.com" target=3D"_blank">amorris@amsl.c=
+om</a>&gt;; &quot;<a href=3D"mailto:6tisch@ietf.org" target=3D"_blank">6tis=
+ch@ietf.org</a>&quot; &lt;<a href=3D"mailto:6tisch@ietf.org" target=3D"_bla=
+nk">6tisch@ietf.org</a>&gt;; &quot;<a href=3D"mailto:mentoring-coordinators=
+@ietf.org" target=3D"_blank">mentoring-coordinators@ietf.org</a>&quot; &lt;=
+<a href=3D"mailto:mentoring-coordinators@ietf.org" target=3D"_blank">mentor=
+ing-coordinators@ietf.org</a>&gt;<br> <b><span style=3D"font-weight:bold">S=
+ent:</span></b> Thursday, April 28, 2016 8:24 AM<br> <b><span style=3D"font=
+-weight:bold">Subject:</span></b> Re: [6tisch] Remote Mentoring: Internet D=
+raft Review Team: 6tisch: Portugese / English<br> </font> </div><div><div c=
+lass=3D"h5"> <div><br><div><div><div dir=3D"ltr"><div><div><div><div><div><=
+div>Nalini,<br clear=3D"none"></div>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0 I can help with this draft, you can send them<br clear=3D"none"><=
+/div>my email address to start the discussion. I&#39;m not in<br clear=3D"n=
+one"></div>Brazil (I&#39;m in Chile), but we may be able to arrange<br clea=
+r=3D"none"></div>a videoconf if necessary, given that we do not have<br cle=
+ar=3D"none"></div><div>a huge time difference.<br clear=3D"none"></div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0=C2=A0 Regards,<br clear=3D"none"><br clear=3D"none=
+"></div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 Diego Dujovne <=
+br clear=3D"none"></div><div><br clear=3D"none"><div>2016-04-28 11:46 GMT-0=
+3:00  <span dir=3D"ltr">&lt;<a rel=3D"nofollow" shape=3D"rect" href=3D"mail=
+to:nalini.elkins@insidethestack.com" target=3D"_blank">nalini.elkins@inside=
+thestack.com</a>&gt;</span>:<br clear=3D"none"><div><blockquote style=3D"ma=
+rgin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Roll / 6tisch =
+/ 6lo People,<br clear=3D"none">
+<br clear=3D"none">
+We are forming teams of new-ish people to start working together to review =
+drafts and pose comments on the list.<br clear=3D"none">
+<br clear=3D"none">
+The second team in this set of WGs to be formed is comprised of 2 people fr=
+om Brazil.=C2=A0 They wish to study drafts in the 6lo/ 6tisch/ roll WGs.=C2=
+=A0 The discussions will be conducted in Portugese or English.<br clear=3D"=
+none">
+<br clear=3D"none">
+The first draft they are reading is:<br clear=3D"none">
+<br clear=3D"none">
+<br clear=3D"none">
+draft-ietf-6tisch-minimal-15.<br clear=3D"none">
+<br clear=3D"none">
+They are to read the draft and have 5 questions ready for discussion.=C2=A0=
+ (They have started.) The questions can be either things they do not unders=
+tand, things they think need to be clearer in the draft or need to be fixed=
+.<br clear=3D"none">
+<br clear=3D"none">
+I will take either of the following, please let me know.<br clear=3D"none">
+<br clear=3D"none">
+1.=C2=A0 If you will be able to help them in Brazil time zone in a webinar =
+in Portugese / English.=C2=A0 Commitment is one hour per month live and som=
+e email contact.<br clear=3D"none">
+<br clear=3D"none">
+2.=C2=A0 If you will be able to help them via email support only.<br clear=
+=3D"none">
+<br clear=3D"none">
+Please help, if you can.<br clear=3D"none">
+<br clear=3D"none">
+BTW, the Spanish DNSOP team has a mentor &amp; is started.<br clear=3D"none=
+">
+<br clear=3D"none">
+Thank you all very much.<br clear=3D"none">
+<br clear=3D"none">
+<br clear=3D"none">
+Nalini Elkins<br clear=3D"none">
+IETF Mentoring Team<br clear=3D"none">
+Inside Products, Inc.<br clear=3D"none">
+<a rel=3D"nofollow" shape=3D"rect" href=3D"http://www.insidethestack.com/" =
+target=3D"_blank">www.insidethestack.com</a><br clear=3D"none">
+<a href=3D"tel:%28831%29%20659-8360" value=3D"+18316598360" target=3D"_blan=
+k">(831) 659-8360</a><br clear=3D"none">
+<br clear=3D"none">
+_______________________________________________<br clear=3D"none">
+6tisch mailing list<br clear=3D"none">
+<a rel=3D"nofollow" shape=3D"rect" href=3D"mailto:6tisch@ietf.org" target=
+=3D"_blank">6tisch@ietf.org</a><br clear=3D"none">
+<a rel=3D"nofollow" shape=3D"rect" href=3D"https://www.ietf.org/mailman/lis=
+tinfo/6tisch" target=3D"_blank">https://www.ietf.org/mailman/listinfo/6tisc=
+h</a><br clear=3D"none">
+</blockquote></div></div><br clear=3D"none"><br clear=3D"all"><br clear=3D"=
+none">-- <br clear=3D"none"><div>DIEGO DUJOVNE<br clear=3D"none">Acad=C3=A9=
+mico Escuela de Ingenier=C3=ADa en Inform=C3=A1tica y Telecomunicaciones<br=
+ clear=3D"none">Facultad de Ingenier=C3=ADa UDP<br clear=3D"none"><a rel=3D=
+"nofollow" shape=3D"rect" href=3D"http://www.ingenieria.udp.cl/" target=3D"=
+_blank">www.ingenieria.udp.cl</a><br clear=3D"none">(56 2) 676 8125<br clea=
+r=3D"none"></div>
+</div></div></div><br><div>_______________________________________________<=
+br clear=3D"none">6tisch mailing list<br clear=3D"none"><a shape=3D"rect" h=
+ref=3D"mailto:6tisch@ietf.org" target=3D"_blank">6tisch@ietf.org</a><br cle=
+ar=3D"none"><a shape=3D"rect" href=3D"https://www.ietf.org/mailman/listinfo=
+/6tisch" target=3D"_blank">https://www.ietf.org/mailman/listinfo/6tisch</a>=
+<br clear=3D"none"></div><br><br></div> </div></div></div> </div>  </div></=
+div></div><br>_______________________________________________<br>
+6lo mailing list<br>
+<a href=3D"mailto:6lo@ietf.org">6lo@ietf.org</a><br>
+<a href=3D"https://www.ietf.org/mailman/listinfo/6lo" rel=3D"noreferrer" ta=
+rget=3D"_blank">https://www.ietf.org/mailman/listinfo/6lo</a><br>
+<br></blockquote></div><br></div><br clear=3D"all"><div><br></div>-- <br><d=
+iv class=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div st=
+yle=3D"font-size:small"><font face=3D"monospace, monospace">_______________=
+________________________</font></div><div style=3D"font-size:small"><font f=
+ace=3D"monospace, monospace"><br></font></div><div style=3D"font-size:small=
+"><font face=3D"monospace, monospace">Thomas Watteyne, PhD</font></div><div=
+ style=3D"font-size:small"><font face=3D"monospace, monospace">Research Sci=
+entist &amp; Innovator, Inria</font></div><div style=3D"font-size:small"><f=
+ont face=3D"monospace, monospace">Sr Networking Design Eng, Linear Tech</fo=
+nt></div><div style=3D"font-size:small"><font face=3D"monospace, monospace"=
+>Founder &amp; co-lead, UC Berkeley OpenWSN</font></div><div style=3D"font-=
+size:small"><font face=3D"monospace, monospace">Co-chair, IETF 6TiSCH</font=
+></div><div style=3D"font-size:small"><font face=3D"monospace, monospace"><=
+br></font></div><div style=3D"font-size:small"><font face=3D"monospace, mon=
+ospace"><a href=3D"http://www.thomaswatteyne.com" target=3D"_blank">www.tho=
+maswatteyne.com</a></font></div><div style=3D"font-size:small"><font face=
+=3D"monospace, monospace">_______________________________________</font></d=
+iv></div></div></div></div>
+
+--001a11c33d9eec95390532699350--
+
+
+From nobody Mon May  9 19:06:42 2016
+Return-Path: <samita.chakrabarti@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id D73E412D0A1 for <6lo@ietfa.amsl.com>; Mon,  9 May 2016 19:06:39 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.201
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.201 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 6nMP28MAbxCA for <6lo@ietfa.amsl.com>; Mon,  9 May 2016 19:06:37 -0700 (PDT)
+Received: from usplmg20.ericsson.net (usplmg20.ericsson.net [198.24.6.45]) (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 8B77512D104 for <6lo@ietf.org>; Mon,  9 May 2016 19:06:37 -0700 (PDT)
+X-AuditID: c618062d-f79886d000002334-6f-57313a582aa9
+Received: from EUSAAHC003.ericsson.se (Unknown_Domain [147.117.188.81]) by usplmg20.ericsson.net (Symantec Mail Security) with SMTP id 4A.9A.09012.85A31375; Tue, 10 May 2016 03:33:12 +0200 (CEST)
+Received: from EUSAAMB103.ericsson.se ([147.117.188.120]) by EUSAAHC003.ericsson.se ([147.117.188.81]) with mapi id 14.03.0248.002; Mon, 9 May 2016 22:06:36 -0400
+From: Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+To: "6lo@ietf.org" <6lo@ietf.org>, "Ralph Droms (rdroms) (rdroms@cisco.com)" <rdroms@cisco.com>, "Paul Duffy (paduffy)" <paduffy@cisco.com>
+Thread-Topic: WGLC for draft-ietf-6lo-ethertype-request-00.txt  
+Thread-Index: AdGbJj3QJaDWXrwYSJa/46k5GaLsfQPOUz4A
+Date: Tue, 10 May 2016 02:06:35 +0000
+Message-ID: <ECA43DA70480A3498E43C3471FB2E1F022395736@eusaamb103.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.9]
+Content-Type: multipart/alternative; boundary="_000_ECA43DA70480A3498E43C3471FB2E1F022395736eusaamb103erics_"
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFupgkeLIzCtJLcpLzFFi42KZXLonUDfCyjDcYM4sLYu23T9ZLZqnCFhc v1Rh8WbpHHYHFo8pvzeyeixZ8pPJ48vlz2wBzFFcNimpOZllqUX6dglcGW/XfmcruBdcMeP4 ZuYGxr+eXYycHBICJhK9/1axQNhiEhfurWfrYuTiEBI4yijx8HwfM4SzjFFi/fUZTCBVbAJW Eh29e9hBEiICvUBV6xaygSSYBawl/rTcBSsSFrCX+Hx7ASOILSLgILF19252CNtIYtm512A2 i4CqxJczk8BsXgFfiQ9/r4P1MgKd8f3UGiaImeISt57MZ4I4T0BiyZ7zzBC2qMTLx/9YIWxF iX3904HmcADV50vcPMYKMVJQ4uTMJywTGIVnIZk0C6FqFpIqiBIdiQW7P7FB2NoSyxa+Zoax zxx4zIQsvoCRfRUjR2lxQU5uupHBJkZg/ByTYNPdwXh/uuchRgEORiUe3gQOw3Ah1sSy4src Q4wSHMxKIrz/bIBCvCmJlVWpRfnxRaU5qcWHGKU5WJTEecUeKYYLCaQnlqRmp6YWpBbBZJk4 OKUaGPun7KiMfGRfWrtTQfnRyVVvCr02LHwUWBe4ckYS+7QJPRfcan+X+aRGhBv1mgpN4GBe u3PFrtyvp4WiHNazf9/39PmVyTW8VVPdvGzlupz4NGN466frPooK5Xsk/r4pewPLyV41R6ft 3Mun97zYPP9eRrb9pssHrESnPdhueP+FhH+GCnv4cSWW4oxEQy3mouJEANGdOd+bAgAA
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/sreXxPAeBsHpQk6QgwGSUYk_mAE>
+Cc: "6lo-chairs@tools.ietf.org" <6lo-chairs@tools.ietf.org>
+Subject: Re: [6lo] WGLC for draft-ietf-6lo-ethertype-request-00.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 10 May 2016 02:06:40 -0000
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022395736eusaamb103erics_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello:
+
+The LCWG period has ended for draft-ietf-6lo-ethertype-request-00.txt witho=
+ut any  objections.
+
+A revised I-D is expected  for a  clarification point as discussed during W=
+GLC. After that, I believe the document will be ready for IESG submission.
+
+Thanks,
+-Samita
+
+
+
+From: Samita Chakrabarti
+Sent: Wednesday, April 20, 2016 10:07 AM
+To: 6lo@ietf.org
+Cc: 6lo-chairs@tools.ietf.org
+Subject: WGLC for draft-ietf-6lo-ethertype-request-00.txt
+
+Hello All:
+
+
+The WG Last Call for the following document starts today.
+
+Please provide your input on improving the document and comments on proceed=
+ing towards the next step.
+
+The LC will end on May 4, 2016.
+
+
+
+Thank you.
+
+-Samita & Gabriel
+
+
+
+
+
+
+
+
+
+
+
+
+
+>        Title           : Assignment of an Ethertype for IPv6 with LoWPAN =
+Encapsulation
+>        Authors         : Ralph Droms
+>                          Paul Duffy
+>             Filename        : draft-ietf-6lo-ethertype-request-00.txt
+>             Pages           : 4
+>             Date            : 2016-04-18
+>
+> Abstract:
+>   When carried over layer 2 technologies such as Ethernet, IPv6
+>   datagrams using LoWPAN encapsulation as defined in RFC 4944 must be
+>   identified so the receiver can correctly interpret the encoded IPv6
+>   datagram.  This document requests the assignment of an Ethertype for
+>   that purpose.
+>
+>
+> The IETF datatracker status page for this draft is:
+> https://datatracker.ietf.org/doc/draft-ietf-6lo-ethertype-request/
+>
+> There's also a htmlized version available at:
+> https://tools.ietf.org/html/draft-ietf-6lo-ethertype-request-00
+
+
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022395736eusaamb103erics_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:Consolas;}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hello:<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">The LCWG period has en=
+ded for draft-ietf-6lo-ethertype-request-00.txt without any&nbsp; objection=
+s.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">A revised I-D is expec=
+ted&nbsp; for a &nbsp;clarification point as discussed during WGLC. After t=
+hat, I believe the document will be ready for IESG submission.<o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Thanks,<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">-Samita<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><b><span style=3D"font-si=
+ze:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</spa=
+n></b><span style=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;=
+sans-serif&quot;"> Samita Chakrabarti
+<br>
+<b>Sent:</b> Wednesday, April 20, 2016 10:07 AM<br>
+<b>To:</b> 6lo@ietf.org<br>
+<b>Cc:</b> 6lo-chairs@tools.ietf.org<br>
+<b>Subject:</b> WGLC for draft-ietf-6lo-ethertype-request-00.txt <o:p></o:p=
+></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">Hello All:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in">The WG Last Call for t=
+he following document starts today.<o:p></o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in">Please provide your in=
+put on improving the document and comments on proceeding towards the next s=
+tep.<o:p></o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in">The LC will end on May=
+ 4, 2016.<o:p></o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in">Thank you.<o:p></o:p><=
+/p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in">-Samita &amp; Gabriel<=
+o:p></o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText" style=3D"margin-left:.5in"><span style=3D"font-fa=
+mily:&quot;Calibri&quot;,&quot;sans-serif&quot;">&gt;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp; : Assignment of an Ethertype for IPv6 with LoWPAN Encapsulation=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; Authors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p; : Ralph Droms<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Paul Duffy<o:p></o:p=
+></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; &nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Filename&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; : draft-ietf-6lo-ethertype-request-00.txt<o:p></o:p>=
+</p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; &nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pages&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 4<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; &nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 2016-04-18<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; <o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; Abstract:<o:p></o:p>=
+</p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt;&nbsp;&nbsp; When car=
+ried over layer 2 technologies such as Ethernet, IPv6<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt;&nbsp;&nbsp; datagram=
+s using LoWPAN encapsulation as defined in RFC 4944 must be<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt;&nbsp;&nbsp; identifi=
+ed so the receiver can correctly interpret the encoded IPv6<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt;&nbsp;&nbsp; datagram=
+.&nbsp; This document requests the assignment of an Ethertype for<o:p></o:p=
+></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt;&nbsp;&nbsp; that pur=
+pose.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; <o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; <o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; The IETF datatracker=
+ status page for this draft is:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; <a href=3D"https://d=
+atatracker.ietf.org/doc/draft-ietf-6lo-ethertype-request/">
+https://datatracker.ietf.org/doc/draft-ietf-6lo-ethertype-request/</a><o:p>=
+</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; <o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; There's also a htmli=
+zed version available at:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&gt; <a href=3D"https://t=
+ools.ietf.org/html/draft-ietf-6lo-ethertype-request-00">
+https://tools.ietf.org/html/draft-ietf-6lo-ethertype-request-00</a><o:p></o=
+:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022395736eusaamb103erics_--
+
+
+From nobody Fri May 13 17:34:27 2016
+Return-Path: <samita.chakrabarti@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 7316B12D1A7 for <6lo@ietfa.amsl.com>; Fri, 13 May 2016 17:28:07 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.201
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.201 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 2BzIANsm6Jgw for <6lo@ietfa.amsl.com>; Fri, 13 May 2016 17:28:05 -0700 (PDT)
+Received: from usplmg21.ericsson.net (usplmg21.ericsson.net [198.24.6.65]) (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 841C812D6C4 for <6lo@ietf.org>; Fri, 13 May 2016 17:28:05 -0700 (PDT)
+X-AuditID: c6180641-f796f6d000000e1e-32-573670e31165
+Received: from EUSAAHC002.ericsson.se (Unknown_Domain [147.117.188.78]) by usplmg21.ericsson.net (Symantec Mail Security) with SMTP id B3.5C.03614.3E076375; Sat, 14 May 2016 02:27:15 +0200 (CEST)
+Received: from EUSAAMB103.ericsson.se ([147.117.188.120]) by EUSAAHC002.ericsson.se ([147.117.188.78]) with mapi id 14.03.0248.002; Fri, 13 May 2016 20:28:04 -0400
+From: Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+To: "Yong-Geun Hong (yonggeun.hong@gmail.com)" <yonggeun.hong@gmail.com>, "pthubert@cisco.com" <pthubert@cisco.com>, "Thomas Watteyne (thomas.watteyne@inria.fr)" <thomas.watteyne@inria.fr>, "kerlyn@ieee.org" <kerlyn@ieee.org>, "Carsten Bormann (cabo@tzi.org)" <cabo@tzi.org>, "Mohit Sethi M" <mohit.m.sethi@ericsson.com>, "dominique.barthel@orange.com" <dominique.barthel@orange.com>, "Das, Subir" <sdas@appcomsci.com>, "carlesgo@entel.upc.edu" <carlesgo@entel.upc.edu>, "teemu.savolainen@nokia.com" <teemu.savolainen@nokia.com>, "Alexander Pelov (alexander@ackl.io)" <alexander@ackl.io>, "Gabriel Montenegro (Gabriel.Montenegro@microsoft.com)" <Gabriel.Montenegro@microsoft.com>
+Thread-Topic: Call for 6lo Deployment Scenario Document phone meeting
+Thread-Index: AdGtdF47cm/05L50SlSKHIDGNW8z0Q==
+Date: Sat, 14 May 2016 00:28:03 +0000
+Message-ID: <ECA43DA70480A3498E43C3471FB2E1F022396D96@eusaamb103.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.10]
+Content-Type: multipart/alternative; boundary="_000_ECA43DA70480A3498E43C3471FB2E1F022396D96eusaamb103erics_"
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFrrLIsWRmVeSWpSXmKPExsUyuXSPn+7jArNwg+U3tC2apwhYHGu9x25x ZMpdVouD276zWkzp/slocXzmRmaLy+tXMVvMmPKO0eLhDWmLA00WFkdfv2ey+PV/OqsDj8eM 9euZPS5/mcjiMeX3RlaP+wcfMHvsnHWX3ePphINMHkuW/GTymPTiEItH646/7B53b11i8mh5 dpLNY9qizACeKC6blNSczLLUIn27BK6MPx9vMBYssK/o73nD3MC417yLkZNDQsBE4tLUtSwQ tpjEhXvr2boYuTiEBI4ySty+dZUdwlnOKDHj+nVGkCo2ASuJjt49YAkRgZ2sEksPnGUHSTAL KErcmtPDBmILCzhIzDt7AqxBRMBV4s3pBawQtp7E6c7NTCA2i4CqxJEn58DqeQV8JWZ/XA8W ZwQ64/upNUwQM8Ulbj2ZzwRxnoDEkj3nmSFsUYmXj/+xQthKEpOWnmOFqM+XOH73LRPETEGJ kzOfsExgFJ6FZNQsJGWzkJRBxHUkFuz+xAZha0ssW/iaGcY+c+AxE7L4Akb2VYwcpcUFObnp RoabGIGRfkyCzXEH495ez0OMAhyMSjy8Cqam4UKsiWXFlbmHGCU4mJVEeOdnmYUL8aYkVlal FuXHF5XmpBYfYpTmYFES59V/qRguJJCeWJKanZpakFoEk2Xi4JRqYFzcv71xSmhf6CMF8w6j c4Uh+sa1p8//rnMU8iy8mH1YIqVI7r3497kOBu8nl5xnSnTfErbHco7Pw8vHrb0CDx4pYVTJ X/xf4u9FJS7e8uCS8HW/1v57lLvB371e9OrjFKcSowX6Mqs7mO6vNZlgIGyhvSQs4dtns62J f495Tfnp/MrPMEqtQImlOCPRUIu5qDgRAH9qc8PwAgAA
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/jvEVvXslSBQs0B1j9urc10ccn4I>
+X-Mailman-Approved-At: Fri, 13 May 2016 17:34:25 -0700
+Cc: "6lo@ietf.org" <6lo@ietf.org>
+Subject: [6lo] Call for 6lo Deployment Scenario Document phone meeting
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 14 May 2016 00:28:07 -0000
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022396D96eusaamb103erics_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello All:
+
+At Buenos Aires, we had a very productive discussion on updating https://da=
+tatracker.ietf.org/doc/draft-hong-6lo-use-cases/
+In order to use it more for guidance to other IETF WGs and external SDO as =
+to how 6lo WG technologies might be useful to yet another L2 networks that =
+are serving constrained devices.
+The document already discusses different parameters for different technolog=
+ies  and typical deployment.
+
+The goal is to improve the document  and present it as an 6lo Applicability=
+ document for others to know how to use this technology.
+
+Yong-Geun is heading this effort and  he might need some extra hands to hel=
+p him out.
+
+I plan to arrange a phone meeting next week (Wed/Thurs) @7am PDT to discuss=
+:
+
+
+*         Outline proposal of the updated document
+
+*         Nail down the usecase scenarios
+
+
+
+Thanks,
+
+-Samita
+
+
+
+
+
+PS: Please update the Doodle poll for your preference on attendance.
+
+http://doodle.com/poll/y9akcyphnrtvwusa
+
+
+
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022396D96eusaamb103erics_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:448009387;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1934494024 45356070 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hello All: <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">At Buenos Aires, we had a very productive discussion=
+ on updating
+<a href=3D"https://datatracker.ietf.org/doc/draft-hong-6lo-use-cases/">http=
+s://datatracker.ietf.org/doc/draft-hong-6lo-use-cases/</a><o:p></o:p></p>
+<p class=3D"MsoNormal">In order to use it more for guidance to other IETF W=
+Gs and external SDO as to how 6lo WG technologies might be useful to yet an=
+other L2 networks that are serving constrained devices.
+<o:p></o:p></p>
+<p class=3D"MsoNormal">The document already discusses different parameters =
+for different technologies&nbsp; and typical deployment.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The goal is to improve the document&nbsp; and presen=
+t it as an 6lo Applicability document for others to know how to use this te=
+chnology.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Yong-Geun is heading this effort and&nbsp; he might =
+need some extra hands to help him out.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">I plan to arrange a phone meeting next week (Wed/Thu=
+rs) @7am PDT to discuss:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo1"><![if !supportLists]><span style=3D"font-family:Symbol"><span style=
+=3D"mso-list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roma=
+n&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Outline proposal of the updated document<o:p=
+></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo1"><![if !supportLists]><span style=3D"font-family:Symbol"><span style=
+=3D"mso-list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roma=
+n&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Nail down the usecase scenarios<o:p></o:p></=
+p>
+<p class=3D"MsoListParagraph"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoListParagraph">Thanks,<o:p></o:p></p>
+<p class=3D"MsoListParagraph">-Samita<o:p></o:p></p>
+<p class=3D"MsoListParagraph"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoListParagraph"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoListParagraph">PS: Please update the Doodle poll for your pr=
+eference on attendance.<o:p></o:p></p>
+<p class=3D"MsoListParagraph"><a href=3D"http://doodle.com/poll/y9akcyphnrt=
+vwusa">http://doodle.com/poll/y9akcyphnrtvwusa</a><o:p></o:p></p>
+<p class=3D"MsoListParagraph"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022396D96eusaamb103erics_--
+
+
+From nobody Fri May 13 17:40:42 2016
+Return-Path: <samita.chakrabarti@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 4F23812D14A for <6lo@ietfa.amsl.com>; Fri, 13 May 2016 17:40:41 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.201
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.201 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id PGGjfQJUDNh0 for <6lo@ietfa.amsl.com>; Fri, 13 May 2016 17:40:38 -0700 (PDT)
+Received: from usplmg21.ericsson.net (usplmg21.ericsson.net [198.24.6.65]) (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id A05E312D098 for <6lo@ietf.org>; Fri, 13 May 2016 17:40:38 -0700 (PDT)
+X-AuditID: c6180641-f796f6d000000e1e-f0-573673d41f3f
+Received: from EUSAAHC001.ericsson.se (Unknown_Domain [147.117.188.75]) by usplmg21.ericsson.net (Symantec Mail Security) with SMTP id B7.8C.03614.4D376375; Sat, 14 May 2016 02:39:49 +0200 (CEST)
+Received: from EUSAAMB103.ericsson.se ([147.117.188.120]) by EUSAAHC001.ericsson.se ([147.117.188.75]) with mapi id 14.03.0248.002; Fri, 13 May 2016 20:40:37 -0400
+From: Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: Call for 6lo Deployment Scenario Document phone meeting
+Thread-Index: AdGtdF47cm/05L50SlSKHIDGNW8z0QABHNrw
+Date: Sat, 14 May 2016 00:40:36 +0000
+Message-ID: <ECA43DA70480A3498E43C3471FB2E1F022396DC8@eusaamb103.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.10]
+Content-Type: multipart/alternative; boundary="_000_ECA43DA70480A3498E43C3471FB2E1F022396DC8eusaamb103erics_"
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFnrILMWRmVeSWpSXmKPExsUyuXSPt+7VYrNwg68lFs1TBBwYPZYs+ckU wBjFZZOSmpNZllqkb5fAlXF0elLBw5iKW/22DYwfA7sYOTkkBEwkGm/3MELYYhIX7q1n62Lk 4hASOMoosff9f1aQhJDAckaJD9eDQWw2ASuJjt497CC2iICixN5nj8FsYQEXiV/v1jFBxF0l 3pxewAphG0lMffKNBcRmEVCVmNV1jw3E5hXwlfh8/j9YPSPQ4u+n1oDZzALiEreezGeCOEhA Ysme88wQtqjEy8f/WCFsJYlJS8+xQtTnS+w9soMJYqagxMmZT1gmMArNQjJqFpKyWUjKIOI6 Egt2f2KDsLUlli18zQxjnznwmAlZfAEj+ypGjtLigpzcdCPDTYzAgD8mwea4g3Fvr+chRgEO RiUeXgVT03Ah1sSy4srcQ4wSHMxKIrz+hWbhQrwpiZVVqUX58UWlOanFhxilOViUxHn1XyqG CwmkJ5akZqemFqQWwWSZODilGhgz5CdtuMR7Yh/DA5k0q+3hdqt//9KxVZrjE7tYLOO7cm3+ hqUzxVqbVSINAtYnmaurulzbran21Fs+9pnzy0mXb0+07+fJnL5oXtmvX4dK9s0p3fjW5dwr icSJlz9PmnOj7WrtTO2k37sjGZKEwp4o7Ej6xVwx5YaDf5RS5/KdU6aosYu/rPmmxFKckWio xVxUnAgAveKBLHQCAAA=
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/cj3ls-EIXy9v0KLL-7UVArtDmE0>
+Subject: Re: [6lo] Call for 6lo Deployment Scenario Document phone meeting
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 14 May 2016 00:40:41 -0000
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022396DC8eusaamb103erics_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+PS: Please update the Doodle poll for your preference on attendance. [ for =
+next week]
+
+http://doodle.com/poll/y9akcyphnrtvwusa
+
+
+
+
+
+Please reply only to '6lo@ietf.org'.  [ Else the mail administrator complai=
+ns about too many recipients]
+
+
+
+Thanks,
+
+-Samita
+
+From: Samita Chakrabarti
+Sent: Friday, May 13, 2016 5:28 PM
+To: Yong-Geun Hong (yonggeun.hong@gmail.com); pthubert@cisco.com; Thomas Wa=
+tteyne (thomas.watteyne@inria.fr); kerlyn@ieee.org; Carsten Bormann (cabo@t=
+zi.org); Mohit Sethi M; dominique.barthel@orange.com; 'Das, Subir'; 'carles=
+go@entel.upc.edu'; 'teemu.savolainen@nokia.com'; Alexander Pelov (alexander=
+@ackl.io); Gabriel Montenegro (Gabriel.Montenegro@microsoft.com)
+Cc: 6lo@ietf.org
+Subject: Call for 6lo Deployment Scenario Document phone meeting
+
+Hello All:
+
+At Buenos Aires, we had a very productive discussion on updating https://da=
+tatracker.ietf.org/doc/draft-hong-6lo-use-cases/
+In order to use it more for guidance to other IETF WGs and external SDO as =
+to how 6lo WG technologies might be useful to yet another L2 networks that =
+are serving constrained devices.
+The document already discusses different parameters for different technolog=
+ies  and typical deployment.
+
+The goal is to improve the document  and present it as an 6lo Applicability=
+ document for others to know how to use this technology.
+
+Yong-Geun is heading this effort and  he might need some extra hands to hel=
+p him out.
+
+I plan to arrange a phone meeting next week (Wed/Thurs) @7am PDT to discuss=
+:
+
+
+*         Outline proposal of the updated document
+
+*         Nail down the usecase scenarios
+
+
+
+Thanks,
+
+-Samita
+
+
+
+
+
+PS: Please update the Doodle poll for your preference on attendance.
+
+http://doodle.com/poll/y9akcyphnrtvwusa
+
+
+
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022396DC8eusaamb103erics_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.EmailStyle18
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:448009387;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1934494024 45356070 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in">PS: Please update=
+ the Doodle poll for your preference on attendance. [ for next week]<o:p></=
+o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><a href=3D"http:/=
+/doodle.com/poll/y9akcyphnrtvwusa">http://doodle.com/poll/y9akcyphnrtvwusa<=
+/a><o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><o:p>&nbsp;</o:p>=
+</p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><o:p>&nbsp;</o:p>=
+</p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in">Please reply only=
+ to &#8216;6lo@ietf.org&#8217;.&nbsp; [ Else the mail administrator complai=
+ns about too many recipients]<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><o:p>&nbsp;</o:p>=
+</p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in">Thanks,<o:p></o:p=
+></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in">-Samita<o:p></o:p=
+></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><b><span style=3D"font-si=
+ze:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</spa=
+n></b><span style=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;=
+sans-serif&quot;"> Samita Chakrabarti
+<br>
+<b>Sent:</b> Friday, May 13, 2016 5:28 PM<br>
+<b>To:</b> Yong-Geun Hong (yonggeun.hong@gmail.com); pthubert@cisco.com; Th=
+omas Watteyne (thomas.watteyne@inria.fr); kerlyn@ieee.org; Carsten Bormann =
+(cabo@tzi.org); Mohit Sethi M; dominique.barthel@orange.com; 'Das, Subir'; =
+'carlesgo@entel.upc.edu'; 'teemu.savolainen@nokia.com';
+ Alexander Pelov (alexander@ackl.io); Gabriel Montenegro (Gabriel.Montenegr=
+o@microsoft.com)<br>
+<b>Cc:</b> 6lo@ietf.org<br>
+<b>Subject:</b> Call for 6lo Deployment Scenario Document phone meeting<o:p=
+></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">Hello All: <o:p></o:p></p=
+>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">At Buenos Aires, we had a=
+ very productive discussion on updating
+<a href=3D"https://datatracker.ietf.org/doc/draft-hong-6lo-use-cases/">http=
+s://datatracker.ietf.org/doc/draft-hong-6lo-use-cases/</a><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">In order to use it more f=
+or guidance to other IETF WGs and external SDO as to how 6lo WG technologie=
+s might be useful to yet another L2 networks that are serving constrained d=
+evices.
+<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">The document already disc=
+usses different parameters for different technologies&nbsp; and typical dep=
+loyment.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">The goal is to improve th=
+e document&nbsp; and present it as an 6lo Applicability document for others=
+ to know how to use this technology.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">Yong-Geun is heading this=
+ effort and&nbsp; he might need some extra hands to help him out.<o:p></o:p=
+></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">I plan to arrange a phone=
+ meeting next week (Wed/Thurs) @7am PDT to discuss:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level1 lfo2">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Outline proposal of the updated document<o:p=
+></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level1 lfo2">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Nail down the usecase scenarios<o:p></o:p></=
+p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><o:p>&nbsp;</o:p>=
+</p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in">Thanks,<o:p></o:p=
+></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in">-Samita<o:p></o:p=
+></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><o:p>&nbsp;</o:p>=
+</p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><o:p>&nbsp;</o:p>=
+</p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in">PS: Please update=
+ the Doodle poll for your preference on attendance.<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><a href=3D"http:/=
+/doodle.com/poll/y9akcyphnrtvwusa">http://doodle.com/poll/y9akcyphnrtvwusa<=
+/a><o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><o:p>&nbsp;</o:p>=
+</p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022396DC8eusaamb103erics_--
+
+
+From nobody Mon May 16 08:08:36 2016
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 25A9312D197; Mon, 16 May 2016 08:08:34 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.20.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <20160516150833.16841.61588.idtracker@ietfa.amsl.com>
+Date: Mon, 16 May 2016 08:08:33 -0700
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/IaDIfYZD7shXoent33gjdFiYE8s>
+Cc: 6lo@ietf.org
+Subject: [6lo] I-D Action: draft-ietf-6lo-dect-ule-05.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 16 May 2016 15:08:35 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes of the IETF.
+
+        Title           : Transmission of IPv6 Packets over DECT Ultra Low Energy
+        Authors         : Peter B. Mariager
+                          Jens Toftgaard Petersen
+                          Zach Shelby
+                          Marco van de Logt
+                          Dominique Barthel
+	Filename        : draft-ietf-6lo-dect-ule-05.txt
+	Pages           : 19
+	Date            : 2016-05-16
+
+Abstract:
+   DECT Ultra Low Energy is a low power air interface technology that is
+   defined by the DECT Forum and specified by ETSI.
+
+   The DECT air interface technology has been used world-wide in
+   communication devices for more than 20 years, primarily carrying
+   voice for cordless telephony but has also been deployed for data
+   centric services.
+
+   The DECT Ultra Low Energy is a recent addition to the DECT interface
+   primarily intended for low-bandwidth, low-power applications such as
+   sensor devices, smart meters, home automation etc.  As the DECT Ultra
+   Low Energy interface inherits many of the capabilities from DECT, it
+   benefits from long range, interference free operation, world wide
+   reserved frequency band, low silicon prices and maturity.  There is
+   an added value in the ability to communicate with IPv6 over DECT ULE
+   such as for Internet of Things applications.
+
+   This document describes how IPv6 is transported over DECT ULE using
+   6LoWPAN techniques.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-dect-ule/
+
+There's also a htmlized version available at:
+https://tools.ietf.org/html/draft-ietf-6lo-dect-ule-05
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-dect-ule-05
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Tue May 17 02:37:28 2016
+Return-Path: <rashid.sangi@huawei.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id E8FCE12B061 for <6lo@ietfa.amsl.com>; Tue, 17 May 2016 02:37:26 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -5.646
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.646 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, RP_MATCHES_RCVD=-1.426, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 2G6bK9i7WVhw for <6lo@ietfa.amsl.com>; Tue, 17 May 2016 02:37:24 -0700 (PDT)
+Received: from lhrrgout.huawei.com (lhrrgout.huawei.com [194.213.3.17]) (using TLSv1 with cipher RC4-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 65FAE12B030 for <6lo@ietf.org>; Tue, 17 May 2016 02:37:23 -0700 (PDT)
+Received: from 172.18.7.190 (EHLO lhreml708-cah.china.huawei.com) ([172.18.7.190]) by lhrrg02-dlp.huawei.com (MOS 4.3.7-GA FastPath queued) with ESMTP id CKB62128; Tue, 17 May 2016 09:37:19 +0000 (GMT)
+Received: from SZXEMI403-HUB.china.huawei.com (10.82.75.35) by lhreml708-cah.china.huawei.com (10.201.5.202) with Microsoft SMTP Server (TLS) id 14.3.235.1; Tue, 17 May 2016 10:37:17 +0100
+Received: from SZXEMI505-MBS.china.huawei.com ([169.254.4.167]) by SZXEMI403-HUB.china.huawei.com ([10.83.65.55]) with mapi id 14.03.0235.001; Tue, 17 May 2016 17:37:11 +0800
+From: AbdurRashidSangi <rashid.sangi@huawei.com>
+To: "6lo@ietf.org" <6lo@ietf.org>, Yong-Geun Hong <yonggeun.hong@gmail.com>, Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+Thread-Topic: Call for 6lo Deployment Scenario Document phone meeting
+Thread-Index: AdGtdF47cm/05L50SlSKHIDGNW8z0QABHNrwAKk4qEA=
+Date: Tue, 17 May 2016 09:37:10 +0000
+Message-ID: <C3DD54213F5261438F5CE46038658EE320777298@SZXEMI505-MBS.china.huawei.com>
+References: <ECA43DA70480A3498E43C3471FB2E1F022396DC8@eusaamb103.ericsson.se>
+In-Reply-To: <ECA43DA70480A3498E43C3471FB2E1F022396DC8@eusaamb103.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.111.151.40]
+Content-Type: multipart/alternative; boundary="_000_C3DD54213F5261438F5CE46038658EE320777298SZXEMI505MBSchi_"
+MIME-Version: 1.0
+X-CFilter-Loop: Reflected
+X-Mirapoint-Virus-RAPID-Raw: score=unknown(0), refid=str=0001.0A090201.573AE650.002F, ss=1, re=0.000, recu=0.000, reip=0.000,  cl=1, cld=1, fgs=0, ip=169.254.4.167, so=2013-06-18 04:22:30, dmn=2013-03-21 17:37:32
+X-Mirapoint-Loop-Id: 9867ffa6fff2dc7aa42aac21204cb0e9
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/H7lWTUVP0AABfCs5Ci9xdoJowLI>
+Subject: Re: [6lo] Call for 6lo Deployment Scenario Document phone meeting
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 17 May 2016 09:37:27 -0000
+
+--_000_C3DD54213F5261438F5CE46038658EE320777298SZXEMI505MBSchi_
+Content-Type: text/plain; charset="gb2312"
+Content-Transfer-Encoding: base64
+
+SGkgWW9uZy1HZXVuLA0KDQpBcyBwZXIgbXkgdW5kZXJzdGFuZGluZyBhZnRlciBxdWljayByZXZp
+ZXcsIGZvbGxvd2luZyBhcmUgc29tZSBlZGl0b3JpYWwgYW5kIGZ1cnRoZXIgZXhwbGFuYXRpb24g
+b2Ygc29tZSBkZXRhaWxzIHlvdSBtZW50aW9uZWQgaW4gdGhlIGRyYWZ0Og0KDQoxLiAgMy4yLiBm
+aXJzdCBwYXJhOiBiZXR0ZXIgZnVydGhlciBkZWZpbmUgSVBTUyBvciBjb21wbGV0ZWx5IGV4Y2x1
+ZGUgaXQuDQoyLiAgMy4zLiB0aGlyZCBwYXJhOiAiUG9ydGFibGUgUGFydHMgKFBQKSBhdHRhY2hl
+ZCIgLSBpbnN0ZWFkIG9mIC0gIlBQIGF0dGFjaGVkIi4NCjMuICA0LiBEZXNpZ24gU3BhY2UuIGZp
+cnN0IGFuZCBzZWNvbmQgcGFyYTogaW5jb3JyZWN0IHJlZmVyZW5jZSBvZiAiUkZDIDY1NTgiIC0g
+aW5zdGVhZCBvZiAtICJSRkMgNjU2OCINCjQuICA1LjEuIGZpcnN0IHBhcmE6IHN1aXRhYmx5IHJl
+cGhyYXNpbmcgIkhvd2V2ZXIsIHRoZSBwZXJzb24gZGF0YSIgdG8gbGV0IHN1cHBvc2UgIkhvd2V2
+ZXIsIHRoZSBwZXJzb25hbCBkYXRhLCB3aGljaCBwb3NlIHNlcmlvdXMgaXNzdWVzIGlmIG1pc2hh
+bmRsZWQgd2hpbGUgdHJhbnNmZXJyZWQgaW4gd2lyZWxlc3MgZG9tYWluLCBjYW4gYmUgc2VjdXJl
+bHkgdHJhbnNmZXJyZWQgYnkgTkZDIHRlY2hub2xvZ3kiLg0KNS4gIDUuMy4gUmVsaWFiaWxpdHkg
+JiBRb1M6ICJMYXRlbmN5IG9mIFNFTlNPUiBSRUFESU5HUyIgc2hvdWxkIGJlIGxvdyBmb3IiLg0K
+Ni4gIDUuNC4gZmlyc3QgcGFyYTogImNvbW11bmljYXRpb25zIiAtIGluc3RlYWQgb2YgLSAiY29t
+bXVuaWNhdGlvcyIuDQo3LiAgNS41LiBmaXJzdCBwYXJhOiAiVGhlcmVmb3JlLCB0aGUgdXNlIGNh
+c2Ugb2YgTFRFIE1UQyBjb3VsZCBiZSB1c2VkIGluIExQV0FOIiAtIGluc3RlYWQgb2YgLSAiVGhl
+cmVmb3JlLCB0aGUgdXNlLi4uLiIuDQo4LiAgNS41LiBleGFtcGxlOiBpZiB5b3UgYXJlIHJlZmVy
+cmluZyB0byBjb25uZWN0aXZpdHkgYmV0d2VlbiBlbmQgZGV2aWNlIGFuZCBMUFdBTiBnYXRld2F5
+LCBob3cgYWJvdXQgdXNpbmcgdGhlIHRlcm0gImZyb250aGF1bCIgaW5zdGVhZCBvZiAiYmFja2hh
+dWwiPw0KOS4gIDUuNS4gZXhhbXBsZTogInN0YXIgb2Ygc3RhciB0b3BvbG9neSIgLSBpbnN0ZWFk
+IG9mIC0gInN0YXIgb2Ygc3RhdCB0b3BvbG9neSIuDQoxMC4gNS41LiBleGFtcGxlOiBNYXhpbXVt
+IGRhdGEgcmF0ZSBpcyBtZW50aW9uZWQgZm9yIExvUmE7IGtlZXBpbmcgdGhlIGNvbnNpZGVyYXRp
+b24gb2YgYmFuZHdpZHRoIGFnZ3JlZ2F0aW9uIHJlY2VudGx5IHByb3Bvc2VkIGluICJkcmFmdC1x
+aW4tbHB3YW4tZGF1LTAwIiB3b3VsZCBiZSBiZXR0ZXIuDQoNCkFmdGVyd2FyZCwgd2UgY2FuIGtl
+ZXAgcmVwaHJhc2luZyB0aGUgc2VudGVuY2UgdGhhdCByZXF1aXJlcyBzb21lIG1vZGlmaWNhdGlv
+bnMuDQoNCkhvcGUgeW91IGZpbmQgdGhlIHN1Z2dlc3Rpb25zLCB1c2VmdWwuDQoNClRoYW5rcy4N
+ClJhc2hpZCBTYW5naSwNCkh1YXdlaSwgQmVpamluZywgQ2hpbmEuDQoNCg0KRnJvbTogNmxvIFtt
+YWlsdG86NmxvLWJvdW5jZXNAaWV0Zi5vcmddIE9uIEJlaGFsZiBPZiBTYW1pdGEgQ2hha3JhYmFy
+dGkNClNlbnQ6IDIwMTbE6jXUwjE0yNUgODo0MQ0KVG86IDZsb0BpZXRmLm9yZw0KU3ViamVjdDog
+UmU6IFs2bG9dIENhbGwgZm9yIDZsbyBEZXBsb3ltZW50IFNjZW5hcmlvIERvY3VtZW50IHBob25l
+IG1lZXRpbmcNCg0KDQoNClBTOiBQbGVhc2UgdXBkYXRlIHRoZSBEb29kbGUgcG9sbCBmb3IgeW91
+ciBwcmVmZXJlbmNlIG9uIGF0dGVuZGFuY2UuIFsgZm9yIG5leHQgd2Vla10NCg0KaHR0cDovL2Rv
+b2RsZS5jb20vcG9sbC95OWFrY3lwaG5ydHZ3dXNhDQoNCg0KDQoNCg0KUGxlYXNlIHJlcGx5IG9u
+bHkgdG8goa42bG9AaWV0Zi5vcmehry4gIFsgRWxzZSB0aGUgbWFpbCBhZG1pbmlzdHJhdG9yIGNv
+bXBsYWlucyBhYm91dCB0b28gbWFueSByZWNpcGllbnRzXQ0KDQoNCg0KVGhhbmtzLA0KDQotU2Ft
+aXRhDQoNCkZyb206IFNhbWl0YSBDaGFrcmFiYXJ0aQ0KU2VudDogRnJpZGF5LCBNYXkgMTMsIDIw
+MTYgNToyOCBQTQ0KVG86IFlvbmctR2V1biBIb25nICh5b25nZ2V1bi5ob25nQGdtYWlsLmNvbTxt
+YWlsdG86eW9uZ2dldW4uaG9uZ0BnbWFpbC5jb20+KTsgcHRodWJlcnRAY2lzY28uY29tPG1haWx0
+bzpwdGh1YmVydEBjaXNjby5jb20+OyBUaG9tYXMgV2F0dGV5bmUgKHRob21hcy53YXR0ZXluZUBp
+bnJpYS5mcjxtYWlsdG86dGhvbWFzLndhdHRleW5lQGlucmlhLmZyPik7IGtlcmx5bkBpZWVlLm9y
+ZzxtYWlsdG86a2VybHluQGllZWUub3JnPjsgQ2Fyc3RlbiBCb3JtYW5uIChjYWJvQHR6aS5vcmc8
+bWFpbHRvOmNhYm9AdHppLm9yZz4pOyBNb2hpdCBTZXRoaSBNOyBkb21pbmlxdWUuYmFydGhlbEBv
+cmFuZ2UuY29tPG1haWx0bzpkb21pbmlxdWUuYmFydGhlbEBvcmFuZ2UuY29tPjsgJ0RhcywgU3Vi
+aXInOyAnY2FybGVzZ29AZW50ZWwudXBjLmVkdSc7ICd0ZWVtdS5zYXZvbGFpbmVuQG5va2lhLmNv
+bSc7IEFsZXhhbmRlciBQZWxvdiAoYWxleGFuZGVyQGFja2wuaW88bWFpbHRvOmFsZXhhbmRlckBh
+Y2tsLmlvPik7IEdhYnJpZWwgTW9udGVuZWdybyAoR2FicmllbC5Nb250ZW5lZ3JvQG1pY3Jvc29m
+dC5jb208bWFpbHRvOkdhYnJpZWwuTW9udGVuZWdyb0BtaWNyb3NvZnQuY29tPikNCkNjOiA2bG9A
+aWV0Zi5vcmc8bWFpbHRvOjZsb0BpZXRmLm9yZz4NClN1YmplY3Q6IENhbGwgZm9yIDZsbyBEZXBs
+b3ltZW50IFNjZW5hcmlvIERvY3VtZW50IHBob25lIG1lZXRpbmcNCg0KSGVsbG8gQWxsOg0KDQpB
+dCBCdWVub3MgQWlyZXMsIHdlIGhhZCBhIHZlcnkgcHJvZHVjdGl2ZSBkaXNjdXNzaW9uIG9uIHVw
+ZGF0aW5nIGh0dHBzOi8vZGF0YXRyYWNrZXIuaWV0Zi5vcmcvZG9jL2RyYWZ0LWhvbmctNmxvLXVz
+ZS1jYXNlcy8NCkluIG9yZGVyIHRvIHVzZSBpdCBtb3JlIGZvciBndWlkYW5jZSB0byBvdGhlciBJ
+RVRGIFdHcyBhbmQgZXh0ZXJuYWwgU0RPIGFzIHRvIGhvdyA2bG8gV0cgdGVjaG5vbG9naWVzIG1p
+Z2h0IGJlIHVzZWZ1bCB0byB5ZXQgYW5vdGhlciBMMiBuZXR3b3JrcyB0aGF0IGFyZSBzZXJ2aW5n
+IGNvbnN0cmFpbmVkIGRldmljZXMuDQpUaGUgZG9jdW1lbnQgYWxyZWFkeSBkaXNjdXNzZXMgZGlm
+ZmVyZW50IHBhcmFtZXRlcnMgZm9yIGRpZmZlcmVudCB0ZWNobm9sb2dpZXMgIGFuZCB0eXBpY2Fs
+IGRlcGxveW1lbnQuDQoNClRoZSBnb2FsIGlzIHRvIGltcHJvdmUgdGhlIGRvY3VtZW50ICBhbmQg
+cHJlc2VudCBpdCBhcyBhbiA2bG8gQXBwbGljYWJpbGl0eSBkb2N1bWVudCBmb3Igb3RoZXJzIHRv
+IGtub3cgaG93IHRvIHVzZSB0aGlzIHRlY2hub2xvZ3kuDQoNCllvbmctR2V1biBpcyBoZWFkaW5n
+IHRoaXMgZWZmb3J0IGFuZCAgaGUgbWlnaHQgbmVlZCBzb21lIGV4dHJhIGhhbmRzIHRvIGhlbHAg
+aGltIG91dC4NCg0KSSBwbGFuIHRvIGFycmFuZ2UgYSBwaG9uZSBtZWV0aW5nIG5leHQgd2VlayAo
+V2VkL1RodXJzKSBAN2FtIFBEVCB0byBkaXNjdXNzOg0KDQoNCqGkICAgICAgICAgT3V0bGluZSBw
+cm9wb3NhbCBvZiB0aGUgdXBkYXRlZCBkb2N1bWVudA0KDQqhpCAgICAgICAgIE5haWwgZG93biB0
+aGUgdXNlY2FzZSBzY2VuYXJpb3MNCg0KDQoNClRoYW5rcywNCg0KLVNhbWl0YQ0KDQoNCg0KDQoN
+ClBTOiBQbGVhc2UgdXBkYXRlIHRoZSBEb29kbGUgcG9sbCBmb3IgeW91ciBwcmVmZXJlbmNlIG9u
+IGF0dGVuZGFuY2UuDQoNCmh0dHA6Ly9kb29kbGUuY29tL3BvbGwveTlha2N5cGhucnR2d3VzYQ0K
+DQoNCg0K
+
+--_000_C3DD54213F5261438F5CE46038658EE320777298SZXEMI505MBSchi_
+Content-Type: text/html; charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dgb2312">
+<meta name=3D"Generator" content=3D"Microsoft Word 12 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:=CB=CE=CC=E5;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@=CB=CE=CC=E5";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.EmailStyle18
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle22
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:448009387;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1934494024 45356070 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hi Yong-Geun,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">As per my understanding after quick review, followin=
+g are some editorial and further explanation of some details you mentioned =
+in the draft:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">1.&nbsp; 3.2. first para: better further define IPSS=
+ or completely exclude it.<o:p></o:p></p>
+<p class=3D"MsoNormal">2.&nbsp; 3.3. third para: &quot;Portable Parts (PP) =
+attached&quot; - instead of - &quot;PP attached&quot;.<o:p></o:p></p>
+<p class=3D"MsoNormal">3.&nbsp; 4. Design Space. first and second para: inc=
+orrect reference of &quot;RFC 6558&quot; - instead of - &quot;RFC 6568&quot=
+;<o:p></o:p></p>
+<p class=3D"MsoNormal">4.&nbsp; 5.1. first para: suitably rephrasing &quot;=
+However, the person data&quot; to let suppose &quot;However, the personal d=
+ata, which pose serious issues if mishandled while transferred in wireless =
+domain, can be securely transferred by NFC technology&quot;.<o:p></o:p></p>
+<p class=3D"MsoNormal">5.&nbsp; 5.3. Reliability &amp; QoS: &quot;Latency o=
+f <u>SENSOR READINGS</u>&quot; should be low for&quot;.<o:p></o:p></p>
+<p class=3D"MsoNormal">6.&nbsp; 5.4. first para: &quot;communications&quot;=
+ - instead of - &quot;communicatios&quot;.<o:p></o:p></p>
+<p class=3D"MsoNormal">7.&nbsp; 5.5. first para: &quot;Therefore, the use c=
+ase of LTE MTC could be used in LPWAN&quot; - instead of - &quot;Therefore,=
+ the use....&quot;.<o:p></o:p></p>
+<p class=3D"MsoNormal">8.&nbsp; 5.5. example: if you are referring to conne=
+ctivity between end device and LPWAN gateway, how about using the term &quo=
+t;fronthaul&quot; instead of &quot;backhaul&quot;?<o:p></o:p></p>
+<p class=3D"MsoNormal">9.&nbsp; 5.5. example: &quot;star of star topology&q=
+uot; - instead of - &quot;star of stat topology&quot;.<o:p></o:p></p>
+<p class=3D"MsoNormal">10. 5.5. example: Maximum data rate is mentioned for=
+ LoRa; keeping the consideration of bandwidth aggregation recently proposed=
+ in &quot;draft-qin-lpwan-dau-00&quot; would be better.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Afterward, we can keep rephrasing the sentence that =
+requires some modifications.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hope you find the suggestions, useful.<o:p></o:p></p=
+>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks.<o:p></o:p></p>
+<p class=3D"MsoNormal">Rashid Sangi,<o:p></o:p></p>
+<p class=3D"MsoNormal">Huawei, Beijing, China.<o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div style=3D"border:none;border-left:solid blue 1.5pt;padding:0cm 0cm 0cm =
+4.0pt">
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> 6lo [mai=
+lto:6lo-bounces@ietf.org]
+<b>On Behalf Of </b>Samita Chakrabarti<br>
+<b>Sent:</b> 2016</span><span lang=3D"ZH-CN" style=3D"font-size:10.0pt;font=
+-family:=CB=CE=CC=E5">=C4=EA</span><span style=3D"font-size:10.0pt;font-fam=
+ily:&quot;Tahoma&quot;,&quot;sans-serif&quot;">5</span><span lang=3D"ZH-CN"=
+ style=3D"font-size:10.0pt;font-family:=CB=CE=CC=E5">=D4=C2</span><span sty=
+le=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot=
+;">14</span><span lang=3D"ZH-CN" style=3D"font-size:10.0pt;font-family:=CB=
+=CE=CC=E5">=C8=D5</span><span style=3D"font-size:10.0pt;font-family:&quot;T=
+ahoma&quot;,&quot;sans-serif&quot;">
+ 8:41<br>
+<b>To:</b> 6lo@ietf.org<br>
+<b>Subject:</b> Re: [6lo] Call for 6lo Deployment Scenario Document phone m=
+eeting<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt">PS: Please updat=
+e the Doodle poll for your preference on attendance. [ for next week]<o:p><=
+/o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt"><a href=3D"http:=
+//doodle.com/poll/y9akcyphnrtvwusa">http://doodle.com/poll/y9akcyphnrtvwusa=
+</a><o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt"><o:p>&nbsp;</o:p=
+></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt"><o:p>&nbsp;</o:p=
+></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt">Please reply onl=
+y to =A1=AE6lo@ietf.org=A1=AF.&nbsp; [ Else the mail administrator complain=
+s about too many recipients]<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt"><o:p>&nbsp;</o:p=
+></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt">Thanks,<o:p></o:=
+p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt">-Samita<o:p></o:=
+p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><b><span style=3D"font-=
+size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</s=
+pan></b><span style=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quo=
+t;sans-serif&quot;"> Samita Chakrabarti
+<br>
+<b>Sent:</b> Friday, May 13, 2016 5:28 PM<br>
+<b>To:</b> Yong-Geun Hong (<a href=3D"mailto:yonggeun.hong@gmail.com">yongg=
+eun.hong@gmail.com</a>);
+<a href=3D"mailto:pthubert@cisco.com">pthubert@cisco.com</a>; Thomas Wattey=
+ne (<a href=3D"mailto:thomas.watteyne@inria.fr">thomas.watteyne@inria.fr</a=
+>);
+<a href=3D"mailto:kerlyn@ieee.org">kerlyn@ieee.org</a>; Carsten Bormann (<a=
+ href=3D"mailto:cabo@tzi.org">cabo@tzi.org</a>); Mohit Sethi M;
+<a href=3D"mailto:dominique.barthel@orange.com">dominique.barthel@orange.co=
+m</a>; 'Das, Subir'; 'carlesgo@entel.upc.edu'; 'teemu.savolainen@nokia.com'=
+; Alexander Pelov (<a href=3D"mailto:alexander@ackl.io">alexander@ackl.io</=
+a>); Gabriel Montenegro (<a href=3D"mailto:Gabriel.Montenegro@microsoft.com=
+">Gabriel.Montenegro@microsoft.com</a>)<br>
+<b>Cc:</b> <a href=3D"mailto:6lo@ietf.org">6lo@ietf.org</a><br>
+<b>Subject:</b> Call for 6lo Deployment Scenario Document phone meeting<o:p=
+></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">Hello All: <o:p></o:p><=
+/p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">At Buenos Aires, we had=
+ a very productive discussion on updating
+<a href=3D"https://datatracker.ietf.org/doc/draft-hong-6lo-use-cases/">http=
+s://datatracker.ietf.org/doc/draft-hong-6lo-use-cases/</a><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">In order to use it more=
+ for guidance to other IETF WGs and external SDO as to how 6lo WG technolog=
+ies might be useful to yet another L2 networks that are serving constrained=
+ devices.
+<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">The document already di=
+scusses different parameters for different technologies&nbsp; and typical d=
+eployment.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">The goal is to improve =
+the document&nbsp; and present it as an 6lo Applicability document for othe=
+rs to know how to use this technology.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">Yong-Geun is heading th=
+is effort and&nbsp; he might need some extra hands to help him out.<o:p></o=
+:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">I plan to arrange a pho=
+ne meeting next week (Wed/Thurs) @7am PDT to discuss:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt;text-indent:-18.0=
+pt;mso-list:l0 level1 lfo2">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">=A1=A4<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Outline proposal of the updated document<o:p=
+></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt;text-indent:-18.0=
+pt;mso-list:l0 level1 lfo2">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">=A1=A4<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Nail down the usecase scenarios<o:p></o:p></=
+p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt"><o:p>&nbsp;</o:p=
+></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt">Thanks,<o:p></o:=
+p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt">-Samita<o:p></o:=
+p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt"><o:p>&nbsp;</o:p=
+></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt"><o:p>&nbsp;</o:p=
+></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt">PS: Please updat=
+e the Doodle poll for your preference on attendance.<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt"><a href=3D"http:=
+//doodle.com/poll/y9akcyphnrtvwusa">http://doodle.com/poll/y9akcyphnrtvwusa=
+</a><o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:72.0pt"><o:p>&nbsp;</o:p=
+></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><o:p>&nbsp;</o:p></p>
+</div>
+</div>
+</body>
+</html>
+
+--_000_C3DD54213F5261438F5CE46038658EE320777298SZXEMI505MBSchi_--
+
+
+From nobody Tue May 17 07:20:53 2016
+Return-Path: <yonggeun.hong@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id ADFE912D648 for <6lo@ietfa.amsl.com>; Tue, 17 May 2016 07:20:49 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.699
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.699 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id uk41_wr1LqLe for <6lo@ietfa.amsl.com>; Tue, 17 May 2016 07:20:47 -0700 (PDT)
+Received: from mail-wm0-x22c.google.com (mail-wm0-x22c.google.com [IPv6:2a00:1450:400c:c09::22c]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id B10BA12D633 for <6lo@ietf.org>; Tue, 17 May 2016 07:20:46 -0700 (PDT)
+Received: by mail-wm0-x22c.google.com with SMTP id n129so142627858wmn.1 for <6lo@ietf.org>; Tue, 17 May 2016 07:20:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;  h=mime-version:in-reply-to:references:date:message-id:subject:from:to :cc; bh=TcwshudErPlgc+MI9WuruYGtwF8jt/E2qzwNt8hhoIA=; b=UV5Uy35KQV1D1KeZy3Xvd7+KfCwqKQoQI6oA2xarLMdwyUw7LPqd7GV9S6FQbOOH5A 8ebspDJpm4ihmnYdsa0m8kmTO2B4uu/sxB++6tSOuWS4UF+ZSDcmRSsqj74sHalE61Mw VJNGPimTezt6D3arV7YfeGqh4aTB+Ym5ry0eCyOmWd/v+NnblSFff3/ZKaGfJCT0w9jr GsDFXc2uFFTYHDFNdGBdTaXUsMFjGXEWLWcycYn47ojmSuzx+pTo9/JhosQJ/J4/4xxv nZbrt5VMXsAkTXkg/v0v47z/M/kpoMFBaqhiWz+JtKIKPuNQa3h5YK6dFiCXySi5oCaW /63g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20130820; h=x-gm-message-state:mime-version:in-reply-to:references:date :message-id:subject:from:to:cc; bh=TcwshudErPlgc+MI9WuruYGtwF8jt/E2qzwNt8hhoIA=; b=PY/v1O82IH7JLot2nT4inGHsbSyA+D5rnSY6NUSyvI/dmgvrMqlOXdPYpdUjPELxih B5Wmed96JThc6hLFS4GOWCJ/ZU4GQzbKXhp2CTDGSxnrfUNbWpxxZp3kIDPAuVDiBL2D BXlVVzm+vor5f728duy8GcoUJToEgLxwlR0fr2gatVPvOYcThuuZ6G4TokZUKhmUE2/n 5rAhKeuECKPpEHE+4ZU4Lji80ipyAZMEiH+GMf6kf8clhIL61vc3dQ4oirI1I5Gu5Jes 0/qjmv9t5JkRGU43EgSNrvaD4L3zBHu6R861SonK2VdfW03IYDtD8T8oVh02mKLWaTwc omxQ==
+X-Gm-Message-State: AOPr4FWJN0PvYvtq6ptLL9RDLWnsuayE1wDvOc6Kxs61R1ltebJSoWjwDkHJzPnIBJPNJqhkSIR09tBD3dYp4w==
+MIME-Version: 1.0
+X-Received: by 10.194.89.168 with SMTP id bp8mr1885161wjb.57.1463494845243; Tue, 17 May 2016 07:20:45 -0700 (PDT)
+Received: by 10.28.91.145 with HTTP; Tue, 17 May 2016 07:20:45 -0700 (PDT)
+In-Reply-To: <C3DD54213F5261438F5CE46038658EE320777298@SZXEMI505-MBS.china.huawei.com>
+References: <ECA43DA70480A3498E43C3471FB2E1F022396DC8@eusaamb103.ericsson.se> <C3DD54213F5261438F5CE46038658EE320777298@SZXEMI505-MBS.china.huawei.com>
+Date: Tue, 17 May 2016 23:20:45 +0900
+Message-ID: <CACt2foG1xr5C9dJNuhG9U=CaxoFLgdeTLf6drErsNn-cOzgeDA@mail.gmail.com>
+From: Yong-Geun Hong <yonggeun.hong@gmail.com>
+To: AbdurRashidSangi <rashid.sangi@huawei.com>
+Content-Type: multipart/alternative; boundary=047d7bf10a1c61a9c105330a7290
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/AO1uHmW8p-sFB3ZWKiGGdoPNIcg>
+Cc: Samita Chakrabarti <samita.chakrabarti@ericsson.com>, "6lo@ietf.org" <6lo@ietf.org>
+Subject: Re: [6lo] Call for 6lo Deployment Scenario Document phone meeting
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 17 May 2016 14:20:49 -0000
+
+--047d7bf10a1c61a9c105330a7290
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Rashid Sangi.
+
+Thanks for your valuable comments.
+
+I think that the comments are reasonable and they are useful.
+
+In the revision of the draft, I will reflect the comments.
+
+Best regards.
+
+Yong-Geun.
+
+
+On Tue, May 17, 2016 at 6:37 PM, AbdurRashidSangi <rashid.sangi@huawei.com>
+wrote:
+
+> Hi Yong-Geun,
+>
+>
+>
+> As per my understanding after quick review, following are some editorial
+> and further explanation of some details you mentioned in the draft:
+>
+>
+>
+> 1.  3.2. first para: better further define IPSS or completely exclude it.
+>
+> 2.  3.3. third para: "Portable Parts (PP) attached" - instead of - "PP
+> attached".
+>
+> 3.  4. Design Space. first and second para: incorrect reference of "RFC
+> 6558" - instead of - "RFC 6568"
+>
+> 4.  5.1. first para: suitably rephrasing "However, the person data" to le=
+t
+> suppose "However, the personal data, which pose serious issues if
+> mishandled while transferred in wireless domain, can be securely
+> transferred by NFC technology".
+>
+> 5.  5.3. Reliability & QoS: "Latency of *SENSOR READINGS*" should be low
+> for".
+>
+> 6.  5.4. first para: "communications" - instead of - "communicatios".
+>
+> 7.  5.5. first para: "Therefore, the use case of LTE MTC could be used in
+> LPWAN" - instead of - "Therefore, the use....".
+>
+> 8.  5.5. example: if you are referring to connectivity between end device
+> and LPWAN gateway, how about using the term "fronthaul" instead of
+> "backhaul"?
+>
+> 9.  5.5. example: "star of star topology" - instead of - "star of stat
+> topology".
+>
+> 10. 5.5. example: Maximum data rate is mentioned for LoRa; keeping the
+> consideration of bandwidth aggregation recently proposed in
+> "draft-qin-lpwan-dau-00" would be better.
+>
+>
+>
+> Afterward, we can keep rephrasing the sentence that requires some
+> modifications.
+>
+>
+>
+> Hope you find the suggestions, useful.
+>
+>
+>
+> Thanks.
+>
+> Rashid Sangi,
+>
+> Huawei, Beijing, China.
+>
+>
+>
+>
+>
+> *From:* 6lo [mailto:6lo-bounces@ietf.org] *On Behalf Of *Samita
+> Chakrabarti
+> *Sent:* 2016=E5=B9=B45=E6=9C=8814=E6=97=A5 8:41
+> *To:* 6lo@ietf.org
+> *Subject:* Re: [6lo] Call for 6lo Deployment Scenario Document phone
+> meeting
+>
+>
+>
+>
+>
+> PS: Please update the Doodle poll for your preference on attendance. [ fo=
+r
+> next week]
+>
+> http://doodle.com/poll/y9akcyphnrtvwusa
+>
+>
+>
+>
+>
+> Please reply only to =E2=80=986lo@ietf.org=E2=80=99.  [ Else the mail adm=
+inistrator
+> complains about too many recipients]
+>
+>
+>
+> Thanks,
+>
+> -Samita
+>
+>
+>
+> *From:* Samita Chakrabarti
+> *Sent:* Friday, May 13, 2016 5:28 PM
+> *To:* Yong-Geun Hong (yonggeun.hong@gmail.com); pthubert@cisco.com;
+> Thomas Watteyne (thomas.watteyne@inria.fr); kerlyn@ieee.org; Carsten
+> Bormann (cabo@tzi.org); Mohit Sethi M; dominique.barthel@orange.com;
+> 'Das, Subir'; 'carlesgo@entel.upc.edu'; 'teemu.savolainen@nokia.com';
+> Alexander Pelov (alexander@ackl.io); Gabriel Montenegro (
+> Gabriel.Montenegro@microsoft.com)
+> *Cc:* 6lo@ietf.org
+> *Subject:* Call for 6lo Deployment Scenario Document phone meeting
+>
+>
+>
+> Hello All:
+>
+>
+>
+> At Buenos Aires, we had a very productive discussion on updating
+> https://datatracker.ietf.org/doc/draft-hong-6lo-use-cases/
+>
+> In order to use it more for guidance to other IETF WGs and external SDO a=
+s
+> to how 6lo WG technologies might be useful to yet another L2 networks tha=
+t
+> are serving constrained devices.
+>
+> The document already discusses different parameters for different
+> technologies  and typical deployment.
+>
+>
+>
+> The goal is to improve the document  and present it as an 6lo
+> Applicability document for others to know how to use this technology.
+>
+>
+>
+> Yong-Geun is heading this effort and  he might need some extra hands to
+> help him out.
+>
+>
+>
+> I plan to arrange a phone meeting next week (Wed/Thurs) @7am PDT to
+> discuss:
+>
+>
+>
+> =C2=B7         Outline proposal of the updated document
+>
+> =C2=B7         Nail down the usecase scenarios
+>
+>
+>
+> Thanks,
+>
+> -Samita
+>
+>
+>
+>
+>
+> PS: Please update the Doodle poll for your preference on attendance.
+>
+> http://doodle.com/poll/y9akcyphnrtvwusa
+>
+>
+>
+>
+>
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+>
+
+--047d7bf10a1c61a9c105330a7290
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Dear Rashid Sangi.<div><br></div><div>Thanks for your valu=
+able comments.</div><div><br></div><div>I think that the comments are reaso=
+nable and they are useful.</div><div><br></div><div>In the revision of the =
+draft, I will reflect the comments.</div><div><br></div><div>Best regards.<=
+/div><div><br></div><div>Yong-Geun.</div><div><br><div class=3D"gmail_extra=
+"><br><div class=3D"gmail_quote">On Tue, May 17, 2016 at 6:37 PM, AbdurRash=
+idSangi <span dir=3D"ltr">&lt;<a href=3D"mailto:rashid.sangi@huawei.com" ta=
+rget=3D"_blank">rashid.sangi@huawei.com</a>&gt;</span> wrote:<br><blockquot=
+e class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc sol=
+id;padding-left:1ex">
+
+
+
+
+
+<div lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div>
+<p class=3D"MsoNormal">Hi Yong-Geun,<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">As per my understanding after quick review, followin=
+g are some editorial and further explanation of some details you mentioned =
+in the draft:<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">1.=C2=A0 3.2. first para: better further define IPSS=
+ or completely exclude it.<u></u><u></u></p>
+<p class=3D"MsoNormal">2.=C2=A0 3.3. third para: &quot;Portable Parts (PP) =
+attached&quot; - instead of - &quot;PP attached&quot;.<u></u><u></u></p>
+<p class=3D"MsoNormal">3.=C2=A0 4. Design Space. first and second para: inc=
+orrect reference of &quot;RFC 6558&quot; - instead of - &quot;RFC 6568&quot=
+;<u></u><u></u></p>
+<p class=3D"MsoNormal">4.=C2=A0 5.1. first para: suitably rephrasing &quot;=
+However, the person data&quot; to let suppose &quot;However, the personal d=
+ata, which pose serious issues if mishandled while transferred in wireless =
+domain, can be securely transferred by NFC technology&quot;.<u></u><u></u><=
+/p>
+<p class=3D"MsoNormal">5.=C2=A0 5.3. Reliability &amp; QoS: &quot;Latency o=
+f <u>SENSOR READINGS</u>&quot; should be low for&quot;.<u></u><u></u></p>
+<p class=3D"MsoNormal">6.=C2=A0 5.4. first para: &quot;communications&quot;=
+ - instead of - &quot;communicatios&quot;.<u></u><u></u></p>
+<p class=3D"MsoNormal">7.=C2=A0 5.5. first para: &quot;Therefore, the use c=
+ase of LTE MTC could be used in LPWAN&quot; - instead of - &quot;Therefore,=
+ the use....&quot;.<u></u><u></u></p>
+<p class=3D"MsoNormal">8.=C2=A0 5.5. example: if you are referring to conne=
+ctivity between end device and LPWAN gateway, how about using the term &quo=
+t;fronthaul&quot; instead of &quot;backhaul&quot;?<u></u><u></u></p>
+<p class=3D"MsoNormal">9.=C2=A0 5.5. example: &quot;star of star topology&q=
+uot; - instead of - &quot;star of stat topology&quot;.<u></u><u></u></p>
+<p class=3D"MsoNormal">10. 5.5. example: Maximum data rate is mentioned for=
+ LoRa; keeping the consideration of bandwidth aggregation recently proposed=
+ in &quot;draft-qin-lpwan-dau-00&quot; would be better.<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">Afterward, we can keep rephrasing the sentence that =
+requires some modifications.
+<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">Hope you find the suggestions, useful.<u></u><u></u>=
+</p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">Thanks.<u></u><u></u></p>
+<p class=3D"MsoNormal">Rashid Sangi,<u></u><u></u></p>
+<p class=3D"MsoNormal">Huawei, Beijing, China.<u></u><u></u></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1f497d"><u></u>=C2=A0<u></u></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1f497d"><u></u>=C2=A0<u></u></=
+span></p>
+<div style=3D"border:none;border-left:solid blue 1.5pt;padding:0cm 0cm 0cm =
+4.0pt">
+<div>
+<div style=3D"border:none;border-top:solid #b5c4df 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> 6lo [mai=
+lto:<a href=3D"mailto:6lo-bounces@ietf.org" target=3D"_blank">6lo-bounces@i=
+etf.org</a>]
+<b>On Behalf Of </b>Samita Chakrabarti<br>
+<b>Sent:</b> 2016</span><span lang=3D"ZH-CN" style=3D"font-size:10.0pt;font=
+-family:=E5=AE=8B=E4=BD=93">=E5=B9=B4</span><span style=3D"font-size:10.0pt=
+;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">5</span><span lang=
+=3D"ZH-CN" style=3D"font-size:10.0pt;font-family:=E5=AE=8B=E4=BD=93">=E6=9C=
+=88</span><span style=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&q=
+uot;sans-serif&quot;">14</span><span lang=3D"ZH-CN" style=3D"font-size:10.0=
+pt;font-family:=E5=AE=8B=E4=BD=93">=E6=97=A5</span><span style=3D"font-size=
+:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">
+ 8:41<br>
+<b>To:</b> <a href=3D"mailto:6lo@ietf.org" target=3D"_blank">6lo@ietf.org</=
+a><br>
+<b>Subject:</b> Re: [6lo] Call for 6lo Deployment Scenario Document phone m=
+eeting<u></u><u></u></span></p>
+</div>
+</div><div><div class=3D"h5">
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1f497d"><u></u>=C2=A0<u></u></=
+span></p>
+<p style=3D"margin-left:72.0pt">PS: Please update the Doodle poll for your =
+preference on attendance. [ for next week]<u></u><u></u></p>
+<p style=3D"margin-left:72.0pt"><a href=3D"http://doodle.com/poll/y9akcyphn=
+rtvwusa" target=3D"_blank">http://doodle.com/poll/y9akcyphnrtvwusa</a><u></=
+u><u></u></p>
+<p style=3D"margin-left:72.0pt"><u></u>=C2=A0<u></u></p>
+<p style=3D"margin-left:72.0pt"><u></u>=C2=A0<u></u></p>
+<p style=3D"margin-left:72.0pt">Please reply only to =E2=80=98<a href=3D"ma=
+ilto:6lo@ietf.org" target=3D"_blank">6lo@ietf.org</a>=E2=80=99.=C2=A0 [ Els=
+e the mail administrator complains about too many recipients]<u></u><u></u>=
+</p>
+<p style=3D"margin-left:72.0pt"><u></u>=C2=A0<u></u></p>
+<p style=3D"margin-left:72.0pt">Thanks,<u></u><u></u></p>
+<p style=3D"margin-left:72.0pt">-Samita<u></u><u></u></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1f497d"><u></u>=C2=A0<u></u></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #b5c4df 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><b><span style=3D"font-=
+size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</s=
+pan></b><span style=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quo=
+t;sans-serif&quot;"> Samita Chakrabarti
+<br>
+<b>Sent:</b> Friday, May 13, 2016 5:28 PM<br>
+<b>To:</b> Yong-Geun Hong (<a href=3D"mailto:yonggeun.hong@gmail.com" targe=
+t=3D"_blank">yonggeun.hong@gmail.com</a>);
+<a href=3D"mailto:pthubert@cisco.com" target=3D"_blank">pthubert@cisco.com<=
+/a>; Thomas Watteyne (<a href=3D"mailto:thomas.watteyne@inria.fr" target=3D=
+"_blank">thomas.watteyne@inria.fr</a>);
+<a href=3D"mailto:kerlyn@ieee.org" target=3D"_blank">kerlyn@ieee.org</a>; C=
+arsten Bormann (<a href=3D"mailto:cabo@tzi.org" target=3D"_blank">cabo@tzi.=
+org</a>); Mohit Sethi M;
+<a href=3D"mailto:dominique.barthel@orange.com" target=3D"_blank">dominique=
+.barthel@orange.com</a>; &#39;Das, Subir&#39;; &#39;<a href=3D"mailto:carle=
+sgo@entel.upc.edu" target=3D"_blank">carlesgo@entel.upc.edu</a>&#39;; &#39;=
+<a href=3D"mailto:teemu.savolainen@nokia.com" target=3D"_blank">teemu.savol=
+ainen@nokia.com</a>&#39;; Alexander Pelov (<a href=3D"mailto:alexander@ackl=
+.io" target=3D"_blank">alexander@ackl.io</a>); Gabriel Montenegro (<a href=
+=3D"mailto:Gabriel.Montenegro@microsoft.com" target=3D"_blank">Gabriel.Mont=
+enegro@microsoft.com</a>)<br>
+<b>Cc:</b> <a href=3D"mailto:6lo@ietf.org" target=3D"_blank">6lo@ietf.org</=
+a><br>
+<b>Subject:</b> Call for 6lo Deployment Scenario Document phone meeting<u><=
+/u><u></u></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><u></u>=C2=A0<u></u></p=
+>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">Hello All: <u></u><u></=
+u></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><u></u>=C2=A0<u></u></p=
+>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">At Buenos Aires, we had=
+ a very productive discussion on updating
+<a href=3D"https://datatracker.ietf.org/doc/draft-hong-6lo-use-cases/" targ=
+et=3D"_blank">https://datatracker.ietf.org/doc/draft-hong-6lo-use-cases/</a=
+><u></u><u></u></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">In order to use it more=
+ for guidance to other IETF WGs and external SDO as to how 6lo WG technolog=
+ies might be useful to yet another L2 networks that are serving constrained=
+ devices.
+<u></u><u></u></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">The document already di=
+scusses different parameters for different technologies=C2=A0 and typical d=
+eployment.<u></u><u></u></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><u></u>=C2=A0<u></u></p=
+>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">The goal is to improve =
+the document=C2=A0 and present it as an 6lo Applicability document for othe=
+rs to know how to use this technology.<u></u><u></u></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><u></u>=C2=A0<u></u></p=
+>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">Yong-Geun is heading th=
+is effort and=C2=A0 he might need some extra hands to help him out.<u></u><=
+u></u></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><u></u>=C2=A0<u></u></p=
+>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt">I plan to arrange a pho=
+ne meeting next week (Wed/Thurs) @7am PDT to discuss:<u></u><u></u></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><u></u>=C2=A0<u></u></p=
+>
+<p style=3D"margin-left:72.0pt">
+<u></u><span style=3D"font-family:Symbol"><span>=C2=B7<span style=3D"font:7=
+.0pt &quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0
+</span></span></span><u></u>Outline proposal of the updated document<u></u>=
+<u></u></p>
+<p style=3D"margin-left:72.0pt">
+<u></u><span style=3D"font-family:Symbol"><span>=C2=B7<span style=3D"font:7=
+.0pt &quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0
+</span></span></span><u></u>Nail down the usecase scenarios<u></u><u></u></=
+p>
+<p style=3D"margin-left:72.0pt"><u></u>=C2=A0<u></u></p>
+<p style=3D"margin-left:72.0pt">Thanks,<u></u><u></u></p>
+<p style=3D"margin-left:72.0pt">-Samita<u></u><u></u></p>
+<p style=3D"margin-left:72.0pt"><u></u>=C2=A0<u></u></p>
+<p style=3D"margin-left:72.0pt"><u></u>=C2=A0<u></u></p>
+<p style=3D"margin-left:72.0pt">PS: Please update the Doodle poll for your =
+preference on attendance.<u></u><u></u></p>
+<p style=3D"margin-left:72.0pt"><a href=3D"http://doodle.com/poll/y9akcyphn=
+rtvwusa" target=3D"_blank">http://doodle.com/poll/y9akcyphnrtvwusa</a><u></=
+u><u></u></p>
+<p style=3D"margin-left:72.0pt"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><u></u>=C2=A0<u></u></p=
+>
+</div></div></div>
+</div>
+</div>
+
+<br>_______________________________________________<br>
+6lo mailing list<br>
+<a href=3D"mailto:6lo@ietf.org">6lo@ietf.org</a><br>
+<a href=3D"https://www.ietf.org/mailman/listinfo/6lo" rel=3D"noreferrer" ta=
+rget=3D"_blank">https://www.ietf.org/mailman/listinfo/6lo</a><br>
+<br></blockquote></div><br></div></div></div>
+
+--047d7bf10a1c61a9c105330a7290--
+
+
+From nobody Tue May 17 18:19:46 2016
+Return-Path: <samita.chakrabarti@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 3920C12D554 for <6lo@ietfa.amsl.com>; Tue, 17 May 2016 18:18:29 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.201
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.201 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id kdYZZ3BF6V-1 for <6lo@ietfa.amsl.com>; Tue, 17 May 2016 18:18:26 -0700 (PDT)
+Received: from usplmg21.ericsson.net (usplmg21.ericsson.net [198.24.6.65]) (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id BAC6412B01C for <6lo@ietf.org>; Tue, 17 May 2016 18:18:25 -0700 (PDT)
+X-AuditID: c6180641-f796f6d000000e1e-f8-573bc2ae48b4
+Received: from EUSAAHC001.ericsson.se (Unknown_Domain [147.117.188.75]) by usplmg21.ericsson.net (Symantec Mail Security) with SMTP id 36.2C.03614.EA2CB375; Wed, 18 May 2016 03:17:34 +0200 (CEST)
+Received: from EUSAAMB103.ericsson.se ([147.117.188.120]) by EUSAAHC001.ericsson.se ([147.117.188.75]) with mapi id 14.03.0248.002; Tue, 17 May 2016 21:18:24 -0400
+From: Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+To: "Yong-Geun Hong (yonggeun.hong@gmail.com)" <yonggeun.hong@gmail.com>, "pthubert@cisco.com" <pthubert@cisco.com>, "Thomas Watteyne (thomas.watteyne@inria.fr)" <thomas.watteyne@inria.fr>, "kerlyn@ieee.org" <kerlyn@ieee.org>, "Carsten Bormann (cabo@tzi.org)" <cabo@tzi.org>, "Mohit Sethi M" <mohit.m.sethi@ericsson.com>, "dominique.barthel@orange.com" <dominique.barthel@orange.com>, "Das, Subir" <sdas@appcomsci.com>, "carlesgo@entel.upc.edu" <carlesgo@entel.upc.edu>, "teemu.savolainen@nokia.com" <teemu.savolainen@nokia.com>, "Alexander Pelov (alexander@ackl.io)" <alexander@ackl.io>, "Gabriel Montenegro (Gabriel.Montenegro@microsoft.com)" <Gabriel.Montenegro@microsoft.com>
+Thread-Topic: Call for 6lo Deployment Scenario Document phone meeting
+Thread-Index: AdGtdF47cm/05L50SlSKHIDGNW8z0QDLf/7Q
+Date: Wed, 18 May 2016 01:18:24 +0000
+Message-ID: <ECA43DA70480A3498E43C3471FB2E1F0223A66E1@eusaamb103.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.10]
+Content-Type: multipart/alternative; boundary="_000_ECA43DA70480A3498E43C3471FB2E1F0223A66E1eusaamb103erics_"
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFrrNIsWRmVeSWpSXmKPExsUyuXSPt+66Q9bhBnPvGFg0TxGwONZ6j93i yJS7rBYHt31ntZjS/ZPR4vjMjcwWl9evYraYMeUdo8XDG9IWB5osLI6+fs9k8ev/dFYHHo8Z 69cze1z+MpHFY8rvjawe9w8+YPbYOesuu8fTCQeZPJYs+cnkMenFIRaP1h1/2T3u3rrE5NHy 7CSbx7RFmQE8UVw2Kak5mWWpRfp2CVwZvZMUCh4mVvy4eoG9gfFPaBcjJ4eEgInEmfWTmSBs MYkL99azdTFycQgJHGWU+NnTxgjhLGeU6L19iBmkik3ASqKjdw87SEJEYCerxNIDZ9lBEswC ihK35vSwgdjCAi4Sv96tAxsrIuAq8eb0AtYuRg4g20jixKsQkDCLgKrE+raJYDN5BXwl7p1b xgpiMwJd8f3UGiaIkeISt57Mh7pOQGLJnvPMELaoxMvH/1ghbCWJSUvPsULU50t8mr+SCWKm oMTJmU9YJjAKz0IyahaSsllIyiDiOhILdn9ig7C1JZYtfM0MY5858JgJWXwBI/sqRo7S4oKc 3HQjw02MwCg/JsHmuINxb6/nIUYBDkYlHt6EKdbhQqyJZcWVuYcYJTiYlUR4Nx4ECvGmJFZW pRblxxeV5qQWH2KU5mBREufVf6kYLiSQnliSmp2aWpBaBJNl4uCUamBkS5ww48cs3hhXA/0F NQ65a1SNn/BcYarUynhrXRV16JvTrtPMrGn7u9c28npviZWpF12bEf7F3Ezl+x4/v6nXF01a GD6pI9ZtvbSZ9aeQE3IKzRE6BeGPjnBbeM/MCTm4wK7Tdgm7ReURnZWvJveonMw9pMX/+XgU m5dZg5FC0J9Y8yU5f5RYijMSDbWYi4oTAU0sLCfuAgAA
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/fy3_dUO4FjhR1Npo3_BJWbW9xKQ>
+X-Mailman-Approved-At: Tue, 17 May 2016 18:19:44 -0700
+Cc: "6lo@ietf.org" <6lo@ietf.org>
+Subject: Re: [6lo] Call for 6lo Deployment Scenario Document phone meeting
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 18 May 2016 01:18:29 -0000
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F0223A66E1eusaamb103erics_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello All:
+
+The Doodle poll has logged  more participants on Wed than Thurs as of now.
+Due to the short notice, we have only a handful participants. We will take =
+a note and distribute to the list for further discussions.
+
+So, let's have the meeting on Wed at 7am PDT.
+
+I have sent the conf-call information to the participants. If any of you wh=
+o did not sign up yet but still like to join the call, please contact me di=
+rectly.
+
+Thanks for participating in the poll.
+
+-Samita
+
+From: Samita Chakrabarti
+Sent: Friday, May 13, 2016 5:28 PM
+To: Yong-Geun Hong (yonggeun.hong@gmail.com); pthubert@cisco.com; Thomas Wa=
+tteyne (thomas.watteyne@inria.fr); kerlyn@ieee.org; Carsten Bormann (cabo@t=
+zi.org); Mohit Sethi M; dominique.barthel@orange.com; 'Das, Subir'; 'carles=
+go@entel.upc.edu'; 'teemu.savolainen@nokia.com'; Alexander Pelov (alexander=
+@ackl.io); Gabriel Montenegro (Gabriel.Montenegro@microsoft.com)
+Cc: 6lo@ietf.org
+Subject: Call for 6lo Deployment Scenario Document phone meeting
+
+Hello All:
+
+At Buenos Aires, we had a very productive discussion on updating https://da=
+tatracker.ietf.org/doc/draft-hong-6lo-use-cases/
+In order to use it more for guidance to other IETF WGs and external SDO as =
+to how 6lo WG technologies might be useful to yet another L2 networks that =
+are serving constrained devices.
+The document already discusses different parameters for different technolog=
+ies  and typical deployment.
+
+The goal is to improve the document  and present it as an 6lo Applicability=
+ document for others to know how to use this technology.
+
+Yong-Geun is heading this effort and  he might need some extra hands to hel=
+p him out.
+
+I plan to arrange a phone meeting next week (Wed/Thurs) @7am PDT to discuss=
+:
+
+
+*         Outline proposal of the updated document
+
+*         Nail down the usecase scenarios
+
+
+
+Thanks,
+
+-Samita
+
+
+
+
+
+PS: Please update the Doodle poll for your preference on attendance.
+
+http://doodle.com/poll/y9akcyphnrtvwusa
+
+
+
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F0223A66E1eusaamb103erics_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.EmailStyle18
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:448009387;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1934494024 45356070 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hello All:<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">The Doodle poll has lo=
+gged&nbsp; more participants on Wed than Thurs as of now.<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Due to the short notic=
+e, we have only a handful participants. We will take a note and distribute =
+to the list for further discussions.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">So, let&#8217;s have t=
+he meeting on Wed at 7am PDT.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">I have sent the conf-c=
+all information to the participants. If any of you who did not sign up yet =
+but still like to join the call, please contact me directly.<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Thanks for participati=
+ng in the poll.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">-Samita<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><b><span style=3D"font-si=
+ze:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</spa=
+n></b><span style=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;=
+sans-serif&quot;"> Samita Chakrabarti
+<br>
+<b>Sent:</b> Friday, May 13, 2016 5:28 PM<br>
+<b>To:</b> Yong-Geun Hong (yonggeun.hong@gmail.com); pthubert@cisco.com; Th=
+omas Watteyne (thomas.watteyne@inria.fr); kerlyn@ieee.org; Carsten Bormann =
+(cabo@tzi.org); Mohit Sethi M; dominique.barthel@orange.com; 'Das, Subir'; =
+'carlesgo@entel.upc.edu'; 'teemu.savolainen@nokia.com';
+ Alexander Pelov (alexander@ackl.io); Gabriel Montenegro (Gabriel.Montenegr=
+o@microsoft.com)<br>
+<b>Cc:</b> 6lo@ietf.org<br>
+<b>Subject:</b> Call for 6lo Deployment Scenario Document phone meeting<o:p=
+></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">Hello All: <o:p></o:p></p=
+>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">At Buenos Aires, we had a=
+ very productive discussion on updating
+<a href=3D"https://datatracker.ietf.org/doc/draft-hong-6lo-use-cases/">http=
+s://datatracker.ietf.org/doc/draft-hong-6lo-use-cases/</a><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">In order to use it more f=
+or guidance to other IETF WGs and external SDO as to how 6lo WG technologie=
+s might be useful to yet another L2 networks that are serving constrained d=
+evices.
+<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">The document already disc=
+usses different parameters for different technologies&nbsp; and typical dep=
+loyment.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">The goal is to improve th=
+e document&nbsp; and present it as an 6lo Applicability document for others=
+ to know how to use this technology.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">Yong-Geun is heading this=
+ effort and&nbsp; he might need some extra hands to help him out.<o:p></o:p=
+></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">I plan to arrange a phone=
+ meeting next week (Wed/Thurs) @7am PDT to discuss:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level1 lfo2">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Outline proposal of the updated document<o:p=
+></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level1 lfo2">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Nail down the usecase scenarios<o:p></o:p></=
+p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><o:p>&nbsp;</o:p>=
+</p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in">Thanks,<o:p></o:p=
+></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in">-Samita<o:p></o:p=
+></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><o:p>&nbsp;</o:p>=
+</p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><o:p>&nbsp;</o:p>=
+</p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in">PS: Please update=
+ the Doodle poll for your preference on attendance.<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><a href=3D"http:/=
+/doodle.com/poll/y9akcyphnrtvwusa">http://doodle.com/poll/y9akcyphnrtvwusa<=
+/a><o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in"><o:p>&nbsp;</o:p>=
+</p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F0223A66E1eusaamb103erics_--
+
+
+From nobody Wed May 18 01:47:58 2016
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 1AA4F12D093 for <6lo@ietfa.amsl.com>; Wed, 18 May 2016 01:47:57 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.22
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.22 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id l1lAN_dyZwuU for <6lo@ietfa.amsl.com>; Wed, 18 May 2016 01:47:55 -0700 (PDT)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id DF73612B00D for <6lo@ietf.org>; Wed, 18 May 2016 01:47:54 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.39.4]) by dash.upc.es (8.14.1/8.13.1) with ESMTP id u4I8locu022878; Wed, 18 May 2016 10:47:51 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id C05461D53C1; Wed, 18 May 2016 10:47:50 +0200 (CEST)
+Received: from 131.111.5.15 by webmail.entel.upc.edu with HTTP; Wed, 18 May 2016 09:47:46 +0200
+Message-ID: <9df2810df3cfc63f9b1b4fd9a1b68c22.squirrel@webmail.entel.upc.edu>
+Date: Wed, 18 May 2016 09:47:46 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: draft-ietf-6lo-nfc@tools.ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Mail-Scanned: Criba 2.0 + Clamd
+X-Greylist: ACL matched, not delayed by milter-greylist-4.4.3 (dash.upc.es [147.83.2.50]); Wed, 18 May 2016 10:47:51 +0200 (CEST)
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/6qwCRqeFiTMhuewLCzS7QtaH01k>
+Cc: 6lo@ietf.org
+Subject: [6lo] Comments on draft-ietf-6lo-nfc-03
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 18 May 2016 08:47:57 -0000
+
+Dear authors of draft-ietf-6lo-nfc-03,
+
+I have a few comments about this draft:
+
+1. "Simple multi-hop topology"
+******************************
+
+In 4.2 and 4.5 you mention that NFC networks may follow the "peer-to-peer
+topology and simple multi-hop topology". I think the multi-hop topology
+requires a little bit of clarification:
+
+- What is understood as a "simple multi-hop topology" as opposed to the
+"complicated mesh topology" mentioned in the document?
+
+- Would the simple multi-hop topology follow the mesh-under or the
+route-over approach?
+
+- Does NFC define mechanisms for the formation of multi-hop topologies?
+
+(Depending on the responses, the multi-hop functionality in RFC 6775 may
+be needed.)
+
+
+2. Fragmentation
+****************
+
+In section 3.2, you mention:
+
+  "Since LLCP does not support fragmentation and reassembly, upper layers
+   SHOULD support fragmentation and reassembly."
+
+However, section 4.8 says that RFC 4944 fragmentation is not required. Is
+maybe the text in section 3.2 pending an update?
+
+
+3. Minor
+********
+
+Section 4, 4th line: s/BT-LE/NFC
+
+
+Thanks!
+
+Carles
+
+
+From nobody Wed May 18 02:06:28 2016
+Return-Path: <MiguelAngel.ReinaOrtega@etsi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 5E53512D19E for <6lo@ietfa.amsl.com>; Wed, 18 May 2016 02:06:26 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.373
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.373 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DEAR_SOMETHING=1.973, HTML_MESSAGE=0.001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, RP_MATCHES_RCVD=-1.426, SPF_PASS=-0.001] autolearn=no autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Si2koW6BTbgZ for <6lo@ietfa.amsl.com>; Wed, 18 May 2016 02:06:24 -0700 (PDT)
+Received: from mx1.etsi.org (mx1.etsi.org [195.238.226.34]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 87B1512D199 for <6lo@ietf.org>; Wed, 18 May 2016 02:06:24 -0700 (PDT)
+X-ASG-Debug-ID: 1463561775-0779bd4d3627ac9000f-BAoDzl
+Received: from outbound.etsi.org (outbound.etsi.org [195.238.226.43]) by mx1.etsi.org with ESMTP id mRdE0xp1qRjbx2Um (version=TLSv1.2 cipher=ECDHE-RSA-AES256-SHA384 bits=256 verify=NO); Wed, 18 May 2016 09:05:38 +0000 (GMT)
+X-Barracuda-Envelope-From: MiguelAngel.ReinaOrtega@etsi.org
+X-Barracuda-Effective-Source-IP: xmail.etsi.org[195.238.226.43]
+X-Barracuda-Apparent-Source-IP: 195.238.226.43
+X-ASG-Whitelist: Client
+Received: from XMAIL.etsihq.org (172.27.1.75) by xMail.etsihq.org (172.27.1.75) with Microsoft SMTP Server (TLS) id 15.0.1130.7; Wed, 18 May 2016 11:00:42 +0200
+Received: from XMAIL.etsihq.org ([172.27.1.75]) by xMail.etsihq.org ([172.27.1.75]) with mapi id 15.00.1130.005; Wed, 18 May 2016 11:00:42 +0200
+From: Miguel Angel Reina Ortega <MiguelAngel.ReinaOrtega@etsi.org>
+To: "6tisch@ietf.org" <6tisch@ietf.org>, "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: ETSI CL16_3285: Invitation to the 6TiSCH/6lo Plugtests(TM) event, 15-17 July 2016, in Berlin, Germany
+X-ASG-Orig-Subj: FW: ETSI CL16_3285: Invitation to the 6TiSCH/6lo Plugtests(TM) event, 15-17 July 2016, in Berlin, Germany
+Thread-Index: AdGw4SKcGFTcY3IwS7mWObDmg5fxXAAAYFhQ
+Date: Wed, 18 May 2016 09:00:41 +0000
+Message-ID: <359b7e019af744039013660793dec75e@xMail.etsihq.org>
+References: <ede6e5373b764473bced3e0015095a5c@xMail.etsihq.org>
+In-Reply-To: <ede6e5373b764473bced3e0015095a5c@xMail.etsihq.org>
+Accept-Language: en-US, en-GB
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [59.10.106.2]
+Content-Type: multipart/alternative; boundary="_000_359b7e019af744039013660793dec75exMailetsihqorg_"
+MIME-Version: 1.0
+X-Barracuda-Connect: outbound.etsi.org[195.238.226.43]
+X-Barracuda-Start-Time: 1463562337
+X-Barracuda-Encrypted: ECDHE-RSA-AES256-SHA384
+X-Barracuda-URL: https://172.26.1.64:443/cgi-mod/mark.cgi
+X-Barracuda-Scan-Msg-Size: 22179
+X-Virus-Scanned: by bsmtpd at etsi.org
+X-Barracuda-BRTS-Status: 1
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/HDCZdESEAkHZKzPA9pBtA3h-AgY>
+Subject: [6lo] FW: ETSI CL16_3285: Invitation to the 6TiSCH/6lo Plugtests(TM) event, 15-17 July 2016, in Berlin, Germany
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 18 May 2016 09:06:26 -0000
+
+--_000_359b7e019af744039013660793dec75exMailetsihqorg_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear all,
+
+Please, let me forward the Invitation Letter that has been recently sent ou=
+t from ETSI for the upcoming 6TiSCH/6lo Plugtests that will be held in Berl=
+in from 15th  to 17th  July. In there, you will find the 6TiSCH/6lo Plugtes=
+ts website where more details can be found.
+
+Also, registration to the event has been open and you can find the link at =
+the website.
+
+The Invitation Letter document is password protected, but its content is en=
+tirely copied into the body of the email below.
+
+Should you have any question, do not hesitate to drop me an email.
+
+Best regards.
+
+
+-------------------------------------------
+Miguel A. Reina Ortega
+Technical Expert
+Centre for Testing and Interoperability (CTI)
+ETSI
+mob: +33 (0)6 76 73 60 99
+tel:    +33 (0)4 92 94 43 49
+
+From: Jeanne Lancry-Gulino
+Sent: 18 May 2016 10:47 AM
+To: CL-DISPATCH <CL-DISPATCH@list.etsi.org>
+Cc: SEC [ETSI Secretariat Distribution List] <sec_SPAM@etsi.org>; STFs [All=
+ active STF experts] <STFs@etsi.org>
+Subject: ETSI CL16_3285: Invitation to the 6TiSCH/6lo Plugtests(TM) event, =
+15-17 July 2016, in Berlin, Germany
+
+The complete file (and annexes if any) of this Collective Letter can be dow=
+nloaded at the following location: https://docbox.etsi.org/C_Letter/CL2016/=
+CL16_3285_Invitation_joint_6TiSCH6lo_Plugtests.doc
+
+To:              ETSI MEMBERS, OBSERVERS AND COUNSELLORS
+Subject:     Invitation to the 6TiSCH/6lo PlugtestsTM event, 15-17 July 201=
+6, in Berlin, Germany
+
+Dear Madam,
+Dear Sir,
+
+ETSI's Centre for Testing and Interoperability (CTI) is organizing a joint =
+6TiSCH/6lo (IPv6 over the Timeslotted Channel Hopping mode of IEEE 802.15.4=
+e/IPv6 over Networks of Resource-constrained Nodes) Plugtests(tm) event. Th=
+is event will be held from 15 to 17 July 2016 in Berlin, Germany with the s=
+upport of the ETSI IP6 ISG (IPv6 Internet Protocol version 6 Industry Speci=
+fication Group), the Internet Engineering Task Force (IETF) 6TiSCH and 6lo =
+Working Groups and the European Commission.
+
+For 6TiSCH, the focus of the tests will be on:
+-       draft-ietf-6tisch-minimal and draft-ietf-6tisch-6top-protocol
+-       secure joining and backbone router operation.
+
+For 6lo, the focus of the tests will be on specifications RFC4944, RFC6282 =
+and RFC6775 adapted to:
+-       Constrained wired networks (draft-ietf-6lo-6lobac-04)
+-       DECT Ultra Low Energy air interface (draft-ietf-6lo-dect-ule-04)
+-       Bluetooth low energy air interface (RFC 7668)
+-       Near Field Communication (NFC) radio interface (draft-ietf-6lo-nfc-=
+03)
+-       IEEE 802.15.4 Networks (RFC 4944), both 2.4 GHz and 900 MHz.
+
+The testing campaign will be based on the test descriptions developed by ET=
+SI in collaboration with ETSI IP6 ISG and IETF 6TiSCH and 6lo WGs members a=
+nd will focus on the interoperability of these different technologies.
+
+It will give a unique opportunity to participating 6TiSCH and 6lo vendors t=
+o test their product against different implementations.
+
+The event is free of charge and is open to both ETSI members and non-member=
+s.
+
+All information related to this event along with registration details may b=
+e found at the following address: http://www.etsi.org/news-events/events/10=
+77-6tisch-6lo-plugtests.
+
+You can also contact us via email: plugtests@etsi.org<mailto:plugtests@etsi=
+.org>.
+
+Yours faithfully,
+
+
+Luis Jorge Romero Saro
+Director-General
+
+
+NOTE: ETSI Collective Letters are sent to:
+
+*         Official Contacts of Full/Associate Members, Observers, Counsello=
+rs
+
+*         Board members, TB/WG officials and Active Rapporteurs
+TB/WG/Voting Officials and Active Rapporteurs may OPT-OUT from receiving Co=
+llectives Letters. To do so, please send an email to Jeanne.Lancry-Gulino@e=
+tsi.org<mailto:Jeanne.Lancry-Gulino@etsi.org> requesting this option
+
+
+--_000_359b7e019af744039013660793dec75exMailetsihqorg_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:Consolas;
+	mso-fareast-language:EN-GB;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.StdColl4Char
+	{mso-style-name:"Std_Coll4 Char";
+	font-family:"Arial",sans-serif;
+	mso-fareast-language:EN-US;}
+span.EmailStyle22
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:1277832675;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1781623442 173708244 134807555 134807557 134807553 =
+134807555 134807557 134807553 134807555 134807557;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1723098791;
+	mso-list-type:hybrid;
+	mso-list-template-ids:734985256 67698689 67698691 67698693 67698689 676986=
+91 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-GB" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Dear al=
+l, <o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Please,=
+ let me forward the Invitation Letter that has been recently sent out from =
+ETSI for the upcoming 6TiSCH/6lo Plugtests that will be held in Berlin from=
+ 15<sup>th</sup>&nbsp; to 17<sup>th</sup>&nbsp;
+ July. In there, you will find the 6TiSCH/6lo Plugtests website where more =
+details can be found.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Also, r=
+egistration to the event has been open and you can find the link at the web=
+site.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">The Inv=
+itation Letter document is password protected, but its content is entirely =
+copied into the body of the email below.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Should =
+you have any question, do not hesitate to drop me an email.<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Best re=
+gards. <o:p>
+</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D;mso-fareast-language:EN=
+-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D;mso-fareast-language:EN=
+-US"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"font-size:7.5pt;colo=
+r:#1F497D">-------------------------------------------<o:p></o:p></span></p=
+>
+<p class=3D"MsoNormal"><b><span lang=3D"ES-TRAD" style=3D"font-size:10.0pt;=
+color:#1F497D">Miguel A. Reina Ortega<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"font-size:10.0pt;col=
+or:#1F497D">Technical Expert</span><span lang=3D"ES-TRAD" style=3D"color:#1=
+F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#1F497D">Centr=
+e for Testing and Interoperability (CTI)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#1F497D">ETSI<=
+/span><span style=3D"font-size:12.0pt;color:#1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#1F497D">mob: =
+&#43;33 (0)6 76 73 60 99<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#1F497D">tel:&=
+nbsp;&nbsp;&nbsp; &#43;33 (0)4 92 94 43 49<o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D;mso-fareast-language:EN=
+-US"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US">From:</span></b><span lang=
+=3D"EN-US"> Jeanne Lancry-Gulino
+<br>
+<b>Sent:</b> 18 May 2016 10:47 AM<br>
+<b>To:</b> CL-DISPATCH &lt;CL-DISPATCH@list.etsi.org&gt;<br>
+<b>Cc:</b> SEC [ETSI Secretariat Distribution List] &lt;sec_SPAM@etsi.org&g=
+t;; STFs [All active STF experts] &lt;STFs@etsi.org&gt;<br>
+<b>Subject:</b> ETSI CL16_3285: Invitation to the 6TiSCH/6lo Plugtests(TM) =
+event, 15-17 July 2016, in Berlin, Germany<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The complete file (and annexes if any) of this Colle=
+ctive Letter can be downloaded at the following location:
+<a href=3D"https://docbox.etsi.org/C_Letter/CL2016/CL16_3285_Invitation_joi=
+nt_6TiSCH6lo_Plugtests.doc">
+https://docbox.etsi.org/C_Letter/CL2016/CL16_3285_Invitation_joint_6TiSCH6l=
+o_Plugtests.doc</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p=
+></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:12.0pt">To:</span></b><s=
+pan style=3D"font-size:12.0pt">
+</span><b><span lang=3D"EN-US" style=3D"font-size:12.0pt">&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ETSI MEMBERS, OBSER=
+VERS AND COUNSELLORS</span></b><span style=3D"font-size:12.0pt"><o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:12.0pt">Subject: &nbsp;&=
+nbsp;&nbsp; Invitation to the 6TiSCH/6lo Plugtests<sup>TM</sup> event, 15-1=
+7 July 2016, in Berlin, Germany<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Dear Madam,<o:p></o:p></span></=
+p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Dear Sir,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal">ETSI&#8217;s Centre for Testing and Interoperability=
+ (CTI) is organizing a joint 6TiSCH/6lo (IPv6 over the Timeslotted Channel =
+Hopping mode of IEEE 802.15.4e/IPv6 over Networks of Resource-constrained N=
+odes) Plugtests&#8482; event. This event will
+ be held from 15 to 17 July 2016 in Berlin, Germany with the support of the=
+ ETSI IP6 ISG (IPv6 Internet Protocol version 6 Industry Specification Grou=
+p), the Internet Engineering Task Force (IETF) 6TiSCH and 6lo Working Group=
+s and the European Commission.<span style=3D"font-size:10.0pt;font-family:&=
+quot;Arial&quot;,sans-serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:3.0pt">For 6TiSCH, the focus =
+of the tests will be on:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt;text-align:justify;text-=
+indent:-18.0pt;mso-list:l0 level1 lfo2;punctuation-wrap:simple;text-autospa=
+ce:none">
+<![if !supportLists]><span style=3D"font-family:&quot;Arial&quot;,sans-seri=
+f"><span style=3D"mso-list:Ignore">-<span style=3D"font:7.0pt &quot;Times N=
+ew Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>draft-ietf-6tisch-minimal and draft-ietf-6ti=
+sch-6top-protocol<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt;text-align:justify;text-=
+indent:-18.0pt;mso-list:l0 level1 lfo2;punctuation-wrap:simple;text-autospa=
+ce:none">
+<![if !supportLists]><span style=3D"font-family:&quot;Arial&quot;,sans-seri=
+f"><span style=3D"mso-list:Ignore">-<span style=3D"font:7.0pt &quot;Times N=
+ew Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>secure joining and backbone router operation=
+.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:3.0pt">For 6lo, the focus of =
+the tests will be on specifications RFC4944, RFC6282 and RFC6775 adapted to=
+:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt;text-align:justify;text-=
+indent:-18.0pt;mso-list:l0 level1 lfo2;punctuation-wrap:simple;text-autospa=
+ce:none">
+<![if !supportLists]><span style=3D"font-family:&quot;Arial&quot;,sans-seri=
+f"><span style=3D"mso-list:Ignore">-<span style=3D"font:7.0pt &quot;Times N=
+ew Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Constrained wired networks (draft-ietf-6lo-6=
+lobac-04)<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt;text-align:justify;text-=
+indent:-18.0pt;mso-list:l0 level1 lfo2;punctuation-wrap:simple;text-autospa=
+ce:none">
+<![if !supportLists]><span style=3D"font-family:&quot;Arial&quot;,sans-seri=
+f"><span style=3D"mso-list:Ignore">-<span style=3D"font:7.0pt &quot;Times N=
+ew Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>DECT Ultra Low Energy air interface (draft-i=
+etf-6lo-dect-ule-04)<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt;text-align:justify;text-=
+indent:-18.0pt;mso-list:l0 level1 lfo2;punctuation-wrap:simple;text-autospa=
+ce:none">
+<![if !supportLists]><span style=3D"font-family:&quot;Arial&quot;,sans-seri=
+f"><span style=3D"mso-list:Ignore">-<span style=3D"font:7.0pt &quot;Times N=
+ew Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Bluetooth low energy air interface (RFC 7668=
+)<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt;text-align:justify;text-=
+indent:-18.0pt;mso-list:l0 level1 lfo2;punctuation-wrap:simple;text-autospa=
+ce:none">
+<![if !supportLists]><span style=3D"font-family:&quot;Arial&quot;,sans-seri=
+f"><span style=3D"mso-list:Ignore">-<span style=3D"font:7.0pt &quot;Times N=
+ew Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Near Field Communication (NFC) radio interfa=
+ce (draft-ietf-6lo-nfc-03)<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt;text-align:justify;text-=
+indent:-18.0pt;mso-list:l0 level1 lfo2;punctuation-wrap:simple;text-autospa=
+ce:none">
+<![if !supportLists]><span style=3D"font-family:&quot;Arial&quot;,sans-seri=
+f"><span style=3D"mso-list:Ignore">-<span style=3D"font:7.0pt &quot;Times N=
+ew Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>IEEE 802.15.4 Networks (RFC 4944), both 2.4 =
+GHz and 900 MHz.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The testing campaign will be based on the test descr=
+iptions developed by ETSI in collaboration with ETSI IP6 ISG and IETF 6TiSC=
+H and 6lo WGs members and will focus on the interoperability of these diffe=
+rent technologies.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">It will give a unique opportunity to participating 6=
+TiSCH and 6lo vendors to test their product against different implementatio=
+ns.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The event is <b><u>free of charge</u></b> and is ope=
+n to both ETSI members and non-members.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">All information related to this event along with reg=
+istration details may be found at the following address:
+<a href=3D"http://www.etsi.org/news-events/events/1077-6tisch-6lo-plugtests=
+">http://www.etsi.org/news-events/events/1077-6tisch-6lo-plugtests</a>.<o:p=
+></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">You can also contact us via email: <a href=3D"mailto=
+:plugtests@etsi.org">
+plugtests@etsi.org</a>.<o:p></o:p></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Yours faithfully,<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Luis Jorge Romero Saro<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Director-General<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:10.0pt;color:gray">NOTE:=
+ ETSI Collective Letters are sent to:
+<o:p></o:p></span></i></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-18.0pt;mso-list:l1 leve=
+l1 lfo4"><![if !supportLists]><span style=3D"font-size:10.0pt;font-family:S=
+ymbol;color:gray"><span style=3D"mso-list:Ignore">&middot;<span style=3D"fo=
+nt:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;
+</span></span></span><![endif]><i><span style=3D"font-size:10.0pt;color:gra=
+y">Official Contacts of Full/Associate Members, Observers, Counsellors<o:p>=
+</o:p></span></i></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-18.0pt;mso-list:l1 leve=
+l1 lfo4"><![if !supportLists]><span style=3D"font-size:10.0pt;font-family:S=
+ymbol;color:gray"><span style=3D"mso-list:Ignore">&middot;<span style=3D"fo=
+nt:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;
+</span></span></span><![endif]><i><span style=3D"font-size:10.0pt;color:gra=
+y">Board members, TB/WG officials and Active Rapporteurs
+<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:10.0pt;color:gray">TB/WG=
+/Voting Officials and Active Rapporteurs may OPT-OUT from receiving Collect=
+ives Letters. To do so, please send an email to</span></i><i><span style=3D=
+"font-size:10.0pt">
+</span></i><a href=3D"mailto:Jeanne.Lancry-Gulino@etsi.org"><i><span style=
+=3D"font-size:10.0pt">Jeanne.Lancry-Gulino@etsi.org</span></i></a><i><span =
+style=3D"font-size:10.0pt">
+<span style=3D"color:gray">requesting this option<o:p></o:p></span></span><=
+/i></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_359b7e019af744039013660793dec75exMailetsihqorg_--
+
+
+From nobody Wed May 18 11:33:51 2016
+Return-Path: <session_request_developers@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 5A4DB12D640; Wed, 18 May 2016 11:33:49 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: "\"IETF Meeting Session Request Tool\"" <session_request_developers@ietf.org>
+To: <session-request@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.20.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <20160518183349.14745.49136.idtracker@ietfa.amsl.com>
+Date: Wed, 18 May 2016 11:33:49 -0700
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/T39S38xuuu8926rqeCN7Acy5BS0>
+Cc: 6lo-chairs@ietf.org, 6lo@ietf.org, suresh.krishnan@ericsson.com, g_e_montenegro@yahoo.com
+Subject: [6lo] 6lo - New Meeting Session Request for IETF 96
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 18 May 2016 18:33:50 -0000
+
+A new meeting session request has just been submitted by Gabriel Montenegro, a Chair of the 6lo working group.
+
+
+---------------------------------------------------------
+Working Group Name: IPv6 over Networks of Resource-constrained Nodes
+Area Name: Internet Area
+Session Requester: Gabriel Montenegro
+
+Number of Sessions: 1
+Length of Session(s):  2.5 Hours
+Number of Attendees: 150
+Conflicts to Avoid: 
+ First Priority: lwig intarea core ace 6tisch 6man manet homenet lpwan
+ Second Priority: roll v6ops detnet icnrg sdnrg t2trg
+
+
+
+Special Requests:
+  Conflict to avoid with BoF on QUIC
+---------------------------------------------------------
+
+
+From nobody Wed May 18 22:04:11 2016
+Return-Path: <yhc@etri.re.kr>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id AB2F412D09A for <6lo@ietfa.amsl.com>; Wed, 18 May 2016 22:04:10 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -103.327
+X-Spam-Level: 
+X-Spam-Status: No, score=-103.327 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RP_MATCHES_RCVD=-1.426, SPF_PASS=-0.001, USER_IN_WHITELIST=-100] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 4OB0FOVFaltz for <6lo@ietfa.amsl.com>; Wed, 18 May 2016 22:04:08 -0700 (PDT)
+Received: from smtpeg.etri.re.kr (smtpeg1.etri.re.kr [129.254.27.141]) (using TLSv1 with cipher AES128-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 4E16B12B035 for <6lo@ietf.org>; Wed, 18 May 2016 22:04:08 -0700 (PDT)
+Received: from SMTP3.etri.info (129.254.28.73) by SMTPEG1.etri.info (129.254.27.141) with Microsoft SMTP Server (TLS) id 14.1.355.2; Thu, 19 May 2016 14:04:03 +0900
+Received: from SMTP2.etri.info ([169.254.2.162]) by SMTP3.etri.info ([10.2.6.32]) with mapi id 14.01.0355.002; Thu, 19 May 2016 14:04:03 +0900
+From: =?ks_c_5601-1987?B?w9a/tciv?= <yhc@etri.re.kr>
+To: Carles Gomez Montenegro <carlesgo@entel.upc.edu>, "draft-ietf-6lo-nfc@tools.ietf.org" <draft-ietf-6lo-nfc@tools.ietf.org>
+Thread-Topic: [6lo] Comments on draft-ietf-6lo-nfc-03
+Thread-Index: AQHRsOH8jSymwrqYBkG8McxV0FmaAZ+/q//w
+Date: Thu, 19 May 2016 05:04:03 +0000
+Message-ID: <B2C0C4C29044814AB285BBB7C754D9242B2EED37@SMTP2.etri.info>
+References: <9df2810df3cfc63f9b1b4fd9a1b68c22.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <9df2810df3cfc63f9b1b4fd9a1b68c22.squirrel@webmail.entel.upc.edu>
+Accept-Language: ko-KR, en-US
+Content-Language: ko-KR
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.200.2.40]
+Content-Type: text/plain; charset="ks_c_5601-1987"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/M54UL1de7g_lctbUxvN6vPv8LjY>
+Cc: "6lo@ietf.org" <6lo@ietf.org>
+Subject: Re: [6lo] Comments on draft-ietf-6lo-nfc-03
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 19 May 2016 05:04:10 -0000
+
+VGhhbmtzIGEgbG90IGZvciB5b3VyIGNvbW1lbnRzLiANCg0KSSdtIFlvdW5naHdhbiBDaG9pLCBv
+bmUgb2YgdGhlIGF1dGhvcnMgb2YgSS1ELiwgZHJhZnQtaWV0Zi02bG8tbmZjLTAzLiANCg0KMS4g
+YWJvdXQgc2ltcGxlIG11bHRpLWhvcCB0b3BvbG9neS4uDQoNCkZpcnN0IG9mIGFsbCwgTkZDIHN1
+cHBvcnRzIG9ubHkgZGlyZWN0IGNvbm5lY3Rpb25zIGJldHdlZW4gdHdvIGRldmljZXMgaW4gbGlu
+ayBsYXllcnMuIEZvciB0aGUgY29ubmVjdGlvbnMsIHRocmVlIHR5cGVzIG9mIHRoZSBORkMgbW9k
+ZXMsICJwMnAsIHRhZyByZWFkL3dyaXRlLCBjYXJkIGVtdWxhdGlvbiBtb2RlIiBjYW4gYmUgdXNl
+ZC4gSG93ZXZlciwgaXB2Ni1vdmVyLW5mYyBjYW4gYmUgb25seSBhY2hpZXZlZCBieSBwMnAgbW9k
+ZSAoInAycCBtb2RlIiBpcyBqdXN0IG5hbWVkIGJ5ICBORkMtRm9ydW0gKGh0dHA6Ly9uZmMtZm9y
+dW0ub3JnL3doYXQtaXMtbmZjL3doYXQtaXQtZG9lcy8sIHRoaXMgaXMgYSBsaXR0bGUgYml0IGRp
+ZmZlcmVudCBmcm9tICJwMnAgY29tbXVuaWNhdGlvbnMgYmV0d2VlbiB0d28gZW5kcG9pbnRzIGlu
+IG5ldHdvcmsgbGF5ZXJzIiB3ZSB1c3VhbGx5IHNheSkuICBJZiBuZWVkZWQsIEknbSBnb2luZyB0
+byByZWZsZWN0IHlvdXIgY29tbWVudCB0byBjbGFyaWZ5IG1lYW5pbmcgb2YgcDJwIGluIE5GQy1m
+b3J1bSBpbiBuZXh0IHZlcnNpb24gKC0wNCkuIFRoYW5rcy4gOikNClRodXMsIHAycCBtb2RlIGlu
+IE5GQy1Gb3J1bSBkb2VzIG5vdCBtZWFuIG11bHRpLWhvcCB0b3BvbG9neS4gSG93ZXZlciwgYnkg
+dXNpbmcgaXB2Ni1vdmVyLW5mYyBhZGFwdGF0aW9uIGxheWVyLCB3ZSBjYW4gbWFrZSBtdWx0aS1o
+b3AgdG9wb2xvZ2llcyB3aXRoIDMgb3IgbW9yZSBuZmMtZW5hYmxlZCBkZXZpY2VzIHdpdGggcm91
+dGluZy1vdmVyIGFwcHJvYWNoLg0KDQoyLiBhYm91dCBGcmFnbWVudGF0aW9uLi4gDQoNCkF0IHRo
+ZSBiZWdpbm5pbmcgb2YgdGhpcyBkcmFmdCwgd2UgZGlkbid0IHRoaW5rIG9mIGV4dGVuZGVkIE1U
+VSBpbiBORkMgbGluayBsYXllci4gU28gTkZDIGxpbmsgbGF5ZXIgc2hvdWxkIGJlIHN1cHBvcnRl
+ZCBmcm9tIGlwdjYtb3Zlci1uZmMgZnJhZ21lbnRhdGlvbiBzY2hlbWVzIGF0IHRoYXQgdGltZS4g
+SG93ZXZlciwgYXQgdGhlIDNyZCB2ZXJzaW9uICgtMDIpIG9mIHRoZSBkcmFmdCwgY29udGV4dHMg
+YWJvdXQgZXh0ZW5kZWQgTVRVIG9mIE5GQyB3ZXJlIGFkZGVkLCBhbmQgRkFSIHdhcyBub3QgbmVj
+ZXNzYXJ5IGFueSBtb3JlLiBBdCB0aGF0IHRpbWUsICJTaW5jZSBMTENQIGRvZXMgbm90IHN1cHBv
+cnQgZnJhZ21lbnRhdGlvbiBhbmQgcmVhc3NlbWJseSwgdXBwZXIgbGF5ZXJzIFNIT1VMRCBzdXBw
+b3J0IGZyYWdtZW50YXRpb24gYW5kIHJlYXNzZW1ibHkuIiBzaG91bGQndmUgYmVlbiByZXZpc2Vk
+LiBOZXh0IHZlcnNpb24gKC0wNCkgaXMgZ29pbmcgdG8gcmVmbGVjdCB0aGlzLiA6KSBUaGFua3Mg
+YWdhaW4uDQoNCjMuIE1pbm9yIHN0dWZmDQoNCkkgd2lsbCBhbHNvIHJlZmxlY3QgdGhlIHR5cG8s
+ICJCVC1MRSIgdG8gIk5GQyIgaW4gc2VjdGlvbiA0LiBUaGFua3MgOikNCg0KQlJzLA0KWW91bmdo
+d2FuIENob2kNCg0KLS0tLS1PcmlnaW5hbCBNZXNzYWdlLS0tLS0NCkZyb206IDZsbyBbbWFpbHRv
+OjZsby1ib3VuY2VzQGlldGYub3JnXSBPbiBCZWhhbGYgT2YgQ2FybGVzIEdvbWV6IE1vbnRlbmVn
+cm8NClNlbnQ6IFdlZG5lc2RheSwgTWF5IDE4LCAyMDE2IDQ6NDggUE0NClRvOiBkcmFmdC1pZXRm
+LTZsby1uZmNAdG9vbHMuaWV0Zi5vcmcNCkNjOiA2bG9AaWV0Zi5vcmcNClN1YmplY3Q6IFs2bG9d
+IENvbW1lbnRzIG9uIGRyYWZ0LWlldGYtNmxvLW5mYy0wMw0KDQpEZWFyIGF1dGhvcnMgb2YgZHJh
+ZnQtaWV0Zi02bG8tbmZjLTAzLA0KDQpJIGhhdmUgYSBmZXcgY29tbWVudHMgYWJvdXQgdGhpcyBk
+cmFmdDoNCg0KMS4gIlNpbXBsZSBtdWx0aS1ob3AgdG9wb2xvZ3kiDQoqKioqKioqKioqKioqKioq
+KioqKioqKioqKioqKioNCg0KSW4gNC4yIGFuZCA0LjUgeW91IG1lbnRpb24gdGhhdCBORkMgbmV0
+d29ya3MgbWF5IGZvbGxvdyB0aGUgInBlZXItdG8tcGVlciB0b3BvbG9neSBhbmQgc2ltcGxlIG11
+bHRpLWhvcCB0b3BvbG9neSIuIEkgdGhpbmsgdGhlIG11bHRpLWhvcCB0b3BvbG9neSByZXF1aXJl
+cyBhIGxpdHRsZSBiaXQgb2YgY2xhcmlmaWNhdGlvbjoNCg0KLSBXaGF0IGlzIHVuZGVyc3Rvb2Qg
+YXMgYSAic2ltcGxlIG11bHRpLWhvcCB0b3BvbG9neSIgYXMgb3Bwb3NlZCB0byB0aGUgImNvbXBs
+aWNhdGVkIG1lc2ggdG9wb2xvZ3kiIG1lbnRpb25lZCBpbiB0aGUgZG9jdW1lbnQ/DQoNCi0gV291
+bGQgdGhlIHNpbXBsZSBtdWx0aS1ob3AgdG9wb2xvZ3kgZm9sbG93IHRoZSBtZXNoLXVuZGVyIG9y
+IHRoZSByb3V0ZS1vdmVyIGFwcHJvYWNoPw0KDQotIERvZXMgTkZDIGRlZmluZSBtZWNoYW5pc21z
+IGZvciB0aGUgZm9ybWF0aW9uIG9mIG11bHRpLWhvcCB0b3BvbG9naWVzPw0KDQooRGVwZW5kaW5n
+IG9uIHRoZSByZXNwb25zZXMsIHRoZSBtdWx0aS1ob3AgZnVuY3Rpb25hbGl0eSBpbiBSRkMgNjc3
+NSBtYXkgYmUgbmVlZGVkLikNCg0KDQoyLiBGcmFnbWVudGF0aW9uDQoqKioqKioqKioqKioqKioq
+DQoNCkluIHNlY3Rpb24gMy4yLCB5b3UgbWVudGlvbjoNCg0KICAiU2luY2UgTExDUCBkb2VzIG5v
+dCBzdXBwb3J0IGZyYWdtZW50YXRpb24gYW5kIHJlYXNzZW1ibHksIHVwcGVyIGxheWVycw0KICAg
+U0hPVUxEIHN1cHBvcnQgZnJhZ21lbnRhdGlvbiBhbmQgcmVhc3NlbWJseS4iDQoNCkhvd2V2ZXIs
+IHNlY3Rpb24gNC44IHNheXMgdGhhdCBSRkMgNDk0NCBmcmFnbWVudGF0aW9uIGlzIG5vdCByZXF1
+aXJlZC4gSXMgbWF5YmUgdGhlIHRleHQgaW4gc2VjdGlvbiAzLjIgcGVuZGluZyBhbiB1cGRhdGU/
+DQoNCg0KMy4gTWlub3INCioqKioqKioqDQoNClNlY3Rpb24gNCwgNHRoIGxpbmU6IHMvQlQtTEUv
+TkZDDQoNCg0KVGhhbmtzIQ0KDQpDYXJsZXMNCg0KX19fX19fX19fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fX18NCjZsbyBtYWlsaW5nIGxpc3QNCjZsb0BpZXRmLm9yZw0KaHR0
+cHM6Ly93d3cuaWV0Zi5vcmcvbWFpbG1hbi9saXN0aW5mby82bG8NCg==
+
+
+From nobody Thu May 19 00:39:59 2016
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 4544212D0CD for <6lo@ietfa.amsl.com>; Thu, 19 May 2016 00:39:56 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.22
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.22 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Iqyf9A-4sBlX for <6lo@ietfa.amsl.com>; Thu, 19 May 2016 00:39:53 -0700 (PDT)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 95A2912D0CA for <6lo@ietf.org>; Thu, 19 May 2016 00:39:53 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.39.4]) by dash.upc.es (8.14.1/8.13.1) with ESMTP id u4J7djpC012363; Thu, 19 May 2016 09:39:45 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id 9B1EE1D53C1; Thu, 19 May 2016 09:39:44 +0200 (CEST)
+Received: from 131.111.5.15 by webmail.entel.upc.edu with HTTP; Thu, 19 May 2016 08:39:41 +0200
+Message-ID: <74efb92672420eb00c760ca9ea36b461.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <B2C0C4C29044814AB285BBB7C754D9242B2EED37@SMTP2.etri.info>
+References: <9df2810df3cfc63f9b1b4fd9a1b68c22.squirrel@webmail.entel.upc.edu> <B2C0C4C29044814AB285BBB7C754D9242B2EED37@SMTP2.etri.info>
+Date: Thu, 19 May 2016 08:39:41 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: =?iso-8859-1?Q?=22=C3=D6=BF=B5=C8=AF=22?= <yhc@etri.re.kr>
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Mail-Scanned: Criba 2.0 + Clamd
+X-Greylist: Delayed for 24:49:52 by milter-greylist-4.4.3 (dash.upc.es [147.83.2.50]); Thu, 19 May 2016 09:39:45 +0200 (CEST)
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/T-a6D_iTiBBUnWecq7t0uR2ATsE>
+Cc: "draft-ietf-6lo-nfc@tools.ietf.org" <draft-ietf-6lo-nfc@tools.ietf.org>, "6lo@ietf.org" <6lo@ietf.org>
+Subject: Re: [6lo] Comments on draft-ietf-6lo-nfc-03
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 19 May 2016 07:39:56 -0000
+
+Hi Younghwan,
+
+Thanks a lot for your responses!
+
+Cheers,
+
+Carles
+
+
+
+> Thanks a lot for your comments.
+>
+> I'm Younghwan Choi, one of the authors of I-D., draft-ietf-6lo-nfc-03.
+>
+> 1. about simple multi-hop topology..
+>
+> First of all, NFC supports only direct connections between two devices in
+> link layers. For the connections, three types of the NFC modes, "p2p, tag
+> read/write, card emulation mode" can be used. However, ipv6-over-nfc can
+> be only achieved by p2p mode ("p2p mode" is just named by  NFC-Forum
+> (http://nfc-forum.org/what-is-nfc/what-it-does/, this is a little bit
+> different from "p2p communications between two endpoints in network
+> layers" we usually say).  If needed, I'm going to reflect your comment to
+> clarify meaning of p2p in NFC-forum in next version (-04). Thanks. :)
+> Thus, p2p mode in NFC-Forum does not mean multi-hop topology. However, by
+> using ipv6-over-nfc adaptation layer, we can make multi-hop topologies
+> with 3 or more nfc-enabled devices with routing-over approach.
+>
+> 2. about Fragmentation..
+>
+> At the beginning of this draft, we didn't think of extended MTU in NFC
+> link layer. So NFC link layer should be supported from ipv6-over-nfc
+> fragmentation schemes at that time. However, at the 3rd version (-02) of
+> the draft, contexts about extended MTU of NFC were added, and FAR was not
+> necessary any more. At that time, "Since LLCP does not support
+> fragmentation and reassembly, upper layers SHOULD support fragmentation
+> and reassembly." should've been revised. Next version (-04) is going to
+> reflect this. :) Thanks again.
+>
+> 3. Minor stuff
+>
+> I will also reflect the typo, "BT-LE" to "NFC" in section 4. Thanks :)
+>
+> BRs,
+> Younghwan Choi
+>
+> -----Original Message-----
+> From: 6lo [mailto:6lo-bounces@ietf.org] On Behalf Of Carles Gomez
+> Montenegro
+> Sent: Wednesday, May 18, 2016 4:48 PM
+> To: draft-ietf-6lo-nfc@tools.ietf.org
+> Cc: 6lo@ietf.org
+> Subject: [6lo] Comments on draft-ietf-6lo-nfc-03
+>
+> Dear authors of draft-ietf-6lo-nfc-03,
+>
+> I have a few comments about this draft:
+>
+> 1. "Simple multi-hop topology"
+> ******************************
+>
+> In 4.2 and 4.5 you mention that NFC networks may follow the "peer-to-peer
+> topology and simple multi-hop topology". I think the multi-hop topology
+> requires a little bit of clarification:
+>
+> - What is understood as a "simple multi-hop topology" as opposed to the
+> "complicated mesh topology" mentioned in the document?
+>
+> - Would the simple multi-hop topology follow the mesh-under or the
+> route-over approach?
+>
+> - Does NFC define mechanisms for the formation of multi-hop topologies?
+>
+> (Depending on the responses, the multi-hop functionality in RFC 6775 may
+> be needed.)
+>
+>
+> 2. Fragmentation
+> ****************
+>
+> In section 3.2, you mention:
+>
+>   "Since LLCP does not support fragmentation and reassembly, upper layers
+>    SHOULD support fragmentation and reassembly."
+>
+> However, section 4.8 says that RFC 4944 fragmentation is not required. Is
+> maybe the text in section 3.2 pending an update?
+>
+>
+> 3. Minor
+> ********
+>
+> Section 4, 4th line: s/BT-LE/NFC
+>
+>
+> Thanks!
+>
+> Carles
+>
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+
+
+
+From nobody Mon May 30 00:14:35 2016
+Return-Path: <MiguelAngel.ReinaOrtega@etsi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0676512D168 for <6lo@ietfa.amsl.com>; Mon, 30 May 2016 00:14:35 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.373
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.373 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DEAR_SOMETHING=1.973, HTML_MESSAGE=0.001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, RP_MATCHES_RCVD=-1.426, SPF_PASS=-0.001] autolearn=no autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id jNRNtyliacNl for <6lo@ietfa.amsl.com>; Mon, 30 May 2016 00:14:32 -0700 (PDT)
+Received: from mx1.etsi.org (mx1.etsi.org [195.238.226.34]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 9671D12B009 for <6lo@ietf.org>; Mon, 30 May 2016 00:14:32 -0700 (PDT)
+X-ASG-Debug-ID: 1464592469-0779bd4d3447d100001-BAoDzl
+Received: from outbound.etsi.org (outbound.etsi.org [195.238.226.43]) by mx1.etsi.org with ESMTP id Wlbpk6tBLiUrxISR (version=TLSv1.2 cipher=ECDHE-RSA-AES256-SHA384 bits=256 verify=NO); Mon, 30 May 2016 07:14:29 +0000 (GMT)
+X-Barracuda-Envelope-From: MiguelAngel.ReinaOrtega@etsi.org
+X-Barracuda-Effective-Source-IP: outbound.etsi.org[195.238.226.43]
+X-Barracuda-Apparent-Source-IP: 195.238.226.43
+X-ASG-Whitelist: Client
+Received: from XMAIL.etsihq.org (172.27.1.75) by xMail.etsihq.org (172.27.1.75) with Microsoft SMTP Server (TLS) id 15.0.1130.7; Mon, 30 May 2016 09:14:29 +0200
+Received: from XMAIL.etsihq.org ([172.27.1.75]) by xMail.etsihq.org ([172.27.1.75]) with mapi id 15.00.1130.005; Mon, 30 May 2016 09:14:29 +0200
+From: Miguel Angel Reina Ortega <MiguelAngel.ReinaOrtega@etsi.org>
+To: "6tisch@ietf.org" <6tisch@ietf.org>, "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: ETSI CL16_3284: Call for Expertise for the 6TiSCH/6lo Plugtests(TM) event, 15-17 July 2016, in Berlin, Germany
+X-ASG-Orig-Subj: FW: ETSI CL16_3284: Call for Expertise for the 6TiSCH/6lo Plugtests(TM) event, 15-17 July 2016, in Berlin, Germany
+Thread-Index: AdGw3wDjxsAa/jtVS8mpFPK9dAT9WQJY1u3g
+Date: Mon, 30 May 2016 07:14:29 +0000
+Message-ID: <95381bb4273048b09f5ab1dd1f5ede7d@xMail.etsihq.org>
+References: <eac7540c0d4c42bb9f95e0d0712f3891@xMail.etsihq.org>
+In-Reply-To: <eac7540c0d4c42bb9f95e0d0712f3891@xMail.etsihq.org>
+Accept-Language: en-US, en-GB
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [10.7.2.71]
+Content-Type: multipart/alternative; boundary="_000_95381bb4273048b09f5ab1dd1f5ede7dxMailetsihqorg_"
+MIME-Version: 1.0
+X-Barracuda-Connect: outbound.etsi.org[195.238.226.43]
+X-Barracuda-Start-Time: 1464592469
+X-Barracuda-Encrypted: ECDHE-RSA-AES256-SHA384
+X-Barracuda-URL: https://172.26.1.64:443/cgi-mod/mark.cgi
+X-Barracuda-Scan-Msg-Size: 21256
+X-Virus-Scanned: by bsmtpd at etsi.org
+X-Barracuda-BRTS-Status: 1
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/ka8QHoaiLuqVSYQQj_mT9QC2wjM>
+Subject: [6lo] FW: ETSI CL16_3284: Call for Expertise for the 6TiSCH/6lo Plugtests(TM) event, 15-17 July 2016, in Berlin, Germany
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 30 May 2016 07:14:35 -0000
+
+--_000_95381bb4273048b09f5ab1dd1f5ede7dxMailetsihqorg_
+Content-Type: text/plain; charset="iso-2022-jp"
+Content-Transfer-Encoding: quoted-printable
+
+Dear all,
+
+Let me forward you the Call for Expertise that has been recently sent out f=
+rom ETSI for the upcoming 6TiSCH/6lo Plugtests that will be held from 15th =
+to 17th July 2016 in Berlin.
+
+This Call for Expertise is password protected (for ETSI members) but its co=
+ntent is copied into the email body below.
+
+Should you have any question, do not hesitate to contact me directly.
+
+I=1B$B!G=1B(Bd like to take advantage of this email to remind you to regist=
+er to the Plugtests at http://www.etsi.org/news-events/events/1077-6tisch-6=
+lo-plugtests .
+
+Best regards.
+
+---------------------------------------------------------------------------=
+--------------------------------------
+Miguel Angel Reina Ortega - Testing Expert
+Centre for Testing and Interoperability (CTI)
+ETSI =1B$B!|=1B(B www.etsi.org<http://www.etsi.org/> =1B$B!|=1B(B miguelang=
+el.reinaortega@etsi.org<mailto:miguelangel.reinaortega@etsi.org>
+Phone: +33 (0)4 92 94 43 49 =1B$B!|=1B(B Mobile: +33 (0)6 76 73 60 99
+
+This email may contain confidential information and is intended for
+the use of the addressee only. Any unauthorized use may be unlawful.
+If you receive this email by mistake, please advise the sender
+immediately by using the reply facility in your email software.
+Thank you for your co-operation.
+
+From: Jeanne Lancry-Gulino
+Sent: 18 May 2016 10:47 AM
+To: CL-DISPATCH <CL-DISPATCH@list.etsi.org>
+Cc: SEC [ETSI Secretariat Distribution List] <sec_SPAM@etsi.org>; STFs [All=
+ active STF experts] <STFs@etsi.org>
+Subject: ETSI CL16_3284: Call for Expertise for the 6TiSCH/6lo Plugtests(TM=
+) event, 15-17 July 2016, in Berlin, Germany
+
+The complete file (and annexes if any) of this Collective Letter can be dow=
+nloaded at the following location: https://docbox.etsi.org/C_Letter/CL2016/=
+CL16_3284_Call_for_expertise_joint_6TiSCH6lo_Plugtests.doc
+
+To:              ETSI MEMBERS, OBSERVERS AND COUNSELLORS
+Subject:     Call for Expertise for the 6TiSCH/6lo PlugtestsTM event, 15-17=
+ July 2016, in Berlin, Germany
+
+Dear Madam,
+Dear Sir,
+
+ETSI=1B$B!G=1B(Bs Centre for Testing and Interoperability (CTI) is organizi=
+ng a joint 6TiSCH/6lo (IPv6 over the Timeslotted Channel Hopping mode of IE=
+EE 802.15.4e/IPv6 over Networks of Resource-constrained Nodes) Plugtests(tm=
+) event. This event will be held from 15 to 17 July 2016 in Berlin, Germany=
+.
+
+ETSI is looking to recruit technical expertise to support and conduct this =
+event. Experts will be requested to help with:
+
+
+  *   The development of interoperability tests
+  *   Technical preparation of the event
+  *   Technical support during the event pertaining to 6TiSCH and 6lo speci=
+fications
+  *   Supervision of the test sessions and recording of results
+  *   Compilation of the daily wrap-up meetings
+  *   Compilation of the event technical report and roadmap for future even=
+ts.
+
+
+The applicant should have practical experience in working with the 6TiSCH a=
+nd 6lo technologies and should be familiar with ETSI interoperability testi=
+ng methodology. Working experience in interoperability testing, as well as =
+technical aspects surrounding the organization of interoperability events w=
+ould be an advantage.
+
+Applications should be sent to plugtests@etsi.org<mailto:plugtests@etsi.org=
+> no later than 31 May 2016. The subject of the email should be: 6TiSCH/6lo=
+ - Call for expertise.
+
+You can also contact us via email: plugtests@etsi.org<mailto:plugtests@etsi=
+.org>.
+
+Yours faithfully,
+
+
+Luis Jorge Romero Saro
+Director-General
+
+
+NOTE: ETSI Collective Letters are sent to:
+
+*         Official Contacts of Full/Associate Members, Observers, Counsello=
+rs
+
+*         Board members, TB/WG officials and Active Rapporteurs
+TB/WG/Voting Officials and Active Rapporteurs may OPT-OUT from receiving Co=
+llectives Letters. To do so, please send an email to Jeanne.Lancry-Gulino@e=
+tsi.org<mailto:Jeanne.Lancry-Gulino@etsi.org> requesting this option
+
+
+--_000_95381bb4273048b09f5ab1dd1f5ede7dxMailetsihqorg_
+Content-Type: text/html; charset="iso-2022-jp"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-2022-=
+jp">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:Consolas;
+	mso-fareast-language:EN-GB;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.StdColl4Char
+	{mso-style-name:"Std_Coll4 Char";
+	font-family:"Arial",sans-serif;
+	mso-fareast-language:EN-US;}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:#1F497D;}
+span.EmailStyle23
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:245456509;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1181244426 134807553 134807555 134807557 134807553 1=
+34807555 134807557 134807553 134807555 134807557;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1723098791;
+	mso-list-type:hybrid;
+	mso-list-template-ids:734985256 67698689 67698691 67698693 67698689 676986=
+91 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-GB" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Dear al=
+l, <o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Let me =
+forward you the Call for Expertise that has been recently sent out from ETS=
+I for the upcoming 6TiSCH/6lo Plugtests that will be held from 15<sup>th</s=
+up> to 17<sup>th</sup> July 2016 in Berlin.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">This Ca=
+ll for Expertise is password protected (for ETSI members) but its content i=
+s copied into the email body below.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Should =
+you have any question, do not hesitate to contact me directly.<o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">I=1B$B!=
+G=1B(Bd like to take advantage of this email to remind you to register to t=
+he Plugtests at
+<a href=3D"http://www.etsi.org/news-events/events/1077-6tisch-6lo-plugtests=
+">http://www.etsi.org/news-events/events/1077-6tisch-6lo-plugtests</a> .
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Best re=
+gards. <o:p>
+</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D;mso-fareast-language:EN=
+-US"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"font-size:7.5pt;colo=
+r:#1F497D">----------------------------------------------------------------=
+-------------------------------------------------<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span lang=3D"ES" style=3D"color:#1F4E79">Miguel =
+Angel Reina Ortega
+</span></b><b><span lang=3D"ES" style=3D"color:#1F497D">&#8211;</span></b><=
+span lang=3D"ES" style=3D"color:#1F497D"> Testing Expert<o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79">Centre for Testing and=
+ Interoperability (CTI)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span lang=3D"FR" style=3D"color:#1F4E79">ETSI</s=
+pan></b><span lang=3D"FR" style=3D"color:#1F4E79">
+</span><span lang=3D"FR" style=3D"font-size:7.0pt;color:#1F4E79">=1B$B!|=1B=
+(B </span><span style=3D"color:#595959"><a href=3D"http://www.etsi.org/"><s=
+pan lang=3D"FR" style=3D"color:#0563C1">www.etsi.org</span></a></span><span=
+ style=3D"color:#595959">
+</span><span lang=3D"FR" style=3D"font-size:7.0pt;color:#1F4E79">=1B$B!|=1B=
+(B</span><span lang=3D"FR" style=3D"color:#1F497D">
+</span><u><span style=3D"color:#0563C1"><a href=3D"mailto:miguelangel.reina=
+ortega@etsi.org"><span lang=3D"FR" style=3D"color:#0563C1">miguelangel.rein=
+aortega@etsi.org</span></a></span></u><span lang=3D"FR" style=3D"color:#595=
+959"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#595959">Phone: &#43;33 (0)4 92=
+ 94 43 49 </span>
+<span style=3D"font-size:7.0pt;color:#1F4E79">=1B$B!|=1B(B</span><span styl=
+e=3D"font-size:7.0pt;color:#2E74B5">
+</span><span style=3D"color:#595959">Mobile: &#43;33 (0)6 76 73 60 99<o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri Light&quot;=
+,sans-serif;color:gray"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;color:black">This ema=
+il may contain confidential information and is intended for
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;color:black">the use =
+of the addressee only. Any unauthorized use may be unlawful.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;color:black">If you r=
+eceive this email by mistake, please advise the sender<o:p></o:p></span></p=
+>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;color:black">immediat=
+ely by using the reply facility in your email software.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;color:black">Thank yo=
+u for your co-operation.</span><span style=3D"font-size:9.0pt;color:black">=
+<o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D;mso-fareast-language:EN=
+-US"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US">From:</span></b><span lang=
+=3D"EN-US"> Jeanne Lancry-Gulino
+<br>
+<b>Sent:</b> 18 May 2016 10:47 AM<br>
+<b>To:</b> CL-DISPATCH &lt;CL-DISPATCH@list.etsi.org&gt;<br>
+<b>Cc:</b> SEC [ETSI Secretariat Distribution List] &lt;sec_SPAM@etsi.org&g=
+t;; STFs [All active STF experts] &lt;STFs@etsi.org&gt;<br>
+<b>Subject:</b> ETSI CL16_3284: Call for Expertise for the 6TiSCH/6lo Plugt=
+ests(TM) event, 15-17 July 2016, in Berlin, Germany<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The complete file (and annexes if any) of this Colle=
+ctive Letter can be downloaded at the following location:
+<a href=3D"https://docbox.etsi.org/C_Letter/CL2016/CL16_3284_Call_for_exper=
+tise_joint_6TiSCH6lo_Plugtests.doc">
+https://docbox.etsi.org/C_Letter/CL2016/CL16_3284_Call_for_expertise_joint_=
+6TiSCH6lo_Plugtests.doc</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p=
+></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:12.0pt">To:</span></b><s=
+pan style=3D"font-size:12.0pt">
+</span><b><span lang=3D"EN-US" style=3D"font-size:12.0pt">&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ETSI MEMBERS, OBSER=
+VERS AND COUNSELLORS</span></b><span style=3D"font-size:12.0pt"><o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:12.0pt">Subject: &nbsp;&=
+nbsp;&nbsp; Call for Expertise for the 6TiSCH/6lo Plugtests<sup>TM</sup> ev=
+ent, 15-17 July 2016, in Berlin, Germany<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Dear Madam,<o:p></o:p></span></=
+p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Dear Sir,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal">ETSI=1B$B!G=1B(Bs Centre for Testing and Interoperab=
+ility (CTI) is organizing a joint 6TiSCH/6lo (IPv6 over the Timeslotted Cha=
+nnel Hopping mode of IEEE 802.15.4e/IPv6 over Networks of Resource-constrai=
+ned Nodes) Plugtests&#8482; event. This event will
+ be held from 15 to 17 July 2016 in Berlin, Germany.<span style=3D"font-siz=
+e:10.0pt;font-family:&quot;Arial&quot;,sans-serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">ETSI is looking to recruit technical expertise to su=
+pport and conduct this event. Experts will be requested to help with:
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<ul style=3D"margin-top:0cm" type=3D"disc">
+<li class=3D"MsoNormal" style=3D"text-align:justify;mso-list:l0 level1 lfo2=
+;punctuation-wrap:simple;text-autospace:none">
+The development of interoperability tests <o:p></o:p></li><li class=3D"MsoN=
+ormal" style=3D"text-align:justify;mso-list:l0 level1 lfo2;punctuation-wrap=
+:simple;text-autospace:none">
+Technical preparation of the event <o:p></o:p></li><li class=3D"MsoNormal" =
+style=3D"text-align:justify;mso-list:l0 level1 lfo2;punctuation-wrap:simple=
+;text-autospace:none">
+Technical support during the event pertaining to 6TiSCH and 6lo specificati=
+ons<o:p></o:p></li><li class=3D"MsoNormal" style=3D"text-align:justify;mso-=
+list:l0 level1 lfo2;punctuation-wrap:simple;text-autospace:none">
+Supervision of the test sessions and recording of results<o:p></o:p></li><l=
+i class=3D"MsoNormal" style=3D"text-align:justify;mso-list:l0 level1 lfo2;p=
+unctuation-wrap:simple;text-autospace:none">
+Compilation of the daily wrap-up meetings <o:p></o:p></li><li class=3D"MsoN=
+ormal" style=3D"text-align:justify;mso-list:l0 level1 lfo2;punctuation-wrap=
+:simple;text-autospace:none">
+Compilation of the event technical report and roadmap for future events.<o:=
+p></o:p></li></ul>
+<p class=3D"MsoNormal" style=3D"margin-left:18.0pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:54.0pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The applicant should have practical experience in wo=
+rking with the 6TiSCH and 6lo technologies and should be familiar with ETSI=
+ interoperability testing methodology. Working experience in interoperabili=
+ty testing, as well as technical aspects
+ surrounding the organization of interoperability events would be an advant=
+age.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><a name=3D"Dear"></a>Applications should be sent to =
+<a href=3D"mailto:plugtests@etsi.org">
+plugtests@etsi.org</a> no later than 31 May 2016. The subject of the email =
+should be: 6TiSCH/6lo &#8211; Call for expertise.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">You can also contact us via email: <a href=3D"mailto=
+:plugtests@etsi.org">
+plugtests@etsi.org</a>.<o:p></o:p></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Yours faithfully,<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Luis Jorge Romero Saro<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Director-General<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:10.0pt;color:gray">NOTE:=
+ ETSI Collective Letters are sent to:
+<o:p></o:p></span></i></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-18.0pt;mso-list:l1 leve=
+l1 lfo4"><![if !supportLists]><span style=3D"font-size:10.0pt;font-family:S=
+ymbol;color:gray"><span style=3D"mso-list:Ignore">&middot;<span style=3D"fo=
+nt:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;
+</span></span></span><![endif]><i><span style=3D"font-size:10.0pt;color:gra=
+y">Official Contacts of Full/Associate Members, Observers, Counsellors<o:p>=
+</o:p></span></i></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-18.0pt;mso-list:l1 leve=
+l1 lfo4"><![if !supportLists]><span style=3D"font-size:10.0pt;font-family:S=
+ymbol;color:gray"><span style=3D"mso-list:Ignore">&middot;<span style=3D"fo=
+nt:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;
+</span></span></span><![endif]><i><span style=3D"font-size:10.0pt;color:gra=
+y">Board members, TB/WG officials and Active Rapporteurs
+<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:10.0pt;color:gray">TB/WG=
+/Voting Officials and Active Rapporteurs may OPT-OUT from receiving Collect=
+ives Letters. To do so, please send an email to</span></i><i><span style=3D=
+"font-size:10.0pt">
+</span></i><a href=3D"mailto:Jeanne.Lancry-Gulino@etsi.org"><i><span style=
+=3D"font-size:10.0pt">Jeanne.Lancry-Gulino@etsi.org</span></i></a><i><span =
+style=3D"font-size:10.0pt">
+<span style=3D"color:gray">requesting this option<o:p></o:p></span></span><=
+/i></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_95381bb4273048b09f5ab1dd1f5ede7dxMailetsihqorg_--
+

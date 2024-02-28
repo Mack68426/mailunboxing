@@ -1,0 +1,1966 @@
+
+From nobody Thu Mar  3 09:13:49 2022
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 1D7513A0894; Thu,  3 Mar 2022 09:13:36 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.46.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: 6lo@ietf.org
+Message-ID: <164632761606.28373.8303338598850967897@ietfa.amsl.com>
+Date: Thu, 03 Mar 2022 09:13:36 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/RJZgBjNFtFUxK432CEHKwTrZIgc>
+Subject: [6lo] I-D Action: draft-ietf-6lo-multicast-registration-04.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 03 Mar 2022 17:13:37 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : IPv6 Neighbor Discovery Multicast Address Listener Registration
+        Author          : Pascal Thubert
+	Filename        : draft-ietf-6lo-multicast-registration-04.txt
+	Pages           : 26
+	Date            : 2022-03-03
+
+Abstract:
+   This document updates RFC 8505 to enable a listener to register an
+   IPv6 anycast or and subscribe to an IPv6 multicast address; the draft
+   updates RFC 6550 (RPL) to add a new Non-Storing Multicast Mode and a
+   new support for anycast addresses in Storing and Non-Storing Modes.
+   This document extends RFC 9010 to enable the 6LR to inject the
+   anycast and multicast addresses in RPL.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-multicast-registration/
+
+There is also an HTML version available at:
+https://www.ietf.org/archive/id/draft-ietf-6lo-multicast-registration-04.html
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-multicast-registration-04
+
+
+Internet-Drafts are also available by rsync at rsync.ietf.org::internet-drafts
+
+
+
+From nobody Thu Mar  3 23:24:12 2022
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 8C49A3A0EE3; Thu,  3 Mar 2022 23:23:43 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.906
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.906 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001, T_SCC_BODY_TEXT_LINE=-0.01] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id zLHSztKJydcf; Thu,  3 Mar 2022 23:23:39 -0800 (PST)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 6FAA33A0ED3; Thu,  3 Mar 2022 23:23:38 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 2247NZMA019956;  Fri, 4 Mar 2022 08:23:35 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id DB2371D53C1; Fri,  4 Mar 2022 08:23:34 +0100 (CET)
+Received: from 79.158.120.70 by webmail.entel.upc.edu with HTTP; Fri, 4 Mar 2022 08:23:35 +0100
+Message-ID: <6848bc1d657e1cc9b58dc911620a22b7.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <CABONVQZuzi9wMM2sWuW4yvHnH=YeBsZ7aLOvnB7W3rEcd8y48g@mail.gmail.com>
+References: <a9892ff8df546a562e213cffa6cd5877.squirrel@webmail.entel.upc.edu> <abe6f4c7a41473f210e18dcd5ea2352e.squirrel@webmail.entel.upc.edu> <CABONVQZuzi9wMM2sWuW4yvHnH=YeBsZ7aLOvnB7W3rEcd8y48g@mail.gmail.com>
+Date: Fri, 4 Mar 2022 08:23:35 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: "Laurent Toutain" <laurent.toutain@imt-atlantique.fr>
+Cc: "lp-wan" <lp-wan@ietf.org>, 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Fri, 04 Mar 2022 08:23:35 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/vZ0hG8m5XJYXR0RGcI-m2sxADUY>
+Subject: Re: [6lo] [lp-wan] "Dev" and "App" terms and peer-to-peer 802.15.4 networks
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 04 Mar 2022 07:23:44 -0000
+
+Hi Laurent,
+
+Thanks for your message!
+
+Please find below some inline responses:
+
+> Hi Carles,
+>
+> I think is it good to keep App and Dev since they are hardcoded in the
+> Field ID.
+
+Yes, I see the advantage of trying to reuse existing functionality as it
+is to the extent possible.
+
+> The goal will be to determine who's up and down. In openschc we
+> have a tunnel mode and the SCHC packet is sent over an UDP tunnel. This
+> allows fast prototyping. In the core side, when an IPv6 packet arrives,
+> the
+> Rule Manager look for a validate rule among all the rules of all he
+> devices. If a rule matches, the RM returns the Device ID that could be a
+> LPWAN id (such as lorawan:1234567812345678) or the UDP tunnel (udp:
+> 123.234.123.234:8888) and the packet is sent to the other end.
+
+I think your "If a rule matches" is a key point to consider.
+
+In the context of a peer-to-peer 802.15.4 network, a matching Rule would
+state who is "Dev" and who is "App" a priori. That is, if we stick to the
+"Dev" and "App" roles as they are, trying to use a single Rule for both
+directions between two endoints, there needs to be some previous agreement
+on or configuration of which endpoint is "Dev" and which one is "App", for
+that pair of endpoints.
+
+> The other end receives the packet and looks in its own rule manager to
+> find
+> the reverse rule. Since the rules are the same on both end, the ID
+> associated to the rule is of course the one of the device.
+>
+> When the device answer, we can generalize the previous behavior. If the
+> answer matches a rule and the ID of the rule is the own device, then the
+> SCHC packet has to be sent to the core (which is identified in case of
+> Lora, send the SCHC packet on the Lora interface, and in case of UDP to
+> the
+> IP address of the core learnt in the previous exchange).  I don't say that
+> it will work in mesh network, since we still consider a single core.
+> If the matching rule has an id different from the device, then the SCHC
+> packet is sent to that ID has for the core.
+
+I see how your example works, but I understand that it is based on some
+Rules that have been written before communication between the two
+endpoints actually happens, based on a decision of which endpoint is "Dev"
+and which one is "App".
+
+(Please let me know if it is otherwise...)
+
+> Another remark is that we can break symmetry in the rule. In the example
+> we
+> gave, for APP* and DEV* Field ID we have always a BI direction. If for
+> instance, we give DOWN to a DEV* and APP* pair then it will correspond to
+> the source and destination addresses.
+
+If I understand correctly this suggestion, would that mean that the number
+of Rules would need to be duplicated, since we would need one Rule for one
+direction and one Rule for the other?
+
+Thanks,
+
+Carles
+
+
+
+> My 2 cents
+>
+> Laurent
+
+
+
+From nobody Fri Mar  4 04:30:00 2022
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 46F7F3A1377; Fri,  4 Mar 2022 04:29:32 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.904
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.904 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_BLOCKED=0.001, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001, T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id WCHCPdZJ3yJQ; Fri,  4 Mar 2022 04:29:28 -0800 (PST)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 7B9AD3A1374; Fri,  4 Mar 2022 04:29:26 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 224CTNLD063950;  Fri, 4 Mar 2022 13:29:23 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id 799601D53C1; Fri,  4 Mar 2022 13:29:23 +0100 (CET)
+Received: from 79.158.120.70 by webmail.entel.upc.edu with HTTP; Fri, 4 Mar 2022 13:29:23 +0100
+Message-ID: <c9643fb4432c3952976a146f83d15c20.squirrel@webmail.entel.upc.edu>
+Date: Fri, 4 Mar 2022 13:29:23 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+Cc: lp-wan@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at dash
+X-Virus-Status: Clean
+X-Greylist: Delayed for 05:05:48 by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Fri, 04 Mar 2022 13:29:23 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/rS95g54bJL-3m-FVuPb3mmRg7e4>
+Subject: [6lo] [Fwd: New Version Notification for draft-gomez-6lo-schc-15dot4-02.txt]
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 04 Mar 2022 12:29:33 -0000
+
+Dear 6lo WG,
+
+(CC'ing lpwan.)
+
+Please find below the main pointers to an updated version of
+draft-gomez-6lo-schc-15dot4.
+
+The main changes in this last update are:
+
+- RuleID size is now not fixed (a recommendation is given).
+
+- Dev and App roles are now also used in peer-to-peer IEEE 802.15.4
+networks (with some pending solution/mechanism to be devised). The former
+tentative (and alternative) approach for such networks has been removed.
+
+- Integrity protection (e.g. from link-layer security) is required to
+protect SCHC headers.
+
+Comments will be appreciated!
+
+Cheers,
+
+Carles (on behalf of the authors)
+
+
+---------------------------- Original Message ----------------------------
+Subject: New Version Notification for draft-gomez-6lo-schc-15dot4-02.txt
+From:    internet-drafts@ietf.org
+Date:    Fri, March 4, 2022 1:10 pm
+To:      "Ana Minaburo" <ana@ackl.io>
+         "Carles Gomez" <carlesgo@entel.upc.edu>
+--------------------------------------------------------------------------
+
+
+A new version of I-D, draft-gomez-6lo-schc-15dot4-02.txt
+has been successfully submitted by Carles Gomez and posted to the
+IETF repository.
+
+Name:		draft-gomez-6lo-schc-15dot4
+Revision:	02
+Title:		Transmission of SCHC-compressed packets over IEEE 802.15.4 networks
+Document date:	2022-03-04
+Group:		Individual Submission
+Pages:		10
+URL:           
+https://www.ietf.org/archive/id/draft-gomez-6lo-schc-15dot4-02.txt
+Status:         https://datatracker.ietf.org/doc/draft-gomez-6lo-schc-15dot4/
+Htmlized:      
+https://datatracker.ietf.org/doc/html/draft-gomez-6lo-schc-15dot4
+Diff:          
+https://www.ietf.org/rfcdiff?url2=draft-gomez-6lo-schc-15dot4-02
+
+Abstract:
+   A framework called Static Context Header Compression and
+   fragmentation (SCHC) has been designed with the primary goal of
+   supporting IPv6 over Low Power Wide Area Network (LPWAN) technologies
+   [RFC8724].  One of the SCHC components is a header compression
+   mechanism.  If used properly, SCHC header compression allows a
+   greater compression ratio than that achievable with traditional
+   6LoWPAN header compression [RFC6282].  For this reason, it may make
+   sense to use SCHC header compression in some 6LoWPAN environments,
+   including IEEE 802.15.4 networks.  This document specifies how a
+   SCHC-compressed packet can be carried over IEEE 802.15.4 networks.
+
+
+
+
+The IETF Secretariat
+
+
+
+
+
+From nobody Fri Mar  4 05:19:48 2022
+Return-Path: <christian@amsuess.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 27FB43A1403; Fri,  4 Mar 2022 05:19:46 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.909
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.909 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_BLOCKED=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, T_SCC_BODY_TEXT_LINE=-0.01] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 5zmFOlhAXaKn; Fri,  4 Mar 2022 05:19:42 -0800 (PST)
+Received: from smtp.akis.at (smtp.akis.at [IPv6:2a02:b18:500:a515::f455]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id BA31B3A1405; Fri,  4 Mar 2022 05:19:40 -0800 (PST)
+Received: from poseidon-mailhub.amsuess.com ([IPv6:2a02:b18:c13b:8010:a800:ff:fede:b1bd]) by smtp.akis.at (8.17.1/8.17.1) with ESMTPS id 224DJaap091725 (version=TLSv1.2 cipher=ECDHE-ECDSA-AES256-GCM-SHA384 bits=256 verify=NOT); Fri, 4 Mar 2022 14:19:36 +0100 (CET) (envelope-from christian@amsuess.com)
+X-Authentication-Warning: smtp.akis.at: Host [IPv6:2a02:b18:c13b:8010:a800:ff:fede:b1bd] claimed to be poseidon-mailhub.amsuess.com
+Received: from poseidon-mailbox.amsuess.com (hermes.amsuess.com [10.13.13.254]) by poseidon-mailhub.amsuess.com (Postfix) with ESMTP id 72A38D0; Fri,  4 Mar 2022 14:19:35 +0100 (CET)
+Received: from hephaistos.amsuess.com (unknown [IPv6:2a02:b18:c13b:8010:12a:4729:24dd:e3f1]) by poseidon-mailbox.amsuess.com (Postfix) with ESMTPSA id 174E5FD; Fri,  4 Mar 2022 14:19:35 +0100 (CET)
+Received: (nullmailer pid 3803363 invoked by uid 1000); Fri, 04 Mar 2022 13:19:34 -0000
+Date: Fri, 4 Mar 2022 14:19:34 +0100
+From: Christian =?iso-8859-1?Q?Ams=FCss?= <christian@amsuess.com>
+To: draft-ietf-6lo-nfc@ietf.org, 6lo@ietf.org
+Message-ID: <YiIR5qzuofR+bXlJ@hephaistos.amsuess.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha256; protocol="application/pgp-signature"; boundary="YdxpDse1zSK/vixJ"
+Content-Disposition: inline
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/gcNJWXlyOA-L4a4vdnciOpTDh4o>
+Subject: [6lo] 6lo-NFC status update?
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 04 Mar 2022 13:19:46 -0000
+
+--YdxpDse1zSK/vixJ
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Hello 6lo-nfc authors & group,
+
+I'm trying to determine the state of draft-ietf-6lo-nfc.
+
+What I can see is that it got to IESG review, got comments criticizing
+its choice of words (both around "security" and on marketing-material)
+and lack of clarity in interaction with lower layer specs (especially
+their public availability) -- and updates into late 2020 -- and then
+nothing more.
+
+I am a quiet bystander in this group (merely consuming its output), and
+do not have concrete implementation plans for 6lo-nfc yet, but it's on
+my list of "would like to play with".
+
+Is there a roadmap for 6lo-nfc to go on? Will the authors resume work,
+if not, will the chairs find new authors to finish it, or will the draft
+be abandoned even after having reached WG consensus?
+
+BR
+Christian
+
+--=20
+Yesterday is history, tomorrow is a mystery, and today is a gift. That
+is why it is called the present.
+  -- ancient saying
+
+--YdxpDse1zSK/vixJ
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEECM1tElX6OodcH7CWOY0REtOkveEFAmIiEeMACgkQOY0REtOk
+veGfdxAAsUroFWzrRiOc0MroE+cn9p0wh1bXE94Gh/AqOyOFiO6BrhTfQg3qhBnx
+vE2RXPs9qKE6A3W7VDDEHtDgv2+sNO2/pd0GCs9xU1r2bgUPzK2+vkzODEd72LAN
+1JXcNRPVdDBqET9VdU5bjuZ7K2csd6TmQ6C6Jlr06RogEMrsZRNYOmClOY5TcM9V
+uvroNbcVhX3HiC9QYuOYUxB6VKrkbmp4FHgO7ZeCwYmZFBYk87L1BHbNI/WLAbwy
+gOseb7RO/anJk4RDrxfkYxvV9uTjJpEntKEbZL+oyYzZB9bHonoSo5Ry3J6Lp6Q0
+YJg54zOP0lN/exxWjmfi7+vA8Dpu+yvp5pcjShsWsHoc0v0qu2TNpqGQZ7dy2roP
+aIonF5J/pxiTstxd3UQXG2EdI0GnSl+5CIpEkkMLgUWtYnb8TazbzwVxh9oDJunJ
+yOlMqgaAJZamTmMC6x4gYTpLAtgWEmGTVfrjN+xgip42xJEYil9isqzkLCBnSN2/
+Kv5AP3pEf9qqT5HDtT5z2VM0Tb7cvHrxMjvlXjBEaKzTPJAdjif6QHtaHMu4p3OA
+jHUezYQ7pyEIzJtnvVh+rt3MbLKs4jrQFXeiNdn9QXYkYL18IJ/UZ2qPrv1ETkxF
++ACWB0bXWIQgK+dpl6JhaubDmO+gFG4jRGfVP5se5sa41JWfY4o=
+=C9Ti
+-----END PGP SIGNATURE-----
+
+--YdxpDse1zSK/vixJ--
+
+
+From nobody Fri Mar  4 06:01:28 2022
+Return-Path: <yhc@etri.re.kr>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 16EA73A0C0B for <6lo@ietfa.amsl.com>; Fri,  4 Mar 2022 06:01:26 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.887
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.887 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, NO_DNS_FOR_FROM=0.001, RCVD_IN_DNSWL_BLOCKED=0.001, T_SCC_BODY_TEXT_LINE=-0.01, T_SPF_HELO_TEMPERROR=0.01, T_SPF_TEMPERROR=0.01, URIBL_BLOCKED=0.001] autolearn=no autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=dooray.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 00qx0ebRHYx7 for <6lo@ietfa.amsl.com>; Fri,  4 Mar 2022 06:01:21 -0800 (PST)
+Received: from mscreen.etri.re.kr (mscreen.etri.re.kr [129.254.9.16]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 0E4233A0A0A for <6lo@ietf.org>; Fri,  4 Mar 2022 06:01:16 -0800 (PST)
+Received: from unknown (HELO send001-relay.gov-dooray.com) (211.180.235.152) by 129.254.9.16 with ESMTP; 4 Mar 2022 23:01:12 +0900
+X-Original-SENDERIP: 211.180.235.152
+X-Original-MAILFROM: yhc@etri.re.kr
+X-Original-RCPTTO: 6lo@ietf.org
+Received: from [10.162.225.109] (HELO send002.gov-dooray.com) ([10.162.225.109]) by send001-relay.gov-dooray.com with SMTP id 5902c9aa62221ba8; Fri, 04 Mar 2022 23:01:12 +0900
+DKIM-Signature: a=rsa-sha256; b=UpKUzmAkvvMJ1APnOL2y5Oui9OA7U9unGbZtPRiBhkyqlN8ghW6d/+opWghD0e8ITSqaUIXMfU 3f81jv8Y/ORl4umXgny3umxlsPW5fSeKu/Zg1RlOeJ40QfGWbY22Iu63xjYAdFd9UFtzL/OcRRJC CJhFTs+TKma80h6Ke7xWpBC8FEg06CppU9ZwlZFka1M8Lbw+DtsO93RDrgHriWZrrDyzaFxTo+nN 2xvd6wBTy///9QhdIVIKnvx2KSNUYNbiNaV3LPc9t+j3jd71dHYwmf36KiGtHX1EXojvswrLlI/V yqZq9TFQZUrRCcXlTm8O3Rx1ra4lOsevLy0lwOJA==; c=relaxed/relaxed; s=selector; d=dooray.com; v=1; bh=sewOZTjqSeB1jArXj4PIrTyOTGVPTJDC0aiXipdtaaE=; h=From:To:Subject:Message-ID;
+Dooray-Meta-Signature: hNaqwgD9Bg5O8BBFL9VKY7jfCV+4N0TJ/E2O3Xd7eukaBWDUw4F9p R5x0pdJxqjN6s915o7W1VucUCd+W2Cmmzb1Yz6hTpO6WkJGj6mVBaiigzlMafiLUfPLuVCEGghQN bYMWdVICHxwK7Z/OtIqhDB4j9vVkFLB0RYFjCo/WxFTM+VSpiZm3hQSbZ9m0dCN/6q5dni7Nk3mK W2HXzAzw8vfBnBwsMK4+Qktt2v13TWg+kjelb3zJouvP7C4v1j5Wx73500OmDQrF4WLnesyvmaNn vLixjlddvUWAXhXRbMu/ov4jzMv9aVYH5lUuqsMa9CXj8h8yWmPejR8DtbPj2YgkUdpDm1MPRFwL MqG03s=
+Received: from [129.254.29.11] (HELO 129.254.29.11) ([129.254.29.11]) by send002.gov-dooray.com with SMTP id e608301362221ba7; Fri, 04 Mar 2022 23:01:11 +0900
+From: =?UTF-8?B?7LWc7JiB7ZmY?= <yhc@etri.re.kr>
+To: draft-ietf-6lo-nfc@ietf.org, 6lo@ietf.org,  =?UTF-8?Q?Christian_Ams=C3=BCss?= <christian@amsuess.com>
+Message-ID: <oh9lxjj0nf3h.oh9lxjj2w4dj.g1@dooray.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+X-Dsn-Request: true
+X-Dooray-Agent: mail-api
+X-Dooray-Mail-Id: 3222051497139783725
+Importance: Normal
+X-Priority: Normal
+X-MSMail-Priority: Normal
+X-Dooray-Attached: c3+LUOpPU/IB7Wl+oemm0lw5HiI/bJHHYClX72L8E3o=
+Sender: yhc@etri.re.kr
+Date: Fri, 04 Mar 2022 23:01:11 +0900 (KST)
+References: <YiIR5qzuofR+bXlJ@hephaistos.amsuess.com>
+In-Reply-To: <YiIR5qzuofR+bXlJ@hephaistos.amsuess.com>
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/jN7cmpdnTGwEDLIctScj_mcs5G8>
+Subject: Re: [6lo] 6lo-NFC status update?
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 04 Mar 2022 14:01:26 -0000
+
+RGVhciBDaHJpc3RpYW4sCgpJJ20gdGhlIGF1dGhvciBvZiB0aGUgNmxvLU5GQy4gCkkgYmVsaWV2
+ZSB0aGUgdGhlIGRyYWZ0ICgtMTcpIGhhcyBiZWVuIHJlc29sdmVkIGFib3V0IGFsbCB0aGUgQ09N
+TUVOVHMgYW5kIERJU1NDVVNTIGZyb20gdGhlIElFU0cgcmV2aWV3cyB3aXRoIHN1cHBvcnRpbmcg
+b2YgdGhlIDZsbyBDaGFpcnMuCkJ1dCBJIGRvbid0IGtub3cgd2h5IHRoaXMgZHJhZnQgaXMgc3R1
+Y2sgb24gdGhlIHNhbWUgc3RhdHVzIGZvciBhIGxvbmcgdGltZS4gCkkgYWxzbyBoYXZlIGJlZW4g
+d2FpdGluZyBmb3Igc29tZXRoaW5nIGxpa2UgYWN0aW9uIGl0ZW1zIGZvciB0aGUgbmV4dCBzdGVw
+IG9mIHRoaXMgZHJhZnQuCgpUaGUgNmxvIGNoYWlycyBkbyBub3QgbmVlZCB0byBmaW5kIG5ldyBh
+dXRob3JzIGJlY2F1c2UgSSBhbSBhbiBhdXRob3Igb2YgdGhlIGRyYWZ0LiAKSSB3b3VsZCBsaWtl
+IGZpbmlzaCB0aGlzIGRyYWZ0IGFzIHNvb24gYXMgcG9zc2libGUuCgpCUiwKWW91bmdod2FuIENo
+b2kKCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCllPVU5H
+SFdBTiBDSE9JLCBQaC5ELgpQcmluY2lwYWwgUmVzZWFyY2hlciwgUEVDLCBFVFJJClRlbCArODIt
+NDItODYwLTE0MjkgICBGYXggKzgyLTQyLTg2MC01NDA0IApFbWFpbCAgeWhjQGV0cmkucmUua3IK
+CgoKLS0tLS1PcmlnaW5hbCBNZXNzYWdlLS0tLS0KRnJvbTogICJDaHJpc3RpYW4gQW1zw7xzcyIg
+PGNocmlzdGlhbkBhbXN1ZXNzLmNvbT4KVG86ICAgICAgPGRyYWZ0LWlldGYtNmxvLW5mY0BpZXRm
+Lm9yZz47ICAgPDZsb0BpZXRmLm9yZz47IApDYzogICAgClNlbnQ6ICAyMDIyLTAzLTA0ICjquIgp
+IDIyOjIwOjEzIChVVEMrMDk6MDApClN1YmplY3Q6IDZsby1ORkMgc3RhdHVzIHVwZGF0ZT8KCkhl
+bGxvIDZsby1uZmMgYXV0aG9ycyAmIGdyb3VwLAoKSSdtIHRyeWluZyB0byBkZXRlcm1pbmUgdGhl
+IHN0YXRlIG9mIGRyYWZ0LWlldGYtNmxvLW5mYy4KCldoYXQgSSBjYW4gc2VlIGlzIHRoYXQgaXQg
+Z290IHRvIElFU0cgcmV2aWV3LCBnb3QgY29tbWVudHMgY3JpdGljaXppbmcKaXRzIGNob2ljZSBv
+ZiB3b3JkcyAoYm90aCBhcm91bmQgInNlY3VyaXR5IiBhbmQgb24gbWFya2V0aW5nLW1hdGVyaWFs
+KQphbmQgbGFjayBvZiBjbGFyaXR5IGluIGludGVyYWN0aW9uIHdpdGggbG93ZXIgbGF5ZXIgc3Bl
+Y3MgKGVzcGVjaWFsbHkKdGhlaXIgcHVibGljIGF2YWlsYWJpbGl0eSkgLS0gYW5kIHVwZGF0ZXMg
+aW50byBsYXRlIDIwMjAgLS0gYW5kIHRoZW4Kbm90aGluZyBtb3JlLgoKSSBhbSBhIHF1aWV0IGJ5
+c3RhbmRlciBpbiB0aGlzIGdyb3VwIChtZXJlbHkgY29uc3VtaW5nIGl0cyBvdXRwdXQpLCBhbmQK
+ZG8gbm90IGhhdmUgY29uY3JldGUgaW1wbGVtZW50YXRpb24gcGxhbnMgZm9yIDZsby1uZmMgeWV0
+LCBidXQgaXQncyBvbgpteSBsaXN0IG9mICJ3b3VsZCBsaWtlIHRvIHBsYXkgd2l0aCIuCgpJcyB0
+aGVyZSBhIHJvYWRtYXAgZm9yIDZsby1uZmMgdG8gZ28gb24/IFdpbGwgdGhlIGF1dGhvcnMgcmVz
+dW1lIHdvcmssCmlmIG5vdCwgd2lsbCB0aGUgY2hhaXJzIGZpbmQgbmV3IGF1dGhvcnMgdG8gZmlu
+aXNoIGl0LCBvciB3aWxsIHRoZSBkcmFmdApiZSBhYmFuZG9uZWQgZXZlbiBhZnRlciBoYXZpbmcg
+cmVhY2hlZCBXRyBjb25zZW5zdXM/CgpCUgpDaHJpc3RpYW4KCi0tIApZZXN0ZXJkYXkgaXMgaGlz
+dG9yeSwgdG9tb3Jyb3cgaXMgYSBteXN0ZXJ5LCBhbmQgdG9kYXkgaXMgYSBnaWZ0LiBUaGF0Cmlz
+IHdoeSBpdCBpcyBjYWxsZWQgdGhlIHByZXNlbnQuCiAgLS0gYW5jaWVudCBzYXlpbmcK
+
+
+
+From nobody Fri Mar  4 06:15:15 2022
+Return-Path: <gabriel_montenegro_2000@yahoo.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 76F3A3A0A2D for <6lo@ietfa.amsl.com>; Fri,  4 Mar 2022 06:15:12 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.859
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.859 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, FREEMAIL_ENVFROM_END_DIGIT=0.25, FREEMAIL_FROM=0.001, RCVD_IN_MSPIKE_H2=-0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001] autolearn=unavailable autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=yahoo.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id jbAJFB86dDKi for <6lo@ietfa.amsl.com>; Fri,  4 Mar 2022 06:15:07 -0800 (PST)
+Received: from sonic308-1.consmr.mail.bf2.yahoo.com (sonic308-1.consmr.mail.bf2.yahoo.com [74.6.130.40]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 48BC83A0C4E for <6lo@ietf.org>; Fri,  4 Mar 2022 06:15:07 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1646403306; bh=zRKgrNYk9LUb5o7uy5dbtO5oMIduMNFoj8CY8+DzJ+Y=; h=From:To:References:In-Reply-To:Subject:Date:From:Subject:Reply-To; b=MsDrkdHWCXVXz9y/XGKROqJSSYyptK9cxaZolxPJ7LaQmglRAKeOSBDR59ng1UkTCxzGT4DxCz28Ne3nsGNyqY15QoQ0ilAOldEl7YXwq6xDUxkqmATQWpQgwV6MaegnC73ARzO6l2QDyQJbJY5BHokI/HWeR9gndAscjSXPsqKIdJv9gRyuQPHep4eIu6IMB0haG1CaiSxqWfIO+FLa2oOpvHJpFzENi45Bi0l59NEmTJ078VjDh6MrLlh/EcfhnLSnBDKW1I1+cfNsvtKkVi4Aoh7HE6ZF75Zcgr8HwOjFXfuWBcIhWMTCuCti9N1yovQxLW7P0XCWtAoXbEwxwg==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;  t=1646403306; bh=FL2WChrSp0NlkMsCh6uWgfS6y3jgbUHjPYdpbJektkM=;  h=X-Sonic-MF:From:To:Subject:Date:From:Subject; b=fWPt5LGszVFkldclLhKSYlpahMzaMJE00AP7HAF60FFM/NmooxrFdIISWdRilL9uOTrAhcRtyMAbwSlOOKAKVSWZxi2aJDhVEgAoBFHKKDwUw08f/EP0jCZlqrLvfd6X8mdixZXAXwC+bWzOGJd0nCbLgWTXJVI7Sc/BFFO5fhpCiaicKM4G8a5zBMbyVyyS+GBhQmqITbT0umXM/jZW1WesXgRrljxfVMPUMpB/ampM5zkwSNyrxPi2lnbNc1rB0smxPbjdOxPxDloz16/jr9bwikdLTVLodbtankCdITnrzoTJH6QEYF2d1tTAU/JbQScyr91DmBMq6EGFSzlkfg==
+X-YMail-OSG: _Va7RlwVM1loBtxD_hNz3BYT7aMU1acij5ByrWph0sTHdmUH5yPfBcGxPIWXMqB LBEfXCAIMnQ7I1ewxjxl3xIergGKWA8HYySmp8QbY9OWqZjkSVPF41QzUbrGmscYEMEtLj2kHPUB cQXkPwRQfZo2RnTll2GJ7PzHuV1E5wzVqa8jUOkIKrDDtAfJbYEo4BLGH279XNy_K_.qBvQPWZDi _u_jt_zn6_b2JE22oi.HKyKS75BYKtSboj2N_p3GN.cJNFtj4AWpGvRKlK19LJfG84VG_us_Yz2C Pd59rkfrl8rQWpzUwVQw87yQON.8BOk0isbivcF32Yo3iQJRUGw5bV8mchpU4Mvz146AVY8ptbj5 Cdo3nfP3GFcVeERPA_0ZwUKD8KsEEy.6bNOUX8hCdkOqoE6SiAF1LajHRuVK8C1PVYsqGYVLcxe2 etBZRPQe0g0KqOg0rBBMwd4oDsQmff9UHLsirBFxW1R4W7PVGZpofySjsoYus7iAiICh24OkqsuL x.Q6eQ.c.ja2P44UPH8Uf2EweEi1kQz_5uKQHWqmNh3oRJbRFCXx0UNG.ZgUEVGOBEKKWo3V9vTA lMh4aq9s83Vy_gmv66vUK0P4c1BOxLs0q0tr5e777An8QM1mNAU8oGU7J5SH2v2u8px0NMQh86MJ jyQm7aG0vaKHq9sJUD69zBHvZ0Qr7_x3M3qlevgFJd937LaBDxMYBXUJ2elWrZ8VhAf9.Tcm.Z6D gkJZzfEWpuDMRAPrOcLQtfzv5QyLT1RbaY2StB_TnEeAsHzkd56zYZCIu7MWeMslKUG.dTi_OBXT oJuy6WTwg.PQOm_pTvwTiy.JDx4bUCqx5Z7YyYR3W8V8p.pZsR0PcjHG3v174wj6vO7p24MZB.XX p4nCKxzi2oFkKHh_I5BvKg1QCCLP4Fv_.xqBLwi8MU21T71GiqkmvXS2ZWqFvjCbjnGiKp.Ymxqq SIfXrBNoYFxrHamKOrNYSmeruq3hr.9YQL5AHwjqaW6Eq.yEYDP.pfjwLGwxXsOMDEwWh.N85H57 Z8OoBcDa_TprLt88.6lRziTrAXz28g3rDRbxl3RK8MrU2Pwvu6CuZyNqveUrPnx.V0Hauz7Iaa9D nwESMNL42jEawwCMo.R6xa3drZD4oCDt7JhLH2zxBU.Z3tZzhLw115pNfPe3k_QlFJv4RJdHgvCo uMg.nnwmllR7lQr8hU.4nyAd_17laeE3BeLqnd7_.IKmLp45B6.Adgb_Lhp78gK2VKR8gTScd2BH .UtcUMbzRYjn1lnwZpqT_z.PW8x3Pspiy03UnU5SwkNACCO_m4QgxI2HyO2urWRtYS31jwDaz.4X n4xPSXFCyZYEBcWua5yNxt4X_H__uPCjEe_OBrJNU3efKUHo2ybKwrUcBBI651bbp5gpiezURrAp .VrUfeTzTq7eVRPfwhkfqYuMQeOsYOfVl4PEk2xvUxdaDAI7vmzzQ8njpCy_I5N0RmWi5xuX16Lm PMoZC18kWKoGr_3mkHSNayJ16KEaVxqmUFO..KEivWnUU0IZ99hGikm1E84jkGr9lyMw4HjxwLg3 HRHGrYQXyEYxVcuJRQsgopgZcEDhLkArbVxvRtUmv.YlksZJo6r7c_jLemwAuZbTBj49Xv48txVo sLXe7lSjvL2rQrBavO.kbcAh.o9vXgHS0rLMeEGqLp4C0e6P2PXY_eF6rMwz5GquNCEan1wG6BpC T10h0GkZ1yofm6rhG3L0Kvkql7zUrjJx7lxiuf5C24XF0Y.CNVQOYdjJTCSwsybKpHpAIiUBhKWZ HlfKqs7trZ59VFgnM2XOj5ltegPnLF5cYHrw2DCagCm2vpl3nHRFBoQmUAorjaQstouLXHKDTHiD kynOnALpNFJH9xVoriLmwh7pWC1lfmcXOwc6vCh_4AsMYdwxLe0SOt5tqe650GKXoCBPxC6CKRFW gJ3C6fkxsitLpgJqdwf5D_C5YDTU4edB_oIVaxKU3_Qw40B0ewS1TCrYnGoeptCZZsY9ImzwmQqz VwE1k7jMImD7GJovMSPTBhiyBsSwcfRpswXvEz0fukADguemORrEX_aY5YLeLAxhhsPZjXj0ktVX eIovRHEbjRIGuTPejToIYly3_Bq8qWQA70cFsOu16GpVAtIUajC5sd2imnpKouRrCSYinuzCP1dv cN8uuNrogUQCAO44eBjSSG.PysTvy6aVQRu1zg_HA3_nFwlJTStvgWq3xh4cm2Z5LqBscXc_nIJB 58aXbnCsbekxWV8Ira47WDWUsoOBNXe.FEZhdFuh0Pmp0Iqvyobw1tAB1HpZA.y4bz_QFHgCLq1H A5Txh1rvNcbh0eg--
+X-Sonic-MF: <gabriel_montenegro_2000@yahoo.com>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic308.consmr.mail.bf2.yahoo.com with HTTP; Fri, 4 Mar 2022 14:15:06 +0000
+Received: by kubenode518.mail-prod1.omega.ne1.yahoo.com (VZM Hermes SMTP Server) with ESMTPA ID a86f8db40f88d787bd044d39f7f30e49;  Fri, 04 Mar 2022 14:15:04 +0000 (UTC)
+From: <g_e_montenegro@yahoo.com>
+To: =?UTF-8?B?J+y1nOyYge2ZmCc=?= <yhc@etri.re.kr>, <draft-ietf-6lo-nfc@ietf.org>, <6lo@ietf.org>, =?UTF-8?Q?'Christian_Ams=C3=BCss'?= <christian@amsuess.com>, "'Erik Kline'" <ek.ietf@gmail.com>
+References: <YiIR5qzuofR+bXlJ@hephaistos.amsuess.com> <oh9lxjj0nf3h.oh9lxjj2w4dj.g1@dooray.com>
+In-Reply-To: <oh9lxjj0nf3h.oh9lxjj2w4dj.g1@dooray.com>
+Date: Fri, 4 Mar 2022 09:15:03 -0500
+Message-ID: <021e01d82fd2$3eee4570$bccad050$@yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AQJCkQU3pcWgv9A6vNi3plhyh+2ZbQJExErUq8hbP1A=
+Content-Language: en-us
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/gR03J1qlWr_iIsHQYU5RFP9mTxA>
+Subject: Re: [6lo] 6lo-NFC status update?
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 04 Mar 2022 14:15:13 -0000
+
++Erik
+
+Per the datatracker status info =
+(https://datatracker.ietf.org/doc/draft-ietf-6lo-nfc/):
+
+IESG State: IESG Evaluation::AD Followup
+
+Perhaps Erik can comment?
+
+Gabriel
+
+> -----Original Message-----
+> From: 6lo <6lo-bounces@ietf.org> On Behalf Of ???
+> Sent: Friday, March 4, 2022 09:01
+> To: draft-ietf-6lo-nfc@ietf.org; 6lo@ietf.org; Christian Ams=C3=BCss
+> <christian@amsuess.com>
+> Subject: Re: [6lo] 6lo-NFC status update?
+>=20
+> Dear Christian,
+>=20
+> I'm the author of the 6lo-NFC.
+> I believe the the draft (-17) has been resolved about all the COMMENTs =
+and
+> DISSCUSS from the IESG reviews with supporting of the 6lo Chairs.
+> But I don't know why this draft is stuck on the same status for a long =
+time.
+> I also have been waiting for something like action items for the next =
+step of
+> this draft.
+>=20
+> The 6lo chairs do not need to find new authors because I am an author =
+of
+> the draft.
+> I would like finish this draft as soon as possible.
+>=20
+> BR,
+> Younghwan Choi
+>=20
+> -----------------------------------------------
+> YOUNGHWAN CHOI, Ph.D.
+> Principal Researcher, PEC, ETRI
+> Tel +82-42-860-1429   Fax +82-42-860-5404
+> Email  yhc@etri.re.kr
+>=20
+>=20
+>=20
+> -----Original Message-----
+> From:  "Christian Ams=C3=BCss" <christian@amsuess.com>
+> To:      <draft-ietf-6lo-nfc@ietf.org>;   <6lo@ietf.org>;
+> Cc:
+> Sent:  2022-03-04 (=EA=B8=88) 22:20:13 (UTC+09:00)
+> Subject: 6lo-NFC status update?
+>=20
+> Hello 6lo-nfc authors & group,
+>=20
+> I'm trying to determine the state of draft-ietf-6lo-nfc.
+>=20
+> What I can see is that it got to IESG review, got comments criticizing =
+its choice
+> of words (both around "security" and on marketing-material) and lack =
+of
+> clarity in interaction with lower layer specs (especially their public =
+availability)
+> -- and updates into late 2020 -- and then nothing more.
+>=20
+> I am a quiet bystander in this group (merely consuming its output), =
+and do
+> not have concrete implementation plans for 6lo-nfc yet, but it's on my =
+list of
+> "would like to play with".
+>=20
+> Is there a roadmap for 6lo-nfc to go on? Will the authors resume work, =
+if not,
+> will the chairs find new authors to finish it, or will the draft be =
+abandoned
+> even after having reached WG consensus?
+>=20
+> BR
+> Christian
+>=20
+> --
+> Yesterday is history, tomorrow is a mystery, and today is a gift. That =
+is why it
+> is called the present.
+>   -- ancient saying
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+
+
+From nobody Fri Mar  4 10:01:19 2022
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 26D933A0B0D; Fri,  4 Mar 2022 10:01:16 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.905
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.905 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H5=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001, T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001] autolearn=unavailable autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id lQ0iQHMbqd9z; Fri,  4 Mar 2022 10:01:06 -0800 (PST)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id AE9023A08F2; Fri,  4 Mar 2022 10:01:05 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 224I0lab006554; Fri, 4 Mar 2022 19:00:47 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id 297001D53C1; Fri,  4 Mar 2022 19:00:46 +0100 (CET)
+Received: from 79.158.120.70 by webmail.entel.upc.edu with HTTP; Fri, 4 Mar 2022 19:00:50 +0100
+Message-ID: <0b5cc3096095eceb05345f4bf6cfd737.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <021e01d82fd2$3eee4570$bccad050$@yahoo.com>
+References: <YiIR5qzuofR+bXlJ@hephaistos.amsuess.com> <oh9lxjj0nf3h.oh9lxjj2w4dj.g1@dooray.com> <021e01d82fd2$3eee4570$bccad050$@yahoo.com>
+Date: Fri, 4 Mar 2022 19:00:50 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: g_e_montenegro=40yahoo.com@dmarc.ietf.org
+Cc: yhc@etri.re.kr, draft-ietf-6lo-nfc@ietf.org, 6lo@ietf.org, "=?iso-8859-1?Q?=22'Christian_Ams=C3=BCss'=22?=" <christian@amsuess.com>, "'Erik Kline'" <ek.ietf@gmail.com>
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at violet
+X-Virus-Status: Clean
+X-Greylist: IP, sender and recipient auto-whitelisted, not delayed by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Fri, 04 Mar 2022 19:00:48 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/7hKgx75MeIwO5ocOgdRAKQIPQY4>
+Subject: Re: [6lo] 6lo-NFC status update?
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 04 Mar 2022 18:01:17 -0000
+
+Hi,
+
+Just to provide a few more details:
+
+As captured in the IETF 112 minutes, the IESG was concerned that the NFC
+specification was not publicly available (e.g. to allow checking any
+details that might relevant to the IPv6 over NFC draft).
+
+The authors provided a recent version of the NFC spec to Erik, and the way
+to proceed is being discussed.
+
+Cheers,
+
+Carles
+
+
+
+> +Erik
+>
+> Per the datatracker status info
+> (https://datatracker.ietf.org/doc/draft-ietf-6lo-nfc/):
+>
+> IESG State: IESG Evaluation::AD Followup
+>
+> Perhaps Erik can comment?
+>
+> Gabriel
+>
+>> -----Original Message-----
+>> From: 6lo <6lo-bounces@ietf.org> On Behalf Of ???
+>> Sent: Friday, March 4, 2022 09:01
+>> To: draft-ietf-6lo-nfc@ietf.org; 6lo@ietf.org; Christian Amsüss
+>> <christian@amsuess.com>
+>> Subject: Re: [6lo] 6lo-NFC status update?
+>>
+>> Dear Christian,
+>>
+>> I'm the author of the 6lo-NFC.
+>> I believe the the draft (-17) has been resolved about all the COMMENTs
+>> and
+>> DISSCUSS from the IESG reviews with supporting of the 6lo Chairs.
+>> But I don't know why this draft is stuck on the same status for a long
+>> time.
+>> I also have been waiting for something like action items for the next
+>> step of
+>> this draft.
+>>
+>> The 6lo chairs do not need to find new authors because I am an author of
+>> the draft.
+>> I would like finish this draft as soon as possible.
+>>
+>> BR,
+>> Younghwan Choi
+>>
+>> -----------------------------------------------
+>> YOUNGHWAN CHOI, Ph.D.
+>> Principal Researcher, PEC, ETRI
+>> Tel +82-42-860-1429   Fax +82-42-860-5404
+>> Email  yhc@etri.re.kr
+>>
+>>
+>>
+>> -----Original Message-----
+>> From:  "Christian Amsüss" <christian@amsuess.com>
+>> To:      <draft-ietf-6lo-nfc@ietf.org>;   <6lo@ietf.org>;
+>> Cc:
+>> Sent:  2022-03-04 (금) 22:20:13 (UTC+09:00)
+>> Subject: 6lo-NFC status update?
+>>
+>> Hello 6lo-nfc authors & group,
+>>
+>> I'm trying to determine the state of draft-ietf-6lo-nfc.
+>>
+>> What I can see is that it got to IESG review, got comments criticizing
+>> its choice
+>> of words (both around "security" and on marketing-material) and lack of
+>> clarity in interaction with lower layer specs (especially their public
+>> availability)
+>> -- and updates into late 2020 -- and then nothing more.
+>>
+>> I am a quiet bystander in this group (merely consuming its output), and
+>> do
+>> not have concrete implementation plans for 6lo-nfc yet, but it's on my
+>> list of
+>> "would like to play with".
+>>
+>> Is there a roadmap for 6lo-nfc to go on? Will the authors resume work,
+>> if not,
+>> will the chairs find new authors to finish it, or will the draft be
+>> abandoned
+>> even after having reached WG consensus?
+>>
+>> BR
+>> Christian
+>>
+>> --
+>> Yesterday is history, tomorrow is a mystery, and today is a gift. That
+>> is why it
+>> is called the present.
+>>   -- ancient saying
+
+
+From nobody Wed Mar  9 03:50:12 2022
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 426C03A0D9E for <6lo@ietfa.amsl.com>; Wed,  9 Mar 2022 03:50:08 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.905
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.905 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001, T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id M3k-XfOLkpS2 for <6lo@ietfa.amsl.com>; Wed,  9 Mar 2022 03:50:04 -0800 (PST)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id D47443A0D34 for <6lo@ietf.org>; Wed,  9 Mar 2022 03:50:03 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 229Bo1Ms040440 for <6lo@ietf.org>; Wed, 9 Mar 2022 12:50:01 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id DE4C51D53C1 for <6lo@ietf.org>; Wed,  9 Mar 2022 12:50:00 +0100 (CET)
+Received: from 79.159.85.235 by webmail.entel.upc.edu with HTTP; Wed, 9 Mar 2022 12:50:00 +0100
+Message-ID: <cc5674ba06c151f015346d8d7be12d8f.squirrel@webmail.entel.upc.edu>
+Date: Wed, 9 Mar 2022 12:50:00 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Wed, 09 Mar 2022 12:50:01 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/ZCoLHWhyIEXsG2ivhxrWI8W6ghw>
+Subject: [6lo] Initial version of the agenda for 6lo at IETF 113
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 09 Mar 2022 11:50:09 -0000
+
+Dear 6lo WG,
+
+The initial version of the agenda for the 6lo session at IETF 113 has been
+published:
+https://datatracker.ietf.org/meeting/113/materials/agenda-113-6lo-00.txt
+
+Should you want to suggest updates to the agenda, please do not hesitate
+to contact us.
+
+Cheers,
+
+Shwetha and Carles
+
+
+From nobody Wed Mar  9 05:07:17 2022
+Return-Path: <ggx@gigix.net>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id E4E273A103E for <6lo@ietfa.amsl.com>; Wed,  9 Mar 2022 05:07:14 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -6.91
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.91 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, RCVD_IN_DNSWL_HI=-5, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, T_SCC_BODY_TEXT_LINE=-0.01] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gigix-net.20210112.gappssmtp.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id dkBb9i6W-aTg for <6lo@ietfa.amsl.com>; Wed,  9 Mar 2022 05:07:10 -0800 (PST)
+Received: from mail-wm1-x332.google.com (mail-wm1-x332.google.com [IPv6:2a00:1450:4864:20::332]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id A9E883A102E for <6lo@ietf.org>; Wed,  9 Mar 2022 05:07:09 -0800 (PST)
+Received: by mail-wm1-x332.google.com with SMTP id r187-20020a1c2bc4000000b003810e6b192aso1435016wmr.1 for <6lo@ietf.org>; Wed, 09 Mar 2022 05:07:09 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gigix-net.20210112.gappssmtp.com; s=20210112; h=content-transfer-encoding:from:mime-version:subject:message-id:date :cc:to; bh=Vx+TknMEyuXjKMh8fb8HWVUxuPVS+rOGnKPeulDnZ2I=; b=XqIAl2CGMyvdOvCqVJ6H3Mqz0KZL3/VMraiUo2mQ59HWwOQ40rBw0P3iAmdRfif2VG SmMCiCi689+idaT3z7dESFqAOxLFfNke5XoEJDzRnwQ19GgLfNrfRlPSdxerQV8+mKeL 1BZXkMRih0bV5pMZu6A6fADL9YdPQPf1Q/CtXzPch/G1odjpi8VZmv76bx+g/OrBvE0K K/ddrcc3WfoRS95SdF5fbmQWfJdbwNigap2d89h29HKLDC+xls6PzKWN26xKMcOcUFR7 stSAk+5kGHjouFK3p7/B7kbNISRFQMYw9ePvXAFjIgyR9vOT96BvK4YTxYqZsJ8mf7+T XxOw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20210112; h=x-gm-message-state:content-transfer-encoding:from:mime-version :subject:message-id:date:cc:to; bh=Vx+TknMEyuXjKMh8fb8HWVUxuPVS+rOGnKPeulDnZ2I=; b=eZwt6L7A87uHhMa7A6gHOM/Ss6k11j+EhyhvR+hUOL3uhiIWuu1iSGP+N9zRPu0WlG 9lLqvsu6qC33UpkLOaIm6kgv10UNCgH9Ey5anrDION/ZmE/yHjRS9Z5Grg0/sMrwofCs xo7fVHUlurUBUMxm6ezdRGXKD1laIMiTpLDw9OMtmuUx9CKDzlj9JMGBxe1xV5rM1lgd Hl64Pz43z/xn3lGzIcLFuf5SyMD3eC5PbFb84QrAYOsrXwgeZpdmbaOwaMBKdetaRwuV 4JzFGpV8OpOkmnBGY1A1/IRBdny/llJCs5gNgfVxqMOSVMirNUMer3XUFkCcAv8P37nA dWQQ==
+X-Gm-Message-State: AOAM532ohoJDibEQTSdWt8mUVF+2qEQydG+BhMAv5dA2FMW8OzZiwp50 cyoCCkZfI5TgBHx4v5tOfUV1unmh0CJ+oA==
+X-Google-Smtp-Source: ABdhPJw4ZnaeioKGX1Lo/nJ6loEiDbMBN9YPdGUAKMA9S2G3kv6qvKmtAk5wt2HMDdyBSyh6ihQ1MQ==
+X-Received: by 2002:a7b:c30e:0:b0:37f:a63d:3d1f with SMTP id k14-20020a7bc30e000000b0037fa63d3d1fmr3328825wmj.178.1646831227102;  Wed, 09 Mar 2022 05:07:07 -0800 (PST)
+Received: from smtpclient.apple (2a02-8440-3341-b5fb-8159-6372-f3b7-d698.rev.sfr.net. [2a02:8440:3341:b5fb:8159:6372:f3b7:d698]) by smtp.gmail.com with ESMTPSA id m3-20020a5d6243000000b001e33760776fsm1632812wrv.10.2022.03.09.05.07.06 (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128); Wed, 09 Mar 2022 05:07:06 -0800 (PST)
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+From: Luigi Iannone <ggx@gigix.net>
+Mime-Version: 1.0 (1.0)
+Message-Id: <EFFEB2F9-7213-4A9D-9967-065D0A0F71F5@gigix.net>
+Date: Wed, 9 Mar 2022 14:07:05 +0100
+Cc: 6lo@ietf.org, draft-li-6lo-native-short-address@ietf.org
+To: Carsten Bormann <cabo@tzi.org>
+X-Mailer: iPad Mail (19D52)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/mMqVctND3yA8C0WQAX73Pi77jtk>
+Subject: Re: [6lo] I-D Action: draft-li-6lo-native-short-address-01.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 09 Mar 2022 13:07:15 -0000
+
+=EF=BB=BFHi Carsten, All,
+
+This is a follow up of previous feedback.
+
+We submitted an update with several improvements, namely:
+- Even stronger applicability scope right at the beginning of the document;
+- Clarification in the architectural overview;
+- Detailed the address assignment procedure (including the definition of two=
+ ND options)
+- Revised and detailed the different roles of the node (root/forwarder/leaf)=
+.
+
+We welcome any further feedback on this latest version.
+
+Thanks
+
+Ciao
+
+L.
+
+
+Sent from my iPad
+
+> On 17 Feb 2022, at 13:08, Luigi Iannone <ggx@gigix.net> wrote:
+>=20
+> =EF=BB=BFHi Carsten,
+>=20
+> Thanks for your mail.
+> Please see inline.
+>=20
+> Ciao
+>=20
+> L.
+>=20
+>=20
+>> On 17 Feb 2022, at 11:11, Carsten Bormann <cabo@tzi.org> wrote:
+>>> On 2021-12-14, at 10:09, Luigi Iannone <ggx@gigix.net> wrote:
+>>> While we believe that the document is becoming mature, we still welcome a=
+ny feedback people can send us.
+>> I haven=E2=80=99t read the new version,
+> You should. We did a lot of improvements ;-)
+>=20
+>> but I stick with the observation that the problem/opportunity addressed i=
+s already solved with 6lo header compression (and will be more so once we ha=
+ve SCHC header compression in 6lo),
+> Yes, the 6lo header compression is suitable in general for all IoT scenari=
+os. However, this draft is targeting at scenarios and applications with stat=
+ic network topology and stable network connections.=20
+> In those cases, the NSA could bring in even shorter packet header (address=
+ing) and _more_ importantly much simpler (stateless) forwarding mechanism, w=
+hich will further saves the power consumption of the IoT system.
+>=20
+>> and NSA does not have the same desirable properties with respect to prese=
+rving IPv6 semantics that the header compression solutions have.
+> Can you articulate a bit more? Exactly which =E2=80=9Cdesirable property=E2=
+=80=9D is present in HC but not in NSA.
+> I can provide an example of the other way around, NSA provides stateless f=
+orwarding, HC does not do that.
+> The new version of the document (read it :-) ) provides all the details on=
+ the operations to be performed on the gateway to translate from NSA to IPv6=
+ and vice versa.=20
+>=20
+>> Right now, I would like us to focus on making the SCHC solution really go=
+od.
+> I am also willing to help, but one does not exclude the other...
+>=20
+>> In the end, that may not look very different on the wire from NSA (as far=
+ as addresses are concerned =E2=80=94 SCHC of course can do more).
+> We are coding the simulator exactly to quantify the differences. In certai=
+n scenarios NSA provide some advantage.
+> But do not forget the second important property: stateless forwarding, we b=
+elieve it is not negligible.
+>=20
+> Ciao
+>=20
+> L. =20
+>=20
+>=20
+>=20
+>> Gr=C3=BC=C3=9Fe, Carsten
+
+
+From nobody Sat Mar 12 15:58:27 2022
+Return-Path: <liguangpeng@huawei.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id D30743A0C84; Sat, 12 Mar 2022 15:58:25 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.906
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.906 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_BLOCKED=0.001, RCVD_IN_MSPIKE_H4=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id P7jEh9jh9Bir; Sat, 12 Mar 2022 15:58:21 -0800 (PST)
+Received: from frasgout.his.huawei.com (frasgout.his.huawei.com [185.176.79.56]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 475083A0C80; Sat, 12 Mar 2022 15:58:21 -0800 (PST)
+Received: from fraeml745-chm.china.huawei.com (unknown [172.18.147.200]) by frasgout.his.huawei.com (SkyGuard) with ESMTP id 4KGKVW6yCYz67m6h; Sun, 13 Mar 2022 07:57:39 +0800 (CST)
+Received: from dggpemm100004.china.huawei.com (7.185.36.189) by fraeml745-chm.china.huawei.com (10.206.15.226) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2375.24; Sun, 13 Mar 2022 00:58:16 +0100
+Received: from dggpemm500004.china.huawei.com (7.185.36.219) by dggpemm100004.china.huawei.com (7.185.36.189) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2308.21; Sun, 13 Mar 2022 07:58:15 +0800
+Received: from dggpemm500004.china.huawei.com ([7.185.36.219]) by dggpemm500004.china.huawei.com ([7.185.36.219]) with mapi id 15.01.2308.021; Sun, 13 Mar 2022 07:58:15 +0800
+From: "Liguangpeng (Roc, Network Technology Laboratory)" <liguangpeng@huawei.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+CC: "6lo-chairs@ietf.org" <6lo-chairs@ietf.org>, "draft-li-6lo-native-short-address@ietf.org" <draft-li-6lo-native-short-address@ietf.org>, "cabo@tzi.org" <cabo@tzi.org>, Brian E Carpenter <brian.e.carpenter@gmail.com>, Adnan Rashid <adnanrashidpk@gmail.com>
+Thread-Topic: New Version Notification for draft-li-6lo-native-short-address-02.txt
+Thread-Index: AQHYMC+mT7h3MHZsakSuKC8HNFd5Say8cfGw
+Date: Sat, 12 Mar 2022 23:58:14 +0000
+Message-ID: <6d0732ecc6c7493385dcd6ba17d426c2@huawei.com>
+References: <164644341144.28377.15837533329362398679@ietfa.amsl.com>
+In-Reply-To: <164644341144.28377.15837533329362398679@ietfa.amsl.com>
+Accept-Language: zh-CN, en-US
+Content-Language: zh-CN
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.45.176.91]
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+X-CFilter-Loop: Reflected
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/ldxfSQyeTnGHLt-WOWPW2b6h_XA>
+Subject: [6lo] FW: New Version Notification for draft-li-6lo-native-short-address-02.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 12 Mar 2022 23:58:26 -0000
+
+RGVhciA2bG8gV0csDQoNClNpbmNlIHdlIGhhdmUgc3VibWl0ZWQgbmV3IHZlcnNpb24gb2YgZHJh
+ZnQoLTAyKSB0aGF0IGFpbXMgdG8gYWRkcmVzcyBjb21tZW50cyBmcm9tIENhcnN0ZW4gQm9ybWFu
+biBhbmQgb3RoZXIgZXhwZXJ0cywgSSBzdWdnZXN0IG1vdmluZyBkaXNjdXNzaW9uIGZyb20gdGhy
+ZWFkIGF0IGh0dHBzOi8vbWFpbGFyY2hpdmUuaWV0Zi5vcmcvYXJjaC9tc2cvNmxvL21NcVZjdE5E
+M3lBOEMwV1FBWDczUGk3N2p0ay8gdG8gdGhpcyBvbmUuIEl0IHdpbGwgYWxzbyBiZSBjb252ZW5p
+ZW5jZSBmb3Igb3RoZXJzIHRvIGJlIGF3YXJlIG9mIG5ldyBjb21tZW50cyBmcm9tIEJyaWFuIENh
+cnBlbnRlciBhbmQgQWRuYW4gUmFzaGlkIHdobyAoaW4gY2MgbGlzdCkgZ2F2ZSBjb21tZW50cyBv
+biAtMDIgdmVyc2lvbiBkaXJlY3RseSB0byBhdXRob3JzIG9mIHRoaXMgZHJhZnQuIA0KDQpBZnRl
+ciBhZ3JlZW1lbnQgb2YgQnJpYW4sIEkgYXR0YWNoIGhpcyB0ZWNobmljYWwgY29tbWVudHMgaGVy
+ZSBiZWNhdXNlIGhlIGlzIG5vdCBvbiA2bG8gbGlzdC4gVGhlIGF1dGhvcnMgd2lsbCB1cGRhdGUg
+ZHJhZnQgYWNjb3JkaW5nbHkgb25jZSBhZnRlciBJRVRGIDExMy4gV2VsY29tZSBmdXJ0aGVyIGRp
+c2N1c3Npb24gb24gdGhpcyBpbiA2bG8gbWFpbGluZyBsaXN0Lg0KDQo+IFRoYW5rcyBmb3IgcmVt
+aW5kaW5nIG1lIG9mIHlvdXIgZHJhZnQuIEkgaGF2ZSBub3QgZ29uZSBpbnRvIGFsbCB0aGUgDQo+
+IGRldGFpbHMsIGJ1dCB0aGUgYmFzaWMgaWRlYSBzZWVtcyBzb2xpZCB0byBtZS4NCj4NCj4gRG8g
+eW91IGV4cGVjdCB0byBhbGxvdyB1c2Ugb2YgSVBTRUMgYmV0d2VlbiBhbiBOU0Egbm9kZSBhbmQg
+YSBub3JtYWwgDQo+IG5vZGU/DQo+IElmIHNvLCBpcyB0aGUgc2VjdXJpdHkgYXNzb2NpYXRpb24g
+YmFzZWQgb24gYSAxMjgtYml0IGFkZHJlc3M/DQo+IFNpbWlsYXJseSBmb3IgVENQIG9yIFVEUCBz
+ZXNzaW9ucyB3aXRoIG5vcm1hbCBub2RlcyAtIGhvdyBpcyB0aGUgVENQIA0KPiBvciBVRFAgY2hl
+Y2tzdW0gY2FsY3VsYXRlZD8gRG9lcyB0aGUgdXBwZXIgbGF5ZXIgc29mdHdhcmUgaW4gYW4gTlNB
+IA0KPiBub2RlIGtub3cgd2hhdCB0aGUgZnVsbCBJUHY2IGFkZHJlc3MgaXM/DQo+DQo+IFBlcmhh
+cHMgdGhpcyBwb2ludCBuZWVkcyB0byBiZSBkaXNjdXNzZWQgaW4gc2VjdGlvbiA0LjEgIk5TQSAN
+Cj4gQWRkcmVzc2VzDQo+YW5kDQo+IElQdjYgQWRkcmVzc2VzIi4NCg0KVGhhbmtzIGFsbCBmb3Ig
+cHJvdmlkaW5nIGhlbHAgYW5kIGNvbW1lbnRzIHRvIHRoaXMgZHJhZnQuIEhvcGUgZXZlcnlvbmUg
+aGFzIGEgZnJ1aXRmdWwgSUVURiAxMTMuDQoNCkJlc3QgUmVnYXJkcywNCkd1YW5ncGVuZyBMaSAN
+Cg0KLS0tLS1PcmlnaW5hbCBNZXNzYWdlLS0tLS0NCkZyb206IGludGVybmV0LWRyYWZ0c0BpZXRm
+Lm9yZyA8aW50ZXJuZXQtZHJhZnRzQGlldGYub3JnPiANClNlbnQ6IFNhdHVyZGF5LCBNYXJjaCA1
+LCAyMDIyIDk6MjQgQU0NClRvOiBaaGUgTG91IDx6aGUubG91QGh1YXdlaS5jb20+OyBMaWd1YW5n
+cGVuZyAoUm9jLCBOZXR3b3JrIFRlY2hub2xvZ3kgTGFib3JhdG9yeSkgPGxpZ3VhbmdwZW5nQGh1
+YXdlaS5jb20+OyBMdWlnaSBJQU5OT05FIDxsdWlnaS5pYW5ub25lQGh1YXdlaS5jb20+OyBQZW5n
+IExpdSA8bGl1cGVuZ3lqeUBjaGluYW1vYmlsZS5jb20+OyBSb25nIExvbmcgPGxvbmdyb25nQGNo
+aW5hbW9iaWxlLmNvbT47IFpoZSBMb3UgPHpoZS5sb3VAaHVhd2VpLmNvbT4NClN1YmplY3Q6IE5l
+dyBWZXJzaW9uIE5vdGlmaWNhdGlvbiBmb3IgZHJhZnQtbGktNmxvLW5hdGl2ZS1zaG9ydC1hZGRy
+ZXNzLTAyLnR4dA0KDQoNCkEgbmV3IHZlcnNpb24gb2YgSS1ELCBkcmFmdC1saS02bG8tbmF0aXZl
+LXNob3J0LWFkZHJlc3MtMDIudHh0DQpoYXMgYmVlbiBzdWNjZXNzZnVsbHkgc3VibWl0dGVkIGJ5
+IEd1YW5ncGVuZyBMaSBhbmQgcG9zdGVkIHRvIHRoZSBJRVRGIHJlcG9zaXRvcnkuDQoNCk5hbWU6
+CQlkcmFmdC1saS02bG8tbmF0aXZlLXNob3J0LWFkZHJlc3MNClJldmlzaW9uOgkwMg0KVGl0bGU6
+CQlOYXRpdmUgU2hvcnQgQWRkcmVzc2luZyBmb3IgTG93IHBvd2VyIGFuZCBMb3NzeSBOZXR3b3Jr
+cyBFeHBhbnNpb24NCkRvY3VtZW50IGRhdGU6CTIwMjItMDMtMDQNCkdyb3VwOgkJSW5kaXZpZHVh
+bCBTdWJtaXNzaW9uDQpQYWdlczoJCTI2DQpVUkw6ICAgICAgICAgICAgaHR0cHM6Ly93d3cuaWV0
+Zi5vcmcvYXJjaGl2ZS9pZC9kcmFmdC1saS02bG8tbmF0aXZlLXNob3J0LWFkZHJlc3MtMDIudHh0
+DQpTdGF0dXM6ICAgICAgICAgaHR0cHM6Ly9kYXRhdHJhY2tlci5pZXRmLm9yZy9kb2MvZHJhZnQt
+bGktNmxvLW5hdGl2ZS1zaG9ydC1hZGRyZXNzLw0KSHRtbGl6ZWQ6ICAgICAgIGh0dHBzOi8vZGF0
+YXRyYWNrZXIuaWV0Zi5vcmcvZG9jL2h0bWwvZHJhZnQtbGktNmxvLW5hdGl2ZS1zaG9ydC1hZGRy
+ZXNzDQpEaWZmOiAgICAgICAgICAgaHR0cHM6Ly93d3cuaWV0Zi5vcmcvcmZjZGlmZj91cmwyPWRy
+YWZ0LWxpLTZsby1uYXRpdmUtc2hvcnQtYWRkcmVzcy0wMg0KDQpBYnN0cmFjdDoNCiAgIFRoaXMg
+ZG9jdW1lbnQgc3BlY2lmaWVzIGEgdG9wb2xvZ2ljYWwgYWRkcmVzc2luZyBzY2hlbWUsIE5hdGl2
+ZSBTaG9ydA0KICAgQWRkcmVzcyAoTlNBKSB0aGF0IGVuYWJsZXMgSVAgcGFja2V0IHRyYW5zbWlz
+c2lvbiBvdmVyIGxpbmtzIHdoZXJlDQogICB0aGUgdHJhbnNtaXNzaW9uIG9mIGEgZnVsbCBsZW5n
+dGggYWRkcmVzcyBtYXkgbm90IGJlIGRlc2lyYWJsZS4gIFRoaXMNCiAgIGRvY3VtZW50IGZvY3Vz
+ZXMgb24gY2FycnlpbmcgSVAgcGFja2V0cyBhY3Jvc3MgYW4gTExOIChMb3cgcG93ZXIgYW5kDQog
+ICBMb3NzeSBOZXR3b3JrKSwgaW4gd2hpY2ggdGhlIHRvcG9sb2d5IGlzIHJlbGF0aXZlbHkgc3Rh
+dGljIHdoZXJlDQogICBub2RlcycgbG9jYXRpb24gaXMgZml4ZWQgYW5kIHRoZSBjb25uZWN0aW9u
+IGJldHdlZW4gbm9kZXMgaXMgcmF0aGVyDQogICBzdGFibGUuICBUaGUgY2hhbmdlcyBpbiB0aGUg
+bG9naWNhbCB0b3BvbG9neSBhcmUgb25seSBjYXVzZWQgYnkgbm9uLQ0KICAgZnJlcXVlbnQgZGlz
+Y29ubmVjdGlvbiBpbiB0aGUgbGluay4gIFRoZSBzcGVjaWZpY2F0aW9ucyBkZXRhaWxzIHRoZQ0K
+ICAgTlNBIGFyY2hpdGVjdHVyZSwgYWRkcmVzcyBhbGxvY2F0aW9uLCBmb3J3YXJkaW5nIG1lY2hh
+bmlzbSwgaGVhZGVyDQogICBmb3JtYXQgZGVzaWduLCBpbmNsdWRpbmcgbGVuZ3RoLXZhcmlhYmxl
+IGZpZWxkcywgYW5kIElQdjYNCiAgIGludGVyY29ubmVjdGlvbiBzdXBwb3J0Lg0KDQogICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgDQoNCg0KVGhlIElFVEYgU2VjcmV0YXJpYXQNCg0KDQo=
+
+
+From nobody Sun Mar 13 23:28:41 2022
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 34BEE3A1A07 for <6lo@ietfa.amsl.com>; Sun, 13 Mar 2022 23:28:40 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.905
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.905 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H5=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001, T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id BF5kw57bD_uf for <6lo@ietfa.amsl.com>; Sun, 13 Mar 2022 23:28:36 -0700 (PDT)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id BF38B3A1A06 for <6lo@ietf.org>; Sun, 13 Mar 2022 23:28:35 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1.1) with ESMTP id 22E6SWDv021480 for <6lo@ietf.org>; Mon, 14 Mar 2022 07:28:32 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id 2E1A51D53C1 for <6lo@ietf.org>; Mon, 14 Mar 2022 07:28:32 +0100 (CET)
+Received: from 79.159.85.235 by webmail.entel.upc.edu with HTTP; Mon, 14 Mar 2022 07:28:47 +0100
+Message-ID: <1ef2c8bf7b69116562be9b680907f13b.squirrel@webmail.entel.upc.edu>
+Date: Mon, 14 Mar 2022 07:28:47 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.103.5 at violet
+X-Virus-Status: Clean
+X-Greylist: Delayed for 114:38:31 by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Mon, 14 Mar 2022 07:28:32 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/UJvsew0KR5VmMYks6t3p25Rjmq8>
+Subject: [6lo] 6lo at IETF 113: Minute takers, Jabber scribe, and slides
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 14 Mar 2022 06:28:41 -0000
+
+Dear all,
+
+We need a couple of minute takers and a jabber scribe for the 6lo WG
+session at IETF 113. Please let us know if you would like to volunteer.
+This will be very much appreciated.
+
+We would also like to ask the presenters to send us or upload (*) your
+slides in PDF format by Monday, 21st of March, 23:59 UTC.
+
+(*) There is a datatracker feature that allows a logged in user to
+upload slides and suggest the chairs that they be added to a session via a
+"Propose Slides" button. Feel free to use this feature via
+https://datatracker.ietf.org/meeting/113/session/6lo
+
+Please find next a link to the current version of the agenda:
+https://datatracker.ietf.org/doc/agenda-113-6lo/
+
+Looking forward to the 6lo WG session:
+10:00-12:00 (local time)  Wednesday, March 23, 2022
+09:00-11:00 (UTC)         Wednesday, March 23, 2022
+
+Cheers,
+
+Shwetha and Carles
+
+
+From nobody Tue Mar 22 10:23:43 2022
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id E6CAF3A0598; Tue, 22 Mar 2022 10:23:39 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+From: Benjamin Kaduk via Datatracker <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-plc@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org, Carles Gomez <carlesgo@entel.upc.edu>, carlesgo@entel.upc.edu
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.46.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: Benjamin Kaduk <kaduk@mit.edu>
+Message-ID: <164796981991.30422.4764526903867173762@ietfa.amsl.com>
+Date: Tue, 22 Mar 2022 10:23:39 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/kD4Aedg6JoJE8YQjbKW1XiKKIqw>
+Subject: [6lo] Benjamin Kaduk's No Objection on draft-ietf-6lo-plc-10: (with COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 22 Mar 2022 17:23:40 -0000
+
+Benjamin Kaduk has entered the following ballot position for
+draft-ietf-6lo-plc-10: No Objection
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/about/groups/iesg/statements/handling-ballot-positions/ 
+for more information about how to handle DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+
+
+----------------------------------------------------------------------
+COMMENT:
+----------------------------------------------------------------------
+
+I'm not a big fan of using the "someone else did it already" excuse,
+especially when there is a simple technical alternative available (do more
+complicated bitslicing to avoid using bits whose semantics would be
+overloaded), but the new discussion in §4.1 about the interaction with the
+Universal/Local and Individual/Group bits does seem to provide an ample
+discussion of the situation so as to let operators make an informed
+choice.  Accordingly, I am (reluctantly) demoting this topic from the
+DISCUSS section to the COMMENT section.
+
+Going from the -06 to the -10 (I didn't peek within that range to see
+exactly when the change occurred) the description of Source Address Mode
+address compression in §4.5 had the prose change from describing 12 bits
+carried in line to 16 bits carried in line (with corresponding change in
+the number of bits elided).  It looks like this was done in response to
+one of my comments about preserving byte alignment, and so the "new" four
+bits are expected to be all zeros, which would justify using the "0XXX"
+expression that is present in the -10.  However, it would probably be
+worth stating explicitly that the four bits represented by the "0" are
+indeed always zero.  Additionally, in the new chunk of text for
+Destination Address Mode, we are inconsistent about whether it is "0XXX"
+or "XXXX" that is carried in-line.  My recollection is that both stateless
+and stateful compression in DAM should be copying the same set of bits.
+
+Thank you for the vastly expanded security considerations section; it's a
+big improvement.
+
+Section 4
+
+   A PLC node distinguishes between an IPv6 PDU and a non-IPv6 PDU based
+   on the equivalent of a EtherType in a layer-2 PLC PDU.  [RFC7973]
+   defines a Ethertype of "A0ED" for LoWPAN encapsulation, and this
+   information can be carried in the IE field in the MAC header of
+   [IEEE_1901.2] or [ITU-T_G.9903].  [...]
+
+"Can be carried in the IE field", or "the IE field is defined to
+carry..."?  Is this text subtly redefining the usage of the IEEE
+specification's fields?
+
+
+NITS
+
+Section 4.1
+
+   For privacy reasons, the IID derived from the MAC address (with
+   padding and bits flipping) SHOULD only be used for link-local address
+
+I would suggest s/padding and bits flipping/padding and bit clamping/ --
+"flipping" has a connotation of changing the state of the bit, whatever
+the current state is, whereas "clamping" implies forcing a speficic value
+(as we do towards zero).  Also, "bit" singular is appropriate for the
+abstract operation, even though we do specify that two bits are affected.
+
+Section 4.5
+
+   instead of 16 bits.  The only modification is the semantics of the
+   "Source Address Mode" and the "Dstination Address Mode" when set as
+
+s/Dstination/Destination/
+
+Section 8
+
+s/valide/valid/
+s/more severer/more severe/
+
+
+
+
+From nobody Tue Mar 22 15:28:12 2022
+Return-Path: <ek.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 1F2013A101D; Tue, 22 Mar 2022 15:28:02 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.106
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.106 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_BLOCKED=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id ALoy-6rSfX6b; Tue, 22 Mar 2022 15:28:00 -0700 (PDT)
+Received: from mail-oi1-x230.google.com (mail-oi1-x230.google.com [IPv6:2607:f8b0:4864:20::230]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id EDB2F3A100F; Tue, 22 Mar 2022 15:27:59 -0700 (PDT)
+Received: by mail-oi1-x230.google.com with SMTP id o64so21000118oib.7; Tue, 22 Mar 2022 15:27:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20210112;  h=mime-version:references:in-reply-to:from:date:message-id:subject:to :cc; bh=KFTns8aelvDl4L3jSiyZd7pAbKbccwffdHsXaKBl+UE=; b=RjuAvjIcRFNeZck/fZadLNr99O5/JLeiohB/TZFdDgrT3+madyLtE19+GejuZSJNdX c77CXLAeRkPXneHzxmmVTphsE/8YXvGYIe3r2qlgA0a9hjh4+xr5iMzapNWfUeAXbKlC up8S6Ca5rr/H7T1b6m01VL7WAzfNkpvf0fiCQdQazgJSOD0Bhmkf3u+PNTJZUEZEtwOz 6kZiAm/8DvYBP1h+TZggEyXn1eZXEwY5aIUZzG5I7H38abFzRxMzlbT8YKsS1ToXAr7T RbccvejFCedjiVXtEIsLnig7u2OXZfHhImZXc9EbvGpY5UUtKfE3LpPzZLXwM++7AVHD ONWA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20210112; h=x-gm-message-state:mime-version:references:in-reply-to:from:date :message-id:subject:to:cc; bh=KFTns8aelvDl4L3jSiyZd7pAbKbccwffdHsXaKBl+UE=; b=BrT78cxOPhOsV6MbCjeGTd1r1633sIfhteHJ2dUtRedRlta6GWmV/ArRRNibGDhhus kVV2gYUqYbWfghiTT5V0Jq/D6L/6S7tlt0pJ0C0DKtqmR60zOp/p+OMtPQLJZ1lAbujQ vPNIFL+fjMec6NmO9FyMOFrI+YjKSEWMlHO1dqcnNwEDGA5s5GL1U4XiiJWNBFD9EzQ2 GqpKbjVOE4HN77qJ3+TD/9M3fhNSOr4nczPCHlTsvYxfzWHS4hE2oYbsJ+Z9ksoXg4D9 qQyPLKvSxHetY88nRtHkPnSTx8ar7PJ6nIxDOLsH1U5QBPxaWRMAw+GFVWgf+SQEj9sr RNdw==
+X-Gm-Message-State: AOAM531OhzHIjteNeiWfHeeol7Z73ffCS6R/dApZskGjuDQcfTcVCv0w uPDm9sMApnWDUAv73p2qoQSdmeAUXaJBnWYEsCzdRZIevuU=
+X-Google-Smtp-Source: ABdhPJwv7byaXvh+xHa5Op305oAp/IzZ2QZWg1JURJgcZWPqFA8GtwXQDcOggKIFHqtjm33ZWm/tBK+x6UJZF1ARyjg=
+X-Received: by 2002:a05:6808:220a:b0:2da:5b6a:a518 with SMTP id bd10-20020a056808220a00b002da5b6aa518mr3208431oib.291.1647988078742; Tue, 22 Mar 2022 15:27:58 -0700 (PDT)
+MIME-Version: 1.0
+References: <164796981991.30422.4764526903867173762@ietfa.amsl.com>
+In-Reply-To: <164796981991.30422.4764526903867173762@ietfa.amsl.com>
+From: Erik Kline <ek.ietf@gmail.com>
+Date: Tue, 22 Mar 2022 15:27:47 -0700
+Message-ID: <CAMGpriWGhvF4QAK=sy8vA7jUqK6cfKf8HSnV0kGBDuWe5HWmLg@mail.gmail.com>
+To: Benjamin Kaduk <kaduk@mit.edu>
+Cc: The IESG <iesg@ietf.org>, Carles Montenegro <carlesgo@entel.upc.edu>, 6lo-chairs@ietf.org, 6lo@ietf.org, draft-ietf-6lo-plc@ietf.org
+Content-Type: multipart/alternative; boundary="00000000000007109505dad62063"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/DtzXTaN0fSUdV_KGoDjRZprxIR4>
+Subject: Re: [6lo] Benjamin Kaduk's No Objection on draft-ietf-6lo-plc-10: (with COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 22 Mar 2022 22:28:02 -0000
+
+--00000000000007109505dad62063
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you, Ben!
+
+If the authors can get an updated -11 addressing Ben's comments, or perhaps
+discuss inline here, we can discuss what the next steps for the document
+are.
+
+Thanks all!
+
+On Tue, Mar 22, 2022 at 10:23 AM Benjamin Kaduk via Datatracker <
+noreply@ietf.org> wrote:
+
+> Benjamin Kaduk has entered the following ballot position for
+> draft-ietf-6lo-plc-10: No Objection
+>
+> When responding, please keep the subject line intact and reply to all
+> email addresses included in the To and CC lines. (Feel free to cut this
+> introductory paragraph, however.)
+>
+>
+> Please refer to
+> https://www.ietf.org/about/groups/iesg/statements/handling-ballot-positio=
+ns/
+> for more information about how to handle DISCUSS and COMMENT positions.
+>
+>
+> The document, along with other ballot positions, can be found here:
+> https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+>
+>
+>
+> ----------------------------------------------------------------------
+> COMMENT:
+> ----------------------------------------------------------------------
+>
+> I'm not a big fan of using the "someone else did it already" excuse,
+> especially when there is a simple technical alternative available (do mor=
+e
+> complicated bitslicing to avoid using bits whose semantics would be
+> overloaded), but the new discussion in =C2=A74.1 about the interaction wi=
+th the
+> Universal/Local and Individual/Group bits does seem to provide an ample
+> discussion of the situation so as to let operators make an informed
+> choice.  Accordingly, I am (reluctantly) demoting this topic from the
+> DISCUSS section to the COMMENT section.
+>
+> Going from the -06 to the -10 (I didn't peek within that range to see
+> exactly when the change occurred) the description of Source Address Mode
+> address compression in =C2=A74.5 had the prose change from describing 12 =
+bits
+> carried in line to 16 bits carried in line (with corresponding change in
+> the number of bits elided).  It looks like this was done in response to
+> one of my comments about preserving byte alignment, and so the "new" four
+> bits are expected to be all zeros, which would justify using the "0XXX"
+> expression that is present in the -10.  However, it would probably be
+> worth stating explicitly that the four bits represented by the "0" are
+> indeed always zero.  Additionally, in the new chunk of text for
+> Destination Address Mode, we are inconsistent about whether it is "0XXX"
+> or "XXXX" that is carried in-line.  My recollection is that both stateles=
+s
+> and stateful compression in DAM should be copying the same set of bits.
+>
+> Thank you for the vastly expanded security considerations section; it's a
+> big improvement.
+>
+> Section 4
+>
+>    A PLC node distinguishes between an IPv6 PDU and a non-IPv6 PDU based
+>    on the equivalent of a EtherType in a layer-2 PLC PDU.  [RFC7973]
+>    defines a Ethertype of "A0ED" for LoWPAN encapsulation, and this
+>    information can be carried in the IE field in the MAC header of
+>    [IEEE_1901.2] or [ITU-T_G.9903].  [...]
+>
+> "Can be carried in the IE field", or "the IE field is defined to
+> carry..."?  Is this text subtly redefining the usage of the IEEE
+> specification's fields?
+>
+>
+> NITS
+>
+> Section 4.1
+>
+>    For privacy reasons, the IID derived from the MAC address (with
+>    padding and bits flipping) SHOULD only be used for link-local address
+>
+> I would suggest s/padding and bits flipping/padding and bit clamping/ --
+> "flipping" has a connotation of changing the state of the bit, whatever
+> the current state is, whereas "clamping" implies forcing a speficic value
+> (as we do towards zero).  Also, "bit" singular is appropriate for the
+> abstract operation, even though we do specify that two bits are affected.
+>
+> Section 4.5
+>
+>    instead of 16 bits.  The only modification is the semantics of the
+>    "Source Address Mode" and the "Dstination Address Mode" when set as
+>
+> s/Dstination/Destination/
+>
+> Section 8
+>
+> s/valide/valid/
+> s/more severer/more severe/
+>
+>
+>
+>
+
+--00000000000007109505dad62063
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thank you, Ben!<div><br></div><div>If the authors can get =
+an updated -11 addressing Ben&#39;s comments, or perhaps discuss inline her=
+e, we can discuss what the next steps for the document are.</div><div><br><=
+/div><div>Thanks all!</div></div><br><div class=3D"gmail_quote"><div dir=3D=
+"ltr" class=3D"gmail_attr">On Tue, Mar 22, 2022 at 10:23 AM Benjamin Kaduk =
+via Datatracker &lt;<a href=3D"mailto:noreply@ietf.org">noreply@ietf.org</a=
+>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0px=
+ 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex">Ben=
+jamin Kaduk has entered the following ballot position for<br>
+draft-ietf-6lo-plc-10: No Objection<br>
+<br>
+When responding, please keep the subject line intact and reply to all<br>
+email addresses included in the To and CC lines. (Feel free to cut this<br>
+introductory paragraph, however.)<br>
+<br>
+<br>
+Please refer to <a href=3D"https://www.ietf.org/about/groups/iesg/statement=
+s/handling-ballot-positions/" rel=3D"noreferrer" target=3D"_blank">https://=
+www.ietf.org/about/groups/iesg/statements/handling-ballot-positions/</a> <b=
+r>
+for more information about how to handle DISCUSS and COMMENT positions.<br>
+<br>
+<br>
+The document, along with other ballot positions, can be found here:<br>
+<a href=3D"https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/" rel=3D"nor=
+eferrer" target=3D"_blank">https://datatracker.ietf.org/doc/draft-ietf-6lo-=
+plc/</a><br>
+<br>
+<br>
+<br>
+----------------------------------------------------------------------<br>
+COMMENT:<br>
+----------------------------------------------------------------------<br>
+<br>
+I&#39;m not a big fan of using the &quot;someone else did it already&quot; =
+excuse,<br>
+especially when there is a simple technical alternative available (do more<=
+br>
+complicated bitslicing to avoid using bits whose semantics would be<br>
+overloaded), but the new discussion in =C2=A74.1 about the interaction with=
+ the<br>
+Universal/Local and Individual/Group bits does seem to provide an ample<br>
+discussion of the situation so as to let operators make an informed<br>
+choice.=C2=A0 Accordingly, I am (reluctantly) demoting this topic from the<=
+br>
+DISCUSS section to the COMMENT section.<br>
+<br>
+Going from the -06 to the -10 (I didn&#39;t peek within that range to see<b=
+r>
+exactly when the change occurred) the description of Source Address Mode<br=
+>
+address compression in =C2=A74.5 had the prose change from describing 12 bi=
+ts<br>
+carried in line to 16 bits carried in line (with corresponding change in<br=
+>
+the number of bits elided).=C2=A0 It looks like this was done in response t=
+o<br>
+one of my comments about preserving byte alignment, and so the &quot;new&qu=
+ot; four<br>
+bits are expected to be all zeros, which would justify using the &quot;0XXX=
+&quot;<br>
+expression that is present in the -10.=C2=A0 However, it would probably be<=
+br>
+worth stating explicitly that the four bits represented by the &quot;0&quot=
+; are<br>
+indeed always zero.=C2=A0 Additionally, in the new chunk of text for<br>
+Destination Address Mode, we are inconsistent about whether it is &quot;0XX=
+X&quot;<br>
+or &quot;XXXX&quot; that is carried in-line.=C2=A0 My recollection is that =
+both stateless<br>
+and stateful compression in DAM should be copying the same set of bits.<br>
+<br>
+Thank you for the vastly expanded security considerations section; it&#39;s=
+ a<br>
+big improvement.<br>
+<br>
+Section 4<br>
+<br>
+=C2=A0 =C2=A0A PLC node distinguishes between an IPv6 PDU and a non-IPv6 PD=
+U based<br>
+=C2=A0 =C2=A0on the equivalent of a EtherType in a layer-2 PLC PDU.=C2=A0 [=
+RFC7973]<br>
+=C2=A0 =C2=A0defines a Ethertype of &quot;A0ED&quot; for LoWPAN encapsulati=
+on, and this<br>
+=C2=A0 =C2=A0information can be carried in the IE field in the MAC header o=
+f<br>
+=C2=A0 =C2=A0[IEEE_1901.2] or [ITU-T_G.9903].=C2=A0 [...]<br>
+<br>
+&quot;Can be carried in the IE field&quot;, or &quot;the IE field is define=
+d to<br>
+carry...&quot;?=C2=A0 Is this text subtly redefining the usage of the IEEE<=
+br>
+specification&#39;s fields?<br>
+<br>
+<br>
+NITS<br>
+<br>
+Section 4.1<br>
+<br>
+=C2=A0 =C2=A0For privacy reasons, the IID derived from the MAC address (wit=
+h<br>
+=C2=A0 =C2=A0padding and bits flipping) SHOULD only be used for link-local =
+address<br>
+<br>
+I would suggest s/padding and bits flipping/padding and bit clamping/ --<br=
+>
+&quot;flipping&quot; has a connotation of changing the state of the bit, wh=
+atever<br>
+the current state is, whereas &quot;clamping&quot; implies forcing a spefic=
+ic value<br>
+(as we do towards zero).=C2=A0 Also, &quot;bit&quot; singular is appropriat=
+e for the<br>
+abstract operation, even though we do specify that two bits are affected.<b=
+r>
+<br>
+Section 4.5<br>
+<br>
+=C2=A0 =C2=A0instead of 16 bits.=C2=A0 The only modification is the semanti=
+cs of the<br>
+=C2=A0 =C2=A0&quot;Source Address Mode&quot; and the &quot;Dstination Addre=
+ss Mode&quot; when set as<br>
+<br>
+s/Dstination/Destination/<br>
+<br>
+Section 8<br>
+<br>
+s/valide/valid/<br>
+s/more severer/more severe/<br>
+<br>
+<br>
+<br>
+</blockquote></div>
+
+--00000000000007109505dad62063--
+
+
+From nobody Wed Mar 23 03:06:20 2022
+Return-Path: <iesg-secretary@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 553183A2290; Wed, 23 Mar 2022 03:05:56 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: The IESG <iesg-secretary@ietf.org>
+To: "IETF-Announce" <ietf-announce@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.46.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+CC: 6lo-chairs@ietf.org, 6lo@ietf.org, draft-ietf-6lo-use-cases@ietf.org, ek.ietf@gmail.com, shwetha.bhandari@gmail.com
+Reply-To: last-call@ietf.org
+Sender: <iesg-secretary@ietf.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Message-ID: <164802995563.30500.10341536672374027855@ietfa.amsl.com>
+Date: Wed, 23 Mar 2022 03:05:56 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/8-OW1a5gEHKN9rbB-k9ARBbZdo4>
+Subject: [6lo] Last Call: <draft-ietf-6lo-use-cases-12.txt> (IPv6 over Constrained Node Networks (6lo) Applicability & Use cases) to Informational RFC
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 23 Mar 2022 10:06:04 -0000
+
+The IESG has received a request from the IPv6 over Networks of
+Resource-constrained Nodes WG (6lo) to consider the following document: -
+'IPv6 over Constrained Node Networks (6lo) Applicability & Use cases'
+  <draft-ietf-6lo-use-cases-12.txt> as Informational RFC
+
+The IESG plans to make a decision in the next few weeks, and solicits final
+comments on this action. Please send substantive comments to the
+last-call@ietf.org mailing lists by 2022-04-06. Exceptionally, comments may
+be sent to iesg@ietf.org instead. In either case, please retain the beginning
+of the Subject line to allow automated sorting.
+
+Abstract
+
+
+   This document describes the applicability of IPv6 over constrained
+   node networks (6lo) and provides practical deployment examples.  In
+   addition to IEEE Std 802.15.4, various link layer technologies such
+   as ITU-T G.9959 (Z-Wave), Bluetooth Low Energy, DECT-ULE, MS/TP, NFC,
+   and PLC are used as examples.  The document targets an audience who
+   would like to understand and evaluate running end-to-end IPv6 over
+   the constrained node networks for local or Internet connectivity.
+
+
+
+
+The file can be obtained via
+https://datatracker.ietf.org/doc/draft-ietf-6lo-use-cases/
+
+
+
+No IPR declarations have been submitted directly on this I-D.
+
+
+
+
+
+
+From nobody Sat Mar 26 01:57:07 2022
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 135093A1075 for <6lo@ietfa.amsl.com>; Sat, 26 Mar 2022 01:57:05 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.907
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.907 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id FZrK1yxRZCWr for <6lo@ietfa.amsl.com>; Sat, 26 Mar 2022 01:57:02 -0700 (PDT)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 0BC133A1076 for <6lo@ietf.org>; Sat, 26 Mar 2022 01:57:01 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1.1) with ESMTP id 22Q8uwQt058606 for <6lo@ietf.org>; Sat, 26 Mar 2022 09:56:58 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id 550DF1D53C1 for <6lo@ietf.org>; Sat, 26 Mar 2022 09:56:58 +0100 (CET)
+Received: from 79.158.123.136 by webmail.entel.upc.edu with HTTP; Sat, 26 Mar 2022 09:57:19 +0100
+Message-ID: <b57462023c9a488b91400b6a591ab37d.squirrel@webmail.entel.upc.edu>
+Date: Sat, 26 Mar 2022 09:57:19 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.103.5 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Sat, 26 Mar 2022 09:56:58 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/mZqajofJV1NKehFN3V0OSetdits>
+Subject: [6lo] Initial version of the minutes from 6lo at IETF 113
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 26 Mar 2022 08:57:06 -0000
+
+Dear all,
+
+The initial version of the minutes from the 6lo session at IETF 113 has
+been published:
+https://datatracker.ietf.org/meeting/113/materials/minutes-113-6lo-00.txt
+
+Many thanks to Dominique, Adnan and Michael for the excellent minute-taking!
+
+Also, many thanks to all participants for the productive session and
+discussions.
+
+Should you identify anything that might need to be corrected from the
+minutes, please let us know.
+
+Cheers,
+
+Shwetha and Carles
+
+
+
+
+
+
+From nobody Tue Mar 29 07:12:11 2022
+Return-Path: <Gene.Falendysz@itron.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id DB3713A1952; Tue, 29 Mar 2022 07:12:09 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.109
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.109 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=itron.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 9JQeaNDcR1aT; Tue, 29 Mar 2022 07:12:05 -0700 (PDT)
+Received: from mx0b-00268a01.pphosted.com (mx0b-00268a01.pphosted.com [148.163.158.99]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 599D53A1953; Tue, 29 Mar 2022 07:12:01 -0700 (PDT)
+Received: from pps.filterd (m0159076.ppops.net [127.0.0.1]) by mx0b-00268a01.pphosted.com (8.16.1.2/8.16.1.2) with ESMTP id 22TDgD2a011772; Tue, 29 Mar 2022 14:12:00 GMT
+Received: from nam12-dm6-obe.outbound.protection.outlook.com (mail-dm6nam12lp2172.outbound.protection.outlook.com [104.47.59.172]) by mx0b-00268a01.pphosted.com (PPS) with ESMTPS id 3f1us3chdh-1 (version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT); Tue, 29 Mar 2022 14:12:00 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; b=WpV0Gov4CmaTvfHfKHttPpbPvgQblKJzYpUtVzmhc8ChRzW02jhk5viw6bjYwckQasWJegw3+Pi2MeGOHoc+dVIRANQb+v2Y21PAzlMIcqsfy3nNnSZV+5wmpWgkLKSa0c5q9umjNux9uGhrUkGexwUgSu8RYTEbBTrpKvcPrHsj5ofWFi6lHUUNHYP1GwvvaSpkLP65I4BYx1/XSJ/UBBs+rvLtVtEx0WZcwXHUjLwcU1I1ok6hbWLy0AbrgGipeVvs+avITRwp6SozWcxVJFwZP7DIblAd1ZBeX/p7pyZkCwoe+oRnapStzjNJ28LMvFup5tK+vBXjRWEJgbqF0g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;  s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1; bh=cSFnwV9LD1LZJjVnl56aLcERBrYndzwociPcFzICYiM=; b=WiQgVWJYKyJbuZ5DzGQ1I9eJXI7mtMONjC/yVGuX4BnP3H1j6zVhO91VC4dTgzAdFlNR4/OcgYGoGzydx1bq0pyvgUY3PTRaaa67C/VZfTPEeaZ3mbIP5awSA5WEXmzcma52SxzLfx2cy1Zetz1GoeP8nY9pKn2OxKUCzYGg/+pYMCpr7/3Qe+KPGOj5OVRoUHxCK3yNZn+WORATrmSnZGUWww6cIimFNU+4nB6gi0dJexnR4hZihqCRXd75H2EVFa5Xlzl8d+rUUtKEWlh4SPS4px/N5HdbgJwO62d41MktL5idsrF4n+iwIQql4t7bVo3kpULo2ReFosrfGoKe3g==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=itron.com; dmarc=pass action=none header.from=itron.com; dkim=pass header.d=itron.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=itron.com; s=selector2; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=cSFnwV9LD1LZJjVnl56aLcERBrYndzwociPcFzICYiM=; b=MNsdjB1CQlaEe6TNNzKtRwyGE+lOsUOKdn741+3SD1/XjgKM3DpdOvosHAKgFbFCAgrCz4Xhtd0+djfKkQdrZcvJWV6i0fnISWnLYUfDWGj5FkFyo2YjJ1n0kTvAjIJksOtUkqcbv9wPuA+49xrwfcnodnGpfoOpIXiSR0lKdFJ9cmeCx1qb/0h7LwrRFP2lqTGprLn1TT7kGhXIUXN4FQvm/elGEgVgkGsJaCwWtYtzE+Hsht9TaVv9QDFxK45HIGXW8phTIc7Aef5Myhl/HPopaFcr6i9rQlEN7Kjf0XPtUKsHZVVC8Xl5svpV4S+9Hh1hP/Zn7yJhGPYEBJ/rPw==
+Received: from DM8PR04MB7798.namprd04.prod.outlook.com (2603:10b6:8:28::11) by SA1PR04MB8253.namprd04.prod.outlook.com (2603:10b6:806:1e4::23) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5102.17; Tue, 29 Mar 2022 14:11:59 +0000
+Received: from DM8PR04MB7798.namprd04.prod.outlook.com ([fe80::a1cd:46bc:4b62:810a]) by DM8PR04MB7798.namprd04.prod.outlook.com ([fe80::a1cd:46bc:4b62:810a%6]) with mapi id 15.20.5123.016; Tue, 29 Mar 2022 14:11:58 +0000
+From: "Falendysz, Gene" <Gene.Falendysz@itron.com>
+To: "6lo@ietf.org" <6lo@ietf.org>, "i-d-announce@ietf.org" <i-d-announce@ietf.org>
+Thread-Topic: [EXTERNAL] [6lo] I-D Action: draft-ietf-6lo-multicast-registration-04.txt
+Thread-Index: AQHYLyIt+H4c6TOKHUqlVKCnPxC0mqzWjoFg
+Date: Tue, 29 Mar 2022 14:11:58 +0000
+Message-ID: <DM8PR04MB7798AF1B4232644D4F4E1A96881E9@DM8PR04MB7798.namprd04.prod.outlook.com>
+References: <164632761606.28373.8303338598850967897@ietfa.amsl.com>
+In-Reply-To: <164632761606.28373.8303338598850967897@ietfa.amsl.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: d31a123b-c2b5-4462-c3c8-08da118e16ae
+x-ms-traffictypediagnostic: SA1PR04MB8253:EE_
+x-microsoft-antispam-prvs: <SA1PR04MB8253D3B97BB221CF636C65B1881E9@SA1PR04MB8253.namprd04.prod.outlook.com>
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: 3Q3mTkmTC+Lwqde5S9rmTriHdpJIPhxPVxPnHZm2nbH/KpvlGmXfC1LiierJDgUQOSPdzIOuw5kRH7f//FRaqd0HQnkv9O+j10WF+Aa0A3wjkFf7ZCIImWCs5mIZn2Ci0Lo0xoio9Z8ZDHk9erp/+JUrLiqncV5s7gOY4aYXKGBx3XJb1bJSng6vEH9LMQ6BpkdtN7jPpSe2vnN8NeU10WPfiLLwfJa9nE9eBY82TX2gO6dxhtE1GsRC8w6qlrRQI/E4jOpZoFspHJb5N7c4IDj/+9ZIvMkauKPr/xUPLeGeCzbuK+tT5vcfzKsxHaC2deaEzVha6M3hv5VLjm0iIkrVZ6aE0sZ0ls7M8MIGpbWxQZXjhpH4hQZJwpiNO0h6KipnHNRndhOt+LNxAN3FK2tsLVDp0XjwGdPeDgXmUeMipJXuFSqVKBxvrXt363G/NvqDvsTJTR9xs7SV1pikX+nZjw1Jx/47vjlUMCFWhKvf0VKiTE6j164uuZBHOTnaLHgR8/R/ieVs5OTI4K2k24acE1rMjiNoKiF4zSdVh301aBnumTo4EFyrq0t+s567U/ynzsbtRjPl5lS7LfvEeH6djVZINyh+YVaU8ntC71KG5rD/FC0FGsvc0w8dzdXOdmaYTZHUbuS5gGn6rlGgIwclk9kwEqn0wWZPn13ZrKh27twUFXMRx/xV6mrCAPSyeDnaVAE8VIYTaWBqgXIgwWTh4aBSO90l9zbCUOsd1W1A11vxoLVAiv34MPLKizGC+Bqnct750Z8YKAQP9F0aw0mhF/zdrWHgXuZZzndApk8=
+x-forefront-antispam-report: CIP:255.255.255.255; CTRY:; LANG:en; SCL:1; SRV:;  IPV:NLI; SFV:NSPM; H:DM8PR04MB7798.namprd04.prod.outlook.com; PTR:; CAT:NONE;  SFS:(13230001)(366004)(2906002)(52536014)(122000001)(82960400001)(38100700002)(8936002)(5660300002)(76116006)(66446008)(8676002)(66476007)(33656002)(40140700001)(83380400001)(38070700005)(66946007)(66574015)(86362001)(55016003)(6506007)(186003)(110136005)(316002)(450100002)(64756008)(66556008)(9686003)(966005)(53546011)(71200400001)(7696005)(508600001); DIR:OUT; SFP:1101; 
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: =?iso-8859-1?Q?vMpKrSYKtpIUCDnC1kMTs3IlDY+sx0d7wt+T8nY+anGtAzaseDCXUY5Eso?= =?iso-8859-1?Q?+wP5PSrXXydr79lWWHgSF6b3xoFVk6Le1Jst9N9/tQBSnGd1J0ZeDQSdrl?= =?iso-8859-1?Q?+4R1jHH3FFcLuj1QAyqlEhe8rk5di/mwXOn4KvC11XoCO+2q+pvapEAVy/?= =?iso-8859-1?Q?+vVvHj+5rNQ1S84rBahLDDrdjf20PQ1SeMHWf2uPahdVJ5O7Shy7y2JT4l?= =?iso-8859-1?Q?xGahkzM2zixTNW6G1b/6z3yCZVAiuiUVbevDvYH4M46V5N4q/33H3MVpKB?= =?iso-8859-1?Q?ItbnFKqi0PdbEQjk2fxeXKKpF0mrKIK26bmiVRXja7NdrPXR1cJb/8niSV?= =?iso-8859-1?Q?NdogRwdhF4wiFJDJM9IG1yDwWv0JcQQlxPEgAzawXZ3hbMBeAZA7EMMbR3?= =?iso-8859-1?Q?qmW6yeRfEDxFVg8Qgyc/pYFjPgeek0mTUD1lH1WB1y8ayKkJtardODV4li?= =?iso-8859-1?Q?xyTAWN2PfprKC4Rbr5WAgWzXbm1xxB0czHdy14tKyRrbCpCi10YpyGJeoU?= =?iso-8859-1?Q?TB8IFG1NeKLBAUmXNcikuG703AuRU8gsjEUKJWwU71eXpWPU35xEV9LXqk?= =?iso-8859-1?Q?1pDRT9HY6omqzEC4JCKgJdAff/LT8iAidp2NJ6vTSPQBlDcFc9kt6C8HzM?= =?iso-8859-1?Q?hBv/j/ox36J0UFt360I7Qs/wcaoEsdJcN7XRutd0nO8302jfTOCsZrsZu4?= =?iso-8859-1?Q?u3aWWrv3RBwT6GD2jzcIUvFdtRQLaSlLGqNj4x4xCdkcE7D0iEusO/41XN?= =?iso-8859-1?Q?rmKkYu3JcYe/pHUIcnOryerFKgTjVKIWPQURhE3sPstf4Tr4IIw3s7gpgV?= =?iso-8859-1?Q?5peYPVdd6C8ykuIRWyUCIIb4L7q7pdOm1ZY+itSUH0Vd/iluebKbPR/RoH?= =?iso-8859-1?Q?DXNr1j5O9EoVJUMsI95R4HxbbYkGZJsNnp0ekGONGytdhxd5/QaABZuSwY?= =?iso-8859-1?Q?150AS26BtasBw8jUzYiE5sA77e0Nh7JSg76Ybsvs2O82igWKNgHB59A0w6?= =?iso-8859-1?Q?QSTGzZVS8jkDA/YN9nvO6BPT3tFHDyVlWdMI2IakzCoMe0/foNIQpK71ta?= =?iso-8859-1?Q?bsdY7HDR6JTbdeNdT9MWQdBWrVvG1TnJLN/Bmf2UhpqEV4TjWz6U87LTJh?= =?iso-8859-1?Q?jEn4oDy996N08S/2or98LbkC/EwX3qQJHbmbuFu5ShqfO+D87M78/crARO?= =?iso-8859-1?Q?ik24ClAIP+iqkJpOyildYWmT9jG0yRC9oApotQrN4L3i8zsV6XDHYnsCh9?= =?iso-8859-1?Q?uZpLLl5B4Zn8hgRYemzhXgmKDjHtV//03mtvuAl69G1mOYszj3PabSen2H?= =?iso-8859-1?Q?pjxW/vptuVTNIJ2NYu/wvFrQiXf673iz0c4PixwtPC1TP+OMg37vS4xOEE?= =?iso-8859-1?Q?Z7ke45oDJAEKh+1Mv9q3BXFq2jb4rdR1KItTFt0HIKKSHkRVuuBInEjdHA?= =?iso-8859-1?Q?yZXXMZZx9M5k3NvtJQk/VTjrvLYGataWHVvPhyOBWJUHcbeG1VdowgtM49?= =?iso-8859-1?Q?fZhtwhd/wSZRIudZmn9zvc66QQAEj/NWmGvYJN8j4rwDckrnhlGxg2y5Jl?= =?iso-8859-1?Q?/zKiX5aulNfj1hrsdVVLA10+rYhv7M7e/Vfc3LktR0eEF8ETNbVfDNLyvA?= =?iso-8859-1?Q?PoL2fhhdFJH6RaOd5aVfy8poro39p6iaZoExT5VAU1JPom1hj4UfbteU4r?= =?iso-8859-1?Q?GyNWtjva6PiV2Z4qxR0c6Dygm0grKQqklo6wTHc0gJIjszhr48FT6r5vHp?= =?iso-8859-1?Q?VLrLVbKfzohcQsq4vTcIhZBAY5cuvRO0ic7omW5W7/Yq8ZTjVkpgiqMqmw?= =?iso-8859-1?Q?DKiqZIH37B+dMqNAF9+G5sB7pPIlIX8=3D?=
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-OriginatorOrg: itron.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: DM8PR04MB7798.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: d31a123b-c2b5-4462-c3c8-08da118e16ae
+X-MS-Exchange-CrossTenant-originalarrivaltime: 29 Mar 2022 14:11:58.9302 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 5818bd20-bf25-47b1-b996-d419d7e6e8ba
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: Zbf14eC3xUg0UIWP+GWQyo1trZUbuzcitVUYywTTZNNnPCpKPRNbUhYnClDEvVmYkm82QvmZHfZ6vxNExMINtg==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1PR04MB8253
+X-Proofpoint-GUID: kLxfK48I8yiWoZXf22VGhgjh-JUPnr-_
+X-Proofpoint-ORIG-GUID: kLxfK48I8yiWoZXf22VGhgjh-JUPnr-_
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 malwarescore=0 suspectscore=0 clxscore=1011 priorityscore=1501 adultscore=0 lowpriorityscore=0 impostorscore=0 mlxscore=0 spamscore=0 bulkscore=0 mlxlogscore=999 phishscore=0 classifier=spam adjust=0 reason=mlx scancount=1 engine=8.12.0-2202240000 definitions=main-2203290087
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/xWeD_iuUgVxUzDeAXSTwesPKPbM>
+Subject: Re: [6lo] [EXTERNAL] I-D Action: draft-ietf-6lo-multicast-registration-04.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 29 Mar 2022 14:12:10 -0000
+
+All,
+  This draft covers a very real need in the support of battery operated dev=
+ices in a Wi-SUN FAN network. The draft, as presented, meets our need. Anyt=
+hing that can be done to expedite its approval would be appreciated.=20
+
+Best regards,
+
+Gene Falendysz
+864-723-1395=A0
+
+-----Original Message-----
+From: 6lo <6lo-bounces@ietf.org> On Behalf Of internet-drafts@ietf.org
+Sent: Thursday, March 3, 2022 12:14 PM
+To: i-d-announce@ietf.org
+Cc: 6lo@ietf.org
+Subject: [EXTERNAL] [6lo] I-D Action: draft-ietf-6lo-multicast-registration=
+-04.txt
+
+
+A New Internet-Draft is available from the on-line Internet-Drafts director=
+ies.
+This draft is a work item of the IPv6 over Networks of Resource-constrained=
+ Nodes WG of the IETF.
+
+        Title           : IPv6 Neighbor Discovery Multicast Address Listene=
+r Registration
+        Author          : Pascal Thubert
+	Filename        : draft-ietf-6lo-multicast-registration-04.txt
+	Pages           : 26
+	Date            : 2022-03-03
+
+Abstract:
+   This document updates RFC 8505 to enable a listener to register an
+   IPv6 anycast or and subscribe to an IPv6 multicast address; the draft
+   updates RFC 6550 (RPL) to add a new Non-Storing Multicast Mode and a
+   new support for anycast addresses in Storing and Non-Storing Modes.
+   This document extends RFC 9010 to enable the 6LR to inject the
+   anycast and multicast addresses in RPL.
+
+
+The IETF datatracker status page for this draft is:
+https://urldefense.com/v3/__https://datatracker.ietf.org/doc/draft-ietf-6lo=
+-multicast-registration/__;!!F7jv3iA!n_a7Jp2FGZovPz3EMZwkeIs8VgqcLR10wwoRJU=
+59_qVxeYKDDoaVIsPNyPRmJWfzCsE$=20
+
+There is also an HTML version available at:
+https://urldefense.com/v3/__https://www.ietf.org/archive/id/draft-ietf-6lo-=
+multicast-registration-04.html__;!!F7jv3iA!n_a7Jp2FGZovPz3EMZwkeIs8VgqcLR10=
+wwoRJU59_qVxeYKDDoaVIsPNyPRmabDzZ7M$=20
+
+A diff from the previous version is available at:
+https://urldefense.com/v3/__https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-=
+6lo-multicast-registration-04__;!!F7jv3iA!n_a7Jp2FGZovPz3EMZwkeIs8VgqcLR10w=
+woRJU59_qVxeYKDDoaVIsPNyPRmI81z6KI$=20
+
+
+Internet-Drafts are also available by rsync at rsync.ietf.org::internet-dra=
+fts
+
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org
+https://urldefense.com/v3/__https://www.ietf.org/mailman/listinfo/6lo__;!!F=
+7jv3iA!n_a7Jp2FGZovPz3EMZwkeIs8VgqcLR10wwoRJU59_qVxeYKDDoaVIsPNyPRmO_hPy-4$=
+=20
+
+
+From nobody Wed Mar 30 05:17:37 2022
+Return-Path: <liguangpeng@huawei.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 2DEF83A11D9 for <6lo@ietfa.amsl.com>; Wed, 30 Mar 2022 05:17:35 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -6.907
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.907 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H5=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Xoy--9lEqpTI for <6lo@ietfa.amsl.com>; Wed, 30 Mar 2022 05:17:33 -0700 (PDT)
+Received: from frasgout.his.huawei.com (frasgout.his.huawei.com [185.176.79.56]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 2FB4D3A11D8 for <6lo@ietf.org>; Wed, 30 Mar 2022 05:17:33 -0700 (PDT)
+Received: from fraeml744-chm.china.huawei.com (unknown [172.18.147.207]) by frasgout.his.huawei.com (SkyGuard) with ESMTP id 4KT53L5lbSz67x3s; Wed, 30 Mar 2022 20:14:54 +0800 (CST)
+Received: from lhreml739-chm.china.huawei.com (10.201.108.189) by fraeml744-chm.china.huawei.com (10.206.15.225) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2375.24; Wed, 30 Mar 2022 14:17:30 +0200
+Received: from dggpemm500004.china.huawei.com (7.185.36.219) by lhreml739-chm.china.huawei.com (10.201.108.189) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2375.24; Wed, 30 Mar 2022 13:17:29 +0100
+Received: from dggpemm500004.china.huawei.com ([7.185.36.219]) by dggpemm500004.china.huawei.com ([7.185.36.219]) with mapi id 15.01.2308.021; Wed, 30 Mar 2022 20:17:27 +0800
+From: "Liguangpeng (Roc, Network Technology Laboratory)" <liguangpeng@huawei.com>
+To: Carles Gomez Montenegro <carlesgo@entel.upc.edu>, "6lo@ietf.org" <6lo@ietf.org>
+CC: Luigi IANNONE <luigi.iannone@huawei.com>
+Thread-Topic: [6lo] Initial version of the minutes from 6lo at IETF 113
+Thread-Index: AQHYQO+J1imGmsN/H0eAW5pFjsbaoqzX2Yrg
+Date: Wed, 30 Mar 2022 12:17:27 +0000
+Message-ID: <c95ea00ea1dd416fbb0d5551b3f6d6e4@huawei.com>
+References: <b57462023c9a488b91400b6a591ab37d.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <b57462023c9a488b91400b6a591ab37d.squirrel@webmail.entel.upc.edu>
+Accept-Language: zh-CN, en-US
+Content-Language: zh-CN
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.45.166.4]
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-CFilter-Loop: Reflected
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/3gxfH1ZtDQCir9ywHe9Ulx1DKZo>
+Subject: Re: [6lo] Initial version of the minutes from 6lo at IETF 113
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 30 Mar 2022 12:17:35 -0000
+
+Dear Chairs and all,
+
+Thanks chairs and minutes takers. Maybe it's fault of my pronunciation, I d=
+on't think we discussed any topic about security. If I remembered, in that =
+time we discussed constrained devices and more general case, which one is t=
+he typical use cases of APL. Maybe we should correct the following lines a =
+bit.
+
+[11:40] Native Short Address for LLN Expansion (Luigi Iannone ) 15 min
+
+    goes through changes since IETF112
+    applicability mostly in static deployment, otherwise, need to renumber.
+    next: will try to evaluate gain with this approach; will respond to lat=
+est comments.
+    then will consider asking for adoption
+    Carles: draft states applicability for static deployment of wired techn=
+ologies. PLC?
+    Luigi: some others, will do literature review
+    Guangpeng: PLC, also APL (Advanced Physical Layer) which is extension o=
+f 802.3cg
+>    Carles: other additions needed to the draft?
+>    Guangpeng: security
+    Peng Liu: support this work
+
+Thanks,
+Guangpeng Li
+
+> -----Original Message-----
+> From: 6lo <6lo-bounces@ietf.org> On Behalf Of Carles Gomez Montenegro
+> Sent: Saturday, March 26, 2022 4:57 PM
+> To: 6lo@ietf.org
+> Subject: [6lo] Initial version of the minutes from 6lo at IETF 113
+>=20
+> Dear all,
+>=20
+> The initial version of the minutes from the 6lo session at IETF 113 has b=
+een
+> published:
+> https://datatracker.ietf.org/meeting/113/materials/minutes-113-6lo-00.txt
+>=20
+> Many thanks to Dominique, Adnan and Michael for the excellent
+> minute-taking!
+>=20
+> Also, many thanks to all participants for the productive session and
+> discussions.
+>=20
+> Should you identify anything that might need to be corrected from the
+> minutes, please let us know.
+>=20
+> Cheers,
+>=20
+> Shwetha and Carles
+>=20
+>=20
+>=20
+>=20
+>=20
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+
+
+From nobody Thu Mar 31 03:02:59 2022
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 6E6A93A0CEF for <6lo@ietfa.amsl.com>; Thu, 31 Mar 2022 03:02:57 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.907
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.907 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_BLOCKED=0.001, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, T_SCC_BODY_TEXT_LINE=-0.01] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id i_iEkYJUsiAJ for <6lo@ietfa.amsl.com>; Thu, 31 Mar 2022 03:02:54 -0700 (PDT)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id D5A753A0CF2 for <6lo@ietf.org>; Thu, 31 Mar 2022 03:02:53 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1.1) with ESMTP id 22VA2o04036874 for <6lo@ietf.org>; Thu, 31 Mar 2022 12:02:50 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id 382DD1D53C1 for <6lo@ietf.org>; Thu, 31 Mar 2022 12:02:51 +0200 (CEST)
+Received: from 79.158.126.207 by webmail.entel.upc.edu with HTTP; Thu, 31 Mar 2022 12:02:51 +0200
+Message-ID: <7270834f3e3630c9621f2485b8d72c3e.squirrel@webmail.entel.upc.edu>
+Date: Thu, 31 Mar 2022 12:02:51 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.103.5 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Thu, 31 Mar 2022 12:02:51 +0200 (CEST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/0MMb7A7xomrJmlwQjr9dJqlbaVw>
+Subject: [6lo] Call for reviewers - draft-ietf-6lo-multicast-registration-04
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 31 Mar 2022 10:02:58 -0000
+
+Dear 6lo WG,
+
+As discussed in IETF 113, draft-ietf-6lo-multicast-registration has
+recently become rather stable.
+
+We believe that it would be a good moment to have a review of the draft in
+its current stage, before proceeding further.
+
+If you would like to volunteer to review the draft (i.e.,
+draft-ietf-6lo-multicast-registration-04), please let us know!
+
+Cheers,
+
+Shwetha and Carles
+
+
+
+
+

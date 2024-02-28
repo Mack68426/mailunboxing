@@ -1,0 +1,2769 @@
+
+From nobody Wed Aug  1 15:38:24 2018
+Return-Path: <mcr+ietf@sandelman.ca>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id B5082130DCF for <6lo@ietfa.amsl.com>; Wed,  1 Aug 2018 15:38:22 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.2
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.2 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id eHJLiWwdRJTJ for <6lo@ietfa.amsl.com>; Wed,  1 Aug 2018 15:38:20 -0700 (PDT)
+Received: from tuna.sandelman.ca (tuna.sandelman.ca [IPv6:2607:f0b0:f:3:216:3eff:fe7c:d1f3]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 697951277BB for <6lo@ietf.org>; Wed,  1 Aug 2018 15:38:20 -0700 (PDT)
+Received: from sandelman.ca (obiwan.sandelman.ca [IPv6:2607:f0b0:f:2::247]) by tuna.sandelman.ca (Postfix) with ESMTP id 7912F20090 for <6lo@ietf.org>; Wed,  1 Aug 2018 18:54:56 -0400 (EDT)
+Received: by sandelman.ca (Postfix, from userid 179) id 0AF4D201; Wed,  1 Aug 2018 18:38:19 -0400 (EDT)
+Received: from sandelman.ca (localhost [127.0.0.1]) by sandelman.ca (Postfix) with ESMTP id 085D21DA for <6lo@ietf.org>; Wed,  1 Aug 2018 18:38:19 -0400 (EDT)
+From: Michael Richardson <mcr+ietf@sandelman.ca>
+To: 6lo@ietf.org
+X-Attribution: mcr
+X-Mailer: MH-E 8.6; nmh 1.7+dev; GNU Emacs 24.5.1
+X-Face: $\n1pF)h^`}$H>Hk{L"x@)JS7<%Az}5RyS@k9X%29-lHB$Ti.V>2bi.~ehC0; <'$9xN5Ub# z!G,p`nR&p7Fz@^UXIn156S8.~^@MJ*mMsD7=QFeq%AL4m<nPbLgmtKK-5dC@#:k
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-="; micalg=pgp-sha256; protocol="application/pgp-signature"
+Date: Wed, 01 Aug 2018 18:38:19 -0400
+Message-ID: <7437.1533163099@localhost>
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/cHKe9EDFzZN68OtBro93vF84aus>
+Subject: [6lo] adoption of draft-ayers-low-power-interop-00, and industrial specifications
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 01 Aug 2018 22:38:23 -0000
+
+--=-=-=
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+
+Thank you for this great work, and I'm glad that there was just enough
+time as the end of 6lo to present it.
+
+While I think that in the short term we will get interoperability only
+because there are various industrial alliances that will define profiles,
+in the long term, we need to overcome the problems outlined in this documen=
+t.
+
+There is a space beyond the industrial alliances: to the places the people
+who write the various #ifdef to turn various things on and off, would like =
+to
+be able to do a better job.  Both because of just quality of implementation,
+but also because of just trying to debug stuff.
+
+And the industrial alliances still need some meat on which base their
+deliberations!
+
+We need that ICMP message.
+
+I'm not sure what to do with the survey.
+It's a lot of really good work, and it deserves recognition.
+I suggest that maybe it should be published in a journal rather than as an
+RFC.  Maybe the https://www.ietfjournal.org/ would be a good place.
+
+As for the document.  I want to suggest that the WG adopt it.
+I haven't read it in detail, but I can do that.  I prefer to adopt it
+in order so that we can spend top-of-the-agenda time to figure out what
+to do with the document.  I suspect that a bunch of it will get removed,
+and that the document will change name, but I think we can do that.
+
+=2D-=20
+Michael Richardson <mcr+IETF@sandelman.ca>, Sandelman Software Works
+ -=3D IPv6 IoT consulting =3D-
+
+
+
+
+--=-=-=
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEbsyLEzg/qUTA43uogItw+93Q3WUFAltiNloACgkQgItw+93Q
+3WXThwf/fwRLKay57/gFx5sqgPel8dMuYrv37qq/CGNWUH3T+1zxe5ysZ/f2GyHH
+s2SeNObksc5MpxrS4ddK8fAOn1cSw5dgEtgTt3GegkbEiuE1xxR8R5C2jHxOTvuC
+igebod3hL8xlowSil7injhPdJ6mzY7sjYp0faRqOkNOjXmNfs0qz1jK3rzMHanQ/
+CBk7SrsvVzL5R0ZAZx7Tw7vcer1JdgP3sjVFt6DOQRfbQ0r3CpdSZWwTWWpcTYeV
+b4pM3dlVgVoIONYljwiKwGocTobf4fbrTpkcGUZ4qa6nV/wZS2hIPuy8TCt68fc7
+BWJ6mWsGBtHHMTu3ozmd9czAIo1nIA==
+=6NRF
+-----END PGP SIGNATURE-----
+--=-=-=--
+
+
+From nobody Wed Aug  1 23:01:23 2018
+Return-Path: <cabo@tzi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 6457E130DD5 for <6lo@ietfa.amsl.com>; Wed,  1 Aug 2018 23:01:22 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.2
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.2 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id c-YGKLurzTCJ for <6lo@ietfa.amsl.com>; Wed,  1 Aug 2018 23:01:20 -0700 (PDT)
+Received: from mailhost.informatik.uni-bremen.de (mailhost.informatik.uni-bremen.de [IPv6:2001:638:708:30c9::12]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 3C1AB128C65 for <6lo@ietf.org>; Wed,  1 Aug 2018 23:01:20 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at informatik.uni-bremen.de
+Received: from submithost.informatik.uni-bremen.de (submithost.informatik.uni-bremen.de [IPv6:2001:638:708:30c9::b]) by mailhost.informatik.uni-bremen.de (8.14.5/8.14.5) with ESMTP id w7261CI3014189; Thu, 2 Aug 2018 08:01:12 +0200 (CEST)
+Received: from client-0100.vpn.uni-bremen.de (client-0100.vpn.uni-bremen.de [134.102.107.100]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by submithost.informatik.uni-bremen.de (Postfix) with ESMTPSA id 41h00l72NCzDXX5; Thu,  2 Aug 2018 08:01:11 +0200 (CEST)
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0 (Mac OS X Mail 11.5 \(3445.9.1\))
+From: Carsten Bormann <cabo@tzi.org>
+In-Reply-To: <7437.1533163099@localhost>
+Date: Thu, 2 Aug 2018 08:01:11 +0200
+Cc: 6lo@ietf.org
+X-Mao-Original-Outgoing-Id: 554882468.982717-a069d0763a6e03d67c037cd22bc98cc5
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <8AC74B30-7B4B-4DFA-BB90-43E46A6C5D8F@tzi.org>
+References: <7437.1533163099@localhost>
+To: Michael Richardson <mcr+ietf@sandelman.ca>
+X-Mailer: Apple Mail (2.3445.9.1)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/upC4VtBUY0hyL8oQrTLnvuiazzY>
+Subject: Re: [6lo] adoption of draft-ayers-low-power-interop-00, and industrial specifications
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 02 Aug 2018 06:01:22 -0000
+
+On Aug 2, 2018, at 00:38, Michael Richardson <mcr+ietf@sandelman.ca> =
+wrote:
+>=20
+> As for the document.  I want to suggest that the WG adopt it.
+
+Hmm.  While the document has some interesting observations, I don=E2=80=99=
+t think we should adopt any one of its conclusions.  The interop =
+problems we are seeing in the research implementations are mostly coming =
+from the fact that interop simply was not an objective in many of the =
+research activities that led to those implementations.  Adding more =
+variants of 6LoWPAN to the mix is NOT going to help with that.
+
+Gr=C3=BC=C3=9Fe, Carsten
+
+
+From nobody Wed Aug  1 23:28:00 2018
+Return-Path: <pal@cs.stanford.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id E9CB4130DE0 for <6lo@ietfa.amsl.com>; Wed,  1 Aug 2018 23:27:57 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.201
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.201 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 9j0t1uPm4osZ for <6lo@ietfa.amsl.com>; Wed,  1 Aug 2018 23:27:56 -0700 (PDT)
+Received: from smtp3.cs.Stanford.EDU (smtp3.cs.stanford.edu [171.64.64.27]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id C0CED130DCE for <6lo@ietf.org>; Wed,  1 Aug 2018 23:27:56 -0700 (PDT)
+Received: from 157-131-200-189.fiber.dynamic.sonic.net ([157.131.200.189]:58273 helo=[192.168.0.120]) by smtp3.cs.Stanford.EDU with esmtpsa (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1) (envelope-from <pal@cs.stanford.edu>) id 1fl75W-0000HS-LI; Wed, 01 Aug 2018 23:27:55 -0700
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0 (Mac OS X Mail 11.5 \(3445.9.1\))
+From: Philip Levis <pal@cs.stanford.edu>
+In-Reply-To: <8AC74B30-7B4B-4DFA-BB90-43E46A6C5D8F@tzi.org>
+Date: Wed, 1 Aug 2018 23:27:54 -0700
+Cc: Michael Richardson <mcr+ietf@sandelman.ca>, 6lo@ietf.org
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <6BA1619E-842A-42EC-B54E-1218BA6E3721@cs.stanford.edu>
+References: <7437.1533163099@localhost> <8AC74B30-7B4B-4DFA-BB90-43E46A6C5D8F@tzi.org>
+To: Carsten Bormann <cabo@tzi.org>
+X-Mailer: Apple Mail (2.3445.9.1)
+X-Scan-Signature: 980022258218d8e0da9e8fd80fb6777b
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/OguU-RVJQLOEd5o3-z2qavABYYI>
+Subject: Re: [6lo] adoption of draft-ayers-low-power-interop-00, and industrial specifications
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 02 Aug 2018 06:27:58 -0000
+
+Riot, Nest=E2=80=99s OpenThread and ARM=E2=80=99s mbed are not research =
+activities.
+
+Phil
+
+> On Aug 1, 2018, at 11:01 PM, Carsten Bormann <cabo@tzi.org> wrote:
+>=20
+> On Aug 2, 2018, at 00:38, Michael Richardson <mcr+ietf@sandelman.ca> =
+wrote:
+>>=20
+>> As for the document.  I want to suggest that the WG adopt it.
+>=20
+> Hmm.  While the document has some interesting observations, I don=E2=80=99=
+t think we should adopt any one of its conclusions.  The interop =
+problems we are seeing in the research implementations are mostly coming =
+from the fact that interop simply was not an objective in many of the =
+research activities that led to those implementations.  Adding more =
+variants of 6LoWPAN to the mix is NOT going to help with that.
+>=20
+> Gr=C3=BC=C3=9Fe, Carsten
+>=20
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+
+
+From nobody Thu Aug  2 08:17:56 2018
+Return-Path: <mcr@sandelman.ca>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 01FA9130E1B for <6lo@ietfa.amsl.com>; Thu,  2 Aug 2018 08:17:54 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.201
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.201 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 93Ju0v4LFhpZ for <6lo@ietfa.amsl.com>; Thu,  2 Aug 2018 08:17:52 -0700 (PDT)
+Received: from tuna.sandelman.ca (tuna.sandelman.ca [209.87.249.19]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 6618F124C04 for <6lo@ietf.org>; Thu,  2 Aug 2018 08:17:52 -0700 (PDT)
+Received: from sandelman.ca (obiwan.sandelman.ca [IPv6:2607:f0b0:f:2::247]) by tuna.sandelman.ca (Postfix) with ESMTP id 5EF4220491; Thu,  2 Aug 2018 11:34:31 -0400 (EDT)
+Received: by sandelman.ca (Postfix, from userid 179) id 973FB149C; Thu,  2 Aug 2018 11:17:51 -0400 (EDT)
+Received: from sandelman.ca (localhost [127.0.0.1]) by sandelman.ca (Postfix) with ESMTP id 944566D; Thu,  2 Aug 2018 11:17:51 -0400 (EDT)
+From: Michael Richardson <mcr@sandelman.ca>
+To: Carsten Bormann <cabo@tzi.org>
+cc: 6lo@ietf.org
+In-Reply-To: <8AC74B30-7B4B-4DFA-BB90-43E46A6C5D8F@tzi.org>
+References: <7437.1533163099@localhost> <8AC74B30-7B4B-4DFA-BB90-43E46A6C5D8F@tzi.org>
+X-Mailer: MH-E 8.6; nmh 1.7+dev; GNU Emacs 24.5.1
+X-Face: $\n1pF)h^`}$H>Hk{L"x@)JS7<%Az}5RyS@k9X%29-lHB$Ti.V>2bi.~ehC0; <'$9xN5Ub# z!G,p`nR&p7Fz@^UXIn156S8.~^@MJ*mMsD7=QFeq%AL4m<nPbLgmtKK-5dC@#:k
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Date: Thu, 02 Aug 2018 11:17:51 -0400
+Message-ID: <17474.1533223071@localhost>
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/r0kQ3fmesHeaEIug6DstH2CLSKs>
+Subject: Re: [6lo] adoption of draft-ayers-low-power-interop-00, and industrial specifications
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 02 Aug 2018 15:17:54 -0000
+
+Carsten Bormann <cabo@tzi.org> wrote:
+    >> As for the document.  I want to suggest that the WG adopt it.
+
+    > Hmm.  While the document has some interesting observations, I don=E2=
+=80=99t
+    > think we should adopt any one of its conclusions.  The interop proble=
+ms
+    > we are seeing in the research implementations are mostly coming from
+    > the fact that interop simply was not an objective in many of the
+    > research activities that led to those implementations.
+
+Some argue that IPv4 was the research version of the Internet.
+
+That's why we should adopt the document, so that we can discuss things like
+whether we need more variants...
+
+    > Adding more
+    > variants of 6LoWPAN to the mix is NOT going to help with that.
+
+or probably *FEWER* variants.
+
+--
+]               Never tell me the odds!                 | ipv6 mesh network=
+s [
+]   Michael Richardson, Sandelman Software Works        | network architect=
+  [
+]     mcr@sandelman.ca  http://www.sandelman.ca/        |   ruby on rails  =
+  [
+
+
+
+From nobody Fri Aug  3 16:04:43 2018
+Return-Path: <pal@cs.stanford.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 53E581271FF for <6lo@ietfa.amsl.com>; Fri,  3 Aug 2018 16:04:41 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -3.476
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.476 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, MIME_HTML_ONLY=0.723, RCVD_IN_DNSWL_MED=-2.3, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Xl9OlZGtXAAX for <6lo@ietfa.amsl.com>; Fri,  3 Aug 2018 16:04:39 -0700 (PDT)
+Received: from smtp2.cs.Stanford.EDU (smtp2.cs.stanford.edu [171.64.64.26]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id C633C130DDD for <6lo@ietf.org>; Fri,  3 Aug 2018 16:04:39 -0700 (PDT)
+Received: from airbears2-136-152-143-39.airbears2.berkeley.edu ([136.152.143.39]:12527 helo=airbears2-10-142-39-48.airbears2.1918.berkeley.edu) by smtp2.cs.Stanford.EDU with esmtpsa (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1) (envelope-from <pal@cs.stanford.edu>) id 1flj7d-0003gr-O5; Fri, 03 Aug 2018 16:04:38 -0700
+Mime-Version: 1.0 (Mac OS X Mail 11.5 \(3445.9.1\))
+Content-Type: text/html; charset=utf-8
+X-Apple-Auto-Saved: 1
+X-Apple-Mail-Remote-Attachments: YES
+From: Philip Levis <pal@cs.stanford.edu>
+X-Apple-Base-Url: x-msg://68/
+In-Reply-To: <8AC74B30-7B4B-4DFA-BB90-43E46A6C5D8F@tzi.org>
+X-Apple-Windows-Friendly: 1
+Date: Fri, 3 Aug 2018 14:52:54 -0700
+Cc: Michael Richardson <mcr+ietf@sandelman.ca>, 6lo@ietf.org
+X-Apple-Mail-Signature: SKIP_SIGNATURE
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <36AA238B-2716-42BC-B2EF-F440952856B2@cs.stanford.edu>
+References: <7437.1533163099@localhost> <8AC74B30-7B4B-4DFA-BB90-43E46A6C5D8F@tzi.org>
+X-Uniform-Type-Identifier: com.apple.mail-draft
+To: Carsten Bormann <cabo@tzi.org>
+X-Mailer: Apple Mail (2.3445.9.1)
+X-Scan-Signature: 2ecb59bd28923317bd193fe54b7794cd
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/GFH-X4rWCcjBhiCyzvTi0xLBzU8>
+Subject: Re: [6lo] adoption of draft-ayers-low-power-interop-00, and industrial specifications
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 03 Aug 2018 23:04:41 -0000
+
+<html><head></head><body dir=3D"auto" style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;"><div =
+dir=3D"auto" style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; =
+line-break: after-white-space;"><div dir=3D"auto" style=3D"word-wrap: =
+break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;"><div class=3D"ApplePlainTextBody"><br><br><blockquote =
+type=3D"cite">On Aug 1, 2018, at 11:01 PM, Carsten Bormann =
+&lt;cabo@tzi.org&gt; wrote:<br><br>On Aug 2, 2018, at 00:38, Michael =
+Richardson &lt;mcr+ietf@sandelman.ca&gt; wrote:<br><blockquote =
+type=3D"cite"><br>As for the document. &nbsp;I want to suggest that the =
+WG adopt it.<br></blockquote><br>Hmm. &nbsp;While the document has some =
+interesting observations, I don=E2=80=99t think we should adopt any one =
+of its conclusions. &nbsp;The interop problems we are seeing in the =
+research implementations are mostly coming from the fact that interop =
+simply was not an objective in many of the research activities that led =
+to those implementations. &nbsp;Adding more variants of 6LoWPAN to the =
+mix is NOT going to help with =
+that.<br></blockquote><br>Carsten,<br><br>I=E2=80=99m trying to =
+understand your expectation for the convergence point of 6lowpan =
+implementations, or why an ICMP error would not be helpful. I can =
+imagine three possible end points =E2=80=94 does one of these hit the =
+mark, or is it something else?<br><br>Completion: Every 6lowpan =
+implementation will support every feature of 6lowpan, and they will =
+fully interoperate.<br><br>Silos: Some 6lowpan implementations in =
+vertical application/network silos controlled by a single vendor will =
+pick and choose the features they want, because they do not have to =
+operate with other implementations. =E2=80=9COpen=E2=80=9D 6lowpan =
+implementations will support every feature of 6lowpan.<br><br>Quilt =
+(what we have today): Different implementations and builds of those =
+implementations will pick and choose different sub-parts of the =
+specification, and will deterministically fail to exchange certain =
+packets. This is OK.<br><br>To me, none of these three endpoints is =
+desirable. <br><br>*Completion* ignores the reality of implementations =
+and the cost-benefit tradeoffs of embedded platforms. We can see, =
+experimentally, that many years after the relevant RFCs, neither =
+industrial nor research platforms implement the entire specification. =
+These not-overlapping subsets cause devices to not interoperate in some =
+cases. Code space is at a premium. One could argue that 6lowpan is only =
+intended for bigger microcontrollers, because eventually all of them =
+will have enough code memory, but I think this simultaneously excludes =
+huge applications areas from being connected to the Internet and ignores =
+what the price/resources tradeoffs are like in embedded =
+systems.<br><br>*Silos* ignores the points above for open =
+implementations that don=E2=80=99t belong in a silo. While it=E2=80=99s =
+clear that we want 6lowpan to be able to support these silos (and allow =
+their vendors/specification bodies to only use subsets of the features), =
+making it harder for open systems to interoperate for the benefit of =
+closed ones seems against some of the core tenets of the IETF. =
+Furthermore, this puts open implementations in a weird and uncompetitive =
+spot: they have to do more than siloed ones. Take, for example, the case =
+of UDP checksum elision, which Pascal brought up at 102. His argument =
+was that a vendor said that they would not use 6lowpan if they could not =
+elide the checksum. I can explain why this fundamentally breaks the =
+end-to-end argument (the original Saltzer and Reed, not RFC1958), but =
+that doesn=E2=80=99t matter[1]. The issue is that, in 6lowpan, this =
+feature is not an option or a MAY, it=E2=80=99s a MUST. <br><br>*Quilt* =
+is problematic in that it eschews responsibility for encouraging and =
+promoting interoperability. If the IETF doesn=E2=80=99t help define what =
+it means to have =E2=80=9Cworking code=E2=80=9D, then other groups will. =
+In the case of silos, this makes sense. But in the case of an open, =
+interoperability Internet of Things, I=E2=80=99d expect the IETF wants =
+to be the organization that guides and leads the effort.<br><br>Instead, =
+it seems like the correct endpoint is one in which implementations (as =
+they all do so today) can implement a subset of 6lowpan, but also detect =
+when they use a feature that another device does not support. A device =
+transmitting an unsupported packet does not have to do something in =
+response (it could just not interoperate), but it can do something and =
+try to interoperate.<br><br>Furthermore, &nbsp;having an ICMP error =
+doesn=E2=80=99t create a new implementation that will make existing =
+devices not interoperate. It=E2=80=99s something which devices that do =
+want to interoperate can use to do so more =
+easily.<br><br>Phil<br><br>[1] Suppose there is a bug in your networking =
+stack such that, when routing a packet, sometimes the UDP port is =
+incorrectly stored in host order rather than network order. A link layer =
+frame is received and passes link-layer integrity. The 6lowpan and UDP =
+headers are inspected, and the packet is scheduled to be forwarded. At =
+this point the UDP port is corrupted. This corrupted packet is then =
+passed to the link layer, at which point the MAC covers the corrupted =
+port.<br><br><br><br></div></div></div></body></html>=
+
+
+From nobody Fri Aug  3 21:56:28 2018
+Return-Path: <cabo@tzi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 72EEA130DFF for <6lo@ietfa.amsl.com>; Fri,  3 Aug 2018 21:56:27 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.2
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.2 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id dDqRZFI9JS5z for <6lo@ietfa.amsl.com>; Fri,  3 Aug 2018 21:56:25 -0700 (PDT)
+Received: from mailhost.informatik.uni-bremen.de (mailhost.informatik.uni-bremen.de [IPv6:2001:638:708:30c9::12]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id F3B0B1292AD for <6lo@ietf.org>; Fri,  3 Aug 2018 21:56:24 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at informatik.uni-bremen.de
+Received: from submithost.informatik.uni-bremen.de (submithost.informatik.uni-bremen.de [134.102.201.11]) by mailhost.informatik.uni-bremen.de (8.14.5/8.14.5) with ESMTP id w744uBwY024926; Sat, 4 Aug 2018 06:56:11 +0200 (CEST)
+Received: from [192.168.217.102] (p54A6C84F.dip0.t-ipconnect.de [84.166.200.79]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by submithost.informatik.uni-bremen.de (Postfix) with ESMTPSA id 41jBSq1J0VzDWMd; Sat,  4 Aug 2018 06:56:11 +0200 (CEST)
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0 (Mac OS X Mail 11.5 \(3445.9.1\))
+From: Carsten Bormann <cabo@tzi.org>
+In-Reply-To: <36AA238B-2716-42BC-B2EF-F440952856B2@cs.stanford.edu>
+Date: Sat, 4 Aug 2018 06:56:10 +0200
+Cc: Michael Richardson <mcr+ietf@sandelman.ca>, 6lo@ietf.org
+X-Mao-Original-Outgoing-Id: 555051367.065678-25ee69d0e37408556ff2ae15e3ecfbe1
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <52FD263C-14B5-4917-B9A3-CECE3E846DE3@tzi.org>
+References: <7437.1533163099@localhost> <8AC74B30-7B4B-4DFA-BB90-43E46A6C5D8F@tzi.org> <36AA238B-2716-42BC-B2EF-F440952856B2@cs.stanford.edu>
+To: Philip Levis <pal@cs.stanford.edu>
+X-Mailer: Apple Mail (2.3445.9.1)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/MWr8YM1I4HU2r--zT7xEsyd136A>
+Subject: Re: [6lo] adoption of draft-ayers-low-power-interop-00, and industrial specifications
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 04 Aug 2018 04:56:28 -0000
+
+Hi Philip,
+
+I think we have strong agreement that code space is at a premium.  =
+(There are lots of people who=E2=80=99d rather sell bigger micros than =
+enable the smaller ones, but the point of the whole constrained node =
+network activity is to expand the Internet to less capable platforms.)
+
+There are also limits in what realistically can be achieved; a proper =
+citizen of the Internet does need security, so some minimum capability =
+will be required.  Hence RFC 7228.
+
+Now how do we get there?  When implementing protocols, my experience is =
+that the most expensive =E2=80=9Cfeature=E2=80=9D is *having* =
+=E2=80=9Cfeatures=E2=80=9D, i.e., options that can be switched on and =
+off.  **It generally costs about the same to handle optionality as it =
+costs to make something mandatory**.  That=E2=80=99s why so many things =
+are mandatory in 6LoWPAN =E2=80=94 it is much easier to communicate if =
+you can simply rely on a common standard.  (We made some mistakes here, =
+such as leaving in the choice to send uncompressed =E2=80=94 fixed in =
+later 6lo protocols.  We also can argue whether RFC 6282 actually hits =
+the sweet spot between complexity and efficiency.  But the decision not =
+to break it up into a zillion of features [except for something =
+relatively expensive such as RFC 7400] was right.)
+
+Why didn=E2=80=99t the ecosystems generate pressure to actually =
+implement the standard?  We seem to have different perceptions.  I stand =
+by my observation that interoperability (except with themselves) =
+wasn=E2=80=99t really an objective in many of the efforts.   So parts =
+are left unimplemented.  As a WG, 6LoWPAN did little to initiate =
+remedies; e.g., we only ever had one interop event (Berlin 2013).  You =
+might say failing to promote interoperability some more was a failure of =
+the chairs, and I couldn=E2=80=99t really disagree.  But the ecosystem =
+that was breathing =E2=80=9Coptimize for grant proposal=E2=80=9D instead =
+of =E2=80=9Coptimize for interoperability=E2=80=9D was its own =
+challenge, too.
+
+Now how do we solve this?  Adding fine-grain optionality to all corners =
+of the protocol is not helping.  I think this is where we have very =
+different perception, and I would like to find out why you think it =
+does.
+
+I agree that improving diagnostic capabilities would also be useful, so =
+you can find out what is broken.  But we disagree on who should bear the =
+burden of dealing with brokenness: I don=E2=80=99t agree that =
+complicating everything else to deal with a broken implementation is the =
+right approach.  Keep things simple and fix the brokenness!
+
+Gr=C3=BC=C3=9Fe, Carsten
+
+
+From nobody Sat Aug  4 14:49:19 2018
+Return-Path: <hayers@stanford.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id A9D83130E04 for <6lo@ietfa.amsl.com>; Sat,  4 Aug 2018 14:49:17 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.6
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.6 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 19Laiai6fC80 for <6lo@ietfa.amsl.com>; Sat,  4 Aug 2018 14:49:14 -0700 (PDT)
+Received: from mx0b-00000d04.pphosted.com (mx0b-00000d04.pphosted.com [148.163.153.235]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 5BAFA130DF4 for <6lo@ietf.org>; Sat,  4 Aug 2018 14:49:14 -0700 (PDT)
+Received: from pps.filterd (m0102891.ppops.net [127.0.0.1]) by mx0a-00000d04.pphosted.com (8.16.0.22/8.16.0.22) with SMTP id w74LmrsA015523; Sat, 4 Aug 2018 14:49:13 -0700
+Received: from mx0b-00000d03.pphosted.com (mx0b-00000d03.pphosted.com [148.163.153.234]) by mx0a-00000d04.pphosted.com with ESMTP id 2kn93h152v-1 (version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT); Sat, 04 Aug 2018 14:49:12 -0700
+Received: from pps.filterd (m0102883.ppops.net [127.0.0.1]) by mx0a-00000d03.pphosted.com (8.16.0.22/8.16.0.22) with SMTP id w74Le6rF019067; Sat, 4 Aug 2018 14:49:11 -0700
+Received: from codegreen7.stanford.edu (codegreen7.stanford.edu [171.67.224.9]) by mx0a-00000d03.pphosted.com with ESMTP id 2knam5ccy9-1 (version=TLSv1 cipher=AES256-SHA bits=256 verify=NOT); Sat, 04 Aug 2018 14:49:11 -0700
+Received: from codegreen7.stanford.edu (localhost.localdomain [127.0.0.1]) by codegreen7.stanford.edu (Postfix) with ESMTP id 71BCA42; Sat,  4 Aug 2018 14:48:52 -0700 (PDT)
+Received: from NAM04-CO1-obe.outbound.protection.outlook.com (mail-co1nam04lp0047.outbound.protection.outlook.com [216.32.181.47]) by codegreen7.stanford.edu (Postfix) with ESMTP id 343E742; Sat,  4 Aug 2018 14:48:52 -0700 (PDT)
+Received: from CY1PR0201MB1931.namprd02.prod.outlook.com (10.163.56.29) by CY1PR0201MB0970.namprd02.prod.outlook.com (10.160.165.154) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.1017.15; Sat, 4 Aug 2018 21:49:08 +0000
+Received: from CY1PR0201MB1931.namprd02.prod.outlook.com ([fe80::b1a7:8e09:c1e3:6847]) by CY1PR0201MB1931.namprd02.prod.outlook.com ([fe80::b1a7:8e09:c1e3:6847%5]) with mapi id 15.20.1017.018; Sat, 4 Aug 2018 21:49:07 +0000
+From: Hudson Randal Ayers <hayers@stanford.edu>
+To: Carsten Bormann <cabo@tzi.org>, Philip Levis <pal@cs.stanford.edu>
+CC: Michael Richardson <mcr+ietf@sandelman.ca>, "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: [6lo] adoption of draft-ayers-low-power-interop-00, and industrial specifications
+Thread-Index: AQHUKehf6aVOa9+yJkWRIk5fJm+gaqSr+JyAgAKcPACAAHZDAIABGste
+Date: Sat, 4 Aug 2018 21:49:07 +0000
+Message-ID: <CY1PR0201MB193129303861B49803D8AD32A3220@CY1PR0201MB1931.namprd02.prod.outlook.com>
+References: <7437.1533163099@localhost> <8AC74B30-7B4B-4DFA-BB90-43E46A6C5D8F@tzi.org> <36AA238B-2716-42BC-B2EF-F440952856B2@cs.stanford.edu>, <52FD263C-14B5-4917-B9A3-CECE3E846DE3@tzi.org>
+In-Reply-To: <52FD263C-14B5-4917-B9A3-CECE3E846DE3@tzi.org>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [2601:647:4b00:99c9:8e1:6d74:4df5:c9cc]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1; CY1PR0201MB0970; 6:jyjxukqTic0EgGzuuqJp6zlho5J/eV9qzsYonJJr9CQFj3CDz5UwW4nxp9+drm868/fYyMCZPuBShVVcGpplhbyl8kQAeLu8mmYjLjIFBegLxtRiMMCPpVe6dxxH5/aWgHMnS4FEiQo0AXK0nXt+WMVVu108eWbT4Vuc4tVgE7d+hyvNaDXg2adeOKx4ugNrVCu5y+RxDI/aowUYVpD04AkjrYwNsJGtbAballJpgYE5MfHFm9ByuQDsVXif8/9oqaYtfH+KMvWHB61L71WPfj4wJME1FQeHAIAgWAo21oFRmxEATx86F5ghsgiKs6FWI26XHkB6dj/mAGOmlY2PLwGwQwx03NXH+stRLCy7t6Z9p34oVBqnyDGFL/4Rw3PZVFkfzYY4LKopusvYVrxAHloVmfzDmyr7QZRXVgov8K+jTLNv6++jq+bo1lLKjPTAbJSD8AgwjhbhSFiiXDOwtw==; 5:3fGe8JHgnwC5J+MhaUxu8ujDoDEGiZ8/L9syKxbCVjmmn222LWeCA/blIscnoa50QP8DzpUbpMCE/EAo6MstdDwkH4yREeQOusmDpxym3SqRJ4+Mu1dkj6KNzhgTi2TE1ep/lNicC1iWwwCbXIiGOITBvtDQTvCuXkJJKMNdLqI=; 7:3gtynLsg/hk6AhyL/VJQ8k8UvyJdjczxFte0cCQm9CAOmlb1e7Ac++ziCUIAs60ZvZZCuS0yOTLmttpy63vgSQGvyuloa3pd7Rqv3Op0mrBZ1qCXVncuN8g+Te0CiNtMDzV9tGeUSJD+ccMrb1cJ1L98NJTG4FILz/eJR3YuPo4vve/vGfkjHf/jrOxiJV1Qhfdw8heOfhoIZ3FgFA1Y8vAi7dQaRJB6cp251A+aiZPRDc9/bO4rccnACbqQ4OgA
+x-ms-exchange-antispam-srfa-diagnostics: SOS;
+x-ms-office365-filtering-correlation-id: 2b8adc94-1c95-4f63-80d3-08d5fa541ae9
+x-microsoft-antispam: BCL:0; PCL:0; RULEID:(7020095)(4652040)(8989117)(4534165)(4627221)(201703031133081)(201702281549075)(8990107)(5600074)(711020)(2017052603328)(7193020); SRVR:CY1PR0201MB0970; 
+x-ms-traffictypediagnostic: CY1PR0201MB0970:
+x-microsoft-antispam-prvs: <CY1PR0201MB0970F59BFF01FF898390284CA3220@CY1PR0201MB0970.namprd02.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:(192374486261705);
+x-ms-exchange-senderadcheck: 1
+x-exchange-antispam-report-cfa-test: BCL:0; PCL:0; RULEID:(8211001083)(6040522)(2401047)(8121501046)(5005006)(93006095)(93001095)(3231311)(11241501184)(944501410)(52105095)(3002001)(10201501046)(6055026)(149027)(150027)(6041310)(201703131423095)(201702281529075)(201702281528075)(20161123555045)(201703061421075)(201703061406153)(20161123560045)(20161123564045)(20161123562045)(20161123558120)(6072148)(201708071742011)(7699016); SRVR:CY1PR0201MB0970; BCL:0; PCL:0; RULEID:; SRVR:CY1PR0201MB0970; 
+x-forefront-prvs: 0754F7E325
+x-forefront-antispam-report: SFV:NSPM; SFS:(10019020)(136003)(346002)(396003)(39860400002)(376002)(366004)(85644002)(51444003)(189003)(199004)(76176011)(68736007)(7696005)(5660300001)(606006)(97736004)(6606003)(2906002)(25786009)(105586002)(6116002)(236005)(55016002)(6306002)(53936002)(9686003)(54896002)(14444005)(256004)(106356001)(86362001)(5250100002)(4326008)(99286004)(6506007)(53546011)(81156014)(8676002)(74316002)(446003)(476003)(11346002)(7736002)(486006)(81166006)(316002)(786003)(88552002)(93886005)(8936002)(102836004)(110136005)(6246003)(229853002)(186003)(6436002)(54906003)(2171002)(478600001)(14454004)(966005)(2900100001)(33656002)(46003)(19627405001)(75432002); DIR:OUT; SFP:1102; SCL:1; SRVR:CY1PR0201MB0970; H:CY1PR0201MB1931.namprd02.prod.outlook.com; FPR:; SPF:None; LANG:en; PTR:InfoNoRecords; MX:1; A:1; 
+received-spf: None (protection.outlook.com: stanford.edu does not designate permitted sender hosts)
+x-microsoft-antispam-message-info: ADIU0tpHW2s0AjatlSJGyrb+npSIS1+xdgEP55ixV5hBigOaDv5f5iIIZESwvefaEECS3+IcrapqOWQNk3lLyE+AKcYo+6si3D1uaxO3TP5JEQBFwV/Q0uSAGw5Hor0NROj3wHAuydN2l6ScYhUBFeSiRyCpbESmCytV7u1MQ9mHhqdxuPMBnCVtF1485WQ4pFMflPGHVCcsp5ihF+7gpnVn7tFjXXT4pKS+4lJHfgHJB/Vmb6+Xq06o2CEUs92HaPeVLorUNxtZ2HwRrthIWl0B+eIISWaMljLucqTzdIrQEPbD7D97RuDFRcjT2UJPfsVIDNeCaQxPlMY/9t29ZR31fLZH/cBEbYDqZ8lXNlY=
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative; boundary="_000_CY1PR0201MB193129303861B49803D8AD32A3220CY1PR0201MB1931_"
+MIME-Version: 1.0
+X-OriginatorOrg: stanford.edu
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2b8adc94-1c95-4f63-80d3-08d5fa541ae9
+X-MS-Exchange-CrossTenant-originalarrivaltime: 04 Aug 2018 21:49:07.7269 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 396573cb-f378-4b68-9bc8-15755c0c51f3
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY1PR0201MB0970
+x-proofpoint-stanford-dir: outbound
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:, , definitions=2018-08-04_12:, , signatures=0
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:, , definitions=2018-08-04_12:, , signatures=0
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 priorityscore=1501 malwarescore=0 suspectscore=0 phishscore=0 bulkscore=0 spamscore=0 clxscore=1011 lowpriorityscore=0 mlxscore=0 impostorscore=0 mlxlogscore=939 adultscore=100 classifier=spam adjust=0 reason=mlx scancount=1 engine=8.0.1-1807170000 definitions=main-1808040242
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/Zpw0pzYM9c34zdwXFk5PadjYhtQ>
+Subject: Re: [6lo] adoption of draft-ayers-low-power-interop-00, and industrial specifications
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 04 Aug 2018 21:49:18 -0000
+
+--_000_CY1PR0201MB193129303861B49803D8AD32A3220CY1PR0201MB1931_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Carsten,
+
+I am happy to hear we are in agreement that code space is at a premium.
+
+We are also in agreement that it is much easier to communicate if you can s=
+imply rely on a common standard -- however, I think that one of the key obs=
+ervations that I presented at IETF 102 is that the current state of the 6Lo=
+WPAN RFCs have not led to a common standard, and that while you claim to ha=
+ve chosen "not to break it up into a zillion features", the implementers of=
+ 6LoWPAN have effectively done so for you, by leaving out "MUST" requiremen=
+ts of the specification seemingly at random.
+
+I would argue that someone planning to implement 6LoWPAN today might look a=
+t existing implementations and decide that fine-grain optionality is exactl=
+y what exists today, regardless of the language included in the various RFC=
+s. The reason for proposing the interoperability classes included in draft-=
+ayers-low-power-interop is precisely to produce coarser-grained optionality=
+, such that if implementers do opt out of some of the many various "must" r=
+equirements in 6LoWPAN - as almost all implementations already seem to do -=
+ they at least do so in a manner defined by the spec, and do so in a manner=
+ that can be easily communicated.
+
+This brings us to your point that making options switchable is often more e=
+xpensive than simply making all of those options required. However, I belie=
+ve that the options, as presented in the draft, do  a good job of passing t=
+his cost up to the more resourceful devices, while still allowing very cons=
+trained nodes to implement the simplest classes without requiring that thes=
+e nodes have any knowledge regarding what higher-level classes exist. Any d=
+evice that receives a 6LoWPAN messgage which it cannot successfully parse s=
+imply responds with a single ICMP message. I find it hard to beleive this w=
+ould add substantial code size to any implementation. The more resourceful =
+device would be presented with the added cost of parsing this ICMP message,=
+ and reducing the amount of compression used to resend accordingly -- but t=
+his design which puts the cost on devices already known to have more code s=
+pace available (as these are the devices which could afford to implement ev=
+ery "MUST" requirement in each RFC) seems to me a sensible design.
+
+Finally, even if you are completely in disagreement with regards to the ide=
+a of having capability classes, I still fail to understand why you do not s=
+upport adding an ICMP message which any 6LoWPAN node can respond with when =
+it fails to parse a 6LoWPAN-compressed message. The code-space cost to hand=
+le sending a single such message in response to decompression failures is t=
+iny -- almost certainly less than a few hundred bytes of ROM -- and would s=
+ubstantially improve diagnostics and error-handling when determining failur=
+es in interoperating 6LoWPAN networks. The idea that deterministic, silent =
+interoperability failures are a totally acceptable reality in these network=
+s is extremely surprising to me, especially given that such an obvious and =
+inexpensive solution seems to exist.
+
+Best,
+
+Hudson Ayers
+
+
+________________________________
+From: 6lo <6lo-bounces@ietf.org> on behalf of Carsten Bormann <cabo@tzi.org=
+>
+Sent: Friday, August 3, 2018 9:56:10 PM
+To: Philip Levis
+Cc: Michael Richardson; 6lo@ietf.org
+Subject: Re: [6lo] adoption of draft-ayers-low-power-interop-00, and indust=
+rial specifications
+
+Hi Philip,
+
+I think we have strong agreement that code space is at a premium.  (There a=
+re lots of people who=92d rather sell bigger micros than enable the smaller=
+ ones, but the point of the whole constrained node network activity is to e=
+xpand the Internet to less capable platforms.)
+
+There are also limits in what realistically can be achieved; a proper citiz=
+en of the Internet does need security, so some minimum capability will be r=
+equired.  Hence RFC 7228.
+
+Now how do we get there?  When implementing protocols, my experience is tha=
+t the most expensive =93feature=94 is *having* =93features=94, i.e., option=
+s that can be switched on and off.  **It generally costs about the same to =
+handle optionality as it costs to make something mandatory**.  That=92s why=
+ so many things are mandatory in 6LoWPAN =97 it is much easier to communica=
+te if you can simply rely on a common standard.  (We made some mistakes her=
+e, such as leaving in the choice to send uncompressed =97 fixed in later 6l=
+o protocols.  We also can argue whether RFC 6282 actually hits the sweet sp=
+ot between complexity and efficiency.  But the decision not to break it up =
+into a zillion of features [except for something relatively expensive such =
+as RFC 7400] was right.)
+
+Why didn=92t the ecosystems generate pressure to actually implement the sta=
+ndard?  We seem to have different perceptions.  I stand by my observation t=
+hat interoperability (except with themselves) wasn=92t really an objective =
+in many of the efforts.   So parts are left unimplemented.  As a WG, 6LoWPA=
+N did little to initiate remedies; e.g., we only ever had one interop event=
+ (Berlin 2013).  You might say failing to promote interoperability some mor=
+e was a failure of the chairs, and I couldn=92t really disagree.  But the e=
+cosystem that was breathing =93optimize for grant proposal=94 instead of =
+=93optimize for interoperability=94 was its own challenge, too.
+
+Now how do we solve this?  Adding fine-grain optionality to all corners of =
+the protocol is not helping.  I think this is where we have very different =
+perception, and I would like to find out why you think it does.
+
+I agree that improving diagnostic capabilities would also be useful, so you=
+ can find out what is broken.  But we disagree on who should bear the burde=
+n of dealing with brokenness: I don=92t agree that complicating everything =
+else to deal with a broken implementation is the right approach.  Keep thin=
+gs simple and fix the brokenness!
+
+Gr=FC=DFe, Carsten
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org
+https://www.ietf.org/mailman/listinfo/6lo
+
+--_000_CY1PR0201MB193129303861B49803D8AD32A3220CY1PR0201MB1931_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margi=
+n-bottom:0;} --></style>
+</head>
+<body dir=3D"ltr">
+<div id=3D"divtagdefaultwrapper" style=3D"font-size:12pt;color:#000000;font=
+-family:Calibri,Helvetica,sans-serif;" dir=3D"ltr">
+<p style=3D"margin-top:0;margin-bottom:0"></p>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+Hi Carsten,</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+I am happy to hear we are in agreement that code space is at a premium.</di=
+v>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+We are also in agreement that it is much easier to communicate if you can s=
+imply rely on a common standard -- however, I think that one of the key obs=
+ervations that I presented at IETF 102 is that the current state of the 6Lo=
+WPAN RFCs have not led to a common
+ standard, and that while you claim to have chosen &quot;not to break it up=
+ into a zillion features&quot;, the implementers of 6LoWPAN have effectivel=
+y done so for you, by leaving out &quot;MUST&quot; requirements of the spec=
+ification seemingly at random.&nbsp;</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+I would argue that someone planning to implement 6LoWPAN today might look a=
+t existing implementations and decide that fine-grain optionality is exactl=
+y what exists today, regardless of the language included in the various RFC=
+s. The reason for proposing the
+ interoperability classes included in draft-ayers-low-power-interop is prec=
+isely to produce&nbsp;<i>coarser</i>-grained optionality, such that if impl=
+ementers do opt out of some of the many various&nbsp;<i>&quot;must&quot;&nb=
+sp;</i>requirements in 6LoWPAN -&nbsp;<i>as almost all implementations
+ already seem to do&nbsp;</i>-&nbsp;they at least do so in a manner defined=
+ by the spec, and do so in a manner that can be easily communicated.</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+This brings us to your point that making options&nbsp;switchable is often&n=
+bsp;more expensive than simply making all of those options required. Howeve=
+r, I believe that the options, as presented in the draft, do&nbsp; a good j=
+ob of passing this cost up to the more resourceful
+ devices, while still allowing very constrained nodes to implement the simp=
+lest classes without requiring that these nodes have any knowledge regardin=
+g what higher-level classes exist. Any device that receives a 6LoWPAN messg=
+age which it cannot successfully
+ parse simply responds with a single ICMP message. I find it&nbsp;hard to b=
+eleive this would add substantial code size to any implementation. The more=
+ resourceful device would be presented with the added cost of parsing this =
+ICMP message, and reducing the amount
+ of compression used to resend accordingly -- but this design which puts th=
+e cost on devices already known to have more code space available (as these=
+ are the devices which could afford to implement every &quot;MUST&quot; req=
+uirement in each RFC) seems to me a sensible
+ design.</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+Finally, even if you are completely in disagreement with regards to the ide=
+a of having capability classes, I still fail to understand why you do not s=
+upport adding an ICMP message which any 6LoWPAN node can respond with when =
+it fails to parse a 6LoWPAN-compressed
+ message. The code-space&nbsp;cost to handle&nbsp;sending a single such mes=
+sage in response to decompression failures is tiny -- almost certainly less=
+ than a few hundred bytes of ROM -- and would substantially improve diagnos=
+tics and error-handling&nbsp;when determining failures
+ in interoperating 6LoWPAN networks. The idea that deterministic,&nbsp;sile=
+nt interoperability failures are a totally acceptable reality in these netw=
+orks is extremely surprising to me, especially given that such an obvious a=
+nd inexpensive solution seems to exist.</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+Best,</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 16px;=
+ margin-top: 0px; margin-bottom: 0px;">
+Hudson Ayers</div>
+<br>
+<p></p>
+</div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> 6lo &lt;6lo-bounces@i=
+etf.org&gt; on behalf of Carsten Bormann &lt;cabo@tzi.org&gt;<br>
+<b>Sent:</b> Friday, August 3, 2018 9:56:10 PM<br>
+<b>To:</b> Philip Levis<br>
+<b>Cc:</b> Michael Richardson; 6lo@ietf.org<br>
+<b>Subject:</b> Re: [6lo] adoption of draft-ayers-low-power-interop-00, and=
+ industrial specifications</font>
+<div>&nbsp;</div>
+</div>
+<div class=3D"BodyFragment"><font size=3D"2"><span style=3D"font-size:11pt;=
+">
+<div class=3D"PlainText">Hi Philip,<br>
+<br>
+I think we have strong agreement that code space is at a premium.&nbsp; (Th=
+ere are lots of people who=92d rather sell bigger micros than enable the sm=
+aller ones, but the point of the whole constrained node network activity is=
+ to expand the Internet to less capable
+ platforms.)<br>
+<br>
+There are also limits in what realistically can be achieved; a proper citiz=
+en of the Internet does need security, so some minimum capability will be r=
+equired.&nbsp; Hence RFC 7228.<br>
+<br>
+Now how do we get there?&nbsp; When implementing protocols, my experience i=
+s that the most expensive =93feature=94 is *having* =93features=94, i.e., o=
+ptions that can be switched on and off.&nbsp; **It generally costs about th=
+e same to handle optionality as it costs to make something
+ mandatory**.&nbsp; That=92s why so many things are mandatory in 6LoWPAN =
+=97 it is much easier to communicate if you can simply rely on a common sta=
+ndard.&nbsp; (We made some mistakes here, such as leaving in the choice to =
+send uncompressed =97 fixed in later 6lo protocols.&nbsp;
+ We also can argue whether RFC 6282 actually hits the sweet spot between co=
+mplexity and efficiency.&nbsp; But the decision not to break it up into a z=
+illion of features [except for something relatively expensive such as RFC 7=
+400] was right.)<br>
+<br>
+Why didn=92t the ecosystems generate pressure to actually implement the sta=
+ndard?&nbsp; We seem to have different perceptions.&nbsp; I stand by my obs=
+ervation that interoperability (except with themselves) wasn=92t really an =
+objective in many of the efforts.&nbsp;&nbsp; So parts are
+ left unimplemented.&nbsp; As a WG, 6LoWPAN did little to initiate remedies=
+; e.g., we only ever had one interop event (Berlin 2013).&nbsp; You might s=
+ay failing to promote interoperability some more was a failure of the chair=
+s, and I couldn=92t really disagree.&nbsp; But the
+ ecosystem that was breathing =93optimize for grant proposal=94 instead of =
+=93optimize for interoperability=94 was its own challenge, too.<br>
+<br>
+Now how do we solve this?&nbsp; Adding fine-grain optionality to all corner=
+s of the protocol is not helping.&nbsp; I think this is where we have very =
+different perception, and I would like to find out why you think it does.<b=
+r>
+<br>
+I agree that improving diagnostic capabilities would also be useful, so you=
+ can find out what is broken.&nbsp; But we disagree on who should bear the =
+burden of dealing with brokenness: I don=92t agree that complicating everyt=
+hing else to deal with a broken implementation
+ is the right approach.&nbsp; Keep things simple and fix the brokenness!<br=
+>
+<br>
+Gr=FC=DFe, Carsten<br>
+<br>
+_______________________________________________<br>
+6lo mailing list<br>
+6lo@ietf.org<br>
+<a href=3D"https://www.ietf.org/mailman/listinfo/6lo">https://www.ietf.org/=
+mailman/listinfo/6lo</a><br>
+</div>
+</span></font></div>
+</body>
+</html>
+
+--_000_CY1PR0201MB193129303861B49803D8AD32A3220CY1PR0201MB1931_--
+
+
+From nobody Sun Aug  5 13:18:12 2018
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id EE7CC130DC5 for <6lo@ietfa.amsl.com>; Sun,  5 Aug 2018 13:18:10 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -0.873
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.873 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, HTTP_ESCAPED_HOST=1.125, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=no autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id QUfreVXuWyPs for <6lo@ietfa.amsl.com>; Sun,  5 Aug 2018 13:18:07 -0700 (PDT)
+Received: from mail-lf1-x132.google.com (mail-lf1-x132.google.com [IPv6:2a00:1450:4864:20::132]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 670CC129385 for <6lo@ietf.org>; Sun,  5 Aug 2018 13:18:06 -0700 (PDT)
+Received: by mail-lf1-x132.google.com with SMTP id u14-v6so7594973lfu.0 for <6lo@ietf.org>; Sun, 05 Aug 2018 13:18:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:references:in-reply-to:from:date:message-id:subject:to :cc; bh=7Tz04kZ0tqXGDbp5p37h8SYWLQ0L3DFv4N2G6BH69ME=; b=G4NcVlNx1gRoN3mSZ+ufYDD08GF7p3/3JWaQOSZNh8cvdFHpL0Krm6XH6dHC9SLb3n vaPXqwuPzG4hPJk0p0MfyT/jwF5J6v9L3ONLsrud0fnhGexCu7WL6+qpozUWlFrJIVl0 DVJqL/bsRJheEHCQD1HEiNeITfsRnHD01LsrZ6hqLSdZsCPIdY+22/G5bpwNb49/GYyo MUdue+uaPISDENy7tQUjlc+MZEfYIxP3Nt+tKr5RbdDP8l/UaUtWAkQ4BetXwBxeRQsl QvygP7eLylRt9y3quppXaTOFjUwmEkPuVUESf4iP1KN1qQRgSmmx4Wy6NmBqgRZwD8a/ cekA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:references:in-reply-to:from:date :message-id:subject:to:cc; bh=7Tz04kZ0tqXGDbp5p37h8SYWLQ0L3DFv4N2G6BH69ME=; b=HctEwios1H3IBJYnOR9ylpRxIVHBeOfw0n5WLa0x1SiOhgYUibyq/Ean+AoVN4AbFh AI9P68YOU2m72gsvguPSut2SOMrSX0swJHEP3PSYxgw+0/vxdKXm3SZzoB9FKvzSxFRd nsv7Q8dguDOz6kneIEE40/M1FMou42809xRw27NFkmALAoyzlznoKXDeOHHkMuDIljDT vdw9Ha7v5rhXaKNbkFaL6ANd3ztTp9/OcFLfw8CN3ff9SFR75cUMyQ21cqVB5W2Y+GIX LhdGAKSgR4ZpUtfZV2u9BWaYlgy7EQB0z84zpEOwh6FqdducjYenlApXO2I/JXWdBKTp 3T2A==
+X-Gm-Message-State: AOUpUlFNlfNQdU+vY0D5FwuJMuYlThl8MAwL6S9yUsbsT5PiN0kSqW6C ddutRnG92EO+67usdQ94FI6Dgm8+gmoS4e2nEko=
+X-Google-Smtp-Source: AAOMgpdezqIlpvy6viZfYjMdVVJSEC+PwR4bcQrXchuoxxjsNxp8Tek4j8wdM4MLFDku5elUzwWqmYdFNV40znbAvZ4=
+X-Received: by 2002:a19:dd81:: with SMTP id w1-v6mr9297191lfi.114.1533500284401;  Sun, 05 Aug 2018 13:18:04 -0700 (PDT)
+MIME-Version: 1.0
+References: <149282565.382.1533431178670.JavaMail.open-xchange@webmail.cdac.in>
+In-Reply-To: <149282565.382.1533431178670.JavaMail.open-xchange@webmail.cdac.in>
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+Date: Sun, 5 Aug 2018 13:18:03 -0700
+Message-ID: <CAKmdBpcVg7p-ddfSxFKCXPzfUOKm-7MwbaTB6K+hqDz_wEHXBg@mail.gmail.com>
+To: Lijo Thomas <lijo@cdac.in>
+Cc: samita.chakrabarti@verizon.com, lo <6lo@ietf.org>,  georgios.papadopoulos@imt-atlantique.fr,  "S.V.R.Anand" <anand@ece.iisc.ernet.in>, Malati Hegde <malati@ece.iisc.ernet.in>,  Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>,  Charlie Perkins <charles.perkins@earthlink.net>,  satish anamalamudi <satishnaidu80@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000b6fba00572b5dbc9"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/377uouqLSiS_lLzMIV0r2TRgnq0>
+Subject: Re: [6lo] FW: [E] Re: working group last call (wg lc) on https://datatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sun, 05 Aug 2018 20:18:11 -0000
+
+--000000000000b6fba00572b5dbc9
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Lijo,
+
+Thanks for your response and clarifications. Will wait for your new
+revision of the draft.
+Please see in-line.
+
+On Sat, Aug 4, 2018 at 6:07 PM Lijo Thomas <lijo@cdac.in> wrote:
+
+>
+> Hi Samita,
+>
+> Thanks for your valuable comments. Please find our replies  (***[LT]  ) i=
+nline to your queries (below mail).
+>
+> Happy to receive your further inputs.
+>
+> Thanks & Regards
+> Lijo Thomas
+>
+>
+> Posting again=E2=80=A6
+>
+> From: Chakrabarti, Samita
+> Sent: Tuesday, July 31, 2018 6:32 PM
+> To: 'Lijo Thomas' <lijo@cdac.in> <lijo@cdac.in&gt>;; 'Georgios Z. Papadop=
+oulos' <georgios.papadopoulos@imt-atlantique.fr> <georgios.papadopoulos@imt=
+-atlantique.fr&gt>;
+> Cc: draft-ietf-6lo-deadline-time@ietf.org; anand@ece.iisc.ernet.in; 'Mala=
+ti Hegde' <malati@ece.iisc.ernet.in> <malati@ece.iisc.ernet.in&gt>;; 'Samit=
+a Chakrabarti' <samitac.ietf@gmail.com> <samitac.ietf@gmail.com&gt>;; 'Gabr=
+iel Montenegro' <Gabriel.Montenegro@microsoft.com> <Gabriel.Montenegro@micr=
+osoft.com&gt>;; 'lo' <6lo@ietf.org> <6lo@ietf.org&gt>;; 'Charlie Perkins' <=
+charles.perkins@earthlink.net> <charles.perkins@earthlink.net&gt>;; satishn=
+aidu80@gmail.com
+> Subject: RE: [E] Re: [6lo] working group last call (wg lc) on https://dat=
+atracker.ietf.org/doc/draft-ietf-6lo-deadline-time/Hi Lijo and co-authors:
+>
+> Here are some more comments on the 6lo-deadline draft:
+>
+>
+> 1.       The abstract of this document says :
+>    =E2=80=9CThe deadline time enables forwarding and scheduling decisions=
+ for time critical
+>    IoT M2M applications that need deterministic delay guarantees over
+>    constrained networks and operate within time-synchronized networks.=E2=
+=80=9D
+>
+> However, the document body seems to indicate that the solution works for =
+6tisch networks.
+> Could this document clarify  where this scenario be applicable?  Only 6ti=
+sch or any other Low-power networks with multiple hops?
+> 6loRH is a requirement here =E2=80=93 so please clarify a typical deploym=
+ent network where this solution will work [ for example, a Low power networ=
+k running RPL with 6loRH support on 6lo nodes that create the mesh networks=
+.]
+>
+> ***[LT] : The scope of the draft is generic so that it can be used in any
+> time synchronized 6Lo network, not restricted to 6TiSCH alone. 6TiSCH has
+> been used to describe the implementation aspects of the draft as it is
+> indeed an instantiation of such a time synchronized 6lo network.
+>
+>  The draft does not preclude its use in scenarios other than 6TiSCH - for
+> instance, 6lo over a BLE mesh network, where there is a growing interest =
+in
+> using this technology in industrial IoT. From the academic research side,=
+ a
+> recent publication titled "Multi-Hop Real-Time Communications Over
+> Bluetooth Low Energy Industrial Wireless Mesh Networks" (
+> https://ieeexplore.ieee.org/abstract/document/8355905/) indicates the
+> interest in this topic. BLE mesh time synchronization is also being
+> recently explored by the community. We can also consider using the
+> time-zone procedures described to meet packet deadlines.
+>
+>  Given the above use cases, 6lo for BLE and in particular BLE mesh are
+> potential customers of our draft.  But there are other cases under
+> consideration in, for instance, Wi-SUN.
+>
+
+Samita>  OK please clarify the scope in the abstract and introduction
+sections.
+
+>
+> 2.       Section 3 =E2=80=93 Drop this section and refer to RFC8138 secti=
+on 4.1
+> ***[LT] :  We will remove it.
+>
+>
+> 3.       Always provide Normative reference to 6rLoRHE as 6LoRHE[RFC8138]=
+ when you refer to it
+>
+> ***[LT] :  Yes we agree, will do in the next revision.
+>
+>
+> 4.       Section 4 : the calculation is not clear to me as to how it rela=
+tes the new network clock difference (delta) and the delay in the previous =
+network ( at the entry point of the new network). Please draw a time line d=
+iagram and explain  each point what this value is for and how the delay exp=
+erienced is calculated.  If your reference time for first network is T1, an=
+d the second network clock is T1+d  and the dealy in T1 is D1, then at T1+D=
+1 time, when the packet enters the 2nd network, it will read T1+D1+d1 as th=
+e 2nd network entry time or origination time in 2nd network. Second network=
+ may add some delay in processing the packet. So, I am not clear what is th=
+e purpose of this section. Please clarify.
+> ***[LT] : Great suggestion, we will try to put a graph and probably an ex=
+ample to provide more clarity.
+>
+> Thanks!
+
+>
+> 5.       Section 6.2 refers to ietf-ippm-ioam-data =E2=80=93 does it have=
+ dependency on this draft? What if the border router does not support the i=
+ppm draft?  Not sure if I understand the assumption that =E2=80=9CIt encode=
+s the deadline time (and, if available, the origination time) into the In-b=
+and OAM header extension and passes the datagram to the IPv6 layer for furt=
+her routing=E2=80=A6=E2=80=9D   Please clarify or drop this scenario.
+>
+> ***[LT] :Our draft is not depending on the ioam draft, we will try to rem=
+ove the dependency and state the packets forwarding in the IPv6 network is =
+beyond the scope of our draft.
+>
+>
+>
+>  Will the below new text be okay, after removing the ippm dependency?
+>
+>
+>
+>  "Once the DT information reaches the border router, the packet will be
+> encoded as per the mechanism prescribed in the new time synchronized
+> network. The specific data encapsulation mechanisms followed in this
+> network is beyond the scope of this document.
+>
+> For instance, the mechanisms specified in the In-band OAM header extensio=
+n,
+> [I-D.ietf-ippm-ioam-data] could be used."
+>
+>
+>
+Samita>  You can keep the last line as an example and let us wait for AD
+recommendation. The rest of the paragraph is ok w/me.
+
+6.       Section 6.3 again refers to ietf-roll-useofrplinfo draft =E2=80=93=
+ is
+this a dependency?  Can you show a simple scenario where there is no
+dependency on active draft on another WG?
+>
+> ***[LT] : We will remove this dependency, and our draft will be applicabl=
+e to any network that follows 6lo;
+> thanks for pointing this out.
+>
+>
+> Thanks,
+> -Samita
+>
+>
+>
+>
+>
+>
+> From: 6lo [mailto:6lo-bounces@ietf.org] On Behalf Of Lijo Thomas
+> Sent: Tuesday, July 24, 2018 5:05 AM
+> To: 'Georgios Z. Papadopoulos' <georgios.papadopoulos@imt-atlantique.fr<m=
+ailto:georgios.papadopoulos@imt-atlantique.fr>>
+> Cc: draft-ietf-6lo-deadline-time@ietf.org<mailto:draft-ietf-6lo-deadline-=
+time@ietf.org>; anand@ece.iisc.ernet.in<mailto:anand@ece.iisc.ernet.in>; 'M=
+alati Hegde' <malati@ece.iisc.ernet.in<mailto:malati@ece.iisc.ernet.in>>; '=
+Samita Chakrabarti' <samitac.ietf@gmail.com<mailto:samitac.ietf@gmail.com>>=
+; 'Gabriel Montenegro' <Gabriel.Montenegro@microsoft.com<mailto:Gabriel.Mon=
+tenegro@microsoft.com>>; 'lo' <6lo@ietf.org<mailto:6lo@ietf.org>>; 'Charlie=
+ Perkins' <charles.perkins@earthlink.net<mailto:charles.perkins@earthlink.n=
+et>>; satishnaidu80@gmail.com<mailto:satishnaidu80@gmail.com>
+> Subject: [E] Re: [6lo] working group last call (wg lc) on https://datatra=
+cker.ietf.org/doc/draft-ietf-6lo-deadline-time/
+>
+> Dear Georgios,
+>
+> Thanks for the feedback, responding to your query :
+>
+> Deadline Time (DT) by itself does not guarantee deterministic behaviour, =
+but its information enables intermediate nodes to implement delay sensitive=
+ scheduling and routing algorithms towards achieving deterministic behaviou=
+r.
+>
+> As a use case application of our draft,  we implemented a basic EDF polic=
+y in OpenWSN 6tisch stack.
+>
+> Please find the link for our openwsn implementation
+> https://github.com/openwsn-berkeley/openwsn-fw/tree/develop/openapps/uexp=
+iration<https://urldefense.proofpoint.com/v2/url?u=3Dhttps-3A__github.com_o=
+penwsn-2Dberkeley_openwsn-2Dfw_tree_develop_openapps_uexpiration&d=3DDwMFaQ=
+&c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&r=3DpWMzx7FsqijEJPyfMBfn-H=
+Jss-wVVTf0K5y-cxCTXL8&m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJoyPY&s=3Dn=
+QLGDo_AziW1rJsCvm6vG_oKYbP2VwaFiQPYA9NnaR4&e=3D>
+>
+>
+> Thanks & Regards,
+> Lijo Thomas
+>
+> From: 6lo [mailto:6lo-bounces@ietf.org] On Behalf Of Georgios Z. Papadopo=
+ulos
+> Sent: 24 July 2018 13:49
+> To: Lijo Thomas
+> Cc: draft-ietf-6lo-deadline-time@ietf.org<mailto:draft-ietf-6lo-deadline-=
+time@ietf.org>; anand@ece.iisc.ernet.in<mailto:anand@ece.iisc.ernet.in>; Ma=
+lati Hegde; Samita Chakrabarti; Gabriel Montenegro; lo; Charlie Perkins; sa=
+tishnaidu80@gmail.com<mailto:satishnaidu80@gmail.com>
+> Subject: Re: [6lo] working group last call (wg lc) on https://datatracker=
+.ietf.org/doc/draft-ietf-6lo-deadline-time/<https://urldefense.proofpoint.c=
+om/v2/url?u=3Dhttps-3A__datatracker.ietf.org_doc_draft-2Dietf-2D6lo-2Ddeadl=
+ine-2Dtime_&d=3DDwQFaQ&c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&r=3D=
+pWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K5y-cxCTXL8&m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2=
+lwaz89_SQAfJoyPY&s=3D5HI37bAJ2WXeO55wDC3VhtutrxRLoXJ_sn64hp3EF3M&e=3D>
+>
+> Hello Lijo,
+>
+> Thank you so much for your detailed comments. I appreciate it very much.
+> I am happy with your response, I just have one last clarification point, =
+see below:
+>
+>
+> On Jul 24, 2018, at 09:38, Lijo Thomas <lijo@cdac.in<mailto:lijo@cdac.in>=
+> wrote:
+>
+> Dear Georgios,
+>
+> Thanks for your valuable suggestions and we really appreciate for taking =
+your valuable time for the review .
+>
+> Please find our comments inline below marked as (*** [LT])
+>
+> We will be happy to receive your further inputs !!!
+>
+>
+> Thanks & Regards,
+> Lijo Thomas
+>
+> From: 6lo [mailto:6lo-bounces@ietf.org] On Behalf Of Georgios Z. Papadopo=
+ulos
+> Sent: 17 July 2018 21:40
+> To: lijo@cdac.in<mailto:lijo@cdac.in>
+> Cc: draft-ietf-6lo-deadline-time@ietf.org<mailto:draft-ietf-6lo-deadline-=
+time@ietf.org>; anand@ece.iisc.ernet.in<mailto:anand@ece.iisc.ernet.in>; Ma=
+lati Hegde; Samita Chakrabarti; Gabriel Montenegro; lo; Charlie Perkins; sa=
+tishnaidu80@gmail.com<mailto:satishnaidu80@gmail.com>
+> Subject: Re: [6lo] working group last call (wg lc) on https://datatracker=
+.ietf.org/doc/draft-ietf-6lo-deadline-time/<https://urldefense.proofpoint.c=
+om/v2/url?u=3Dhttps-3A__datatracker.ietf.org_doc_draft-2Dietf-2D6lo-2Ddeadl=
+ine-2Dtime_&d=3DDwMFaQ&c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&r=3D=
+pWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K5y-cxCTXL8&m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2=
+lwaz89_SQAfJoyPY&s=3D5HI37bAJ2WXeO55wDC3VhtutrxRLoXJ_sn64hp3EF3M&e=3D>
+>
+> Dear Lijo and co-authors,
+>
+> I went through the draft, please find my comments below:
+> =E2=80=94 =E2=80=94
+>
+> High level comments:
+> */ [GP] The draft defines the Deadline Time (DT), but it is not clear to =
+me how the arrival of the datagram within this pre-defined DT period is gua=
+ranteed?
+> Indeed, the draft provides the necessary DT information, however, the onl=
+y action I could observe is the delay-sensitive datagram to be dropped if t=
+he indicated DT is elapsed.
+>
+>
+> *** [LT] Yes, the Deadline Time (DT) specifies the maximum allowable dela=
+y
+> before which the packet should be delivered to the destination. The propo=
+sed
+> draft provides a mechanism for transporting the DT information. By incorp=
+orating
+> deadline based scheduling/routing mechanisms within the intermediate node=
+s
+> using DT, one could guarantee deterministic behavior in terms of delay.
+>
+>
+> [GP] Would you agree that this draft do not guarantees deterministic beha=
+vior in terms of delay, but it provides
+> the information of maximum allowable delay for a packet to be delivered t=
+o the destination?
+>
+> To be more precise, for instance, lets us consider the following multi-ho=
+p network A=E2=80=94> B =E2=80=94> C.
+> According this draft, it will required 2 timeslots (or 20ms) for a packet=
+ to be delivered at the DODAG Root C.
+> However, if there is an external interference from A to B, then A may nee=
+d to retransmit multiple times
+> in order the datagram to be received by B. Then there are two options acc=
+ording to the draft:
+> a) the datagram is dropped, to reduce the traffic, energy consumption.
+> b) the datagram is delivered even if the deadline time is crossed, i.e., =
+as you said in your e-mail =E2=80=9Cin some scenarios where the intention i=
+s also to know the total delay experienced by the packets in a network=E2=
+=80=9D
+>
+> In both bases, a and b, there is no guarantee that the datagram will be d=
+elivered in predefined time, i.e., in deterministic behavior.
+>
+> =E2=80=94 =E2=80=94
+> Thank you so much,
+> Georgios
+>
+> ____________________________________
+>
+> Georgios Z. Papadopoulos, Ph.D.
+> Associate Professor, IMT Atlantique, Rennes
+>
+> web:     *MailScanner has detected a possible fraud attempt from "www.geo=
+rgiospapadopoulos.com* www.georgiospapadopoulos.com<https://urldefense.proo=
+fpoint.com/v2/url?u=3Dhttp-3A__www.georgiospapadopoulos.com&d=3DDwMFaQ&c=3D=
+udBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&r=3DpWMzx7FsqijEJPyfMBfn-HJss-w=
+VVTf0K5y-cxCTXL8&m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJoyPY&s=3D_1Xvis=
+_IS2XJLj901j7We2qqeGomCqtC6KCdIizcBsQ&e=3D> <http://www.georgiospapadopoulo=
+s.com%3Chttps//urldefense.proofpoint.com/v2/url?u=3Dhttp-3A__www.georgiospa=
+padopoulos.com&d=3DDwMFaQ&c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&r=
+=3DpWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K5y-cxCTXL8&m=3D7e5GkJIcbIxuUVNca7qMqtU6=
+Wk2lwaz89_SQAfJoyPY&s=3D_1Xvis_IS2XJLj901j7We2qqeGomCqtC6KCdIizcBsQ&e=3D%3E=
+>
+> twitter:            @gzpapadopoulos<https://urldefense.proofpoint.com/v2/=
+url?u=3Dhttps-3A__twitter.com_gzpapadopoulos-3Fref-5Fsrc-3Dtwsrc-255Etfw-26=
+ref-5Furl-3Dhttp-3A__georgiospapadopoulos.com_&d=3DDwMFaQ&c=3DudBTRvFvXC5Dh=
+qg7UHpJlPps3mZ3LRxpb6__0PomBTQ&r=3DpWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K5y-cxCT=
+XL8&m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJoyPY&s=3Djpu1BQDn6eUhHwMQ_kX=
+4LwHwL_qtu9wlDc-YwyqE6Ig&e=3D>
+> ____________________________________
+>
+>
+>
+>
+> -------------------------------------------------------------------------=
+------------------------------------------------------
+> [ C-DAC is on Social-Media too. Kindly follow us at:
+> Facebook: https://www.facebook.com/CDACINDIA<https://urldefense.proofpoin=
+t.com/v2/url?u=3Dhttps-3A__www.facebook.com_CDACINDIA&d=3DDwQFaQ&c=3DudBTRv=
+FvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&r=3DpWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K=
+5y-cxCTXL8&m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJoyPY&s=3DqAVDzBnrxBMh=
+4W5vZkkX3lGHT3D8czZnJSW7Z5t93R4&e=3D> & Twitter: @cdacindia ]
+>
+> This e-mail is for the sole use of the intended recipient(s) and may
+> contain confidential and privileged information. If you are not the
+> intended recipient, please contact the sender by reply e-mail and destroy
+> all copies and the original message. Any unauthorized review, use,
+> disclosure, dissemination, forwarding, printing or copying of this email
+> is strictly prohibited and appropriate legal action will be taken.
+> -------------------------------------------------------------------------=
+------------------------------------------------------
+>
+>
+> -------------------------------------------------------------------------=
+------------------------------------------------------
+>
+> [ C-DAC is on Social-Media too. Kindly follow us at:
+> Facebook: https://www.facebook.com/CDACINDIA & Twitter: @cdacindia ]
+>
+> This e-mail is for the sole use of the intended recipient(s) and may
+> contain confidential and privileged information. If you are not the
+> intended recipient, please contact the sender by reply e-mail and destroy
+> all copies and the original message. Any unauthorized review, use,
+> disclosure, dissemination, forwarding, printing or copying of this email
+> is strictly prohibited and appropriate legal action will be taken.
+> -------------------------------------------------------------------------=
+------------------------------------------------------
+>
+>
+
+--000000000000b6fba00572b5dbc9
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Lijo,<div><br></div><div>Thanks for your response and c=
+larifications. Will wait for your new revision of the draft.</div><div>Plea=
+se see in-line.</div><br><div class=3D"gmail_quote"><div dir=3D"ltr">On Sat=
+, Aug 4, 2018 at 6:07 PM Lijo Thomas &lt;<a href=3D"mailto:lijo@cdac.in">li=
+jo@cdac.in</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=
+=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><u></u>
+   =20
+ <div>
+=20
+=20
+  <pre class=3D"m_4021533594517778209wordwrap"><br><span style=3D"font-size=
+:12pt;font-family:&#39;book antiqua&#39;,palatino;color:#000080">Hi Samita,=
+<br><br>Thanks for your valuable comments. Please find our replies  (***[LT=
+] =C2=A0) inline to your queries (below mail).</span><br><br><span style=3D=
+"font-size:12pt;font-family:&#39;book antiqua&#39;,palatino;color:#000080">=
+Happy to receive your further inputs.<br></span><br><span style=3D"font-siz=
+e:12pt;font-family:&#39;book antiqua&#39;,palatino;color:#000080">Thanks &a=
+mp; Regards</span><br><span style=3D"font-size:12pt;font-family:&#39;book a=
+ntiqua&#39;,palatino;color:#000080">Lijo Thomas</span><br><br><br><span sty=
+le=3D"font-size:12pt">Posting again=E2=80=A6
+
+From: Chakrabarti, Samita
+Sent: Tuesday, July 31, 2018 6:32 PM
+To: &#39;Lijo Thomas&#39; &lt;<a href=3D"mailto:lijo@cdac.in&amp;gt" target=
+=3D"_blank">lijo@cdac.in&gt;</a>;; &#39;Georgios Z. Papadopoulos&#39; &lt;<=
+a href=3D"mailto:georgios.papadopoulos@imt-atlantique.fr&amp;gt" target=3D"=
+_blank">georgios.papadopoulos@imt-atlantique.fr&gt;</a>;
+Cc: <a href=3D"mailto:draft-ietf-6lo-deadline-time@ietf.org" target=3D"_bla=
+nk">draft-ietf-6lo-deadline-time@ietf.org</a>; <a href=3D"mailto:anand@ece.=
+iisc.ernet.in" target=3D"_blank">anand@ece.iisc.ernet.in</a>; &#39;Malati H=
+egde&#39; &lt;<a href=3D"mailto:malati@ece.iisc.ernet.in&amp;gt" target=3D"=
+_blank">malati@ece.iisc.ernet.in&gt;</a>;; &#39;Samita Chakrabarti&#39; &lt=
+;<a href=3D"mailto:samitac.ietf@gmail.com&amp;gt" target=3D"_blank">samitac=
+.ietf@gmail.com&gt;</a>;; &#39;Gabriel Montenegro&#39; &lt;<a href=3D"mailt=
+o:Gabriel.Montenegro@microsoft.com&amp;gt" target=3D"_blank">Gabriel.Monten=
+egro@microsoft.com&gt;</a>;; &#39;lo&#39; &lt;<a href=3D"mailto:6lo@ietf.or=
+g&amp;gt" target=3D"_blank">6lo@ietf.org&gt;</a>;; &#39;Charlie Perkins&#39=
+; &lt;<a href=3D"mailto:charles.perkins@earthlink.net&amp;gt" target=3D"_bl=
+ank">charles.perkins@earthlink.net&gt;</a>;; <a href=3D"mailto:satishnaidu8=
+0@gmail.com" target=3D"_blank">satishnaidu80@gmail.com</a>
+Subject: RE: [E] Re: [6lo] working group last call (wg lc) on <a href=3D"ht=
+tps://datatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/" target=3D"_bl=
+ank">https://datatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/</a>Hi L=
+ijo and co-authors:
+
+Here are some more comments on the 6lo-deadline draft:
+
+
+1.       The abstract of this document says :
+   =E2=80=9CThe deadline time enables forwarding and scheduling decisions f=
+or time critical
+   IoT M2M applications that need deterministic delay guarantees over
+   constrained networks and operate within time-synchronized networks.=E2=
+=80=9D
+
+However, the document body seems to indicate that the solution works for 6t=
+isch networks.
+Could this document clarify  where this scenario be applicable?  Only 6tisc=
+h or any other Low-power networks with multiple hops?
+6loRH is a requirement here =E2=80=93 so please clarify a typical deploymen=
+t network where this solution will work [ for example, a Low power network =
+running RPL with 6loRH support on 6lo nodes that create the mesh networks.]=
+</span></pre>=20
+  <p><span style=3D"font-size:12pt;color:#0000ff;font-family:&#39;book anti=
+qua&#39;,palatino">***[LT] : The scope of the draft is generic so that it c=
+an be used in any time synchronized 6Lo network, not restricted to 6TiSCH a=
+lone. 6TiSCH has been used to describe the implementation aspects of the dr=
+aft as it is indeed an instantiation of such a time synchronized 6lo networ=
+k.</span></p>=20
+  <p><span style=3D"font-family:&#39;book antiqua&#39;,palatino"><span styl=
+e=3D"font-size:12pt;color:#0000ff">=C2=A0</span><span style=3D"color:#0000f=
+f;font-size:12pt">The draft does not preclude its use in scenarios other th=
+an 6TiSCH - for instance, 6lo over a BLE mesh network, where there is a gro=
+wing interest in using this technology in industrial IoT. From the academic=
+ research side, a recent publication titled &quot;Multi-Hop Real-Time Commu=
+nications Over Bluetooth Low Energy Industrial Wireless Mesh Networks&quot;=
+ (</span><a href=3D"https://ieeexplore.ieee.org/abstract/document/8355905/"=
+ target=3D"_blank"><span style=3D"color:#0000ff">https://ieeexplore.ieee.or=
+g/abstract/document/8355905/</span></a><span style=3D"color:#0000ff;font-si=
+ze:12pt">) indicates the interest in this topic. BLE mesh time synchronizat=
+ion is also being recently explored by the community. We can also consider =
+using the time-zone procedures described to meet packet deadlines.</span></=
+span></p>=20
+  <p><span style=3D"font-family:&#39;book antiqua&#39;,palatino"><span styl=
+e=3D"font-size:12pt;color:#0000ff">=C2=A0</span><span style=3D"color:#0000f=
+f;font-size:12pt">Given the above use cases, 6lo for BLE and in particular =
+BLE mesh are potential customers of our draft.=C2=A0 But there are other ca=
+ses under consideration in, for instance, Wi-SUN.</span></span></p></div></=
+blockquote><div><br></div><div>Samita&gt;=C2=A0 OK please clarify the scope=
+ in the abstract and introduction sections.=C2=A0</div><blockquote class=3D=
+"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding=
+-left:1ex"><div>=20
+  <pre class=3D"m_4021533594517778209wordwrap"><span style=3D"font-size:12p=
+t">
+2.       Section 3 =E2=80=93 Drop this section and refer to RFC8138 section=
+ 4.1<br><span style=3D"color:#0000ff;font-family:&#39;book antiqua&#39;,pal=
+atino">***[LT] :=C2=A0 We will remove it.</span></span></pre>=20
+  <pre class=3D"m_4021533594517778209wordwrap"><span style=3D"font-size:12p=
+t">
+3.       Always provide Normative reference to 6rLoRHE as 6LoRHE[RFC8138] w=
+hen you refer to it<br></span></pre>=20
+  <p><span style=3D"font-size:12pt;color:#0000ff;font-family:&#39;book anti=
+qua&#39;,palatino">***[LT] :=C2=A0=C2=A0Yes we agree, will do in the next r=
+evision.</span></p>=20
+  <pre class=3D"m_4021533594517778209wordwrap"><span style=3D"font-size:12p=
+t">
+4.       Section 4 : the calculation is not clear to me as to how it relate=
+s the new network clock difference (delta) and the delay in the previous ne=
+twork ( at the entry point of the new network). Please draw a time line dia=
+gram and explain  each point what this value is for and how the delay exper=
+ienced is calculated.  If your reference time for first network is T1, and =
+the second network clock is T1+d  and the dealy in T1 is D1, then at T1+D1 =
+time, when the packet enters the 2nd network, it will read T1+D1+d1 as the =
+2nd network entry time or origination time in 2nd network. Second network m=
+ay add some delay in processing the packet. So, I am not clear what is the =
+purpose of this section. Please clarify.
+<br><span style=3D"color:#0000ff;font-family:&#39;book antiqua&#39;,palatin=
+o">***[LT] :=C2=A0Great suggestion, we will try to put a graph and probably=
+ an example to provide more clarity.</span></span></pre></div></blockquote>=
+<div>Thanks!=C2=A0</div><blockquote class=3D"gmail_quote" style=3D"margin:0=
+ 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div><pre class=3D"m=
+_4021533594517778209wordwrap"><span style=3D"font-size:12pt">
+<br>5.       Section 6.2 refers to ietf-ippm-ioam-data =E2=80=93 does it ha=
+ve dependency on this draft? What if the border router does not support the=
+ ippm draft?  Not sure if I understand the assumption that =E2=80=9CIt enco=
+des the deadline time (and, if available, the origination time) into the In=
+-band OAM header extension and passes the datagram to the IPv6 layer for fu=
+rther routing=E2=80=A6=E2=80=9D   Please clarify or drop this scenario.
+<br></span></pre>=20
+  <pre class=3D"m_4021533594517778209wordwrap"><span style=3D"font-size:12p=
+t;color:#0000ff;font-family:&#39;book antiqua&#39;,palatino">***[LT] :Our d=
+raft is not depending on the ioam draft, we will try to remove the dependen=
+cy and state the packets forwarding in the IPv6 network is beyond the scope=
+ of our draft.</span></pre>=20
+  <pre class=3D"m_4021533594517778209wordwrap">=C2=A0</pre>=20
+  <p><span style=3D"font-size:12pt;color:#0000ff;font-family:&#39;book anti=
+qua&#39;,palatino">=C2=A0</span><span style=3D"color:#0000ff;font-family:&#=
+39;book antiqua&#39;,palatino;font-size:12pt">Will the below new text be ok=
+ay, after removing the ippm dependency?</span></p>=20
+  <pre class=3D"m_4021533594517778209wordwrap">=C2=A0</pre>=20
+  <p><span style=3D"font-size:12pt;color:#0000ff;font-family:&#39;book anti=
+qua&#39;,palatino">=C2=A0</span><span style=3D"color:#0000ff;font-size:12pt=
+;font-family:&#39;book antiqua&#39;,palatino">&quot;Once the DT information=
+ reaches the border router, the packet will be encoded as per the mechanism=
+ prescribed in the new time synchronized network. The specific data encapsu=
+lation mechanisms followed in this network is beyond the scope of this docu=
+ment.</span><span style=3D"color:#0000ff;font-size:12pt">=C2=A0</span></p>=
+=20
+  <p><span style=3D"font-family:&#39;book antiqua&#39;,palatino"><span styl=
+e=3D"font-size:12pt;color:#0000ff"> For instance, the mechanisms specified =
+in the In-band OAM header=C2=A0</span><span style=3D"color:#0000ff;font-siz=
+e:12pt">extension, [I-D.ietf-ippm-ioam-data] could be used.&quot;</span></s=
+pan></p>=20
+  <p><span style=3D"color:#0000ff;font-size:12pt">=C2=A0</span></p></div></=
+blockquote><div>Samita&gt;=C2=A0 You can keep the last line as an example a=
+nd let us wait for AD recommendation. The rest of the paragraph is ok w/me.=
+</div><div><br></div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 =
+0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div>=20
+  <pre class=3D"m_4021533594517778209wordwrap"><span style=3D"font-size:12p=
+t">6.       Section 6.3 again refers to ietf-roll-useofrplinfo draft =E2=80=
+=93 is this a dependency?  Can you show a simple scenario where there is no=
+ dependency on active draft on another WG?</span></pre>=20
+  <pre class=3D"m_4021533594517778209wordwrap"><span style=3D"color:#0000ff=
+;font-size:12pt;font-family:&#39;book antiqua&#39;,palatino">***[LT] : We w=
+ill remove this dependency, and our draft will be applicable to any network=
+ that follows 6lo; <br>thanks for pointing this out.</span></pre>=20
+  <pre class=3D"m_4021533594517778209wordwrap"><span style=3D"font-size:12p=
+t;color:#0000ff"><span style=3D"color:#000000">
+Thanks,
+-Samita</span>
+
+
+
+
+
+
+From: 6lo [mailto:<a href=3D"mailto:6lo-bounces@ietf.org" target=3D"_blank"=
+>6lo-bounces@ietf.org</a>] On Behalf Of Lijo Thomas
+Sent: Tuesday, July 24, 2018 5:05 AM
+To: &#39;Georgios Z. Papadopoulos&#39; &lt;<a href=3D"mailto:georgios.papad=
+opoulos@imt-atlantique.fr" target=3D"_blank">georgios.papadopoulos@imt-atla=
+ntique.fr</a>&lt;mailto:<a href=3D"mailto:georgios.papadopoulos@imt-atlanti=
+que.fr" target=3D"_blank">georgios.papadopoulos@imt-atlantique.fr</a>&gt;&g=
+t;
+Cc: <a href=3D"mailto:draft-ietf-6lo-deadline-time@ietf.org" target=3D"_bla=
+nk">draft-ietf-6lo-deadline-time@ietf.org</a>&lt;mailto:<a href=3D"mailto:d=
+raft-ietf-6lo-deadline-time@ietf.org" target=3D"_blank">draft-ietf-6lo-dead=
+line-time@ietf.org</a>&gt;; <a href=3D"mailto:anand@ece.iisc.ernet.in" targ=
+et=3D"_blank">anand@ece.iisc.ernet.in</a>&lt;mailto:<a href=3D"mailto:anand=
+@ece.iisc.ernet.in" target=3D"_blank">anand@ece.iisc.ernet.in</a>&gt;; &#39=
+;Malati Hegde&#39; &lt;<a href=3D"mailto:malati@ece.iisc.ernet.in" target=
+=3D"_blank">malati@ece.iisc.ernet.in</a>&lt;mailto:<a href=3D"mailto:malati=
+@ece.iisc.ernet.in" target=3D"_blank">malati@ece.iisc.ernet.in</a>&gt;&gt;;=
+ &#39;Samita Chakrabarti&#39; &lt;<a href=3D"mailto:samitac.ietf@gmail.com"=
+ target=3D"_blank">samitac.ietf@gmail.com</a>&lt;mailto:<a href=3D"mailto:s=
+amitac.ietf@gmail.com" target=3D"_blank">samitac.ietf@gmail.com</a>&gt;&gt;=
+; &#39;Gabriel Montenegro&#39; &lt;<a href=3D"mailto:Gabriel.Montenegro@mic=
+rosoft.com" target=3D"_blank">Gabriel.Montenegro@microsoft.com</a>&lt;mailt=
+o:<a href=3D"mailto:Gabriel.Montenegro@microsoft.com" target=3D"_blank">Gab=
+riel.Montenegro@microsoft.com</a>&gt;&gt;; &#39;lo&#39; &lt;<a href=3D"mail=
+to:6lo@ietf.org" target=3D"_blank">6lo@ietf.org</a>&lt;mailto:<a href=3D"ma=
+ilto:6lo@ietf.org" target=3D"_blank">6lo@ietf.org</a>&gt;&gt;; &#39;Charlie=
+ Perkins&#39; &lt;<a href=3D"mailto:charles.perkins@earthlink.net" target=
+=3D"_blank">charles.perkins@earthlink.net</a>&lt;mailto:<a href=3D"mailto:c=
+harles.perkins@earthlink.net" target=3D"_blank">charles.perkins@earthlink.n=
+et</a>&gt;&gt;; <a href=3D"mailto:satishnaidu80@gmail.com" target=3D"_blank=
+">satishnaidu80@gmail.com</a>&lt;mailto:<a href=3D"mailto:satishnaidu80@gma=
+il.com" target=3D"_blank">satishnaidu80@gmail.com</a>&gt;
+Subject: [E] Re: [6lo] working group last call (wg lc) on <a href=3D"https:=
+//datatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/" target=3D"_blank"=
+><span style=3D"color:#0000ff">https://datatracker.ietf.org/doc/draft-ietf-=
+6lo-deadline-time/</span></a>
+
+Dear Georgios,
+
+Thanks for the feedback, responding to your query :
+
+Deadline Time (DT) by itself does not guarantee deterministic behaviour, bu=
+t its information enables intermediate nodes to implement delay sensitive s=
+cheduling and routing algorithms towards achieving deterministic behaviour.
+
+As a use case application of our draft,  we implemented a basic EDF policy =
+in OpenWSN 6tisch stack.
+
+Please find the link for our openwsn implementation
+
+<a href=3D"https://github.com/openwsn-berkeley/openwsn-fw/tree/develop/open=
+apps/uexpiration%3Chttps://urldefense.proofpoint.com/v2/url?u=3Dhttps-3A__g=
+ithub.com_openwsn-2Dberkeley_openwsn-2Dfw_tree_develop_openapps_uexpiration=
+&amp;d=3DDwMFaQ&amp;c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&amp;r=
+=3DpWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K5y-cxCTXL8&amp;m=3D7e5GkJIcbIxuUVNca7qM=
+qtU6Wk2lwaz89_SQAfJoyPY&amp;s=3DnQLGDo_AziW1rJsCvm6vG_oKYbP2VwaFiQPYA9NnaR4=
+&amp;e=3D%3E" target=3D"_blank"><span style=3D"color:#0000ff">https://githu=
+b.com/openwsn-berkeley/openwsn-fw/tree/develop/openapps/uexpiration&lt;http=
+s://urldefense.proofpoint.com/v2/url?u=3Dhttps-3A__github.com_openwsn-2Dber=
+keley_openwsn-2Dfw_tree_develop_openapps_uexpiration&amp;d=3DDwMFaQ&amp;c=
+=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&amp;r=3DpWMzx7FsqijEJPyfMBfn=
+-HJss-wVVTf0K5y-cxCTXL8&amp;m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJoyPY=
+&amp;s=3DnQLGDo_AziW1rJsCvm6vG_oKYbP2VwaFiQPYA9NnaR4&amp;e=3D&gt;</span></a=
+>
+
+
+Thanks &amp; Regards,
+Lijo Thomas
+
+From: 6lo [mailto:<a href=3D"mailto:6lo-bounces@ietf.org" target=3D"_blank"=
+>6lo-bounces@ietf.org</a>] On Behalf Of Georgios Z. Papadopoulos
+Sent: 24 July 2018 13:49
+To: Lijo Thomas
+Cc: <a href=3D"mailto:draft-ietf-6lo-deadline-time@ietf.org" target=3D"_bla=
+nk">draft-ietf-6lo-deadline-time@ietf.org</a>&lt;mailto:<a href=3D"mailto:d=
+raft-ietf-6lo-deadline-time@ietf.org" target=3D"_blank">draft-ietf-6lo-dead=
+line-time@ietf.org</a>&gt;; <a href=3D"mailto:anand@ece.iisc.ernet.in" targ=
+et=3D"_blank">anand@ece.iisc.ernet.in</a>&lt;mailto:<a href=3D"mailto:anand=
+@ece.iisc.ernet.in" target=3D"_blank">anand@ece.iisc.ernet.in</a>&gt;; Mala=
+ti Hegde; Samita Chakrabarti; Gabriel Montenegro; lo; Charlie Perkins; <a h=
+ref=3D"mailto:satishnaidu80@gmail.com" target=3D"_blank">satishnaidu80@gmai=
+l.com</a>&lt;mailto:<a href=3D"mailto:satishnaidu80@gmail.com" target=3D"_b=
+lank">satishnaidu80@gmail.com</a>&gt;
+Subject: Re: [6lo] working group last call (wg lc) on <a href=3D"https://da=
+tatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/%3Chttps://urldefense.p=
+roofpoint.com/v2/url?u=3Dhttps-3A__datatracker.ietf.org_doc_draft-2Dietf-2D=
+6lo-2Ddeadline-2Dtime_&amp;d=3DDwQFaQ&amp;c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3L=
+Rxpb6__0PomBTQ&amp;r=3DpWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K5y-cxCTXL8&amp;m=3D=
+7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJoyPY&amp;s=3D5HI37bAJ2WXeO55wDC3Vhtu=
+trxRLoXJ_sn64hp3EF3M&amp;e=3D%3E" target=3D"_blank"><span style=3D"color:#0=
+000ff">https://datatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/&lt;ht=
+tps://urldefense.proofpoint.com/v2/url?u=3Dhttps-3A__datatracker.ietf.org_d=
+oc_draft-2Dietf-2D6lo-2Ddeadline-2Dtime_&amp;d=3DDwQFaQ&amp;c=3DudBTRvFvXC5=
+Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&amp;r=3DpWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K5=
+y-cxCTXL8&amp;m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJoyPY&amp;s=3D5HI37=
+bAJ2WXeO55wDC3VhtutrxRLoXJ_sn64hp3EF3M&amp;e=3D&gt;</span></a>
+
+Hello Lijo,
+
+Thank you so much for your detailed comments. I appreciate it very much.
+I am happy with your response, I just have one last clarification point, se=
+e below:
+
+
+On Jul 24, 2018, at 09:38, Lijo Thomas &lt;<a href=3D"mailto:lijo@cdac.in" =
+target=3D"_blank">lijo@cdac.in</a>&lt;mailto:<a href=3D"mailto:lijo@cdac.in=
+" target=3D"_blank">lijo@cdac.in</a>&gt;&gt; wrote:
+
+Dear Georgios,
+
+Thanks for your valuable suggestions and we really appreciate for taking yo=
+ur valuable time for the review .
+
+Please find our comments inline below marked as (*** [LT])
+
+We will be happy to receive your further inputs !!!
+
+
+Thanks &amp; Regards,
+Lijo Thomas
+
+From: 6lo [mailto:<a href=3D"mailto:6lo-bounces@ietf.org" target=3D"_blank"=
+>6lo-bounces@ietf.org</a>] On Behalf Of Georgios Z. Papadopoulos
+Sent: 17 July 2018 21:40
+To: <a href=3D"mailto:lijo@cdac.in" target=3D"_blank">lijo@cdac.in</a>&lt;m=
+ailto:<a href=3D"mailto:lijo@cdac.in" target=3D"_blank">lijo@cdac.in</a>&gt=
+;
+Cc: <a href=3D"mailto:draft-ietf-6lo-deadline-time@ietf.org" target=3D"_bla=
+nk">draft-ietf-6lo-deadline-time@ietf.org</a>&lt;mailto:<a href=3D"mailto:d=
+raft-ietf-6lo-deadline-time@ietf.org" target=3D"_blank">draft-ietf-6lo-dead=
+line-time@ietf.org</a>&gt;; <a href=3D"mailto:anand@ece.iisc.ernet.in" targ=
+et=3D"_blank">anand@ece.iisc.ernet.in</a>&lt;mailto:<a href=3D"mailto:anand=
+@ece.iisc.ernet.in" target=3D"_blank">anand@ece.iisc.ernet.in</a>&gt;; Mala=
+ti Hegde; Samita Chakrabarti; Gabriel Montenegro; lo; Charlie Perkins; <a h=
+ref=3D"mailto:satishnaidu80@gmail.com" target=3D"_blank">satishnaidu80@gmai=
+l.com</a>&lt;mailto:<a href=3D"mailto:satishnaidu80@gmail.com" target=3D"_b=
+lank">satishnaidu80@gmail.com</a>&gt;
+Subject: Re: [6lo] working group last call (wg lc) on <a href=3D"https://da=
+tatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/%3Chttps://urldefense.p=
+roofpoint.com/v2/url?u=3Dhttps-3A__datatracker.ietf.org_doc_draft-2Dietf-2D=
+6lo-2Ddeadline-2Dtime_&amp;d=3DDwMFaQ&amp;c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3L=
+Rxpb6__0PomBTQ&amp;r=3DpWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K5y-cxCTXL8&amp;m=3D=
+7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJoyPY&amp;s=3D5HI37bAJ2WXeO55wDC3Vhtu=
+trxRLoXJ_sn64hp3EF3M&amp;e=3D%3E" target=3D"_blank"><span style=3D"color:#0=
+000ff">https://datatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/&lt;ht=
+tps://urldefense.proofpoint.com/v2/url?u=3Dhttps-3A__datatracker.ietf.org_d=
+oc_draft-2Dietf-2D6lo-2Ddeadline-2Dtime_&amp;d=3DDwMFaQ&amp;c=3DudBTRvFvXC5=
+Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&amp;r=3DpWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K5=
+y-cxCTXL8&amp;m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJoyPY&amp;s=3D5HI37=
+bAJ2WXeO55wDC3VhtutrxRLoXJ_sn64hp3EF3M&amp;e=3D&gt;</span></a>
+
+Dear Lijo and co-authors,
+
+I went through the draft, please find my comments below:
+=E2=80=94 =E2=80=94
+
+High level comments:
+*/ [GP] The draft defines the Deadline Time (DT), but it is not clear to me=
+ how the arrival of the datagram within this pre-defined DT period is guara=
+nteed?
+Indeed, the draft provides the necessary DT information, however, the only =
+action I could observe is the delay-sensitive datagram to be dropped if the=
+ indicated DT is elapsed.
+
+
+*** [LT] Yes, the Deadline Time (DT) specifies the maximum allowable delay
+before which the packet should be delivered to the destination. The propose=
+d
+draft provides a mechanism for transporting the DT information. By incorpor=
+ating
+deadline based scheduling/routing mechanisms within the intermediate nodes
+using DT, one could guarantee deterministic behavior in terms of delay.
+
+
+[GP] Would you agree that this draft do not guarantees deterministic behavi=
+or in terms of delay, but it provides
+the information of maximum allowable delay for a packet to be delivered to =
+the destination?
+
+To be more precise, for instance, lets us consider the following multi-hop =
+network A=E2=80=94&gt; B =E2=80=94&gt; C.
+According this draft, it will required 2 timeslots (or 20ms) for a packet t=
+o be delivered at the DODAG Root C.
+However, if there is an external interference from A to B, then A may need =
+to retransmit multiple times
+in order the datagram to be received by B. Then there are two options accor=
+ding to the draft:
+a) the datagram is dropped, to reduce the traffic, energy consumption.
+b) the datagram is delivered even if the deadline time is crossed, i.e., as=
+ you said in your e-mail =E2=80=9Cin some scenarios where the intention is =
+also to know the total delay experienced by the packets in a network=E2=80=
+=9D
+
+In both bases, a and b, there is no guarantee that the datagram will be del=
+ivered in predefined time, i.e., in deterministic behavior.
+
+=E2=80=94 =E2=80=94
+Thank you so much,
+Georgios
+
+____________________________________
+
+Georgios Z. Papadopoulos, Ph.D.
+Associate Professor, IMT Atlantique, Rennes
+
+web:     <a href=3D"http://www.georgiospapadopoulos.com%3Chttps//urldefense=
+.proofpoint.com/v2/url?u=3Dhttp-3A__www.georgiospapadopoulos.com&amp;d=3DDw=
+MFaQ&amp;c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&amp;r=3DpWMzx7Fsqi=
+jEJPyfMBfn-HJss-wVVTf0K5y-cxCTXL8&amp;m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89=
+_SQAfJoyPY&amp;s=3D_1Xvis_IS2XJLj901j7We2qqeGomCqtC6KCdIizcBsQ&amp;e=3D%3E"=
+ target=3D"_blank"><font color=3D"red"><b>MailScanner has detected a possib=
+le fraud attempt from &quot;www.georgiospapadopoulos.com<u></u></b></font> =
+<span style=3D"color:#0000ff">www.georgiospapadopoulos.com&lt;https://urlde=
+fense.proofpoint.com/v2/url?u=3Dhttp-3A__www.georgiospapadopoulos.com&amp;d=
+=3DDwMFaQ&amp;c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&amp;r=3DpWMzx=
+7FsqijEJPyfMBfn-HJss-wVVTf0K5y-cxCTXL8&amp;m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2l=
+waz89_SQAfJoyPY&amp;s=3D_1Xvis_IS2XJLj901j7We2qqeGomCqtC6KCdIizcBsQ&amp;e=
+=3D&gt;</span></a>
+twitter:            @gzpapadopoulos&lt;<a href=3D"https://urldefense.proofp=
+oint.com/v2/url?u=3Dhttps-3A__twitter.com_gzpapadopoulos-3Fref-5Fsrc-3Dtwsr=
+c-255Etfw-26ref-5Furl-3Dhttp-3A__georgiospapadopoulos.com_&amp;d=3DDwMFaQ&a=
+mp;c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&amp;r=3DpWMzx7FsqijEJPyf=
+MBfn-HJss-wVVTf0K5y-cxCTXL8&amp;m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJ=
+oyPY&amp;s=3Djpu1BQDn6eUhHwMQ_kX4LwHwL_qtu9wlDc-YwyqE6Ig&amp;e=3D" target=
+=3D"_blank">https://urldefense.proofpoint.com/v2/url?u=3Dhttps-3A__twitter.=
+com_gzpapadopoulos-3Fref-5Fsrc-3Dtwsrc-255Etfw-26ref-5Furl-3Dhttp-3A__georg=
+iospapadopoulos.com_&amp;d=3DDwMFaQ&amp;c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRx=
+pb6__0PomBTQ&amp;r=3DpWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K5y-cxCTXL8&amp;m=3D7e=
+5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJoyPY&amp;s=3Djpu1BQDn6eUhHwMQ_kX4LwHwL=
+_qtu9wlDc-YwyqE6Ig&amp;e=3D</a>&gt;
+____________________________________
+
+
+
+
+---------------------------------------------------------------------------=
+----------------------------------------------------
+[ C-DAC is on Social-Media too. Kindly follow us at:
+Facebook: <a href=3D"https://www.facebook.com/CDACINDIA%3Chttps://urldefens=
+e.proofpoint.com/v2/url?u=3Dhttps-3A__www.facebook.com_CDACINDIA&amp;d=3DDw=
+QFaQ&amp;c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb6__0PomBTQ&amp;r=3DpWMzx7Fsqi=
+jEJPyfMBfn-HJss-wVVTf0K5y-cxCTXL8&amp;m=3D7e5GkJIcbIxuUVNca7qMqtU6Wk2lwaz89=
+_SQAfJoyPY&amp;s=3DqAVDzBnrxBMh4W5vZkkX3lGHT3D8czZnJSW7Z5t93R4&amp;e=3D%3E"=
+ target=3D"_blank"><span style=3D"color:#0000ff">https://www.facebook.com/C=
+DACINDIA&lt;https://urldefense.proofpoint.com/v2/url?u=3Dhttps-3A__www.face=
+book.com_CDACINDIA&amp;d=3DDwQFaQ&amp;c=3DudBTRvFvXC5Dhqg7UHpJlPps3mZ3LRxpb=
+6__0PomBTQ&amp;r=3DpWMzx7FsqijEJPyfMBfn-HJss-wVVTf0K5y-cxCTXL8&amp;m=3D7e5G=
+kJIcbIxuUVNca7qMqtU6Wk2lwaz89_SQAfJoyPY&amp;s=3DqAVDzBnrxBMh4W5vZkkX3lGHT3D=
+8czZnJSW7Z5t93R4&amp;e=3D&gt;</span></a> &amp; Twitter: @cdacindia ]
+
+This e-mail is for the sole use of the intended recipient(s) and may
+contain confidential and privileged information. If you are not the
+intended recipient, please contact the sender by reply e-mail and destroy
+all copies and the original message. Any unauthorized review, use,
+disclosure, dissemination, forwarding, printing or copying of this email
+is strictly prohibited and appropriate legal action will be taken.
+---------------------------------------------------------------------------=
+----------------------------------------------------<br></span></pre>
+=20
+<br>-----------------------------------------------------------------------=
+--------------------------------------------------------
+<br>[ C-DAC is on Social-Media too. Kindly follow us at:=20
+<br>Facebook: <a href=3D"https://www.facebook.com/CDACINDIA" target=3D"_bla=
+nk">https://www.facebook.com/CDACINDIA</a> &amp; Twitter: @cdacindia ]
+<br>
+<br>This e-mail is for the sole use of the intended recipient(s) and may
+<br>contain confidential and privileged information. If you are not the
+<br>intended recipient, please contact the sender by reply e-mail and destr=
+oy
+<br>all copies and the original message. Any unauthorized review, use,
+<br>disclosure, dissemination, forwarding, printing or copying of this emai=
+l
+<br>is strictly prohibited and appropriate legal action will be taken.
+<br>-----------------------------------------------------------------------=
+--------------------------------------------------------
+</div>
+</blockquote></div></div>
+
+--000000000000b6fba00572b5dbc9--
+
+
+From nobody Tue Aug  7 22:00:16 2018
+Return-Path: <monet.publicity@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id D7C3C130DD9 for <6lo@ietfa.amsl.com>; Tue,  7 Aug 2018 22:00:12 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2
+X-Spam-Level: 
+X-Spam-Status: No, score=-2 tagged_above=-999 required=5 tests=[BAYES_00=-1.9,  DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001] autolearn=unavailable autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id k-G7pwkWV2EL for <6lo@ietfa.amsl.com>; Tue,  7 Aug 2018 22:00:11 -0700 (PDT)
+Received: from mail-wm0-x242.google.com (mail-wm0-x242.google.com [IPv6:2a00:1450:400c:c09::242]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id AC1A4130DE4 for <6lo@ietf.org>; Tue,  7 Aug 2018 22:00:10 -0700 (PDT)
+Received: by mail-wm0-x242.google.com with SMTP id o11-v6so1295644wmh.2 for <6lo@ietf.org>; Tue, 07 Aug 2018 22:00:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=date:from:to:subject:message-id:user-agent:mime-version :content-transfer-encoding; bh=IOG6OCnTtO74q1GJywcmJQC7mRPNG9gq/SQztoo/Stw=; b=d+bKgzL8iUEHwYi1TaOi3M07OFxrOoVWhaLISE81OxH/wcXrMLCYZtvKaOdhicbf/0 Zg/txbcHBa4eVSjDhyN/IOhdh89QAp7DgURsAGWQYabvwgAYIlRk6K8VTLAcRTcgObFg ooNFDeRRECOd8HBcub4oCLUI5hyEsClaM99vzisHe0mpISiWRUON0l9SeXtsTXJa0OPd Kn+ywr0UrybGbDwDg6Rmrnyc0CdUFYnCPWnmHdzf0W1P51DlRmpOUwd5I7pC88LLTIjv DPh1vgs5LbqIYR450RlGPtT32jtZFm5CiN4lfh5RZxG09+nqTffJn6XSZHGgv3volREg YIeQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:date:from:to:subject:message-id:user-agent :mime-version:content-transfer-encoding; bh=IOG6OCnTtO74q1GJywcmJQC7mRPNG9gq/SQztoo/Stw=; b=RogSbq+z45rukXiuLEwNsNXiZRBB3YKRZM/mCAA6fCsfzgjN0uULRWQWpsDbPtrDsA SLkw+spLdnjEYpQ7FJvls19vRkxzYg9lT/T4DjA1xV0KYPvKgoZCOZ6HIMhWHZs5KgvX tNl1nzOqBSAmXvg57Ta1uJ4jkYqRiddIVKDmjVlBYZgMLHAsoG0RndQHdQqmUEbyZG9V AURuTzrbt14+OyiPCnAWIB04HRxFgihN5p0DteG4d8QVdFEoPVzXbAtPQBckcfkGU2yI qGaOCkzMtVrTyZ0aGQ+vEHlh6QAzssK0vdn8+gkepBCy75Sh6za0tLuHNLcS/ehzweN6 h/Gw==
+X-Gm-Message-State: AOUpUlEJEAxVqsWFMLS2yeYSXRCB7VZ4/dNMO7K7nBjje3SAk9+vi9ui Bt/esk5cB7k52RNEFRBpU4gr/AZR
+X-Google-Smtp-Source: AA+uWPwP25UJKv4ndXB+fCIwRdldJnTbbkW2WzMJA6uaXkjyA8DlYIGbgGyAa1PpbTsNCE1mIdKRLw==
+X-Received: by 2002:a1c:8414:: with SMTP id g20-v6mr815533wmd.90.1533704408951;  Tue, 07 Aug 2018 22:00:08 -0700 (PDT)
+Received: from publicity (host2-74-static.188-82-b.business.telecomitalia.it. [82.188.74.2]) by smtp.gmail.com with ESMTPSA id p14-v6sm4634964wru.0.2018.08.07.22.00.07 for <6lo@ietf.org> (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Tue, 07 Aug 2018 22:00:08 -0700 (PDT)
+Date: Wed, 08 Aug 2018 07:00:02 +0200
+From: Antonino Masaracchia <monet.publicity@gmail.com>
+To: 6lo@ietf.org
+Message-ID: <20180808050002.utuupHSMG%monet.publicity@gmail.com>
+User-Agent: s-nail v14.8.6
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/qCxdTbGuJnQ4ZNd6-wqonW8294E>
+Subject: [6lo] [ EXTENDED DEADLINE ] Qshine 2018 - 14th EAI International Conference on Heterogeneous Networking for Quality, Reliability, Security and Robustness
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 08 Aug 2018 05:00:13 -0000
+
+[Please accept our apologies if you receive multiple copies of this email]
+
+
+CALL FOR PAPERS
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Qshine 2018 - 14th EAI International Conference on=20
+Heterogeneous Networking for Quality, Reliability,=20
+Security and Robustness
+
+December 3-4, 2018
+Ho Chi Minh City, Vietnam
+
+Submission Deadline [ EXTENDED ]: 31st August, 2018
+http://qshine.org
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+*** About EAI ***
+This event is organized by EAI. EAI =E2=80=93 European Alliance for Innovat=
+ion is a non-profit organization and a professional community established i=
+n cooperation with the European Commission to empower the global research a=
+nd innovation, and to promote cooperation between European and Internationa=
+l ICT communities. EAI=E2=80=99s vision is to foster excellence in research=
+ and innovation on the principles of transparency, objectivity, equality, a=
+nd openness. Our guiding principle is community cooperation to create bette=
+r research, provide fair recognition of excellence and transform best ideas=
+ into commercial value proposition. EAI=E2=80=98s mission is to create an e=
+nvironment that rewards excellence transparently, and builds recognition ob=
+jectively regardless of age, economic status or country of origin, where no=
+ membership fees or closed door committees stand in the way of your researc=
+h career. Through these shared values, EAI leads the way toward advancing t=
+he world of research and innovation, empowering individuals and institution=
+s for the good of society to fully benefit from the digital revolution.
+
+*** Scope ***
+Computer networking has been embracing increased heterogeneity since its in=
+ception, in terms of the range of the applications it has to support, the v=
+arious communication technologies it can run on, and the hierarchical, hybr=
+id and heterogeneous techniques it has to rely on to meet the challenges fr=
+om both the diverse application requirements and communication technologies=
+. The only conference focusing on heterogeneous networking, Qshine has been=
+ established as the primary venue for researchers and practitioners to diss=
+eminate exchange and discuss all recent advances related to heterogeneous n=
+etworking, particularly for quality, experience, reliability, security and =
+robustness.Original submissions, not under any concurrent reviews, are soli=
+cited in all areas related to heterogeneous wired, wireless and hybrid netw=
+orks varying from sensor, vehicle, cellular, ad hoc, enterprise, datacentre=
+, to service-provider and overlay networks, ranging from in/on-body, person=
+al/local/metropolitan/wide-area, to intra/inter-planetary scales.
+
+*** Publication notes  ***
+All registered papers will be published by Springer and made available thro=
+ugh SpringerLink Digital Library. Qshine proceedings are indexed in leading=
+ indexing services, including Ei Compendex, ISI Web of Science, Scopus, Cro=
+ssRef, Google Scholar, DBLP, as well as EAI=E2=80=99s own EU Digital Librar=
+y (EUDL).
+Authors of selected papers will be invited to submit an extended version to=
+ Mobile Networks and Applications (MONET) Journal (IF: 3.259) (https://www.=
+springer.com/engineering/signals/journal/11036).
+All accepted authors are eligible to submit an extended version in a fast t=
+rack of EAI Endorsed Transactions on Mobile Communications and Applications=
+ (http://eudl.eu/journal/mca).
+Additional publication opportunities:
+-EAI Transactions series (Open Access) (https://eai.eu/#!/publish/journals)
+-EAI/Springer Innovations in Communications and Computing Book Series (http=
+s://eai.eu/#!/publish/eai-springer-book-series)
+
+*** Topics  ***
+Topics of interest include, but are not limited to, the following:
+-Quality-of-Service (QoS) provisioning: architectures, protocols, mechanisms
+-Quality of Experience (QoE): user-perceived quality, cost-sensitive experi=
+ence
+-Reliability and Scalability: performance, adaptation, cognition, extensibi=
+lity
+-Security and Privacy: system/network security, user privacy/accountability
+-Robustness: fault/disruption/disaster-tolerance, resilience, survivability
+-Cross-Layer Design, Optimization and Implementation: spectrum/energy effic=
+iency
+-Social and Economic Perspectives: incentive, pricing, billing, governance
+-New Applications and Communication Technologies: IoTs, cloud, smart grid, =
+and SDN
+-Machine learning for resource allocation in wireless networks
+
+For further details about topics of interest, please visit the following li=
+nk: http://qshine.org/initial-submission/
+
+*** Important Dates ***
+Full Paper Submission deadline: 3 July 2018
+Full Paper Submission EXTENDED DEADLINE: 31st August 2018
+Notification deadline: 3 September 2018
+Camera-ready deadline: 3 November 2018
+Start of conference: 3 December 2018=20
+End of conference: 4 December 2018
+
+*** Instructions for submission ***
+Please visit the following link for submission instructions
+http://qshine.org/initial-submission/
+
+
+From nobody Wed Aug 15 17:32:51 2018
+Return-Path: <Gabriel.Montenegro@microsoft.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 6F585130DF9 for <6lo@ietfa.amsl.com>; Wed, 15 Aug 2018 17:32:49 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.01
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.01 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, T_DKIMWL_WL_HIGH=-0.01] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=microsoft.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id oXyQVqc2c8bh for <6lo@ietfa.amsl.com>; Wed, 15 Aug 2018 17:32:47 -0700 (PDT)
+Received: from NAM02-CY1-obe.outbound.protection.outlook.com (mail-cys01nam02on0134.outbound.protection.outlook.com [104.47.37.134]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 4052B12D7EA for <6lo@ietf.org>; Wed, 15 Aug 2018 17:32:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=MRjraTRpn4PRQfwOZcCXadNbc1QXLNUFBRW7QkGcJYY=; b=ja1VE09ecK/7UGI+WhKUtNiH063kNQ+HS1SiobMfDBhKMPc2w8fppLMY5DCKdqoXf+LQ1oe/evCV3JIlB0JQN7wkPJ7lPBjH9AZijfpTjuXv6aGJWZV0Y+VxHyyzV4/1gCedtEaSd/tk7BEP+lE6ZQvkJedn9m12d3qTa1/089g=
+Received: from CY4PR21MB0135.namprd21.prod.outlook.com (10.173.189.17) by CY4PR21MB0133.namprd21.prod.outlook.com (10.173.189.15) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.1080.5; Thu, 16 Aug 2018 00:32:45 +0000
+Received: from CY4PR21MB0135.namprd21.prod.outlook.com ([fe80::6495:e928:de61:4977]) by CY4PR21MB0135.namprd21.prod.outlook.com ([fe80::6495:e928:de61:4977%3]) with mapi id 15.20.1080.007; Thu, 16 Aug 2018 00:32:45 +0000
+From: Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>
+To: lo <6lo@ietf.org>
+Thread-Topic: Working Group call for adoption on draft-watteyne-6lo-minimal-fragment and draft-thubert-6lo-forwarding-fragments             
+Thread-Index: AdQ0+KXtUZO2Fx7MToep/fRXJPRvag==
+Date: Thu, 16 Aug 2018 00:32:45 +0000
+Message-ID: <CY4PR21MB0135A5CE50DB625223407872953E0@CY4PR21MB0135.namprd21.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+msip_labels: MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_Enabled=True; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_SiteId=72f988bf-86f1-41af-91ab-2d7cd011db47; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_Owner=gmonte@ntdev.microsoft.com; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_SetDate=2018-08-16T00:32:44.6735923Z; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_Name=General; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_Application=Microsoft Azure Information Protection; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_Extended_MSFT_Method=Automatic; Sensitivity=General
+x-originating-ip: [2001:4898:80e8:2:964f:1666:d500:9c00]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1; CY4PR21MB0133; 6:BuOx+tarIyVlGL9valwQREiRD5z8Ng1w6v18pStC5VooySNYZZtXN5d1G1AQAO51EGeGBNOy5lWEye2EgTnoK8LzauvrIHWN2BpOLStup6hkl5kaV9GhrC43c/2orm6CpLvV3mV/gOMjkwN60BzYegyArETJlPNCbzbG2zDVRiSo2HU1ksxzoaFAbvfs6ywqnZTybIU8qQM0LFjqiqjkXvMB5CF5y8lH6UWLfVvH/w5wQmyi1VNDEomwaL9bfcIM2BZh/o5wRucGssnu484vy5RKrVB5mGrCh8s/0llc1yOfPDzOUAhIeJ4P2FaBf+2PgwJspV+kelWgwF8a82q+UQuFHsu7Ymvpga+Q1mxEa4UT03BL8cpGVfLJhRsEW79zLuNc4l01Yj465S/z/NdIg+urx5y2uiXn1lWuVTgSogZXqjEmh2RgQZC6L/4PpcVGyIHAWrUyk/yJH5ZndBe83Q==; 5:v2EG9cotbk3KQZwBW1j7QSjALro3INbZ29h54QNSdVFlNRoTOiwhrf0id+9CNfM27EkjS8d1jE6MRnZq+f62pwVSj7iJGx86z60AQGVJRot0lwRMIezOkqA68woQx+bQiM2NOhFl1VjE7ND37T7SreyeBZkbuNL/vmJ4DN5+44E=; 7:rf/uW58kdWepK1luIk/TxgzUadXr075tfWUZXgwgnpQsaExsLXby/X9leArXgjhaYUV3t0v2kcMFEi2RVZC+sC/a4r1R2FUIdqKo7y0P61cfDTQmaDtwmYJjqcHXzfR8LXRUL3lx/u8iqKquaL2tGcEu8v8Hy33BT5GMIFmhwZNaEHFM/yqN5eHoQAl1M+sXhVvONjpCM2VxBFAJz10ZuK19Vs42lFtaM+dV7GbhARCfEMgFPBWYJ7qMcWUnAGJE
+x-ms-exchange-antispam-srfa-diagnostics: SOS;
+x-ms-office365-filtering-correlation-id: 7a10be83-478f-4124-a14b-08d6030fc970
+x-ms-office365-filtering-ht: Tenant
+x-microsoft-antispam: BCL:0; PCL:0; RULEID:(7020095)(4652040)(8989137)(4534165)(4627221)(201703031133081)(201702281549075)(8990107)(5600074)(711020)(4618075)(2017052603328)(7193020); SRVR:CY4PR21MB0133; 
+x-ms-traffictypediagnostic: CY4PR21MB0133:
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=Gabriel.Montenegro@microsoft.com; 
+x-microsoft-antispam-prvs: <CY4PR21MB01336937EF6735F4D91CD110953E0@CY4PR21MB0133.namprd21.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:(28532068793085)(100405760836317)(21748063052155); 
+x-ms-exchange-senderadcheck: 1
+x-exchange-antispam-report-cfa-test: BCL:0; PCL:0; RULEID:(8211001083)(20180801008)(6040522)(2401047)(5005006)(8121501046)(10201501046)(93006095)(93001095)(3231328)(8210008)(944501410)(52105095)(2018427008)(3002001)(6055026)(149027)(150027)(6041310)(20161123564045)(201703131423095)(201702281528075)(20161123555045)(201703061421075)(201703061406153)(20161123560045)(20161123558120)(20161123562045)(201708071742011)(7699016); SRVR:CY4PR21MB0133; BCL:0; PCL:0; RULEID:; SRVR:CY4PR21MB0133; 
+x-forefront-prvs: 07665BE9D1
+x-forefront-antispam-report: SFV:NSPM; SFS:(10019020)(346002)(376002)(39860400002)(396003)(136003)(366004)(199004)(189003)(236005)(53936002)(9686003)(102836004)(6506007)(476003)(186003)(54896002)(55016002)(6306002)(6436002)(606006)(316002)(22452003)(6916009)(97736004)(8990500004)(486006)(46003)(99286004)(256004)(7696005)(14444005)(106356001)(6116002)(790700001)(68736007)(5660300001)(2900100001)(105586002)(86362001)(25786009)(33656002)(86612001)(8676002)(2906002)(81166006)(81156014)(10090500001)(5250100002)(966005)(74316002)(10290500003)(72206003)(14454004)(7736002)(478600001)(8936002); DIR:OUT; SFP:1102; SCL:1; SRVR:CY4PR21MB0133; H:CY4PR21MB0135.namprd21.prod.outlook.com; FPR:; SPF:None; LANG:en; PTR:InfoNoRecords; A:1; MX:1; 
+received-spf: None (protection.outlook.com: microsoft.com does not designate permitted sender hosts)
+x-microsoft-antispam-message-info: G1eolGdgcoaILzfLQqaTFzyaRMeirXmQACIoAPBG0dPajkESvL3m5D8BX1Q12Ukt1MFuBOcv/8OB4IS+8FrcSWsKP1hnn+ovXhcp7yJN5rOUqHg3s3YxMxuvB3uMzFPT1KAu71QnXsjvmxH4Gk2dFnutTYL4l8yYOG+dfW1WQ7U0ErhdQQRLzLI7Uu0B+DYzQpbwnG7sZclHp4XpGwd6YkfiL6XXXa9jOrrGxGhuvQKhexuFMd58hESlZ0wdCaHLDwtQY4PZcf72CjMHnQJ9KRV3vlacZk+rtq7yyGkuLNMWzhPDvFTai2M5136Q8d1VTk0HEjk/iD0841+QgGpGmTvPexJJFlIhwVpvqwMjl/8=
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative; boundary="_000_CY4PR21MB0135A5CE50DB625223407872953E0CY4PR21MB0135namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: microsoft.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7a10be83-478f-4124-a14b-08d6030fc970
+X-MS-Exchange-CrossTenant-originalarrivaltime: 16 Aug 2018 00:32:45.7027 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 72f988bf-86f1-41af-91ab-2d7cd011db47
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR21MB0133
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/1VpuSnaXM4SODKHVkGcHhbWPXDI>
+Subject: [6lo] Working Group call for adoption on draft-watteyne-6lo-minimal-fragment and draft-thubert-6lo-forwarding-fragments
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 16 Aug 2018 00:32:50 -0000
+
+--_000_CY4PR21MB0135A5CE50DB625223407872953E0CY4PR21MB0135namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi folks,
+
+
+Per discussion in Montreal, there was consensus in the room to adopt the tw=
+o drafts output by the Fragmentation Design Team:
+
+    https://tools.ietf.org/html/draft-watteyne-6lo-minimal-fragment/
+    https://tools.ietf.org/html/draft-thubert-6lo-forwarding-fragments/
+
+
+
+This message initiates a 2 week call-for-adoption to confirm the Montreal c=
+onsensus on the list.
+
+
+Please send your opinion (for or against) to the mailing list on adopting t=
+hese documents as  6lo WG documents. This call for adoption will end at 00:=
+00 UTC on August 29, 2018.
+
+
+
+Regards,
+
+Chairs
+
+
+
+--_000_CY4PR21MB0135A5CE50DB625223407872953E0CY4PR21MB0135namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:dt=3D"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:m=3D"http://sc=
+hemas.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-=
+html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Yu Gothic";
+	panose-1:2 11 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@Yu Gothic";
+	panose-1:2 11 4 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hi folks,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p style=3D"margin:0in;margin-bottom:.0001pt">Per discussion in Montreal, t=
+here was consensus in the room to adopt the two drafts output by the Fragme=
+ntation Design Team:<o:p></o:p></p>
+<p style=3D"mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margi=
+n-left:27.0pt;margin-bottom:.0001pt">
+<span style=3D"color:black">&nbsp;&nbsp;&nbsp; </span><a href=3D"https://to=
+ols.ietf.org/html/draft-watteyne-6lo-minimal-fragment/">https://tools.ietf.=
+org/html/draft-watteyne-6lo-minimal-fragment/</a>
+<span style=3D"color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=3D"color:black"><a href=3D"https=
+://tools.ietf.org/html/draft-thubert-6lo-forwarding-fragments/">https://too=
+ls.ietf.org/html/draft-thubert-6lo-forwarding-fragments/</a>
+</span><span style=3D"color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<o:p=
+></o:p></span></p>
+<p style=3D"margin:0in;margin-bottom:.0001pt"><o:p>&nbsp;</o:p></p>
+<p style=3D"margin:0in;margin-bottom:.0001pt">This message initiates a 2 we=
+ek call-for-adoption to confirm the Montreal consensus on the list.
+<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Please send your opinion (for or against) to the =
+mailing list on adopting these documents as &nbsp;6lo WG documents. This ca=
+ll for adoption will end at 00:00 UTC on August 29, 2018.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Regards,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Chairs<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_CY4PR21MB0135A5CE50DB625223407872953E0CY4PR21MB0135namp_--
+
+
+From nobody Wed Aug 15 17:35:30 2018
+Return-Path: <ietf-secretariat-reply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 8B2A413104D; Wed, 15 Aug 2018 17:35:27 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: IETF Secretariat <ietf-secretariat-reply@ietf.org>
+To: <6lo-chairs@ietf.org>, <draft-thubert-6lo-fragment-recovery@ietf.org>, <6lo@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.83.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <153437972756.3077.10628873769967737850.idtracker@ietfa.amsl.com>
+Date: Wed, 15 Aug 2018 17:35:27 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/04KPyfWXS9GRDB6BFnq5eauubDw>
+Subject: [6lo] The 6LO WG has placed draft-thubert-6lo-fragment-recovery in state "Call For Adoption By WG Issued"
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 16 Aug 2018 00:35:28 -0000
+
+The 6LO WG has placed draft-thubert-6lo-fragment-recovery in state
+Call For Adoption By WG Issued (entered by Gabriel Montenegro)
+
+The document is available at
+https://datatracker.ietf.org/doc/draft-thubert-6lo-fragment-recovery/
+
+
+From nobody Wed Aug 15 17:37:01 2018
+Return-Path: <ietf-secretariat-reply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 09810131058; Wed, 15 Aug 2018 17:37:00 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: IETF Secretariat <ietf-secretariat-reply@ietf.org>
+To: <draft-watteyne-6lo-minimal-fragment@ietf.org>, <6lo-chairs@ietf.org>, <6lo@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.83.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <153437982003.3126.2356767422707343723.idtracker@ietfa.amsl.com>
+Date: Wed, 15 Aug 2018 17:37:00 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/412uipm_6qj86r4oAEpY6o3ofUg>
+Subject: [6lo] The 6LO WG has placed draft-watteyne-6lo-minimal-fragment in state "Call For Adoption By WG Issued"
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 16 Aug 2018 00:37:00 -0000
+
+The 6LO WG has placed draft-watteyne-6lo-minimal-fragment in state
+Call For Adoption By WG Issued (entered by Gabriel Montenegro)
+
+The document is available at
+https://datatracker.ietf.org/doc/draft-watteyne-6lo-minimal-fragment/
+
+
+From nobody Thu Aug 16 06:39:49 2018
+Return-Path: <iesg-secretary@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 06DCD131063; Thu, 16 Aug 2018 06:39:43 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: The IESG <iesg-secretary@ietf.org>
+To: "IETF-Announce" <ietf-announce@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.83.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Cc: The IESG <iesg@ietf.org>, 6lo-chairs@ietf.org, draft-ietf-6lo-rfc6775-update@ietf.org, Gabriel.Montenegro@microsoft.com, Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>, 6lo@ietf.org, suresh@kaloom.com, rfc-editor@rfc-editor.org
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Message-ID: <153442678302.12176.3531474988387765228.idtracker@ietfa.amsl.com>
+Date: Thu, 16 Aug 2018 06:39:43 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/DZBiboKfrgS9YTeSBfsaH0FBj1A>
+Subject: [6lo] Protocol Action: 'Registration Extensions for 6LoWPAN Neighbor Discovery' to Proposed Standard (draft-ietf-6lo-rfc6775-update-21.txt)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 16 Aug 2018 13:39:48 -0000
+
+The IESG has approved the following document:
+- 'Registration Extensions for 6LoWPAN Neighbor Discovery'
+  (draft-ietf-6lo-rfc6775-update-21.txt) as Proposed Standard
+
+This document is the product of the IPv6 over Networks of
+Resource-constrained Nodes Working Group.
+
+The IESG contact persons are Suresh Krishnan and Terry Manderson.
+
+A URL of this Internet Draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-rfc6775-update/
+
+
+
+
+
+Technical Summary
+
+	   This specification updates RFC 6775 - 6LoWPAN Neighbor Discovery, to
+	   clarify the role of the protocol as a registration technique,
+	   simplify the registration operation in 6LoWPAN routers, as well as to
+	   provide enhancements to the registration capabilities and mobility
+	   detection for different network topologies.
+
+Working Group Summary
+
+There has been plenty of discussion about these extensions in the working group. This document started in Oct. 2016 as an individual submission, but ideas were discussed even previous to that, including a requirements document (draft-thubert-6lo-rfc6775-update-reqs) which fed into this document, 6775bis. There have been 10 revisions based on implementation experience. Initially, it was a controversial document since it affects how IPv6 ND works in certain networks. This prompted some concern from IPv6 folks (e.g., Lorenzo Colitti) concerned that these modifications were not generally applicable to all link layers or situations. In response, the authors made changes to clarify the scope of the extensions. Section 2, in particular was modified as a result of these debates and exchanges.
+
+Document Quality
+
+These extensions have been implemented in open source (OpenWSN, Cisco IOS) and have been tested in 6TiSCH/6lo ETSI Plugtest.
+
+Personnel
+
+   Gabriel Montenegro is the Document Shepherd. Suresh Krishnan is the Responsible Area Director.
+
+
+From nobody Wed Aug 22 12:52:24 2018
+Return-Path: <monet.publicity@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0406C130E63 for <6lo@ietfa.amsl.com>; Wed, 22 Aug 2018 12:52:13 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2
+X-Spam-Level: 
+X-Spam-Status: No, score=-2 tagged_above=-999 required=5 tests=[BAYES_00=-1.9,  DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001] autolearn=unavailable autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id XjXtHKZKoyBg for <6lo@ietfa.amsl.com>; Wed, 22 Aug 2018 12:52:10 -0700 (PDT)
+Received: from mail-wr1-x443.google.com (mail-wr1-x443.google.com [IPv6:2a00:1450:4864:20::443]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 8F3BE12F1A2 for <6lo@ietf.org>; Wed, 22 Aug 2018 12:52:10 -0700 (PDT)
+Received: by mail-wr1-x443.google.com with SMTP id 20-v6so2566869wrb.12 for <6lo@ietf.org>; Wed, 22 Aug 2018 12:52:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=date:from:to:subject:message-id:user-agent:mime-version :content-transfer-encoding; bh=AoJmw87SpsJghCR9wXAowSS28dkgwqPMtXLQHa/W/34=; b=k9MgySItEH/6Jkt9nGOaW+KKEIn4xKzuWB1OeTAqBO0FtEp5hfkopoV9FQllkO/yKJ 4871ppx6b4s+wj4f5B+J2LjUfDJbqH4fI+0Mw6smF+t/Q4sgwMzLGktRAm93ptKPfC4S H3Gh9rxE4lv6ZNdHS5vd21+MKf8GrtgWXyDmp4RJxVdGjC1fQKWl7GPxbwTsoQtNAfoy kAoF/nXq1zel6GR85TPdZ9eR6LKwSSsRfV3POXsohMIS+8wqajkDQLvyWIFgiE2ga96m /w0538rEz1CDbL27t8YgMAeqLjbyPRBBdkmmj87CTcvyljuJmcpvNkyg2twPjM4F0320 kHZA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:date:from:to:subject:message-id:user-agent :mime-version:content-transfer-encoding; bh=AoJmw87SpsJghCR9wXAowSS28dkgwqPMtXLQHa/W/34=; b=kfwARI9+6hSBgIIwWYHhIj+xzACPnXki46/miQG7bOz6+0aiyWdV+A3Yd28CvP4cXs +VsD1tdwHqd3G2WEXgdTRsWXBT2zphP4X3GzIPkwlnRmdunDWhcfcstKHyH5kCbwib31 LkFnRhOxjBJYQAowOmSDZ9rPUHhJ3ZY+RqYReoVfShk6bgqxH0axgnU1b+V5hpUR8zWP 93uUZWLVsMLSlsWW7ha6N7aqfj5ZZtftM76hWoCCf9VfHQeJfCqNDQ84VEIYOFXNP3Wt VOhuWYduTPrNZMggChS6NyEy9aAGk6CgIi2+DIpQkNaL7wvlOSz4YHQsM2q0c281Y11P GwWQ==
+X-Gm-Message-State: APzg51BFOhOAZwOhPEggUQs0AQ49ViVPpSrI8IX8kubPIy9Q9wYA9gsp KpdWv5+j+cJnKZbsrUjxRLtS+1Wr
+X-Google-Smtp-Source: ANB0Vdb/Vq5w8h52DWUVdwaHsKm/g60cgs6MXzywMQ2GinaA9RAz//tPw3Fo39XneCCcLmxGXJyj/w==
+X-Received: by 2002:a5d:62c2:: with SMTP id o2-v6mr8100493wrv.83.1534967528820;  Wed, 22 Aug 2018 12:52:08 -0700 (PDT)
+Received: from antoraspy ([2001:b07:644e:c753:c988:f37b:9052:3196]) by smtp.gmail.com with ESMTPSA id t19-v6sm1938747wmi.42.2018.08.22.12.52.07 for <6lo@ietf.org> (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Wed, 22 Aug 2018 12:52:08 -0700 (PDT)
+Date: Wed, 22 Aug 2018 21:52:01 +0200
+From: Antonino Masaracchia <monet.publicity@gmail.com>
+To: 6lo@ietf.org
+Message-ID: <5b7dbee1.gvfPj6p6g2BESnr7%monet.publicity@gmail.com>
+User-Agent: Heirloom mailx 12.5 6/20/10
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/hbY6HJAmOgRzaKdj7Aq1dfDpkYQ>
+Subject: [6lo] [ EXTENDED DEADLINE ] Qshine 2018 - 14th EAI International Conference on Heterogeneous Networking for Quality, Reliability, Security and Robustness
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 22 Aug 2018 19:52:21 -0000
+
+[Please accept our apologies if you receive multiple copies of this ema=
+il]
+
+
+CALL FOR PAPERS
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D
+Qshine 2018 - 14th EAI International Conference on=20
+Heterogeneous Networking for Quality, Reliability,=20
+Security and Robustness
+
+December 3-4, 2018
+Ho Chi Minh City, Vietnam
+
+Submission Deadline [ EXTENDED ]: 31st August, 2018
+http://qshine.org
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D
+
+*** About EAI ***
+This event is organized by EAI. EAI =E2=80=93 European Alliance for Inn=
+ovation is a non-profit organization and a professional community estab=
+lished in cooperation with the European Commission to empower the globa=
+l research and innovation, and to promote cooperation between European =
+and International ICT communities. EAI=E2=80=99s vision is to foster ex=
+cellence in research and innovation on the principles of transparency, =
+objectivity, equality, and openness. Our guiding principle is community=
+ cooperation to create better research, provide fair recognition of exc=
+ellence and transform best ideas into commercial value proposition. EAI=
+=E2=80=98s mission is to create an environment that rewards excellence =
+transparently, and builds recognition objectively regardless of age, ec=
+onomic status or country of origin, where no membership fees or closed =
+door committees stand in the way of your research career. Through these=
+ shared values, EAI leads the way toward advancing the world of researc=
+h and innovation, empowering individuals and institutions for the good =
+of society to fully benefit from the digital revolution.
+
+*** Scope ***
+Computer networking has been embracing increased heterogeneity since it=
+s inception, in terms of the range of the applications it has to suppor=
+t, the various communication technologies it can run on, and the hierar=
+chical, hybrid and heterogeneous techniques it has to rely on to meet t=
+he challenges from both the diverse application requirements and commun=
+ication technologies. The only conference focusing on heterogeneous net=
+working, Qshine has been established as the primary venue for researche=
+rs and practitioners to disseminate exchange and discuss all recent adv=
+ances related to heterogeneous networking, particularly for quality, ex=
+perience, reliability, security and robustness.Original submissions, no=
+t under any concurrent reviews, are solicited in all areas related to h=
+eterogeneous wired, wireless and hybrid networks varying from sensor, v=
+ehicle, cellular, ad hoc, enterprise, datacentre, to service-provider a=
+nd overlay networks, ranging from in/on-body, personal/local/metropolit=
+an/wide-area, to intra/inter-planetary scales.
+
+*** Publication notes  ***
+All registered papers will be published by Springer and made available =
+through SpringerLink Digital Library. Qshine proceedings are indexed in=
+ leading indexing services, including Ei Compendex, ISI Web of Science,=
+ Scopus, CrossRef, Google Scholar, DBLP, as well as EAI=E2=80=99s own E=
+U Digital Library (EUDL).
+Authors of selected papers will be invited to submit an extended versio=
+n to Mobile Networks and Applications (MONET) Journal (IF: 3.259) (http=
+s://www.springer.com/engineering/signals/journal/11036).
+All accepted authors are eligible to submit an extended version in a fa=
+st track of EAI Endorsed Transactions on Mobile Communications and Appl=
+ications (http://eudl.eu/journal/mca).
+Additional publication opportunities:
+-EAI Transactions series (Open Access) (https://eai.eu/#!/publish/journ=
+als)
+-EAI/Springer Innovations in Communications and Computing Book Series (=
+https://eai.eu/#!/publish/eai-springer-book-series)
+
+*** Topics  ***
+Topics of interest include, but are not limited to, the following:
+-Quality-of-Service (QoS) provisioning: architectures, protocols, mecha=
+nisms
+-Quality of Experience (QoE): user-perceived quality, cost-sensitive ex=
+perience
+-Reliability and Scalability: performance, adaptation, cognition, exten=
+sibility
+-Security and Privacy: system/network security, user privacy/accountabi=
+lity
+-Robustness: fault/disruption/disaster-tolerance, resilience, survivabi=
+lity
+-Cross-Layer Design, Optimization and Implementation: spectrum/energy e=
+fficiency
+-Social and Economic Perspectives: incentive, pricing, billing, governa=
+nce
+-New Applications and Communication Technologies: IoTs, cloud, smart gr=
+id, and SDN
+-Machine learning for resource allocation in wireless networks
+
+For further details about topics of interest, please visit the followin=
+g link: http://qshine.org/initial-submission/
+
+*** Important Dates ***
+Full Paper Submission deadline: 3 July 2018
+Full Paper Submission EXTENDED DEADLINE: 31st August 2018
+Notification deadline: 3 September 2018
+Camera-ready deadline: 3 November 2018
+Start of conference: 3 December 2018=20
+End of conference: 4 December 2018
+
+*** Instructions for submission ***
+Please visit the following link for submission instructions
+http://qshine.org/initial-submission/
+
+
+From nobody Wed Aug 22 14:03:43 2018
+Return-Path: <cabo@tzi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id E725B130EB2 for <6lo@ietfa.amsl.com>; Wed, 22 Aug 2018 14:03:31 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.2
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.2 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id oGZpcVgvH6SA for <6lo@ietfa.amsl.com>; Wed, 22 Aug 2018 14:03:29 -0700 (PDT)
+Received: from mailhost.informatik.uni-bremen.de (mailhost.informatik.uni-bremen.de [IPv6:2001:638:708:30c9::12]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id E8DF4130EAA for <6lo@ietf.org>; Wed, 22 Aug 2018 14:03:28 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at informatik.uni-bremen.de
+Received: from submithost.informatik.uni-bremen.de (submithost.informatik.uni-bremen.de [134.102.201.11]) by mailhost.informatik.uni-bremen.de (8.14.5/8.14.5) with ESMTP id w7ML3Pce014222; Wed, 22 Aug 2018 23:03:25 +0200 (CEST)
+Received: from [192.168.217.102] (p54A6C24D.dip0.t-ipconnect.de [84.166.194.77]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by submithost.informatik.uni-bremen.de (Postfix) with ESMTPSA id 41wg4Y2CXMzDWs0; Wed, 22 Aug 2018 23:03:25 +0200 (CEST)
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0 (Mac OS X Mail 11.5 \(3445.9.1\))
+From: Carsten Bormann <cabo@tzi.org>
+In-Reply-To: <5b7dbee1.gvfPj6p6g2BESnr7%monet.publicity@gmail.com>
+Date: Wed, 22 Aug 2018 23:03:24 +0200
+Cc: 6lo@ietf.org
+X-Mao-Original-Outgoing-Id: 556664602.651582-94d2fc0b8d22b3a763e54503304f8d1e
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <DF1DFB60-B1A0-4C3A-8864-0B7FEDF074F1@tzi.org>
+References: <5b7dbee1.gvfPj6p6g2BESnr7%monet.publicity@gmail.com>
+To: Antonino Masaracchia <monet.publicity@gmail.com>
+X-Mailer: Apple Mail (2.3445.9.1)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/YCw6WUWNCTkKOhgL17cvUyd4pe8>
+Subject: [6lo] Conference spam
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 22 Aug 2018 21:03:40 -0000
+
+On Aug 22, 2018, at 21:52, Antonino Masaracchia =
+<monet.publicity@gmail.com> wrote:
+>=20
+> [Please accept our apologies if you receive multiple copies of this =
+email]
+
+Unfortunately, no, apologies *not* accepted.
+
+I have 10 announcements for this conference (the 2018 version!) in my =
+inbox that I haven=E2=80=99t deleted yet, 2 of these alone to the 6lo =
+mailing list.  You even managed to spam an internal design team mailing =
+list.
+IETF mailing lists are not conference announcement lists!
+
+Could the chairs please bring the big hammer.
+(I believe you can safely block =E2=80=9Cmonet.publicity@gmail.com=E2=80=9D=
+ from all IETF mailing lists.)
+
+Gr=C3=BC=C3=9Fe, Carsten
+
+
+From nobody Thu Aug 23 00:37:30 2018
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id F0099130E3D for <6lo@ietfa.amsl.com>; Thu, 23 Aug 2018 00:37:27 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.51
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.51 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001, T_DKIMWL_WL_HIGH=-0.01, URIBL_BLOCKED=0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id ZRCkojOqGWaU for <6lo@ietfa.amsl.com>; Thu, 23 Aug 2018 00:37:26 -0700 (PDT)
+Received: from alln-iport-3.cisco.com (alln-iport-3.cisco.com [173.37.142.90]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 46EC2130E30 for <6lo@ietf.org>; Thu, 23 Aug 2018 00:37:26 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=1540; q=dns/txt; s=iport; t=1535009846; x=1536219446; h=from:to:cc:subject:date:message-id:references: in-reply-to:content-transfer-encoding:mime-version; bh=0wO+bYUR0UGL1QozI7n3u6MVbNxdb0lkXDr4Tr0nj9c=; b=hxrVNGH8wRfT8qxT+UTZiyPeAqre5Y3xq0aE5t+N9iR9j3pQ+6EMdCPq IYWPnUEzLH4vB3IOnVLcYSmwagJ+75RtF2wADP794oLNcCzXDr7Z2zRky j7nJbbCUj3NA+8hdKXMVhjdTtWIyuQ21GxdibqcSCe1MW3X29EiBnOPJe A=;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0D0AwDfYn5b/4cNJK1bGQEBAQEBAQE?= =?us-ascii?q?BAQEBAQcBAQEBAYNPZX8oCoNllDOCDYM9hRaNTRSBZgsYC4RJAheCdSE1FwE?= =?us-ascii?q?CAQECAQECbRwMhTcBAQEBAwEBIRE0BgsMBAIBBgIOAwQBAQECAiYCAgIfBgs?= =?us-ascii?q?VCAgCBAENBQiDG4FpAxUPhxebS4EuhCoBgngNgywFgQuIEheBQT+EJIJWRQE?= =?us-ascii?q?BAoEsAQoIAYMgglcCiDOSOisJAoxZgwgfgT6EMIhPi3iHHwIRFIEkHwE1YXF?= =?us-ascii?q?wFTuCAGmLFYU+b4wdgR+BHAEB?=
+X-IronPort-AV: E=Sophos;i="5.53,277,1531785600"; d="scan'208";a="161577484"
+Received: from alln-core-2.cisco.com ([173.36.13.135]) by alln-iport-3.cisco.com with ESMTP/TLS/DHE-RSA-AES256-GCM-SHA384; 23 Aug 2018 07:37:25 +0000
+Received: from XCH-RCD-001.cisco.com (xch-rcd-001.cisco.com [173.37.102.11]) by alln-core-2.cisco.com (8.15.2/8.15.2) with ESMTPS id w7N7bPbC030768 (version=TLSv1.2 cipher=AES256-SHA bits=256 verify=FAIL); Thu, 23 Aug 2018 07:37:25 GMT
+Received: from xch-rcd-001.cisco.com (173.37.102.11) by XCH-RCD-001.cisco.com (173.37.102.11) with Microsoft SMTP Server (TLS) id 15.0.1320.4; Thu, 23 Aug 2018 02:37:24 -0500
+Received: from xch-rcd-001.cisco.com ([173.37.102.11]) by XCH-RCD-001.cisco.com ([173.37.102.11]) with mapi id 15.00.1320.000; Thu, 23 Aug 2018 02:37:24 -0500
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: Carsten Bormann <cabo@tzi.org>, Antonino Masaracchia <monet.publicity@gmail.com>
+CC: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: [6lo] Conference spam
+Thread-Index: AQHUOlulsRT3hstXZ0SC0iTONvlIgKTM8sJg
+Date: Thu, 23 Aug 2018 07:36:55 +0000
+Deferred-Delivery: Thu, 23 Aug 2018 07:35:59 +0000
+Message-ID: <c7090cc14c6a47b5ae39966b2d0db9c8@XCH-RCD-001.cisco.com>
+References: <5b7dbee1.gvfPj6p6g2BESnr7%monet.publicity@gmail.com> <DF1DFB60-B1A0-4C3A-8864-0B7FEDF074F1@tzi.org>
+In-Reply-To: <DF1DFB60-B1A0-4C3A-8864-0B7FEDF074F1@tzi.org>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [10.228.216.10]
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+X-Outbound-SMTP-Client: 173.37.102.11, xch-rcd-001.cisco.com
+X-Outbound-Node: alln-core-2.cisco.com
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/QdPlUalIlORmIkLcU45HBtPWSx8>
+Subject: Re: [6lo] Conference spam
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 23 Aug 2018 07:37:28 -0000
+
+U2FtZSBoZXJlOyB0aGlzIGlzIHJlYWxseSB1bmFjY2VwdGFibGUuDQoNClBhc2NhbA0KDQo+IC0t
+LS0tT3JpZ2luYWwgTWVzc2FnZS0tLS0tDQo+IEZyb206IDZsbyA8NmxvLWJvdW5jZXNAaWV0Zi5v
+cmc+IE9uIEJlaGFsZiBPZiBDYXJzdGVuIEJvcm1hbm4NCj4gU2VudDogbWVyY3JlZGkgMjIgYW/D
+u3QgMjAxOCAyMzowMw0KPiBUbzogQW50b25pbm8gTWFzYXJhY2NoaWEgPG1vbmV0LnB1YmxpY2l0
+eUBnbWFpbC5jb20+DQo+IENjOiA2bG9AaWV0Zi5vcmcNCj4gU3ViamVjdDogWzZsb10gQ29uZmVy
+ZW5jZSBzcGFtDQo+IA0KPiBPbiBBdWcgMjIsIDIwMTgsIGF0IDIxOjUyLCBBbnRvbmlubyBNYXNh
+cmFjY2hpYQ0KPiA8bW9uZXQucHVibGljaXR5QGdtYWlsLmNvbT4gd3JvdGU6DQo+ID4NCj4gPiBb
+UGxlYXNlIGFjY2VwdCBvdXIgYXBvbG9naWVzIGlmIHlvdSByZWNlaXZlIG11bHRpcGxlIGNvcGll
+cyBvZiB0aGlzIGVtYWlsXQ0KPiANCj4gVW5mb3J0dW5hdGVseSwgbm8sIGFwb2xvZ2llcyAqbm90
+KiBhY2NlcHRlZC4NCj4gDQo+IEkgaGF2ZSAxMCBhbm5vdW5jZW1lbnRzIGZvciB0aGlzIGNvbmZl
+cmVuY2UgKHRoZSAyMDE4IHZlcnNpb24hKSBpbiBteSBpbmJveA0KPiB0aGF0IEkgaGF2ZW7igJl0
+IGRlbGV0ZWQgeWV0LCAyIG9mIHRoZXNlIGFsb25lIHRvIHRoZSA2bG8gbWFpbGluZyBsaXN0LiAg
+WW91IGV2ZW4NCj4gbWFuYWdlZCB0byBzcGFtIGFuIGludGVybmFsIGRlc2lnbiB0ZWFtIG1haWxp
+bmcgbGlzdC4NCj4gSUVURiBtYWlsaW5nIGxpc3RzIGFyZSBub3QgY29uZmVyZW5jZSBhbm5vdW5j
+ZW1lbnQgbGlzdHMhDQo+IA0KPiBDb3VsZCB0aGUgY2hhaXJzIHBsZWFzZSBicmluZyB0aGUgYmln
+IGhhbW1lci4NCj4gKEkgYmVsaWV2ZSB5b3UgY2FuIHNhZmVseSBibG9jayDigJxtb25ldC5wdWJs
+aWNpdHlAZ21haWwuY29t4oCdIGZyb20gYWxsIElFVEYNCj4gbWFpbGluZyBsaXN0cy4pDQo+IA0K
+PiBHcsO8w59lLCBDYXJzdGVuDQo+IA0KPiBfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fXw0KPiA2bG8gbWFpbGluZyBsaXN0DQo+IDZsb0BpZXRmLm9yZw0KPiBo
+dHRwczovL3d3dy5pZXRmLm9yZy9tYWlsbWFuL2xpc3RpbmZvLzZsbw0K
+
+
+From nobody Sun Aug 26 21:24:45 2018
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id D1C4C130E51; Sun, 26 Aug 2018 21:24:43 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+To: <suresh@kaloom.com>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.83.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Cc: Samita Chakrabarti <samitac.ietf@gmail.com>, 6lo-chairs@ietf.org, iesg-secretary@ietf.org, samitac.ietf@gmail.com, 6lo@ietf.org
+Message-ID: <153534388385.11846.12483558272730850229.idtracker@ietfa.amsl.com>
+Date: Sun, 26 Aug 2018 21:24:43 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/D8lwaxg1-a4b39AC8oUXvnYnDyc>
+Subject: [6lo] Publication has been requested for draft-ietf-6lo-nfc-10
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 27 Aug 2018 04:24:44 -0000
+
+Samita Chakrabarti has requested publication of draft-ietf-6lo-nfc-10 as Proposed Standard on behalf of the 6LO working group.
+
+Please verify the document's state at https://datatracker.ietf.org/doc/draft-ietf-6lo-nfc/
+
+
+From nobody Fri Aug 31 02:18:04 2018
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id CCE2F130DCA; Fri, 31 Aug 2018 02:18:03 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.83.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: 6lo@ietf.org
+Message-ID: <153570708380.29228.3619064897564864131@ietfa.amsl.com>
+Date: Fri, 31 Aug 2018 02:18:03 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/lDk9Lx_H8NOLOTRSkrrVFHdw9CM>
+Subject: [6lo] I-D Action: draft-ietf-6lo-deadline-time-02.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 31 Aug 2018 09:18:04 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : Packet Delivery Deadline time in 6LoWPAN Routing Header
+        Authors         : Lijo Thomas
+                          Satish Anamalamudi
+                          S.V.R Anand
+                          Malati Hegde
+                          Charles E. Perkins
+	Filename        : draft-ietf-6lo-deadline-time-02.txt
+	Pages           : 15
+	Date            : 2018-08-31
+
+Abstract:
+   This document specifies a new type for the 6LoWPAN routing header
+   containing the delivery deadline time for data packets.  The deadline
+   time enables forwarding and scheduling decisions for time critical
+   IoT M2M applications that need deterministic delay guarantees over
+   constrained networks and operate within time-synchronized networks.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-deadline-time-02
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-deadline-time-02
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-deadline-time-02
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Fri Aug 31 06:00:18 2018
+Return-Path: <lijo@cdac.in>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id DC8B9130E48 for <6lo@ietfa.amsl.com>; Fri, 31 Aug 2018 06:00:16 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.901
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.901 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id fYI1qFWxOm0Z for <6lo@ietfa.amsl.com>; Fri, 31 Aug 2018 06:00:15 -0700 (PDT)
+Received: from mailsender.cdac.in (mailsender.cdac.in [196.1.113.117]) (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 077C0130934 for <6lo@ietf.org>; Fri, 31 Aug 2018 06:00:14 -0700 (PDT)
+Received: from ims.pune.cdac.in (ims.pune.cdac.in [10.208.1.15]) by mailsender.cdac.in (8.14.2/8.14.2) with ESMTP id w7VD0AZZ017621 (version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT) for <6lo@ietf.org>; Fri, 31 Aug 2018 18:30:10 +0530
+Received: from mailgw.pune.cdac.in ([10.208.1.4]) by ims.pune.cdac.in (8.14.4/8.14.4) with ESMTP id w7VD030H006085 for <6lo@ietf.org>; Fri, 31 Aug 2018 18:30:03 +0530
+X-AuthUser: lijo
+Received: from LijoPC (lijo_new_pc.tvm.cdac.in [10.176.10.234]) (authenticated bits=0) by mailgw.pune.cdac.in (8.14.2/8.13.8) with ESMTP id w7VD01B2009871 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=NOT) for <6lo@ietf.org>; Fri, 31 Aug 2018 18:30:03 +0530
+From: "Lijo Thomas" <lijo@cdac.in>
+To: <6lo@ietf.org>
+References: <153570708380.29228.3619064897564864131@ietfa.amsl.com>
+In-Reply-To: <153570708380.29228.3619064897564864131@ietfa.amsl.com>
+Date: Fri, 31 Aug 2018 18:32:56 +0530
+Message-ID: <010c01d4412a$f0cac740$d26055c0$@cdac.in>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Mailer: Microsoft Outlook 15.0
+Thread-Index: AQJTR06faCjF+uAAyKZtqr9YOP63yaPbxlIQ
+Content-Language: en-in
+X-CDAC-PUNE-MailScanner-ID: w7VD030H006085
+X-CDAC-PUNE-MailScanner: Found to be clean, Found to be clean
+X-CDAC-PUNE-MailScanner-MCPCheck-IMS: MCP-Clean, MCP-Checker (score=0, required 1)
+X-CDAC-PUNE-MailScanner-SpamCheck: not spam, SpamAssassin (not cached, score=-1, required 6, autolearn=disabled, ALL_TRUSTED -1.00, BAYES_40 -0.00, URIBL_BLOCKED 0.00), not spam, SpamAssassin (not cached, score=-2.54, required 6, autolearn=disabled, ALL_TRUSTED -1.80, BAYES_20 -0.74)
+X-CDAC-PUNE-MailScanner-Information: Please contact npsfhelp@cdac.in/mailadmin@cdac.in for more information
+X-MailScanner-ID: w7VD0AZZ017621
+X-CDAC-PUNE-MailScanner-From: lijo@cdac.in
+X-CDAC-MailScanner-Spam-Status: No
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/m6M3x6oVlGXTN7fvrbEACtMvWaI>
+Subject: Re: [6lo] I-D Action: draft-ietf-6lo-deadline-time-02.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.27
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 31 Aug 2018 13:00:17 -0000
+
+Hi all,
+
+Published a new version -02 of our <draft-ietf-6lo-deadline-time> draft
+which addressed the review comments from Georgios and Samita.
+
+Will be happy to receive your feedback and further inputs ...
+
+https://tools.ietf.org/html/draft-ietf-6lo-deadline-time-02
+
+
+Thanks & Regards,
+Lijo Thomas 
+
+-----Original Message-----
+From: 6lo [mailto:6lo-bounces@ietf.org] On Behalf Of
+internet-drafts@ietf.org
+Sent: 31 August 2018 14:48
+To: i-d-announce@ietf.org
+Cc: 6lo@ietf.org
+Subject: [6lo] I-D Action: draft-ietf-6lo-deadline-time-02.txt
+
+
+A New Internet-Draft is available from the on-line Internet-Drafts
+directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained
+Nodes WG of the IETF.
+
+        Title           : Packet Delivery Deadline time in 6LoWPAN Routing
+Header
+        Authors         : Lijo Thomas
+                          Satish Anamalamudi
+                          S.V.R Anand
+                          Malati Hegde
+                          Charles E. Perkins
+	Filename        : draft-ietf-6lo-deadline-time-02.txt
+	Pages           : 15
+	Date            : 2018-08-31
+
+Abstract:
+   This document specifies a new type for the 6LoWPAN routing header
+   containing the delivery deadline time for data packets.  The deadline
+   time enables forwarding and scheduling decisions for time critical
+   IoT M2M applications that need deterministic delay guarantees over
+   constrained networks and operate within time-synchronized networks.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-deadline-time-02
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-deadline-time-02
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-deadline-time-02
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org
+https://www.ietf.org/mailman/listinfo/6lo
+
+
+------------------------------------------------------------------------------------------------------------
+[ C-DAC is on Social-Media too. Kindly follow us at:
+Facebook: https://www.facebook.com/CDACINDIA & Twitter: @cdacindia ]
+
+This e-mail is for the sole use of the intended recipient(s) and may
+contain confidential and privileged information. If you are not the
+intended recipient, please contact the sender by reply e-mail and destroy
+all copies and the original message. Any unauthorized review, use,
+disclosure, dissemination, forwarding, printing or copying of this email
+is strictly prohibited and appropriate legal action will be taken.
+------------------------------------------------------------------------------------------------------------
+

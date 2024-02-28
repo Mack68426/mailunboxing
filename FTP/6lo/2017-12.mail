@@ -1,0 +1,68 @@
+
+From nobody Fri Dec 15 02:31:26 2017
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id BF642127137; Fri, 15 Dec 2017 02:31:19 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.67.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <151333387975.30411.17267422600450591636@ietfa.amsl.com>
+Date: Fri, 15 Dec 2017 02:31:19 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/doa74f7tVEDe2fJwTmJ-HeEG77o>
+Subject: [6lo] I-D Action: draft-ietf-6lo-rfc6775-update-11.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 15 Dec 2017 10:31:20 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : An Update to 6LoWPAN ND
+        Authors         : Pascal Thubert
+                          Erik Nordmark
+                          Samita Chakrabarti
+                          Charles E. Perkins
+	Filename        : draft-ietf-6lo-rfc6775-update-11.txt
+	Pages           : 35
+	Date            : 2017-12-15
+
+Abstract:
+   This specification updates RFC 6775 - 6LoWPAN Neighbor Discovery, to
+   clarify the role of the protocol as a registration technique,
+   simplify the registration operation in 6LoWPAN routers, as well as to
+   provide enhancements to the registration capabilities and mobility
+   detection for different network topologies including the backbone
+   routers performing proxy Neighbor Discovery in a low power network.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-rfc6775-update/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-rfc6775-update-11
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-rfc6775-update-11
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-rfc6775-update-11
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+

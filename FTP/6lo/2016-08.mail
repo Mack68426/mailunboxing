@@ -1,0 +1,3346 @@
+
+From nobody Mon Aug  1 12:27:30 2016
+Return-Path: <samita.chakrabarti@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id BFC4012D98C for <6lo@ietfa.amsl.com>; Mon,  1 Aug 2016 12:27:28 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.201
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.201 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id WdsoADr9oTrl for <6lo@ietfa.amsl.com>; Mon,  1 Aug 2016 12:27:27 -0700 (PDT)
+Received: from usplmg20.ericsson.net (usplmg20.ericsson.net [198.24.6.45]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 3713412D575 for <6lo@ietf.org>; Mon,  1 Aug 2016 12:27:27 -0700 (PDT)
+X-AuditID: c618062d-980fb98000000a08-48-579fa2ecc215
+Received: from EUSAAHC004.ericsson.se (Unknown_Domain [147.117.188.84]) by  (Symantec Mail Security) with SMTP id 2F.8D.02568.CE2AF975; Mon,  1 Aug 2016 21:28:45 +0200 (CEST)
+Received: from EUSAAMB103.ericsson.se ([147.117.188.120]) by EUSAAHC004.ericsson.se ([147.117.188.84]) with mapi id 14.03.0301.000; Mon, 1 Aug 2016 15:19:36 -0400
+From: Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: WGLC for draft-ietf-6lo-privacy-considerations-02
+Thread-Index: AdHsJ+amXjZCyF3NQJmQi0ntQVyEfg==
+Date: Mon, 1 Aug 2016 19:19:35 +0000
+Message-ID: <ECA43DA70480A3498E43C3471FB2E1F022402E76@eusaamb103.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.9]
+Content-Type: multipart/alternative; boundary="_000_ECA43DA70480A3498E43C3471FB2E1F022402E76eusaamb103erics_"
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFvrBLMWRmVeSWpSXmKPExsUyuXRPiO7bRfPDDTZNZLVo2/2T1aJ5ioDF pRVHWB2YPZYs+cnk0brjL7vHl8uf2QKYo7hsUlJzMstSi/TtErgyNp05wFQwX6/i+IxdTA2M rZpdjJwcEgImEpdvtTCD2EICGxglvvxK7mLkArKXMUq0rbjFApJgE7CS6Ojdww5iiwgoSux9 9hjMZhZIkljz4i4TiC0MVHNm2y+oGnuJKZdWQtl6Egf2/wKrYRFQkZhzqAkszivgK3GxYS3Y YkYBMYnvp9YwQcwUl7j1ZD4TxHECEkv2nGeGsEUlXj7+xwphK0rs658OdUO+xMZrfcwQMwUl Ts58wjKBUWgWklGzkJTNQlIGEdeRWLD7ExuErS2xbOFrZhj7zIHHTMjiCxjZVzFylBYX5OSm GxlsYgTGxzEJNt0djPenex5iFOBgVOLhVeibHy7EmlhWXJl7iFGCg1lJhDd9IVCINyWxsiq1 KD++qDQntfgQozQHi5I4r9gjxXAhgfTEktTs1NSC1CKYLBMHp1QDY/jKozkXHi50qbn44Flu DuuP9v7XhjmXsxh89Ivlt2SG/+8+HcO/LNgv/Ze97L4bj2ee37yYb4Ll2UNxWVqKqQ97b75S n5IwJf6YYfi6CG+B6+vshE99Uu7UFvBxf7Jmts+9oxPrujbMcj+1Ylpfj8axRpvLH+60ffox PblrydVZNaHiM/3nr1NiKc5INNRiLipOBAD2h+BLiwIAAA==
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/4z7s4vgewfI3lGH0UN_6nSD-10k>
+Cc: "6lo-chairs@tools.ietf.org" <6lo-chairs@tools.ietf.org>, Dave Thaler <dthaler@microsoft.com>
+Subject: [6lo] WGLC for draft-ietf-6lo-privacy-considerations-02
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 01 Aug 2016 19:27:29 -0000
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022402E76eusaamb103erics_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello 6lo WG:
+
+https://tools.ietf.org/html/draft-ietf-6lo-privacy-considerations-02 has be=
+en submitted incorporating  WG comments on LL address.
+
+The "Privacy Considerations for IPv6 over Networks of Resource-Constrained =
+Nodes" document is now on WG LC.
+
+
+Abstract
+
+   This document discusses how a number of privacy threats apply to
+   technologies designed for IPv6 over networks of resource-constrained
+   nodes, and provides advice to protocol designers on how to address
+   such threats in adaptation layer specifications for IPv6 over such
+   links.
+
+The intended status :  "INFORMATIONAL" .
+
+Please review the document and provide comments  on the privacy guidelines =
+ for 6lo networks described in this document as it will have impact on all =
+ ipv6-over-foo documents going forward.
+
+The WGLC for the above document ends on  15th August, 2016.
+Please send your comments to the 6lo WG.
+
+Thanks,
+-Samita
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022402E76eusaamb103erics_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hello 6lo WG:<br>
+<br>
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"https://tools.ietf.org/html/draft-ietf-6l=
+o-privacy-considerations-02">https://tools.ietf.org/html/draft-ietf-6lo-pri=
+vacy-considerations-02</a> has been submitted incorporating&nbsp; WG commen=
+ts on LL address.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The &#8220;Privacy Considerations for IPv6 over Netw=
+orks of Resource-Constrained Nodes&#8221; document is now on WG LC.<o:p></o=
+:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Co=
+urier New&quot;;color:black">Abstract<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Co=
+urier New&quot;;color:black"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Co=
+urier New&quot;;color:black">&nbsp;&nbsp; This document discusses how a num=
+ber of privacy threats apply to<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Co=
+urier New&quot;;color:black">&nbsp;&nbsp; technologies designed for IPv6 ov=
+er networks of resource-constrained<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Co=
+urier New&quot;;color:black">&nbsp;&nbsp; nodes, and provides advice to pro=
+tocol designers on how to address<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Co=
+urier New&quot;;color:black">&nbsp;&nbsp; such threats in adaptation layer =
+specifications for IPv6 over such<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Co=
+urier New&quot;;color:black">&nbsp;&nbsp; links.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The intended status : &nbsp;&#8220;INFORMATIONAL&#82=
+21; .<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Please review the document and provide comments &nbs=
+p;on the privacy guidelines &nbsp;for 6lo networks described in this docume=
+nt as it will have impact on all &nbsp;ipv6-over-foo documents going forwar=
+d.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The WGLC for the above document ends on &nbsp;15<sup=
+>th</sup> August, 2016.<o:p></o:p></p>
+<p class=3D"MsoNormal">Please send your comments to the 6lo WG.<o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks,<o:p></o:p></p>
+<p class=3D"MsoNormal">-Samita<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F022402E76eusaamb103erics_--
+
+
+From nobody Mon Aug  8 13:05:59 2016
+Return-Path: <iesg-secretary@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id A07CB12D0CB; Mon,  8 Aug 2016 13:05:47 -0700 (PDT)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: The IESG <iesg-secretary@ietf.org>
+To: "IETF-Announce" <ietf-announce@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.29.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <147068674765.32197.2627875906211251809.idtracker@ietfa.amsl.com>
+Date: Mon, 08 Aug 2016 13:05:47 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/5bp_uKS7d1INgGCy7pMjRhNF464>
+Cc: 6lo-chairs@ietf.org, draft-ietf-6lo-ethertype-request@ietf.org, suresh.krishnan@ericsson.com, samita.chakrabarti@ericsson.com, The IESG <iesg@ietf.org>, 6lo@ietf.org, rfc-editor@rfc-editor.org
+Subject: [6lo] Document Action: 'Assignment of an Ethertype for IPv6 with LoWPAN Encapsulation' to Informational RFC (draft-ietf-6lo-ethertype-request-01.txt)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 08 Aug 2016 20:05:47 -0000
+
+The IESG has approved the following document:
+- 'Assignment of an Ethertype for IPv6 with LoWPAN Encapsulation'
+  (draft-ietf-6lo-ethertype-request-01.txt) as Informational RFC
+
+This document is the product of the IPv6 over Networks of
+Resource-constrained Nodes Working Group.
+
+The IESG contact persons are Suresh Krishnan and Terry Manderson.
+
+A URL of this Internet Draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-ethertype-request/
+
+
+
+
+
+Technical Summary
+
+  IETF currently defines format for IPV6[RFC2460]  with LOWPAN encapsulation in RFC4944. However the L2
+  MAC frame is using the same ethertype for both IPv6 datagram[RFC2460] and IPv6 with LOWPAN encapsulation[RFC4944].
+  This works fine when RFC4944 was written for only IEEE802.15.4 L2 medium. As time progressed, several
+  other ethertype based L2 technolgies found usefulness in using RFC4944 defined LOWPAN encapsulation methods
+  for optimized usage of IPv6 in certain use cases.
+  For example, Wi-SUN Alliance intends to use the 15.9 Multiplexed Data Information Element to dispatch
+  LoWPAN encapsulation frames to upper stack layers.  As specified in IEEE 802.15.9, dispatch of
+  LoWPAN encapsulation frames will require an Ethertype be assigned for LoWPAN encapsulation.
+  
+  WiFi Alliance's HALOW standard ( Low power operation in 900 MHZ band) and other L2 technolgies such as 
+  Ethernet and Wireshark will benefit from having a separate ethertype for IPv6 datagrams with LOWPAN
+  encapsulation.
+  
+  Additionally, any existing or future Layer 2 technology, incorporating Ethertype based upper layer dispatch,
+  can use the Ethertype proposed in this document to dispatch LoWPAN encapsulated IPv6 datagrams.
+
+Working Group Summary
+
+  The document had the strong support of the 6lo WG. There were no particular points of controversy.
+
+ 
+Document Quality
+
+The document has been reviewed over the 6lo WG mailing list and has been discussed with multiple comments.
+The chairs have reviewed the document as well.
+
+Personnel
+
+  Samita Chakrabarti is the document shepherd. Suresh Krishnan is the responsible AD.
+
+
+From nobody Mon Aug  8 16:18:44 2016
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 267F812D147; Mon,  8 Aug 2016 16:18:44 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.29.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <147069832415.32117.6302579092575989059.idtracker@ietfa.amsl.com>
+Date: Mon, 08 Aug 2016 16:18:44 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/GSFmqujdi9GVmA_RmX9XZE3aOxI>
+Cc: 6lo@ietf.org
+Subject: [6lo] I-D Action: draft-ietf-6lo-dispatch-iana-registry-04.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 08 Aug 2016 23:18:44 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes of the IETF.
+
+        Title           : 6lowpan ESC Dispatch Code Points and Guidelines
+        Authors         : Samita Chakrabarti
+                          Gabriel Montenegro
+                          Ralph Droms
+                          James Woodyatt
+	Filename        : draft-ietf-6lo-dispatch-iana-registry-04.txt
+	Pages           : 9
+	Date            : 2016-08-08
+
+Abstract:
+   RFC4944 defines ESC dispatch type for additional dispatch bytes in
+   the 6lowpan header.  The value of ESC byte has been updated by
+   RFC6282.  However, the usage of ESC extension byte has not been
+   defined in RFC6282 and RFC4944.  This document updates RFC4944 and
+   RFC6282 by defining the ESC extension byte code points including
+   registration of entries for known use-cases at the time of writing of
+   this document.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-dispatch-iana-registry/
+
+There's also a htmlized version available at:
+https://tools.ietf.org/html/draft-ietf-6lo-dispatch-iana-registry-04
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-dispatch-iana-registry-04
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Mon Aug  8 16:31:02 2016
+Return-Path: <samita.chakrabarti@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 2D3D512D563 for <6lo@ietfa.amsl.com>; Mon,  8 Aug 2016 16:31:00 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.201
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.201 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 9KFHyHAAaHBc for <6lo@ietfa.amsl.com>; Mon,  8 Aug 2016 16:30:58 -0700 (PDT)
+Received: from usplmg20.ericsson.net (usplmg20.ericsson.net [198.24.6.45]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id BBF0312D0EC for <6lo@ietf.org>; Mon,  8 Aug 2016 16:30:58 -0700 (PDT)
+X-AuditID: c618062d-980fb98000000a08-9f-57a916c5d60f
+Received: from EUSAAHC007.ericsson.se (Unknown_Domain [147.117.188.93]) by  (Symantec Mail Security) with SMTP id 3A.0F.02568.5C619A75; Tue,  9 Aug 2016 01:33:26 +0200 (CEST)
+Received: from EUSAAMB103.ericsson.se ([147.117.188.120]) by EUSAAHC007.ericsson.se ([147.117.188.93]) with mapi id 14.03.0301.000; Mon, 8 Aug 2016 19:23:13 -0400
+From: Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: draft-ietf-6lo-dispatch-iana-registry  Shepherd comment updates
+Thread-Index: AdHxyZRKCpEFXUJ5RHq5Ctc2nF5Y2Q==
+Date: Mon, 8 Aug 2016 23:23:13 +0000
+Message-ID: <ECA43DA70480A3498E43C3471FB2E1F02241EFB5@eusaamb103.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.10]
+Content-Type: multipart/alternative; boundary="_000_ECA43DA70480A3498E43C3471FB2E1F02241EFB5eusaamb103erics_"
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFprKIsWRmVeSWpSXmKPExsUyuXRPrO4xsZXhBrPnCFk0TxGwmNnzj9Hi +MyNzBY3JlxgtXizdA67ReeKV8wObB5Tfm9k9VjQY+WxZMlPJo+Zx7+weLTu+MvusbV7IlsA WxSXTUpqTmZZapG+XQJXxtPtR9gLVltX7Jqe2cB4wqSLkZNDQsBEYun572xdjFwcQgIbGCXu X9jOAuEsY5RoWTOXGaSKTcBKoqN3DzuILSKgKLH32WMwm1lgIrNE42lVEFtYwENiweJlUDW+ En0TLzJC2HoSs3buA4uzCKhI9P3vYAWxeYFqtv+5wQJiMwqISXw/tYYJYqa4xK0n85kgrhOQ WLLnPDOELSrx8vE/VghbSWLS0nOsEPX5Eu9W7WCDmCkocXLmE5YJjEKzkIyahaRsFpIyiLiO xILdn9ggbG2JZQtfM8PYZw48ZkIWX8DIvoqRo7S4ICc33chgEyMwso5JsOnuYLw/3fMQowAH oxIP74ITK8KFWBPLiitzDzFKcDArifDGCK8MF+JNSaysSi3Kjy8qzUktPsQozcGiJM4r9kgx XEggPbEkNTs1tSC1CCbLxMEp1cDIE5o+f4ZAjefyg3Hf0u4Ec51U0ChS6j0wc9J8jmreY0ea rybZe15/X/LqRWI63w2L+r+9xtOVFll+nHcph4np6Jv1H1+cF6rdoSzUtJP543Z1a85Ym5Sc 5wuEg+TuL+OzcNe0fFrrmXRUeZPE1r+3G+xfmGZaX444dt783auc6K2NR5JfN+QqsRRnJBpq MRcVJwIAcxSZkagCAAA=
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/43vyevhH6161UVt2e_aSXco9ilA>
+Cc: "Brian Haberman \(brian@innovationslab.net\)" <brian@innovationslab.net>, Suresh Krishnan <suresh.krishnan@ericsson.com>, "Ralph Droms \(rdroms\) \(rdroms@cisco.com\)" <rdroms@cisco.com>, "Gabriel Montenegro \(Gabriel.Montenegro@microsoft.com\)" <Gabriel.Montenegro@microsoft.com>, "James Woodyatt \(jhw@nestlabs.com\)" <jhw@nestlabs.com>, "Thierry LYS \(thierry.lys@erdf.fr\)" <thierry.lys@erdf.fr>
+Subject: [6lo] draft-ietf-6lo-dispatch-iana-registry Shepherd comment updates
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 08 Aug 2016 23:31:00 -0000
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F02241EFB5eusaamb103erics_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello WG members and Thierry:
+
+He have made the following changes in the draft-ietf-6lo-dispatch-iana-regi=
+stry-04 document: https://tools.ietf.org/html/draft-ietf-6lo-dispatch-iana-=
+registry-04
+
+
+
+
+-          Update  of Abstract
+
+-          New Document title to match the content - "6lowpan ESC Dispatch =
+Code Points and Guidelines"
+
+-          IANA section update  which indicates that 'specification require=
+d' may also require designated  IETF expert review
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-dispatch-iana-registry-0=
+4
+
+Please provide your comments if any about these changes by  August 15th, 20=
+16 after which this document will be submitted to IESG.
+
+Thanks,
+-Samita
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F02241EFB5eusaamb103erics_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:2099907190;
+	mso-list-type:hybrid;
+	mso-list-template-ids:934727158 1942512450 67698691 67698693 67698689 6769=
+8691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hello WG members and Thierry:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">He have made the following changes in the draft-ietf=
+-6lo-dispatch-iana-registry-04 document:
+<a href=3D"https://tools.ietf.org/html/draft-ietf-6lo-dispatch-iana-registr=
+y-04">https://tools.ietf.org/html/draft-ietf-6lo-dispatch-iana-registry-04<=
+/a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo1"><![if !supportLists]><span style=3D"mso-list:Ignore">-<span style=
+=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Update&nbsp; of Abstract<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo1"><![if !supportLists]><span style=3D"mso-list:Ignore">-<span style=
+=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>New Document title to match the content &#8211; &#8=
+220;6lowpan ESC Dispatch Code Points and Guidelines&#8221;<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo1"><![if !supportLists]><span style=3D"mso-list:Ignore">-<span style=
+=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>IANA section update&nbsp; which indicates that &#82=
+16;specification required&#8217; may also require designated &nbsp;IETF exp=
+ert review
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">A diff from the previous version is available at:<o:=
+p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"https://www.ietf.org/rfcdiff?url2=3Ddraft=
+-ietf-6lo-dispatch-iana-registry-04">https://www.ietf.org/rfcdiff?url2=3Ddr=
+aft-ietf-6lo-dispatch-iana-registry-04</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Please provide your comments if any about these chan=
+ges by &nbsp;August 15<sup>th</sup>, 2016 after which this document will be=
+ submitted to IESG.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks,<o:p></o:p></p>
+<p class=3D"MsoNormal">-Samita<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F02241EFB5eusaamb103erics_--
+
+
+From nobody Mon Aug  8 16:34:50 2016
+Return-Path: <samita.chakrabarti@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id C392112D10F for <6lo@ietfa.amsl.com>; Mon,  8 Aug 2016 16:34:45 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.201
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.201 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 9SJJeuiEUUcV for <6lo@ietfa.amsl.com>; Mon,  8 Aug 2016 16:34:44 -0700 (PDT)
+Received: from usplmg20.ericsson.net (usplmg20.ericsson.net [198.24.6.45]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 0FAF012B012 for <6lo@ietf.org>; Mon,  8 Aug 2016 16:34:44 -0700 (PDT)
+X-AuditID: c618062d-980fb98000000a08-f5-57a917a72fa5
+Received: from EUSAAHC008.ericsson.se (Unknown_Domain [147.117.188.96]) by  (Symantec Mail Security) with SMTP id F3.8F.02568.7A719A75; Tue,  9 Aug 2016 01:37:11 +0200 (CEST)
+Received: from EUSAAMB103.ericsson.se ([147.117.188.120]) by EUSAAHC008.ericsson.se ([147.117.188.96]) with mapi id 14.03.0301.000; Mon, 8 Aug 2016 19:28:11 -0400
+From: Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: draft-ietf-6lo-dispatch-iana-registry  Shepherd comment updates
+Thread-Index: AdHxyZRKCpEFXUJ5RHq5Ctc2nF5Y2QAAseLQ
+Date: Mon, 8 Aug 2016 23:28:11 +0000
+Message-ID: <ECA43DA70480A3498E43C3471FB2E1F02241EFD6@eusaamb103.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.10]
+Content-Type: multipart/alternative; boundary="_000_ECA43DA70480A3498E43C3471FB2E1F02241EFD6eusaamb103erics_"
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFprMIsWRmVeSWpSXmKPExsUyuXRPgu5y8ZXhBrO36lg0TxGwmNnzj9Hi +MyNzBY3JlxgtXizdA67ReeKV8wObB5Tfm9k9VjQY+WxZMlPJo+Zx7+weLTu+MvusbV7IlsA WxSXTUpqTmZZapG+XQJXxr7liQVbQypeLPvB1MC407uLkZNDQsBE4tqd1SxdjFwcQgIbGCXW dM5khnCWMUq8//CdBaSKTcBKoqN3DzuILSKgKLH32WMwm1lgIrNE42lVEFtYwEfizPb/TBA1 vhJ9Ey8yQthGEu+2nGIDsVkEVCS+bZvACmLzAtXsOLwLbD6jgJjE91NrmCBmikvcejKfCeI6 AYkle84zQ9iiEi8f/2OFsJUkJi09B2RzANXnSzxb4ggxUlDi5MwnLBMYhWYhmTQLoWoWkiqI Eh2JBbs/sUHY2hLLFr5mhrHPHHjMhCy+gJF9FSNHaXFBTm66kcEmRmBUHZNg093BeH+65yFG AQ5GJR7eBSdWhAuxJpYVV+YeYpTgYFYS4Y0RXhkuxJuSWFmVWpQfX1Sak1p8iFGag0VJnFfs kWK4kEB6YklqdmpqQWoRTJaJg1OqgXHeJKeJaqc2iadqPJMy+euo0GtdEjfLyHW20Tzr5rYc 63C+08linirOV0XE9zjcfm5/88+MBafEp36W3L4yw/La0RTzcPbKJl0Nhr8Pdy/b9L1qHwfX mwkf7238FXsgX3d2DpNv9GPXg1MMbX/JeFl9e+08Nehd8EPzgheKzseME+L0ZDc4tyuxFGck GmoxFxUnAgDMg/KPpgIAAA==
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/U5GJy9FOoxGbQCHCdhtWPvod-9s>
+Cc: "Brian Haberman \(brian@innovationslab.net\)" <brian@innovationslab.net>, Suresh Krishnan <suresh.krishnan@ericsson.com>, "Ralph Droms \(rdroms\) \(rdroms@cisco.com\)" <rdroms@cisco.com>, "Gabriel Montenegro \(Gabriel.Montenegro@microsoft.com\)" <Gabriel.Montenegro@microsoft.com>, "James Woodyatt \(jhw@nestlabs.com\)" <jhw@nestlabs.com>, "Thierry LYS \(thierry.lys@erdf.fr\)" <thierry.lys@erdf.fr>
+Subject: Re: [6lo] draft-ietf-6lo-dispatch-iana-registry Shepherd comment updates
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 08 Aug 2016 23:34:46 -0000
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F02241EFD6eusaamb103erics_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Correction:
+
+We have made the following changes in the draft-ietf-6lo-dispatch-iana-regi=
+stry-04 document:
+https://tools.ietf.org/html/draft-ietf-6lo-dispatch-iana-registry-04
+
+
+
+Thanks.
+From: Samita Chakrabarti
+Sent: Monday, August 08, 2016 4:23 PM
+To: 6lo@ietf.org
+Cc: Thierry LYS (thierry.lys@erdf.fr) <thierry.lys@erdf.fr>; Suresh Krishna=
+n (suresh.krishnan@ericsson.com) <suresh.krishnan@ericsson.com>; Brian Habe=
+rman (brian@innovationslab.net) <brian@innovationslab.net>; Gabriel Montene=
+gro (Gabriel.Montenegro@microsoft.com) <Gabriel.Montenegro@microsoft.com>; =
+Ralph Droms (rdroms) (rdroms@cisco.com) <rdroms@cisco.com>; James Woodyatt =
+(jhw@nestlabs.com) <jhw@nestlabs.com>
+Subject: draft-ietf-6lo-dispatch-iana-registry Shepherd comment updates
+
+Hello WG members and Thierry:
+
+He have made the following changes in the draft-ietf-6lo-dispatch-iana-regi=
+stry-04 document: https://tools.ietf.org/html/draft-ietf-6lo-dispatch-iana-=
+registry-04
+
+
+
+
+-          Update  of Abstract
+
+-          New Document title to match the content - "6lowpan ESC Dispatch =
+Code Points and Guidelines"
+
+-          IANA section update  which indicates that 'specification require=
+d' may also require designated  IETF expert review
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-dispatch-iana-registry-0=
+4
+
+Please provide your comments if any about these changes by  August 15th, 20=
+16 after which this document will be submitted to IESG.
+
+Thanks,
+-Samita
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F02241EFD6eusaamb103erics_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:2099907190;
+	mso-list-type:hybrid;
+	mso-list-template-ids:934727158 1942512450 67698691 67698693 67698689 6769=
+8691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Correction:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><span style=3D"background=
+:yellow;mso-highlight:yellow">We</span> have made the following changes in =
+the draft-ietf-6lo-dispatch-iana-registry-04 document:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><a href=3D"https://tools.=
+ietf.org/html/draft-ietf-6lo-dispatch-iana-registry-04">https://tools.ietf.=
+org/html/draft-ietf-6lo-dispatch-iana-registry-04</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks.<o:p></o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><b>From:</b> Samita Chakr=
+abarti <br>
+<b>Sent:</b> Monday, August 08, 2016 4:23 PM<br>
+<b>To:</b> 6lo@ietf.org<br>
+<b>Cc:</b> Thierry LYS (thierry.lys@erdf.fr) &lt;thierry.lys@erdf.fr&gt;; S=
+uresh Krishnan (suresh.krishnan@ericsson.com) &lt;suresh.krishnan@ericsson.=
+com&gt;; Brian Haberman (brian@innovationslab.net) &lt;brian@innovationslab=
+.net&gt;; Gabriel Montenegro (Gabriel.Montenegro@microsoft.com)
+ &lt;Gabriel.Montenegro@microsoft.com&gt;; Ralph Droms (rdroms) (rdroms@cis=
+co.com) &lt;rdroms@cisco.com&gt;; James Woodyatt (jhw@nestlabs.com) &lt;jhw=
+@nestlabs.com&gt;<br>
+<b>Subject:</b> draft-ietf-6lo-dispatch-iana-registry Shepherd comment upda=
+tes<o:p></o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">Hello WG members and Thie=
+rry:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">He have made the followin=
+g changes in the draft-ietf-6lo-dispatch-iana-registry-04 document:
+<a href=3D"https://tools.ietf.org/html/draft-ietf-6lo-dispatch-iana-registr=
+y-04">https://tools.ietf.org/html/draft-ietf-6lo-dispatch-iana-registry-04<=
+/a><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level1 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">-<span style=3D"font:7=
+.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+</span></span><![endif]>Update&nbsp; of Abstract<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level1 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">-<span style=3D"font:7=
+.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+</span></span><![endif]>New Document title to match the content &#8211; &#8=
+220;6lowpan ESC Dispatch Code Points and Guidelines&#8221;<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level1 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">-<span style=3D"font:7=
+.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+</span></span><![endif]>IANA section update&nbsp; which indicates that &#82=
+16;specification required&#8217; may also require designated &nbsp;IETF exp=
+ert review
+<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">A diff from the previous =
+version is available at:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><a href=3D"https://www.ie=
+tf.org/rfcdiff?url2=3Ddraft-ietf-6lo-dispatch-iana-registry-04">https://www=
+.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-dispatch-iana-registry-04</a><o:p><=
+/o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">Please provide your comme=
+nts if any about these changes by &nbsp;August 15<sup>th</sup>, 2016 after =
+which this document will be submitted to IESG.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">Thanks,<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">-Samita<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F02241EFD6eusaamb103erics_--
+
+
+From nobody Tue Aug  9 16:30:41 2016
+Return-Path: <samita.chakrabarti@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 5163E12D50D for <6lo@ietfa.amsl.com>; Tue,  9 Aug 2016 16:30:40 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.201
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.201 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id tTCp9fjTGh7i for <6lo@ietfa.amsl.com>; Tue,  9 Aug 2016 16:30:38 -0700 (PDT)
+Received: from usplmg20.ericsson.net (usplmg20.ericsson.net [198.24.6.45]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id DB06512D16F for <6lo@ietf.org>; Tue,  9 Aug 2016 16:30:38 -0700 (PDT)
+X-AuditID: c618062d-980fb98000000a08-db-57aa683bf6ab
+Received: from EUSAAHC003.ericsson.se (Unknown_Domain [147.117.188.81]) by  (Symantec Mail Security) with SMTP id 23.25.02568.B386AA75; Wed, 10 Aug 2016 01:33:16 +0200 (CEST)
+Received: from EUSAAMB103.ericsson.se ([147.117.188.120]) by EUSAAHC003.ericsson.se ([147.117.188.81]) with mapi id 14.03.0301.000; Tue, 9 Aug 2016 19:24:10 -0400
+From: Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: IETF96 6lo WG Minutes posted
+Thread-Index: AdHylJwMKu8m5LkfQxqVkUtBJOCQEA==
+Date: Tue, 9 Aug 2016 23:24:10 +0000
+Message-ID: <ECA43DA70480A3498E43C3471FB2E1F0224265E6@eusaamb103.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.9]
+Content-Type: multipart/alternative; boundary="_000_ECA43DA70480A3498E43C3471FB2E1F0224265E6eusaamb103erics_"
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFrrGLMWRmVeSWpSXmKPExsUyuXRPoK5Nxqpwg85rzBbNUwQcGD2WLPnJ FMAYxWWTkpqTWZZapG+XwJWxaPJbpoJmiYprF54zNjAuFu1i5OSQEDCR2Ph0K1MXIxeHkMAG RonP+08wQzjLGCWurWlnBqliE7CS6Ojdww5iiwgoSux99hjMFhZQlTh/cy9bFyM7UFxL4rAd RIWexLn1l8A6WQRUJBZ/nsHYxcjBwSvgK9G4TRUkzCggJvH91BomEJtZQFzi1pP5TBDnCEgs 2XOeGcIWlXj5+B8rhK0osa9/OjtEfb7Eq46ZYDW8AoISJ2c+YZnAKDgLyahZSMpmISmDiOtI LNj9iQ3C1pZYtvA1M4x95sBjJmTxBYzsqxg5SosLcnLTjQw2MQJD+5gEm+4OxvvTPQ8xCnAw KvHwKkitChdiTSwrrsw9xCjBwawkwmuUBhTiTUmsrEotyo8vKs1JLT7EKM3BoiTOK/ZIMVxI ID2xJDU7NbUgtQgmy8TBKdXAaL/yTPRMJs83Sod/ZH5K81p1LiHbcDXXKymlVcsEIl0S7wtq FrDeUrm7e/YByc8T9tkEdkd+z/RjO/cmuPhRg9O+8KMf5k/9ynvGsiHl1AHNFWnuR2+KZTR/ C83K7Pt69HTOxVkTN8/QEFkw+eXdGXVCcjUVE8/OjNS8IGu48p3C3G/yqT+kmZRYijMSDbWY i4oTATvlqMZpAgAA
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/pCQs0z3eXTE4jfdegIlvTMtN8sg>
+Subject: [6lo] IETF96 6lo WG Minutes posted
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 09 Aug 2016 23:30:40 -0000
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F0224265E6eusaamb103erics_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+https://www.ietf.org/proceedings/96/minutes/minutes-96-6lo
+
+Thanks to Zach Shelby and Dominique Barthel very much for the detailed note=
+s. Gabriel also took some notes which was used to enrich the minutes.
+
+Please take a look and let us know if it requires any correction.
+
+Cheers,
+-Gabriel and Samita
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F0224265E6eusaamb103erics_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><a href=3D"https://www.ietf.org/proceedings/96/minut=
+es/minutes-96-6lo">https://www.ietf.org/proceedings/96/minutes/minutes-96-6=
+lo</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks to Zach Shelby and Dominique Barthel very muc=
+h for the detailed notes. Gabriel also took some notes which was used to en=
+rich the minutes.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Please take a look and let us know if it requires an=
+y correction.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Cheers,<o:p></o:p></p>
+<p class=3D"MsoNormal">-Gabriel and Samita<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F0224265E6eusaamb103erics_--
+
+
+From nobody Tue Aug  9 19:41:59 2016
+Return-Path: <suresh.krishnan@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 6178A12D939; Tue,  9 Aug 2016 19:41:57 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.202
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.202 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id AQeSviyJ9ZRc; Tue,  9 Aug 2016 19:41:56 -0700 (PDT)
+Received: from usplmg20.ericsson.net (usplmg20.ericsson.net [198.24.6.45]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id DBCC912D932; Tue,  9 Aug 2016 19:41:55 -0700 (PDT)
+X-AuditID: c618062d-980fb98000000a08-9f-57aa95127945
+Received: from EUSAAHC004.ericsson.se (Unknown_Domain [147.117.188.84]) by  (Symantec Mail Security) with SMTP id A6.41.02568.2159AA75; Wed, 10 Aug 2016 04:44:34 +0200 (CEST)
+Received: from EUSAAMB107.ericsson.se ([147.117.188.124]) by EUSAAHC004.ericsson.se ([147.117.188.84]) with mapi id 14.03.0301.000; Tue, 9 Aug 2016 22:40:44 -0400
+From: Suresh Krishnan <suresh.krishnan@ericsson.com>
+To: "6lo@ietf.org" <6lo@ietf.org>, "draft-ietf-6lo-dect-ule@ietf.org" <draft-ietf-6lo-dect-ule@ietf.org>
+Thread-Topic: AD evaluation: draft-ietf-6lo-dect-ule-05
+Thread-Index: AdHysJdeg83HTbsgRVaaUtWTOt4Sgw==
+Date: Wed, 10 Aug 2016 02:40:43 +0000
+Message-ID: <E87B771635882B4BA20096B589152EF643E0876F@eusaamb107.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.12]
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFjrKLMWRmVeSWpSXmKPExsUyuXRPiK7Q1FXhBl/eS1s0TxGweDhrGYsD k8eSJT+ZAhijuGxSUnMyy1KL9O0SuDJ6N7xiL/ioWHHpxlS2BsY3Ul2MnBwSAiYSTw4sYwGx hQQ2MEpMvS3SxcgFZC9jlGj89I8NJMEGVLRh52cmEFtEIEti3uQDYA3CAkYSv9u2skLEzSU+ PXgHVaMnsfv8OrBeFgFViX+rroDV8wr4Snz5upsRxGYUEJP4fmoNWD2zgLjErSfzmSAOEpBY suc8M4QtKvHy8T9WCFtJYs7ra8wQ9ToSC3Z/YoOwtSWWLXzNDDFfUOLkzCcsExiFZiEZOwtJ yywkLbOQtCxgZFnFyFFaXJCTm25ksIkRGLjHJNh0dzDen+55iFGAg1GJh1dBalW4EGtiWXFl 7iFGCQ5mJRHeBZOAQrwpiZVVqUX58UWlOanFhxilOViUxHnFHimGCwmkJ5akZqemFqQWwWSZ ODilGhiNShJdde/U2wtMr93Mymuyu+9bztpjQib1tWH2vqK6tbHbL87bzWct3cG7vIqfTzDo 0CXFj5OW+zEkaW5aaeb1+smi8D3ejedM9t+u32ccoz/H9nVTOhPPfZ1/vCtk7t1Ye/5leX6B k8zp7IMrTil0PvcSX6Q78ZRel8RS33ePGLVYt0zZ563EUpyRaKjFXFScCABjgsUqWAIAAA==
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/pUJt9b6E08vrWLE_xZpPEtLQlNo>
+Subject: [6lo] AD evaluation: draft-ietf-6lo-dect-ule-05
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 10 Aug 2016 02:41:57 -0000
+
+Hi authors,=0A=
+    I have done my AD evaluation on this draft. I do have a few comments I =
+=0A=
+would like you to address before I send the document further through the pr=
+ocess.=0A=
+=0A=
+* Section 1=0A=
+=0A=
+Please swap these two sentences so that DECT gets defined before use=0A=
+=0A=
+=0A=
+Move:=0A=
+     DECT Ultra Low Energy (DECT ULE or just ULE) is an air interface=0A=
+     technology building on the key fundamentals of traditional DECT /=0A=
+     CAT-iq but with specific changes to significantly reduce the power=0A=
+     consumption at the expense of data throughput.=0A=
+=0A=
+after:=0A=
+=0A=
+     DECT (Digital Enhanced Cordless Telecommunications) is a standard=0A=
+     series...=0A=
+=0A=
+=0A=
+* Section 1.2=0A=
+=0A=
+It is unclear what this section is intending to do. The way it is done now,=
+ =0A=
+it looks like it is trying to redefine what 6LBR and 6LN are. This needs to=
+ =0A=
+be fixed. Suggest something like the following=0A=
+=0A=
+6LBR: 6LoWPAN Border Router as defined in [RFC6775]. The DECT Fixed Part=0A=
+        plays this role in DECT-ULE networks.=0A=
+6LN:  6LoWPAN node having a role as defined in [RFC6775]. The DECT=0A=
+        Portable part plays this role in DECT-ULE networks.=0A=
+=0A=
+* Section 2.1=0A=
+=0A=
+s/technics/techniques/=0A=
+=0A=
+=0A=
+* Section 2.2=0A=
+=0A=
+OLD:=0A=
+     This document does only address this primary scenario.=0A=
+=0A=
+NEW:=0A=
+     This document only addresses this primary scenario and all other =0A=
+scenarios are out of scope.=0A=
+=0A=
+* Section 2.3=0A=
+=0A=
+The scope of RFPI uniqueness is not clear from the following text.=0A=
+=0A=
+Each DECT FP is assigned a RFPI during manufacturing.  This identity has th=
+e =0A=
+size of 40 bits and is globally unique for a FP.=0A=
+=0A=
+Does this mean that the RFPI is globally unique? If so, delete the text "fo=
+r =0A=
+a FP". If not please explain what you mean.=0A=
+=0A=
+Similar question for the IPEI as well.=0A=
+=0A=
+* Section 2.4=0A=
+=0A=
+The minimum MTU required to be supported for IPv6 is 1280. Does the followi=
+ng =0A=
+text imply that the default IPv6 MTU in DECT ULE will be 1280.=0A=
+=0A=
+" In order to support complete IP packets, the DLC layer of DECT ULE SHALL=
+=0A=
+    per this specification be configured with a MTU size that fits the=0A=
+    requirements from IPv6 data packets"=0A=
+=0A=
+If so, I would like the document to explicitly state that. If not, why not?=
+=0A=
+=0A=
+* Section 3.1=0A=
+=0A=
+This mandatory text is unclear. Are you specifying this as mandatory for IP=
+v6 =0A=
+implementation or is it something that needs to be done before even startin=
+g =0A=
+on the IPv6 part? Please clarify?=0A=
+=0A=
+"The PP SHALL specify the <<IWU-ATTRIBUTES>>..."=0A=
+=0A=
+* Section 3.2.1=0A=
+=0A=
+The modified EUI-64 derivation seems to be wrong (Either the method is wron=
+g =0A=
+or the end result is wrong). This needs to get fixed. Let's take the RFPI =
+=0A=
+11.22.33.44.55 case.=0A=
+=0A=
+The way I see the derivation is as follows=0A=
+=0A=
+RFPI (11.22.33.44.55) -> MAC-48 (80:11:22:33:44:55)=0A=
+=0A=
+MAC-48 (80:11:22:33:44:55) -> IID (82:11:22:ff:fe:33:44:55)=0A=
+=0A=
+(as the U/L bit needs to be flipped to make the modified EUI-64)=0A=
+=0A=
+Please clarify what you intend to happen. The same error exists for the IPE=
+I =0A=
+based modified EUI-64s as well=0A=
+=0A=
+Also a reference to the draft-ietf-6lo-privacy-considerations-02 might be i=
+n =0A=
+order here as well as some guidance to the amount of entropy needed in the =
+=0A=
+typical connection scenarios.=0A=
+=0A=
+* Section 3.2.2=0A=
+=0A=
+What is the reasoning behind this restriction?=0A=
+=0A=
+"The 6LN MUST register only one IPv6 address per available IPv6 prefix"=0A=
+=0A=
+Can you please explain how a node can change its address when this =0A=
+restriction exists?=0A=
+=0A=
+* Section 3.2.4.1=0A=
+=0A=
+How are IPv6 multicast addresses recreated with the specified parameters fo=
+r =0A=
+RFC6282 (i.e. M=3D=3D0)=0A=
+=0A=
+* Section 3.3=0A=
+=0A=
+Why is this text included when PP acting as 6LBR has been disallowed by tex=
+t =0A=
+in Section 2.2?=0A=
+=0A=
+"Other scenarios can be imagined where a PP is acting as 6LBR and providing=
+ =0A=
+Internet connectivity for the FP."=0A=
+=0A=
+Thanks=0A=
+Suresh=0A=
+=0A=
+
+
+From nobody Wed Aug 17 06:28:54 2016
+Return-Path: <mcr+ietf@sandelman.ca>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id C9EC112D145; Wed, 17 Aug 2016 06:28:52 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -3.148
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.148 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RP_MATCHES_RCVD=-1.247, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 90Jbf3JYzh7j; Wed, 17 Aug 2016 06:28:51 -0700 (PDT)
+Received: from tuna.sandelman.ca (tuna.sandelman.ca [IPv6:2607:f0b0:f:3:216:3eff:fe7c:d1f3]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 02B1F12D778; Wed, 17 Aug 2016 06:28:47 -0700 (PDT)
+Received: from sandelman.ca (obiwan.sandelman.ca [209.87.249.21]) by tuna.sandelman.ca (Postfix) with ESMTP id 5E199200A5; Wed, 17 Aug 2016 09:39:51 -0400 (EDT)
+Received: from obiwan.sandelman.ca (localhost [IPv6:::1]) by sandelman.ca (Postfix) with ESMTP id 37BB0639DC; Wed, 17 Aug 2016 09:28:46 -0400 (EDT)
+From: Michael Richardson <mcr+ietf@sandelman.ca>
+To: 6lo@ietf.org, draft-sarikaya-6lo-ap-nd@ietf.org
+X-Attribution: mcr
+X-Mailer: MH-E 8.6; nmh 1.6+dev; GNU Emacs 24.5.1
+X-Face: $\n1pF)h^`}$H>Hk{L"x@)JS7<%Az}5RyS@k9X%29-lHB$Ti.V>2bi.~ehC0; <'$9xN5Ub# z!G,p`nR&p7Fz@^UXIn156S8.~^@MJ*mMsD7=QFeq%AL4m<nPbLgmtKK-5dC@#:k
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-="; micalg=pgp-sha1; protocol="application/pgp-signature"
+Date: Wed, 17 Aug 2016 09:28:46 -0400
+Message-ID: <22880.1471440526@obiwan.sandelman.ca>
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/6Z9JbaOJsbNz2ZJSUscJPxG2JZQ>
+Subject: [6lo] questions about address protected ND: draft-sarikaya-6lo-ap-nd
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 17 Aug 2016 13:28:53 -0000
+
+--=-=-=
+Content-Type: text/plain
+
+
+I feel that somewhere between sections 3 and section 4 there is some
+as yet unwritten text that explains how to do the crypto-ID calculation,
+and how the 6LBR would verify it.
+
+I thought perhaps it leveraged more of SEND/CGA (3971/3972) than I thought, I
+so glanced through those again, but I conclude that this is not the case.
+
+Please confirm that there is simply unwritten text at this point, rather
+than references I haven't followed.
+
+
+--
+Michael Richardson <mcr+IETF@sandelman.ca>, Sandelman Software Works
+ -= IPv6 IoT consulting =-
+
+
+
+
+--=-=-=
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEVAwUBV7Rmi4CLcPvd0N1lAQJJOgf/bb8ZFe26qn9ito6QUANqgZT3BVW5rFDN
+ipTgdxtaswPyDOX7/6FSBKiJDlI8UgBgLoo8rVgmeJuz2nQc1rftdWbhi4j2CHBS
+ylMJ3LcsUhe062yFio+ke6gLd6zsMBvbnKKfDVMPQwqaA3odo+HaDFvFlH2WhZsU
+K1QRGccWDT1slW5Jz22G/hE2OkNOLFxpWk9WtexhfYNKvSWBUCeOxgpas+zHxZmC
+fmV0Lr0V8XiaqmCDaSCPT+nin1Dc8TaOHJDWSGHxhDlGZQSrk6EGRIswC39G6aP9
+ihzDv8wiOIV8XQEveV5gnrOHm9f+Dv2V//0k5/ZPcWLqUG4IzlpQVA==
+=qAVA
+-----END PGP SIGNATURE-----
+--=-=-=--
+
+
+From nobody Wed Aug 17 06:50:44 2016
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id AFB7012D997; Wed, 17 Aug 2016 06:50:43 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -15.768
+X-Spam-Level: 
+X-Spam-Status: No, score=-15.768 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, RP_MATCHES_RCVD=-1.247, SPF_PASS=-0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id YXGMds60Z0yp; Wed, 17 Aug 2016 06:50:42 -0700 (PDT)
+Received: from alln-iport-7.cisco.com (alln-iport-7.cisco.com [173.37.142.94]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 7CFCB12D992; Wed, 17 Aug 2016 06:50:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=1244; q=dns/txt; s=iport; t=1471441842; x=1472651442; h=from:to:subject:date:message-id:references:in-reply-to: content-transfer-encoding:mime-version; bh=qlcYCUtEHn4WZPWjqV3JsimhIa1EEkfZImvdqtyVnUo=; b=iyKlWdC0KsH8g2BPQtWxoghXISdGQD4nS2CX3gsZ0fcJtqLxcofmrFti 995vreR/i/8dSqjGjvJ2UyYeiEnCyBjtTx2oxXENCuE/c5/30VKywRSA0 6nIlc0F6LPqw10fzSNiPtzOLT22xumHPB0etu73mADo6azY5G4CHWmUbY M=;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0AfAgB/arRX/5hdJa1eg0OBUge5MIF9g?= =?us-ascii?q?maDNwKBazgUAgEBAQEBAQFeJ4ReAQEFgQUEAgEIEQQBASgHMhQJCAIEARIIiCm?= =?us-ascii?q?+NQEBAQEBAQEBAQEBAQEBAQEBAQEBARyGKoRNihsFjlaKbgGPFoFyhFyJAow7g?= =?us-ascii?q?3cBHjaDem6FdX8BAQE?=
+X-IronPort-AV: E=Sophos;i="5.28,529,1464652800"; d="scan'208";a="311874164"
+Received: from rcdn-core-1.cisco.com ([173.37.93.152]) by alln-iport-7.cisco.com with ESMTP/TLS/DHE-RSA-AES256-GCM-SHA384; 17 Aug 2016 13:50:41 +0000
+Received: from XCH-RCD-005.cisco.com (xch-rcd-005.cisco.com [173.37.102.15]) by rcdn-core-1.cisco.com (8.14.5/8.14.5) with ESMTP id u7HDofSE012975 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=FAIL); Wed, 17 Aug 2016 13:50:41 GMT
+Received: from xch-rcd-001.cisco.com (173.37.102.11) by XCH-RCD-005.cisco.com (173.37.102.15) with Microsoft SMTP Server (TLS) id 15.0.1210.3; Wed, 17 Aug 2016 08:50:41 -0500
+Received: from xch-rcd-001.cisco.com ([173.37.102.11]) by XCH-RCD-001.cisco.com ([173.37.102.11]) with mapi id 15.00.1210.000; Wed, 17 Aug 2016 08:50:40 -0500
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: Michael Richardson <mcr+ietf@sandelman.ca>, "6lo@ietf.org" <6lo@ietf.org>,  "draft-sarikaya-6lo-ap-nd@ietf.org" <draft-sarikaya-6lo-ap-nd@ietf.org>
+Thread-Topic: questions about address protected ND: draft-sarikaya-6lo-ap-nd
+Thread-Index: AQHR+ItNqRCQ0fFl+EKT8/p15zuBBaBNKXQw
+Date: Wed, 17 Aug 2016 13:50:20 +0000
+Deferred-Delivery: Wed, 17 Aug 2016 13:50:02 +0000
+Message-ID: <f8dbb3f22fdb4cea8aab3045b9ca8f00@XCH-RCD-001.cisco.com>
+References: <22880.1471440526@obiwan.sandelman.ca>
+In-Reply-To: <22880.1471440526@obiwan.sandelman.ca>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [10.228.216.28]
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/TkrKmH60T8eep-DfFaCVWqXVEFw>
+Subject: Re: [6lo] questions about address protected ND: draft-sarikaya-6lo-ap-nd
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 17 Aug 2016 13:50:44 -0000
+
+It is largely unwritten Michael,=20
+
+That's ultimately a WG decision, and part of that decision is that we want =
+to assess if the IPR on CGA is an issue or not.=20
+My take is that we should adopt the work if we agree on the overall idea, k=
+nowing that CGA is one way of getting there; and then refine this as a WG.
+
+Makes sense?
+
+Pascal
+
+
+> -----Original Message-----
+> From: Michael Richardson [mailto:mcr+ietf@sandelman.ca]
+> Sent: mercredi 17 ao=FBt 2016 15:29
+> To: 6lo@ietf.org; draft-sarikaya-6lo-ap-nd@ietf.org
+> Subject: questions about address protected ND: draft-sarikaya-6lo-ap-nd
+>=20
+>=20
+> I feel that somewhere between sections 3 and section 4 there is some as y=
+et
+> unwritten text that explains how to do the crypto-ID calculation, and how=
+ the
+> 6LBR would verify it.
+>=20
+> I thought perhaps it leveraged more of SEND/CGA (3971/3972) than I though=
+t, I
+> so glanced through those again, but I conclude that this is not the case.
+>=20
+> Please confirm that there is simply unwritten text at this point, rather =
+than
+> references I haven't followed.
+>=20
+>=20
+> --
+> Michael Richardson <mcr+IETF@sandelman.ca>, Sandelman Software Works  -=
+=3D
+> IPv6 IoT consulting =3D-
+>=20
+>=20
+
+
+From nobody Wed Aug 17 08:46:16 2016
+Return-Path: <mcr+ietf@sandelman.ca>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 31E7B12DD37; Wed, 17 Aug 2016 08:46:15 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -3.148
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.148 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RP_MATCHES_RCVD=-1.247, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id M6hEYx9bWzOP; Wed, 17 Aug 2016 08:46:13 -0700 (PDT)
+Received: from tuna.sandelman.ca (tuna.sandelman.ca [IPv6:2607:f0b0:f:3:216:3eff:fe7c:d1f3]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 1710312DD2C; Wed, 17 Aug 2016 08:46:13 -0700 (PDT)
+Received: from sandelman.ca (obiwan.sandelman.ca [209.87.249.21]) by tuna.sandelman.ca (Postfix) with ESMTP id 4907C200A5; Wed, 17 Aug 2016 11:57:17 -0400 (EDT)
+Received: from obiwan.sandelman.ca (localhost [IPv6:::1]) by sandelman.ca (Postfix) with ESMTP id D0ACA639DC; Wed, 17 Aug 2016 11:46:11 -0400 (EDT)
+From: Michael Richardson <mcr+ietf@sandelman.ca>
+To: "Pascal Thubert \(pthubert\)" <pthubert@cisco.com>
+In-Reply-To: <f8dbb3f22fdb4cea8aab3045b9ca8f00@XCH-RCD-001.cisco.com>
+References: <22880.1471440526@obiwan.sandelman.ca> <f8dbb3f22fdb4cea8aab3045b9ca8f00@XCH-RCD-001.cisco.com>
+X-Mailer: MH-E 8.6; nmh 1.6+dev; GNU Emacs 24.5.1
+X-Face: $\n1pF)h^`}$H>Hk{L"x@)JS7<%Az}5RyS@k9X%29-lHB$Ti.V>2bi.~ehC0; <'$9xN5Ub# z!G,p`nR&p7Fz@^UXIn156S8.~^@MJ*mMsD7=QFeq%AL4m<nPbLgmtKK-5dC@#:k
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-="; micalg=pgp-sha1; protocol="application/pgp-signature"
+Date: Wed, 17 Aug 2016 11:46:11 -0400
+Message-ID: <21681.1471448771@obiwan.sandelman.ca>
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/IVoYewbAFgr9ADZerlGggzNihVc>
+Cc: "draft-sarikaya-6lo-ap-nd@ietf.org" <draft-sarikaya-6lo-ap-nd@ietf.org>, "6lo@ietf.org" <6lo@ietf.org>
+Subject: Re: [6lo] questions about address protected ND: draft-sarikaya-6lo-ap-nd
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 17 Aug 2016 15:46:15 -0000
+
+--=-=-=
+Content-Type: text/plain
+
+
+thanks for the reply.
+
+Pascal Thubert (pthubert) <pthubert@cisco.com> wrote:
+    > It is largely unwritten Michael,
+
+    > That's ultimately a WG decision, and part of that decision is that we
+    > want to assess if the IPR on CGA is an issue or not.
+
+    > My take is that we should adopt the work if we agree on the overall
+    > idea, knowing that CGA is one way of getting there; and then refine
+    > this as a WG.
+
+a) Hosnieh's proposals
+   https://datatracker.ietf.org/doc/draft-rafiee-6man-ssas/
+
+   might not suffer from the same IPR.
+
+b) I wonder what is the expiry on the IPR. CGA is more than a decade old now.
+
+
+--
+Michael Richardson <mcr+IETF@sandelman.ca>, Sandelman Software Works
+ -= IPv6 IoT consulting =-
+
+
+
+
+--=-=-=
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEVAwUBV7SGwICLcPvd0N1lAQLRigf9HzVcCMsIjJut78pwjVd3js7rTmi53yZX
+/sxAmUk0nKjUn4lJAxKk3LKMIJ+VbKgl0BJ//pBK8OOW2btXoO6XIn97uS/7digs
+SldxmPfUDbw/5EgE3yF38qf1anBliuqRE5VazD19NvYtU+MCEtcMa0/4Gp0EGrF4
+lTAKIbRNREEhV80a1ei/mshLZRzg9nObOuAA55IR7/c7kXwAraaE8DO10JqjlfkX
+zHXscO+4BdYzIk/uIZ5mko6BDO4AOzCdVENjoxnTW73+DMxpSzQC12qJjkvq18Hy
+XS9lIWxzNo1LcQNQOFfa5vpgzaOukm7r1632IR1Wd+8ZyxnCoGRYAA==
+=cy6i
+-----END PGP SIGNATURE-----
+--=-=-=--
+
+
+From nobody Wed Aug 17 08:50:50 2016
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 98B2012E04C; Wed, 17 Aug 2016 08:50:47 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -15.768
+X-Spam-Level: 
+X-Spam-Status: No, score=-15.768 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, RP_MATCHES_RCVD=-1.247, SPF_PASS=-0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Thin7PD6pq6H; Wed, 17 Aug 2016 08:50:46 -0700 (PDT)
+Received: from alln-iport-6.cisco.com (alln-iport-6.cisco.com [173.37.142.93]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 6EB3E12DDC0; Wed, 17 Aug 2016 08:50:44 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=1426; q=dns/txt; s=iport; t=1471449044; x=1472658644; h=from:to:cc:subject:date:message-id:references: in-reply-to:content-transfer-encoding:mime-version; bh=4naNH2uORlzOE1lmBIQR3NRwAI3B0gyU76nAJEmHkXU=; b=GUBs4Nm21MtkVqMiLn5vuHRA4ywe/dwZejzU82YHbqiUGVxJr9ddsCaI YFWnID6mNlNKcTq8xCUS/PP4tz7fAtC7pCtmCyqiGqGCPTk/J36cfyXkN L97EY0HJUjnb/riXOg3Nk1jAHUhYyzyyevHipIvkJ19EtwdIH5ZT23PjX U=;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0AoAgCnhrRX/4MNJK1eg0RWfAe5MIF9J?= =?us-ascii?q?IJCgzcCgWk4FAIBAQEBAQEBXieEXgEBBXkMBAIBCBEEAQEBJwcyFAkIAgQOBQi?= =?us-ascii?q?IKQ69YAEBAQEBAQEBAQEBAQEBAQEBAQEBARcFhiqETYobBY5Wim4Bhh+Id49Qj?= =?us-ascii?q?DuDdwEeNoN6boV1fwEBAQ?=
+X-IronPort-AV: E=Sophos;i="5.28,529,1464652800"; d="scan'208";a="312024304"
+Received: from alln-core-1.cisco.com ([173.36.13.131]) by alln-iport-6.cisco.com with ESMTP/TLS/DHE-RSA-AES256-SHA; 17 Aug 2016 15:50:43 +0000
+Received: from XCH-ALN-005.cisco.com (xch-aln-005.cisco.com [173.36.7.15]) by alln-core-1.cisco.com (8.14.5/8.14.5) with ESMTP id u7HFoh4Q002117 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=FAIL); Wed, 17 Aug 2016 15:50:43 GMT
+Received: from xch-rcd-001.cisco.com (173.37.102.11) by XCH-ALN-005.cisco.com (173.36.7.15) with Microsoft SMTP Server (TLS) id 15.0.1210.3; Wed, 17 Aug 2016 10:50:43 -0500
+Received: from xch-rcd-001.cisco.com ([173.37.102.11]) by XCH-RCD-001.cisco.com ([173.37.102.11]) with mapi id 15.00.1210.000; Wed, 17 Aug 2016 10:50:42 -0500
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: Michael Richardson <mcr+ietf@sandelman.ca>
+Thread-Topic: questions about address protected ND: draft-sarikaya-6lo-ap-nd
+Thread-Index: AQHR+ItNqRCQ0fFl+EKT8/p15zuBBaBNKXQwgAB2O4D//6xioA==
+Date: Wed, 17 Aug 2016 15:50:14 +0000
+Deferred-Delivery: Wed, 17 Aug 2016 15:49:22 +0000
+Message-ID: <8784aa6c1ff64792a2a81f1776d2f970@XCH-RCD-001.cisco.com>
+References: <22880.1471440526@obiwan.sandelman.ca> <f8dbb3f22fdb4cea8aab3045b9ca8f00@XCH-RCD-001.cisco.com> <21681.1471448771@obiwan.sandelman.ca>
+In-Reply-To: <21681.1471448771@obiwan.sandelman.ca>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [10.228.216.28]
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/GB6nq2b896CQIQ1--iAfDONXn20>
+Cc: "draft-sarikaya-6lo-ap-nd@ietf.org" <draft-sarikaya-6lo-ap-nd@ietf.org>, "6lo@ietf.org" <6lo@ietf.org>
+Subject: Re: [6lo] questions about address protected ND: draft-sarikaya-6lo-ap-nd
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 17 Aug 2016 15:50:48 -0000
+
+Yes, Michael;
+
+Last we discussed that (at IETF 96) people pointed that expiry would actual=
+ly be the best protection, and that CGA being proven and implemented, it wa=
+s the best approach. I'd like to see this confirmed (IANAL).
+
+Cheers,
+
+Pascal
+
+
+> -----Original Message-----
+> From: Michael Richardson [mailto:mcr+ietf@sandelman.ca]
+> Sent: mercredi 17 ao=FBt 2016 17:46
+> To: Pascal Thubert (pthubert) <pthubert@cisco.com>
+> Cc: 6lo@ietf.org; draft-sarikaya-6lo-ap-nd@ietf.org
+> Subject: Re: questions about address protected ND: draft-sarikaya-6lo-ap-=
+nd
+>=20
+>=20
+> thanks for the reply.
+>=20
+> Pascal Thubert (pthubert) <pthubert@cisco.com> wrote:
+>     > It is largely unwritten Michael,
+>=20
+>     > That's ultimately a WG decision, and part of that decision is that =
+we
+>     > want to assess if the IPR on CGA is an issue or not.
+>=20
+>     > My take is that we should adopt the work if we agree on the overall
+>     > idea, knowing that CGA is one way of getting there; and then refine
+>     > this as a WG.
+>=20
+> a) Hosnieh's proposals
+>    https://datatracker.ietf.org/doc/draft-rafiee-6man-ssas/
+>=20
+>    might not suffer from the same IPR.
+>=20
+> b) I wonder what is the expiry on the IPR. CGA is more than a decade old =
+now.
+>=20
+>=20
+> --
+> Michael Richardson <mcr+IETF@sandelman.ca>, Sandelman Software Works  -=
+=3D
+> IPv6 IoT consulting =3D-
+>=20
+>=20
+
+
+From nobody Wed Aug 17 11:29:25 2016
+Return-Path: <session_request_developers@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id E8E0012D51F; Wed, 17 Aug 2016 11:29:23 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: "\"IETF Meeting Session Request Tool\"" <session_request_developers@ietf.org>
+To: <session-request@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.29.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <147145856391.23744.8549443421895099155.idtracker@ietfa.amsl.com>
+Date: Wed, 17 Aug 2016 11:29:23 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/PGvOrCjpTPurYdR6xnUtyUK7XV8>
+Cc: 6lo-chairs@ietf.org, 6lo@ietf.org, suresh.krishnan@ericsson.com, g_e_montenegro@yahoo.com
+Subject: [6lo] 6lo - New Meeting Session Request for IETF 97
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 17 Aug 2016 18:29:24 -0000
+
+A new meeting session request has just been submitted by Gabriel Montenegro, a Chair of the 6lo working group.
+
+
+---------------------------------------------------------
+Working Group Name: IPv6 over Networks of Resource-constrained Nodes
+Area Name: Internet Area
+Session Requester: Gabriel Montenegro
+
+Number of Sessions: 1
+Length of Session(s):  2 Hours
+Number of Attendees: 150
+Conflicts to Avoid: 
+ First Priority: lwig intarea core ace 6tisch 6man manet homenet lpwan httpbis quic
+ Second Priority: roll v6ops detnet icnrg sdnrg t2trg
+
+
+
+Special Requests:
+  If at all possible please schedule at the beginning of the week (Mon-Wed).
+---------------------------------------------------------
+
+
+From nobody Wed Aug 17 13:56:36 2016
+Return-Path: <sarikaya2012@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id E56FF12D737; Wed, 17 Aug 2016 13:56:35 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.75
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.75 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_ENVFROM_END_DIGIT=0.25, FREEMAIL_FROM=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001] autolearn=no autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 9qAqJSBDgc3b; Wed, 17 Aug 2016 13:56:31 -0700 (PDT)
+Received: from mail-ua0-x244.google.com (mail-ua0-x244.google.com [IPv6:2607:f8b0:400c:c08::244]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 7E64212D740; Wed, 17 Aug 2016 13:56:31 -0700 (PDT)
+Received: by mail-ua0-x244.google.com with SMTP id 74so12575868uau.3; Wed, 17 Aug 2016 13:56:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;  h=mime-version:reply-to:in-reply-to:references:from:date:message-id :subject:to:cc; bh=5Z9NIHRpmTCskXEgmvm0uc0q8eOPcUdF8cbyKj8cIJ8=; b=NVroOUtg9EvcW71ImPx68AcAm84GjkScdTHh/z/H7L2CnZC+2tuvRWRqps+qXJTK9U Rpqc/ZXDaIGaadh3WhxvSWVoIC1fCzNMckNQa84ciOxqxFu3Ow3WEexo32A7HQhh8DdM eiUefNlqxvdnJnuSIouc+hSYiaGto7N0RDRapGdE9loF+0GMzlIn7P9X6rFDcLp22cS2 v0WQBGTqaODQYp0ThalnB5pTGk2QF7VwzwqaQdzKhAbnAEBzU/MOwYrWN0NFeLjdN7Q7 gAmKi8neZ60QM84pRqprV/IE68YLfoEKtMThy420NkBe6uTsMmux/RAred/SRcV1a8U/ ZBjQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20130820; h=x-gm-message-state:mime-version:reply-to:in-reply-to:references :from:date:message-id:subject:to:cc; bh=5Z9NIHRpmTCskXEgmvm0uc0q8eOPcUdF8cbyKj8cIJ8=; b=UlT5cQCbQ73tY2IKw89OPRfZ/LuDF4Eek2z7o4zTJN8kkSdeg2Jz8ZMXgXX0mYY+RH S6m0FUBXJychi2bESytZ7uTZnZBHyJF81IY4JVsZwIaHB2t0tiim2u009e6/FJ6eVxp1 0yPpR6aTP2GtS766vffmV2sats8J+Mx6bUN5WiIVKKnFPW/48mH4k6JDXD70vVb8Ch1v gJ69YMxsj1q1Xo5S0C5NsSCrbF6VzDBM2jM1ZuROZtauVrxX7sUNluNfg1grCCOfy0be 6Ztr75lSlDY9791TJMREUhPbhMff6LEL4jhks8864SpytqjuwAdPvOYKGNecbNkyg7gF 0cCw==
+X-Gm-Message-State: AEkoouvnGNPXdrTsEVUsHKKGYhfzTH4Y0zMi+iWdZNBnDOgUptKlvCcuN/mE3NaiEBq6rCx4boSbF0tn+XwEOA==
+X-Received: by 10.176.68.226 with SMTP id n89mr19647925uan.98.1471467390612; Wed, 17 Aug 2016 13:56:30 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.159.40.167 with HTTP; Wed, 17 Aug 2016 13:56:29 -0700 (PDT)
+In-Reply-To: <21681.1471448771@obiwan.sandelman.ca>
+References: <22880.1471440526@obiwan.sandelman.ca> <f8dbb3f22fdb4cea8aab3045b9ca8f00@XCH-RCD-001.cisco.com> <21681.1471448771@obiwan.sandelman.ca>
+From: Behcet Sarikaya <sarikaya2012@gmail.com>
+Date: Wed, 17 Aug 2016 15:56:29 -0500
+Message-ID: <CAC8QAce_63SOSzDpZQMQQ-cFUqhVVgfLE-n+4x__ZEFcNybSuQ@mail.gmail.com>
+To: Michael Richardson <mcr+ietf@sandelman.ca>
+Content-Type: text/plain; charset=UTF-8
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/Cc90U0aP-7JHBfkuIIOnQ7VX51o>
+Cc: "Pascal Thubert \(pthubert\)" <pthubert@cisco.com>, "draft-sarikaya-6lo-ap-nd@ietf.org" <draft-sarikaya-6lo-ap-nd@ietf.org>, "6lo@ietf.org" <6lo@ietf.org>
+Subject: Re: [6lo] questions about address protected ND: draft-sarikaya-6lo-ap-nd
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+Reply-To: sarikaya@ieee.org
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 17 Aug 2016 20:56:36 -0000
+
+On Wed, Aug 17, 2016 at 10:46 AM, Michael Richardson
+<mcr+ietf@sandelman.ca> wrote:
+>
+> thanks for the reply.
+>
+> Pascal Thubert (pthubert) <pthubert@cisco.com> wrote:
+>     > It is largely unwritten Michael,
+>
+>     > That's ultimately a WG decision, and part of that decision is that we
+>     > want to assess if the IPR on CGA is an issue or not.
+>
+>     > My take is that we should adopt the work if we agree on the overall
+>     > idea, knowing that CGA is one way of getting there; and then refine
+>     > this as a WG.
+>
+> a) Hosnieh's proposals
+>    https://datatracker.ietf.org/doc/draft-rafiee-6man-ssas/
+>
+>    might not suffer from the same IPR.
+>
+> b) I wonder what is the expiry on the IPR. CGA is more than a decade old now.
+>
+
+Date(s) granted or applied for (YYYY-MM-DD):
+303951.01 - 2003/03/27
+301073.02 - 2002/09/12
+
+I think that these patents do not expire before 20 years.
+But Microsoft grants royalty free licensing to all implementers.
+
+Behcet
+>
+> --
+> Michael Richardson <mcr+IETF@sandelman.ca>, Sandelman Software Works
+>  -= IPv6 IoT consulting =-
+>
+>
+>
+
+
+From nobody Thu Aug 18 03:09:16 2016
+Return-Path: <paf@frobbit.se>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id B818D12D8C4 for <6lo@ietfa.amsl.com>; Thu, 18 Aug 2016 03:08:53 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: 0.082
+X-Spam-Level: 
+X-Spam-Status: No, score=0.082 tagged_above=-999 required=5 tests=[BAYES_50=0.8, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_FAIL=0.001] autolearn=no autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id oClM5u2gN-jX for <6lo@ietfa.amsl.com>; Thu, 18 Aug 2016 03:08:52 -0700 (PDT)
+Received: from nschwmtas03p.mx.bigpond.com (nschwmtas03p.mx.bigpond.com [61.9.189.143]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 2FB6B12D8BC for <6lo@ietf.org>; Thu, 18 Aug 2016 03:08:49 -0700 (PDT)
+Received: from nschwcmgw07p ([61.9.190.167]) by nschwmtas03p.mx.bigpond.com with ESMTP id <20160818100846.JFL2051.nschwmtas03p.mx.bigpond.com@nschwcmgw07p>; Thu, 18 Aug 2016 10:08:46 +0000
+Received: from szrqj.com ([138.0.131.163]) by nschwcmgw07p with BigPond Outbound id Ya8S1t0043XgKsi01a8fZG; Thu, 18 Aug 2016 10:08:46 +0000
+X-Authentication-Info: Submitted using ID gilbert122@bigpond.com
+X-Authority-Analysis: v=2.1 cv=ZKcq4iPb c=1 sm=1 tr=0 a=b646UrWQqIH5wM4XxClb2A==:117 a=b646UrWQqIH5wM4XxClb2A==:17 a=L9H7d07YOLsA:10 a=9cW_t1CCXrUA:10 a=s5jvgZ67dGcA:10 a=DAwyPP_o2Byb1YXLmDAA:9 a=EHMCDlIMAAAA:8 a=Ayqhpf-aRIDHaPUlazYA:9 a=CjuIK1q_8ugA:10 a=2xxc_LsgirsA:10 a=yMhMjlubAAAA:8 a=SSmOFEACAAAA:8 a=ZOyVZAh41-ttllsM:21 a=gKO2Hq4RSVkA:10 a=UiCQ7L4-1S4A:10 a=hTZeC7Yk6K0A:10 a=frz4AuCg-hUA:10 a=gQ101DlLNzncULfcvUlS:22 a=BKKCjISod1eDJeS0ORpz:22 a=zjWhRoSqWz9hl55Hdlzg:22
+From: DNSOP <paf@frobbit.se>
+To: "6lo" <6lo@ietf.org>, "Paul Vixie" <vixie@tisf.net>, "DeJong Steve"  <Steve.DeJong@neustar.biz>, "John Dickinson" <jad@sinodun.com>, "Hosnieh Rafiee" <hosnieh.rafiee@huawei.com>
+Date: Thu, 18 Aug 2016 13:08:32 +0300
+Message-ID: <000039bb5051$8834295b$5dde64ed$@frobbit.se>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_NextPart_000_0029_011AD78A.05A83885"
+X-Mailer: Microsoft Office Outlook, Build 11.0.6353
+Thread-Index: AdH37mgCPC8jCgoVbZknx40cxkP9ig==
+Content-Language: en-gb
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/_A7eADuzMtAnfiUOJkLLhQmwR_c>
+Subject: [6lo] useful information
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 18 Aug 2016 10:08:54 -0000
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0029_011AD78A.05A83885
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Greetings! 
+
+I  thought this information regarding my favourite stuff may be  usefull for you too, just  take  a look here <http://kexuzuxo.filteringsoftware.org/e4cfv>
+
+My best to you, DNSOP
+
+
+
+------=_NextPart_000_0029_011AD78A.05A83885
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas=
+-microsoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:off=
+ice:word" xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml"=
+ xmlns=3D"http://www.w3.org/TR/REC-html40"><head><META HTTP-EQUIV=3D"C=
+ontent-Type" CONTENT=3D"text/html; charset=3Dus-ascii"><meta name=3DGe=
+nerator content=3D"Microsoft Word 15 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+=2EMsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN link=3D"#0563=
+C1" vlink=3D"#954F72"><div class=3DWordSection1><p class=3DMsoNormal><=
+span lang=3DEN-US>Greetings! <o:p></o:p></span></p><p class=3DMsoNorma=
+l><span lang=3DEN-US><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal>=
+<span lang=3DEN-US>I  thought this information regarding my favourite =
+stuff may be  usefull for you too, just  take  a look here <a href=3D"=
+http://kexuzuxo.filteringsoftware.org/e4cfv">http://kexuzuxo.filtering=
+software.org/e4cfv</a><o:p></o:p></span></p><p class=3DMsoNormal><span=
+ lang=3DEN-US><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span l=
+ang=3DEN-US>My best to you, DNSOP<o:p></o:p></span></p></div></body></=
+html>
+
+------=_NextPart_000_0029_011AD78A.05A83885--
+
+
+From nobody Thu Aug 18 13:08:11 2016
+Return-Path: <Gabriel.Montenegro@microsoft.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id A081512D1A4 for <6lo@ietfa.amsl.com>; Thu, 18 Aug 2016 13:07:39 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.021
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.021 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=microsoft.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Ngs-W7NbmfYW for <6lo@ietfa.amsl.com>; Thu, 18 Aug 2016 13:07:25 -0700 (PDT)
+Received: from NAM01-BY2-obe.outbound.protection.outlook.com (mail-by2nam01on0095.outbound.protection.outlook.com [104.47.34.95]) (using TLSv1 with cipher ECDHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 5E34E12D9C0 for <6lo@ietf.org>; Thu, 18 Aug 2016 13:07:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version; bh=8A0WbMwZYO9DXUf52pyORdNSNl9D/fHOQJ1ZP07/3YQ=; b=EQsFkBKHJ4GdddFdi9h4I5r6kpTwCqwgmZytFuw/rATegbSveq8d8sKI12LOcU2GJo/o4Ac+dRTIGbrXlu/yxqxPA3xZdIka+97niJf57P/P8R73WXjL+9kRdmZLMEPckOt+kN+/rUU5l30PGepE7yGJm6tEWiOJBDHRf8HrxgA=
+Received: from BN1PR03MB072.namprd03.prod.outlook.com (10.255.225.156) by BN1PR03MB069.namprd03.prod.outlook.com (10.255.225.153) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id 15.1.544.10; Thu, 18 Aug 2016 20:07:22 +0000
+Received: from BN1PR03MB072.namprd03.prod.outlook.com ([169.254.7.22]) by BN1PR03MB072.namprd03.prod.outlook.com ([169.254.7.177]) with mapi id 15.01.0544.023; Thu, 18 Aug 2016 20:07:21 +0000
+From: Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: NFC Forum feedback on draft-ietf-6lo-nfc-03
+Thread-Index: AdH5i4mNKZ7JULw8SnGh/oE332v7Gw==
+Date: Thu, 18 Aug 2016 20:07:20 +0000
+Message-ID: <BN1PR03MB072AC861689E9DC8029396795150@BN1PR03MB072.namprd03.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=Gabriel.Montenegro@microsoft.com; 
+x-originating-ip: [2001:4898:80e8:3::3da]
+x-ms-office365-filtering-correlation-id: f0e69a6e-4b7f-4911-fdf2-08d3c7a34346
+x-microsoft-exchange-diagnostics: 1; BN1PR03MB069; 6:UNZsqfWOE2YIdIvA3XWSvlCerEJQRH3/PC6riN5Nrk3/DhGT2z4U1AeBQPuCmPQyJfIl/TOnG9KHzb3Oha7ZxF4umjTfL5uG33JN/Xf6nxTRhl9VO1SDZS05x3LFwEF2vIuDpKeLFHz2ygA9tx/5wG5HzeZciI05OjcDkphcF0O1ViOM3eCDOJSd+lMj71unBz5NlE6hk9Q0erKkDdqRcfM1fnYpJgzg9YbioNuG2kqzOEsv5KDuDi56NV1+VCC3fDAzeSvUw339vmzHjoP3bXriR1dYm0pAVayg2s/HJbeq9BeEqHQCVGHaoq4SaxJjkZNfqUPHGHWWwPTs9omjNw==; 5:SEpoGhCLOUM4fFsWmHptV6CCNNZutSwEys+PG3hRmxApEP0SSABc06CiZDprHwxoiJK+fA6Hpy52z8IJQvRlLWtbnh4LKge7nfckwAzb4WZRWuTK1dayu4SCA5oJ4qYYlRKez/Ne/EXUZV7zOWEIvg==; 24:A2qVmVUjmw0A06D86ONXOnatxCEHSMpXI7RF7pInzZvEWsuZYsknWP0izv575cKkfleGX7HYhCNOYBcdwTM6nK8XRzkctzd7T+RogDTBxV0=; 7:wUHH42gpx5hT18aevsadX+4/VpTIj/ZNVioguzRzlPL9u0XL+8KmrsRyCbs2M36pL4oV67S1A5eGBzQIhzDpeC7WOyCOKKgDlqYfnmV02J/oMIHAWUFXcviql2t6U1JSPvMnL0SYamwxHFgfRIbXDPlgNPCEK7iDge1pcebZfZrDGNtBrdNoqbvKKTjVBdrtgYUB6bMtY6uy1GId8C72qgbTAYGTxcgcvj8LfMmsa7eLKopt5sTgbD7EkOjx6zIk
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:;SRVR:BN1PR03MB069;
+x-microsoft-antispam-prvs: <BN1PR03MB069E0CB43F4105154F16B2495150@BN1PR03MB069.namprd03.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:(278428928389397)(21748063052155)(17755550239193); 
+x-exchange-antispam-report-cfa-test: BCL:0; PCL:0; RULEID:(61425038)(6040176)(601004)(2401047)(5005006)(8121501046)(3002001)(10201501046)(6055026)(61426038)(61427038); SRVR:BN1PR03MB069; BCL:0; PCL:0; RULEID:; SRVR:BN1PR03MB069; 
+x-forefront-prvs: 0038DE95A2
+x-forefront-antispam-report: SFV:NSPM; SFS:(10019020)(7916002)(189002)(288314003)(501624003)(55674003)(199003)(102836003)(10290500002)(3280700002)(230783001)(19300405004)(86362001)(8936002)(99286002)(19617315012)(790700001)(189998001)(3660700001)(9686002)(19625215002)(2900100001)(2351001)(15975445007)(6116002)(81156014)(122556002)(110136002)(101416001)(74316002)(97736004)(229853001)(81166006)(586003)(7906003)(107886002)(450100001)(105586002)(5640700001)(54356999)(19580395003)(5002640100001)(68736007)(8676002)(7736002)(7696003)(16236675004)(10090500001)(2501003)(33656002)(5005710100001)(87936001)(50986999)(2906002)(76576001)(5630700001)(86612001)(92566002)(106356001)(7846002)(8990500004)(10400500002)(3826002); DIR:OUT; SFP:1102; SCL:1; SRVR:BN1PR03MB069; H:BN1PR03MB072.namprd03.prod.outlook.com; FPR:; SPF:None; PTR:InfoNoRecords; MX:1; A:1; LANG:en; 
+received-spf: None (protection.outlook.com: microsoft.com does not designate permitted sender hosts)
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative; boundary="_000_BN1PR03MB072AC861689E9DC8029396795150BN1PR03MB072namprd_"
+MIME-Version: 1.0
+X-OriginatorOrg: microsoft.com
+X-MS-Exchange-CrossTenant-originalarrivaltime: 18 Aug 2016 20:07:20.9354 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 72f988bf-86f1-41af-91ab-2d7cd011db47
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN1PR03MB069
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/FIl5DNhXJsWsPt1vp7VSNyv_irA>
+Subject: [6lo] NFC Forum feedback on draft-ietf-6lo-nfc-03
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 18 Aug 2016 20:07:59 -0000
+
+--_000_BN1PR03MB072AC861689E9DC8029396795150BN1PR03MB072namprd_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Feedback from the NFC Forum on draft-ietf-6lo-nfc-03. Note that the current=
+ version is -04, but I believe most of the comments still apply.
+
+
+
+
+
+Comments on IPv6 over NFC
+
+
+
+To:
+
+
+IETF 6Lo Working Group
+
+
+Title:
+
+
+Comments on draft-ietf-6lo-nfc-03
+
+
+Date:
+
+
+June 16th, 2016
+
+
+Source:
+
+
+NFC Devices WG
+
+
+Contacts:
+
+
+J=FCrgen B=F6hler
+
+
+
+1.     Overview
+
+
+The NFC Forum Board of Directors has requested the Technical Committee to r=
+eview a document from IETF on mapping IPv6 to LLCP, available at the follow=
+ing link https://tools.ietf.org/pdf/draft-ietf-6lo-nfc-03.pdf. Further the =
+following unclear points were raised:
+*        ipv6-over-nfc adaptation layer generates an interface identifier o=
+f an ipv6 address by using a 6-bit value of "SSAP" of NFC LLCP as a node ID=
+ in our draft. This would be related to "LLCP binding to ipv6" (section 4.3=
+~4.4 in draft-ietf-6lo-nfc)
+*        MTU of a ipv6 datagram is basically 1280 bytes. MIU of NFC LLCP =
+=3D 128 + MIUX, so MTU of NFC LLCP can be extended up to 2176 bytes. This i=
+s related to FAR (Fragmentation and Reassembly) issues. (section 3.4 and se=
+ction 4.8 in draft-ietf-6lo-nfc)
+The Technical Committee requested NFC Devices Working Group to comment the =
+draft IETF document and the unclear points. This document summarizes the co=
+mments provided by NFC Devices Working Group.
+
+
+2.     Previous activities at NFC Forum on IP mapping
+
+NFC Forum Devices Working Group spent some time in 2010-2011 in attempting =
+to define a mapping for IPv4 and IPv6 to LLCP. The work was discontinued fo=
+r two main reasons:
+
+1.     There was no widespread agreement on how to generate addresses, espe=
+cially if they need to be routable.
+
+2.     In the meantime, the NFC Forum SNEP specification was developed. Thi=
+s provides a mechanism for transporting any data over LLCP inside an NDEF M=
+essage. As a consequence, many protocols can be mapped to the payload of ND=
+EF Messages instead of defining an own mapping mechanism on top of LLCP.
+Thus the recommendation from NFC Devices WG is not to attempt to map IPv6 t=
+o LLCP, but to focus on the creation of the IPv6 specific application infor=
+mation, and to define how to format this in the payload of an NDEF Message.
+
+
+3.     Comments on draft-ietf-6lo-nfc-03
+
+If it is necessary to map IPv6 directly to LLCP, NFC Forum Devices Working =
+Group has a number of comments on the document from IETF.
+
+1.     There is a need to make a clear separation between
+
+a.     Generation of IPv6 related information
+
+b.     Mapping of IPv6 information into LLCP PDUs
+
+2.     The document should not repeat structural information from the LLCP =
+specification
+
+a.     Doing so raises concerns over which normative statements would apply=
+, for example in segmentation and reassembly
+
+b.     Future changes to LLCP might require changes in IETF document
+
+c.      Information is at best duplicated and can differ
+
+d.     As a specific example some definitions in draft-ietf-6lo-nfc-03 devi=
+ates from the LLCP definition which will cause unnecessary interoperability=
+ issues:
+
+                                                    i.     The DSAP/SSAP va=
+lue range definition in section 3.3  is incorrect
+
+                                                   ii.     The code for the=
+ UI-PDU in figure 2 is incorrect
+
+                                                  iii.     The code for the=
+ MIUX Parameter TLV in figure 4 is incorrect
+
+3.     The use of DSAP/SSAP is unclear
+
+a.     Section 3.3 implies that an NFC Device is addressed using DSAP/SSAP =
+which is not the case. DSAP/SSAP identifies service access points on NFC de=
+vices. A NFC Devices can have several service access points installed.
+
+b.     NFC Forum views the use of LLCP as being different applications/prot=
+ocols running on top of a single multiplexed layer between two peer devices=
+. Therefore they would expect only a single DSAP/SSAP value used for the tr=
+ansfer of IP packets
+
+c.      Section 4.2 mentions a simple multi-hop, but this is not defined in=
+ the current specification
+
+d.     Section 4.3 describes the integration of DSAP/SSAP into the Interfac=
+e identifier (IID) without considering the DSAP/SSAP value ranges defined b=
+y LLCP which forbids the usage of certain value ranges for the creation of =
+IID.
+
+4.     The NFC Forum decision was to use Connectionless rather than Connect=
+ion Oriented Transport
+
+a.     The belief is that IP provides a connectionless datagram service and=
+ hence it does not require a reliable transport
+
+b.     Connectionless Transport has considerably lower overhead than Connec=
+tion Oriented
+
+5.     Section 4.8 bases the transfer of IPv6 packets on a minimum MIU size=
+ of 1280 bytes. LLCP defines a minimum MIU size of 128 bytes at default. IE=
+TF 6Lo WG should consider that the maximum supported MIU size is limited to=
+ the maximum Link MIU size supported by the LLC. This Link MIU is specific =
+for the LLC and independent of its installed service access points. It cann=
+ot be assumed that current devices supports a Link MIU size of 1280 bytes w=
+hy the connection for the transfer of IPv6 packets cannot rely on this MIU =
+size.
+
+6.     Section 5.2 seems to assume that 3 or more devices can be touched to=
+ play multi-channel music; this does not appear to be practical with the cu=
+rrent link model
+
+
+4.     Next steps
+
+Given an appropriate relationship between the two bodies, LLCP experts woul=
+d be happy to work with IETF on updates to the document.
+The NFC Devices Working Group had during the analysis of draft-ietf-6lo-nfc=
+ no common understanding about the usage of IPv6 addresses and would like t=
+o understand the use cases behind. Therefore the NFC Devices Working Group =
+would appreciate if IETF 6Lo Working Group share some background informatio=
+n for their current approach and use models.
+
+
+
+
+
+--_000_BN1PR03MB072AC861689E9DC8029396795150BN1PR03MB072namprd_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 2 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"\@PMingLiU";
+	panose-1:2 2 5 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-language:EN-US;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParag=
+raphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListPar=
+agraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagra=
+phCxSpLast
+	{mso-style-priority:34;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+span.EmailStyle17
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"Arial",sans-serif;
+	mso-fareast-language:EN-US;}
+p.FrontMatter, li.FrontMatter, div.FrontMatter
+	{mso-style-name:FrontMatter;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:99.35pt;
+	margin-bottom:.0001pt;
+	text-indent:-99.35pt;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-language:EN-US;}
+span.AltNormalChar
+	{mso-style-name:"AltNormal Char";
+	mso-style-link:AltNormal;
+	font-family:"Arial",sans-serif;
+	mso-fareast-language:EN-US;}
+p.AltNormal, li.AltNormal, div.AltNormal
+	{mso-style-name:AltNormal;
+	mso-style-link:"AltNormal Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-language:EN-US;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:3291771;
+	mso-list-type:hybrid;
+	mso-list-template-ids:184429608 67698703 67698713 67698715 67698703 676987=
+13 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.75in;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:3.75in;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.25in;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:662702573;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1431111636 134807567 134807577 134807579 134807567 =
+134807577 134807579 134807567 134807577 134807579;}
+@list l1:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:998650485;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-981201846 -214030706 1935025548 -445375012 -1487340=
+38 447378770 1446661200 -258829354 -34023408 -2006711970;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\2022;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\2022;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\2022;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\2022;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\2022;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\2022;
+	mso-level-tab-stop:2.75in;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\2022;
+	mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\2022;
+	mso-level-tab-stop:3.75in;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\2022;
+	mso-level-tab-stop:4.25in;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3
+	{mso-list-id:2029257321;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1554818202 134807567 134807577 134807579 134807567 1=
+34807577 134807579 134807567 134807577 134807579;}
+@list l3:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoPlainText">Feedback from the NFC Forum on <span style=3D"col=
+or:black">
+draft-ietf-6lo-nfc-03. Note that the current version is -04, but I believe =
+most of the comments still apply.<o:p></o:p></span></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoHeader" align=3D"center" style=3D"margin-bottom:0in;margin-b=
+ottom:.0001pt;text-align:center">
+<b><span style=3D"font-size:20.0pt">Comments on IPv6 over NFC<span style=3D=
+"layout-grid-mode:line"><o:p></o:p></span></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;margin-bottom:.0001pt"><o=
+:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;margin-bottom:.0001pt"><o=
+:p>&nbsp;</o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"795" style=3D"width:477.0pt;margin-left:10.25pt;border-coll=
+apse:collapse">
+<tbody>
+<tr>
+<td width=3D"165" valign=3D"top" style=3D"width:99.0pt;border:solid windowt=
+ext 1.0pt;padding:1.45pt 5.75pt 1.45pt 5.75pt">
+<p class=3D"FrontMatter" align=3D"right" style=3D"mso-margin-top-alt:2.0pt;=
+margin-right:0in;margin-bottom:2.0pt;margin-left:0in;text-align:right;text-=
+indent:0in">
+<b><span style=3D"font-size:11.0pt;color:navy">To:<o:p></o:p></span></b></p=
+>
+</td>
+<td width=3D"630" valign=3D"top" style=3D"width:5.25in;border:solid windowt=
+ext 1.0pt;border-left:none;padding:1.45pt 5.75pt 1.45pt 5.75pt">
+<p class=3D"FrontMatter" style=3D"mso-margin-top-alt:2.0pt;margin-right:0in=
+;margin-bottom:2.0pt;margin-left:0in;text-indent:0in">
+<span lang=3D"EN-GB" style=3D"font-size:11.0pt">IETF 6Lo Working Group<o:p>=
+</o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width=3D"165" valign=3D"top" style=3D"width:99.0pt;border:solid windowt=
+ext 1.0pt;border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt">
+<p class=3D"FrontMatter" align=3D"right" style=3D"mso-margin-top-alt:2.0pt;=
+margin-right:0in;margin-bottom:2.0pt;margin-left:0in;text-align:right;text-=
+indent:0in">
+<b><span style=3D"font-size:11.0pt;color:navy">Title:<o:p></o:p></span></b>=
+</p>
+</td>
+<td width=3D"630" valign=3D"top" style=3D"width:5.25in;border-top:none;bord=
+er-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid window=
+text 1.0pt;padding:1.45pt 5.75pt 1.45pt 5.75pt">
+<p class=3D"FrontMatter" style=3D"mso-margin-top-alt:2.0pt;margin-right:0in=
+;margin-bottom:2.0pt;margin-left:0in;text-indent:0in">
+<span lang=3D"EN-GB" style=3D"font-size:11.0pt;color:black">Comments on dra=
+ft-ietf-6lo-nfc-03<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width=3D"165" valign=3D"top" style=3D"width:99.0pt;border:solid windowt=
+ext 1.0pt;border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt">
+<p class=3D"FrontMatter" align=3D"right" style=3D"mso-margin-top-alt:2.0pt;=
+margin-right:0in;margin-bottom:2.0pt;margin-left:0in;text-align:right;text-=
+indent:0in">
+<b><span style=3D"font-size:11.0pt;color:navy">Date:<o:p></o:p></span></b><=
+/p>
+</td>
+<td width=3D"630" valign=3D"top" style=3D"width:5.25in;border-top:none;bord=
+er-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid window=
+text 1.0pt;padding:1.45pt 5.75pt 1.45pt 5.75pt">
+<p class=3D"FrontMatter" style=3D"mso-margin-top-alt:2.0pt;margin-right:0in=
+;margin-bottom:2.0pt;margin-left:0in;text-indent:0in">
+<span lang=3D"EN-GB" style=3D"font-size:11.0pt;color:black">June 16<sup>th<=
+/sup>, 2016<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width=3D"165" valign=3D"top" style=3D"width:99.0pt;border:solid windowt=
+ext 1.0pt;border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt">
+<p class=3D"FrontMatter" align=3D"right" style=3D"mso-margin-top-alt:2.0pt;=
+margin-right:0in;margin-bottom:2.0pt;margin-left:0in;text-align:right;text-=
+indent:0in">
+<b><span style=3D"font-size:11.0pt;color:navy">Source:<o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"630" valign=3D"top" style=3D"width:5.25in;border-top:none;bord=
+er-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid window=
+text 1.0pt;padding:1.45pt 5.75pt 1.45pt 5.75pt">
+<p class=3D"FrontMatter" style=3D"mso-margin-top-alt:2.0pt;margin-right:0in=
+;margin-bottom:2.0pt;margin-left:0in;text-indent:0in">
+<span lang=3D"EN-GB" style=3D"font-size:11.0pt;color:black">NFC Devices WG<=
+o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width=3D"165" valign=3D"top" style=3D"width:99.0pt;border:solid windowt=
+ext 1.0pt;border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt">
+<p class=3D"FrontMatter" align=3D"right" style=3D"mso-margin-top-alt:2.0pt;=
+margin-right:0in;margin-bottom:2.0pt;margin-left:0in;text-align:right;text-=
+indent:0in">
+<b><span style=3D"font-size:11.0pt;color:navy">Contacts:<o:p></o:p></span><=
+/b></p>
+</td>
+<td width=3D"630" valign=3D"top" style=3D"width:5.25in;border-top:none;bord=
+er-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid window=
+text 1.0pt;padding:1.45pt 5.75pt 1.45pt 5.75pt">
+<p class=3D"FrontMatter" style=3D"mso-margin-top-alt:2.0pt;margin-right:0in=
+;margin-bottom:2.0pt;margin-left:0in;text-indent:0in">
+<span lang=3D"EN-GB" style=3D"font-size:11.0pt;color:black">J=FCrgen B=F6hl=
+er<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;margin-bottom:.0001pt"><o=
+:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;margin-bottom:.0001pt"><o=
+:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;m=
+so-list:l0 level1 lfo1">
+<![if !supportLists]><b><span style=3D"color:navy"><span style=3D"mso-list:=
+Ignore">1.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbs=
+p;&nbsp;&nbsp;
+</span></span></span></b><![endif]><b><span style=3D"color:navy">Overview<o=
+:p></o:p></span></b></p>
+<p class=3D"AltNormal" style=3D"margin-top:0in"><span lang=3D"EN-GB" style=
+=3D"color:black"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal">The NFC Forum Board of Directors has requested the T=
+echnical Committee to review a document from IETF on mapping IPv6 to LLCP, =
+available at the following link
+<a href=3D"https://tools.ietf.org/pdf/draft-ietf-6lo-nfc-03.pdf">https://to=
+ols.ietf.org/pdf/draft-ietf-6lo-nfc-03.pdf</a>. Further the following uncle=
+ar points were raised:<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.25in;text-indent:-.25in;mso-li=
+st:l2 level1 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">&#8226;<span style=3D"=
+font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+</span></span><![endif]>ipv6-over-nfc adaptation layer generates an interfa=
+ce identifier of an ipv6 address by using a 6-bit value of &quot;SSAP&quot;=
+ of NFC LLCP as a node ID in our draft. This would be related to &quot;LLCP=
+ binding to ipv6&quot; (section 4.3~4.4 in draft-ietf-6lo-nfc)<o:p></o:p></=
+p>
+<p class=3D"MsoNormal" style=3D"margin-left:.25in;text-indent:-.25in;mso-li=
+st:l2 level1 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">&#8226;<span style=3D"=
+font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+</span></span><![endif]>MTU of a ipv6 datagram is basically 1280 bytes. MIU=
+ of NFC LLCP =3D 128 &#43; MIUX, so MTU of NFC LLCP can be extended up to 2=
+176 bytes. This is related to FAR (Fragmentation and Reassembly) issues. (s=
+ection 3.4 and section 4.8 in draft-ietf-6lo-nfc)<o:p></o:p></p>
+<p class=3D"MsoNormal">The Technical Committee requested NFC Devices Workin=
+g Group to comment the draft IETF document and the unclear points. This doc=
+ument summarizes the comments provided by NFC Devices Working Group.<o:p></=
+o:p></p>
+<p class=3D"AltNormal" style=3D"margin-top:0in"><span lang=3D"EN-GB" style=
+=3D"color:black"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;m=
+so-list:l0 level1 lfo1">
+<![if !supportLists]><b><span style=3D"color:navy"><span style=3D"mso-list:=
+Ignore">2.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbs=
+p;&nbsp;&nbsp;
+</span></span></span></b><![endif]><b><span style=3D"color:navy">Previous a=
+ctivities at NFC Forum on IP mapping<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;margin-bottom:.0001pt"><b=
+><span style=3D"color:navy"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal">NFC Forum Devices Working Group spent some time in 2=
+010-2011 in attempting to define a mapping for IPv4 and IPv6 to LLCP. The w=
+ork was discontinued for two main reasons:<o:p></o:p></p>
+<p class=3D"MsoListParagraphCxSpFirst" style=3D"text-indent:-.25in;mso-list=
+:l3 level1 lfo3">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">1.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">There was no widespread agreement on how to gen=
+erate addresses, especially if they need to be routable.<o:p></o:p></span><=
+/p>
+<p class=3D"MsoListParagraphCxSpLast" style=3D"text-indent:-.25in;mso-list:=
+l3 level1 lfo3">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">2.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">In the meantime, the NFC Forum SNEP specificati=
+on was developed. This provides a mechanism for transporting any data over =
+LLCP inside an NDEF Message. As a consequence,
+ many protocols can be mapped to the payload of NDEF Messages instead of de=
+fining an own mapping mechanism on top of LLCP.<o:p></o:p></span></p>
+<p class=3D"MsoNormal">Thus the recommendation from NFC Devices WG is not t=
+o attempt to map IPv6 to LLCP, but to focus on the creation of the IPv6 spe=
+cific application information, and to define how to format this in the payl=
+oad of an NDEF Message.<o:p></o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"color:navy"><o:p>&nbsp;</o:p></spa=
+n></b></p>
+<b><span style=3D"font-size:11.0pt;font-family:&quot;Arial&quot;,sans-serif=
+;color:navy;mso-fareast-language:EN-US"><br clear=3D"all" style=3D"page-bre=
+ak-before:always">
+</span></b>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;m=
+so-list:l0 level1 lfo1">
+<![if !supportLists]><b><span style=3D"color:navy"><span style=3D"mso-list:=
+Ignore">3.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbs=
+p;&nbsp;&nbsp;
+</span></span></span></b><![endif]><b><span style=3D"color:navy">Comments o=
+n draft-ietf-6lo-nfc-03<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;margin-bottom:.0001pt"><b=
+><span style=3D"color:navy"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal">If it is necessary to map IPv6 directly to LLCP, NFC=
+ Forum Devices Working Group has a number of comments on the document from =
+IETF.<o:p></o:p></p>
+<p class=3D"MsoListParagraphCxSpFirst" style=3D"text-indent:-.25in;mso-list=
+:l1 level1 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">1.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">There is a need to make a clear separation betw=
+een<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">a.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">Generation of IPv6 related information<o:p></o:=
+p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">b.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">Mapping of IPv6 information into LLCP PDUs<o:p>=
+</o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"text-indent:-.25in;mso-lis=
+t:l1 level1 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">2.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">The document should not repeat structural infor=
+mation from the LLCP specification<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">a.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">Doing so raises concerns over which normative s=
+tatements would apply, for example in segmentation and reassembly<o:p></o:p=
+></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">b.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">Future changes to LLCP might require changes in=
+ IETF document<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">c.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">Information is at best duplicated and can diffe=
+r<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">d.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">As a specific example some definitions in draft=
+-ietf-6lo-nfc-03 deviates from the LLCP definition which will cause unneces=
+sary interoperability issues:<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.5in;mso-add-=
+space:auto;text-indent:-1.5in;mso-text-indent-alt:-9.0pt;mso-list:l1 level3=
+ lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore"><span style=3D"font:7.0pt=
+ &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>i.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp=
+;&nbsp;&nbsp; </span></span></span><![endif]><span lang=3D"EN-GB" style=3D"=
+font-family:&quot;Arial&quot;,sans-serif">The DSAP/SSAP value range definit=
+ion in section 3.3&nbsp; is incorrect<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.5in;mso-add-=
+space:auto;text-indent:-1.5in;mso-text-indent-alt:-9.0pt;mso-list:l1 level3=
+ lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore"><span style=3D"font:7.0pt=
+ &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>ii.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbs=
+p;&nbsp;&nbsp; </span></span></span><![endif]><span lang=3D"EN-GB" style=3D=
+"font-family:&quot;Arial&quot;,sans-serif">The code for the UI-PDU in figur=
+e 2 is incorrect<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.5in;mso-add-=
+space:auto;text-indent:-1.5in;mso-text-indent-alt:-9.0pt;mso-list:l1 level3=
+ lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore"><span style=3D"font:7.0pt=
+ &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;
+</span>iii.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nb=
+sp;&nbsp;&nbsp; </span></span></span><![endif]><span lang=3D"EN-GB" style=
+=3D"font-family:&quot;Arial&quot;,sans-serif">The code for the MIUX Paramet=
+er TLV in figure 4 is incorrect<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"text-indent:-.25in;mso-lis=
+t:l1 level1 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">3.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">The use of DSAP/SSAP is unclear<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">a.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">Section 3.3 implies that an NFC Device is addre=
+ssed using DSAP/SSAP which is not the case. DSAP/SSAP identifies service ac=
+cess points on NFC devices. A NFC Devices can
+ have several service access points installed.<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">b.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">NFC Forum views the use of LLCP as being differ=
+ent applications/protocols running on top of a single multiplexed layer bet=
+ween two peer devices. Therefore they would expect
+ only a single DSAP/SSAP value used for the transfer of IP packets<o:p></o:=
+p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">c.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">Section 4.2 mentions a simple multi-hop, but th=
+is is not defined in the current specification<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">d.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">Section 4.3 describes the integration of DSAP/S=
+SAP into the Interface identifier (IID) without considering the DSAP/SSAP v=
+alue ranges defined by LLCP which forbids the
+ usage of certain value ranges for the creation of IID.<o:p></o:p></span></=
+p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"text-indent:-.25in;mso-lis=
+t:l1 level1 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">4.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">The NFC Forum decision was to use Connectionles=
+s rather than Connection Oriented Transport<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">a.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">The belief is that IP provides a connectionless=
+ datagram service and hence it does not require a reliable transport<o:p></=
+o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"margin-left:1.0in;mso-add-=
+space:auto;text-indent:-.25in;mso-list:l1 level2 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">b.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">Connectionless Transport has considerably lower=
+ overhead than Connection Oriented<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"text-indent:-.25in;mso-lis=
+t:l1 level1 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">5.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">Section 4.8 bases the transfer of IPv6 packets =
+on a minimum MIU size of 1280 bytes. LLCP defines a minimum MIU size of 128=
+ bytes at default. IETF 6Lo WG should consider
+ that the maximum supported MIU size is limited to the maximum Link MIU siz=
+e supported by the LLC. This Link MIU is specific for the LLC and independe=
+nt of its installed service access points. It cannot be assumed that curren=
+t devices supports a Link MIU size
+ of 1280 bytes why the connection for the transfer of IPv6 packets cannot r=
+ely on this MIU size.<o:p></o:p></span></p>
+<p class=3D"MsoListParagraphCxSpLast" style=3D"text-indent:-.25in;mso-list:=
+l1 level1 lfo4">
+<![if !supportLists]><span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&=
+quot;,sans-serif"><span style=3D"mso-list:Ignore">6.<span style=3D"font:7.0=
+pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=3D"EN-GB" style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif">Section 5.2 seems to assume that 3 or more devi=
+ces can be touched to play multi-channel music; this does not appear to be =
+practical with the current link model<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;margin-bottom:.0001pt"><s=
+pan lang=3D"EN-GB" style=3D"color:black"><o:p>&nbsp;</o:p></span></p>
+<b><span style=3D"font-size:11.0pt;font-family:&quot;Arial&quot;,sans-serif=
+;color:navy;mso-fareast-language:EN-US"><br clear=3D"all" style=3D"page-bre=
+ak-before:always">
+</span></b>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;m=
+so-list:l0 level1 lfo1">
+<![if !supportLists]><b><span style=3D"color:navy"><span style=3D"mso-list:=
+Ignore">4.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbs=
+p;&nbsp;&nbsp;
+</span></span></span></b><![endif]><b><span style=3D"color:navy">Next steps=
+<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;margin-bottom:.0001pt"><b=
+><span style=3D"color:navy"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal">Given an appropriate relationship between the two bo=
+dies, LLCP experts would be happy to work with IETF on updates to the docum=
+ent.<o:p></o:p></p>
+<p class=3D"MsoNormal">The NFC Devices Working Group had during the analysi=
+s of draft-ietf-6lo-nfc no common understanding about the usage of IPv6 add=
+resses and would like to understand the use cases behind. Therefore the NFC=
+ Devices Working Group would appreciate
+ if IETF 6Lo Working Group share some background information for their curr=
+ent approach and use models.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;margin-bottom:.0001pt"><b=
+><span style=3D"color:navy"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;margin-bottom:.0001pt"><s=
+pan lang=3D"EN-GB" style=3D"color:black"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoPlainText"><span lang=3D"EN-GB"><o:p>&nbsp;</o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_BN1PR03MB072AC861689E9DC8029396795150BN1PR03MB072namprd_--
+
+
+From nobody Mon Aug 22 06:56:53 2016
+Return-Path: <fluffy@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 979B712D1E6; Mon, 22 Aug 2016 06:56:35 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -115.069
+X-Spam-Level: 
+X-Spam-Status: No, score=-115.069 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, RP_MATCHES_RCVD=-0.548, SPF_PASS=-0.001, USER_IN_DEF_DKIM_WL=-7.5, USER_IN_WHITELIST=-100] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id s3zDBeuC_dr7; Mon, 22 Aug 2016 06:56:33 -0700 (PDT)
+Received: from alln-iport-7.cisco.com (alln-iport-7.cisco.com [173.37.142.94]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id AD4BB12D51F; Mon, 22 Aug 2016 06:56:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=958; q=dns/txt; s=iport; t=1471874192; x=1473083792; h=from:to:cc:subject:date:message-id:references: in-reply-to:content-id:content-transfer-encoding: mime-version; bh=3LTy4Ir59ztejpblzbjMjpRCAalFL4Esxr+moWOgmbQ=; b=AZo1aP2lbZjM0tDdbeziTZgn4l44Q4pHVew1Fydpt/YaI1gVNwIbN5k7 ynmA17hHUXmM75k6sAxppXs6gUZQUk0EcOvUz6QD7xSgd2FuWn06Pyzgc WESaLzbSCu0NKV2n5u/LfqEvMC7kFLkSoRLz5bzgBdpyH1vMrgwgR8A7K A=;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0DJAgBmA7tX/4wNJK1dg0RWfAe3cYF9J?= =?us-ascii?q?IV5AoFYOBQCAQEBAQEBAV4nhF4BAQQBAQE4NAsFCwIBCBgeECcLJQIEDgWIKQg?= =?us-ascii?q?OvWYBAQEBAQEBAQEBAQEBAQEBAQEBAQEXBYgjglWEQIMsgi8BBJlIAYYfiH+Bb?= =?us-ascii?q?YRciQeMP4N3AR42g3pwhXx/AQEB?=
+X-IronPort-AV: E=Sophos;i="5.28,560,1464652800"; d="scan'208";a="313810702"
+Received: from alln-core-7.cisco.com ([173.36.13.140]) by alln-iport-7.cisco.com with ESMTP/TLS/DHE-RSA-AES256-SHA; 22 Aug 2016 13:56:31 +0000
+Received: from XCH-RTP-002.cisco.com (xch-rtp-002.cisco.com [64.101.220.142]) by alln-core-7.cisco.com (8.14.5/8.14.5) with ESMTP id u7MDuVQD008690 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=FAIL); Mon, 22 Aug 2016 13:56:31 GMT
+Received: from xch-rtp-004.cisco.com (64.101.220.144) by XCH-RTP-002.cisco.com (64.101.220.142) with Microsoft SMTP Server (TLS) id 15.0.1210.3; Mon, 22 Aug 2016 09:56:31 -0400
+Received: from xch-rtp-004.cisco.com ([64.101.220.144]) by XCH-RTP-004.cisco.com ([64.101.220.144]) with mapi id 15.00.1210.000; Mon, 22 Aug 2016 09:56:30 -0400
+From: "Cullen Jennings (fluffy)" <fluffy@cisco.com>
+To: Routing Over Low power and Lossy networks <roll@ietf.org>
+Thread-Topic: [Roll] AD sponsoring draft-kivinen-802-15-ie-02
+Thread-Index: AQHR/Hz8uU6nvhEdjUynKyRH6PCdkg==
+Date: Mon, 22 Aug 2016 13:56:30 +0000
+Message-ID: <D699FBAE-475B-44CA-96FC-6D54605E98A4@cisco.com>
+References: <E87B771635882B4BA20096B589152EF643D96265@eusaamb107.ericsson.se>
+In-Reply-To: <E87B771635882B4BA20096B589152EF643D96265@eusaamb107.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-messagesentrepresentingtype: 1
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [10.20.249.165]
+Content-Type: text/plain; charset="us-ascii"
+Content-ID: <1F98B1F7A79ACA49A1E09B1D61F421DC@emea.cisco.com>
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/le6RPAFfweU3RZd50V5MfXFlhow>
+Cc: Internet Area <int-area@ietf.org>, "its@ietf.org" <its@ietf.org>, "iot-dir@ietf.org" <iot-dir@ietf.org>, "lpwan@ietf.org" <lpwan@ietf.org>, "core@ietf.org" <core@ietf.org>, 6lo <6lo@ietf.org>, 6tisch <6tisch@ietf.org>
+Subject: Re: [6lo] [Roll] AD sponsoring draft-kivinen-802-15-ie-02
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 22 Aug 2016 13:56:35 -0000
+
+Seems like the draft needs some more on how the IETF will allocate the subt=
+ype.=20
+
+
+> On Jul 18, 2016, at 6:39 AM, Suresh Krishnan <suresh.krishnan@ericsson.co=
+m> wrote:
+>=20
+> Hi all,
+>   I am considering AD sponsoring the following draft
+>=20
+> https://tools.ietf.org/html/draft-kivinen-802-15-ie-02
+>=20
+> to request the allocation of an 802.15.4 information element from the IEE=
+E=20
+> for use in the IETF protocols that may need it. If you have any concerns=
+=20
+> either with the content of the draft or about requesting the IE at all pl=
+ease=20
+> let me know before 2016/07/29.
+>=20
+> Thanks
+> Suresh
+>=20
+> NOTE: I have CCed: all the groups that I thought could be potentially=20
+> interested in this work. If you think I have missed out some WG(s) please=
+ let=20
+> me know.
+>=20
+> _______________________________________________
+> Roll mailing list
+> Roll@ietf.org
+> https://www.ietf.org/mailman/listinfo/roll
+
+
+From nobody Mon Aug 22 07:42:07 2016
+Return-Path: <kivinen@iki.fi>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 581FD12D620; Mon, 22 Aug 2016 07:41:44 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.121
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.121 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, SPF_NEUTRAL=0.779] autolearn=no autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id xfgn2nKqsjiK; Mon, 22 Aug 2016 07:41:42 -0700 (PDT)
+Received: from mail.kivinen.iki.fi (fireball.acr.fi [83.145.195.1]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 4A85E12D625; Mon, 22 Aug 2016 07:41:41 -0700 (PDT)
+Received: from fireball.acr.fi (localhost [127.0.0.1]) by mail.kivinen.iki.fi (8.15.2/8.15.2) with ESMTPS id u7MEfb6b029182 (version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO); Mon, 22 Aug 2016 17:41:37 +0300 (EEST)
+Received: (from kivinen@localhost) by fireball.acr.fi (8.15.2/8.14.8/Submit) id u7MEfbeI007431; Mon, 22 Aug 2016 17:41:37 +0300 (EEST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-ID: <22459.3873.433750.928934@fireball.acr.fi>
+Date: Mon, 22 Aug 2016 17:41:37 +0300
+From: Tero Kivinen <kivinen@iki.fi>
+To: "Cullen Jennings \(fluffy\)" <fluffy@cisco.com>
+In-Reply-To: <D699FBAE-475B-44CA-96FC-6D54605E98A4@cisco.com>
+References: <E87B771635882B4BA20096B589152EF643D96265@eusaamb107.ericsson.se> <D699FBAE-475B-44CA-96FC-6D54605E98A4@cisco.com>
+X-Mailer: VM 8.2.0b under 24.5.1 (x86_64--netbsd)
+X-Edit-Time: 6 min
+X-Total-Time: 7 min
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/dX6fbZtutIooJ0ELjgBP_FytT6Y>
+Cc: Internet Area <int-area@ietf.org>, "its@ietf.org" <its@ietf.org>, Routing Over Low power and Lossy networks <roll@ietf.org>, "iot-dir@ietf.org" <iot-dir@ietf.org>, "lpwan@ietf.org" <lpwan@ietf.org>, "core@ietf.org" <core@ietf.org>, 6lo <6lo@ietf.org>, 6tisch <6tisch@ietf.org>
+Subject: Re: [6lo] [6tisch] [Roll] AD sponsoring draft-kivinen-802-15-ie-02
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 22 Aug 2016 14:41:44 -0000
+
+Cullen Jennings (fluffy) writes:
+> Seems like the draft needs some more on how the IETF will allocate
+> the subtype.
+
+If you mean how IETF will get the subtype from the IEEE, then after we
+have this document approved, we make an request to the IEEE refering
+to this document, and IEEE 802.15 Assigned Numbers Authority will then
+follow their own procedures to do the allocation:
+http://www.ieee802.org/15/ANA.html
+
+I think first we just need to specify how we are going to do the
+subtyping (or at least have belivable plan for it) before we can start
+the process.
+
+What kind of text you think we should add to this document?
+-- 
+kivinen@iki.fi
+
+
+From nobody Mon Aug 22 12:54:05 2016
+Return-Path: <sarikaya2012@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 8413312D7E3 for <6lo@ietfa.amsl.com>; Mon, 22 Aug 2016 12:54:02 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.75
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.75 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_ENVFROM_END_DIGIT=0.25, FREEMAIL_FROM=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001] autolearn=no autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id tEkG7onsg0co for <6lo@ietfa.amsl.com>; Mon, 22 Aug 2016 12:54:01 -0700 (PDT)
+Received: from mail-ua0-x22e.google.com (mail-ua0-x22e.google.com [IPv6:2607:f8b0:400c:c08::22e]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 1703B12D177 for <6lo@ietf.org>; Mon, 22 Aug 2016 12:54:01 -0700 (PDT)
+Received: by mail-ua0-x22e.google.com with SMTP id n59so208411336uan.2 for <6lo@ietf.org>; Mon, 22 Aug 2016 12:54:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;  h=mime-version:reply-to:from:date:message-id:subject:to:cc; bh=pgMQBOEPfXZxj6m75rRbbXR79QwljZ2MommEt1FY+nA=; b=ER7MEk2AI1DJOfVdcgdIHTG/GhgadvbYz76WlWt1+blLxICnuSjWN3cO5HRvPdTbbk JHp8X18AX6uJYZAvEQAlYWHz0DcvNGhYpLLl+SY4I3sE94Fx99VV7oBVnDyExFHRTRct 34IQbvET6qFp1+LAa+iqyXuzSMlUyeEZOuN29ADnMDyp2E/Fad2IavTqk3AvCPmTEOBI quda/EAgKyNAqVZHGFbQjEwe4HSxS6tEEiXf6InSkeo3FruZliHhDkKpFY4zSxoJFPYg ZnLnJl2nolwMQMu/6/KuWu7nxNzU0/FNhRrWTkXfVS01/F0+ybedEJIhmGauNlUZrnJA zqKw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20130820; h=x-gm-message-state:mime-version:reply-to:from:date:message-id :subject:to:cc; bh=pgMQBOEPfXZxj6m75rRbbXR79QwljZ2MommEt1FY+nA=; b=WCBJMhdkQF7GUS92re6N9gx5B2YBJGz4h2zpWr5XG74xDoCYjm5PzjHyfchJEGCOFY nfeG+Sm+y8a+84aDn6qgC52jZgay1rQBu6lK3dM75iiNlSKr7aOP1qEPkICSMfmWo7ok ++60cnEiiJ4Sqxs15w9+6RXGEHEiuWl/rUgKJyaFAsWyZjzxSWGhDDId7yQ8WcLdYqSK 8q6gdBpJc7koimxUoGizmT2uZ83O8r3uCgnUiWmS7mvNcV0fzxyaWoFDFbxm+grOYPvc UebaF4XlWPAUhsq0mAgj0BtVdTBpO/y0TiUY/nk5ErYlMOiAQiWHW0nRAS5dSLpw5o2u wf3w==
+X-Gm-Message-State: AEkoouteYUht6muarFDOrJcbkPK/MGk/mwBKo+ym9KnpErx7Encrkv/xpG3eUPh2l03k1oRvA/Iw8O0i2JpMcQ==
+X-Received: by 10.159.35.115 with SMTP id 106mr11728929uae.78.1471895640161; Mon, 22 Aug 2016 12:54:00 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.159.40.167 with HTTP; Mon, 22 Aug 2016 12:53:59 -0700 (PDT)
+From: Behcet Sarikaya <sarikaya2012@gmail.com>
+Date: Mon, 22 Aug 2016 14:53:59 -0500
+Message-ID: <CAC8QAce75Fd4AyegJYxU-ijA5TZYAeqWcB3_HZ4YTNNn4VGoNg@mail.gmail.com>
+To: "6lo@ietf.org" <6lo@ietf.org>, Samita Chakrabarti <samita.chakrabarti@ericsson.com>,  "Gabriel Montenegro (Gabriel.Montenegro@microsoft.com)" <Gabriel.Montenegro@microsoft.com>
+Content-Type: text/plain; charset=UTF-8
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/nWAz9QRHcOGP1Uovu8LmxRh4yww>
+Cc: Mohit Sethi <mohit@piuha.net>, Pascal Thubert <pthubert@cisco.com>
+Subject: [6lo] New Version of draft-sarikaya-6lo-ap-nd-04.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+Reply-To: sarikaya@ieee.org
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 22 Aug 2016 19:54:03 -0000
+
+Folks,
+We submitted Rev. 04 of AP ND draft.
+To chairs: We think that this draft is now ready for an adoption call.
+
+Regards,
+
+Behcet
+
+On Mon, Aug 22, 2016 at 2:00 PM,  <internet-drafts@ietf.org> wrote:
+>
+> A new version of I-D, draft-sarikaya-6lo-ap-nd-04.txt
+> has been successfully submitted by Mohit Sethi and posted to the
+> IETF repository.
+>
+> Name:           draft-sarikaya-6lo-ap-nd
+> Revision:       04
+> Title:          Address Protected Neighbor Discovery for Low-power and Lossy Networks
+> Document date:  2016-08-22
+> Group:          Individual Submission
+> Pages:          17
+> URL:            https://www.ietf.org/internet-drafts/draft-sarikaya-6lo-ap-nd-04.txt
+> Status:         https://datatracker.ietf.org/doc/draft-sarikaya-6lo-ap-nd/
+> Htmlized:       https://tools.ietf.org/html/draft-sarikaya-6lo-ap-nd-04
+> Diff:           https://www.ietf.org/rfcdiff?url2=draft-sarikaya-6lo-ap-nd-04
+>
+> Abstract:
+>    This document defines an extension to 6LoWPAN Neighbor Discovery.
+>    This extension is designed for low-power and lossy network
+>    environments and it supports multi-hop operation.  Nodes supporting
+>    this extension compute a Cryptographically Unique Interface ID and
+>    associate it with one or more of their Registered Addresses.  The
+>    Cryptographic ID (Crypto-ID) uniquely identifies the owner of the
+>    Registered Address.  It is used in place of the EUI-64 address that
+>    is specified in RFC 6775.  Once an address is registered with a
+>    Cryptographic ID, only the owner of that ID can modify the state
+>    information of the Registered Address in the 6LR and 6LBR.
+>
+>
+>
+>
+> Please note that it may take a couple of minutes from the time of submission
+> until the htmlized version and diff are available at tools.ietf.org.
+>
+> The IETF Secretariat
+>
+
+
+From nobody Mon Aug 22 14:05:03 2016
+Return-Path: <samita.chakrabarti@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 2006F12D80F for <6lo@ietfa.amsl.com>; Mon, 22 Aug 2016 14:05:02 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.202
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.202 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 5JbiVqSNjeZu for <6lo@ietfa.amsl.com>; Mon, 22 Aug 2016 14:05:00 -0700 (PDT)
+Received: from usplmg20.ericsson.net (usplmg20.ericsson.net [198.24.6.45]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 24D3E12D808 for <6lo@ietf.org>; Mon, 22 Aug 2016 14:05:00 -0700 (PDT)
+X-AuditID: c618062d-980fb98000000a08-88-57bb6a1632f6
+Received: from EUSAAHC003.ericsson.se (Unknown_Domain [147.117.188.81]) by  (Symantec Mail Security) with SMTP id C8.9A.02568.61A6BB75; Mon, 22 Aug 2016 23:09:42 +0200 (CEST)
+Received: from EUSAAMB103.ericsson.se ([147.117.188.120]) by EUSAAHC003.ericsson.se ([147.117.188.81]) with mapi id 14.03.0301.000; Mon, 22 Aug 2016 17:00:49 -0400
+From: Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+To: "sarikaya@ieee.org" <sarikaya@ieee.org>, "6lo@ietf.org" <6lo@ietf.org>, "Gabriel Montenegro (Gabriel.Montenegro@microsoft.com)" <Gabriel.Montenegro@microsoft.com>
+Thread-Topic: New Version of draft-sarikaya-6lo-ap-nd-04.txt
+Thread-Index: AQHR/K7vvvVJc1B1yEmZCXb66lf2q6BVdmWw
+Date: Mon, 22 Aug 2016 21:00:49 +0000
+Message-ID: <ECA43DA70480A3498E43C3471FB2E1F0224373ED@eusaamb103.ericsson.se>
+References: <CAC8QAce75Fd4AyegJYxU-ijA5TZYAeqWcB3_HZ4YTNNn4VGoNg@mail.gmail.com>
+In-Reply-To: <CAC8QAce75Fd4AyegJYxU-ijA5TZYAeqWcB3_HZ4YTNNn4VGoNg@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.9]
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFupkkeLIzCtJLcpLzFFi42KZXLonUFcsa3e4wcNuSYvmKQIWx2duZLZY +e8ti8WMKe8YLWb3nmZxYPWY8nsjq8fTCQeZPJYs+cnk0brjL7vH1iXT2QJYo7hsUlJzMstS i/TtErgy5nRUFmyRrJj/8ABLA+MDiS5GDg4JAROJ63eUuhi5OIQENjBK3Lh5m7WLkRPIWc4o sfqANYjNJmAl0dG7hx2kSERgFaPEgQ0L2EESzAJuEmuPP2YCsYUFrCV6Hl9nA7FFBGwkjnxa xA5hG0msb7/ACGKzCKhKnNy0nQXE5hXwlbi+6w4LxLIAid5VZ8BqOAUCJdoaz4P1MgqISXw/ tYYJYpe4xK0n88FsCQEBiSV7zjND2KISLx//Y4WwFSX29U9nB3mMWUBTYv0ufYhWRYkp3Q/Z IdYKSpyc+YRlAqPoLCRTZyF0zELSMQtJxwJGllWMHKXFBTm56UYGmxiBEXRMgk13B+P96Z6H GAU4GJV4eBfY7g4XYk0sK67MPcQowcGsJML7MB0oxJuSWFmVWpQfX1Sak1p8iFGag0VJnFfs kWK4kEB6YklqdmpqQWoRTJaJg1OqgVFur9qtMxEb3qZIFnNN3ly85N+Mrss1PJVZVsv/vFvr +0rELZHtWrfHpevx+89O5NlfmGx0rmXOQw/tM9o7XuUZXwtUUH/4b3uNqXpP22+lRfWutoKS J+f0f5xin3m1PZk5h6fyD5tPe+r1UI/tTw4de1oe+mxa9NrEfSYh0zq8z9u+DNpxK0WJpTgj 0VCLuag4EQBhD8YknAIAAA==
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/OmfAmoegV7b1_t_0T_99o86ghUI>
+Cc: Mohit Sethi <mohit@piuha.net>, Pascal Thubert <pthubert@cisco.com>
+Subject: Re: [6lo] New Version of draft-sarikaya-6lo-ap-nd-04.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 22 Aug 2016 21:05:02 -0000
+
+VGhhbmtzIEJlaGNldCBhbmQgdGhlIGNvLWF1dGhvcnMgIGZvciB0aGUgaGVhZHN1cC4NCg0KV2Ug
+d2lsbCByZXF1ZXN0IGFkb3B0aW9uIGNhbGwgc29vbi4NCg0KLVNhbWl0YQ0KDQotLS0tLU9yaWdp
+bmFsIE1lc3NhZ2UtLS0tLQ0KRnJvbTogQmVoY2V0IFNhcmlrYXlhIFttYWlsdG86c2FyaWtheWEy
+MDEyQGdtYWlsLmNvbV0gDQpTZW50OiBNb25kYXksIEF1Z3VzdCAyMiwgMjAxNiAxMjo1NCBQTQ0K
+VG86IDZsb0BpZXRmLm9yZzsgU2FtaXRhIENoYWtyYWJhcnRpIDxzYW1pdGEuY2hha3JhYmFydGlA
+ZXJpY3Nzb24uY29tPjsgR2FicmllbCBNb250ZW5lZ3JvIChHYWJyaWVsLk1vbnRlbmVncm9AbWlj
+cm9zb2Z0LmNvbSkgPEdhYnJpZWwuTW9udGVuZWdyb0BtaWNyb3NvZnQuY29tPg0KQ2M6IE1vaGl0
+IFNldGhpIDxtb2hpdEBwaXVoYS5uZXQ+OyBQYXNjYWwgVGh1YmVydCA8cHRodWJlcnRAY2lzY28u
+Y29tPg0KU3ViamVjdDogTmV3IFZlcnNpb24gb2YgZHJhZnQtc2FyaWtheWEtNmxvLWFwLW5kLTA0
+LnR4dA0KDQpGb2xrcywNCldlIHN1Ym1pdHRlZCBSZXYuIDA0IG9mIEFQIE5EIGRyYWZ0Lg0KVG8g
+Y2hhaXJzOiBXZSB0aGluayB0aGF0IHRoaXMgZHJhZnQgaXMgbm93IHJlYWR5IGZvciBhbiBhZG9w
+dGlvbiBjYWxsLg0KDQpSZWdhcmRzLA0KDQpCZWhjZXQNCg0KT24gTW9uLCBBdWcgMjIsIDIwMTYg
+YXQgMjowMCBQTSwgIDxpbnRlcm5ldC1kcmFmdHNAaWV0Zi5vcmc+IHdyb3RlOg0KPg0KPiBBIG5l
+dyB2ZXJzaW9uIG9mIEktRCwgZHJhZnQtc2FyaWtheWEtNmxvLWFwLW5kLTA0LnR4dCBoYXMgYmVl
+biANCj4gc3VjY2Vzc2Z1bGx5IHN1Ym1pdHRlZCBieSBNb2hpdCBTZXRoaSBhbmQgcG9zdGVkIHRv
+IHRoZSBJRVRGIA0KPiByZXBvc2l0b3J5Lg0KPg0KPiBOYW1lOiAgICAgICAgICAgZHJhZnQtc2Fy
+aWtheWEtNmxvLWFwLW5kDQo+IFJldmlzaW9uOiAgICAgICAwNA0KPiBUaXRsZTogICAgICAgICAg
+QWRkcmVzcyBQcm90ZWN0ZWQgTmVpZ2hib3IgRGlzY292ZXJ5IGZvciBMb3ctcG93ZXIgYW5kIExv
+c3N5IE5ldHdvcmtzDQo+IERvY3VtZW50IGRhdGU6ICAyMDE2LTA4LTIyDQo+IEdyb3VwOiAgICAg
+ICAgICBJbmRpdmlkdWFsIFN1Ym1pc3Npb24NCj4gUGFnZXM6ICAgICAgICAgIDE3DQo+IFVSTDog
+ICAgICAgICAgICBodHRwczovL3d3dy5pZXRmLm9yZy9pbnRlcm5ldC1kcmFmdHMvZHJhZnQtc2Fy
+aWtheWEtNmxvLWFwLW5kLTA0LnR4dA0KPiBTdGF0dXM6ICAgICAgICAgaHR0cHM6Ly9kYXRhdHJh
+Y2tlci5pZXRmLm9yZy9kb2MvZHJhZnQtc2FyaWtheWEtNmxvLWFwLW5kLw0KPiBIdG1saXplZDog
+ICAgICAgaHR0cHM6Ly90b29scy5pZXRmLm9yZy9odG1sL2RyYWZ0LXNhcmlrYXlhLTZsby1hcC1u
+ZC0wNA0KPiBEaWZmOiAgICAgICAgICAgaHR0cHM6Ly93d3cuaWV0Zi5vcmcvcmZjZGlmZj91cmwy
+PWRyYWZ0LXNhcmlrYXlhLTZsby1hcC1uZC0wNA0KPg0KPiBBYnN0cmFjdDoNCj4gICAgVGhpcyBk
+b2N1bWVudCBkZWZpbmVzIGFuIGV4dGVuc2lvbiB0byA2TG9XUEFOIE5laWdoYm9yIERpc2NvdmVy
+eS4NCj4gICAgVGhpcyBleHRlbnNpb24gaXMgZGVzaWduZWQgZm9yIGxvdy1wb3dlciBhbmQgbG9z
+c3kgbmV0d29yaw0KPiAgICBlbnZpcm9ubWVudHMgYW5kIGl0IHN1cHBvcnRzIG11bHRpLWhvcCBv
+cGVyYXRpb24uICBOb2RlcyBzdXBwb3J0aW5nDQo+ICAgIHRoaXMgZXh0ZW5zaW9uIGNvbXB1dGUg
+YSBDcnlwdG9ncmFwaGljYWxseSBVbmlxdWUgSW50ZXJmYWNlIElEIGFuZA0KPiAgICBhc3NvY2lh
+dGUgaXQgd2l0aCBvbmUgb3IgbW9yZSBvZiB0aGVpciBSZWdpc3RlcmVkIEFkZHJlc3Nlcy4gIFRo
+ZQ0KPiAgICBDcnlwdG9ncmFwaGljIElEIChDcnlwdG8tSUQpIHVuaXF1ZWx5IGlkZW50aWZpZXMg
+dGhlIG93bmVyIG9mIHRoZQ0KPiAgICBSZWdpc3RlcmVkIEFkZHJlc3MuICBJdCBpcyB1c2VkIGlu
+IHBsYWNlIG9mIHRoZSBFVUktNjQgYWRkcmVzcyB0aGF0DQo+ICAgIGlzIHNwZWNpZmllZCBpbiBS
+RkMgNjc3NS4gIE9uY2UgYW4gYWRkcmVzcyBpcyByZWdpc3RlcmVkIHdpdGggYQ0KPiAgICBDcnlw
+dG9ncmFwaGljIElELCBvbmx5IHRoZSBvd25lciBvZiB0aGF0IElEIGNhbiBtb2RpZnkgdGhlIHN0
+YXRlDQo+ICAgIGluZm9ybWF0aW9uIG9mIHRoZSBSZWdpc3RlcmVkIEFkZHJlc3MgaW4gdGhlIDZM
+UiBhbmQgNkxCUi4NCj4NCj4NCj4NCj4NCj4gUGxlYXNlIG5vdGUgdGhhdCBpdCBtYXkgdGFrZSBh
+IGNvdXBsZSBvZiBtaW51dGVzIGZyb20gdGhlIHRpbWUgb2YgDQo+IHN1Ym1pc3Npb24gdW50aWwg
+dGhlIGh0bWxpemVkIHZlcnNpb24gYW5kIGRpZmYgYXJlIGF2YWlsYWJsZSBhdCB0b29scy5pZXRm
+Lm9yZy4NCj4NCj4gVGhlIElFVEYgU2VjcmV0YXJpYXQNCj4NCg==
+
+
+From nobody Wed Aug 24 15:35:19 2016
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id B7AFD12D798 for <6lo@ietfa.amsl.com>; Wed, 24 Aug 2016 15:35:17 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.999
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.999 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 9zKyqxXW14BC for <6lo@ietfa.amsl.com>; Wed, 24 Aug 2016 15:35:16 -0700 (PDT)
+Received: from mail-ua0-x243.google.com (mail-ua0-x243.google.com [IPv6:2607:f8b0:400c:c08::243]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 6A10812B00E for <6lo@ietf.org>; Wed, 24 Aug 2016 15:35:16 -0700 (PDT)
+Received: by mail-ua0-x243.google.com with SMTP id d97so2450229uad.1 for <6lo@ietf.org>; Wed, 24 Aug 2016 15:35:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;  h=mime-version:from:date:message-id:subject:to; bh=ouTlcK2NtVyucOT7TpmTtjDXvCZKkr8BwbRHXPS5Wm4=; b=cU2F6e+YSYFYdRvC+0wanw6yShV/+qyBv+xqyS5bJ+LjCEk1rvDMjEWjUVZKodrG3S WCEli1/tfPpS9bSezTr+syg9mNXIej+gmx4V+iuM9TV2W9G7AlvR1vKM4DrYloXI47Qo F0S320gjDhCstaWISHQgF4Z85a1mDF1ndImfmor0CxhCo54tgjQe0y60sMxCkA3QS0So x59Hd/inioj0ZKdxweMc+7HAPIHFKj0mj4B1Qy6GZiTqMJ2WQ4+/+eUhKupXAICGssTC bPd8qy1qnyUyG4xzeez93phxIdxyx14WE3wqI/ZW0r45Ahuz7tDh/RZ6PVstfYeOkyzg vDNQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20130820; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=ouTlcK2NtVyucOT7TpmTtjDXvCZKkr8BwbRHXPS5Wm4=; b=cN44tmGG09g48AF/uNB3NSGDf7nouXPJUAiRA2Cw0NSFpkhVwJtDdlMa8z0kkVgJf6 wbKo5+AizID/aqxue6ZLlFMV7U95ra3iISoynsBIqzlGX8QB+pymxygX7ugp/pmDD6vc Q6nTobx6cQd4JNXVEzXtPqb3c+6fQwFdSUTBJQTUSgwev8eHignDgjPHS6X7xaruNU7V zMutUbE8nEXWxpHJH7IsEahhhPPK2R/ZOBoWWaEC8ge90djuUj5AB4W+PYKU0EyKwYqk PJhJmzSdwbh0VJLsrYODnIjdEbl186bhFk/cUqm46ruJGjC5DKDiSlDIJJCpqNGp779Q lHmw==
+X-Gm-Message-State: AEkoouu/FA3ywQxCj2d+LMEmkMFfk0GDmpyvPOFkwjYnxxqN1Jy8gAVcEr6biwlWB+9tZlAEzD3bmIh/7yyLDQ==
+X-Received: by 10.31.83.67 with SMTP id h64mr2625284vkb.27.1472078115452; Wed, 24 Aug 2016 15:35:15 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.31.217.198 with HTTP; Wed, 24 Aug 2016 15:35:15 -0700 (PDT)
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+Date: Wed, 24 Aug 2016 15:35:15 -0700
+Message-ID: <CAKmdBpd956z+GYd1JNTt5g6b7OHAT_MmDkJYBrPyMrURqMBNgw@mail.gmail.com>
+To: 6lo@ietf.org
+Content-Type: multipart/alternative; boundary=001a114e60e0273bdb053ad8e549
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/AY9G0o2O2hu6UkH4UDT-WoiTbdc>
+Subject: [6lo] My new email contact information
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.17
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 24 Aug 2016 22:35:18 -0000
+
+--001a114e60e0273bdb053ad8e549
+Content-Type: text/plain; charset=UTF-8
+
+Dear WG members:
+
+Please use samitac.ietf@gmail.com for all your IETF related correspondence.
+My affiliation will change soon.
+
+If you have any questions regarding the above, please contact me directly.
+
+Thanks,
+-Samita
+
+--001a114e60e0273bdb053ad8e549
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Dear WG members:<div><br></div><div>Please use <a href=3D"=
+mailto:samitac.ietf@gmail.com">samitac.ietf@gmail.com</a> for all your IETF=
+ related correspondence. My affiliation will change soon.</div><div><br></d=
+iv><div>If you have any questions regarding the above, please contact me di=
+rectly.</div><div><br></div><div>Thanks,</div><div>-Samita</div></div>
+
+--001a114e60e0273bdb053ad8e549--
+

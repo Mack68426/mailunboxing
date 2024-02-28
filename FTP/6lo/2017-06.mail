@@ -1,0 +1,3083 @@
+
+From nobody Sun Jun  4 16:59:41 2017
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 6843B1200F3; Sun,  4 Jun 2017 16:59:40 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.52.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <149662078038.3186.6715152231272339797@ietfa.amsl.com>
+Date: Sun, 04 Jun 2017 16:59:40 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/PuNoYNHPBa1FTTDayoYtN88HF98>
+Subject: [6lo] I-D Action: draft-ietf-6lo-nfc-07.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sun, 04 Jun 2017 23:59:40 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes of the IETF.
+
+        Title           : Transmission of IPv6 Packets over Near Field Communication
+        Authors         : Younghwan Choi
+                          Yong-Geun Hong
+                          Joo-Sang Youn
+                          Dongkyun Kim
+                          JinHyouk Choi
+	Filename        : draft-ietf-6lo-nfc-07.txt
+	Pages           : 17
+	Date            : 2017-06-04
+
+Abstract:
+   Near field communication (NFC) is a set of standards for smartphones
+   and portable devices to establish radio communication with each other
+   by touching them together or bringing them into proximity, usually no
+   more than 10 cm.  NFC standards cover communications protocols and
+   data exchange formats, and are based on existing radio-frequency
+   identification (RFID) standards including ISO/IEC 14443 and FeliCa.
+   The standards include ISO/IEC 18092 and those defined by the NFC
+   Forum.  The NFC technology has been widely implemented and available
+   in mobile phones, laptop computers, and many other devices.  This
+   document describes how IPv6 is transmitted over NFC using 6LowPAN
+   techniques.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-nfc/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-nfc-07
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-nfc-07
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-nfc-07
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Mon Jun  5 17:15:52 2017
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 1709A12E04D; Mon,  5 Jun 2017 17:15:50 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.698
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.698 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Nyna8KpqJvWN; Mon,  5 Jun 2017 17:15:47 -0700 (PDT)
+Received: from mail-vk0-x22f.google.com (mail-vk0-x22f.google.com [IPv6:2607:f8b0:400c:c05::22f]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 2CBB312EB05; Mon,  5 Jun 2017 17:15:47 -0700 (PDT)
+Received: by mail-vk0-x22f.google.com with SMTP id p85so74523407vkd.3; Mon, 05 Jun 2017 17:15:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:from:date:message-id:subject:to:cc; bh=Q/QH5jRf6z14FMSucNCn0+L3yzP+CWbEhekH5xPnhGc=; b=VQYSiACrNVx2OOnt9AL5R+J4I3UkQlHT/zyLMQBoMJDkInveo2fJor9ce2PX31wmUi aHmYFBmPZ05TYVoQ0o7ALMeQdqc2isqvN/Mc/3ivrutB24KKwm9Zlp6kQXeqR6Em7im7 w4KzF+4VUbhWUfkX1mPji1aPmJA9/4dP/yEbZd4XdUCESfABuj+FOYi2BE6DCj8XVwfa ZPdzXabdAj2cp50SNBzrHfX0KBgS3aAuW/kny38rR8SIe/2yxWWkcA7LqOYVUa7bONFe yun4fYLGB99CU/Tu9WpatGtMCkSOgFwlJp4oiHKDycnPxUm90ea77tByP6sIwIXFJS5I hGGw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to:cc; bh=Q/QH5jRf6z14FMSucNCn0+L3yzP+CWbEhekH5xPnhGc=; b=kuj+SO8/Vzxdvv4wG6afY/6bcwWhDS+Vs+vNdwmhuo0FDME8PK03N6zu9jGHHxp1tl l6pf+EXkJzWvUBnvL+TMfWkTUHOVJBL0NuVPoaBtV6Ai4HTs9vwTvrMeKtlm6D2PAKbA AXy1ajpUCWOpCZTAYd87Uoi4lbwMj4w9y4cOaedXriwhaXdTydLx6OBqjMllbqv8Jg5g rPA/qPnG5Z285Pl8ty17wUZ7cSYfiWMIPLFB8iso/VxuHiertZzi5HBLcOeaX+DRiWAd /YoBI6M8zQOGwwNBqtSDLarRPIWmXv1haBRCEbLp5cdOhA3vR6elflnmTMGD1JT7QoRf i6Jw==
+X-Gm-Message-State: AODbwcBhow76W2plFqW3MYI3pqHPuJDB7eiQlRq+U2qrONAQAAZNI3Kw vpTdkvbWW75KPitJfjr7deddvdydNg==
+X-Received: by 10.31.166.139 with SMTP id p133mr11512648vke.123.1496708146145;  Mon, 05 Jun 2017 17:15:46 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.31.167.78 with HTTP; Mon, 5 Jun 2017 17:15:45 -0700 (PDT)
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+Date: Mon, 5 Jun 2017 17:15:45 -0700
+Message-ID: <CAKmdBpeUiiaixp1Dept0spes769jOJrYHVg4TCN1r1qPkDmA2g@mail.gmail.com>
+To: "Pascal Thubert (pthubert)" <pthubert@cisco.com>, Dave Thaler <dthaler@microsoft.com>,  =?UTF-8?B?7LWc7JiB7ZmY?= <yhc@etri.re.kr>, 6lo-chairs@ietf.org,  lo <6lo@ietf.org>
+Cc: James Woodyatt <jhw@google.com>
+Content-Type: multipart/alternative; boundary="001a1142d9926233ee05513f8519"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/WK-zVtigtTdBvfABy11Trarnb58>
+Subject: [6lo] Review Request for ipv6-over-nfc-07
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 06 Jun 2017 00:15:50 -0000
+
+--001a1142d9926233ee05513f8519
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Dave, Pascal, James and WG members:
+
+ipv6-over-nfc-07 has just been published and the author mentions that he
+had addressed the comments from Pascal and Dave.
+
+ Pascal and Dave,  would you please have sometime to review version 07 to
+check if your comments are addressed?
+
+I have appended the excerpt from IETF98 meeting minutes for your reference.
+This document is due for WG LC if  it looks okay.
+
+James, you are shepherd for NFC draft -- please let us know if you are okay
+with the document's next step.
+
+Thanks,
+-Samita
+
+As per IETF98 meeting minutes:
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+2 IPv6 over NFC                                    Younghwan Choi
+
+  https://tools.ietf.org/wg/6lo/draft-ietf-6lo-nfc-06 was presented by
+Younghawn Choi on updates and
+  discussed comments from WG and NFC forum. The draft was reviewed by NFC
+forum, no more comments
+  from NFC forum. The author likes to move to WGLC.
+
+  Dave Thaler:IID generation changed as a result of previous meeting
+
+  Pascal: Replacing 6 bit address with hashing function with fixed
+parameters. Scanning is still
+  easy. How is it different?
+  YC: offset. Dave: offset should be random to add entropy, not predictable=
+.
+  Gabriel: offset may not be a right name. Nonce would be better.
+  Samita: need reviewers before WGLC. Pascal, Dave, would you volunteer?
+  Pascal will do the review and Dave agreed to review the final update.
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D
+---------- Forwarded message ----------
+From: =EC=B5=9C=EC=98=81=ED=99=98 <yhc@etri.re.kr>
+Date: Sun, Jun 4, 2017 at 5:02 PM
+Subject: RE: [6lo] Request for IETF99@Prague 6lo Agenda items
+To: Samita Chakrabarti <samitac.ietf@gmail.com>
+Cc: Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>
+
+
+Hello Samita,
+
+
+
+I=E2=80=99ve submitted the new version of ipv6-over-nfc (-07). The document=
+ is
+ready for review.
+
+Thanks.
+
+
+
+Best regards,
+
+Younghwan Choi
+
+--001a1142d9926233ee05513f8519
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><br></div><div><br></div>Hello Dave, Pascal, James an=
+d WG members:<div><br></div><div>ipv6-over-nfc-07 has just been published a=
+nd the author mentions that he had addressed the comments from Pascal and D=
+ave.</div><div><br></div><div>=C2=A0Pascal and Dave, =C2=A0would you please=
+ have sometime to review version 07 to check if your comments are addressed=
+?</div><div><br></div><div>I have appended the excerpt from IETF98 meeting =
+minutes for your reference.</div><div>This document is due for WG LC if =C2=
+=A0it looks okay.</div><div><br></div><div>James, you are shepherd for NFC =
+draft -- please let us know if you are okay with the document&#39;s next st=
+ep.=C2=A0</div><div><br></div><div>Thanks,</div><div>-Samita</div><div><br>=
+</div><div>As per IETF98 meeting minutes:</div><div>=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</div><div><br></div><div><=
+div>2 IPv6 over NFC =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0Young=
+hwan Choi =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=C2=A0</div><div>=
+=C2=A0 <a href=3D"https://tools.ietf.org/wg/6lo/draft-ietf-6lo-nfc-06">http=
+s://tools.ietf.org/wg/6lo/draft-ietf-6lo-nfc-06</a> was presented by Youngh=
+awn Choi on updates and</div><div>=C2=A0 discussed comments from WG and NFC=
+ forum. The draft was reviewed by NFC forum, no more comments</div><div>=C2=
+=A0 from NFC forum. The author likes to move to WGLC.</div><div><br></div><=
+div>=C2=A0 Dave Thaler:IID generation changed as a result of previous meeti=
+ng</div><div>=C2=A0 =C2=A0 =C2=A0</div><div>=C2=A0 Pascal: Replacing 6 bit =
+address with hashing function with fixed parameters. Scanning is still</div=
+><div>=C2=A0 easy. How is it different?</div><div>=C2=A0 YC: offset. Dave: =
+offset should be random to add entropy, not predictable.</div><div>=C2=A0 G=
+abriel: offset may not be a right name. Nonce would be better.</div><div>=
+=C2=A0 Samita: need reviewers before WGLC. Pascal, Dave, would you voluntee=
+r?=C2=A0</div><div>=C2=A0 Pascal will do the review and Dave agreed to revi=
+ew the final update.</div></div><div>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br><div class=3D"gma=
+il_quote">---------- Forwarded message ----------<br>From: <b class=3D"gmai=
+l_sendername">=EC=B5=9C=EC=98=81=ED=99=98</b> <span dir=3D"ltr">&lt;<a href=
+=3D"mailto:yhc@etri.re.kr">yhc@etri.re.kr</a>&gt;</span><br>Date: Sun, Jun =
+4, 2017 at 5:02 PM<br>Subject: RE: [6lo] Request for IETF99@Prague 6lo Agen=
+da items<br>To: Samita Chakrabarti &lt;<a href=3D"mailto:samitac.ietf@gmail=
+.com">samitac.ietf@gmail.com</a>&gt;<br>Cc: Gabriel Montenegro &lt;<a href=
+=3D"mailto:Gabriel.Montenegro@microsoft.com">Gabriel.Montenegro@microsoft.c=
+om</a>&gt;<br><br><br>
+
+
+
+
+
+<div lang=3D"KO">
+<div class=3D"gmail-m_-3421325161188684494WordSection1">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)">Hello=
+ Samita,
+<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)"><u></=
+u>=C2=A0<u></u></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)">I=E2=
+=80=99ve submitted the new version of ipv6-over-nfc (-07). The document is =
+ready for review.<u></u><u></u></span></p><span class=3D"gmail-">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)">Thank=
+s.<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)"><u></=
+u>=C2=A0<u></u></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)">Best =
+regards,<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)">Young=
+hwan Choi<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><a name=3D"m_-3421325161188684494__MailEndCompose"><=
+span lang=3D"EN-US" style=3D"font-size:10pt;font-family:&quot;\00b9d1\00c74=
+0  \00ace0\00b515&quot;;color:rgb(31,73,125)"><u></u>=C2=A0<u></u></span></=
+a></p>
+<span></span>
+</span><p class=3D"MsoNormal"><br></p><div><div class=3D"gmail-h5"><div><di=
+v><blockquote style=3D"border-top:none;border-right:none;border-bottom:none=
+;border-left:1pt solid rgb(204,204,204);padding:0cm 0cm 0cm 6pt;margin-left=
+:4.8pt;margin-right:0cm"><div><div><div><div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div></div></div>
+</div>
+
+</div><br></div></div>
+
+--001a1142d9926233ee05513f8519--
+
+
+From nobody Mon Jun  5 17:18:05 2017
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 6436C12EB4B; Mon,  5 Jun 2017 17:18:04 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.698
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.698 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id oQCYECeL_B4c; Mon,  5 Jun 2017 17:18:02 -0700 (PDT)
+Received: from mail-vk0-x230.google.com (mail-vk0-x230.google.com [IPv6:2607:f8b0:400c:c05::230]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 3A12712E04D; Mon,  5 Jun 2017 17:18:02 -0700 (PDT)
+Received: by mail-vk0-x230.google.com with SMTP id p62so39618098vkp.0; Mon, 05 Jun 2017 17:18:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:in-reply-to:references:from:date:message-id:subject:to :cc; bh=tiJ37JxuAdU5Z/6T6K8iuQWxPYTGeyn31YsQVzjVRpM=; b=fdtsIhnGbAsj1BpJKH1jdt7vxEbMxZ/BAIsd8lEdaLrPqzctUwyRoWBAU0qjUaXqST h/LpfhUt42614oyH+jv4ct7G4gKC0nYvY6lvbCy6acJjVWrJnGDAPu59nihA7vbIzVhZ lq4bfM88txLC48VgK0Nsh79dhMIWpTDEJl3N2uGsYM7Pq8PU/DFSRKboc6Z6tYyHJvG8 aJipuAH3XFgVzNXdi5JL2fwpcPBYW8M6ksFSxS/blPB6UXRufLL8Mt16aL79cPmuUQFb aQukoBRbTK8qpeC48MjjVoI1DVbwJeqkaCc49Vvg3qcCnfOfh0az+E9ji2Gji8WFVrmY yOzA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:in-reply-to:references:from:date :message-id:subject:to:cc; bh=tiJ37JxuAdU5Z/6T6K8iuQWxPYTGeyn31YsQVzjVRpM=; b=RpgNa2VvlgGncSvoGrTpPb+C6mUdfkyUfiZUVijZIzsVvgihJSw9z5FWdvYGJumtX7 jzf8VRuPuDdSAZJmDwt2aHhcBQIdjs6FS9fH/GP+Zys9Xag63qMkAFS9k7U3tMSnLIxC Gx3W9PLsi6nOGBRH+dHDaJL8hUbhP2Oogrh68aUYlOgFDazlBrG31Wk9QjXG/8VlA5x4 +BoMEbwTvBwxIBMkQBLuUdNUmQOa2OUysxaV0MBHhlWnaT+Mqr6Iw/VST9eHkcShOPNy SDwZAd2aIv98QOkWxFSFOMJaHo53EMj0lI8SLth2qeIrmoNeqdGFlkanKPk2sGm/XdeL aHUA==
+X-Gm-Message-State: AODbwcAD9I4UZCi1KPljxFhyvJ8ODx28uApnP30SB3qk9ENARZTFiJ1F oc/zS7O3dKpKjshC0dbgtgLsbT6XUA==
+X-Received: by 10.31.184.136 with SMTP id i130mr2642594vkf.21.1496708281410; Mon, 05 Jun 2017 17:18:01 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.31.167.78 with HTTP; Mon, 5 Jun 2017 17:18:00 -0700 (PDT)
+In-Reply-To: <CAKmdBpeUiiaixp1Dept0spes769jOJrYHVg4TCN1r1qPkDmA2g@mail.gmail.com>
+References: <CAKmdBpeUiiaixp1Dept0spes769jOJrYHVg4TCN1r1qPkDmA2g@mail.gmail.com>
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+Date: Mon, 5 Jun 2017 17:18:00 -0700
+Message-ID: <CAKmdBpeZEX6pyMkhScp+NGedVdZ8Ls3iYP-v7VaRuU+N7gXtmA@mail.gmail.com>
+To: "Pascal Thubert (pthubert)" <pthubert@cisco.com>, Dave Thaler <dthaler@microsoft.com>,  =?UTF-8?B?7LWc7JiB7ZmY?= <yhc@etri.re.kr>, 6lo-chairs@ietf.org,  lo <6lo@ietf.org>
+Cc: James Woodyatt <jhw@google.com>
+Content-Type: multipart/alternative; boundary="001a1143a882722a1805513f8d77"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/PM2NcZgeAhcL3Vc-aFKe4DMYxQI>
+Subject: Re: [6lo] Review Request for ipv6-over-nfc-07
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 06 Jun 2017 00:18:04 -0000
+
+--001a1143a882722a1805513f8d77
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+The diff file:
+
+https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-nfc-07
+
+-Samita
+
+On Mon, Jun 5, 2017 at 5:15 PM, Samita Chakrabarti <samitac.ietf@gmail.com>
+wrote:
+
+>
+>
+> Hello Dave, Pascal, James and WG members:
+>
+> ipv6-over-nfc-07 has just been published and the author mentions that he
+> had addressed the comments from Pascal and Dave.
+>
+>  Pascal and Dave,  would you please have sometime to review version 07 to
+> check if your comments are addressed?
+>
+> I have appended the excerpt from IETF98 meeting minutes for your referenc=
+e.
+> This document is due for WG LC if  it looks okay.
+>
+> James, you are shepherd for NFC draft -- please let us know if you are
+> okay with the document's next step.
+>
+> Thanks,
+> -Samita
+>
+> As per IETF98 meeting minutes:
+> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+>
+> 2 IPv6 over NFC                                    Younghwan Choi
+>
+>   https://tools.ietf.org/wg/6lo/draft-ietf-6lo-nfc-06 was presented by
+> Younghawn Choi on updates and
+>   discussed comments from WG and NFC forum. The draft was reviewed by NFC
+> forum, no more comments
+>   from NFC forum. The author likes to move to WGLC.
+>
+>   Dave Thaler:IID generation changed as a result of previous meeting
+>
+>   Pascal: Replacing 6 bit address with hashing function with fixed
+> parameters. Scanning is still
+>   easy. How is it different?
+>   YC: offset. Dave: offset should be random to add entropy, not
+> predictable.
+>   Gabriel: offset may not be a right name. Nonce would be better.
+>   Samita: need reviewers before WGLC. Pascal, Dave, would you volunteer?
+>   Pascal will do the review and Dave agreed to review the final update.
+> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D
+> ---------- Forwarded message ----------
+> From: =EC=B5=9C=EC=98=81=ED=99=98 <yhc@etri.re.kr>
+> Date: Sun, Jun 4, 2017 at 5:02 PM
+> Subject: RE: [6lo] Request for IETF99@Prague 6lo Agenda items
+> To: Samita Chakrabarti <samitac.ietf@gmail.com>
+> Cc: Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>
+>
+>
+> Hello Samita,
+>
+>
+>
+> I=E2=80=99ve submitted the new version of ipv6-over-nfc (-07). The docume=
+nt is
+> ready for review.
+>
+> Thanks.
+>
+>
+>
+> Best regards,
+>
+> Younghwan Choi
+>
+>
+>
+>
+>
+>
+
+--001a1143a882722a1805513f8d77
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">The diff file:<div><br></div><div><a href=3D"https://www.i=
+etf.org/rfcdiff?url2=3Ddraft-ietf-6lo-nfc-07">https://www.ietf.org/rfcdiff?=
+url2=3Ddraft-ietf-6lo-nfc-07</a><br></div><div><br></div><div>-Samita</div>=
+</div><div class=3D"gmail_extra"><br><div class=3D"gmail_quote">On Mon, Jun=
+ 5, 2017 at 5:15 PM, Samita Chakrabarti <span dir=3D"ltr">&lt;<a href=3D"ma=
+ilto:samitac.ietf@gmail.com" target=3D"_blank">samitac.ietf@gmail.com</a>&g=
+t;</span> wrote:<br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0=
+ .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr"><div><b=
+r></div><div><br></div>Hello Dave, Pascal, James and WG members:<div><br></=
+div><div>ipv6-over-nfc-07 has just been published and the author mentions t=
+hat he had addressed the comments from Pascal and Dave.</div><div><br></div=
+><div>=C2=A0Pascal and Dave, =C2=A0would you please have sometime to review=
+ version 07 to check if your comments are addressed?</div><div><br></div><d=
+iv>I have appended the excerpt from IETF98 meeting minutes for your referen=
+ce.</div><div>This document is due for WG LC if =C2=A0it looks okay.</div><=
+div><br></div><div>James, you are shepherd for NFC draft -- please let us k=
+now if you are okay with the document&#39;s next step.=C2=A0</div><div><br>=
+</div><div>Thanks,</div><div>-Samita</div><div><br></div><div>As per IETF98=
+ meeting minutes:</div><div>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<wbr>=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</div><div><br></div><div><div>2 IPv6 over NF=
+C =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0Younghwan Choi =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=C2=A0</div><div>=C2=A0 <a href=3D=
+"https://tools.ietf.org/wg/6lo/draft-ietf-6lo-nfc-06" target=3D"_blank">htt=
+ps://tools.ietf.org/wg/6lo/<wbr>draft-ietf-6lo-nfc-06</a> was presented by =
+Younghawn Choi on updates and</div><div>=C2=A0 discussed comments from WG a=
+nd NFC forum. The draft was reviewed by NFC forum, no more comments</div><d=
+iv>=C2=A0 from NFC forum. The author likes to move to WGLC.</div><div><br><=
+/div><div>=C2=A0 Dave Thaler:IID generation changed as a result of previous=
+ meeting</div><div>=C2=A0 =C2=A0 =C2=A0</div><div>=C2=A0 Pascal: Replacing =
+6 bit address with hashing function with fixed parameters. Scanning is stil=
+l</div><div>=C2=A0 easy. How is it different?</div><div>=C2=A0 YC: offset. =
+Dave: offset should be random to add entropy, not predictable.</div><div>=
+=C2=A0 Gabriel: offset may not be a right name. Nonce would be better.</div=
+><div>=C2=A0 Samita: need reviewers before WGLC. Pascal, Dave, would you vo=
+lunteer?=C2=A0</div><div>=C2=A0 Pascal will do the review and Dave agreed t=
+o review the final update.</div></div><div>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<wbr>=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br><div =
+class=3D"gmail_quote">---------- Forwarded message ----------<br>From: <b c=
+lass=3D"gmail_sendername">=EC=B5=9C=EC=98=81=ED=99=98</b> <span dir=3D"ltr"=
+>&lt;<a href=3D"mailto:yhc@etri.re.kr" target=3D"_blank">yhc@etri.re.kr</a>=
+&gt;</span><br>Date: Sun, Jun 4, 2017 at 5:02 PM<br>Subject: RE: [6lo] Requ=
+est for IETF99@Prague 6lo Agenda items<br>To: Samita Chakrabarti &lt;<a hre=
+f=3D"mailto:samitac.ietf@gmail.com" target=3D"_blank">samitac.ietf@gmail.co=
+m</a>&gt;<br>Cc: Gabriel Montenegro &lt;<a href=3D"mailto:Gabriel.Montenegr=
+o@microsoft.com" target=3D"_blank">Gabriel.Montenegro@microsoft.<wbr>com</a=
+>&gt;<br><br><br>
+
+
+
+
+
+<div lang=3D"KO">
+<div class=3D"m_803254868369362483gmail-m_-3421325161188684494WordSection1"=
+>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)">Hello=
+ Samita,
+<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)"><u></=
+u>=C2=A0<u></u></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)">I=E2=
+=80=99ve submitted the new version of ipv6-over-nfc (-07). The document is =
+ready for review.<u></u><u></u></span></p><span class=3D"m_8032548683693624=
+83gmail-">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)">Thank=
+s.<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)"><u></=
+u>=C2=A0<u></u></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)">Best =
+regards,<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10pt;font-fa=
+mily:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)">Young=
+hwan Choi<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><a name=3D"m_803254868369362483_m_-34213251611886844=
+94__MailEndCompose"><span lang=3D"EN-US" style=3D"font-size:10pt;font-famil=
+y:&quot;\00b9d1\00c740  \00ace0\00b515&quot;;color:rgb(31,73,125)"><u></u>=
+=C2=A0<u></u></span></a></p>
+<span></span>
+</span><p class=3D"MsoNormal"><br></p><div><div class=3D"m_8032548683693624=
+83gmail-h5"><div><div><blockquote style=3D"border-top:none;border-right:non=
+e;border-bottom:none;border-left:1pt solid rgb(204,204,204);padding:0cm 0cm=
+ 0cm 6pt;margin-left:4.8pt;margin-right:0cm"><div><div><div><div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div></div></div>
+</div>
+
+</div><br></div></div>
+</blockquote></div><br></div>
+
+--001a1143a882722a1805513f8d77--
+
+
+From nobody Wed Jun 14 03:31:55 2017
+Return-Path: <makbar@bournemouth.ac.uk>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id A008A129BCA for <6lo@ietfa.amsl.com>; Wed, 14 Jun 2017 03:31:52 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.702
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.702 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H2=-2.8, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=livebournemouthac.onmicrosoft.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id IkoB4wB8ITCZ for <6lo@ietfa.amsl.com>; Wed, 14 Jun 2017 03:31:49 -0700 (PDT)
+Received: from EUR03-AM5-obe.outbound.protection.outlook.com (mail-eopbgr30093.outbound.protection.outlook.com [40.107.3.93]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 8064B127444 for <6lo@ietf.org>; Wed, 14 Jun 2017 03:31:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=livebournemouthac.onmicrosoft.com; s=selector1-bournemouth-ac-uk; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version; bh=dK8JO28GfVERjduAyO97f8IgjdNbGZDBY1Odgg4vQAQ=; b=nEmQA7yfUmsIgoFtQrwvVaXmEvp7TPrRg/2YfSgEErVOCbcOfdfPpL7y217P5DLsdezcr6qM+tCVu8031bloUAK7O3qzPZzmL49l/z/tOCWtXmF+MilhYb2ZAu1Q10Nw7woEwAjKRwX+qOAveX5fKKOjnUw/YN4bFWHXDVkSNpo=
+Received: from AM4PR01CA0038.eurprd01.prod.exchangelabs.com (2a01:111:e400:59dd::48) by AM3PR01MB226.eurprd01.prod.exchangelabs.com (2a01:111:e400:8813::16) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id 15.1.1178.14; Wed, 14 Jun 2017 10:31:46 +0000
+Received: from AM1FFO11FD001.protection.gbl (2a01:111:f400:7e00::177) by AM4PR01CA0038.outlook.office365.com (2a01:111:e400:59dd::48) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id 15.1.1157.12 via Frontend Transport; Wed, 14 Jun 2017 10:31:46 +0000
+Authentication-Results: spf=pass (sender IP is 194.80.70.233) smtp.mailfrom=bournemouth.ac.uk; ietf.org; dkim=none (message not signed) header.d=none;ietf.org; dmarc=bestguesspass action=none header.from=bournemouth.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of bournemouth.ac.uk designates 194.80.70.233 as permitted sender) receiver=protection.outlook.com; client-ip=194.80.70.233; helo=taw.bournemouth.ac.uk;
+Received: from taw.bournemouth.ac.uk (194.80.70.233) by AM1FFO11FD001.mail.protection.outlook.com (10.174.64.83) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id 15.1.1157.12 via Frontend Transport; Wed, 14 Jun 2017 10:31:44 +0000
+Received: from Mailand.bournemouth.ac.uk (10.254.36.10) by Polmaily.bournemouth.ac.uk (10.254.37.10) with Microsoft SMTP Server (TLS) id 15.0.1293.2; Wed, 14 Jun 2017 11:31:44 +0100
+Received: from Mailand.bournemouth.ac.uk ([fe80::701b:f751:f42a:b146]) by Mailand.bournemouth.ac.uk ([fe80::701b:f751:f42a:b146%14]) with mapi id 15.00.1293.002; Wed, 14 Jun 2017 11:31:44 +0100
+From: Muhammad Akbar <makbar@bournemouth.ac.uk>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: New Version Notification for draft-sajjad-6lo-wban-00.txt
+Thread-Index: AQHS5F2/7DoTS0aqr02aev9HSEBhl6IkKc8+
+Date: Wed, 14 Jun 2017 10:31:43 +0000
+Message-ID: <1497436303867.41499@bournemouth.ac.uk>
+References: <149736944099.7461.11277082440002444007.idtracker@ietfa.amsl.com>
+In-Reply-To: <149736944099.7461.11277082440002444007.idtracker@ietfa.amsl.com>
+Accept-Language: en-GB, en-US
+Content-Language: en-GB
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [10.190.12.10]
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-EOPAttributedMessage: 0
+X-Forefront-Antispam-Report: CIP:194.80.70.233; IPV:NLI; CTRY:GB; EFV:NLI; SFV:NSPM; SFS:(10019020)(6009001)(39410400002)(39400400002)(39840400002)(39450400003)(2980300002)(438002)(189002)(199003)(377424004)(9170700003)(53936002)(38730400002)(2906002)(110136004)(81166006)(966005)(8936002)(8746002)(14454004)(8676002)(86362001)(50986999)(54356999)(76176999)(5250100002)(2900100001)(2950100002)(42882006)(478600001)(6916009)(117636001)(47776003)(230783001)(229853002)(53546009)(2501003)(23756003)(53416004)(356003)(50466002)(15650500001)(189998001)(305945005)(106466001)(5660300001)(5640700003)(3846002)(2351001)(74482002)(6116002)(36756003)(7736002)(6306002)(102836003)(2473003); DIR:OUT; SFP:1102; SCL:1; SRVR:AM3PR01MB226; H:taw.bournemouth.ac.uk; FPR:; SPF:Pass; MLV:sfv; MX:1; A:1; LANG:en; 
+X-Microsoft-Exchange-Diagnostics: 1; AM1FFO11FD001; 1:xLNX98sJZsRpQWn+3FMq64P0Jl4jkDNINypfl1r8pJO+VHo9p66LzXi8Jhxx21b6KdVtgkQuQVj5pBmoQMCIN/T8KTwAc8utAWu0WX1X+Yfp/j7Oc1ZekM5n5qerFDGzxRpK3rb8ut+jH3ix9k71wMlkgAPLrw9Pl67O1lou1noaVD3y9GWlUIcY0Rk3uu3BImMD6rlA1xylidIbER9v5bB/gLpTAfwImHmSZspL7eEjjJ/ZkkxiPVF///TjRe8uL/LaxT4s1mY67a/2N7husO9rFutvs4Q11VmbmXxOitAIVwzzy6lQWMvusYZ2DkHQgqjAvWs1/mIj/cHlx+KsAXVqrpYTDulQZIfQZy7kGJWRathjKdo77Nt/T22lhMT71yD0YEtMwd3pxdg6J9yZvT7G19dqI0dtZwfVh2FKJ3fOLasghtT6+gcYy+6ycVUMCbK9fT+ckYh4xmR8b/Z/gP5yp6+mI2UDiES5/pzHK7yYglYPwUc9EASdkEaEwp1C
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: a2769b6e-04db-4045-d32f-08d4b3108e0c
+X-Microsoft-Antispam: UriScan:; BCL:0; PCL:0; RULEID:(22001)(8251501002)(2017030254075)(201703131423075)(201703031133081); SRVR:AM3PR01MB226; 
+X-Microsoft-Exchange-Diagnostics: 1; AM3PR01MB226; 3:fKBjlXB1y1zCYXYNklk+0cuGm7N3+YN13oiqlbIIh4e5O7rSoUAqReC5GsvTH8SS22nx+BisY1mvYIvcxG62PR7fok/kcjZDbKZX3TyqhG5MiH7QJ5AHmVV+uly2mu0i5D4f/gQXsow3yrOIP+YXeSoWvd7QrihcCcmffuQhdoOHxaMPkm7gkHUp5k2hLw70yFahzt9e/58FhOleyfJf/n9QaSyO2WJSEGx6JN5ErzbhobU8N17hasn+AQ7TOoEDX561OFjFG0haYtj1c5sBikZZh2nx+kUB9uQl/zETzt19MJ6xqVlXmdpmd4lY+kxtfRR2EBxPyEVeaSdWXwxutTe3lNeG0Ym5agLzrEKTUdU/Cb3zKzHMZbT3WtKmEG18XGDiFuDJutuz6K6ziYBHMK+rU4cfKExCN8zzGUqeQLN+7pO81VStmeFvJxzEX2ZG8Do5AwkfJ5IanvwjF9pdyqUuLMMUgbPe8NwSKsHDm7ItcnzNc4JfO4o+2RoRal9k
+X-MS-TrafficTypeDiagnostic: AM3PR01MB226:
+X-Microsoft-Exchange-Diagnostics: 1; AM3PR01MB226; 25:4bpcjJ8jEVQyZbXV7G9DSPTRI6QmsqX97mrQWAjjBoFuAm6Lcla8sChXYJOm03mUuaWfEhI7+r91BAqM3RoaKS9p7nXgUaVxRV05EMI1lEBe/C+OEv2c9e+arI4y5Az2RK8WFxjEVCvYVqoIDEUs5/zpfXfyyCsn6N53lqV8H5TqU2ScFgMLETcbn1EJVi4YISWuGqxieeE8dBzizYSqcJ2NoVuWbK7C/KPx9g3jONSCb071UAwIcUf05bYrqgNFhcMudiuwIkbevVyTe3580xlf0HLw4jSvwRZFcf0ZLKaDcXVlPnNXFKfGDFCiDl2yidb9O+R5QiHfHABBVgyrhpJOSlPbdxyupWCX3fHXNUDjohte9KTZ6kCiSrLQzxCuIuy8Lb0wvZLm/NtZZXtEMA//h8YU/Wymtm7FRw4u1JaTD8KfSM0jH+VHgt8+Oq1Nv72xwpZ10XG92lViNAthMHoR2Z36gTQ1iEbQQaygPZ4=; 31:5ptJFM5OISHSFP65ObbVZWMx3Krte2NBCuGAKjXjrlBnkigjeU1pH/c1impSBqcV+opLXBPqNJEgd9fRjj3ibtJZlnU7ireiRLq8nLoDhf4BdNv/22VwIMjCHGOj0lzZDSQaO0jL9m5GZ6wfpAPvW8HLuIMEX2m/JlbL2qRxWsueL7CycTLqlKr5YlzivjxfgG1pwCEQfv335+eK1UNjCCi6u+iPhnFmENmy/dOPcS15EZWaL+GlROUiIivr8i1seT5yxc9dqm9r9zHP0M6LlQ==
+X-Microsoft-Exchange-Diagnostics: 1; AM3PR01MB226; 20:ENP/Lv38xtwa4jOh2Ryh+NJXlzTsJ95nVb88jTAsuTikjW0ZNlCmDFZqGeydF8L7sHjz8gVa3ehwYLr1Ofk3jR5rZZ6bADl3z9ePMi/VQqoxuzxz3D1Edhz0URoI2dYuTaIQNfdcr4JUIm0UR//rISJodViPxMc3JdoVbXGEkUw9eQICE8SRLQcQAzEWuOBSKNbE6+rYBiIgSBuvFL2+DFxV63vSzTdop6mWYaiPtPK3GM18r/Gyksq8XpTPiBrd3q82zERfsPGGDi5E+3xz6nb68BOjYdB9DhmKAv7PnuplWAoqdc2ITulU+zfAPu+WP0nZkOardUfmV5H8FpxFiC8s4UI+H1nr3lVTia6xN+nVJzhPu5TOmFi4lU6KxyboVuZ0DwQ3vxXdXOpL+kX5vqoRyXAlFwC2I2/W8xrbOrFQJfe7A246gq4T7TIxnwZz+jOqgKjnwHDhdT3yq2AYQslC0y8Fk0R+WXhQpT9L+q5lxmEFCf7TTI3aVQK0WhZJ
+X-Microsoft-Antispam-PRVS: <AM3PR01MB226A0DA46A838ADAE5F93EA9AC30@AM3PR01MB226.eurprd01.prod.exchangelabs.com>
+X-Exchange-Antispam-Report-Test: UriScan:(120809045254105);
+X-Exchange-Antispam-Report-CFA-Test: BCL:0; PCL:0; RULEID:(100000700101)(100105000095)(100000701101)(100105300095)(100000702101)(100105100095)(6040450)(601004)(2401047)(13018025)(5005006)(13016025)(8121501046)(93006095)(93004095)(10201501046)(100000703101)(100105400095)(3002001)(6041248)(201703131423075)(201702281529075)(201702281528075)(201703061421075)(201703061406153)(20161123562025)(20161123558100)(20161123555025)(20161123560025)(20161123564025)(6072148)(100000704101)(100105200095)(100000705101)(100105500095); SRVR:AM3PR01MB226; BCL:0; PCL:0; RULEID:(100000800101)(100110000095)(100000801101)(100110300095)(100000802101)(100110100095)(100000803101)(100110400095)(100000804101)(100110200095)(100000805101)(100110500095); SRVR:AM3PR01MB226; 
+X-Microsoft-Exchange-Diagnostics: =?iso-8859-1?Q?1; AM3PR01MB226; 4:UnsUynwPTrn8BCc12VNkWo1yB7uLuNRajtD2S2UBR?= =?iso-8859-1?Q?8dQdtwSc7XmFPp1QW8N1jBVwZbBfiHKl7ThbZ0tEndnob9NGQ5S82F/LU2?= =?iso-8859-1?Q?qU6LUpT7V49+JDYDEQy777w+BbpQ5vcftGnm7+jrcMkhMy5/O+k6znpCeI?= =?iso-8859-1?Q?cPmSS/K39Oia166rjXrwpvvMNNESSecEPTSB5nRurl47fu0q+gTQMsyh2v?= =?iso-8859-1?Q?dkfMzWUAaGrNi8srwQfx/Zs0vcwAFd8CIRKQBMvhymP4H8qTn69TJLd63a?= =?iso-8859-1?Q?L3N0FRhbENLEsyhpl2qyfKVFjPb0bGPZVCguxCgrc+5Jr2ljvCJ1pF4Da0?= =?iso-8859-1?Q?76XAOr2xZtobvpDF2zapZNVpG8jVd+x7Q+nCyvaVkt4peXcpTEdcNAfdT7?= =?iso-8859-1?Q?9Gi7CNP3EBq+OpJCfRJWg8ccOzRY7uUYVJYNj05nbuCTV0sFnYr6SeGTrk?= =?iso-8859-1?Q?iJ9QU5eI9ALTfNGQ6QJcWdkOhCQrBPhBd+kRk5ZQwWMrjGu/iqRQL30tk0?= =?iso-8859-1?Q?MEMf0emSaxeDycBhtFPDsJhSJaLFR7bHcQ2zYrc8AiEGU2/wKj0Mah0IMY?= =?iso-8859-1?Q?h5uptGy+VB1CbTmsLpnBcgx7dFAbZ6UwrQroDjQB1ieeRjFSLYYcGaFghq?= =?iso-8859-1?Q?T2UTa/XiqZ1s7Ezv/AIi10kzWB6Ti2op4ln6SvcdSPfaiMu+sCb33oILe9?= =?iso-8859-1?Q?mYpD+Eqlvm2ES4wJt64OiEQQ7rIyxZ77MI09UdfN7eqKMerH7aJ/ZBJ+kM?= =?iso-8859-1?Q?jNX/hVeM+YnMdkS8bno+WCRCfH4YqCW0IsPz3Xza8xlSlwJm8uF3mtwcNY?= =?iso-8859-1?Q?+dzW23SvmtFX028/JpuG8WNCuq9wPbEGD5NQHnwf8lXRZ00CEddFmARpB/?= =?iso-8859-1?Q?aC7Wvz/R0q/yr2CH1T/QRkBsDr3OwEei6LefbRvzhnCA6xo2lWuq9v8ntQ?= =?iso-8859-1?Q?eN9O0d5dtcNbD2CxwdbMAa+mpqxBI5sO8CS0Unc65CXw54YrLjjDBL/+dI?= =?iso-8859-1?Q?llRGqruylaOwZkp07MDDRE+9yr28vw3QjE40DBgke3ezaSNp/0uJ6hE4Us?= =?iso-8859-1?Q?tgBCtOgyIxbEVXo6Z88TxH1PPvErV4kmR/szyvKMQPEyhebmExmca3YYGx?= =?iso-8859-1?Q?G/tO/dkAhV9cpxbWTDuz2CmlifU4XHgpfva8MU4gRMXeTvLal4LHkQL8PP?= =?iso-8859-1?Q?jyQKQbau0xetGD1XthGOphaGjy9YBPO4wv/+sgLLuVWmYLYkLiHFmHZZPQ?= =?iso-8859-1?Q?TU2zVEvMFJaLwHauSxHWgOwmZfh4A6bL6dA3JUaaHP//08KO1PyddMHDc7?= =?iso-8859-1?Q?noxrZ5M3JQC0L5J0Q979f?=
+X-Forefront-PRVS: 033857D0BD
+X-Microsoft-Exchange-Diagnostics: =?iso-8859-1?Q?1; AM3PR01MB226; 23:zFKqIBMr0PpDaKDRrwNG1fmNyuW86V/Qz8cfWE76?= =?iso-8859-1?Q?6ozljNxW9lYreHkqzFle39+HgRzL/LwCkP3AiQ2Eaod2swJbxru2FfdSak?= =?iso-8859-1?Q?GDx7olCN3C5CBv36fWlFLvAduyjkG4+AhBOUi/3SLs0rRoayVw+1lyMy7U?= =?iso-8859-1?Q?w4Rn9uaBPkzwsaah2ETJ1N+wIV6OGG4vP3JTrK+kec6VRgGNhBuuBTYikj?= =?iso-8859-1?Q?qj3FAyI17W0mDYq90MCPU8oPPQ243BbCE4nP7DLg0wzALwHjwEIdysRjA/?= =?iso-8859-1?Q?6qA/UQ7QlU7j9zDKZthsUDd+ZdOFwPeBOMDKk2+AbpPUYNnNR1GY+Degs2?= =?iso-8859-1?Q?rpAcBz+L76HnOSv4nbXuZrMFhNghhFUuP8njN94yTcoyTs31rCPc4BpV9k?= =?iso-8859-1?Q?mjLT540Nwtu09pFNj10c5dz8NqCZs4gnB6fP40pDnMwac/h/t+IDKD+kB+?= =?iso-8859-1?Q?EuzhJjXweeBE6P9Z7BJCJ7Wg8nMJn6AOb+Nvyxe9F/Bkc/Xjn9bujspE7D?= =?iso-8859-1?Q?A4dzjS/sUY+vRmoaBhK1H12SVgCtlmmrptEhk0a1ZmuWl4xytWLMmhJOhJ?= =?iso-8859-1?Q?jPHArV3MGWhUrgy7AOwq5ut1HXd2jXV9gRai1SrHiAY41yvD0/zw8NEIOF?= =?iso-8859-1?Q?MQQZyux5/gnIyUs91EdT42jscFZLVmO5yDqTK0PvP7EAGAGwX59AxFReiS?= =?iso-8859-1?Q?5+5ISg56JJO14TykYhpwp/u7D9KqM2+oZKIzP4mCS0j+Xj0tqpTHy0pfyY?= =?iso-8859-1?Q?2Tvjm688aDvRT1ILrsGTTFvyS7H4KNMtY//fkYG5I9qkdoEUn1GGz/hlQc?= =?iso-8859-1?Q?E84I+7a2zSbYsz7a/aa5AiU6ecmN8ewojJUUt6zj9hxo/HC7j/lVW0f4zd?= =?iso-8859-1?Q?BvcX+fHIfzkBMWh5EsIHRELc9vbnsnA5zevSiYH+rKKu3FjTZiAjcXYY2i?= =?iso-8859-1?Q?f8/5mFQzPO/70VbLvSsP42xwQVn/4E9ahno+T8N1tvEiFLfZdT8VHrB43x?= =?iso-8859-1?Q?jmCjhDAVThtg/lmGCheEd4ysLB4aYTr228SQTFdN16Xf/TGYVV0RC6/n24?= =?iso-8859-1?Q?mDOEwViQbSB4cQUCdAVCqJvoWvBMD7LuGX19cDu0qpgVWsudNpv2NK86kN?= =?iso-8859-1?Q?TLbdj3/XOODnLQriYSzL+CcTs9MCMmAD0VuPaIsGHxhh/2lFcwrpipL9Bw?= =?iso-8859-1?Q?hwWiIfuvGZI1ttYeY/qrFxUJ7qqBuZ2+prQhH5cZqQLtKAGWf/kUKkwO96?= =?iso-8859-1?Q?jgzTO5m+i4nCJDb5VvI0Hcaz/V0b69smcA8lXwEzT7RtgbW2RG+W8WBz57?= =?iso-8859-1?Q?Qol/u9q7HKu7p943ePwBTpKBAxYR2PwceZ8QtwCyAwn3WNmT8ijB4w/Mrc?= =?iso-8859-1?Q?3tDDAK1vEHp36NstIzgyG+RkYfVkBV7XQ2eUq/k3MXNBNeozbA=3D=3D?=
+X-Microsoft-Exchange-Diagnostics: 1; AM3PR01MB226; 6:7TPeTj5uPTAqvH8ldqaGzjvYiPZwOfs1+S8cTWLIOYqvMkcfXSDAbwvVVFpXjmReYb4dzHj4B4x3Y37pppGWs419Apmfhn1qSRo4v74c0H1DkarmSc47VdaXTFfToLoHl+hW1h5/LhVrOlv+0eaW32gSwjqJjOvKej62d+vtnTHbBuLqe7sdEwoKC8G6FL+/1OGr74/xugCPvnxwqXf8NI4Lw7sHhSs/uzg8kt2ueDt8y/sXbKKnL23Fla7VvRkOE+oGg8icm0+C5i8W7LRK02YTtwYPm+F696wMjkAW/VFajPoVEw35ZsrCOVEkBP+xUxXdPOllj6iivwrzxR3D3k4H77AlBjHBuGhJzCJouBuQzJmBbsf5th+LYAIk2XNmPlA7Yuph5oqjRhrqvwAMBGl6gJgmvni9gWrXbufzAEkl6Qlsw47/Kt8sIaO/ZgXV5jE2ciIUtg61HcjD4gwu7rdWGQpcOsrv9Wn9xI4fNP3/0mDSubei6VL8N4TcJ1VJ4X4dRH0HTig9iiRNhtoS/g==
+X-Microsoft-Exchange-Diagnostics: 1; AM3PR01MB226; 5:iuDQxgP3kYnxPBMoiec3hmh3e/74YNsOFJoneYYOOYpcjSpwbnm8pUp0DVJnzx7ZffL9MXdAozEfixQ5+JDVPau0WqNYK9Z9bu7x7ojawjOAFyoyX3SZ6J8rdPF54JeJWfBq9aRDhmJANPgmUIRm6ickw4wXsO+DRKjSAapjsSGX8DIEZLHjoY+evP8axbiw85E3xTkCrHwBDUINgFChkZRZBRNITLUmeE7xVc8hosZ6mmMP1eUwmD7GRs0CTjRqN93CkJ6h50oVAWjUFsVt/66Llq1Zktucqn4+3q9nt7IaQjoiB9nvwSl56wnb03x4RQ8Nbd74JK4iXaoU5KZSF/ouHk4FwQOSddCRhpwRvHmDAEznjFiNUrLh2T92Ub3tdb/FwVPsfVMXQx+YKoMSS085/VVKsfGIzR3PUbX2c1aDDsV/wcYYA3wSLcUg254568koR+4qfgmaiCn3x64ranogxV8RzbIf9eZ0ZWvzx9E2EKcm9amwt2SNuDjI8YE4; 24:WZAXhNRbYAT8QSzYEjZJ/C4pTqz1PakVijwcoXuswyBaJ1baiB2BZ6FrR3R+EUsSbZJulVtMqyangl6yTgLO+3GRvP2fKaCEod6kXU4EikI=
+SpamDiagnosticOutput: 1:99
+SpamDiagnosticMetadata: NSPM
+X-Microsoft-Exchange-Diagnostics: 1; AM3PR01MB226; 7:b17ZOJd6AD5MxLtZNcoEBPK11lmY2xpkB3SI2o27vHv1PctWi6KkD6mnBrIbzXsiKKcMxSaMoAjaRHQskfrL6c2G3O8AQHHTc8/8Kc5Xg9cWqYQA91B56WLs3v6Xhk3apR3n85cRs52sQcVuCKceSIofmLYIEGM4QWoVgOfe7aH8EOSAB7TSS1uTpLOpnIrmQMcx0rZiHXmxBh8f0RuJzfdwC1XM4O0PJQ3+3cRac9S2K+cisNimxWTDXErnGAIpzxwRCuqmeEF+tB1otKi1Mzdj36KzGGCwjenhuFxKYWS5cwQqCHZBPxYVfHi5xUTtwmbfWdf/vQwjmPjYhWfc1g==
+X-OriginatorOrg: bournemouth.ac.uk
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Jun 2017 10:31:44.9200 (UTC)
+X-MS-Exchange-CrossTenant-Id: ede29655-d097-42e4-bbb5-f38d427fbfb8
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=ede29655-d097-42e4-bbb5-f38d427fbfb8; Ip=[194.80.70.233];  Helo=[taw.bournemouth.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM3PR01MB226
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/Qz50fttur1o9K5LxqzfUpd7SEZg>
+Subject: [6lo] Fw: New Version Notification for draft-sajjad-6lo-wban-00.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 14 Jun 2017 10:31:53 -0000
+
+Hello 6lo,
+
+Please provide your comments and questions after reviewing this newly uploa=
+ded draft.
+
+
+Regards
+Sajjad
+
+________________________________________
+From: internet-drafts@ietf.org <internet-drafts@ietf.org>
+Sent: 13 June 2017 16:57
+To: Charles Perkins; Mingui Zhang; Muhammad Akbar; Muhammad Akbar; Abdur Ra=
+shid Sangi; Naveed Bin Rais; Abdur Sangi; Charles E. Perkins; Naveed Rais
+Subject: New Version Notification for draft-sajjad-6lo-wban-00.txt
+
+A new version of I-D, draft-sajjad-6lo-wban-00.txt
+has been successfully submitted by Abdur Rashid Sangi and posted to the
+IETF repository.
+
+Name:           draft-sajjad-6lo-wban
+Revision:       00
+Title:          Transmission of IPv6 Packets over Wireless Body Area Networ=
+ks (WBANs)
+Document date:  2017-06-13
+Group:          Individual Submission
+Pages:          16
+URL:            https://www.ietf.org/internet-drafts/draft-sajjad-6lo-wban-=
+00.txt
+Status:         https://datatracker.ietf.org/doc/draft-sajjad-6lo-wban/
+Htmlized:       https://tools.ietf.org/html/draft-sajjad-6lo-wban-00
+Htmlized:       https://datatracker.ietf.org/doc/html/draft-sajjad-6lo-wban=
+-00
+
+
+Abstract:
+   Wireless Body Area Networks (WBANs) intend to facilitate use cases
+   related to medical field.  IEEE 802.15.6 defines PHY and MAC layer
+   and is designed to deal with better penetration through the human
+   tissue without creating any damage to human tissues with the approved
+   MICS (Medical Implant Communication Service) band by USA Federal
+   Communications Commission (FCC).  Devices in WBANs conform to this
+   IEEE standard.
+
+   This specification defines details to enable transmission of IPv6
+   packets, method of forming link-local and statelessly autoconfigured
+   IPv6 addresses on WBANs.
+
+
+
+
+Please note that it may take a couple of minutes from the time of submissio=
+n
+until the htmlized version and diff are available at tools.ietf.org.
+
+The IETF Secretariat
+
+BU is a Disability Confident Employer and has signed up to the Mindful Empl=
+oyer charter. Information about the accessibility of University buildings c=
+an be found on the BU DisabledGo webpages. This email is intended only for =
+the person to whom it is addressed and may contain confidential information=
+. If you have received this email in error, please notify the sender and de=
+lete this email, which must not be copied, distributed or disclosed to any =
+other person. Any views or opinions presented are solely those of the autho=
+r and do not necessarily represent those of Bournemouth University or its s=
+ubsidiary companies. Nor can any contract be formed on behalf of the Univer=
+sity or its subsidiary companies via email.
+
+
+From nobody Thu Jun 15 03:43:35 2017
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id D5DBE129B28; Thu, 15 Jun 2017 03:43:33 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.521
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.521 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, RP_MATCHES_RCVD=-0.001, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id JpNHb0R1GXhj; Thu, 15 Jun 2017 03:43:31 -0700 (PDT)
+Received: from rcdn-iport-7.cisco.com (rcdn-iport-7.cisco.com [173.37.86.78]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 1FFFE126B7E; Thu, 15 Jun 2017 03:43:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=28080; q=dns/txt; s=iport; t=1497523411; x=1498733011; h=from:to:cc:subject:date:message-id:references: in-reply-to:mime-version; bh=rSgbWSnYa15XB/t2vO0vVWLb0g6oWmFLgAUt8TxkWXU=; b=MG+CS0HQBMscFzhdetCcZFppYxh+TklFkhmSeIA+9691bToYiN5m4oj5 ibMOOFsuHCOCoSSLscvavHO1tB0WrCaxy/ppeVbBWsnnVySUdZlm3K9pc Ds0lPKNNthBzxacbrV1dcHMNwTFxyQfXfMZZyewjGP8dVThea8bfMwFxw M=;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0DUAACNZEJZ/4MNJK1cGQEBAQEBAQEBA?= =?us-ascii?q?QEBBwEBAQEBgm9pYoENB4NvihiReIgrjVyBMgNcLIV4AhqCQj8YAQIBAQEBAQE?= =?us-ascii?q?BayiFGAEBAQEDIwpMEAIBBgIRAwEBASEHAwICAh8RFAkIAgQBDQUIiUBMAxUQj?= =?us-ascii?q?FudYYImhBYBgyINhAgBAQEBAQEBAQEBAQEBAQEBAQEBAQEYBYZigWCCFoEMgSW?= =?us-ascii?q?BM4IZBxIWglyCYQWJTnKFdoZYhwA7Aocrh0CEXoIQhUaKPnCIKoI3iS0BHzhMP?= =?us-ascii?q?nQVhVYcgSsBOnaIRYENAQEB?=
+X-IronPort-AV: E=Sophos;i="5.39,343,1493683200";  d="scan'208,217";a="256269393"
+Received: from alln-core-1.cisco.com ([173.36.13.131]) by rcdn-iport-7.cisco.com with ESMTP/TLS/DHE-RSA-AES256-SHA; 15 Jun 2017 10:43:29 +0000
+Received: from XCH-ALN-004.cisco.com (xch-aln-004.cisco.com [173.36.7.14]) by alln-core-1.cisco.com (8.14.5/8.14.5) with ESMTP id v5FAhTAf006904 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=FAIL); Thu, 15 Jun 2017 10:43:29 GMT
+Received: from xch-rcd-001.cisco.com (173.37.102.11) by XCH-ALN-004.cisco.com (173.36.7.14) with Microsoft SMTP Server (TLS) id 15.0.1210.3; Thu, 15 Jun 2017 05:43:29 -0500
+Received: from xch-rcd-001.cisco.com ([173.37.102.11]) by XCH-RCD-001.cisco.com ([173.37.102.11]) with mapi id 15.00.1210.000; Thu, 15 Jun 2017 05:43:28 -0500
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: Samita Chakrabarti <samitac.ietf@gmail.com>, Dave Thaler <dthaler@microsoft.com>, =?utf-8?B?7LWc7JiB7ZmY?= <yhc@etri.re.kr>, "6lo-chairs@ietf.org" <6lo-chairs@ietf.org>, lo <6lo@ietf.org>
+CC: James Woodyatt <jhw@google.com>
+Thread-Topic: Review Request for ipv6-over-nfc-07
+Thread-Index: AQHS3loN/iWZqtVOG062WoVNE/lOSqIlxlEg
+Date: Thu, 15 Jun 2017 10:43:28 +0000
+Deferred-Delivery: Thu, 15 Jun 2017 10:42:52 +0000
+Message-ID: <62cc094156074e1ba96abc761e89e7a0@XCH-RCD-001.cisco.com>
+References: <CAKmdBpeUiiaixp1Dept0spes769jOJrYHVg4TCN1r1qPkDmA2g@mail.gmail.com>
+In-Reply-To: <CAKmdBpeUiiaixp1Dept0spes769jOJrYHVg4TCN1r1qPkDmA2g@mail.gmail.com>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [10.55.22.4]
+Content-Type: multipart/alternative; boundary="_000_62cc094156074e1ba96abc761e89e7a0XCHRCD001ciscocom_"
+MIME-Version: 1.0
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/LxZKOj3K9XGV4oHOBv-5GEuQCOI>
+Subject: Re: [6lo] Review Request for ipv6-over-nfc-07
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 15 Jun 2017 10:43:34 -0000
+
+--_000_62cc094156074e1ba96abc761e89e7a0XCHRCD001ciscocom_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+RGVhciBhdXRob3JzIDsNCg0KVGhhbmtzIGZvciBpbmNvcnBvcmF0aW5nIGEgbm9uY2UgaW4gdGhl
+IGNvbXB1dGF0aW9uIG9mIHRoZSBwcml2YWN5IGFkZHJlc3MuIFRoaXMgYWRkcmVzc2VzIG15IGNv
+bmNlcm4uIEl0IHdvdWxkIGhhdmUgYmVlbiBnb29kIHRvIGluc2lzdCB0aGF0IHlvdSBhcmUgZG9p
+bmcgaXQgaW4gdGhlIHNlY3VyaXR5IHNlY3Rpb24gYXMgd2VsbCwgYnV0IHRoZSB0ZXh0IHRoZXJl
+IGNvbmZpcm1zIHRoYXQgdGhlIGFkZHJlc3MgaXMgbm90IHJlcGVhdGVkIG9uIHRoZSBuZXh0IGNv
+bm5lY3Rpb24gc28gd2Ugc2hvdWxkIGJlIGFsbCBzZXQuIEFsc28gaW4gdGhlIHNlY3VyaXR5IHNl
+Y3Rpb24sIEnigJltIG5vdCBzdXJlIHdoYXQgdG8gZG8gd2l0aCB0aGlzIHRleHQ6DQoNCuKAnA0K
+DQogICBIb3dldmVyLCBtYWxpY2lvdXMgdHJpZXMgZm9yIG9uZSBjb25uZWN0aW9uIG9mIGEgbG9u
+Zy1saXZlZCBsaW5rIHdpdGgNCiAgIE5GQyB0ZWNobm9sb2d5IGFyZSBub3Qgc2VjdXJlLCBzbyB0
+aGUgbWV0aG9kIG9mIGRlcml2aW5nIGludGVyZmFjZQ0KICAgaWRlbnRpZmllcnMgZnJvbSA2LWJp
+dCBORkMgTGluayBsYXllciBhZGRyZXNzZXMgaXMgaW50ZW5kZWQgdG8NCiAgIHByZXNlcnZlIGds
+b2JhbCB1bmlxdWVuZXNzIHdoZW4gaXQgaXMgcG9zc2libGUuICBUaGVyZWZvcmUsIGl0DQogICBy
+ZXF1aXJlcyBhIHdheSB0byBwcm90ZWN0IGZyb20gZHVwbGljYXRpb24gdGhyb3VnaCBhY2NpZGVu
+dCBvcg0KICBmb3JnZXJ5IGFuZCB0byBkZWZpbmUgYSB3YXkgdG8gaW5jbHVkZSBzdWZmaWNpZW50
+IGJpdCBvZiBlbnRyb3B5IGluDQogICB0aGUgSVB2NiBpbnRlcmZhY2UgaWRlbnRpZmllciwgc3Vj
+aCBhcyByYW5kb20gRVVJLTY0Lg0KDQrigJwNCkkgZmFpbCB0byB1bmRlcnN0YW5kIHRoZSBmaXJz
+dCBzZW50ZW5jZSBhbmQgdGhlIHBhcmFncmFwaCByZWFkcyBhcyBhIHByb2JsZW0gc3RhdGVtZW50
+LCBidXQgZm9yIHdoYXQ/ICBTZWVtcyB0aGF0IHNlY3Rpb24gNC4zIGRvZXMgbm93IHByb3ZpZGUg
+dGhlIHJlcXVpcmVkIGVudHJvcHksIGNvcnJlY3Q/DQoNCkFib3V0IHNlY3Rpb24gNC41LCBJIHRo
+aW5rIHNvbWUgbW9yZSB0ZXh0IGNvdWxkIGJlIHVzZWZ1bCB0byBhc3NpZ24gdGhlIHJvbGUgb2Yg
+NkxCUi4NCklmIDIgc2ltaWxhciBkZXZpY2VzIG1lZXQgKHNheSAyIGhhbmRlaGVsZCksIHdoZXRo
+ZXIgb25lIGlzIDZMUi9MQlIuIEhvdyB3b3VsZCB0aGF0IGJlIGRlY2lkZWQ/DQpXaGVuIHRoZXkg
+YXJlIGRpZmZlcmVudCwgaWYgdGhlcmUgaXMgYSBmaXhlZCBkZXZpY2UgKGEgcGF5bWVudCB0ZXJt
+aW5hbCwgc2F5KSBvciBwcm92aWRlcyBjb25uZWN0aXZpdHkgYXMgYSByb3V0ZXIsIHRoZW4gaXQg
+bWFrZXMgc2Vuc2UgdGhhdCBpdCBpcyA2TEJSLg0KVGhpcyBjb3VsZCBiZSBkZXNjcmliZWQgc28g
+d2Ugd291bGQgbm90IGVuZCB1cCB3aXRoIDIgZGV2aWNlcyB0aGF0IGNhbm5vdCB0YWxrIGJlY2F1
+c2UgdGhleSBvbmx5IGRvIDZMTi4NCg0KQ2hlZXJzLA0KDQpQYXNjYWwNCg0KDQpGcm9tOiBTYW1p
+dGEgQ2hha3JhYmFydGkgW21haWx0bzpzYW1pdGFjLmlldGZAZ21haWwuY29tXQ0KU2VudDogbWFy
+ZGkgNiBqdWluIDIwMTcgMDI6MTYNClRvOiBQYXNjYWwgVGh1YmVydCAocHRodWJlcnQpIDxwdGh1
+YmVydEBjaXNjby5jb20+OyBEYXZlIFRoYWxlciA8ZHRoYWxlckBtaWNyb3NvZnQuY29tPjsg7LWc
+7JiB7ZmYIDx5aGNAZXRyaS5yZS5rcj47IDZsby1jaGFpcnNAaWV0Zi5vcmc7IGxvIDw2bG9AaWV0
+Zi5vcmc+DQpDYzogSmFtZXMgV29vZHlhdHQgPGpod0Bnb29nbGUuY29tPg0KU3ViamVjdDogUmV2
+aWV3IFJlcXVlc3QgZm9yIGlwdjYtb3Zlci1uZmMtMDcNCg0KDQoNCkhlbGxvIERhdmUsIFBhc2Nh
+bCwgSmFtZXMgYW5kIFdHIG1lbWJlcnM6DQoNCmlwdjYtb3Zlci1uZmMtMDcgaGFzIGp1c3QgYmVl
+biBwdWJsaXNoZWQgYW5kIHRoZSBhdXRob3IgbWVudGlvbnMgdGhhdCBoZSBoYWQgYWRkcmVzc2Vk
+IHRoZSBjb21tZW50cyBmcm9tIFBhc2NhbCBhbmQgRGF2ZS4NCg0KIFBhc2NhbCBhbmQgRGF2ZSwg
+IHdvdWxkIHlvdSBwbGVhc2UgaGF2ZSBzb21ldGltZSB0byByZXZpZXcgdmVyc2lvbiAwNyB0byBj
+aGVjayBpZiB5b3VyIGNvbW1lbnRzIGFyZSBhZGRyZXNzZWQ/DQoNCkkgaGF2ZSBhcHBlbmRlZCB0
+aGUgZXhjZXJwdCBmcm9tIElFVEY5OCBtZWV0aW5nIG1pbnV0ZXMgZm9yIHlvdXIgcmVmZXJlbmNl
+Lg0KVGhpcyBkb2N1bWVudCBpcyBkdWUgZm9yIFdHIExDIGlmICBpdCBsb29rcyBva2F5Lg0KDQpK
+YW1lcywgeW91IGFyZSBzaGVwaGVyZCBmb3IgTkZDIGRyYWZ0IC0tIHBsZWFzZSBsZXQgdXMga25v
+dyBpZiB5b3UgYXJlIG9rYXkgd2l0aCB0aGUgZG9jdW1lbnQncyBuZXh0IHN0ZXAuDQoNClRoYW5r
+cywNCi1TYW1pdGENCg0KQXMgcGVyIElFVEY5OCBtZWV0aW5nIG1pbnV0ZXM6DQo9PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0NCg0KMiBJUHY2IG92ZXIgTkZD
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgWW91bmdod2FuIENob2kNCiAgaHR0
+cHM6Ly90b29scy5pZXRmLm9yZy93Zy82bG8vZHJhZnQtaWV0Zi02bG8tbmZjLTA2IHdhcyBwcmVz
+ZW50ZWQgYnkgWW91bmdoYXduIENob2kgb24gdXBkYXRlcyBhbmQNCiAgZGlzY3Vzc2VkIGNvbW1l
+bnRzIGZyb20gV0cgYW5kIE5GQyBmb3J1bS4gVGhlIGRyYWZ0IHdhcyByZXZpZXdlZCBieSBORkMg
+Zm9ydW0sIG5vIG1vcmUgY29tbWVudHMNCiAgZnJvbSBORkMgZm9ydW0uIFRoZSBhdXRob3IgbGlr
+ZXMgdG8gbW92ZSB0byBXR0xDLg0KDQogIERhdmUgVGhhbGVyOklJRCBnZW5lcmF0aW9uIGNoYW5n
+ZWQgYXMgYSByZXN1bHQgb2YgcHJldmlvdXMgbWVldGluZw0KDQogIFBhc2NhbDogUmVwbGFjaW5n
+IDYgYml0IGFkZHJlc3Mgd2l0aCBoYXNoaW5nIGZ1bmN0aW9uIHdpdGggZml4ZWQgcGFyYW1ldGVy
+cy4gU2Nhbm5pbmcgaXMgc3RpbGwNCiAgZWFzeS4gSG93IGlzIGl0IGRpZmZlcmVudD8NCiAgWUM6
+IG9mZnNldC4gRGF2ZTogb2Zmc2V0IHNob3VsZCBiZSByYW5kb20gdG8gYWRkIGVudHJvcHksIG5v
+dCBwcmVkaWN0YWJsZS4NCiAgR2FicmllbDogb2Zmc2V0IG1heSBub3QgYmUgYSByaWdodCBuYW1l
+LiBOb25jZSB3b3VsZCBiZSBiZXR0ZXIuDQogIFNhbWl0YTogbmVlZCByZXZpZXdlcnMgYmVmb3Jl
+IFdHTEMuIFBhc2NhbCwgRGF2ZSwgd291bGQgeW91IHZvbHVudGVlcj8NCiAgUGFzY2FsIHdpbGwg
+ZG8gdGhlIHJldmlldyBhbmQgRGF2ZSBhZ3JlZWQgdG8gcmV2aWV3IHRoZSBmaW5hbCB1cGRhdGUu
+DQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+DQotLS0tLS0tLS0tIEZvcndhcmRlZCBtZXNzYWdlIC0tLS0tLS0tLS0NCkZyb206IOy1nOyYge2Z
+mCA8eWhjQGV0cmkucmUua3I8bWFpbHRvOnloY0BldHJpLnJlLmtyPj4NCkRhdGU6IFN1biwgSnVu
+IDQsIDIwMTcgYXQgNTowMiBQTQ0KU3ViamVjdDogUkU6IFs2bG9dIFJlcXVlc3QgZm9yIElFVEY5
+OUBQcmFndWUgNmxvIEFnZW5kYSBpdGVtcw0KVG86IFNhbWl0YSBDaGFrcmFiYXJ0aSA8c2FtaXRh
+Yy5pZXRmQGdtYWlsLmNvbTxtYWlsdG86c2FtaXRhYy5pZXRmQGdtYWlsLmNvbT4+DQpDYzogR2Fi
+cmllbCBNb250ZW5lZ3JvIDxHYWJyaWVsLk1vbnRlbmVncm9AbWljcm9zb2Z0LmNvbTxtYWlsdG86
+R2FicmllbC5Nb250ZW5lZ3JvQG1pY3Jvc29mdC5jb20+Pg0KDQpIZWxsbyBTYW1pdGEsDQoNCkni
+gJl2ZSBzdWJtaXR0ZWQgdGhlIG5ldyB2ZXJzaW9uIG9mIGlwdjYtb3Zlci1uZmMgKC0wNykuIFRo
+ZSBkb2N1bWVudCBpcyByZWFkeSBmb3IgcmV2aWV3Lg0KVGhhbmtzLg0KDQpCZXN0IHJlZ2FyZHMs
+DQpZb3VuZ2h3YW4gQ2hvaQ0KDQoNCg0K
+
+--_000_62cc094156074e1ba96abc761e89e7a0XCHRCD001ciscocom_
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiIHhtbG5zOm89InVy
+bjpzY2hlbWFzLW1pY3Jvc29mdC1jb206b2ZmaWNlOm9mZmljZSIgeG1sbnM6dz0idXJuOnNjaGVt
+YXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6d29yZCIgeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMubWlj
+cm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+VFIvUkVDLWh0bWw0MCI+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIg
+Y29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjxtZXRhIG5hbWU9IkdlbmVyYXRv
+ciIgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUgKGZpbHRlcmVkIG1lZGl1bSkiPg0KPHN0eWxl
+PjwhLS0NCi8qIEZvbnQgRGVmaW5pdGlvbnMgKi8NCkBmb250LWZhY2UNCgl7Zm9udC1mYW1pbHk6
+IkNhbWJyaWEgTWF0aCI7DQoJcGFub3NlLTE6MiA0IDUgMyA1IDQgNiAzIDIgNDt9DQpAZm9udC1m
+YWNlDQoJe2ZvbnQtZmFtaWx5OkNhbGlicmk7DQoJcGFub3NlLTE6MiAxNSA1IDIgMiAyIDQgMyAy
+IDQ7fQ0KQGZvbnQtZmFjZQ0KCXtmb250LWZhbWlseToiTWFsZ3VuIEdvdGhpYyI7DQoJcGFub3Nl
+LTE6MiAxMSA1IDMgMiAwIDAgMiAwIDQ7fQ0KQGZvbnQtZmFjZQ0KCXtmb250LWZhbWlseToiXEBN
+YWxndW4gR290aGljIjt9DQpAZm9udC1mYWNlDQoJe2ZvbnQtZmFtaWx5OiLCuWQxw4c0MCAgwqxl
+MMK1MTUiOw0KCXBhbm9zZS0xOjAgMCAwIDAgMCAwIDAgMCAwIDA7fQ0KLyogU3R5bGUgRGVmaW5p
+dGlvbnMgKi8NCnAuTXNvTm9ybWFsLCBsaS5Nc29Ob3JtYWwsIGRpdi5Nc29Ob3JtYWwNCgl7bWFy
+Z2luOjBjbTsNCgltYXJnaW4tYm90dG9tOi4wMDAxcHQ7DQoJZm9udC1zaXplOjEyLjBwdDsNCglm
+b250LWZhbWlseToiVGltZXMgTmV3IFJvbWFuIixzZXJpZjt9DQphOmxpbmssIHNwYW4uTXNvSHlw
+ZXJsaW5rDQoJe21zby1zdHlsZS1wcmlvcml0eTo5OTsNCgljb2xvcjpibHVlOw0KCXRleHQtZGVj
+b3JhdGlvbjp1bmRlcmxpbmU7fQ0KYTp2aXNpdGVkLCBzcGFuLk1zb0h5cGVybGlua0ZvbGxvd2Vk
+DQoJe21zby1zdHlsZS1wcmlvcml0eTo5OTsNCgljb2xvcjpwdXJwbGU7DQoJdGV4dC1kZWNvcmF0
+aW9uOnVuZGVybGluZTt9DQpwcmUNCgl7bXNvLXN0eWxlLXByaW9yaXR5Ojk5Ow0KCW1zby1zdHls
+ZS1saW5rOiJIVE1MIFByZWZvcm1hdHRlZCBDaGFyIjsNCgltYXJnaW46MGNtOw0KCW1hcmdpbi1i
+b3R0b206LjAwMDFwdDsNCglmb250LXNpemU6MTAuMHB0Ow0KCWZvbnQtZmFtaWx5OiJDb3VyaWVy
+IE5ldyI7fQ0KcC5tc29ub3JtYWwwLCBsaS5tc29ub3JtYWwwLCBkaXYubXNvbm9ybWFsMA0KCXtt
+c28tc3R5bGUtbmFtZTptc29ub3JtYWw7DQoJbXNvLW1hcmdpbi10b3AtYWx0OmF1dG87DQoJbWFy
+Z2luLXJpZ2h0OjBjbTsNCgltc28tbWFyZ2luLWJvdHRvbS1hbHQ6YXV0bzsNCgltYXJnaW4tbGVm
+dDowY207DQoJZm9udC1zaXplOjEyLjBwdDsNCglmb250LWZhbWlseToiVGltZXMgTmV3IFJvbWFu
+IixzZXJpZjt9DQpzcGFuLmdtYWlsLQ0KCXttc28tc3R5bGUtbmFtZTpnbWFpbC07fQ0Kc3Bhbi5F
+bWFpbFN0eWxlMTkNCgl7bXNvLXN0eWxlLXR5cGU6cGVyc29uYWwtcmVwbHk7DQoJZm9udC1mYW1p
+bHk6IkNhbGlicmkiLHNhbnMtc2VyaWY7DQoJY29sb3I6IzFGNDk3RDt9DQpzcGFuLkhUTUxQcmVm
+b3JtYXR0ZWRDaGFyDQoJe21zby1zdHlsZS1uYW1lOiJIVE1MIFByZWZvcm1hdHRlZCBDaGFyIjsN
+Cgltc28tc3R5bGUtcHJpb3JpdHk6OTk7DQoJbXNvLXN0eWxlLWxpbms6IkhUTUwgUHJlZm9ybWF0
+dGVkIjsNCglmb250LWZhbWlseToiQ291cmllciBOZXciO30NCi5Nc29DaHBEZWZhdWx0DQoJe21z
+by1zdHlsZS10eXBlOmV4cG9ydC1vbmx5Ow0KCWZvbnQtZmFtaWx5OiJDYWxpYnJpIixzYW5zLXNl
+cmlmO30NCkBwYWdlIFdvcmRTZWN0aW9uMQ0KCXtzaXplOjYxMi4wcHQgNzkyLjBwdDsNCgltYXJn
+aW46NzAuODVwdCA3MC44NXB0IDcwLjg1cHQgNzAuODVwdDt9DQpkaXYuV29yZFNlY3Rpb24xDQoJ
+e3BhZ2U6V29yZFNlY3Rpb24xO30NCi0tPjwvc3R5bGU+PCEtLVtpZiBndGUgbXNvIDldPjx4bWw+
+DQo8bzpzaGFwZWRlZmF1bHRzIHY6ZXh0PSJlZGl0IiBzcGlkbWF4PSIxMDI2IiAvPg0KPC94bWw+
+PCFbZW5kaWZdLS0+PCEtLVtpZiBndGUgbXNvIDldPjx4bWw+DQo8bzpzaGFwZWxheW91dCB2OmV4
+dD0iZWRpdCI+DQo8bzppZG1hcCB2OmV4dD0iZWRpdCIgZGF0YT0iMSIgLz4NCjwvbzpzaGFwZWxh
+eW91dD48L3htbD48IVtlbmRpZl0tLT4NCjwvaGVhZD4NCjxib2R5IGxhbmc9IkVOLVVTIiBsaW5r
+PSJibHVlIiB2bGluaz0icHVycGxlIj4NCjxkaXYgY2xhc3M9IldvcmRTZWN0aW9uMSI+DQo8cCBj
+bGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExLjBwdDtmb250LWZhbWls
+eTomcXVvdDtDYWxpYnJpJnF1b3Q7LHNhbnMtc2VyaWY7Y29sb3I6IzFGNDk3RCI+RGVhciBhdXRo
+b3JzJm5ic3A7OzxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxz
+cGFuIHN0eWxlPSJmb250LXNpemU6MTEuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NhbGlicmkmcXVv
+dDssc2Fucy1zZXJpZjtjb2xvcjojMUY0OTdEIj48bzpwPiZuYnNwOzwvbzpwPjwvc3Bhbj48L3A+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExLjBwdDtmb250
+LWZhbWlseTomcXVvdDtDYWxpYnJpJnF1b3Q7LHNhbnMtc2VyaWY7Y29sb3I6IzFGNDk3RCI+VGhh
+bmtzIGZvciBpbmNvcnBvcmF0aW5nIGEgbm9uY2UgaW4gdGhlIGNvbXB1dGF0aW9uIG9mIHRoZSBw
+cml2YWN5IGFkZHJlc3MuIFRoaXMgYWRkcmVzc2VzIG15IGNvbmNlcm4uIEl0IHdvdWxkIGhhdmUg
+YmVlbiBnb29kIHRvIGluc2lzdCB0aGF0IHlvdSBhcmUgZG9pbmcgaXQNCiBpbiB0aGUgc2VjdXJp
+dHkgc2VjdGlvbiBhcyB3ZWxsLCBidXQgdGhlIHRleHQgdGhlcmUgY29uZmlybXMgdGhhdCB0aGUg
+YWRkcmVzcyBpcyBub3QgcmVwZWF0ZWQgb24gdGhlIG5leHQgY29ubmVjdGlvbiBzbyB3ZSBzaG91
+bGQgYmUgYWxsIHNldC4gQWxzbyBpbiB0aGUgc2VjdXJpdHkgc2VjdGlvbiwgSeKAmW0gbm90IHN1
+cmUgd2hhdCB0byBkbyB3aXRoIHRoaXMgdGV4dDo8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBj
+bGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExLjBwdDtmb250LWZhbWls
+eTomcXVvdDtDYWxpYnJpJnF1b3Q7LHNhbnMtc2VyaWY7Y29sb3I6IzFGNDk3RCI+PG86cD4mbmJz
+cDs8L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZv
+bnQtc2l6ZToxMS4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q2FsaWJyaSZxdW90OyxzYW5zLXNlcmlm
+O2NvbG9yOiMxRjQ5N0QiPuKAnDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29O
+b3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTEuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0Nh
+bGlicmkmcXVvdDssc2Fucy1zZXJpZjtjb2xvcjojMUY0OTdEIj48bzpwPiZuYnNwOzwvbzpwPjwv
+c3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEw
+LjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90OyI+Jm5ic3A7Jm5ic3A7IEhv
+d2V2ZXIsIG1hbGljaW91cyB0cmllcyBmb3Igb25lIGNvbm5lY3Rpb24gb2YgYSBsb25nLWxpdmVk
+IGxpbmsgd2l0aDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxz
+cGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3
+JnF1b3Q7Ij4mbmJzcDsmbmJzcDsgTkZDIHRlY2hub2xvZ3kgYXJlIG5vdCBzZWN1cmUsIHNvIHRo
+ZSBtZXRob2Qgb2YgZGVyaXZpbmcgaW50ZXJmYWNlPG86cD48L286cD48L3NwYW4+PC9wPg0KPHAg
+Y2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1p
+bHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyBpZGVudGlmaWVycyBmcm9t
+IDYtYml0IE5GQyBMaW5rIGxheWVyIGFkZHJlc3NlcyBpcyBpbnRlbmRlZCB0bzxvOnA+PC9vOnA+
+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6
+MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJzcDsg
+cHJlc2VydmUgZ2xvYmFsIHVuaXF1ZW5lc3Mgd2hlbiBpdCBpcyBwb3NzaWJsZS4mbmJzcDsgVGhl
+cmVmb3JlLCBpdDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxz
+cGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3
+JnF1b3Q7Ij4mbmJzcDsmbmJzcDsgcmVxdWlyZXMgYSB3YXkgdG8gcHJvdGVjdCBmcm9tIGR1cGxp
+Y2F0aW9uIHRocm91Z2ggYWNjaWRlbnQgb3I8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFz
+cz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTom
+cXVvdDtDb3VyaWVyIE5ldyZxdW90OyI+Jm5ic3A7Jm5ic3A7Zm9yZ2VyeSBhbmQgdG8gZGVmaW5l
+IGEgd2F5IHRvIGluY2x1ZGUgc3VmZmljaWVudCBiaXQgb2YgZW50cm9weSBpbjxvOnA+PC9vOnA+
+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6
+MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJzcDsg
+dGhlIElQdjYgaW50ZXJmYWNlIGlkZW50aWZpZXIsIHN1Y2ggYXMgcmFuZG9tIEVVSS02NC48bzpw
+PjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9u
+dC1zaXplOjExLjBwdDtmb250LWZhbWlseTomcXVvdDtDYWxpYnJpJnF1b3Q7LHNhbnMtc2VyaWY7
+Y29sb3I6IzFGNDk3RCI+PG86cD4mbmJzcDs8L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1z
+b05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMS4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7
+Q2FsaWJyaSZxdW90OyxzYW5zLXNlcmlmO2NvbG9yOiMxRjQ5N0QiPuKAnDxvOnA+PC9vOnA+PC9z
+cGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTEu
+MHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NhbGlicmkmcXVvdDssc2Fucy1zZXJpZjtjb2xvcjojMUY0
+OTdEIj5JIGZhaWwgdG8gdW5kZXJzdGFuZCB0aGUgZmlyc3Qgc2VudGVuY2UgYW5kIHRoZSBwYXJh
+Z3JhcGggcmVhZHMgYXMgYSBwcm9ibGVtIHN0YXRlbWVudCwgYnV0IGZvciB3aGF0PyAmbmJzcDtT
+ZWVtcyB0aGF0IHNlY3Rpb24gNC4zIGRvZXMgbm93IHByb3ZpZGUgdGhlIHJlcXVpcmVkIGVudHJv
+cHksDQogY29ycmVjdD88bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFs
+Ij48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExLjBwdDtmb250LWZhbWlseTomcXVvdDtDYWxpYnJp
+JnF1b3Q7LHNhbnMtc2VyaWY7Y29sb3I6IzFGNDk3RCI+PG86cD4mbmJzcDs8L286cD48L3NwYW4+
+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMS4wcHQ7
+Zm9udC1mYW1pbHk6JnF1b3Q7Q2FsaWJyaSZxdW90OyxzYW5zLXNlcmlmO2NvbG9yOiMxRjQ5N0Qi
+PkFib3V0IHNlY3Rpb24gNC41LCBJIHRoaW5rIHNvbWUgbW9yZSB0ZXh0IGNvdWxkIGJlIHVzZWZ1
+bCB0byBhc3NpZ24gdGhlIHJvbGUgb2YgNkxCUi48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBj
+bGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExLjBwdDtmb250LWZhbWls
+eTomcXVvdDtDYWxpYnJpJnF1b3Q7LHNhbnMtc2VyaWY7Y29sb3I6IzFGNDk3RCI+SWYgMiBzaW1p
+bGFyIGRldmljZXMgbWVldCAoc2F5IDIgaGFuZGVoZWxkKSwgd2hldGhlciBvbmUgaXMgNkxSL0xC
+Ui4gSG93IHdvdWxkIHRoYXQgYmUgZGVjaWRlZD8gJm5ic3A7PG86cD48L286cD48L3NwYW4+PC9w
+Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMS4wcHQ7Zm9u
+dC1mYW1pbHk6JnF1b3Q7Q2FsaWJyaSZxdW90OyxzYW5zLXNlcmlmO2NvbG9yOiMxRjQ5N0QiPldo
+ZW4gdGhleSBhcmUgZGlmZmVyZW50LCBpZiB0aGVyZSBpcyBhIGZpeGVkIGRldmljZSAoYSBwYXlt
+ZW50IHRlcm1pbmFsLCBzYXkpIG9yIHByb3ZpZGVzIGNvbm5lY3Rpdml0eSBhcyBhIHJvdXRlciwg
+dGhlbiBpdCBtYWtlcyBzZW5zZSB0aGF0IGl0IGlzIDZMQlIuDQo8bzpwPjwvbzpwPjwvc3Bhbj48
+L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExLjBwdDtm
+b250LWZhbWlseTomcXVvdDtDYWxpYnJpJnF1b3Q7LHNhbnMtc2VyaWY7Y29sb3I6IzFGNDk3RCI+
+VGhpcyBjb3VsZCBiZSBkZXNjcmliZWQgc28gd2Ugd291bGQgbm90IGVuZCB1cCB3aXRoIDIgZGV2
+aWNlcyB0aGF0IGNhbm5vdCB0YWxrIGJlY2F1c2UgdGhleSBvbmx5IGRvIDZMTi48bzpwPjwvbzpw
+Pjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXpl
+OjExLjBwdDtmb250LWZhbWlseTomcXVvdDtDYWxpYnJpJnF1b3Q7LHNhbnMtc2VyaWY7Y29sb3I6
+IzFGNDk3RCI+PG86cD4mbmJzcDs8L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1h
+bCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMS4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q2FsaWJy
+aSZxdW90OyxzYW5zLXNlcmlmO2NvbG9yOiMxRjQ5N0QiPkNoZWVycyw8bzpwPjwvbzpwPjwvc3Bh
+bj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExLjBw
+dDtmb250LWZhbWlseTomcXVvdDtDYWxpYnJpJnF1b3Q7LHNhbnMtc2VyaWY7Y29sb3I6IzFGNDk3
+RCI+PG86cD4mbmJzcDs8L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNw
+YW4gc3R5bGU9ImZvbnQtc2l6ZToxMS4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q2FsaWJyaSZxdW90
+OyxzYW5zLXNlcmlmO2NvbG9yOiMxRjQ5N0QiPlBhc2NhbDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4N
+CjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTEuMHB0O2ZvbnQt
+ZmFtaWx5OiZxdW90O0NhbGlicmkmcXVvdDssc2Fucy1zZXJpZjtjb2xvcjojMUY0OTdEIj48bzpw
+PiZuYnNwOzwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHls
+ZT0iZm9udC1zaXplOjExLjBwdDtmb250LWZhbWlseTomcXVvdDtDYWxpYnJpJnF1b3Q7LHNhbnMt
+c2VyaWY7Y29sb3I6IzFGNDk3RCI+PG86cD4mbmJzcDs8L286cD48L3NwYW4+PC9wPg0KPHAgY2xh
+c3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBwdCI+PGI+PHNwYW4gc3R5bGU9
+ImZvbnQtc2l6ZToxMS4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q2FsaWJyaSZxdW90OyxzYW5zLXNl
+cmlmIj5Gcm9tOjwvc3Bhbj48L2I+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMS4wcHQ7Zm9udC1m
+YW1pbHk6JnF1b3Q7Q2FsaWJyaSZxdW90OyxzYW5zLXNlcmlmIj4gU2FtaXRhIENoYWtyYWJhcnRp
+IFttYWlsdG86c2FtaXRhYy5pZXRmQGdtYWlsLmNvbV0NCjxicj4NCjxiPlNlbnQ6PC9iPiBtYXJk
+aSA2IGp1aW4gMjAxNyAwMjoxNjxicj4NCjxiPlRvOjwvYj4gUGFzY2FsIFRodWJlcnQgKHB0aHVi
+ZXJ0KSAmbHQ7cHRodWJlcnRAY2lzY28uY29tJmd0OzsgRGF2ZSBUaGFsZXIgJmx0O2R0aGFsZXJA
+bWljcm9zb2Z0LmNvbSZndDs7DQo8L3NwYW4+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMS4wcHQ7
+Zm9udC1mYW1pbHk6JnF1b3Q7TWFsZ3VuIEdvdGhpYyZxdW90OyxzYW5zLXNlcmlmIj7stZzsmIHt
+mZg8L3NwYW4+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMS4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7
+Q2FsaWJyaSZxdW90OyxzYW5zLXNlcmlmIj4gJmx0O3loY0BldHJpLnJlLmtyJmd0OzsgNmxvLWNo
+YWlyc0BpZXRmLm9yZzsgbG8gJmx0OzZsb0BpZXRmLm9yZyZndDs8YnI+DQo8Yj5DYzo8L2I+IEph
+bWVzIFdvb2R5YXR0ICZsdDtqaHdAZ29vZ2xlLmNvbSZndDs8YnI+DQo8Yj5TdWJqZWN0OjwvYj4g
+UmV2aWV3IFJlcXVlc3QgZm9yIGlwdjYtb3Zlci1uZmMtMDc8bzpwPjwvbzpwPjwvc3Bhbj48L3A+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIiBzdHlsZT0ibWFyZ2luLWxlZnQ6MzYuMHB0Ij48bzpwPiZu
+YnNwOzwvbzpwPjwvcD4NCjxkaXY+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9
+Im1hcmdpbi1sZWZ0OjM2LjBwdCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIiBzdHlsZT0ibWFyZ2luLWxlZnQ6MzYuMHB0Ij48bzpwPiZu
+YnNwOzwvbzpwPjwvcD4NCjwvZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdp
+bi1sZWZ0OjM2LjBwdCI+SGVsbG8gRGF2ZSwgUGFzY2FsLCBKYW1lcyBhbmQgV0cgbWVtYmVyczo8
+bzpwPjwvbzpwPjwvcD4NCjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIiBzdHlsZT0ibWFyZ2lu
+LWxlZnQ6MzYuMHB0Ij48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNs
+YXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4tbGVmdDozNi4wcHQiPmlwdjYtb3Zlci1uZmMt
+MDcgaGFzIGp1c3QgYmVlbiBwdWJsaXNoZWQgYW5kIHRoZSBhdXRob3IgbWVudGlvbnMgdGhhdCBo
+ZSBoYWQgYWRkcmVzc2VkIHRoZSBjb21tZW50cyBmcm9tIFBhc2NhbCBhbmQgRGF2ZS48bzpwPjwv
+bzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJn
+aW4tbGVmdDozNi4wcHQiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAg
+Y2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBwdCI+Jm5ic3A7UGFzY2Fs
+IGFuZCBEYXZlLCAmbmJzcDt3b3VsZCB5b3UgcGxlYXNlIGhhdmUgc29tZXRpbWUgdG8gcmV2aWV3
+IHZlcnNpb24gMDcgdG8gY2hlY2sgaWYgeW91ciBjb21tZW50cyBhcmUgYWRkcmVzc2VkPzxvOnA+
+PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1h
+cmdpbi1sZWZ0OjM2LjBwdCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8
+cCBjbGFzcz0iTXNvTm9ybWFsIiBzdHlsZT0ibWFyZ2luLWxlZnQ6MzYuMHB0Ij5JIGhhdmUgYXBw
+ZW5kZWQgdGhlIGV4Y2VycHQgZnJvbSBJRVRGOTggbWVldGluZyBtaW51dGVzIGZvciB5b3VyIHJl
+ZmVyZW5jZS48bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3Jt
+YWwiIHN0eWxlPSJtYXJnaW4tbGVmdDozNi4wcHQiPlRoaXMgZG9jdW1lbnQgaXMgZHVlIGZvciBX
+RyBMQyBpZiAmbmJzcDtpdCBsb29rcyBva2F5LjxvOnA+PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2
+Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBwdCI+PG86cD4m
+bmJzcDs8L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIiBzdHls
+ZT0ibWFyZ2luLWxlZnQ6MzYuMHB0Ij5KYW1lcywgeW91IGFyZSBzaGVwaGVyZCBmb3IgTkZDIGRy
+YWZ0IC0tIHBsZWFzZSBsZXQgdXMga25vdyBpZiB5b3UgYXJlIG9rYXkgd2l0aCB0aGUgZG9jdW1l
+bnQncyBuZXh0IHN0ZXAuJm5ic3A7PG86cD48L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBj
+bGFzcz0iTXNvTm9ybWFsIiBzdHlsZT0ibWFyZ2luLWxlZnQ6MzYuMHB0Ij48bzpwPiZuYnNwOzwv
+bzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJn
+aW4tbGVmdDozNi4wcHQiPlRoYW5rcyw8bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxw
+IGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4tbGVmdDozNi4wcHQiPi1TYW1pdGE8bzpw
+PjwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJt
+YXJnaW4tbGVmdDozNi4wcHQiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0K
+PHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBwdCI+QXMgcGVyIElF
+VEY5OCBtZWV0aW5nIG1pbnV0ZXM6PG86cD48L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBj
+bGFzcz0iTXNvTm9ybWFsIiBzdHlsZT0ibWFyZ2luLWxlZnQ6MzYuMHB0Ij49PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT08bzpwPjwvbzpwPjwvcD4NCjwvZGl2
+Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4tbGVmdDozNi4wcHQi
+PjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJN
+c29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4tbGVmdDozNi4wcHQiPjIgSVB2NiBvdmVyIE5GQyAmbmJz
+cDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNw
+OyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7
+ICZuYnNwO1lvdW5naHdhbiBDaG9pICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsg
+Jm5ic3A7ICZuYnNwOyZuYnNwOzxvOnA+PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAgY2xh
+c3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBwdCI+Jm5ic3A7IDxhIGhyZWY9
+Imh0dHBzOi8vdG9vbHMuaWV0Zi5vcmcvd2cvNmxvL2RyYWZ0LWlldGYtNmxvLW5mYy0wNiI+DQpo
+dHRwczovL3Rvb2xzLmlldGYub3JnL3dnLzZsby9kcmFmdC1pZXRmLTZsby1uZmMtMDY8L2E+IHdh
+cyBwcmVzZW50ZWQgYnkgWW91bmdoYXduIENob2kgb24gdXBkYXRlcyBhbmQ8bzpwPjwvbzpwPjwv
+cD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4tbGVm
+dDozNi4wcHQiPiZuYnNwOyBkaXNjdXNzZWQgY29tbWVudHMgZnJvbSBXRyBhbmQgTkZDIGZvcnVt
+LiBUaGUgZHJhZnQgd2FzIHJldmlld2VkIGJ5IE5GQyBmb3J1bSwgbm8gbW9yZSBjb21tZW50czxv
+OnA+PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9
+Im1hcmdpbi1sZWZ0OjM2LjBwdCI+Jm5ic3A7IGZyb20gTkZDIGZvcnVtLiBUaGUgYXV0aG9yIGxp
+a2VzIHRvIG1vdmUgdG8gV0dMQy48bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNs
+YXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4tbGVmdDozNi4wcHQiPjxvOnA+Jm5ic3A7PC9v
+OnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdp
+bi1sZWZ0OjM2LjBwdCI+Jm5ic3A7IERhdmUgVGhhbGVyOklJRCBnZW5lcmF0aW9uIGNoYW5nZWQg
+YXMgYSByZXN1bHQgb2YgcHJldmlvdXMgbWVldGluZzxvOnA+PC9vOnA+PC9wPg0KPC9kaXY+DQo8
+ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBwdCI+Jm5i
+c3A7ICZuYnNwOyAmbmJzcDs8bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNz
+PSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4tbGVmdDozNi4wcHQiPiZuYnNwOyBQYXNjYWw6IFJl
+cGxhY2luZyA2IGJpdCBhZGRyZXNzIHdpdGggaGFzaGluZyBmdW5jdGlvbiB3aXRoIGZpeGVkIHBh
+cmFtZXRlcnMuIFNjYW5uaW5nIGlzIHN0aWxsPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIiBzdHlsZT0ibWFyZ2luLWxlZnQ6MzYuMHB0Ij4mbmJzcDsg
+ZWFzeS4gSG93IGlzIGl0IGRpZmZlcmVudD88bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4N
+CjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4tbGVmdDozNi4wcHQiPiZuYnNwOyBZ
+Qzogb2Zmc2V0LiBEYXZlOiBvZmZzZXQgc2hvdWxkIGJlIHJhbmRvbSB0byBhZGQgZW50cm9weSwg
+bm90IHByZWRpY3RhYmxlLjxvOnA+PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAgY2xhc3M9
+Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBwdCI+Jm5ic3A7IEdhYnJpZWw6IG9m
+ZnNldCBtYXkgbm90IGJlIGEgcmlnaHQgbmFtZS4gTm9uY2Ugd291bGQgYmUgYmV0dGVyLjxvOnA+
+PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1h
+cmdpbi1sZWZ0OjM2LjBwdCI+Jm5ic3A7IFNhbWl0YTogbmVlZCByZXZpZXdlcnMgYmVmb3JlIFdH
+TEMuIFBhc2NhbCwgRGF2ZSwgd291bGQgeW91IHZvbHVudGVlcj8mbmJzcDs8bzpwPjwvbzpwPjwv
+cD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4tbGVm
+dDozNi4wcHQiPiZuYnNwOyBQYXNjYWwgd2lsbCBkbyB0aGUgcmV2aWV3IGFuZCBEYXZlIGFncmVl
+ZCB0byByZXZpZXcgdGhlIGZpbmFsIHVwZGF0ZS48bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPC9k
+aXY+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBw
+dCI+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PTxvOnA+PC9vOnA+PC9wPg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtc28t
+bWFyZ2luLXRvcC1hbHQ6MGNtO21hcmdpbi1yaWdodDowY207bWFyZ2luLWJvdHRvbToxMi4wcHQ7
+bWFyZ2luLWxlZnQ6MzYuMHB0Ij4NCi0tLS0tLS0tLS0gRm9yd2FyZGVkIG1lc3NhZ2UgLS0tLS0t
+LS0tLTxicj4NCkZyb206IDxiPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTomcXVvdDtNYWxndW4g
+R290aGljJnF1b3Q7LHNhbnMtc2VyaWYiPuy1nOyYge2ZmDwvc3Bhbj48L2I+ICZsdDs8YSBocmVm
+PSJtYWlsdG86eWhjQGV0cmkucmUua3IiPnloY0BldHJpLnJlLmtyPC9hPiZndDs8YnI+DQpEYXRl
+OiBTdW4sIEp1biA0LCAyMDE3IGF0IDU6MDIgUE08YnI+DQpTdWJqZWN0OiBSRTogWzZsb10gUmVx
+dWVzdCBmb3IgSUVURjk5QFByYWd1ZSA2bG8gQWdlbmRhIGl0ZW1zPGJyPg0KVG86IFNhbWl0YSBD
+aGFrcmFiYXJ0aSAmbHQ7PGEgaHJlZj0ibWFpbHRvOnNhbWl0YWMuaWV0ZkBnbWFpbC5jb20iPnNh
+bWl0YWMuaWV0ZkBnbWFpbC5jb208L2E+Jmd0Ozxicj4NCkNjOiBHYWJyaWVsIE1vbnRlbmVncm8g
+Jmx0OzxhIGhyZWY9Im1haWx0bzpHYWJyaWVsLk1vbnRlbmVncm9AbWljcm9zb2Z0LmNvbSI+R2Fi
+cmllbC5Nb250ZW5lZ3JvQG1pY3Jvc29mdC5jb208L2E+Jmd0Ozxicj4NCjxicj4NCjxvOnA+PC9v
+OnA+PC9wPg0KPGRpdj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIiBzdHlsZT0ibXNvLW1h
+cmdpbi10b3AtYWx0OmF1dG87bXNvLW1hcmdpbi1ib3R0b20tYWx0OmF1dG87bWFyZ2luLWxlZnQ6
+MzYuMHB0Ij4NCjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90
+O8K5ZDHDhzQwICDCrGUwwrUxNSZxdW90OyxzZXJpZjtjb2xvcjojMUY0OTdEO21zby1mYXJlYXN0
+LWxhbmd1YWdlOktPIj5IZWxsbyBTYW1pdGEsDQo8L3NwYW4+PHNwYW4gc3R5bGU9Im1zby1mYXJl
+YXN0LWxhbmd1YWdlOktPIj48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9y
+bWFsIiBzdHlsZT0ibXNvLW1hcmdpbi10b3AtYWx0OmF1dG87bXNvLW1hcmdpbi1ib3R0b20tYWx0
+OmF1dG87bWFyZ2luLWxlZnQ6MzYuMHB0Ij4NCjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0
+O2ZvbnQtZmFtaWx5OiZxdW90O8K5ZDHDhzQwICDCrGUwwrUxNSZxdW90OyxzZXJpZjtjb2xvcjoj
+MUY0OTdEO21zby1mYXJlYXN0LWxhbmd1YWdlOktPIj4mbmJzcDs8L3NwYW4+PHNwYW4gc3R5bGU9
+Im1zby1mYXJlYXN0LWxhbmd1YWdlOktPIj48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFz
+cz0iTXNvTm9ybWFsIiBzdHlsZT0ibXNvLW1hcmdpbi10b3AtYWx0OmF1dG87bXNvLW1hcmdpbi1i
+b3R0b20tYWx0OmF1dG87bWFyZ2luLWxlZnQ6MzYuMHB0Ij4NCjxzcGFuIHN0eWxlPSJmb250LXNp
+emU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O8K5ZDHDhzQwICDCrGUwwrUxNSZxdW90OyxzZXJp
+Zjtjb2xvcjojMUY0OTdEO21zby1mYXJlYXN0LWxhbmd1YWdlOktPIj5J4oCZdmUgc3VibWl0dGVk
+IHRoZSBuZXcgdmVyc2lvbiBvZiBpcHY2LW92ZXItbmZjICgtMDcpLiBUaGUgZG9jdW1lbnQgaXMg
+cmVhZHkgZm9yIHJldmlldy48L3NwYW4+PHNwYW4gc3R5bGU9Im1zby1mYXJlYXN0LWxhbmd1YWdl
+OktPIj48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIiBzdHlsZT0i
+bXNvLW1hcmdpbi10b3AtYWx0OmF1dG87bXNvLW1hcmdpbi1ib3R0b20tYWx0OmF1dG87bWFyZ2lu
+LWxlZnQ6MzYuMHB0Ij4NCjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5
+OiZxdW90O8K5ZDHDhzQwICDCrGUwwrUxNSZxdW90OyxzZXJpZjtjb2xvcjojMUY0OTdEO21zby1m
+YXJlYXN0LWxhbmd1YWdlOktPIj5UaGFua3MuPC9zcGFuPjxzcGFuIHN0eWxlPSJtc28tZmFyZWFz
+dC1sYW5ndWFnZTpLTyI+PG86cD48L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1h
+bCIgc3R5bGU9Im1zby1tYXJnaW4tdG9wLWFsdDphdXRvO21zby1tYXJnaW4tYm90dG9tLWFsdDph
+dXRvO21hcmdpbi1sZWZ0OjM2LjBwdCI+DQo8c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtm
+b250LWZhbWlseTomcXVvdDvCuWQxw4c0MCAgwqxlMMK1MTUmcXVvdDssc2VyaWY7Y29sb3I6IzFG
+NDk3RDttc28tZmFyZWFzdC1sYW5ndWFnZTpLTyI+Jm5ic3A7PC9zcGFuPjxzcGFuIHN0eWxlPSJt
+c28tZmFyZWFzdC1sYW5ndWFnZTpLTyI+PG86cD48L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9
+Ik1zb05vcm1hbCIgc3R5bGU9Im1zby1tYXJnaW4tdG9wLWFsdDphdXRvO21zby1tYXJnaW4tYm90
+dG9tLWFsdDphdXRvO21hcmdpbi1sZWZ0OjM2LjBwdCI+DQo8c3BhbiBzdHlsZT0iZm9udC1zaXpl
+OjEwLjBwdDtmb250LWZhbWlseTomcXVvdDvCuWQxw4c0MCAgwqxlMMK1MTUmcXVvdDssc2VyaWY7
+Y29sb3I6IzFGNDk3RDttc28tZmFyZWFzdC1sYW5ndWFnZTpLTyI+QmVzdCByZWdhcmRzLDwvc3Bh
+bj48c3BhbiBzdHlsZT0ibXNvLWZhcmVhc3QtbGFuZ3VhZ2U6S08iPjxvOnA+PC9vOnA+PC9zcGFu
+PjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtc28tbWFyZ2luLXRvcC1hbHQ6YXV0
+bzttc28tbWFyZ2luLWJvdHRvbS1hbHQ6YXV0bzttYXJnaW4tbGVmdDozNi4wcHQiPg0KPHNwYW4g
+c3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7wrlkMcOHNDAgIMKsZTDC
+tTE1JnF1b3Q7LHNlcmlmO2NvbG9yOiMxRjQ5N0Q7bXNvLWZhcmVhc3QtbGFuZ3VhZ2U6S08iPllv
+dW5naHdhbiBDaG9pPC9zcGFuPjxzcGFuIHN0eWxlPSJtc28tZmFyZWFzdC1sYW5ndWFnZTpLTyI+
+PG86cD48L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1zby1t
+YXJnaW4tdG9wLWFsdDphdXRvO21zby1tYXJnaW4tYm90dG9tLWFsdDphdXRvO21hcmdpbi1sZWZ0
+OjM2LjBwdCI+DQo8YSBuYW1lPSJtXy0zNDIxMzI1MTYxMTg4Njg0NDk0X19NYWlsRW5kQ29tcG9z
+ZSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7wrlkMcOH
+NDAgIMKsZTDCtTE1JnF1b3Q7LHNlcmlmO2NvbG9yOiMxRjQ5N0Q7bXNvLWZhcmVhc3QtbGFuZ3Vh
+Z2U6S08iPiZuYnNwOzwvc3Bhbj48L2E+PHNwYW4gc3R5bGU9Im1zby1ib29rbWFyazptXy0zNDIx
+MzI1MTYxMTg4Njg0NDk0X19NYWlsRW5kQ29tcG9zZSI+PC9zcGFuPjxzcGFuIHN0eWxlPSJtc28t
+ZmFyZWFzdC1sYW5ndWFnZTpLTyI+PG86cD48L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1z
+b05vcm1hbCIgc3R5bGU9Im1zby1tYXJnaW4tdG9wLWFsdDphdXRvO21zby1tYXJnaW4tYm90dG9t
+LWFsdDphdXRvO21hcmdpbi1sZWZ0OjM2LjBwdCI+DQo8c3BhbiBzdHlsZT0ibXNvLWZhcmVhc3Qt
+bGFuZ3VhZ2U6S08iPjxvOnA+Jm5ic3A7PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KPC9kaXY+
+DQo8L2Rpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4tbGVmdDozNi4wcHQi
+PjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9ib2R5Pg0K
+PC9odG1sPg0K
+
+--_000_62cc094156074e1ba96abc761e89e7a0XCHRCD001ciscocom_--
+
+
+From nobody Fri Jun 16 16:59:31 2017
+Return-Path: <cabo@tzi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 3B157129540; Fri, 16 Jun 2017 16:59:24 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.2
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.2 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id dr7x46jyR3Xh; Fri, 16 Jun 2017 16:59:22 -0700 (PDT)
+Received: from mailhost.informatik.uni-bremen.de (mailhost.informatik.uni-bremen.de [IPv6:2001:638:708:30c9::12]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 058C0129536; Fri, 16 Jun 2017 16:59:21 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at informatik.uni-bremen.de
+Received: from submithost.informatik.uni-bremen.de (submithost.informatik.uni-bremen.de [134.102.201.11]) by mailhost.informatik.uni-bremen.de (8.14.5/8.14.5) with ESMTP id v5GNxHRg007568; Sat, 17 Jun 2017 01:59:17 +0200 (CEST)
+Received: from [192.168.217.124] (p5DC7F3A7.dip0.t-ipconnect.de [93.199.243.167]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by submithost.informatik.uni-bremen.de (Postfix) with ESMTPSA id 3wqHQs5BtpzDK05; Sat, 17 Jun 2017 01:59:17 +0200 (CEST)
+From: Carsten Bormann <cabo@tzi.org>
+Content-Type: text/plain; charset=utf-8
+X-Mao-Original-Outgoing-Id: 519350357.381063-6f048f755c1bea58baaf44d0990e4c50
+Content-Transfer-Encoding: quoted-printable
+Mime-Version: 1.0 (Mac OS X Mail 10.3 \(3273\))
+Date: Sat, 17 Jun 2017 01:59:17 +0200
+Message-Id: <C11FE4E3-E518-4192-9DBE-8B23D413666E@tzi.org>
+To: lo <6lo@ietf.org>, 6TiSCH mailing list <6tisch@ietf.org>, lp-wan <lp-wan@ietf.org>, lwip@ietf.org, Routing Over Low power and Lossy networks <roll@ietf.org>
+X-Mailer: Apple Mail (2.3273)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/a78e3_6pgEBwvNAIVIVOQkTyAm8>
+Subject: [6lo] Constrained Node/Network Cluster @ IETF99: DRAFT AGENDA
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 16 Jun 2017 23:59:24 -0000
+
+Here is my usual eclectic condensed agenda based on the DRAFT AGENDA
+for IETF99.  Remember that there is still quite some potential for
+changes.
+
+ACE people are going to miss DISPATCH (ARTAREA) again -- not sure if
+there would have been be any discussions relevant to Constrained
+Nodes/Networks in ARTAREA, but it doesn't make sense with this
+scheduling.  CORE people will miss both ANIMA and (in-week) ICNRG.
+ROLL people will miss SAAG, ouch.  And LPWAN is on the second half of
+QUIC.  All no disasters, AFAICS, but not pain-free.
+
+All times are CEST (UTC+0200).  (You can get pure UTC times on
+https://datatracker.ietf.org/meeting/agenda-utc, for those who want to
+listen from remote.)
+
+Gr=C3=BC=C3=9Fe, Carsten
+
+
+SATURDAY/SUNDAY
+-- T2TRG
+-- ICNRG
+-- Hackathon (including various interops)
+
+MONDAY, July 17, 2017
+
+0930-1200  Morning Session I
+Congress H III	ART	dispatch	Dispatch WG - 09:30-11:30
+Grand Hilton BR	INT	6man	IPv6 Maintenance WG
+Congress H I	SEC ***	ace	Authentication and Authorization for =
+Constrained Environments WG
+Congress H III	SEC	curdle	CURves, Deprecating and a Little more =
+Encryption WG - 11:30-12:00
+
+1330-1530  Afternoon Session I
+Karlin I/II	INT ***	6tisch	IPv6 over the TSCH mode of IEEE =
+802.15.4e WG
+Grand Hilton BR	INT	homenet	Home Networking WG
+
+1550-1720  Afternoon Session II
+Karlin I/II	ART ***	cbor	Concise Binary Object Representation =
+Maintenance and Extensions WG
+Berlin/Brussels	SEC	tokbind	Token Binding WG
+
+1740-1840  Afternoon Session III
+Athens/Barcel.	RTG	babel	Babel routing protocol WG
+Grand Hilton BR	TSV	tsvarea	Transport Area Open Meeting
+
+TUESDAY, July 18, 2017
+
+0930-1200  Morning Session I
+Congress H II	OPS	v6ops	IPv6 Operations WG
+Congress H I	TSV	taps	Transport Services WG
+
+1330-1530  Afternoon Session I
+Grand Hilton BR	IRTF***	t2trg	Thing-to-Thing
+Berlin/Brussels	SEC	oauth	Web Authorization Protocol WG
+Congress H I	TSV	tsvwg	Transport Area Working Group WG
+
+1550-1750  Afternoon Session II
+Karlin I/II	INT ***	6lo	IPv6 over Networks of =
+Resource-constrained Nodes WG
+Congress H I	IRTF	cfrg	Crypto Forum
+
+WEDNESDAY, July 19, 2017
+
+0930-1200  Morning Session I
+Congress H I	ART ***	core	Constrained RESTful Environments WG
+Karlin I/II	IRTF	icnrg	Information-Centric Networking
+Congress H III	OPS	anima	Autonomic Networking Integrated Model =
+and Approach WG
+Congress H II	RTG	rtgarea	Routing Area Open Meeting
+Grand Hilton BR	SEC	tls	Transport Layer Security WG
+Karlin III	TSV	rmcat	RTP Media Congestion Avoidance =
+Techniques WG
+
+1330-1500  Afternoon Session I
+Grand Hilton BR	ART	httpbis	Hypertext Transfer Protocol WG
+Congress H III	IRTF	panrg	Proposed Path Aware Networking
+Congress H II	RTG	ideas	IDentity Enabled Networks BOF
+
+1520-1650  Afternoon Session II
+Grand Hilton BR	ART	httpbis	Hypertext Transfer Protocol WG
+
+THURSDAY, July 20, 2017
+
+0930-1200  Morning Session I
+Grand Hilton BR	INT	intarea	Internet Area Working Group WG
+Congress H II	IRTF	maprg	Measurement and Analysis for Protocols
+Congress H I	RTG	detnet	Deterministic Networking WG
+
+1330-1530  Afternoon Session I
+Berlin/Brussels	ART	ice	Interactive Connectivity Establishment =
+WG
+Grand Hilton BR	OPS	v6ops	IPv6 Operations WG
+Karlin I/II	RTG ***	roll	Routing Over Low power and Lossy =
+networks WG
+Congress H III	SEC	saag	Security Area Open Meeting
+
+1550-1750  Afternoon Session II
+Athens/Barcel.	INT	ipwave	IP Wireless Access in Vehicular =
+Environments WG
+Grand Hilton BR	TSV	quic	QUIC WG
+
+1810-1910  Afternoon Session III
+Berlin/Brussels	ART	uta	Using TLS in Applications WG
+Athens/Barcel.	INT ***	lwig	Light-Weight Implementation Guidance WG
+Karlin I/II	RTG	bier	Bit Indexed Explicit Replication WG
+Congress H III	TSV	tsvwg	Transport Area Working Group WG
+
+FRIDAY, July 21, 2017
+
+0930-1130  Morning Session I
+Berlin/Brussels	INT	dnssd	Extensions for Scalable DNS Service =
+Discovery  WG
+Karlin I/II	INT ***	lpwan	IPv6 over Low Power Wide-Area Networks =
+WG
+Karlin III	SEC	oauth	Web Authorization Protocol WG
+Grand Hilton BR	TSV	quic	QUIC WG
+
+1150-1320  Afternoon Session II
+Congress H III	ART ***	core	Constrained RESTful Environments WG
+Grand Hilton BR	SEC	acme	Automated Certificate Management =
+Environment WG
+
+
+
+From nobody Mon Jun 19 14:53:38 2017
+Return-Path: <Gabriel.Montenegro@microsoft.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 3A8A112950B for <6lo@ietfa.amsl.com>; Mon, 19 Jun 2017 14:53:37 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.02
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.02 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=microsoft.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id T7vPlTHW04If for <6lo@ietfa.amsl.com>; Mon, 19 Jun 2017 14:53:35 -0700 (PDT)
+Received: from NAM03-DM3-obe.outbound.protection.outlook.com (mail-dm3nam03on0090.outbound.protection.outlook.com [104.47.41.90]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 264C6129504 for <6lo@ietf.org>; Mon, 19 Jun 2017 14:53:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version; bh=ACCtfckCFWzOKr40EGfFCR7gTRoVmQ9/5cxZsHr9G6c=; b=MlUEYQEuupOSrDneJc9yWi4GjJwyS8NlsomnIRzGrNuu9mdF/rI6jUtOlSjEiBUJYXYS2p0X6x6wHjDFFwpvGlk5E4HqYBN+O6ACu2f+zHznlJ8Qv1IkwKrquMQnyYOTqv4O++8Pj10aaZfT/i7Nf6K0o6+G2cZQ6NIOOkYr028=
+Received: from BY2PR21MB0081.namprd21.prod.outlook.com (10.162.78.139) by BY2PR21MB0036.namprd21.prod.outlook.com (10.162.77.23) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id 15.1.1220.1; Mon, 19 Jun 2017 21:53:32 +0000
+Received: from BY2PR21MB0081.namprd21.prod.outlook.com ([10.162.78.139]) by BY2PR21MB0081.namprd21.prod.outlook.com ([10.162.78.139]) with mapi id 15.01.1199.000; Mon, 19 Jun 2017 21:53:32 +0000
+From: Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>
+To: Samita Chakrabarti <samitac.ietf@gmail.com>, lo <6lo@ietf.org>
+Thread-Topic: [6lo] Request for IETF99@Prague 6lo Agenda items
+Thread-Index: AQHS2jXAY/tgObTMf0uDryFXMewdUKIs2DnQ
+Date: Mon, 19 Jun 2017 21:53:32 +0000
+Message-ID: <BY2PR21MB008170F9B0AFE3986E4FF8ED95C40@BY2PR21MB0081.namprd21.prod.outlook.com>
+References: <CAKmdBpcgEJinPy=9LhB7XCCiSep9iy117z=--Rp1K30h96Qriw@mail.gmail.com>
+In-Reply-To: <CAKmdBpcgEJinPy=9LhB7XCCiSep9iy117z=--Rp1K30h96Qriw@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+authentication-results: gmail.com; dkim=none (message not signed) header.d=none;gmail.com; dmarc=none action=none header.from=microsoft.com;
+x-originating-ip: [2001:4898:80e8:1::3da]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1; BY2PR21MB0036; 7:w5V+oFxQe2JCUlVxNs7QbEhWQ335ODgfcNiz2vxZQqa9yVFPV2vEfTfXjH1rzwTXfBWIieabGuNlDWrvOmXRofal8pPsVEXKX2ZzwuyeZInax7Gydzyx3QHMG/OCVhLMX1nbzvjSNCZliP2EHAHhUA/FeBs9oh1LWufnwAk0Ss1uibeGLYzU3hSXbE9fSmi4c34Nl0bdTfJjq9WVhCJtW4PL04Q3ThtgHWPykZVY9hWcaREGh0++cRyUS+pkKQr/+TZ5QT0z8L0g9BYt33LLXCIre1BKmCXPGHXDKzJQ579A1rZaceR7tFHnSgeFOsKB0RoBbDiVNiKDhbT6pT0U45l2TbQXFUyfZI5S1fHABSAqRG/9zkl/QhLreShSqVFjtBMb8qasZhiVqVH6JAAxjwNv0Pk70TuI6/ljwG0eqhzL3EjxeuGXiVM8n+CBKy1r60rzujlcrevD3gjGUAtraERMYCqnqjF0DmiQEiyYnB0YY3D2vWhu1uyg+VtxjAcSUvyi95VU2B0sZZPxo4/nXppHbVLSWFj/IcmbsdsFdCjaE/REJyergrU1TNR0FrfpgzooVMQUeQsP/xjxXy4F+FahbE8S0xIWEiFc0P8tLky4gklQ5Zf4nWyFj0pJM+4VUGupXV/Ja6mSR7m/0ja4lf8epnH0xIgvFsBcVkpGmcJ5Vw4ytL7vmHYCXrX9iKbzHQoaqPkuKOxZY1aE5QTtXOzHqYHOqdUDG9pA5mMiQyNw8Apx0lw7bf0+EGfkULjHvSVwCGfxZ5DNHD1BQeSLboV7yoj7gJsu5vveRY+OXqb/7fVUREeA7k9SIp94qxEn
+x-ms-office365-filtering-correlation-id: fcd3a85f-5acb-4d9d-9c2f-08d4b75da114
+x-ms-office365-filtering-ht: Tenant
+x-microsoft-antispam: UriScan:; BCL:0; PCL:0; RULEID:(300000500041)(300135000095)(300000501041)(300135300095)(22001)(300000502041)(300135100095)(2017030254075)(48565401081)(300000503041)(300135400095)(201703131423075)(201703031133081)(201702281549075)(300000504041)(300135200095)(300000505041)(300135600095)(300000506037)(300135500095); SRVR:BY2PR21MB0036; 
+x-ms-traffictypediagnostic: BY2PR21MB0036:
+x-microsoft-antispam-prvs: <BY2PR21MB0036AAA892874E516670350395C40@BY2PR21MB0036.namprd21.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:(21748063052155);
+x-exchange-antispam-report-cfa-test: BCL:0; PCL:0; RULEID:(100000700101)(100105000095)(100000701101)(100105300095)(100000702101)(100105100095)(61425038)(6040450)(601004)(2401047)(5005006)(8121501046)(100000703101)(100105400095)(3002001)(10201501046)(93006095)(93001095)(6055026)(61426038)(61427038)(6041248)(20161123560025)(20161123555025)(20161123564025)(20161123558100)(201703131423075)(201702281528075)(201703061421075)(201703061406153)(20161123562025)(6072148)(100000704101)(100105200095)(100000705101)(100105500095); SRVR:BY2PR21MB0036; BCL:0; PCL:0; RULEID:(100000800101)(100110000095)(100000801101)(100110300095)(100000802101)(100110100095)(100000803101)(100110400095)(100000804101)(100110200095)(100000805101)(100110500095); SRVR:BY2PR21MB0036; 
+x-forefront-prvs: 0343AC1D30
+x-forefront-antispam-report: SFV:NSPM; SFS:(10019020)(6009001)(39410400002)(39400400002)(39850400002)(39840400002)(39450400003)(39860400002)(377424004)(2906002)(6506006)(6436002)(790700001)(3660700001)(54356999)(3280700002)(102836003)(6116002)(50986999)(76176999)(10090500001)(5005710100001)(122556002)(86362001)(2900100001)(8990500004)(86612001)(5660300001)(189998001)(54896002)(25786009)(229853002)(74316002)(53546009)(7736002)(8676002)(8936002)(81166006)(77096006)(2950100002)(10290500003)(7696004)(38730400002)(6246003)(478600001)(6306002)(55016002)(9686003)(53936002)(39060400002)(72206003)(33656002)(99286003)(14454004); DIR:OUT; SFP:1102; SCL:1; SRVR:BY2PR21MB0036; H:BY2PR21MB0081.namprd21.prod.outlook.com; FPR:; SPF:None; MLV:ovrnspm; PTR:InfoNoRecords; LANG:en; 
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative; boundary="_000_BY2PR21MB008170F9B0AFE3986E4FF8ED95C40BY2PR21MB0081namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: microsoft.com
+X-MS-Exchange-CrossTenant-originalarrivaltime: 19 Jun 2017 21:53:32.6865 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 72f988bf-86f1-41af-91ab-2d7cd011db47
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY2PR21MB0036
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/sy9187-8Gtn3nPThoq3DY5Ex8hs>
+Subject: Re: [6lo] Request for IETF99@Prague 6lo Agenda items
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 19 Jun 2017 21:53:37 -0000
+
+--_000_BY2PR21MB008170F9B0AFE3986E4FF8ED95C40BY2PR21MB0081namp_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+Rm9sa3MsDQoNClRoaXMgaXMgb3VyIHRpbWUgc2xvdCBwZXIgdGhlIGluaXRpYWwgZHJhZnQgYWdl
+bmRhIChzbyBpdCBjb3VsZCBjaGFuZ2UsIG9mIGNvdXJzZSk6DQoNCjE1NTAtMTc1MCAgQWZ0ZXJu
+b29uIFNlc3Npb24gSUkNCkthcmxpbiBJL0lJICAgICAgICAgICAgSU5UICAgICA2bG8gICAgICAg
+ICAgICBJUHY2IG92ZXIgTmV0d29ya3Mgb2YgUmVzb3VyY2UtY29uc3RyYWluZWQgTm9kZXMgV0cN
+Cg0KRWNob2luZyBTYW1pdGHigJlzIHJlcXVlc3QsIHBsZWFzZSBzZW5kIGluIHlvdXIgcmVxdWVz
+dHMuDQoNCkdhYnJpZWwNCg0KRnJvbTogNmxvIFttYWlsdG86NmxvLWJvdW5jZXNAaWV0Zi5vcmdd
+IE9uIEJlaGFsZiBPZiBTYW1pdGEgQ2hha3JhYmFydGkNClNlbnQ6IFdlZG5lc2RheSwgTWF5IDMx
+LCAyMDE3IDEwOjQ2DQpUbzogbG8gPDZsb0BpZXRmLm9yZz4NClN1YmplY3Q6IFs2bG9dIFJlcXVl
+c3QgZm9yIElFVEY5OUBQcmFndWUgNmxvIEFnZW5kYSBpdGVtcw0KDQpIZWxsbyA2bG8gV0c6DQoN
+Ckl0IGlzIHRoZSB0aW1lIGFnYWluIGZvciByZXF1ZXN0aW5nIGFnZW5kYSBpdGVtcyBmb3IgUHJh
+Z3VlIElFVEYgbWVldGluZy4NCldlIGhhdmUgcmVxdWVzdGVkICBmb3IgMiBob3VyIHNsb3QgdGhp
+cyB0aW1lLg0KDQpQbGVhc2Ugc2VuZCB5b3VyIHJlcXVlc3RzIGZvciA2bG8gYWdlbmRhIGl0ZW1z
+IGJ5IEp1bmUgMjNyZCAoNi0yMy0yMDE3KS4gVGhlIHByZWxpbWluYXJ5IElFVEYgYWdlbmRhIHdp
+bGwgYmUgcHVibGlzaGVkIGFyb3VuZCBtaWQtSnVuZS4NCg0KQXMgYWx3YXlzIHBsZWFzZSBpbmNs
+dWRlIHRoZSBmb2xsb3dpbmcgaW4geW91ciByZXF1ZXN0IGFuZCBzZW5kIHRoZSByZXF1ZXN0IHRv
+IGJvdGggdGhlIGNoYWlycy4NCg0KRHJhZnQtbmFtZToNCkJyaWVmIHN1bW1hcnkgb2YgZGVzY3Jp
+cHRpb246DQpOYW1lIG9mIHByZXNlbnRlcjoNClB1cnBvc2Ugb2YgdGhlIHByZXNlbnRhdGlvbi9k
+aXNjdXNzaW9uOg0KDQpDaGVlcnMsDQotU2FtaXRhDQo=
+
+--_000_BY2PR21MB008170F9B0AFE3986E4FF8ED95C40BY2PR21MB0081namp_
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiIHhtbG5zOm89InVy
+bjpzY2hlbWFzLW1pY3Jvc29mdC1jb206b2ZmaWNlOm9mZmljZSIgeG1sbnM6dz0idXJuOnNjaGVt
+YXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6d29yZCIgeG1sbnM6ZHQ9InV1aWQ6QzJGNDEwMTAtNjVC
+My0xMWQxLUEyOUYtMDBBQTAwQzE0ODgyIiB4bWxuczptPSJodHRwOi8vc2NoZW1hcy5taWNyb3Nv
+ZnQuY29tL29mZmljZS8yMDA0LzEyL29tbWwiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy9UUi9S
+RUMtaHRtbDQwIj4NCjxoZWFkPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250
+ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9dXRmLTgiPg0KPG1ldGEgbmFtZT0iR2VuZXJhdG9yIiBj
+b250ZW50PSJNaWNyb3NvZnQgV29yZCAxNSAoZmlsdGVyZWQgbWVkaXVtKSI+DQo8c3R5bGU+PCEt
+LQ0KLyogRm9udCBEZWZpbml0aW9ucyAqLw0KQGZvbnQtZmFjZQ0KCXtmb250LWZhbWlseToiTVMg
+TWluY2hvIjsNCglwYW5vc2UtMToyIDIgNiA5IDQgMiA1IDggMyA0O30NCkBmb250LWZhY2UNCgl7
+Zm9udC1mYW1pbHk6IkNhbWJyaWEgTWF0aCI7DQoJcGFub3NlLTE6MiA0IDUgMyA1IDQgNiAzIDIg
+NDt9DQpAZm9udC1mYWNlDQoJe2ZvbnQtZmFtaWx5OkNhbGlicmk7DQoJcGFub3NlLTE6MiAxNSA1
+IDIgMiAyIDQgMyAyIDQ7fQ0KQGZvbnQtZmFjZQ0KCXtmb250LWZhbWlseToiXEBNUyBNaW5jaG8i
+Ow0KCXBhbm9zZS0xOjIgMiA2IDkgNCAyIDUgOCAzIDQ7fQ0KLyogU3R5bGUgRGVmaW5pdGlvbnMg
+Ki8NCnAuTXNvTm9ybWFsLCBsaS5Nc29Ob3JtYWwsIGRpdi5Nc29Ob3JtYWwNCgl7bWFyZ2luOjBp
+bjsNCgltYXJnaW4tYm90dG9tOi4wMDAxcHQ7DQoJZm9udC1zaXplOjExLjBwdDsNCglmb250LWZh
+bWlseToiQ2FsaWJyaSIsc2Fucy1zZXJpZjt9DQphOmxpbmssIHNwYW4uTXNvSHlwZXJsaW5rDQoJ
+e21zby1zdHlsZS1wcmlvcml0eTo5OTsNCgljb2xvcjojMDU2M0MxOw0KCXRleHQtZGVjb3JhdGlv
+bjp1bmRlcmxpbmU7fQ0KYTp2aXNpdGVkLCBzcGFuLk1zb0h5cGVybGlua0ZvbGxvd2VkDQoJe21z
+by1zdHlsZS1wcmlvcml0eTo5OTsNCgljb2xvcjojOTU0RjcyOw0KCXRleHQtZGVjb3JhdGlvbjp1
+bmRlcmxpbmU7fQ0KcHJlDQoJe21zby1zdHlsZS1wcmlvcml0eTo5OTsNCgltc28tc3R5bGUtbGlu
+azoiSFRNTCBQcmVmb3JtYXR0ZWQgQ2hhciI7DQoJbWFyZ2luOjBpbjsNCgltYXJnaW4tYm90dG9t
+Oi4wMDAxcHQ7DQoJZm9udC1zaXplOjEwLjBwdDsNCglmb250LWZhbWlseToiQ291cmllciBOZXci
+O30NCnAubXNvbm9ybWFsMCwgbGkubXNvbm9ybWFsMCwgZGl2Lm1zb25vcm1hbDANCgl7bXNvLXN0
+eWxlLW5hbWU6bXNvbm9ybWFsOw0KCW1zby1tYXJnaW4tdG9wLWFsdDphdXRvOw0KCW1hcmdpbi1y
+aWdodDowaW47DQoJbXNvLW1hcmdpbi1ib3R0b20tYWx0OmF1dG87DQoJbWFyZ2luLWxlZnQ6MGlu
+Ow0KCWZvbnQtc2l6ZToxMS4wcHQ7DQoJZm9udC1mYW1pbHk6IkNhbGlicmkiLHNhbnMtc2VyaWY7
+fQ0Kc3Bhbi5FbWFpbFN0eWxlMTgNCgl7bXNvLXN0eWxlLXR5cGU6cGVyc29uYWwtcmVwbHk7DQoJ
+Zm9udC1mYW1pbHk6IkNhbGlicmkiLHNhbnMtc2VyaWY7DQoJY29sb3I6d2luZG93dGV4dDt9DQpz
+cGFuLkhUTUxQcmVmb3JtYXR0ZWRDaGFyDQoJe21zby1zdHlsZS1uYW1lOiJIVE1MIFByZWZvcm1h
+dHRlZCBDaGFyIjsNCgltc28tc3R5bGUtcHJpb3JpdHk6OTk7DQoJbXNvLXN0eWxlLWxpbms6IkhU
+TUwgUHJlZm9ybWF0dGVkIjsNCglmb250LWZhbWlseToiQ291cmllciBOZXciO30NCi5Nc29DaHBE
+ZWZhdWx0DQoJe21zby1zdHlsZS10eXBlOmV4cG9ydC1vbmx5Ow0KCWZvbnQtZmFtaWx5OiJDYWxp
+YnJpIixzYW5zLXNlcmlmO30NCkBwYWdlIFdvcmRTZWN0aW9uMQ0KCXtzaXplOjguNWluIDExLjBp
+bjsNCgltYXJnaW46MS4waW4gMS4waW4gMS4waW4gMS4waW47fQ0KZGl2LldvcmRTZWN0aW9uMQ0K
+CXtwYWdlOldvcmRTZWN0aW9uMTt9DQotLT48L3N0eWxlPjwhLS1baWYgZ3RlIG1zbyA5XT48eG1s
+Pg0KPG86c2hhcGVkZWZhdWx0cyB2OmV4dD0iZWRpdCIgc3BpZG1heD0iMTAyNiIgLz4NCjwveG1s
+PjwhW2VuZGlmXS0tPjwhLS1baWYgZ3RlIG1zbyA5XT48eG1sPg0KPG86c2hhcGVsYXlvdXQgdjpl
+eHQ9ImVkaXQiPg0KPG86aWRtYXAgdjpleHQ9ImVkaXQiIGRhdGE9IjEiIC8+DQo8L286c2hhcGVs
+YXlvdXQ+PC94bWw+PCFbZW5kaWZdLS0+DQo8L2hlYWQ+DQo8Ym9keSBsYW5nPSJFTi1VUyIgbGlu
+az0iIzA1NjNDMSIgdmxpbms9IiM5NTRGNzIiPg0KPGRpdiBjbGFzcz0iV29yZFNlY3Rpb24xIj4N
+CjxwIGNsYXNzPSJNc29Ob3JtYWwiPkZvbGtzLDxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1z
+b05vcm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5UaGlz
+IGlzIG91ciB0aW1lIHNsb3QgcGVyIHRoZSBpbml0aWFsIGRyYWZ0IGFnZW5kYSAoc28gaXQgY291
+bGQgY2hhbmdlLCBvZiBjb3Vyc2UpOjxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1h
+bCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHls
+ZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90Oztj
+b2xvcjpibGFjayI+MTU1MC0xNzUwJm5ic3A7IEFmdGVybm9vbiBTZXNzaW9uIElJPG86cD48L286
+cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6
+ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDs7Y29sb3I6YmxhY2si
+PkthcmxpbiBJL0lJJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7ICZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyBJTlQgJm5ic3A7Jm5ic3A7Jm5ic3A7IDZsbyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyAmbmJzcDsmbmJzcDsgSVB2NiBvdmVy
+IE5ldHdvcmtzIG9mIFJlc291cmNlLWNvbnN0cmFpbmVkIE5vZGVzIFdHPG86cD48L286cD48L3Nw
+YW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBj
+bGFzcz0iTXNvTm9ybWFsIj5FY2hvaW5nIFNhbWl0YeKAmXMgcmVxdWVzdCwgcGxlYXNlIHNlbmQg
+aW4geW91ciByZXF1ZXN0cy48bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxv
+OnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+R2FicmllbDxvOnA+PC9v
+OnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8ZGl2
+IHN0eWxlPSJib3JkZXI6bm9uZTtib3JkZXItbGVmdDpzb2xpZCBibHVlIDEuNXB0O3BhZGRpbmc6
+MGluIDBpbiAwaW4gNC4wcHQiPg0KPGRpdj4NCjxkaXYgc3R5bGU9ImJvcmRlcjpub25lO2JvcmRl
+ci10b3A6c29saWQgI0UxRTFFMSAxLjBwdDtwYWRkaW5nOjMuMHB0IDBpbiAwaW4gMGluIj4NCjxw
+IGNsYXNzPSJNc29Ob3JtYWwiPjxiPkZyb206PC9iPiA2bG8gW21haWx0bzo2bG8tYm91bmNlc0Bp
+ZXRmLm9yZ10gPGI+T24gQmVoYWxmIE9mDQo8L2I+U2FtaXRhIENoYWtyYWJhcnRpPGJyPg0KPGI+
+U2VudDo8L2I+IFdlZG5lc2RheSwgTWF5IDMxLCAyMDE3IDEwOjQ2PGJyPg0KPGI+VG86PC9iPiBs
+byAmbHQ7NmxvQGlldGYub3JnJmd0Ozxicj4NCjxiPlN1YmplY3Q6PC9iPiBbNmxvXSBSZXF1ZXN0
+IGZvciBJRVRGOTlAUHJhZ3VlIDZsbyBBZ2VuZGEgaXRlbXM8bzpwPjwvbzpwPjwvcD4NCjwvZGl2
+Pg0KPC9kaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxk
+aXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5IZWxsbyA2bG8gV0c6PG86cD48L286cD48L3A+DQo8
+ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8L2Rpdj4N
+CjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5JdCBpcyB0aGUgdGltZSBhZ2FpbiBmb3IgcmVx
+dWVzdGluZyBhZ2VuZGEgaXRlbXMgZm9yIFByYWd1ZSBJRVRGIG1lZXRpbmcuPG86cD48L286cD48
+L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5XZSBoYXZlIHJlcXVlc3Rl
+ZCAmbmJzcDtmb3IgMiBob3VyIHNsb3QgdGhpcyB0aW1lLjxvOnA+PC9vOnA+PC9wPg0KPC9kaXY+
+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8L2Rp
+dj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5QbGVhc2Ugc2VuZCB5b3VyIHJlcXVlc3Rz
+IGZvciA2bG8gYWdlbmRhIGl0ZW1zIGJ5IEp1bmUgMjNyZCAoNi0yMy0yMDE3KS4gVGhlIHByZWxp
+bWluYXJ5IElFVEYgYWdlbmRhIHdpbGwgYmUgcHVibGlzaGVkIGFyb3VuZCBtaWQtSnVuZS4mbmJz
+cDs8bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxv
+OnA+Jm5ic3A7PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+
+QXMgYWx3YXlzIHBsZWFzZSBpbmNsdWRlIHRoZSBmb2xsb3dpbmcgaW4geW91ciByZXF1ZXN0IGFu
+ZCBzZW5kIHRoZSByZXF1ZXN0IHRvIGJvdGggdGhlIGNoYWlycy48bzpwPjwvbzpwPjwvcD4NCjwv
+ZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0K
+PC9kaXY+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+RHJhZnQtbmFtZTo8bzpwPjwvbzpw
+PjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPkJyaWVmIHN1bW1hcnkg
+b2YgZGVzY3JpcHRpb246PG86cD48L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBjbGFzcz0i
+TXNvTm9ybWFsIj5OYW1lIG9mIHByZXNlbnRlcjo8bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRp
+dj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPlB1cnBvc2Ugb2YgdGhlIHByZXNlbnRhdGlvbi9kaXNj
+dXNzaW9uOjxvOnA+PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1h
+bCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9y
+bWFsIj5DaGVlcnMsPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNv
+Tm9ybWFsIj4tU2FtaXRhPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9kaXY+DQo8
+L2Rpdj4NCjwvYm9keT4NCjwvaHRtbD4NCg==
+
+--_000_BY2PR21MB008170F9B0AFE3986E4FF8ED95C40BY2PR21MB0081namp_--
+
+
+From nobody Wed Jun 21 23:25:16 2017
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 898F5126CC7; Wed, 21 Jun 2017 23:25:14 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.55.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <149811271450.30703.2456380564348351234@ietfa.amsl.com>
+Date: Wed, 21 Jun 2017 23:25:14 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/4yZYbdMGzkgl7Ql3lQINuhrueMk>
+Subject: [6lo] I-D Action: draft-ietf-6lo-rfc6775-update-06.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 22 Jun 2017 06:25:15 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes of the IETF.
+
+        Title           : An Update to 6LoWPAN ND
+        Authors         : Pascal Thubert
+                          Erik Nordmark
+                          Samita Chakrabarti
+	Filename        : draft-ietf-6lo-rfc6775-update-06.txt
+	Pages           : 29
+	Date            : 2017-06-21
+
+Abstract:
+   This specification updates RFC 6775 - 6LoWPAN Neighbor Discovery, to
+   clarify the role of the protocol as a registration technique,
+   simplify the registration operation in 6LoWPAN routers, as well as to
+   provide enhancements to the registration capabilities and mobility
+   detection for different network topologies including the backbone
+   routers performing proxy Neighbor Discovery in a low power network.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-rfc6775-update/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-rfc6775-update-06
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-rfc6775-update-06
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-rfc6775-update-06
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Thu Jun 22 02:06:34 2017
+Return-Path: <lijo@cdac.in>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 888B8128B8D for <6lo@ietfa.amsl.com>; Thu, 22 Jun 2017 02:06:33 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.901
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.901 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RP_MATCHES_RCVD=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id ncndg_j8foGc for <6lo@ietfa.amsl.com>; Thu, 22 Jun 2017 02:06:30 -0700 (PDT)
+Received: from mailsender.cdac.in (mailsender.cdac.in [196.1.113.117]) (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 55EAF1274D0 for <6lo@ietf.org>; Thu, 22 Jun 2017 02:06:28 -0700 (PDT)
+Received: from ims.pune.cdac.in (ims.pune.cdac.in [10.208.1.15]) by mailsender.cdac.in (8.14.2/8.14.2) with ESMTP id v5M96BaE004329 (version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT) for <6lo@ietf.org>; Thu, 22 Jun 2017 14:36:11 +0530
+Received: from mailgw.pune.cdac.in ([10.208.1.4]) by ims.pune.cdac.in (8.14.4/8.14.4) with ESMTP id v5M95euU019068 for <6lo@ietf.org>; Thu, 22 Jun 2017 14:35:40 +0530
+X-AuthUser: lijo
+Received: from LijoPC (lijo_new_pc.tvm.cdac.in [10.176.10.234]) (authenticated bits=0) by mailgw.pune.cdac.in (8.14.2/8.13.8) with ESMTP id v5M95caJ024508 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=NOT) for <6lo@ietf.org>; Thu, 22 Jun 2017 14:35:40 +0530
+From: "Lijo Thomas" <lijo@cdac.in>
+To: <6lo@ietf.org>
+Date: Thu, 22 Jun 2017 14:36:13 +0530
+Message-ID: <001f01d2eb36$cd4c80b0$67e58210$@cdac.in>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_0020_01D2EB64.E70706A0"
+X-Mailer: Microsoft Outlook 15.0
+Thread-Index: AdLrNmTscDbcLv6zRqGiI7qdSymmMQ==
+Content-Language: en-in
+X-CDAC-PUNE-MailScanner-ID: v5M95euU019068
+X-CDAC-PUNE-MailScanner: Found to be clean, Found to be clean
+X-CDAC-PUNE-MailScanner-MCPCheck-IMS: MCP-Clean, MCP-Checker (score=0, required 1)
+X-CDAC-PUNE-MailScanner-SpamCheck: not spam, SpamAssassin (not cached, score=-0.208, required 6, autolearn=disabled, ALL_TRUSTED -1.00, BAYES_50 0.80, HTML_MESSAGE 0.00, T_RP_MATCHES_RCVD -0.01, URIBL_BLOCKED 0.00), not spam, SpamAssassin (not cached, score=-1.798, required 6, autolearn=disabled, ALL_TRUSTED -1.80, BAYES_50 0.00, HTML_MESSAGE 0.00)
+X-CDAC-PUNE-MailScanner-Information: Please contact npsfhelp@cdac.in/mailadmin@cdac.in for more information
+X-MailScanner-ID: v5M96BaE004329
+X-CDAC-PUNE-MailScanner-From: lijo@cdac.in
+X-CDAC-MailScanner-Spam-Status: No
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/EOaEn9EX5RknMI4LSotr7ZH1NCc>
+Subject: [6lo] New Version Notification for draft-lijo-6lo-expiration-time-03.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 22 Jun 2017 09:06:33 -0000
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0020_01D2EB64.E70706A0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0021_01D2EB64.E70706A0"
+
+
+------=_NextPart_001_0021_01D2EB64.E70706A0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hi All,
+
+ 
+
+A new version of I-D, draft-lijo-6lo-expiration-time-03.txt has been
+successfully submitted and posted to the IETF repository.
+
+ 
+
+https://www.ietf.org/id/draft-lijo-6lo-expiration-time-03.txt
+
+ 
+
+The draft has been revised according to the comments received during IETF 98
+meeting.
+
+ 
+
+One of the notable aspects of this version is the inclusion of "Network ASN"
+as one of the time units. Special thanks to Dale for this great suggestion 
+
+ 
+
+Happy to receive comments and valuable feedbacks.
+
+ 
+
+Thanks & Regards,
+
+Lijo Thomas 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+---
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+[ C-DAC is on Social-Media too. Kindly follow us at:
+Facebook: https://www.facebook.com/CDACINDIA & Twitter: @cdacindia ]
+
+This e-mail is for the sole use of the intended recipient(s) and may
+contain confidential and privileged information. If you are not the
+intended recipient, please contact the sender by reply e-mail and destroy
+all copies and the original message. Any unauthorized review, use,
+disclosure, dissemination, forwarding, printing or copying of this email
+is strictly prohibited and appropriate legal action will be taken.
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+------=_NextPart_001_0021_01D2EB64.E70706A0
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><meta http-equiv=3DContent-Type content=
+=3D"text/html; charset=3Dus-ascii"><meta name=3DGenerator content=3D"Micros=
+oft Word 15 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Book Antiqua","serif";
+	color:#1F3864;
+	font-weight:normal;
+	font-style:normal;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri","sans-serif";
+	mso-fareast-language:EN-IN;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-IN link=3D"#0563C1=
+" vlink=3D"#954F72"><div class=3DWordSection1><p class=3DMsoPlainText>Hi Al=
+l,<o:p></o:p></p><p class=3DMsoPlainText><o:p>&nbsp;</o:p></p><p class=3DMs=
+oPlainText>A new version of I-D, draft-lijo-6lo-expiration-time-03.txt has =
+been successfully submitted and posted to the IETF repository.<o:p></o:p></=
+p><p class=3DMsoPlainText><o:p>&nbsp;</o:p></p><p class=3DMsoPlainText><a h=
+ref=3D"https://www.ietf.org/id/draft-lijo-6lo-expiration-time-03.txt">https=
+://www.ietf.org/id/draft-lijo-6lo-expiration-time-03.txt</a><o:p></o:p></p>=
+<p class=3DMsoPlainText><o:p>&nbsp;</o:p></p><p class=3DMsoPlainText>The dr=
+aft has been revised according to the comments received during IETF 98 meet=
+ing.<o:p></o:p></p><p class=3DMsoPlainText><o:p>&nbsp;</o:p></p><p class=3D=
+MsoPlainText>One of the notable aspects of this version is the inclusion of=
+ &quot;Network ASN&quot; as one of the time units. Special thanks to Dale f=
+or this great suggestion <o:p></o:p></p><p class=3DMsoPlainText><o:p>&nbsp;=
+</o:p></p><p class=3DMsoPlainText>Happy to receive comments and valuable fe=
+edbacks.<o:p></o:p></p><p class=3DMsoPlainText><o:p>&nbsp;</o:p></p><p clas=
+s=3DMsoNormal><b><span style=3D'font-size:8.0pt;font-family:"Trebuchet MS",=
+"sans-serif";color:gray;mso-fareast-language:EN-IN'>Thanks &amp; Regards,<o=
+:p></o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'color:#1F497=
+D;mso-fareast-language:EN-IN'>Lijo Thomas <o:p></o:p></span></b></p><p clas=
+s=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-=
+language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><sp=
+an style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p=
+>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'font-siz=
+e:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span>=
+</b></p><p class=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#1F49=
+7D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DM=
+soNormal><b><span style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-langu=
+age:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><span st=
+yle=3D'font-size:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbs=
+p;</o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'font-size:12.=
+0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></b><=
+/p><p class=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#1F497D;ms=
+o-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNor=
+mal><b><span style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-language:E=
+N-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><span style=
+=3D'font-size:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;<=
+/o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'font-size:12.0pt=
+;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p>=
+<p class=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#1F497D;mso-f=
+areast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal=
+><b><span style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-language:EN-I=
+N'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'f=
+ont-size:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p>=
+</span></b></p><p class=3DMsoNormal><b><span style=3D'font-size:12.0pt;colo=
+r:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p cl=
+ass=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#1F497D;mso-fareas=
+t-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><=
+span style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o=
+:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'font-s=
+ize:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></spa=
+n></b></p><p class=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#1F=
+497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=
+=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-l=
+anguage:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><spa=
+n style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>=
+&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'font-size=
+:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span><=
+/b></p><p class=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#1F497=
+D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMs=
+oNormal><b><span style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-langua=
+ge:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><span sty=
+le=3D'font-size:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp=
+;</o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'font-size:12.0=
+pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></=
+p><p class=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#1F497D;mso=
+-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNorm=
+al><b><span style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-language:EN=
+-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><span style=3D=
+'font-size:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:=
+p></span></b></p><p class=3DMsoNormal><b><span style=3D'font-size:12.0pt;co=
+lor:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p =
+class=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#1F497D;mso-fare=
+ast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b=
+><span style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'>=
+<o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'font=
+-size:12.0pt;color:#1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></s=
+pan></b></p><p class=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#=
+1F497D;mso-fareast-language:EN-IN'><o:p>&nbsp;</o:p></span></b></p><p class=
+=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:#1F497D;mso-fareast-l=
+anguage:EN-IN'>---<o:p></o:p></span></b></p></div><br />-------------------=
+---------------------------------------------------------------------------=
+---------------------------------
+<br />[ C-DAC is on Social-Media too. Kindly follow us at:=20
+<br />Facebook: https://www.facebook.com/CDACINDIA & Twitter: @cdacindia ]
+<br />
+<br />This e-mail is for the sole use of the intended recipient(s) and may
+<br />contain confidential and privileged information. If you are not the
+<br />intended recipient, please contact the sender by reply e-mail and des=
+troy
+<br />all copies and the original message. Any unauthorized review, use,
+<br />disclosure, dissemination, forwarding, printing or copying of this em=
+ail
+<br />is strictly prohibited and appropriate legal action will be taken.
+<br />---------------------------------------------------------------------=
+----------------------------------------------------------
+</body></html>
+
+------=_NextPart_001_0021_01D2EB64.E70706A0--
+
+------=_NextPart_000_0020_01D2EB64.E70706A0
+Content-Type: text/plain;
+	name="draft-lijo-6lo-expiration-time-03.txt"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment;
+	filename="draft-lijo-6lo-expiration-time-03.txt"
+
+
+6lo                                                          Lijo Thomas
+Internet-Draft                                                     C-DAC
+Intended status: Standards Track                               P. Akshay
+Expires: December 23, 2017                   Indian Institute of Science
+                                                      Satish Anamalamudi
+                                         Huaiyin Institute of Technology
+                                                             S.V.R.Anand
+                                                            Malati Hegde
+                                             Indian Institute of Science
+                                                              C. Perkins
+                                                               Futurewei
+                                                           June 21, 2017
+
+
+            Packet expiration time in 6LoWPAN Routing Header
+                   draft-lijo-6lo-expiration-time-03
+
+Abstract
+
+   This document specifies a new type for the 6LoWPAN Dispatch Page 1
+   for carrying the expiration time of data packets within the 6LoWPAN
+   routing header.  The expiration time is useful in making forwarding
+   and scheduling decisions for time critical IoT M2M applications that
+   need deterministic delay guarantees over constrained networks and
+   operate within time-synchronized networks.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at http://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on December 23, 2017.
+
+Copyright Notice
+
+   Copyright (c) 2017 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017               [Page 1]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+   (http://trustee.ietf.org/license-info) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+   2.  Terminology . . . . . . . . . . . . . . . . . . . . . . . . .   3
+   3.  6LoRHE Generic Format . . . . . . . . . . . . . . . . . . . .   3
+   4.  Deadline-6LoRH Description  . . . . . . . . . . . . . . . . .   3
+   5.  Deadline-6LoRH Format . . . . . . . . . . . . . . . . . . . .   4
+   6.  Deadline-6LoRH in Three Network Scenarios . . . . . . . . . .   6
+     6.1.  Scenario 1: Endpoints in the same DODAG (N1) in non-
+           storing mode. . . . . . . . . . . . . . . . . . . . . . .   6
+     6.2.  Scenario 2: Endpoints in Networks with Dissimilar L2
+           Technologies. . . . . . . . . . . . . . . . . . . . . . .   7
+     6.3.  Scenario 3: Packet transmission across different DODAGs
+           (N1 to N2). . . . . . . . . . . . . . . . . . . . . . . .   8
+   7.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   9
+   8.  Security Considerations . . . . . . . . . . . . . . . . . . .  10
+   9.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .  10
+   10. References  . . . . . . . . . . . . . . . . . . . . . . . . .  10
+     10.1.  Normative References . . . . . . . . . . . . . . . . . .  10
+     10.2.  Informative References . . . . . . . . . . . . . . . . .  11
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  12
+
+1.  Introduction
+
+   Low Power and Lossy Networks (LLNs) are likely to be employed for
+   implementing real time industrial applications that require end-to-
+   end delay guarantees [I-D.grossman-detnet-use-cases].  A
+   Deterministic Network typically requires that data packets generated
+   by some senders have to reach their receivers within strict time
+   bounds.  Intermediate nodes use the expiration time information to
+   make appropriate packet forwarding and scheduling decisions to meet
+   the time bounds.
+
+   The draft [I-D.ietf-roll-routing-dispatch] specifies the 6LoWPAN
+   Routing Header (6LoRH), compression schemes for RPL routing (source
+   routing) operation [RFC6554], header compression of RPL Packet
+   Information [RFC6553], and IP-in-IP encapsulation.  This document
+   specifies a new Deadline-6LoRH type to the 6LoWPAN Dispatch Page 1,
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017               [Page 2]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+   so that the expiration time of data packets can be included within
+   the 6LoWPAN routing header.  In addition, this specification
+   specifies handling of the expiration time when packets traverse
+   through time-synchronized networks operating in different timezones
+   or distinct reference clocks.
+
+2.  Terminology
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in
+   [RFC2119].
+
+   The Terminology used in this document is consistent with and
+   incorporates that described in [RFC6550] and [I-D.ietf-6tisch-
+   terminology].
+
+3.  6LoRHE Generic Format
+
+   The generic header format of the 6LoRHE is specified in
+   [I-D.ietf-roll-routing-dispatch].  Figure 1 illustrates the 6LoRHE
+   generic format.  Note: this section is not normative.  It is included
+   for convenience, and may be deleted in a later revision of this
+   document.
+
+      0                   1
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-             ...               -+
+     |1|0|1| Length  |      Type     |                                 |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-             ...               -+
+                                      <--          length           -->
+
+                          Figure 1: 6LoRHE format
+
+   o  Length: Length of the 6LoRHE expressed in bytes, excluding the
+      first 2 bytes.  This enables a node to skip a 6LoRHE if the Type
+      is not recognized/supported.
+
+   o  Type: Type of the 6LoRHE.
+
+   o  length: variable
+
+4.  Deadline-6LoRH Description
+
+   The Deadline-6LoRH (see Figure 2) is an elective 6LoRH that provides
+   a compressed form of expiration time for an IPv6 datagram.  Along
+   with the expiration timer, the header can include the packet
+
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017               [Page 3]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+   origination time, to enable a close estimate of the total delay
+   incurred by a packet.
+
+   The packet expiration time field contains the value of the packet
+   expiration time.  The packet SHOULD be delivered to the Receiver
+   before this time.
+
+      packet_expiration_time =3D packet_origination_time + max_delay
+
+   All nodes within the network SHOULD process the Deadline-6LoRH in
+   order to support delay-sensitive deterministic applications.  In this
+   specification, the packet origination time is represented in
+   different time units according to a scaling parameter value in the
+   routing header.  One of the time units is the Network ASN (Absolute
+   Slot Number) which can be used in case of a time slotted synchronized
+   network, for instance a 6TiSCH network, where a global time is
+   maintained in the units of slot lengths of certain resolution.
+
+   The delay experienced by packets in the network is a useful metric
+   for network diagnostics and performance monitoring.  To support this
+   feature, the specification provides an optional packet Origination
+   Time (OT) field as part of the header which is initialized by the
+   sender using the current clock time of the outgoing network interface
+   through which the packet is forwarded.  Whenever the packets crosses
+   over to a network using a different reference clock, the Origination
+   Time field is updated to represent the same Origination Time as
+   expressed using the reference clock of the outgoing interface into
+   the new network.  This is the same as the current time when the
+   packet is transmitted into the new network, minus the delay already
+   experienced by the packet, say 't'.  In effect, to the newly entered
+   network, the packet will appear to have originated 't' time units
+   earlier with respect to the reference clock of the new network.
+
+   Origination Time in new network =3D current_time_in_new_network -
+                  delay_already_experienced_in_previous_network(s)
+
+5.  Deadline-6LoRH Format
+
+        0               1               2               3
+        0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |1|0|1| Length  |  6LoRH Type   |O|D| ETL | OTL | TU| EXP | Rsv |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+       |      ET (variable length)     | OT(variable length)(optional) |
+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                      Figure 2: Deadline-6LoRH format
+
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017               [Page 4]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+   Length (5 bits): Length represents the total length of the Expiration
+   Time type measured in octets.
+
+   6LoRH Type: TBD
+
+   O flag (1bit): Indicates the presence of Origination Time field.  '1'
+   means the Origination Time is present, and '0' means it is absent.
+
+   D flag (1 bit): The 'D' flag, set by the Sender, indicates the action
+   that needs to be taken when an 6LR detects expiration time is
+   elapsed.  If 'D' bit is 1, then the 6LR SHOULD drop the packet if the
+   expiration time is elapsed.  If 'D' bit is 0, then the 6LR MAY ignore
+   the Expiration Time and forward it.
+
+   ETL (3 bits): Length of Expiration Time field.
+
+   OTL (3 bits) : Length of Origination Time field.
+
+      For example, ETL =3D 000 means the expiration time in the 6LoRHE is
+      1 octet (8 bits) long.  Similarly, OTL =3D 111 means the origination
+      time is 8 octets (64 bits) long.
+
+   TU (2 bits) : Indicates time units for packet expiration and
+   origination time fields
+
+      00 : Time represented in microseconds
+      01 : Time represented in seconds
+      10 : Network ASN
+      11 : Reserved
+
+   EXP (3 bits) : Multiplication factor expressed as exponent of 10.
+
+      The value of the ET field is multiplied by 10 to this power, to
+      get the actual expiration time in the units represented by TU.
+      The default value of EXP is 000, so that the ET field is
+      unaffected.
+
+   Rsv (3 bits) : Reserved
+
+   ET Value (8..64-bit) : Expiration Time value
+
+   OT Value (8..64-bit) : Origination Time value
+
+   Whenever the Sender initiates the IP datagram, it includes the
+   Deadline-6LoRH along with other 6LoRH information.
+
+   Example: Consider a 6TiSCH network with time-slot length of 10ms.
+   Let the current ASN when the packet is originated be 54400, and the
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017               [Page 5]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+   maximum allowable delay (max_delay) for the packet delivery is 1
+   second from the packet origination, then:
+
+      expiration_time =3D packet_origination_time + max_delay
+
+         =3D 55400 + 100 (in Network ASNs)
+         =3D 55500(Network ASNs)
+
+   Deadline-6LoRH encoding with 'O' flag set to 1 :
+
+      ETL =3D 001, OTL =3D 001, TU =3D '10', EXP =3D 2, ET =3D 0x22B, OT =
+=3D 0x22A
+
+6.  Deadline-6LoRH in Three Network Scenarios
+
+   In this section, Deadline-6LoRH operation is described for 3 network
+   scenarios.  Figure 3 depicts a constrained time-synchronized LLN that
+   has two subnets N1 and N2, connected through LBRs
+   [I-D.ietf-6lo-backbone-router] with different reference clock times
+   T1 and T2.
+
+                          +-------------------+
+                          | Time Synchronized |
+                          |      Network      |
+                          +---------+---------+
+                                    |
+                                    |
+                                    |
+                     +--------------+--------------+
+                     |                             |
+                  +-----+                       +-----+
+                  |     | Backbone              |     | Backbone
+             o    |     | router                |     | router
+                  +-----+                       +-----+
+             o                  o               o
+                 o    o   o               o  o   o  o   o  o
+            o      LLN    o                 o  LLN   o  o
+               o   o    o      o             o o o     o  o
+         6LoWPAN Network (subnet N1)   6LoWPAN Network (subnet N2)
+
+                 Figure 3: Intra-network Timezone Scenario
+
+6.1.  Scenario 1: Endpoints in the same DODAG (N1) in non-storing mode.
+
+   In scenario 1, shown in Figure 4, the Sender 'S' has an IP datagram
+   to be routed to a Receiver 'R' within the same DODAG.  For the route
+   segment from Sender to 6LBR, the Sender includes a Deadline-6LoRH by
+   encoding the expiration time contained in the inband-OAM header
+   extension.  Then 6LR begins hop-by-hop operation to forward the
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017               [Page 6]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+   packet towards the 6LBR.  Once 6LBR receives the IP datagram, it
+   generates a IPv6-in-IPv6 encapsulated packet when sending the packet
+   downwards to the Receiver [I-D.ietf-roll-useofrplinfo].  The 6LBR
+   copies the Deadline-6LoRH from the Sender originated IP header to the
+   outer IP header.  The Deadline-6LoRH contained in the inner IP header
+   is elided.
+
+                              +-------+
+                   ^          | 6LBR  |       |
+                   |          |       |       |
+                   |          +-------+       |
+           Default |      (F)/      /| \      | IP-in-IP
+           routing |     /  \      / |  \     |      Encapsulation
+                   |    /    \   (C) |  (D)   |
+                   |  (A)    (B) /   | / |\   |
+                   |  /|\     |\:   (E)  : R  |
+                     S : :    :     / \       V
+
+             Figure 4: End points within same DODAG(subnet N1)
+
+   At the tunnel endpoint of IPv6-in-IPv6 encapsulation, the Deadline-
+   6LoRH is copied back from the outer header to inner header, and the
+   inner IP packet is delivered to 'R'.
+
+6.2.  Scenario 2: Endpoints in Networks with Dissimilar L2 Technologies.
+
+   In scenario 2, shown in Figure 5, the Sender 'S' (belonging to DODAG
+   1) has IP datagram to be routed to a Receiver 'R' over a time-
+   synchronized IPv6 network.  For the route segment from 'S' to 6LBR,
+   'S' includes a Deadline-6LoRH.  Subsequently, 6LR will perform hop-
+   by-hop operation to forward the packet towards the 6LBR.  Once the IP
+   datagram reaches 6LBR of DODAG1, it encodes the expiration time (and,
+   if available, the origination time) into the In-band OAM header
+   extension, [I-D.brockners-inband-oam-data] and passes the datagram to
+   the IPv6 layer for further routing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017               [Page 7]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+                              +----------------+
+                              | Time           |
+                              | synchronized   |------R
+                              | Network        |
+                              +----------------+
+                                      |
+                                      |
+                            ----------+-----------
+                     ^                |
+                     |            +---+---+
+                     |            | 6LBR  |
+            Default  |            |       |
+             routing |            +------++
+                     |        (F)/      /| \
+                     |       /  \      / |  \
+                     |      /    \   (C) |  (D)
+                       :  (A)    (B) /   | / |\
+                          /|\     |\:   (E)  :
+                         S : :    :     / \
+                                       :   :
+
+      Figure 5: Packet transmission in Dissimilar L2 Technologies or
+                                 Internet
+
+   The IP datagram is routed to another time synchronized deterministic
+   network following its own distinct reference clock, so the expiration
+   time in In-band OAM has to be updated according to the measurement of
+   the current time in the new network.
+
+6.3.  Scenario 3: Packet transmission across different DODAGs (N1 to
+      N2).
+
+   Consider the scenario depicted in Figure 6, in which the Sender 'S'
+   (belonging to DODAG 1) has an IP datagram to be sent to Receiver 'R'
+   belonging to another DODAG (DODAG 2).  The operation of this scenario
+   can be decomposed into combination of case 1 and case 2 scenarios.
+   For the route segment from 'S' to 6LBR, 'S' includes the Deadline-
+   6LoRH.  Subsequently, each 6LR will perform hop-by-hop operation to
+   forward the packet towards the 6LBR.  Once the IP datagram reaches
+   6LBR1 of DODAG1, it applies the same rule as described in Case 2
+   while routing the packet to LBR2 over a (likely) time synchronized
+   wired backhaul.  The wired side of LBR2 can be mapped to receiver of
+   Case 2.  Once the packet reaches LBR2, it updates the Deadline-6LoRH
+   by adding the current time of DODAG2.  Further, it generates an IPv6-
+   in-IPv6 encapsulated packet when sending the packet downstream to the
+   Receiver [I-D.ietf-roll-useofrplinfo].
+
+
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017               [Page 8]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+                     Time Synchronized Network
+                  -+---------------------------+-
+                   |                           |
+      DODAG1   +---+---+                   +---+---+   DODAG2
+    Instance 1 | 6LBR1  |                  | 6LBR2 | Instance 2
+               |       |                   |       |     |
+               +-------+                   +-------+     |
+           (F)/      /| \              (F)/      /| \    |
+          /  \      / |  \            /  \      / |  \   |
+         /    \   (C) |  (D)         /    \   (C) |  (D) |IP-in-IP
+       (A)    (B) /   | / |\       (A)    (B) /   | / |\ | Encapsulation
+       /|\     |\:   (E)  : :      /|\     |\:   (E)  : :|
+      S : :    :     / \          : : :    :     / \     |
+                    :   :                       :   R    V
+   Network N1, time zone T1      NetWork N2, time zone T2
+
+        Figure 6: Packet transmission in different DODAGs(N1 to N2)
+
+   Consider an example of a 6TiSCH network in which S in DODAG1
+   generates the packet at ASN 20000 to R in DODAG2.  Let the maximum
+   allowable delay be 1 second.  The time-slot length in DODAG1 and
+   DODAG2 is assumed to be 10ms.  Once the expiration time is encoded in
+   Deadline-6LoRH, the packet is forwarded to LBR of DODAG1.  Suppose
+   the packet reaches LBR of DODAG1 at ASN 20050.
+
+      current_time =3D ASN at LBR * slot_length_value
+
+      remaining_time =3D expiration_time - current_time
+      =3D ((packet_origination_time + max_delay) - current time)
+      =3D (20000 + 100) - 20050
+      =3D 50 (in Network ASNs)
+      =3D 50 * 10^3 milliseconds.
+
+   The remaining time is encoded in In-Band OAM (see Case 2) and
+   forwarded to LBR2 over a different L2-interface, typically wired.
+   Once the packet reaches LBR2, the expiration time in Deadline-6LoRH
+   is adjusted by adding or subtracting the difference between the
+   reference clocks of the two networks, before forwarding the packet to
+   its connected 6TiSCH network.
+
+7.  IANA Considerations
+
+   This document defines a new 6LoWPAN Timestamp Header Type, and
+   assigns a value (TBD) from the 6LoWPAN Dispatch Page1 number space.
+
+
+
+
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017               [Page 9]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+                        6LoRH Type      Value
+                   +------------------+--------+
+                   | Deadline-6LoRH   | TBD    |
+                   +------------------+--------+
+
+                       Figure 7: Deadline-6LoRH type
+
+8.  Security Considerations
+
+   The security considerations of [RFC4944], [RFC6282] and [RFC6553]
+   apply.  Using a compressed format as opposed to the full in-line
+   format is logically equivalent and does not create an opening for a
+   new threat when compared to [RFC6550], [RFC6553] and [RFC6554].
+
+9.  Acknowledgements
+
+   The authors thank Pascal Thubert for suggesting the idea and
+   encouraging the work.  Thanks to Shwetha Bhandari's suggestions which
+   were instrumental in extending the timing information to
+   heterogeneous networks.  The authors acknowledge the 6TiSCH WG
+   members for their inputs on the mailing list.  Special thanks to
+   Jerry Daniel,Shalu Rajendran, Seema Kumar, Avinash Mohan and Anita
+   Varghese for their support and valuable feedback.
+
+10.  References
+
+10.1.  Normative References
+
+   [I-D.ietf-roll-routing-dispatch]
+              Thubert, P., Bormann, C., Toutain, L., and R. Cragie,
+              "6LoWPAN Routing Header", draft-ietf-roll-routing-
+              dispatch-05 (work in progress), October 2016.
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <http://www.rfc-editor.org/info/rfc2119>.
+
+   [RFC4944]  Montenegro, G., Kushalnagar, N., Hui, J., and D. Culler,
+              "Transmission of IPv6 Packets over IEEE 802.15.4
+              Networks", RFC 4944, DOI 10.17487/RFC4944, September 2007,
+              <http://www.rfc-editor.org/info/rfc4944>.
+
+   [RFC6282]  Hui, J., Ed. and P. Thubert, "Compression Format for IPv6
+              Datagrams over IEEE 802.15.4-Based Networks", RFC 6282,
+              DOI 10.17487/RFC6282, September 2011,
+              <http://www.rfc-editor.org/info/rfc6282>.
+
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017              [Page 10]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+   [RFC6550]  Winter, T., Ed., Thubert, P., Ed., Brandt, A., Hui, J.,
+              Kelsey, R., Levis, P., Pister, K., Struik, R., Vasseur,
+              JP., and R. Alexander, "RPL: IPv6 Routing Protocol for
+              Low-Power and Lossy Networks", RFC 6550,
+              DOI 10.17487/RFC6550, March 2012,
+              <http://www.rfc-editor.org/info/rfc6550>.
+
+   [RFC6553]  Hui, J. and JP. Vasseur, "The Routing Protocol for Low-
+              Power and Lossy Networks (RPL) Option for Carrying RPL
+              Information in Data-Plane Datagrams", RFC 6553,
+              DOI 10.17487/RFC6553, March 2012,
+              <http://www.rfc-editor.org/info/rfc6553>.
+
+   [RFC6554]  Hui, J., Vasseur, JP., Culler, D., and V. Manral, "An IPv6
+              Routing Header for Source Routes with the Routing Protocol
+              for Low-Power and Lossy Networks (RPL)", RFC 6554,
+              DOI 10.17487/RFC6554, March 2012,
+              <http://www.rfc-editor.org/info/rfc6554>.
+
+10.2.  Informative References
+
+   [I-D.brockners-inband-oam-data]
+              Brockners, F., Bhandari, S., Pignataro, C., Gredler, H.,
+              Leddy, J., Youell, S., Mizrahi, T., Mozes, D., Lapukhov,
+              P., <>, R., and d. daniel.bernier@bell.ca, "Data Fields
+              for In-situ OAM", draft-brockners-inband-oam-data-05 (work
+              in progress), May 2017.
+
+   [I-D.grossman-detnet-use-cases]
+              Grossman, E., Gunther, C., Thubert, P., Wetterwald, P.,
+              Raymond, J., Korhonen, J., Kaneko, Y., Das, S., and Y.
+              Zha, "Deterministic Networking Use Cases", draft-grossman-
+              detnet-use-cases-01 (work in progress), November 2015.
+
+   [I-D.ietf-6lo-backbone-router]
+              Thubert, P., "IPv6 Backbone Router", draft-ietf-6lo-
+              backbone-router-03 (work in progress), January 2017.
+
+   [I-D.ietf-6tisch-terminology]
+              Palattella, M., Thubert, P., Watteyne, T., and Q. Wang,
+              "Terminology in IPv6 over the TSCH mode of IEEE
+              802.15.4e", draft-ietf-6tisch-terminology-09 (work in
+              progress), June 2017.
+
+   [I-D.ietf-roll-useofrplinfo]
+              Robles, I., Richardson, M., and P. Thubert, "When to use
+              RFC 6553, 6554 and IPv6-in-IPv6", draft-ietf-roll-
+              useofrplinfo-14 (work in progress), April 2017.
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017              [Page 11]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+   [I-D.vilajosana-6tisch-minimal]
+              Vilajosana, X. and K. Pister, "Minimal 6TiSCH
+              Configuration", draft-vilajosana-6tisch-minimal-00 (work
+              in progress), October 2013.
+
+Authors' Addresses
+
+   Lijo Thomas
+   C-DAC
+   Trivandrum  695033
+   India
+
+   Email: lijo@cdac.in
+
+
+   P.M. Akshay
+   Indian Institute of Science
+   Bangalore  560012
+   India
+
+   Email: akshaypm@ece.iisc.ernet.in
+
+
+   Satish Anamalamudi
+   Huaiyin Institute of Technology
+   No.89 North Beijing Road, Qinghe District
+   Huaian
+   China
+
+   Email: satishnaidu80@gmail.com
+
+
+   S.V.R Anand
+   Indian Institute of Science
+   Bangalore  560012
+   India
+
+   Email: anand@ece.iisc.ernet.in
+
+
+   Malati Hegde
+   Indian Institute of Science
+   Bangalore  560012
+   India
+
+   Email: malati@ece.iisc.ernet.in
+
+
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017              [Page 12]
+=0C
+Internet-Draft             6lo Expiration Time                 June 2017
+
+
+   Charles E. Perkins
+   Futurewei
+   2330 Central Expressway
+   Santa Clara  95050
+   Unites States
+
+   Email: charliep@computer.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lijo Thomas, et al.     Expires December 23, 2017              [Page 13]=
+
+------=_NextPart_000_0020_01D2EB64.E70706A0--
+
+
+
+From nobody Fri Jun 23 17:14:55 2017
+Return-Path: <agenda@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id DF1A812EB49; Fri, 23 Jun 2017 17:07:12 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: "\"IETF Secretariat\"" <agenda@ietf.org>
+To: <6lo-chairs@ietf.org>, <Gabriel.Montenegro@microsoft.com>
+Cc: suresh.krishnan@gmail.com, 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.55.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <149826283290.7840.9380675048365598337.idtracker@ietfa.amsl.com>
+Date: Fri, 23 Jun 2017 17:07:12 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/e4_d7QAAtKCs-KhVVs74RNwDKUQ>
+Subject: [6lo] 6lo - Requested session has been scheduled for IETF 99
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 24 Jun 2017 00:07:15 -0000
+
+Dear Gabriel Montenegro,
+
+The session(s) that you have requested have been scheduled.
+Below is the scheduled session information followed by
+the original request. 
+
+6lo Session 1 (2:00:00)
+    Tuesday, Afternoon Session II 1550-1750
+    Room Name: Karlin I/II size: 150
+    ---------------------------------------------
+    
+
+
+Request Information:
+
+
+---------------------------------------------------------
+Working Group Name: IPv6 over Networks of Resource-constrained Nodes
+Area Name: Internet Area
+Session Requester: Gabriel Montenegro
+
+Number of Sessions: 1
+Length of Session(s):  2 Hours
+Number of Attendees: 61
+Conflicts to Avoid: 
+ First Priority: lwig intarea core ace 6tisch 6man manet homenet lpwan httpbis quic
+ Second Priority: roll v6ops detnet icnrg t2trg
+
+
+
+People who must be present:
+  Samita Chakrabarti
+  Suresh Krishnan
+  james woodyatt
+  Gabriel Montenegro
+
+Resources Requested:
+
+Special Requests:
+  
+---------------------------------------------------------
+
+
+From nobody Fri Jun 23 17:59:08 2017
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0EAD1126B72 for <6lo@ietfa.amsl.com>; Fri, 23 Jun 2017 17:59:07 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.699
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.699 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id a5G8NYPTO7YJ for <6lo@ietfa.amsl.com>; Fri, 23 Jun 2017 17:59:05 -0700 (PDT)
+Received: from mail-vk0-x22e.google.com (mail-vk0-x22e.google.com [IPv6:2607:f8b0:400c:c05::22e]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 37FB41201F8 for <6lo@ietf.org>; Fri, 23 Jun 2017 17:59:05 -0700 (PDT)
+Received: by mail-vk0-x22e.google.com with SMTP id y70so20857401vky.3 for <6lo@ietf.org>; Fri, 23 Jun 2017 17:59:05 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:in-reply-to:references:from:date:message-id:subject:to;  bh=jNj/OIs2jDGlAOFhNh66rAazDCblnXgnohVWyiYWV84=; b=Amq/+pszbGMYtHtUZI/xNZpKN+tQMKUd6RkzfEfV7k6avSQCaaR0TbeoRKpH4ztLEZ CKorNzM6cPGTUUBjaawIzhrmkKIDKGMFnvUrMUtS13oJeJL7yVQrlHmjjVvzZFp55nmq bvuoD0Yp1HuBW3MNnSKVw5ADh/Uqs0ZQumJhZ3pwTSYRGGpwCWH7P1FmP0WpRL2rAPC5 8gxsTCfwfV1hWkSkrqAjWvZrxM95mVgbPFFZWn+Pv8lCDEePypyPf2cCP3M0YWm9NV1i ILiPL9bbMq3/Y3kv5pfBW3qrCJqbMC+1k9VUrtA/3hAK2tlvVT/PCO+Au9SlMM5b9yvY XOqA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:in-reply-to:references:from:date :message-id:subject:to; bh=jNj/OIs2jDGlAOFhNh66rAazDCblnXgnohVWyiYWV84=; b=fopsV8l5cTFTBFUBhw3xQ1jZGYTo5WngX2OPbEXzYUWAf1mIvg1wPAJW5K2DMHIpt5 MpJ5l14YDLehZWkvPEt2AYNKQGb2Um30ojjCSxZ6wl59yliLbQmopZT1NB8a9aHk8M0k n0MfFUV9MNQ2CcmTjczYDcrBsNhoub+dwfNsectFfIdcLISkW0gkMNfKAbTXprieuCBl XXjh8GJkiYPwnuD4tBIVwIcOyXb6J8tsN5PXkisXxjTdBd1dQajAbGeRx1l0SAtoydso oZW4rRp9ghLEdjRMVY3BMJdsuElmj87L8VzDq9kcPPfEEJ0h2y2ytu/p9HlGVshjWbVT Mcag==
+X-Gm-Message-State: AKS2vOyc7IeLndb0CIWzEySivLq/NRYjXnKgpySLMrSRimgd+XwHovfH FPB9QcS3COsLgk7XRe2C63o9SzdM6A==
+X-Received: by 10.31.74.198 with SMTP id x189mr4124779vka.123.1498265944282; Fri, 23 Jun 2017 17:59:04 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.31.167.78 with HTTP; Fri, 23 Jun 2017 17:59:03 -0700 (PDT)
+Received: by 10.31.167.78 with HTTP; Fri, 23 Jun 2017 17:59:03 -0700 (PDT)
+In-Reply-To: <CAKmdBpcxzN5r3=7sptqoKn4DM2nXxRuAr-d21keZm8kBGr=cGA@mail.gmail.com>
+References: <CAKmdBpdN-Kq+ULraHGdmK0FmVuSgEO_CEpJoMJgeBkx57yQ87g@mail.gmail.com> <CAKmdBpfA+g5X3V=mNDhgzgwZ2NKxbXF2OnSb93nLBsbkGUKUsg@mail.gmail.com> <CAKmdBpe6n_5Nq87OzhZuGpxJsZ9jRhbC7u0JmGjkwV+dZEUNNg@mail.gmail.com> <CAKmdBpfg8-4ph4SQarDJDVgW-sxGsRo8+-SJrmG37tfWCPN5Uw@mail.gmail.com> <CAKmdBpcFwkwfXWrvNGLA-sj1-QmEtqj8Xs_rMYfW=prMoGOcDA@mail.gmail.com> <CAKmdBpemC+NLrof-y_3V3pZxDrD4N0Br4OsgUAdG3eL_ucvcpw@mail.gmail.com> <CAKmdBpcxzN5r3=7sptqoKn4DM2nXxRuAr-d21keZm8kBGr=cGA@mail.gmail.com>
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+Date: Fri, 23 Jun 2017 17:59:03 -0700
+Message-ID: <CAKmdBpcSTJjT7b53QFT==Kf7XBdWWBH8MYSzzOUXkWbtv6Ng0Q@mail.gmail.com>
+To: lo <6lo@ietf.org>
+Content-Type: multipart/alternative; boundary="001a114e6c0c635d780552aa39ba"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/tieXhqaGIX-AueW_6qTldmlpeCI>
+Subject: [6lo] Presence at Prague IETF
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 24 Jun 2017 00:59:07 -0000
+
+--001a114e6c0c635d780552aa39ba
+Content-Type: text/plain; charset="UTF-8"
+
+Hi all,
+I will be joining remotely at Prague meeting this time while Gabriel will
+be there in person.
+I believe our secretary James W. will be there as well.
+We will miss Ralph Droms this time as he blessed 6lo co-chairs to go
+forward without a tech adviser guide.
+Thanks to Ralph for holding our hands in early days of 6lo and afterwards
+with technical advice!
+
+Our AD Suresh will be at the meeting obviously.
+
+If there is anyone else who might be interested in presenting remotely,
+please let me know asap, so the chairs will make the request to meetecho.
+
+I plan to be at Singapore IETF in person.
+
+-Samita
+
+--001a114e6c0c635d780552aa39ba
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Hi all,<div dir=3D"auto">I will be joining remotely at Pr=
+ague meeting this time while Gabriel will be there in person.=C2=A0</div><d=
+iv dir=3D"auto">I believe our secretary James W. will be there as well.</di=
+v><div dir=3D"auto">We will miss Ralph Droms this time as he blessed 6lo co=
+-chairs to go forward without a tech adviser guide.</div><div dir=3D"auto">=
+Thanks to Ralph for holding our hands in early days of 6lo and afterwards w=
+ith technical advice!</div><div dir=3D"auto"><br></div><div dir=3D"auto">Ou=
+r AD Suresh will be at the meeting obviously.</div><div dir=3D"auto"><br></=
+div><div dir=3D"auto">If there is anyone else who might be interested in pr=
+esenting remotely, please let me know asap, so the chairs will make the req=
+uest to meetecho.</div><div dir=3D"auto"><br></div><div dir=3D"auto">I plan=
+ to be at Singapore IETF in person.=C2=A0</div><div dir=3D"auto"><br></div>=
+<div dir=3D"auto">-Samita</div></div>
+
+--001a114e6c0c635d780552aa39ba--
+
+
+From nobody Sat Jun 24 01:56:17 2017
+Return-Path: <cabo@tzi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id DBF24129413; Sat, 24 Jun 2017 01:56:09 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.2
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.2 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id ol2J60FK52fI; Sat, 24 Jun 2017 01:56:08 -0700 (PDT)
+Received: from mailhost.informatik.uni-bremen.de (mailhost.informatik.uni-bremen.de [IPv6:2001:638:708:30c9::12]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 9C7D7127868; Sat, 24 Jun 2017 01:56:07 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at informatik.uni-bremen.de
+Received: from submithost.informatik.uni-bremen.de (submithost.informatik.uni-bremen.de [134.102.201.11]) by mailhost.informatik.uni-bremen.de (8.14.5/8.14.5) with ESMTP id v5O8u3NG023097; Sat, 24 Jun 2017 10:56:03 +0200 (CEST)
+Received: from [192.168.217.124] (p5DC7F3A7.dip0.t-ipconnect.de [93.199.243.167]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by submithost.informatik.uni-bremen.de (Postfix) with ESMTPSA id 3wvq0z45w8z3Z2B; Sat, 24 Jun 2017 10:56:03 +0200 (CEST)
+Content-Type: text/plain; charset=us-ascii
+Mime-Version: 1.0 (Mac OS X Mail 10.3 \(3273\))
+From: Carsten Bormann <cabo@tzi.org>
+In-Reply-To: <C11FE4E3-E518-4192-9DBE-8B23D413666E@tzi.org>
+Date: Sat, 24 Jun 2017 10:56:02 +0200
+X-Mao-Original-Outgoing-Id: 519987362.679874-2baefd1bca65da7e448544ab723f9c38
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <4DFB341F-0002-4FBF-9630-BEAA28820AD1@tzi.org>
+References: <C11FE4E3-E518-4192-9DBE-8B23D413666E@tzi.org>
+To: lo <6lo@ietf.org>, 6TiSCH mailing list <6tisch@ietf.org>, lp-wan <lp-wan@ietf.org>, lwip@ietf.org, Routing Over Low power and Lossy networks <roll@ietf.org>
+X-Mailer: Apple Mail (2.3273)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/7ZDGYdavqFffvQGlgO057NeLaCQ>
+Subject: [6lo] Constrained Node/Network Cluster @ IETF99: "FINAL" AGENDA
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 24 Jun 2017 08:56:10 -0000
+
+Here is my usual eclectic condensed agenda, now based on the "FINAL"
+AGENDA for IETF99.  Compared to the last week's draft agenda, dnssd
+and acme were moved.  (It is likely that there still will be some more
+changes after this "FINAL" agenda.)
+
+ACE people are going to miss DISPATCH (ARTAREA) again -- not sure if
+there would have been be any discussions relevant to Constrained
+Nodes/Networks in ARTAREA, but it doesn't make sense with this
+scheduling.  CORE people will miss both ANIMA and (in-week) ICNRG.
+ROLL people will miss SAAG, ouch.  And LPWAN is on the second half of
+QUIC.  All no disasters, AFAICS, but not pain-free.
+
+All times are CEST (UTC+0200).  (You can get pure UTC times on
+https://datatracker.ietf.org/meeting/agenda-utc, for those who want to
+listen from remote.)
+
+
+SATURDAY, July 15, 2017
+
+0900-1700  ACM, IRTF & ISOC Applied Networking Research Workshop 2017 =
+(Registration Required) - Athens/Barcelona
+0900-1800  T2TRG Interim Meeting - Berlin/Brussels
+0900-2100  IETF Hackathon - Chez Louis
+
+SUNDAY, July 16, 2017
+
+0900-1600  T2TRG Interim Meeting - Berlin/Brussels
+0900-1600  IETF Hackathon - Chez Louis
+1345-1445  IEEE 802.1 Time-Sensitive Networking - Congress Hall III
+1345-1445  IRTF Overview - Congress Hall I
+1345-1445  TEEP Tutorial - Karlin I/II
+1600-1700  Newcomers' Meet and Greet (open to Newcomers, WG chairs and =
+Mentors only) - Garden Terrace
+1700-1900  Welcome Reception - Grand Hilton Ballroom & Foyer
+
+MONDAY, July 17, 2017
+
+0930-1200  Morning Session I
+Congress H III	ART	dispatch	Dispatch WG - 09:30-11:30
+Grand Hilton BR	INT	6man	IPv6 Maintenance WG
+Congress H I	SEC ***	ace	Authentication and Authorization for =
+Constrained Environments WG
+Congress H III	SEC	curdle	CURves, Deprecating and a Little more =
+Encryption WG - 11:30-12:00
+
+1330-1530  Afternoon Session I
+Karlin I/II	INT ***	6tisch	IPv6 over the TSCH mode of IEEE =
+802.15.4e WG
+Grand Hilton BR	INT	homenet	Home Networking WG
+
+1550-1720  Afternoon Session II
+Karlin I/II	ART ***	cbor	Concise Binary Object Representation =
+Maintenance and Extensions WG
+Berlin/Brussels	SEC	tokbind	Token Binding WG
+
+1740-1840  Afternoon Session III
+Athens/Barcel.	RTG	babel	Babel routing protocol WG
+Grand Hilton BR	TSV	tsvarea	Transport Area Open Meeting
+
+TUESDAY, July 18, 2017
+
+0930-1200  Morning Session I
+Congress H II	OPS	v6ops	IPv6 Operations WG
+Congress H I	TSV	taps	Transport Services WG
+
+1330-1530  Afternoon Session I
+Grand Hilton BR	IRTF***	t2trg	Thing-to-Thing
+Berlin/Brussels	SEC	oauth	Web Authorization Protocol WG
+Congress H I	TSV	tsvwg	Transport Area Working Group WG
+
+1550-1750  Afternoon Session II
+Karlin I/II	INT ***	6lo	IPv6 over Networks of =
+Resource-constrained Nodes WG
+Congress H I	IRTF	cfrg	Crypto Forum
+
+WEDNESDAY, July 19, 2017
+
+0930-1200  Morning Session I
+Congress H I	ART ***	core	Constrained RESTful Environments WG
+Karlin I/II	IRTF	icnrg	Information-Centric Networking
+Congress H III	OPS	anima	Autonomic Networking Integrated Model =
+and Approach WG
+Congress H II	RTG	rtgarea	Routing Area Open Meeting
+Grand Hilton BR	SEC	tls	Transport Layer Security WG
+Karlin III	TSV	rmcat	RTP Media Congestion Avoidance =
+Techniques WG
+
+1330-1500  Afternoon Session I
+Grand Hilton BR	ART	httpbis	Hypertext Transfer Protocol WG
+Congress H III	IRTF	panrg	Proposed Path Aware Networking
+Congress H II	RTG	ideas	IDentity Enabled Networks BOF
+
+1520-1650  Afternoon Session II
+Grand Hilton BR	ART	httpbis	Hypertext Transfer Protocol WG
+Athens/Barcel.	INT	dnssd	Extensions for Scalable DNS Service =
+Discovery  WG
+
+THURSDAY, July 20, 2017
+
+0930-1200  Morning Session I
+Grand Hilton BR	INT	intarea	Internet Area Working Group WG
+Congress H II	IRTF	maprg	Measurement and Analysis for Protocols
+Congress H I	RTG	detnet	Deterministic Networking WG
+
+1330-1530  Afternoon Session I
+Berlin/Brussels	ART	ice	Interactive Connectivity Establishment =
+WG
+Grand Hilton BR	OPS	v6ops	IPv6 Operations WG
+Karlin I/II	RTG ***	roll	Routing Over Low power and Lossy =
+networks WG
+Congress H III	SEC	saag	Security Area Open Meeting
+
+1550-1750  Afternoon Session II
+Athens/Barcel.	INT	ipwave	IP Wireless Access in Vehicular =
+Environments WG
+Grand Hilton BR	TSV	quic	QUIC WG
+
+1810-1910  Afternoon Session III
+Berlin/Brussels	ART	uta	Using TLS in Applications WG
+Athens/Barcel.	INT ***	lwig	Light-Weight Implementation Guidance WG
+Karlin I/II	RTG	bier	Bit Indexed Explicit Replication WG
+Congress H III	TSV	tsvwg	Transport Area Working Group WG
+
+FRIDAY, July 21, 2017
+
+0930-1130  Morning Session I
+Karlin I/II	INT ***	lpwan	IPv6 over Low Power Wide-Area Networks =
+WG
+Athens/Barcel.	SEC	acme	Automated Certificate Management =
+Environment WG
+Karlin III	SEC	oauth	Web Authorization Protocol WG
+Grand Hilton BR	TSV	quic	QUIC WG
+
+1150-1320  Afternoon Session II
+Congress H III	ART ***	core	Constrained RESTful Environments WG
+
+
+
+From nobody Tue Jun 27 16:10:17 2017
+Return-Path: <Gabriel.Montenegro@microsoft.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 7E1CC1287A7; Tue, 27 Jun 2017 16:10:15 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.02
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.02 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=microsoft.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id iw7LuV-EwE-3; Tue, 27 Jun 2017 16:10:13 -0700 (PDT)
+Received: from NAM02-BL2-obe.outbound.protection.outlook.com (mail-bl2nam02on0101.outbound.protection.outlook.com [104.47.38.101]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 99CDB129B42; Tue, 27 Jun 2017 16:10:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version; bh=tI9VRH3q46Bf8ywligo4kUlSNQOsDAtdVt0lMkGNmaY=; b=ecVjIQW3382byUDCvG04u768KAv4psfP13O0QWmXt6v6xj7Qq7aHLLkaO9CiTAkOLR8KOB91l31CiYXgkBO4xIq5mRkWY3rwnjP3rOyTQCYmZSlM9qRAzKMqwLiW94kMRmRHITR/HTkmD8+y5ApwUaXhHbK5fsFGbEaACrpD7Ac=
+Received: from SN1PR21MB0096.namprd21.prod.outlook.com (10.161.254.16) by SN1PR21MB0061.namprd21.prod.outlook.com (10.161.254.147) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id 15.1.1240.4; Tue, 27 Jun 2017 23:10:11 +0000
+Received: from SN1PR21MB0096.namprd21.prod.outlook.com ([10.161.254.16]) by SN1PR21MB0096.namprd21.prod.outlook.com ([10.161.254.16]) with mapi id 15.01.1240.001; Tue, 27 Jun 2017 23:10:11 +0000
+From: Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+CC: "draft-ietf-6lo-rfc6775-update@ietf.org" <draft-ietf-6lo-rfc6775-update@ietf.org>
+Thread-Topic: WG Last Call on draft-ietf-6lo-rfc6775-update-06 through July 11
+Thread-Index: AdLvmoCPIn9d1IUORHKpl4KnCC0bkA==
+Date: Tue, 27 Jun 2017 23:10:11 +0000
+Message-ID: <SN1PR21MB0096F72994DF9E54488FE6B895DC0@SN1PR21MB0096.namprd21.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+authentication-results: ietf.org; dkim=none (message not signed) header.d=none;ietf.org; dmarc=none action=none header.from=microsoft.com;
+x-originating-ip: [2001:4898:80e8:b::3da]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1; SN1PR21MB0061; 7:UUm7BZCfBfNVV4kLG/XWfcgxk4Qt8A4+4R+c2eeAQEM9yGmXSyRl2yM/LVwF1Upb4w59mm2ovvMqfwQV3+exdHV5bynAzD3sW387FLtmTDsCs+GdypOE8nnnq1V2xWGcRBNeXuwWzrUMun3W1f9bfQevRDo2S13CZRimrUQs2/CWydJ5XEAj2MMz/CSN9v5v4e0siXUgbqTFtgaOBTKAa/mDfZjBtUY7EiePt9lH8bqPminUQJzIDqIiPozfY5aWSDnycqApV76fCX1v3W0VTrAtH1TTMGBlaFfaSiu8k6FBWh3Ad2yj58UiT/XwjyDWApvwdpNqHL6YraGdhlETDNTDqah97CJT40Uabkx/3DlBJIX6qsfvHIXf1u7X1is/yWSNmKrFFUHaXFUni1A2PEI1pIukKoAGzCXTSRmJGxKS777x8F5oKz56Qdyz6NQSyEEd8Qwau9+VeA9cyBKRUpqmjxSWrAkdd5kyAlNa73aeVyqpDhTYe67STVBFwnsr5bnrsXWLhSQoZbRYuAcafLIBnTd+F+M7EZW7kn+ZIxA8gm+7IALzpQyweTCpPk/h9JWrrj/d6n3Qvf96J+OPf34dpXkX1rJvz8nxbzBKubRGQuZ6/IRVezF1uQzqJJ0PU7kbu3aPjPP3NN7ppw2902zYwmqop7UEPLObaqhITCVnX08jux0HJ6euy6v8Vaton3Ta7NXIdfJ+ViYcW6jsMxUM+S5C8wlwwe8Y2L7xJEac+JpoREYmwcw8HxzqLLwATYXK0SJKaDbV8SfI1naMwaDdjlJxbP3ylF1eu/pDi9nY09/T3zPOrCyiRYqsPNQI
+x-ms-office365-filtering-correlation-id: 0813d801-6c8b-4d61-2c70-08d4bdb1a989
+x-ms-office365-filtering-ht: Tenant
+x-microsoft-antispam: UriScan:; BCL:0; PCL:0; RULEID:(300000500095)(300135000095)(300000501095)(300135300095)(22001)(300000502095)(300135100095)(2017030254075)(48565401081)(300000503095)(300135400095)(201703131423075)(201703031133081)(300000504095)(300135200095)(300000505095)(300135600095)(300000506067)(300135500095); SRVR:SN1PR21MB0061; 
+x-ms-traffictypediagnostic: SN1PR21MB0061:
+x-microsoft-antispam-prvs: <SN1PR21MB00616193C50D7E84AE105E8695DC0@SN1PR21MB0061.namprd21.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:(151999592597050)(26388249023172)(236129657087228)(48057245064654)(21748063052155);
+x-exchange-antispam-report-cfa-test: BCL:0; PCL:0; RULEID:(100000700101)(100105000095)(100000701101)(100105300095)(100000702101)(100105100095)(61425038)(6040450)(601004)(2401047)(5005006)(8121501046)(2017060910009)(100000703101)(100105400095)(10201501046)(3002001)(93006095)(93001095)(6055026)(61426038)(61427038)(6041248)(20161123555025)(20161123558100)(20161123564025)(20161123560025)(20161123562025)(201703131423075)(201702281528075)(201703061421075)(201703061406153)(6072148)(100000704101)(100105200095)(100000705101)(100105500095); SRVR:SN1PR21MB0061; BCL:0; PCL:0; RULEID:(100000800101)(100110000095)(100000801101)(100110300095)(100000802101)(100110100095)(100000803101)(100110400095)(100000804101)(100110200095)(100000805101)(100110500095); SRVR:SN1PR21MB0061; 
+x-forefront-prvs: 0351D213B3
+x-forefront-antispam-report: SFV:NSPM; SFS:(10019020)(39410400002)(39840400002)(39450400003)(39860400002)(39850400002)(39400400002)(51874003)(81166006)(86362001)(6506006)(8990500004)(7696004)(8676002)(5660300001)(7736002)(6436002)(5005710100001)(5630700001)(74316002)(2351001)(10090500001)(15650500001)(2420400007)(230783001)(3660700001)(33656002)(14454004)(2906002)(8936002)(10710500007)(86612001)(189998001)(50986999)(7110500001)(3280700002)(54356999)(558084003)(102836003)(966005)(790700001)(236005)(99286003)(54896002)(6306002)(4326008)(6116002)(2501003)(55016002)(6916009)(9686003)(72206003)(25786009)(450100002)(53936002)(110136004)(77096006)(5640700003)(38730400002)(606006)(2900100001)(10290500003)(9326002)(478600001); DIR:OUT; SFP:1102; SCL:1; SRVR:SN1PR21MB0061; H:SN1PR21MB0096.namprd21.prod.outlook.com; FPR:; SPF:None; MLV:ovrnspm; PTR:InfoNoRecords; LANG:en; 
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative; boundary="_000_SN1PR21MB0096F72994DF9E54488FE6B895DC0SN1PR21MB0096namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: microsoft.com
+X-MS-Exchange-CrossTenant-originalarrivaltime: 27 Jun 2017 23:10:11.4420 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 72f988bf-86f1-41af-91ab-2d7cd011db47
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN1PR21MB0061
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/o3QXbS1wS9KM3Q2P-uNs-O7IDiM>
+Subject: [6lo] WG Last Call on draft-ietf-6lo-rfc6775-update-06 through July 11
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 27 Jun 2017 23:10:15 -0000
+
+--_000_SN1PR21MB0096F72994DF9E54488FE6B895DC0SN1PR21MB0096namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I just initiated a WG last call on:
+
+               https://tools.ietf.org/html/draft-ietf-6lo-rfc6775-update-06
+
+The WG last call will finish on July 11.
+
+Thanks in advance for your comments.
+
+Gabriel
+
+--_000_SN1PR21MB0096F72994DF9E54488FE6B895DC0SN1PR21MB0096namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:dt=3D"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:m=3D"http://sc=
+hemas.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-=
+html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hi,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">I just initiated a WG last call on:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=3D"https://tools.ietf.org/html/dra=
+ft-ietf-6lo-rfc6775-update-06">
+https://tools.ietf.org/html/draft-ietf-6lo-rfc6775-update-06</a><o:p></o:p>=
+</p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The WG last call will finish on July 11. <o:p></o:p>=
+</p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks in advance for your comments.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Gabriel<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SN1PR21MB0096F72994DF9E54488FE6B895DC0SN1PR21MB0096namp_--
+

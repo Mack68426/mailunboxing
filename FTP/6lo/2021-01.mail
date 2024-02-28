@@ -1,0 +1,98 @@
+
+From nobody Tue Jan  5 23:58:32 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id D98813A09FA; Tue,  5 Jan 2021 23:58:30 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Carles Gomez via Datatracker <noreply@ietf.org>
+To: <ek.ietf@gmail.com>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.24.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Cc: 6lo-chairs@ietf.org, 6lo@ietf.org, Carles Gomez <carlesgo@entel.upc.edu>,  carlesgo@entel.upc.edu, iesg-secretary@ietf.org
+Message-ID: <160991991087.8774.5633091161876384536@ietfa.amsl.com>
+Date: Tue, 05 Jan 2021 23:58:30 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/RwzYk7DceNaBHlDOjLp8XkNaqpY>
+Subject: [6lo] Publication has been requested for draft-ietf-6lo-plc-05
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 06 Jan 2021 07:58:31 -0000
+
+Carles Gomez has requested publication of draft-ietf-6lo-plc-05 as Proposed Standard on behalf of the 6LO working group.
+
+Please verify the document's state at https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+
+
+From nobody Wed Jan 13 03:46:42 2021
+Return-Path: <session-request@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id A43F13A0B36; Wed, 13 Jan 2021 03:46:39 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: IETF Meeting Session Request Tool <session-request@ietf.org>
+To: <session-request@ietf.org>
+Cc: 6lo-chairs@ietf.org, 6lo@ietf.org, carlesgo@entel.upc.edu, ek.ietf@gmail.com
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.24.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <161053839910.6806.17032007947175001652@ietfa.amsl.com>
+Date: Wed, 13 Jan 2021 03:46:39 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/wrjyx-3HRPPnQIq3wYOwWgglCqI>
+Subject: [6lo] 6lo - New Meeting Session Request for IETF 110
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 13 Jan 2021 11:46:40 -0000
+
+A new meeting session request has just been submitted by Carles Gomez, a Chair of the 6lo working group.
+
+
+---------------------------------------------------------
+Working Group Name: IPv6 over Networks of Resource-constrained Nodes
+Area Name: Internet Area
+Session Requester: Carles Gomez
+
+
+Number of Sessions: 1
+Length of Session(s):  1 Hour
+Number of Attendees: 50
+Conflicts to Avoid: 
+ Chair Conflict: tcpm ippm rats
+ Technology Overlap: lwig lpwan intarea roll core 6tisch 6man ipwave ace detnet icnrg t2trg iccrg manet cbor homenet v6ops lake anima raw
+
+
+
+
+
+
+People who must be present:
+  Carles Gomez
+  Erik Kline
+  Shwetha Bhandari
+
+Resources Requested:
+
+Special Requests:
+  Please also avoid collision with IoT-related BOFs.
+---------------------------------------------------------
+
+

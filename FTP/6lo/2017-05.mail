@@ -1,0 +1,2092 @@
+
+From nobody Mon May  1 23:45:52 2017
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 19F07128D64; Mon,  1 May 2017 23:45:48 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.50.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <149370754805.9910.7221461687360524870@ietfa.amsl.com>
+Date: Mon, 01 May 2017 23:45:48 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/78lzr8krcX3WzTbVbf4qxWC3ems>
+Subject: [6lo] I-D Action: draft-ietf-6lo-rfc6775-update-04.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 02 May 2017 06:45:48 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes of the IETF.
+
+        Title           : An Update to 6LoWPAN ND
+        Authors         : Pascal Thubert
+                          Erik Nordmark
+                          Samita Chakrabarti
+	Filename        : draft-ietf-6lo-rfc6775-update-04.txt
+	Pages           : 29
+	Date            : 2017-05-01
+
+Abstract:
+   This specification updates RFC 6775 - 6LoWPAN Neighbor Discovery, to
+   clarify the role of the protocol as a registration technique,
+   simplify the registration operation in 6LoWPAN routers, and provide
+   enhancements to the registration capabilities, in particular for the
+   registration to a Backbone Router for proxy ND operations.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-rfc6775-update/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-rfc6775-update-04
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-rfc6775-update-04
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-rfc6775-update-04
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Tue May  2 18:37:28 2017
+Return-Path: <wwwrun@rfc-editor.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id EAD92129B0F; Tue,  2 May 2017 18:37:19 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.203
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.203 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, RP_MATCHES_RCVD=-0.001, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id rLgTRtx5Y2i2; Tue,  2 May 2017 18:37:18 -0700 (PDT)
+Received: from rfc-editor.org (rfc-editor.org [4.31.198.49]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 4B49412EB17; Tue,  2 May 2017 18:33:43 -0700 (PDT)
+Received: by rfc-editor.org (Postfix, from userid 30) id 26E64B813AC; Tue,  2 May 2017 18:33:40 -0700 (PDT)
+To: ietf-announce@ietf.org, rfc-dist@rfc-editor.org
+X-PHP-Originating-Script: 1005:ams_util_lib.php
+From: rfc-editor@rfc-editor.org
+Cc: rfc-editor@rfc-editor.org, drafts-update-ref@iana.org, 6lo@ietf.org
+Message-Id: <20170503013340.26E64B813AC@rfc-editor.org>
+Date: Tue,  2 May 2017 18:33:40 -0700 (PDT)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/468kqKi_76tL7puWvdOd0xvn-SI>
+Subject: [6lo] RFC 8105 on Transmission of IPv6 Packets over Digital Enhanced Cordless Telecommunications (DECT) Ultra Low Energy (ULE)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 03 May 2017 01:37:20 -0000
+
+A new Request for Comments is now available in online RFC libraries.
+
+        
+        RFC 8105
+
+        Title:      Transmission of IPv6 Packets over 
+                    Digital Enhanced Cordless Telecommunications (DECT) 
+                    Ultra Low Energy (ULE) 
+        Author:     P. Mariager, 
+                    J. Petersen, Ed., 
+                    Z. Shelby,
+                    M. Van de Logt, 
+                    D. Barthel
+        Status:     Standards Track
+        Stream:     IETF
+        Date:       May 2017
+        Mailbox:    pm@rtx.dk, 
+                    jtp@rtx.dk, 
+                    zach.shelby@arm.com,
+                    marco.vandelogt@bosch-sensortec.com, 
+                    dominique.barthel@orange.com
+        Pages:      22
+        Characters: 49537
+        Updates/Obsoletes/SeeAlso:   None
+
+        I-D Tag:    draft-ietf-6lo-dect-ule-09.txt
+
+        URL:        https://www.rfc-editor.org/info/rfc8105
+
+        DOI:        10.17487/RFC8105
+
+Digital Enhanced Cordless Telecommunications (DECT) Ultra Low Energy
+(ULE) is a low-power air interface technology that is proposed by the
+DECT Forum and is defined and specified by ETSI.
+
+The DECT air interface technology has been used worldwide in
+communication devices for more than 20 years.  It has primarily been
+used to carry voice for cordless telephony but has also been deployed
+for data-centric services.
+
+DECT ULE is a recent addition to the DECT interface primarily
+intended for low-bandwidth, low-power applications such as sensor
+devices, smart meters, home automation, etc.  As the DECT ULE
+interface inherits many of the capabilities from DECT, it benefits
+from operation that is long-range and interference-free, worldwide-
+reserved frequency band, low silicon prices, and maturity.  There is
+an added value in the ability to communicate with IPv6 over DECT ULE,
+such as for Internet of Things applications.
+
+This document describes how IPv6 is transported over DECT ULE using
+IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN)
+techniques.
+
+This document is a product of the IPv6 over Networks of Resource-constrained Nodes Working Group of the IETF.
+
+This is now a Proposed Standard.
+
+STANDARDS TRACK: This document specifies an Internet Standards Track
+protocol for the Internet community, and requests discussion and suggestions
+for improvements.  Please refer to the current edition of the Official
+Internet Protocol Standards (https://www.rfc-editor.org/standards) for the 
+standardization state and status of this protocol.  Distribution of this 
+memo is unlimited.
+
+This announcement is sent to the IETF-Announce and rfc-dist lists.
+To subscribe or unsubscribe, see
+  https://www.ietf.org/mailman/listinfo/ietf-announce
+  https://mailman.rfc-editor.org/mailman/listinfo/rfc-dist
+
+For searching the RFC series, see https://www.rfc-editor.org/search
+For downloading RFCs, see https://www.rfc-editor.org/retrieve/bulk
+
+Requests for special distribution should be addressed to either the
+author of the RFC in question, or to rfc-editor@rfc-editor.org.  Unless
+specifically noted otherwise on the RFC itself, all RFCs are for
+unlimited distribution.
+
+
+The RFC Editor Team
+Association Management Solutions, LLC
+
+
+
+From nobody Wed May  3 00:00:35 2017
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 5B8681270FC; Wed,  3 May 2017 00:00:33 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.523
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.523 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, RP_MATCHES_RCVD=-0.001, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id LqzyPOjP2GtC; Wed,  3 May 2017 00:00:30 -0700 (PDT)
+Received: from rcdn-iport-9.cisco.com (rcdn-iport-9.cisco.com [173.37.86.80]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id C25A9128954; Tue,  2 May 2017 23:58:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=3814; q=dns/txt; s=iport; t=1493794693; x=1495004293; h=from:to:cc:subject:date:message-id:references: in-reply-to:content-transfer-encoding:mime-version; bh=LGJeEqS48iSPBYVnxqUqNzSvcchxT4i2yLMFbRZWqrM=; b=JCG53dYLjPL3177gzPzIUDJuQceNVxlSce7xzkHRHVrDWbTK0XWVvEif 7FCUNxLIOGMwc4ehDwbgSGqtAsI+EcrUavlmgrLYBPNoEto0SXqjmh7t+ 66obdzJ8wkABspfq05zXcVY4CGzl8sNQTI96XcVfVJagAY5HSoCVvJl9x E=;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0DNAADPfglZ/40NJK1cGQEBAQEBAQEBA?= =?us-ascii?q?QEBBwEBAQEBg1VigQwHjXmRT5EQhF6CDyELhXgChFY/GAECAQEBAQEBAWsdC4U?= =?us-ascii?q?VAQEBAQMBATgUKwwEAgEIEQMBAQENEgUEBycKARQJCAIEDgUIDAcCBIl9DrI5i?= =?us-ascii?q?nQBAQEBAQEBAQEBAQEBAQEBAQEBAQEYBYZfgV6DG4E8gwgFhX8FllaGfgGHGot?= =?us-ascii?q?tgguFN4oliHeLOQEfOIEKbxUahVCBSnaGW4EhgQ0BAQE?=
+X-IronPort-AV: E=Sophos;i="5.38,283,1491264000"; d="scan'208";a="238455127"
+Received: from alln-core-8.cisco.com ([173.36.13.141]) by rcdn-iport-9.cisco.com with ESMTP/TLS/DHE-RSA-AES256-SHA; 03 May 2017 06:58:12 +0000
+Received: from XCH-ALN-005.cisco.com (xch-aln-005.cisco.com [173.36.7.15]) by alln-core-8.cisco.com (8.14.5/8.14.5) with ESMTP id v436wCnb030416 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=FAIL); Wed, 3 May 2017 06:58:12 GMT
+Received: from xch-rcd-001.cisco.com (173.37.102.11) by XCH-ALN-005.cisco.com (173.36.7.15) with Microsoft SMTP Server (TLS) id 15.0.1210.3; Wed, 3 May 2017 01:58:11 -0500
+Received: from xch-rcd-001.cisco.com ([173.37.102.11]) by XCH-RCD-001.cisco.com ([173.37.102.11]) with mapi id 15.00.1210.000; Wed, 3 May 2017 01:58:12 -0500
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: "draft-ietf-6lo-dect-ule@ietf.org" <draft-ietf-6lo-dect-ule@ietf.org>
+CC: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: RFC 8105 on Transmission of IPv6 Packets over Digital Enhanced Cordless Telecommunications (DECT) Ultra Low Energy (ULE)
+Thread-Index: AQHSw635jjvPGnI1+0eYYxRagt8xH6HiLTXA
+Date: Wed, 3 May 2017 06:57:54 +0000
+Deferred-Delivery: Wed, 3 May 2017 06:57:39 +0000
+Message-ID: <c5a52d3332674ee5bc17e7d9e702a863@XCH-RCD-001.cisco.com>
+References: <20170503013340.26E64B813AC@rfc-editor.org>
+In-Reply-To: <20170503013340.26E64B813AC@rfc-editor.org>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [10.228.216.28]
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/g27nm3YK9l5YpzNUQtPFTMgbkuk>
+Subject: Re: [6lo] RFC 8105 on Transmission of IPv6 Packets over Digital Enhanced Cordless Telecommunications (DECT) Ultra Low Energy (ULE)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 03 May 2017 07:00:33 -0000
+
+Well done!
+
+Pascal
+
+-----Original Message-----
+From: IETF-Announce [mailto:ietf-announce-bounces@ietf.org] On Behalf Of rf=
+c-editor@rfc-editor.org
+Sent: mercredi 3 mai 2017 03:34
+To: ietf-announce@ietf.org; rfc-dist@rfc-editor.org
+Cc: drafts-update-ref@iana.org; 6lo@ietf.org; rfc-editor@rfc-editor.org
+Subject: RFC 8105 on Transmission of IPv6 Packets over Digital Enhanced Cor=
+dless Telecommunications (DECT) Ultra Low Energy (ULE)
+
+A new Request for Comments is now available in online RFC libraries.
+
+       =20
+        RFC 8105
+
+        Title:      Transmission of IPv6 Packets over=20
+                    Digital Enhanced Cordless Telecommunications (DECT)=20
+                    Ultra Low Energy (ULE)=20
+        Author:     P. Mariager,=20
+                    J. Petersen, Ed.,=20
+                    Z. Shelby,
+                    M. Van de Logt,=20
+                    D. Barthel
+        Status:     Standards Track
+        Stream:     IETF
+        Date:       May 2017
+        Mailbox:    pm@rtx.dk,=20
+                    jtp@rtx.dk,=20
+                    zach.shelby@arm.com,
+                    marco.vandelogt@bosch-sensortec.com,=20
+                    dominique.barthel@orange.com
+        Pages:      22
+        Characters: 49537
+        Updates/Obsoletes/SeeAlso:   None
+
+        I-D Tag:    draft-ietf-6lo-dect-ule-09.txt
+
+        URL:        https://www.rfc-editor.org/info/rfc8105
+
+        DOI:        10.17487/RFC8105
+
+Digital Enhanced Cordless Telecommunications (DECT) Ultra Low Energy
+(ULE) is a low-power air interface technology that is proposed by the DECT =
+Forum and is defined and specified by ETSI.
+
+The DECT air interface technology has been used worldwide in communication =
+devices for more than 20 years.  It has primarily been used to carry voice =
+for cordless telephony but has also been deployed for data-centric services=
+.
+
+DECT ULE is a recent addition to the DECT interface primarily intended for =
+low-bandwidth, low-power applications such as sensor devices, smart meters,=
+ home automation, etc.  As the DECT ULE interface inherits many of the capa=
+bilities from DECT, it benefits from operation that is long-range and inter=
+ference-free, worldwide- reserved frequency band, low silicon prices, and m=
+aturity.  There is an added value in the ability to communicate with IPv6 o=
+ver DECT ULE, such as for Internet of Things applications.
+
+This document describes how IPv6 is transported over DECT ULE using
+IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN) techniques.
+
+This document is a product of the IPv6 over Networks of Resource-constraine=
+d Nodes Working Group of the IETF.
+
+This is now a Proposed Standard.
+
+STANDARDS TRACK: This document specifies an Internet Standards Track protoc=
+ol for the Internet community, and requests discussion and suggestions for =
+improvements.  Please refer to the current edition of the Official Internet=
+ Protocol Standards (https://www.rfc-editor.org/standards) for the standard=
+ization state and status of this protocol.  Distribution of this memo is un=
+limited.
+
+This announcement is sent to the IETF-Announce and rfc-dist lists.
+To subscribe or unsubscribe, see
+  https://www.ietf.org/mailman/listinfo/ietf-announce
+  https://mailman.rfc-editor.org/mailman/listinfo/rfc-dist
+
+For searching the RFC series, see https://www.rfc-editor.org/search For dow=
+nloading RFCs, see https://www.rfc-editor.org/retrieve/bulk
+
+Requests for special distribution should be addressed to either the author =
+of the RFC in question, or to rfc-editor@rfc-editor.org.  Unless specifical=
+ly noted otherwise on the RFC itself, all RFCs are for unlimited distributi=
+on.
+
+
+The RFC Editor Team
+Association Management Solutions, LLC
+
+
+
+From nobody Wed May  3 14:49:51 2017
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 9CC43128BBB for <6lo@ietfa.amsl.com>; Wed,  3 May 2017 14:49:49 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.999
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.999 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id UrD52FoycRuT for <6lo@ietfa.amsl.com>; Wed,  3 May 2017 14:49:46 -0700 (PDT)
+Received: from mail-ua0-x234.google.com (mail-ua0-x234.google.com [IPv6:2607:f8b0:400c:c08::234]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id EED8F129B5D for <6lo@ietf.org>; Wed,  3 May 2017 14:48:20 -0700 (PDT)
+Received: by mail-ua0-x234.google.com with SMTP id e55so1687434uaa.2 for <6lo@ietf.org>; Wed, 03 May 2017 14:48:20 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:in-reply-to:references:from:date:message-id:subject:to;  bh=a+8VKL20K/SX4L2n3UY1waESeFfurc0R0BTewmlm+iQ=; b=JeNbqRSKO8ws/BX2gFXlLC9uo6Z/Ntb1F7cSZuJg6BPt2s1LjZ0O+eirwKHEfrAgau ZCwvWguBERjzGY4SDbQvFdkleTOl9n+z1u8aWehMR5Oaem/d6Zw+8oVuqZTz+2H4P0E3 41GnzgtQqetLiLt7/Fay8Ees/IvSN0XSxVUXxJExOaN6/PFw6sFSfVao7qVifv5T/qQ9 OkIciGgDH9u8mmWbI0F/Ut/NlLTYRgJzS3nAsGjTCZ3dNfSH4hgPn1ZuZJ/IM4UWYBwX IKyXhLGfu3gEd/b8CO1KglkLPTw9mfOJYOtiejjaoxNhvu+c/HoNorblEQ2PoG5bPPT9 mkvg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:in-reply-to:references:from:date :message-id:subject:to; bh=a+8VKL20K/SX4L2n3UY1waESeFfurc0R0BTewmlm+iQ=; b=pZneHbW0LSrGXqcf+majQoCmu5bI0aXhF8v5UMk+/DW7C5+OGAQ9bljULOj6kor/lB m+L6xoaEpy27ihpF8I0+DOB+ubr3RCwn00OOdKqJtY9PwsmqJLgO6ZByQNp+R8tvvDLA xYA6lYQ8S7TMM9/Qb6d+WI913oYLJjPRfSHqsMY+J/5H+mjt2DEQMJVujRlDI1If3Dnj zBZFiAbA99mXacRNhv1E8zXl6V2el4klPZeYNY3SSC1LPosDwdgGLWmsJOP54nzkazh6 2GIPT8S/bLyZ187a9A++IHWhki9sT2pl6eSt3qwNk7sK/dxmrw/9pZVzlIraxwZ1CkoM qF6w==
+X-Gm-Message-State: AN3rC/6wd82Ya8V00IuRXqDurdEiYWmCSMfWjf6JAkT8xf/VglhRwYu+ NzQ/6+bmhvgSzTIUKNAYrKECwLOsG7NK
+X-Received: by 10.176.4.108 with SMTP id 99mr7225965uav.47.1493848099825; Wed, 03 May 2017 14:48:19 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.31.167.77 with HTTP; Wed, 3 May 2017 14:48:19 -0700 (PDT)
+In-Reply-To: <149370754805.9910.7221461687360524870@ietfa.amsl.com>
+References: <149370754805.9910.7221461687360524870@ietfa.amsl.com>
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+Date: Wed, 3 May 2017 14:48:19 -0700
+Message-ID: <CAKmdBpfu+WC01MuM1ccy8no17gq2s7VGswBrSG30=87hY2RsPw@mail.gmail.com>
+To: "Pascal Thubert (pthubert)" <pthubert@cisco.com>, Erik Nordmark <nordmark@acm.org>,  Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>, lo <6lo@ietf.org>,  Suresh Krishnan <suresh@kaloom.com>
+Content-Type: multipart/alternative; boundary=001a114ab0a256cb62054ea59d73
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/3PvwpfkQ9o1eegNXRtv3K-Y4T54>
+Subject: Re: [6lo] I-D Action: draft-ietf-6lo-rfc6775-update-04.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 03 May 2017 21:49:50 -0000
+
+--001a114ab0a256cb62054ea59d73
+Content-Type: text/plain; charset=UTF-8
+
+Hi Pascal:
+
+Thanks a lot for leading the RFC 6775 update work which has been necessary
+as the time goes by and deployment/implementations bring new requirements
+or change the specifications. Your lead and editorship of this work is
+really appreciated.
+
+I have gone through version 04 of the draft. Wearing both hats of co-chair
+and co-author, here are my review comments for the draft. First part of
+comment is on more administrative level and should not affect the progress
+of this draft and the second part of the comment is editorial and missing
+components which can be addressed before we forward to the next step.
+
+Best regards,
+-Samita
+
+Draft version : draft-ietf-6lo-rfc6775-update-04
+
+
+Comments from IETF98:
+
+1) Is this draft targeting a generic update to RFC 6775 or is it a special
+usecase?
+
+
+Goal of rfc6775-bis should be to 'update RFC 6775'  to address the
+following:
+
+Generic extension:
+* Support the indication of mobility vs retry (T-bit)
+
+* Ease up requirement of registration for link-local addresses
+
+* Introducting Enhanced ARO
+
+* Permitting regitration of target address
+
+* Clarification of support of privacy and temporary addresses
+==
+
+Conclusion:  This draft is going to update RFC 6775. Question for Gabe and
+me to take up to Suresh
+and WG:
+Whether we need a master draft (to replace RFC 6775) which will point to
+multiple drafts.
+
+------------------------------------------------------------------------------------------
+
+Editorial comments:  [ Mostly generalizing the enhancement for 6lowpan; in
+the process
+it is useful to RPL and BBR etc. as special case examples]
+
+Abstract:
+
+Current:
+  This specification updates RFC 6775 - 6LoWPAN Neighbor Discovery, to
+   clarify the role of the protocol as a registration technique,
+   simplify the registration operation in 6LoWPAN routers, and provide
+   enhancements to the registration capabilities, in particular for the
+   registration to a Backbone Router for proxy ND operations.
+
+Suggested:
+   This specification updates RFC 6775 - 6LoWPAN Neighbor Discovery, to
+   clarify the role of the protocol as a registration technique,
+   simplify the registration operation in 6LoWPAN routers, and provide
+   enhancements to the registration capabilities for different network
+   configuration as well as mobility detection within a Low Power Network.
+
+
+   Introduction:
+
+2nd paragraph onwards...
+
+CURRENT:
+   The scope of this draft is an IPv6 LLN, which can be a simple star or
+   a more complex mesh topology.  The LLN may be anchored at an IPv6
+   Backbone Router (6BBR) [I-D.ietf-6lo-backbone-router].  The 6BBRs
+   interconnect the LLNs over a Backbone Link and emulate that the LLN
+   nodes are present on the Backbone using proxy-ND operations.
+
+   This specification modifies and extends the behavior and protocol
+   elements of RFC 6775 [RFC6775] to enable additional capabilities, in
+   particular the registration to a 6BBR for proxy ND operations.
+
+Suggested:
+   The scope of this draft is an IPv6 Low Power Networks including
+   star and mesh topologies.  This specification modifies and extends
+   the behavior and protocol elements of RFC 6775 [RFC6775] to enable
+   additional capabilities such as:
+
+   * Support the indication of mobility vs retry (T-bit)
+
+   * Ease up requirement of registration for link-local addresses
+
+   * Introducing Enhancement to  Address Registration Option (ARO)
+
+   * Permitting regitration of target address
+
+   * Clarification of support of privacy and temporary addresses
+
+   The following sections will discuss applicability of 6LoWPAN ND
+registration,
+   new extensions and updates to RFC 6775. Finally, we will discuss how the
+   extensions of registration framework can be useful for a use case
+scenario.
+
+
+
+Section 2:
+
+The naming of this section seems out-of-sequence right after the
+introduction. Let us
+change the title to fit it in this place.
+ a) s/Considerations On Registration Rejection/Applicability of Address
+Registration options/
+
+ b)
+CURRENT( 1st paragraph):
+   The purpose of the Address Registration Option (ARO) RFC 6775
+   [RFC6775] and of the Extended ARO (EARO) that is introduced in this
+   document is to facilitate duplicate address detection (DAD) for hosts
+   and pre-populate Neighbor Cache Entries (NCE) [RFC4861] in the
+   routers to reduce the need for sending multicast neighbor
+   solicitations and also to be able to support IPv6 Backbone Routers.
+
+SUGGESTED (1st paragraph):
+
+  The purpose of the Address Registration Option (ARO) RFC 6775
+   [RFC6775] is to facilitate duplicate address detection (DAD) for hosts
+   and pre-populate Neighbor Cache Entries (NCE) [RFC4861] in the
+   routers  in order to reduce the need for sending multicast neighbor
+   solicitations which is harmful for low-power constrained networks.
+
+
+Section 3:
+Termnology:
+ a) Please copy the terminology from RFC 6775
+ b) Remove 6tisch reference from terminology section [ This document should
+work with
+ any 6lo L2 including 6tisch]
+ c) BBR and Backbone network terminologies are OK
+ d) Add proxy ND defininition
+
+
+Section 4:
+
+'Extending RFC 7400' seems out-of-context here.
+
+Q1 : Should extension of RFC 7400 belong in this document?
+Q2:  If Q1 is yes, then move this section after section 7. POssibly provide
+a diagram to
+     show the format change
+
+
+Section 5:
+   a) Clarify T-bit usage a bit on detection of mobility. This is going to
+be very useful
+      feature in general for other link-layers too. Please describe it
+without giving a
+      specific scenario.  Mobility detection is missing in RFC 6775.
+
+
+Section 5.2:
+    a) Please remove all reference of RPL in this section. One does not
+need to understand RPL
+       mechanism or deploy RPL mechanism in order to use T-bit in
+6LOWPAN-ND.
+       Please describe usage of T-bit in context of 6lo networks in
+general. I understand that
+       we want to introduce it in RFC 6775 in order to detect mobility of
+the 6LN as opposed to
+       retrying.
+
+Section 5.5 : s/Link-Local Address Registration/Link-Local Address
+Registration Change/
+
+     a) Please shrink the texts in this section and provide a gist of
+change in either
+         first or 2nd paragraph. Please try to reduce the texts into 4-5
+paragraphs.
+
+Section 5.6:
+        Remove reference for RPL networks (RFC 6550) please. This draft
+does not/should not
+        depend on one particular routing protocol or configuration
+
+
+Section 7:
+       Backward Compatibility:
+
+       a) Please move up the 7.2 -7.4 ( all legacy nodes behavior)  in the
+begining of the section.
+       b) Current 7.1 section should follow after the legacy behavior
+       c) Please add some text about backward compatibility of legacy nodes
+(6LN,6LR and 6LBR in
+          any combination) right below section 7.
+          Q: How does EARO modification, target address registration and
+link-local registration change
+              ensure that they are transparent to a legacy 6LBR or legacy
+6LR or legacy 6LN ?
+       d) It is best to organize section 7 with two main sub-headings and
+then insert the appropriate
+           sub sub-headings underneath. The suggested two sub headings
+could be:
+                  7.1  Legacy nodes behavior due to changes in this draft
+                  7.2  Backward compatibility with legacy devices
+
+
+**  Change in 6CIO format
+    Please Add RFC 7400 related changes section here. I'd actually prefer a
+meaningful heading on RFC 7400
+    changes rather than " Extending RFC7400"
+
+** Privacy
+   Please add a section on 'Privacy Considerations' for 6LoWPAN address
+configuration. We can take a look
+   at 6loBAC document or RFC 7668 and RFC 8105 and Privacy consideration
+RFC 8065 to form a text
+   to provide guidance on privacy compliant and temporary address formation
+pros and cons here.
+   We should use a short parapgraph and point to the relevnt sections of
+relevant documents here.
+
+
+
+Section 8: Security Connsiderations:
+
+   "As indicated in section Section 2, this protocol does not aim at
+   limiting the number of IPv6 addresses that a device can form, either.
+   A host should be able to register any address that is topologically
+   correct in the subnet(s) advertised by the 6LR/6LBR."
+
+==> Should this document add a one line that the implmentation may consider
+    limiting registration requests by using different techniques.
+
+   On the other hand, the registration mechanism may be used by a rogue
+   node to attack the 6LR or the 6LBR with a Denial-of-Service attack
+   against the registry.  It may also happen that the registry of a 6LR
+   or a 6LBR is saturated and cannot take any more registration, which
+   effectively denies the requesting a node the capability to use a new
+   address.  In order to alleviate those concerns, Section 5.6 provides
+   a number of recommendations that ensure that a stale registration is
+   removed as soon as possible from the 6LR and 6LBR.
+
+===> Does the recommendation in 5.6 alleviate the DOS attack in 6LR and
+6LBR?
+     The above paragraph is scary. If 5.6 recommendations are useful against
+     DOS attack, we must have stronger statement in security.
+
+     Let us revisit the security section and see if we can make it less
+vulnerable.
+
+
+*** Add a section " Example scenario of EARO":
+      Here, a section can be added to point to the BBR scenario and proxy
+ND operation.
+       The text should be only a flavor to provide ideas [ < 10 lines or so
+]
+
+
+On Mon, May 1, 2017 at 11:45 PM, <internet-drafts@ietf.org> wrote:
+
+>
+> A New Internet-Draft is available from the on-line Internet-Drafts
+> directories.
+> This draft is a work item of the IPv6 over Networks of
+> Resource-constrained Nodes of the IETF.
+>
+>         Title           : An Update to 6LoWPAN ND
+>         Authors         : Pascal Thubert
+>                           Erik Nordmark
+>                           Samita Chakrabarti
+>         Filename        : draft-ietf-6lo-rfc6775-update-04.txt
+>         Pages           : 29
+>         Date            : 2017-05-01
+>
+> Abstract:
+>    This specification updates RFC 6775 - 6LoWPAN Neighbor Discovery, to
+>    clarify the role of the protocol as a registration technique,
+>    simplify the registration operation in 6LoWPAN routers, and provide
+>    enhancements to the registration capabilities, in particular for the
+>    registration to a Backbone Router for proxy ND operations.
+>
+>
+> The IETF datatracker status page for this draft is:
+> https://datatracker.ietf.org/doc/draft-ietf-6lo-rfc6775-update/
+>
+> There are also htmlized versions available at:
+> https://tools.ietf.org/html/draft-ietf-6lo-rfc6775-update-04
+> https://datatracker.ietf.org/doc/html/draft-ietf-6lo-rfc6775-update-04
+>
+> A diff from the previous version is available at:
+> https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-rfc6775-update-04
+>
+>
+> Please note that it may take a couple of minutes from the time of
+> submission
+> until the htmlized version and diff are available at tools.ietf.org.
+>
+> Internet-Drafts are also available by anonymous FTP at:
+> ftp://ftp.ietf.org/internet-drafts/
+>
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+
+--001a114ab0a256cb62054ea59d73
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Pascal:<div><br></div><div>Thanks a lot for leading the=
+ RFC 6775 update work which has been necessary as the time goes by and depl=
+oyment/implementations bring new requirements or change the specifications.=
+ Your lead and editorship of this work is really appreciated.</div><div><br=
+></div><div>I have gone through version 04 of the draft. Wearing both hats =
+of co-chair and co-author, here are my review comments for the draft. First=
+ part of comment is on more administrative level and should not affect the =
+progress of this draft and the second part of the comment is editorial and =
+missing components which can be addressed before we forward to the next ste=
+p.</div><div><br></div><div>Best regards,</div><div>-Samita</div><div><br><=
+/div><div><div>Draft version : draft-ietf-6lo-rfc6775-update-04</div><div><=
+br></div><div><br></div><div>Comments from IETF98:</div><div><br></div><div=
+>1) Is this draft targeting a generic update to RFC 6775 or is it a special=
+ usecase?</div><div><br></div><div><br></div><div>Goal of rfc6775-bis shoul=
+d be to &#39;update RFC 6775&#39; =C2=A0to address the following:</div><div=
+><br></div><div>Generic extension:</div><div>* Support the indication of mo=
+bility vs retry (T-bit)</div><div><br></div><div>* Ease up requirement of r=
+egistration for link-local addresses</div><div><br></div><div>* Introductin=
+g Enhanced ARO</div><div><br></div><div>* Permitting regitration of target =
+address</div><div><br></div><div>* Clarification of support of privacy and =
+temporary addresses</div><div>=3D=3D</div><div><br></div><div>Conclusion: =
+=C2=A0This draft is going to update RFC 6775. Question for Gabe and me to t=
+ake up to Suresh</div><div>and WG:</div><div>Whether we need a master draft=
+ (to replace RFC 6775) which will point to multiple drafts.</div><div><br><=
+/div><div>-----------------------------------------------------------------=
+-------------------------</div><div><br></div><div>Editorial comments: =C2=
+=A0[ Mostly generalizing the enhancement for 6lowpan; in the process</div><=
+div>it is useful to RPL and BBR etc. as special case examples]=C2=A0</div><=
+div><br></div><div>Abstract:</div><div><br></div><div>Current:</div><div>=
+=C2=A0 This specification updates RFC 6775 - 6LoWPAN Neighbor Discovery, to=
+</div><div>=C2=A0 =C2=A0clarify the role of the protocol as a registration =
+technique,</div><div>=C2=A0 =C2=A0simplify the registration operation in 6L=
+oWPAN routers, and provide</div><div>=C2=A0 =C2=A0enhancements to the regis=
+tration capabilities, in particular for the</div><div>=C2=A0 =C2=A0registra=
+tion to a Backbone Router for proxy ND operations.</div><div><br></div><div=
+>Suggested:</div><div>=C2=A0 =C2=A0This specification updates RFC 6775 - 6L=
+oWPAN Neighbor Discovery, to</div><div>=C2=A0 =C2=A0clarify the role of the=
+ protocol as a registration technique,</div><div>=C2=A0 =C2=A0simplify the =
+registration operation in 6LoWPAN routers, and provide</div><div>=C2=A0 =C2=
+=A0enhancements to the registration capabilities for different network</div=
+><div>=C2=A0 =C2=A0configuration as well as mobility detection within a Low=
+ Power Network.</div><div><br></div><div><br></div><div>=C2=A0 =C2=A0Introd=
+uction:</div><div><br></div><div>2nd paragraph onwards...</div><div><br></d=
+iv><div>CURRENT:</div><div>=C2=A0 =C2=A0The scope of this draft is an IPv6 =
+LLN, which can be a simple star or</div><div>=C2=A0 =C2=A0a more complex me=
+sh topology.=C2=A0 The LLN may be anchored at an IPv6</div><div>=C2=A0 =C2=
+=A0Backbone Router (6BBR) [I-D.ietf-6lo-backbone-router].=C2=A0 The 6BBRs</=
+div><div>=C2=A0 =C2=A0interconnect the LLNs over a Backbone Link and emulat=
+e that the LLN</div><div>=C2=A0 =C2=A0nodes are present on the Backbone usi=
+ng proxy-ND operations.</div><div><br></div><div>=C2=A0 =C2=A0This specific=
+ation modifies and extends the behavior and protocol</div><div>=C2=A0 =C2=
+=A0elements of RFC 6775 [RFC6775] to enable additional capabilities, in</di=
+v><div>=C2=A0 =C2=A0particular the registration to a 6BBR for proxy ND oper=
+ations.</div><div><br></div><div>Suggested:</div><div>=C2=A0 =C2=A0The scop=
+e of this draft is an IPv6 Low Power Networks including</div><div>=C2=A0 =
+=C2=A0star and mesh topologies.=C2=A0 This specification modifies and exten=
+ds=C2=A0</div><div>=C2=A0 =C2=A0the behavior and protocol elements of RFC 6=
+775 [RFC6775] to enable</div><div>=C2=A0 =C2=A0additional capabilities such=
+ as:</div><div><br></div><div>=C2=A0 =C2=A0* Support the indication of mobi=
+lity vs retry (T-bit)</div><div><br></div><div>=C2=A0 =C2=A0* Ease up requi=
+rement of registration for link-local addresses</div><div><br></div><div>=
+=C2=A0 =C2=A0* Introducing Enhancement to =C2=A0Address Registration Option=
+ (ARO)=C2=A0</div><div><br></div><div>=C2=A0 =C2=A0* Permitting regitration=
+ of target address</div><div><br></div><div>=C2=A0 =C2=A0* Clarification of=
+ support of privacy and temporary addresses</div><div><br></div><div>=C2=A0=
+ =C2=A0The following sections will discuss applicability of 6LoWPAN ND regi=
+stration,</div><div>=C2=A0 =C2=A0new extensions and updates to RFC 6775. Fi=
+nally, we will discuss how the=C2=A0</div><div>=C2=A0 =C2=A0extensions of r=
+egistration framework can be useful for a use case scenario.</div><div><br>=
+</div><div><br></div><div><br></div><div>Section 2:</div><div><br></div><di=
+v>The naming of this section seems out-of-sequence right after the introduc=
+tion. Let us</div><div>change the title to fit it in this place.</div><div>=
+=C2=A0a) s/Considerations On Registration Rejection/Applicability of Addres=
+s Registration options/</div><div><br></div><div>=C2=A0b)=C2=A0</div><div>C=
+URRENT( 1st paragraph):</div><div>=C2=A0 =C2=A0The purpose of the Address R=
+egistration Option (ARO) RFC 6775</div><div>=C2=A0 =C2=A0[RFC6775] and of t=
+he Extended ARO (EARO) that is introduced in this</div><div>=C2=A0 =C2=A0do=
+cument is to facilitate duplicate address detection (DAD) for hosts</div><d=
+iv>=C2=A0 =C2=A0and pre-populate Neighbor Cache Entries (NCE) [RFC4861] in =
+the</div><div>=C2=A0 =C2=A0routers to reduce the need for sending multicast=
+ neighbor</div><div>=C2=A0 =C2=A0solicitations and also to be able to suppo=
+rt IPv6 Backbone Routers.</div><div><br></div><div>SUGGESTED (1st paragraph=
+):</div><div>=C2=A0 =C2=A0</div><div>=C2=A0 The purpose of the Address Regi=
+stration Option (ARO) RFC 6775</div><div>=C2=A0 =C2=A0[RFC6775] is to facil=
+itate duplicate address detection (DAD) for hosts</div><div>=C2=A0 =C2=A0an=
+d pre-populate Neighbor Cache Entries (NCE) [RFC4861] in the</div><div>=C2=
+=A0 =C2=A0routers =C2=A0in order to reduce the need for sending multicast n=
+eighbor</div><div>=C2=A0 =C2=A0solicitations which is harmful for low-power=
+ constrained networks.</div><div><br></div><div><br></div><div>Section 3:</=
+div><div>Termnology:</div><div>=C2=A0a) Please copy the terminology from RF=
+C 6775</div><div>=C2=A0b) Remove 6tisch reference from terminology section =
+[ This document should work with</div><div>=C2=A0any 6lo L2 including 6tisc=
+h]</div><div>=C2=A0c) BBR and Backbone network terminologies are OK</div><d=
+iv>=C2=A0d) Add proxy ND defininition</div><div><br></div><div><br></div><d=
+iv>Section 4:</div><div><br></div><div>&#39;Extending RFC 7400&#39; seems o=
+ut-of-context here.</div><div><br></div><div>Q1 : Should extension of RFC 7=
+400 belong in this document?</div><div>Q2: =C2=A0If Q1 is yes, then move th=
+is section after section 7. POssibly provide a diagram to</div><div>=C2=A0 =
+=C2=A0 =C2=A0show the format change</div><div><br></div><div><br></div><div=
+>Section 5:=C2=A0</div><div>=C2=A0 =C2=A0a) Clarify T-bit usage a bit on de=
+tection of mobility. This is going to be very useful</div><div>=C2=A0 =C2=
+=A0 =C2=A0 feature in general for other link-layers too. Please describe it=
+ without giving a=C2=A0</div><div>=C2=A0 =C2=A0 =C2=A0 specific scenario.=
+=C2=A0 Mobility detection is missing in RFC 6775.</div><div><br></div><div>=
+=C2=A0 =C2=A0</div><div>Section 5.2:</div><div>=C2=A0 =C2=A0 a) Please remo=
+ve all reference of RPL in this section. One does not need to understand RP=
+L</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0mechanism or deploy RPL mechanism in=
+ order to use T-bit in 6LOWPAN-ND.</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0Ple=
+ase describe usage of T-bit in context of 6lo networks in general. I unders=
+tand that=C2=A0</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0we want to introduce i=
+t in RFC 6775 in order to detect mobility of the 6LN as opposed to=C2=A0</d=
+iv><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0retrying.</div><div><br></div><div>Secti=
+on 5.5 : s/Link-Local Address Registration/Link-Local Address Registration =
+Change/</div><div>=C2=A0 =C2=A0=C2=A0</div><div>=C2=A0 =C2=A0 =C2=A0a) Plea=
+se shrink the texts in this section and provide a gist of change in either<=
+/div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0first or 2nd paragraph. Please =
+try to reduce the texts into 4-5 paragraphs.=C2=A0</div><div><br></div><div=
+>Section 5.6:</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 Remove reference for RP=
+L networks (RFC 6550) please. This draft does not/should not</div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 depend on one particular routing protocol or confi=
+guration</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0</div><div><br></div><=
+div>Section 7:</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0Backward Compatibility:=
+</div><div><br></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0a) Please move up the =
+7.2 -7.4 ( all legacy nodes behavior) =C2=A0in the begining of the section.=
+</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0b) Current 7.1 section should follow =
+after the legacy behavior</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0c) Please ad=
+d some text about backward compatibility of legacy nodes (6LN,6LR and 6LBR =
+in</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 any combination) right belo=
+w section 7.=C2=A0</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 Q: How does=
+ EARO modification, target address registration and link-local registration=
+ change</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 ensure t=
+hat they are transparent to a legacy 6LBR or legacy 6LR or legacy 6LN ?</di=
+v><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0d) It is best to organize section 7 with =
+two main sub-headings and then insert the appropriate=C2=A0</div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0sub sub-headings underneath. The sugg=
+ested two sub headings could be:</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 7.1 =C2=A0Legacy nodes behavior due to chan=
+ges in this draft</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 7.2 =C2=A0Backward compatibility with legacy devices</div=
+><div><br></div><div>=C2=A0 =C2=A0</div><div>** =C2=A0Change in 6CIO format=
+</div><div>=C2=A0 =C2=A0 Please Add RFC 7400 related changes section here. =
+I&#39;d actually prefer a meaningful heading on RFC 7400</div><div>=C2=A0 =
+=C2=A0 changes rather than &quot; Extending RFC7400&quot;</div><div><br></d=
+iv><div>** Privacy</div><div>=C2=A0 =C2=A0Please add a section on &#39;Priv=
+acy Considerations&#39; for 6LoWPAN address configuration. We can take a lo=
+ok</div><div>=C2=A0 =C2=A0at 6loBAC document or RFC 7668 and RFC 8105 and P=
+rivacy consideration RFC 8065 to form a text</div><div>=C2=A0 =C2=A0to prov=
+ide guidance on privacy compliant and temporary address formation pros and =
+cons here.=C2=A0</div><div>=C2=A0 =C2=A0We should use a short parapgraph an=
+d point to the relevnt sections of relevant documents here.</div><div>=C2=
+=A0 =C2=A0</div><div><br></div><div><br></div><div>Section 8: Security Conn=
+siderations:</div><div><br></div><div>=C2=A0 =C2=A0&quot;As indicated in se=
+ction Section 2, this protocol does not aim at</div><div>=C2=A0 =C2=A0limit=
+ing the number of IPv6 addresses that a device can form, either.</div><div>=
+=C2=A0 =C2=A0A host should be able to register any address that is topologi=
+cally</div><div>=C2=A0 =C2=A0correct in the subnet(s) advertised by the 6LR=
+/6LBR.&quot;</div><div><br></div><div>=3D=3D&gt; Should this document add a=
+ one line that the implmentation may consider</div><div>=C2=A0 =C2=A0 limit=
+ing registration requests by using different techniques.</div><div><br></di=
+v><div>=C2=A0 =C2=A0On the other hand, the registration mechanism may be us=
+ed by a rogue</div><div>=C2=A0 =C2=A0node to attack the 6LR or the 6LBR wit=
+h a Denial-of-Service attack</div><div>=C2=A0 =C2=A0against the registry.=
+=C2=A0 It may also happen that the registry of a 6LR</div><div>=C2=A0 =C2=
+=A0or a 6LBR is saturated and cannot take any more registration, which</div=
+><div>=C2=A0 =C2=A0effectively denies the requesting a node the capability =
+to use a new</div><div>=C2=A0 =C2=A0address.=C2=A0 In order to alleviate th=
+ose concerns, Section 5.6 provides</div><div>=C2=A0 =C2=A0a number of recom=
+mendations that ensure that a stale registration is</div><div>=C2=A0 =C2=A0=
+removed as soon as possible from the 6LR and 6LBR.</div><div><br></div><div=
+>=3D=3D=3D&gt; Does the recommendation in 5.6 alleviate the DOS attack in 6=
+LR and 6LBR?</div><div>=C2=A0 =C2=A0 =C2=A0The above paragraph is scary. If=
+ 5.6 recommendations are useful against</div><div>=C2=A0 =C2=A0 =C2=A0DOS a=
+ttack, we must have stronger statement in security.</div><div>=C2=A0 =C2=A0=
+=C2=A0</div><div>=C2=A0 =C2=A0 =C2=A0Let us revisit the security section an=
+d see if we can make it less vulnerable.</div><div>=C2=A0 =C2=A0 =C2=A0</di=
+v><div><br></div><div>*** Add a section &quot; Example scenario of EARO&quo=
+t;:</div><div>=C2=A0 =C2=A0 =C2=A0 Here, a section can be added to point to=
+ the BBR scenario and proxy ND operation.</div><div>=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0The text should be only a flavor to provide ideas [ &lt; 10 lines or =
+so ]</div><div><br></div></div></div><div class=3D"gmail_extra"><br><div cl=
+ass=3D"gmail_quote">On Mon, May 1, 2017 at 11:45 PM,  <span dir=3D"ltr">&lt=
+;<a href=3D"mailto:internet-drafts@ietf.org" target=3D"_blank">internet-dra=
+fts@ietf.org</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_quote" sty=
+le=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><br>
+A New Internet-Draft is available from the on-line Internet-Drafts director=
+ies.<br>
+This draft is a work item of the IPv6 over Networks of Resource-constrained=
+ Nodes of the IETF.<br>
+<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Title=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0:=
+ An Update to 6LoWPAN ND<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Authors=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0: Pasc=
+al Thubert<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 Erik Nordmark<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 Samita Chakrabarti<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Filename=C2=A0 =C2=A0 =C2=A0 =C2=A0 : draft-iet=
+f-6lo-rfc6775-update-<wbr>04.txt<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Pages=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0:=
+ 29<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Date=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 :=
+ 2017-05-01<br>
+<br>
+Abstract:<br>
+=C2=A0 =C2=A0This specification updates RFC 6775 - 6LoWPAN Neighbor Discove=
+ry, to<br>
+=C2=A0 =C2=A0clarify the role of the protocol as a registration technique,<=
+br>
+=C2=A0 =C2=A0simplify the registration operation in 6LoWPAN routers, and pr=
+ovide<br>
+=C2=A0 =C2=A0enhancements to the registration capabilities, in particular f=
+or the<br>
+=C2=A0 =C2=A0registration to a Backbone Router for proxy ND operations.<br>
+<br>
+<br>
+The IETF datatracker status page for this draft is:<br>
+<a href=3D"https://datatracker.ietf.org/doc/draft-ietf-6lo-rfc6775-update/"=
+ rel=3D"noreferrer" target=3D"_blank">https://datatracker.ietf.org/<wbr>doc=
+/draft-ietf-6lo-rfc6775-<wbr>update/</a><br>
+<br>
+There are also htmlized versions available at:<br>
+<a href=3D"https://tools.ietf.org/html/draft-ietf-6lo-rfc6775-update-04" re=
+l=3D"noreferrer" target=3D"_blank">https://tools.ietf.org/html/<wbr>draft-i=
+etf-6lo-rfc6775-update-<wbr>04</a><br>
+<a href=3D"https://datatracker.ietf.org/doc/html/draft-ietf-6lo-rfc6775-upd=
+ate-04" rel=3D"noreferrer" target=3D"_blank">https://datatracker.ietf.org/<=
+wbr>doc/html/draft-ietf-6lo-<wbr>rfc6775-update-04</a><br>
+<br>
+A diff from the previous version is available at:<br>
+<a href=3D"https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-rfc6775-updat=
+e-04" rel=3D"noreferrer" target=3D"_blank">https://www.ietf.org/rfcdiff?<wb=
+r>url2=3Ddraft-ietf-6lo-rfc6775-<wbr>update-04</a><br>
+<br>
+<br>
+Please note that it may take a couple of minutes from the time of submissio=
+n<br>
+until the htmlized version and diff are available at <a href=3D"http://tool=
+s.ietf.org" rel=3D"noreferrer" target=3D"_blank">tools.ietf.org</a>.<br>
+<br>
+Internet-Drafts are also available by anonymous FTP at:<br>
+<a href=3D"ftp://ftp.ietf.org/internet-drafts/" rel=3D"noreferrer" target=
+=3D"_blank">ftp://ftp.ietf.org/internet-<wbr>drafts/</a><br>
+<br>
+______________________________<wbr>_________________<br>
+6lo mailing list<br>
+<a href=3D"mailto:6lo@ietf.org">6lo@ietf.org</a><br>
+<a href=3D"https://www.ietf.org/mailman/listinfo/6lo" rel=3D"noreferrer" ta=
+rget=3D"_blank">https://www.ietf.org/mailman/<wbr>listinfo/6lo</a><br>
+</blockquote></div><br></div>
+
+--001a114ab0a256cb62054ea59d73--
+
+
+From nobody Wed May  3 15:02:31 2017
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 48037129426 for <6lo@ietfa.amsl.com>; Wed,  3 May 2017 15:02:30 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.699
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.699 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 6Nwemkyb1AuB for <6lo@ietfa.amsl.com>; Wed,  3 May 2017 15:02:28 -0700 (PDT)
+Received: from mail-vk0-x236.google.com (mail-vk0-x236.google.com [IPv6:2607:f8b0:400c:c05::236]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 14C721243F3 for <6lo@ietf.org>; Wed,  3 May 2017 15:00:38 -0700 (PDT)
+Received: by mail-vk0-x236.google.com with SMTP id v20so1612527vke.2 for <6lo@ietf.org>; Wed, 03 May 2017 15:00:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:from:date:message-id:subject:to; bh=FvYmGtBmVzV1+iPg4O0l1SiPzHKDx86KLUCG0b4VMdQ=; b=sB9pJM3KnNPvYjYNhkiu1vMFMYYPD1JQ0DujYRlUU6BVlAYQsCvo5RzfxRvEWDvqZe kkTeQ8pBD78FgRiZr2/CgWQ67LcBEQ9y418gxqYKE5dja5WRFRPIkI+S1tIzjk1w/ob5 Do2Z29/ZWvfmDeUcaPr4c3ZSFiTWx7c3lbKOGmKWKxzQHvtW1XOq5O1iH6LP0Li8kzUD EV+QnM9DCKwJGQX1UHX9quqIJWScA7ass5Ija7Tc0eIr9hkZaR+QCZsjJ869P04wDjLl SVzWgAoTUlFb2xv517n7O9/ZH1TJWtNXOVABlHEr9sHZVP1BeSMnB20YCKZ9um+wFmOH XxQA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=FvYmGtBmVzV1+iPg4O0l1SiPzHKDx86KLUCG0b4VMdQ=; b=hUfuwlTdua01TE8z9EUuPfOV2r4CE/CSCw5uz5TUHGwxCLUf2EgVOJ1HB1IPGMvBfl 5T7TJgFHsJd6UYTD1vaMZfFdp9MD3+5hGoduRzmDT9iSJEl0myYCRw7oA5ORKjVEMSER w4Oh1L1v6Z7uWt1HJrjxWz9KDset/ku3mRQ3EIb/0lKfJuTCbhtsmRlNzBEOmyGj+KgF YvY9+j7/7IoAN9YaMaKyg0mgaa9UJCLCLiMujKR13oYDsS6FIiFda+LNz8wL65MzmHvZ rEf/OE3jIhirLGzLPifDNfWvYKT2BRArwBbMp847aA+dtwMhex1dWevfAwPOmXP6Y/Pb f1WA==
+X-Gm-Message-State: AN3rC/4uN+stYKgHkDusZviYRZkf8D+hIb4TSkBwtHbBZdAUMNMDgvBY zVXPCApgzXmrHtAYMiJV+GO9fiFNyw==
+X-Received: by 10.31.108.9 with SMTP id h9mr4566610vkc.27.1493848836967; Wed, 03 May 2017 15:00:36 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.31.167.77 with HTTP; Wed, 3 May 2017 15:00:36 -0700 (PDT)
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+Date: Wed, 3 May 2017 15:00:36 -0700
+Message-ID: <CAKmdBpd0CQhkc0yjy3k1X9S9jzbsW7hs33y3j7nW5eC25ds3vg@mail.gmail.com>
+To: lo <6lo@ietf.org>
+Content-Type: multipart/alternative; boundary=001a11478d2e46922f054ea5c98d
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/iNunIwOj0A4qs8aUIWsrpdFGq5M>
+Subject: [6lo] Call for comments on requirements: draft-ietf-6lo-rfc6775-update
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 03 May 2017 22:02:30 -0000
+
+--001a11478d2e46922f054ea5c98d
+Content-Type: text/plain; charset=UTF-8
+
+Hello  6lo Colleagues:
+
+Please read the 6lo-rfc6775-update draft.
+
+The initial work started by Pascal by documenting requirements updates that
+he
+experienced during the LLN work on 6lowpan and 6tisch.
+
+The draft will move to LC soon. If there are some more
+requirements or valid concerns on backward compatibility with RFC 6775,
+please review the document carefully after the next revision and post your
+comments.
+
+Thanks,
+-Samita
+
+On Mon, May 1, 2017 at 11:45 PM, <internet-drafts@ietf.org> wrote:
+
+>
+> A New Internet-Draft is available from the on-line Internet-Drafts
+> directories.
+> This draft is a work item of the IPv6 over Networks of
+> Resource-constrained Nodes of the IETF.
+>
+>         Title           : An Update to 6LoWPAN ND
+>         Authors         : Pascal Thubert
+>                           Erik Nordmark
+>                           Samita Chakrabarti
+>         Filename        : draft-ietf-6lo-rfc6775-update-04.txt
+>         Pages           : 29
+>         Date            : 2017-05-01
+>
+> Abstract:
+>    This specification updates RFC 6775 - 6LoWPAN Neighbor Discovery, to
+>    clarify the role of the protocol as a registration technique,
+>    simplify the registration operation in 6LoWPAN routers, and provide
+>    enhancements to the registration capabilities, in particular for the
+>    registration to a Backbone Router for proxy ND operations.
+>
+>
+> The IETF datatracker status page for this draft is:
+> https://datatracker.ietf.org/doc/draft-ietf-6lo-rfc6775-update/
+>
+> There are also htmlized versions available at:
+> https://tools.ietf.org/html/draft-ietf-6lo-rfc6775-update-04
+> https://datatracker.ietf.org/doc/html/draft-ietf-6lo-rfc6775-update-04
+>
+> A diff from the previous version is available at:
+> https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-rfc6775-update-04
+>
+>
+> Please note that it may take a couple of minutes from the time of
+> submission
+> until the htmlized version and diff are available at tools.ietf.org.
+>
+> Internet-Drafts are also available by anonymous FTP at:
+> ftp://ftp.ietf.org/internet-drafts/
+>
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+
+--001a11478d2e46922f054ea5c98d
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello =C2=A06lo Colleagues:<div><br></div><div>Please read=
+ the 6lo-rfc6775-update draft.</div><div><br></div><div>The initial work st=
+arted by Pascal by documenting requirements updates that he=C2=A0</div><div=
+>experienced during the LLN work on 6lowpan and 6tisch.</div><div><br></div=
+><div>The draft will move to LC soon. If there are some more</div><div>requ=
+irements or valid concerns on backward compatibility with RFC 6775, please =
+review the document carefully after the next revision and post your comment=
+s.</div><div><br></div><div>Thanks,</div><div>-Samita</div><div><div class=
+=3D"gmail_extra"><br><div class=3D"gmail_quote">On Mon, May 1, 2017 at 11:4=
+5 PM,  <span dir=3D"ltr">&lt;<a href=3D"mailto:internet-drafts@ietf.org" ta=
+rget=3D"_blank">internet-drafts@ietf.org</a>&gt;</span> wrote:<br><blockquo=
+te class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc so=
+lid;padding-left:1ex"><br>
+A New Internet-Draft is available from the on-line Internet-Drafts director=
+ies.<br>
+This draft is a work item of the IPv6 over Networks of Resource-constrained=
+ Nodes of the IETF.<br>
+<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Title=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0:=
+ An Update to 6LoWPAN ND<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Authors=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0: Pasc=
+al Thubert<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 Erik Nordmark<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 Samita Chakrabarti<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Filename=C2=A0 =C2=A0 =C2=A0 =C2=A0 : draft-iet=
+f-6lo-rfc6775-update-<wbr>04.txt<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Pages=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0:=
+ 29<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 Date=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 :=
+ 2017-05-01<br>
+<br>
+Abstract:<br>
+=C2=A0 =C2=A0This specification updates RFC 6775 - 6LoWPAN Neighbor Discove=
+ry, to<br>
+=C2=A0 =C2=A0clarify the role of the protocol as a registration technique,<=
+br>
+=C2=A0 =C2=A0simplify the registration operation in 6LoWPAN routers, and pr=
+ovide<br>
+=C2=A0 =C2=A0enhancements to the registration capabilities, in particular f=
+or the<br>
+=C2=A0 =C2=A0registration to a Backbone Router for proxy ND operations.<br>
+<br>
+<br>
+The IETF datatracker status page for this draft is:<br>
+<a href=3D"https://datatracker.ietf.org/doc/draft-ietf-6lo-rfc6775-update/"=
+ rel=3D"noreferrer" target=3D"_blank">https://datatracker.ietf.org/<wbr>doc=
+/draft-ietf-6lo-rfc6775-<wbr>update/</a><br>
+<br>
+There are also htmlized versions available at:<br>
+<a href=3D"https://tools.ietf.org/html/draft-ietf-6lo-rfc6775-update-04" re=
+l=3D"noreferrer" target=3D"_blank">https://tools.ietf.org/html/<wbr>draft-i=
+etf-6lo-rfc6775-update-<wbr>04</a><br>
+<a href=3D"https://datatracker.ietf.org/doc/html/draft-ietf-6lo-rfc6775-upd=
+ate-04" rel=3D"noreferrer" target=3D"_blank">https://datatracker.ietf.org/<=
+wbr>doc/html/draft-ietf-6lo-<wbr>rfc6775-update-04</a><br>
+<br>
+A diff from the previous version is available at:<br>
+<a href=3D"https://www.ietf.org/rfcdiff?url2=3Ddraft-ietf-6lo-rfc6775-updat=
+e-04" rel=3D"noreferrer" target=3D"_blank">https://www.ietf.org/rfcdiff?<wb=
+r>url2=3Ddraft-ietf-6lo-rfc6775-<wbr>update-04</a><br>
+<br>
+<br>
+Please note that it may take a couple of minutes from the time of submissio=
+n<br>
+until the htmlized version and diff are available at <a href=3D"http://tool=
+s.ietf.org" rel=3D"noreferrer" target=3D"_blank">tools.ietf.org</a>.<br>
+<br>
+Internet-Drafts are also available by anonymous FTP at:<br>
+<a href=3D"ftp://ftp.ietf.org/internet-drafts/" rel=3D"noreferrer" target=
+=3D"_blank">ftp://ftp.ietf.org/internet-<wbr>drafts/</a><br>
+<br>
+______________________________<wbr>_________________<br>
+6lo mailing list<br>
+<a href=3D"mailto:6lo@ietf.org">6lo@ietf.org</a><br>
+<a href=3D"https://www.ietf.org/mailman/listinfo/6lo" rel=3D"noreferrer" ta=
+rget=3D"_blank">https://www.ietf.org/mailman/<wbr>listinfo/6lo</a><br>
+</blockquote></div><br></div></div></div>
+
+--001a11478d2e46922f054ea5c98d--
+
+
+From nobody Fri May  5 20:44:28 2017
+Return-Path: <wwwrun@rfc-editor.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 8129312947B; Fri,  5 May 2017 20:44:26 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.203
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.203 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, RP_MATCHES_RCVD=-0.001, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id TCEuJUgfDSAt; Fri,  5 May 2017 20:44:24 -0700 (PDT)
+Received: from rfc-editor.org (rfc-editor.org [4.31.198.49]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 3C3EE1294E2; Fri,  5 May 2017 20:44:14 -0700 (PDT)
+Received: by rfc-editor.org (Postfix, from userid 30) id 9E6C6B80EBA; Fri,  5 May 2017 20:44:08 -0700 (PDT)
+To: ietf-announce@ietf.org, rfc-dist@rfc-editor.org
+X-PHP-Originating-Script: 1005:ams_util_lib.php
+From: rfc-editor@rfc-editor.org
+Cc: rfc-editor@rfc-editor.org, drafts-update-ref@iana.org, 6lo@ietf.org
+Message-Id: <20170506034408.9E6C6B80EBA@rfc-editor.org>
+Date: Fri,  5 May 2017 20:44:08 -0700 (PDT)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/wUtC0tUkUNzdXKDSRaGfASUycRg>
+Subject: [6lo] RFC 8163 on Transmission of IPv6 over Master-Slave/Token-Passing (MS/TP) Networks
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 06 May 2017 03:44:26 -0000
+
+A new Request for Comments is now available in online RFC libraries.
+
+        
+        RFC 8163
+
+        Title:      Transmission of IPv6 over Master-Slave/Token-Passing 
+                    (MS/TP) Networks 
+        Author:     K. Lynn, Ed.,
+                    J. Martocci, 
+                    C. Neilson,
+                    S. Donaldson
+        Status:     Standards Track
+        Stream:     IETF
+        Date:       May 2017
+        Mailbox:    kerlyn@ieee.org, 
+                    jpmartocci@sbcglobal.net, 
+                    cneilson@deltacontrols.com,  
+                    stuart.donaldson@honeywell.com
+        Pages:      27
+        Characters: 55845
+        Updates/Obsoletes/SeeAlso:   None
+
+        I-D Tag:    draft-ietf-6lo-6lobac-08.txt
+
+        URL:        https://www.rfc-editor.org/info/rfc8163
+
+        DOI:        10.17487/RFC8163
+
+Master-Slave/Token-Passing (MS/TP) is a medium access control method
+for the RS-485 physical layer and is used primarily in building
+automation networks.  This specification defines the frame format for
+transmission of IPv6 packets and the method of forming link-local and
+statelessly autoconfigured IPv6 addresses on MS/TP networks.
+
+This document is a product of the IPv6 over Networks of Resource-constrained Nodes Working Group of the IETF.
+
+This is now a Proposed Standard.
+
+STANDARDS TRACK: This document specifies an Internet Standards Track
+protocol for the Internet community, and requests discussion and suggestions
+for improvements.  Please refer to the current edition of the Official
+Internet Protocol Standards (https://www.rfc-editor.org/standards) for the 
+standardization state and status of this protocol.  Distribution of this 
+memo is unlimited.
+
+This announcement is sent to the IETF-Announce and rfc-dist lists.
+To subscribe or unsubscribe, see
+  https://www.ietf.org/mailman/listinfo/ietf-announce
+  https://mailman.rfc-editor.org/mailman/listinfo/rfc-dist
+
+For searching the RFC series, see https://www.rfc-editor.org/search
+For downloading RFCs, see https://www.rfc-editor.org/retrieve/bulk
+
+Requests for special distribution should be addressed to either the
+author of the RFC in question, or to rfc-editor@rfc-editor.org.  Unless
+specifically noted otherwise on the RFC itself, all RFCs are for
+unlimited distribution.
+
+
+The RFC Editor Team
+Association Management Solutions, LLC
+
+
+
+From nobody Fri May  5 22:57:06 2017
+Return-Path: <cabo@tzi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 787C712426E for <6lo@ietfa.amsl.com>; Fri,  5 May 2017 22:57:04 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.2
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.2 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id BXmfnIBE6WHA for <6lo@ietfa.amsl.com>; Fri,  5 May 2017 22:57:02 -0700 (PDT)
+Received: from mailhost.informatik.uni-bremen.de (mailhost.informatik.uni-bremen.de [IPv6:2001:638:708:30c9::12]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id C2339120725 for <6lo@ietf.org>; Fri,  5 May 2017 22:57:01 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at informatik.uni-bremen.de
+Received: from submithost.informatik.uni-bremen.de (submithost.informatik.uni-bremen.de [IPv6:2001:638:708:30c9::b]) by mailhost.informatik.uni-bremen.de (8.14.5/8.14.5) with ESMTP id v465uu4I024886 for <6lo@ietf.org>; Sat, 6 May 2017 07:56:57 +0200 (CEST)
+Received: from [192.168.217.124] (p5DC7F3A7.dip0.t-ipconnect.de [93.199.243.167]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by submithost.informatik.uni-bremen.de (Postfix) with ESMTPSA id 3wKdLw5S2rzDHq4; Sat,  6 May 2017 07:56:56 +0200 (CEST)
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0 (Mac OS X Mail 10.3 \(3273\))
+From: Carsten Bormann <cabo@tzi.org>
+In-Reply-To: <20170506034408.9E6C6B80EBA@rfc-editor.org>
+Date: Sat, 6 May 2017 07:56:55 +0200
+X-Mao-Original-Outgoing-Id: 515743015.675524-ccc90bea55f5ac494ed431c7b02dffbf
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <DB24EE94-400F-4B4F-BB70-81A6C6105EB4@tzi.org>
+References: <20170506034408.9E6C6B80EBA@rfc-editor.org>
+To: lo <6lo@ietf.org>
+X-Mailer: Apple Mail (2.3273)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/0CHgugX5Mcmb4CHH4k5NOhymLtg>
+Subject: Re: [6lo] RFC 8163 on Transmission of IPv6 over Master-Slave/Token-Passing (MS/TP) Networks
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 06 May 2017 05:57:04 -0000
+
+Congratulations!
+
+It seems the first wave of 6lo adaptation layers is now complete:
+
+RFC 7428 (was draft-ietf-6lo-lowpanz)=20
+Transmission of IPv6 Packets over ITU-T G.9959 Networks
+
+RFC 7668 (was draft-ietf-6lo-btle)=20
+IPv6 over BLUETOOTH(R) Low Energy
+
+RFC 8105 (was draft-ietf-6lo-dect-ule)=20
+Transmission of IPv6 Packets over Digital Enhanced Cordless =
+Telecommunications (DECT) Ultra Low Energy (ULE)
+
+RFC 8163 (was draft-ietf-6lo-6lobac)=20
+Transmission of IPv6 over Master-Slave/Token-Passing (MS/TP) Networks
+
+On to finishing blemesh and nfc!
+
+Gr=C3=BC=C3=9Fe, Carsten
+
+
+> On May 6, 2017, at 05:44, rfc-editor@rfc-editor.org wrote:
+>=20
+> A new Request for Comments is now available in online RFC libraries.
+>=20
+>=20
+>        RFC 8163
+>=20
+>        Title:      Transmission of IPv6 over =
+Master-Slave/Token-Passing=20
+>                    (MS/TP) Networks=20
+>        Author:     K. Lynn, Ed.,
+>                    J. Martocci,=20
+>                    C. Neilson,
+>                    S. Donaldson
+>        Status:     Standards Track
+>        Stream:     IETF
+>        Date:       May 2017
+>        Mailbox:    kerlyn@ieee.org,=20
+>                    jpmartocci@sbcglobal.net,=20
+>                    cneilson@deltacontrols.com, =20
+>                    stuart.donaldson@honeywell.com
+>        Pages:      27
+>        Characters: 55845
+>        Updates/Obsoletes/SeeAlso:   None
+>=20
+>        I-D Tag:    draft-ietf-6lo-6lobac-08.txt
+>=20
+>        URL:        https://www.rfc-editor.org/info/rfc8163
+>=20
+>        DOI:        10.17487/RFC8163
+>=20
+> Master-Slave/Token-Passing (MS/TP) is a medium access control method
+> for the RS-485 physical layer and is used primarily in building
+> automation networks.  This specification defines the frame format for
+> transmission of IPv6 packets and the method of forming link-local and
+> statelessly autoconfigured IPv6 addresses on MS/TP networks.
+>=20
+> This document is a product of the IPv6 over Networks of =
+Resource-constrained Nodes Working Group of the IETF.
+>=20
+> This is now a Proposed Standard.
+>=20
+> STANDARDS TRACK: This document specifies an Internet Standards Track
+> protocol for the Internet community, and requests discussion and =
+suggestions
+> for improvements.  Please refer to the current edition of the Official
+> Internet Protocol Standards (https://www.rfc-editor.org/standards) for =
+the=20
+> standardization state and status of this protocol.  Distribution of =
+this=20
+> memo is unlimited.
+>=20
+> This announcement is sent to the IETF-Announce and rfc-dist lists.
+> To subscribe or unsubscribe, see
+>  https://www.ietf.org/mailman/listinfo/ietf-announce
+>  https://mailman.rfc-editor.org/mailman/listinfo/rfc-dist
+>=20
+> For searching the RFC series, see https://www.rfc-editor.org/search
+> For downloading RFCs, see https://www.rfc-editor.org/retrieve/bulk
+>=20
+> Requests for special distribution should be addressed to either the
+> author of the RFC in question, or to rfc-editor@rfc-editor.org.  =
+Unless
+> specifically noted otherwise on the RFC itself, all RFCs are for
+> unlimited distribution.
+>=20
+>=20
+> The RFC Editor Team
+> Association Management Solutions, LLC
+>=20
+>=20
+>=20
+
+
+From nobody Sat May  6 05:13:55 2017
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 1DB55128768 for <6lo@ietfa.amsl.com>; Sat,  6 May 2017 05:13:54 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.523
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.523 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, RP_MATCHES_RCVD=-0.001, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id CO87wJMXSyJ2 for <6lo@ietfa.amsl.com>; Sat,  6 May 2017 05:13:52 -0700 (PDT)
+Received: from rcdn-iport-2.cisco.com (rcdn-iport-2.cisco.com [173.37.86.73]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id DCB781201FA for <6lo@ietf.org>; Sat,  6 May 2017 05:13:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=3617; q=dns/txt; s=iport; t=1494072831; x=1495282431; h=from:to:cc:subject:date:message-id:references: in-reply-to:content-transfer-encoding:mime-version; bh=/tROB3Kh46ZtBI79TJiVZ2oWsVADcj1m0HE8MBP9+KI=; b=bx2UJDne6mvgQ1KYVc6z9uy5yCzKhFTy8OdWCJCAhdV9suH+oAylxajS YtvpDpE9ynKtPyfXIcOkdzPDbOF2v+55Lw/eCB2LzG8LhlWsxsBG1Q3Kk bZUUklpNi6nPn63e/dmr/OiVWQoXupum6frO91CaXtcW+HARpfVFPe1lQ s=;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0ChAQBevQ1Z/5tdJa1dGgEBAQECAQEBA?= =?us-ascii?q?QgBAQEBg1VigQyOAJE1IZVygg8hC4V4AoRJPxgBAgEBAQEBAQFrKIUVAQEBAQI?= =?us-ascii?q?BAQFMIAIJBQsCAQgOBgQMIicKASUCBA4FFAcCBIlnAw0IDrE2imQBAQEBAQEBA?= =?us-ascii?q?QEBAQEBAQEBAQEBAQEYBYZfgV0BKwuCZYE8gRiBcB+DOIIxBZBghgaHEwGHG4t?= =?us-ascii?q?8ggSFPIoslD0BHziBCnAVHCoSAYRtKYFKdoZSgi4BAQE?=
+X-IronPort-AV: E=Sophos;i="5.38,298,1491264000"; d="scan'208";a="244989035"
+Received: from rcdn-core-4.cisco.com ([173.37.93.155]) by rcdn-iport-2.cisco.com with ESMTP/TLS/DHE-RSA-AES256-GCM-SHA384; 06 May 2017 12:13:50 +0000
+Received: from XCH-ALN-001.cisco.com (xch-aln-001.cisco.com [173.36.7.11]) by rcdn-core-4.cisco.com (8.14.5/8.14.5) with ESMTP id v46CDoJH032357 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=FAIL); Sat, 6 May 2017 12:13:50 GMT
+Received: from xch-rcd-001.cisco.com (173.37.102.11) by XCH-ALN-001.cisco.com (173.36.7.11) with Microsoft SMTP Server (TLS) id 15.0.1210.3; Sat, 6 May 2017 07:13:49 -0500
+Received: from xch-rcd-001.cisco.com ([173.37.102.11]) by XCH-RCD-001.cisco.com ([173.37.102.11]) with mapi id 15.00.1210.000; Sat, 6 May 2017 07:13:49 -0500
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: Carsten Bormann <cabo@tzi.org>
+CC: lo <6lo@ietf.org>
+Thread-Topic: [6lo] RFC 8163 on Transmission of IPv6 over Master-Slave/Token-Passing (MS/TP) Networks
+Thread-Index: AQHSxhsuEeN9yeBQ2E+O8Z52h3i2z6HnIryAgAAVfWE=
+Date: Sat, 6 May 2017 12:13:49 +0000
+Message-ID: <D70EE3A8-C65A-4541-8375-6D8CE2F8A369@cisco.com>
+References: <20170506034408.9E6C6B80EBA@rfc-editor.org>, <DB24EE94-400F-4B4F-BB70-81A6C6105EB4@tzi.org>
+In-Reply-To: <DB24EE94-400F-4B4F-BB70-81A6C6105EB4@tzi.org>
+Accept-Language: fr-FR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-transport-fromentityheader: Hosted
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/kKeXSlmSn9XGrFT3VPzDXziLoUg>
+Subject: Re: [6lo] RFC 8163 on Transmission of IPv6 over Master-Slave/Token-Passing (MS/TP) Networks
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 06 May 2017 12:13:54 -0000
+
+Champagne!
+
+
+Regards,
+
+Pascal
+
+> Le 6 mai 2017 =E0 07:57, Carsten Bormann <cabo@tzi.org> a =E9crit :
+>=20
+> Congratulations!
+>=20
+> It seems the first wave of 6lo adaptation layers is now complete:
+>=20
+> RFC 7428 (was draft-ietf-6lo-lowpanz)=20
+> Transmission of IPv6 Packets over ITU-T G.9959 Networks
+>=20
+> RFC 7668 (was draft-ietf-6lo-btle)=20
+> IPv6 over BLUETOOTH(R) Low Energy
+>=20
+> RFC 8105 (was draft-ietf-6lo-dect-ule)=20
+> Transmission of IPv6 Packets over Digital Enhanced Cordless Telecommunica=
+tions (DECT) Ultra Low Energy (ULE)
+>=20
+> RFC 8163 (was draft-ietf-6lo-6lobac)=20
+> Transmission of IPv6 over Master-Slave/Token-Passing (MS/TP) Networks
+>=20
+> On to finishing blemesh and nfc!
+>=20
+> Gr=FC=DFe, Carsten
+>=20
+>=20
+>> On May 6, 2017, at 05:44, rfc-editor@rfc-editor.org wrote:
+>>=20
+>> A new Request for Comments is now available in online RFC libraries.
+>>=20
+>>=20
+>>       RFC 8163
+>>=20
+>>       Title:      Transmission of IPv6 over Master-Slave/Token-Passing=20
+>>                   (MS/TP) Networks=20
+>>       Author:     K. Lynn, Ed.,
+>>                   J. Martocci,=20
+>>                   C. Neilson,
+>>                   S. Donaldson
+>>       Status:     Standards Track
+>>       Stream:     IETF
+>>       Date:       May 2017
+>>       Mailbox:    kerlyn@ieee.org,=20
+>>                   jpmartocci@sbcglobal.net,=20
+>>                   cneilson@deltacontrols.com, =20
+>>                   stuart.donaldson@honeywell.com
+>>       Pages:      27
+>>       Characters: 55845
+>>       Updates/Obsoletes/SeeAlso:   None
+>>=20
+>>       I-D Tag:    draft-ietf-6lo-6lobac-08.txt
+>>=20
+>>       URL:        https://www.rfc-editor.org/info/rfc8163
+>>=20
+>>       DOI:        10.17487/RFC8163
+>>=20
+>> Master-Slave/Token-Passing (MS/TP) is a medium access control method
+>> for the RS-485 physical layer and is used primarily in building
+>> automation networks.  This specification defines the frame format for
+>> transmission of IPv6 packets and the method of forming link-local and
+>> statelessly autoconfigured IPv6 addresses on MS/TP networks.
+>>=20
+>> This document is a product of the IPv6 over Networks of Resource-constra=
+ined Nodes Working Group of the IETF.
+>>=20
+>> This is now a Proposed Standard.
+>>=20
+>> STANDARDS TRACK: This document specifies an Internet Standards Track
+>> protocol for the Internet community, and requests discussion and suggest=
+ions
+>> for improvements.  Please refer to the current edition of the Official
+>> Internet Protocol Standards (https://www.rfc-editor.org/standards) for t=
+he=20
+>> standardization state and status of this protocol.  Distribution of this=
+=20
+>> memo is unlimited.
+>>=20
+>> This announcement is sent to the IETF-Announce and rfc-dist lists.
+>> To subscribe or unsubscribe, see
+>> https://www.ietf.org/mailman/listinfo/ietf-announce
+>> https://mailman.rfc-editor.org/mailman/listinfo/rfc-dist
+>>=20
+>> For searching the RFC series, see https://www.rfc-editor.org/search
+>> For downloading RFCs, see https://www.rfc-editor.org/retrieve/bulk
+>>=20
+>> Requests for special distribution should be addressed to either the
+>> author of the RFC in question, or to rfc-editor@rfc-editor.org.  Unless
+>> specifically noted otherwise on the RFC itself, all RFCs are for
+>> unlimited distribution.
+>>=20
+>>=20
+>> The RFC Editor Team
+>> Association Management Solutions, LLC
+>>=20
+>>=20
+>>=20
+>=20
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+
+
+From nobody Fri May 12 02:16:11 2017
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id EA846129B64; Fri, 12 May 2017 02:16:08 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.50.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <149458056889.16728.10577872636905217998@ietfa.amsl.com>
+Date: Fri, 12 May 2017 02:16:08 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/THlMUnS2zS4CDuBoEdgvFXuaS6c>
+Subject: [6lo] I-D Action: draft-ietf-6lo-rfc6775-update-05.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 12 May 2017 09:16:09 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes of the IETF.
+
+        Title           : An Update to 6LoWPAN ND
+        Authors         : Pascal Thubert
+                          Erik Nordmark
+                          Samita Chakrabarti
+	Filename        : draft-ietf-6lo-rfc6775-update-05.txt
+	Pages           : 29
+	Date            : 2017-05-12
+
+Abstract:
+   This specification updates RFC 6775 - 6LoWPAN Neighbor Discovery, to
+   clarify the role of the protocol as a registration technique,
+   simplify the registration operation in 6LoWPAN routers, and provide
+   enhancements to the registration capabilities, in particular for the
+   registration to a Backbone Router for proxy ND operations.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-rfc6775-update/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-rfc6775-update-05
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-rfc6775-update-05
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-rfc6775-update-05
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Mon May 15 18:34:35 2017
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id CB54F129487; Mon, 15 May 2017 18:34:33 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.50.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <149489847378.11864.5369253718858850299@ietfa.amsl.com>
+Date: Mon, 15 May 2017 18:34:33 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/Mv3015VELJQk6dB2F5P1sNcoNwA>
+Subject: [6lo] I-D Action: draft-ietf-6lo-ap-nd-01.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 16 May 2017 01:34:34 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes of the IETF.
+
+        Title           : Address Protected Neighbor Discovery for Low-power and Lossy Networks
+        Authors         : Behcet Sarikaya
+                          Pascal Thubert
+                          Mohit Sethi
+	Filename        : draft-ietf-6lo-ap-nd-01.txt
+	Pages           : 17
+	Date            : 2017-05-15
+
+Abstract:
+   This document defines an extension to 6LoWPAN Neighbor Discovery.
+   This extension is designed for low-power and lossy network
+   environments and it supports multi-hop operation.  Nodes supporting
+   this extension compute a Cryptographically Unique Interface ID and
+   associate it with one or more of their Registered Addresses.  The
+   Cryptographic ID (Crypto-ID) uniquely identifies the owner of the
+   Registered Address.  It is used in place of the EUI-64 address that
+   is specified in RFC 6775.  Once an address is registered with a
+   Cryptographic ID, only the owner of that ID can modify the state
+   information of the Registered Address in the 6LR and 6LBR.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-ap-nd/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-ap-nd-01
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-ap-nd-01
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-ap-nd-01
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Mon May 15 18:39:13 2017
+Return-Path: <sarikaya2012@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 2A1951294F0 for <6lo@ietfa.amsl.com>; Mon, 15 May 2017 18:39:12 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.448
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.448 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_ENVFROM_END_DIGIT=0.25, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 5HypiFLZq4EH for <6lo@ietfa.amsl.com>; Mon, 15 May 2017 18:39:10 -0700 (PDT)
+Received: from mail-wm0-x22c.google.com (mail-wm0-x22c.google.com [IPv6:2a00:1450:400c:c09::22c]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 5D2A512EB23 for <6lo@ietf.org>; Mon, 15 May 2017 18:36:05 -0700 (PDT)
+Received: by mail-wm0-x22c.google.com with SMTP id b84so109819955wmh.0 for <6lo@ietf.org>; Mon, 15 May 2017 18:36:05 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:reply-to:from:date:message-id:subject:to; bh=RN/PiqJoIBSKFtlWC2RJKRHr/n+3vMxHLviuNbadr6U=; b=D7pNJ+QkkDQXcUh2m4XOPOy7NI+ncPm79xPSwiLNg5KqOLF6P5N8k68SNk7NDgqlTv YDaXS2Qr8/vBgydHPwI7fPNLxgF6DFkzgpU7Dv2RfrY3x4a/4JeAXgi/KsdksX/lc5KP X3J1j0GI73Yc/zwyPy3UGKeldVqWoKAZfJ7ZR9V066c25xBy/WwzMi0ZiexRLZng6BJ4 LedCz/3GqPE2d247AgerGy5wQcKI3w01EMwbHAoPq8GWOmPt57uao/QXfl2PcMIPeVSc qF4MWwLcyxK5qiJr5PIIUsfAOwpoyqV88veCwmAAVlWpsQRo6WDFyEQPNWcajily5ZI+ q/Lw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:reply-to:from:date:message-id :subject:to; bh=RN/PiqJoIBSKFtlWC2RJKRHr/n+3vMxHLviuNbadr6U=; b=DNTJW6dXa6IqKKhYtCQpAThtgQSeBPmo51Oss/duZzTVBR+AbNNxTPzgAe3zzVOyyC FmqfEhJ9gb7d4bcpMVZZ68bZCd2lO0DufR1aowkZfgyqOtLOGj6Hf+B+3O9cfRRZ1hr1 g9FjuTKFYlcw+cAOXVTtQgoNQEHtHnB4fQpFso+Ys3P3N7X4HzlE9kQmCDHce5rDjzHO QPwjBcguNvGXhJnd1bH1lNOhF3R5NHTxqluYd6SHkCoqSoiWFUL2sCQqJM9gtP4x8d67 gdcC3Wqve3o4/Foz+2Qtj2wMgbtzhYDYU3rdu/Rsk9EgKcR3M9QssHf9iThIOx+z+LoD UTng==
+X-Gm-Message-State: AODbwcAzuVurux4f3SjGYGAYeYZgjgYBUlAZUfGr0wJ3Vkvl1BzOuiVM UUtkgOp/3PFkua3s2kMes2R9dKKy+Q==
+X-Received: by 10.223.172.165 with SMTP id o34mr6697126wrc.155.1494898563759;  Mon, 15 May 2017 18:36:03 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.223.134.125 with HTTP; Mon, 15 May 2017 18:36:03 -0700 (PDT)
+Reply-To: sarikaya@ieee.org
+From: Behcet Sarikaya <sarikaya2012@gmail.com>
+Date: Mon, 15 May 2017 20:36:03 -0500
+Message-ID: <CAC8QAcdSOv82T+ZNLdP=oEMCk2Zcz_qeLOLw1rD9xfOdf+Ohjg@mail.gmail.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Content-Type: multipart/alternative; boundary="001a113c456cde463d054f9a31de"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/ryaqEBXY5I92Nsp-I55Ux-QKSw4>
+Subject: [6lo] New Version Notification for draft-ietf-6lo-ap-nd-01.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 16 May 2017 01:39:12 -0000
+
+--001a113c456cde463d054f9a31de
+Content-Type: text/plain; charset="UTF-8"
+
+A new version of I-D, draft-ietf-6lo-ap-nd-01.txt
+has been successfully submitted by Behcet Sarikaya and posted to the
+IETF repository.
+
+Name:           draft-ietf-6lo-ap-nd
+Revision:       01
+Title:          Address Protected Neighbor Discovery for Low-power and
+Lossy Networks
+Document date:  2017-05-15
+Group:          6lo
+Pages:          17
+URL:            https://www.ietf.org/internet-drafts/draft-ietf-6lo-ap-nd-
+01.txt
+Status:         https://datatracker.ietf.org/doc/draft-ietf-6lo-ap-nd/
+Htmlized:       https://tools.ietf.org/html/draft-ietf-6lo-ap-nd-01
+Htmlized:       https://datatracker.ietf.org/doc/html/draft-ietf-6lo-ap-nd-
+01
+Diff:           https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-ap-nd-01
+
+Abstract:
+   This document defines an extension to 6LoWPAN Neighbor Discovery.
+   This extension is designed for low-power and lossy network
+   environments and it supports multi-hop operation.  Nodes supporting
+   this extension compute a Cryptographically Unique Interface ID and
+   associate it with one or more of their Registered Addresses.  The
+   Cryptographic ID (Crypto-ID) uniquely identifies the owner of the
+   Registered Address.  It is used in place of the EUI-64 address that
+   is specified in RFC 6775.  Once an address is registered with a
+   Cryptographic ID, only the owner of that ID can modify the state
+   information of the Registered Address in the 6LR and 6LBR.
+
+
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+The IETF Secretariat
+
+--001a113c456cde463d054f9a31de
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_quote"><br>
+A new version of I-D, draft-ietf-6lo-ap-nd-01.txt<br>
+has been successfully submitted by Behcet Sarikaya and posted to the<br>
+IETF repository.<br>
+<br>
+Name:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0draft-ietf-6lo-ap-nd<br>
+Revision:=C2=A0 =C2=A0 =C2=A0 =C2=A001<br>
+Title:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 Address Protected Neighbor Discove=
+ry for Low-power and Lossy Networks<br>
+Document date:=C2=A0 2017-05-15<br>
+Group:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 6lo<br>
+Pages:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 17<br>
+URL:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <a href=3D"https://www.ietf.o=
+rg/internet-drafts/draft-ietf-6lo-ap-nd-01.txt" rel=3D"noreferrer" target=
+=3D"_blank">https://www.ietf.org/internet-<wbr>drafts/draft-ietf-6lo-ap-nd-=
+<wbr>01.txt</a><br>
+Status:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0<a href=3D"https://datatracker.iet=
+f.org/doc/draft-ietf-6lo-ap-nd/" rel=3D"noreferrer" target=3D"_blank">https=
+://datatracker.ietf.org/<wbr>doc/draft-ietf-6lo-ap-nd/</a><br>
+Htmlized:=C2=A0 =C2=A0 =C2=A0 =C2=A0<a href=3D"https://tools.ietf.org/html/=
+draft-ietf-6lo-ap-nd-01" rel=3D"noreferrer" target=3D"_blank">https://tools=
+.ietf.org/html/<wbr>draft-ietf-6lo-ap-nd-01</a><br>
+Htmlized:=C2=A0 =C2=A0 =C2=A0 =C2=A0<a href=3D"https://datatracker.ietf.org=
+/doc/html/draft-ietf-6lo-ap-nd-01" rel=3D"noreferrer" target=3D"_blank">htt=
+ps://datatracker.ietf.org/<wbr>doc/html/draft-ietf-6lo-ap-nd-<wbr>01</a><br=
+>
+Diff:=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0<a href=3D"https://www.ietf.o=
+rg/rfcdiff?url2=3Ddraft-ietf-6lo-ap-nd-01" rel=3D"noreferrer" target=3D"_bl=
+ank">https://www.ietf.org/rfcdiff?<wbr>url2=3Ddraft-ietf-6lo-ap-nd-01</a><b=
+r>
+<br>
+Abstract:<br>
+=C2=A0 =C2=A0This document defines an extension to 6LoWPAN Neighbor Discove=
+ry.<br>
+=C2=A0 =C2=A0This extension is designed for low-power and lossy network<br>
+=C2=A0 =C2=A0environments and it supports multi-hop operation.=C2=A0 Nodes =
+supporting<br>
+=C2=A0 =C2=A0this extension compute a Cryptographically Unique Interface ID=
+ and<br>
+=C2=A0 =C2=A0associate it with one or more of their Registered Addresses.=
+=C2=A0 The<br>
+=C2=A0 =C2=A0Cryptographic ID (Crypto-ID) uniquely identifies the owner of =
+the<br>
+=C2=A0 =C2=A0Registered Address.=C2=A0 It is used in place of the EUI-64 ad=
+dress that<br>
+=C2=A0 =C2=A0is specified in RFC 6775.=C2=A0 Once an address is registered =
+with a<br>
+=C2=A0 =C2=A0Cryptographic ID, only the owner of that ID can modify the sta=
+te<br>
+=C2=A0 =C2=A0information of the Registered Address in the 6LR and 6LBR.<br>
+<br>
+<br>
+<br>
+<br>
+Please note that it may take a couple of minutes from the time of submissio=
+n<br>
+until the htmlized version and diff are available at <a href=3D"http://tool=
+s.ietf.org" rel=3D"noreferrer" target=3D"_blank">tools.ietf.org</a>.<br>
+<br>
+The IETF Secretariat<br>
+<br>
+</div><br></div>
+
+--001a113c456cde463d054f9a31de--
+
+
+From nobody Wed May 24 09:09:17 2017
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id DAFED12955A; Wed, 24 May 2017 09:09:15 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.51.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <149564215585.28413.16227022131357463075@ietfa.amsl.com>
+Date: Wed, 24 May 2017 09:09:15 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/OlRLbryRoQTzAQ35Zlj1z6bSlis>
+Subject: [6lo] I-D Action: draft-ietf-6lo-ap-nd-02.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 24 May 2017 16:09:16 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes of the IETF.
+
+        Title           : Address Protected Neighbor Discovery for Low-power and Lossy Networks
+        Authors         : Behcet Sarikaya
+                          Pascal Thubert
+                          Mohit Sethi
+	Filename        : draft-ietf-6lo-ap-nd-02.txt
+	Pages           : 17
+	Date            : 2017-05-24
+
+Abstract:
+   This document defines an extension to 6LoWPAN Neighbor Discovery, RFC
+   6775.  Nodes supporting this extension compute a cryptographic Owner
+   Unique Interface ID and associate it with one or more of their
+   Registered Addresses.  Once an address is registered with a
+   Cryptographic ID, only the owner of that ID can modify the anchor
+   state information of the Registered Address, and Source Address
+   Validation can be enforced.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-ap-nd/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-ap-nd-02
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-ap-nd-02
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-ap-nd-02
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Tue May 30 15:18:24 2017
+Return-Path: <session-request@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 4A61E129471; Tue, 30 May 2017 15:18:22 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: IETF Meeting Session Request Tool <session-request@ietf.org>
+To: <session-request@ietf.org>
+Cc: g.e.montenegro@hotmail.com, suresh.krishnan@gmail.com, 6lo-chairs@ietf.org, 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.52.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <149618270221.19900.10908595241667130957.idtracker@ietfa.amsl.com>
+Date: Tue, 30 May 2017 15:18:22 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/JugoGtbRN7gDFlGzUzuqiC0-y3k>
+Subject: [6lo] 6lo - New Meeting Session Request for IETF 99
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 30 May 2017 22:18:22 -0000
+
+A new meeting session request has just been submitted by Gabriel Montenegro, a Chair of the 6lo working group.
+
+
+---------------------------------------------------------
+Working Group Name: IPv6 over Networks of Resource-constrained Nodes
+Area Name: Internet Area
+Session Requester: Gabriel Montenegro
+
+Number of Sessions: 1
+Length of Session(s):  2 Hours
+Number of Attendees: 61
+Conflicts to Avoid: 
+ First Priority: lwig intarea core ace 6tisch 6man manet homenet lpwan httpbis quic
+ Second Priority: roll v6ops detnet icnrg t2trg
+
+
+
+People who must be present:
+  Samita Chakrabarti
+  Suresh Krishnan
+  james woodyatt
+  Gabriel Montenegro
+
+Resources Requested:
+
+Special Requests:
+  
+---------------------------------------------------------
+
+
+From nobody Wed May 31 10:45:47 2017
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 8894A127077 for <6lo@ietfa.amsl.com>; Wed, 31 May 2017 10:45:46 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.299
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.299 tagged_above=-999 required=5 tests=[BAYES_05=-0.5, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id PEj_jkgBAGpr for <6lo@ietfa.amsl.com>; Wed, 31 May 2017 10:45:45 -0700 (PDT)
+Received: from mail-vk0-x230.google.com (mail-vk0-x230.google.com [IPv6:2607:f8b0:400c:c05::230]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 1FD65124D6C for <6lo@ietf.org>; Wed, 31 May 2017 10:45:45 -0700 (PDT)
+Received: by mail-vk0-x230.google.com with SMTP id p85so12429893vkd.3 for <6lo@ietf.org>; Wed, 31 May 2017 10:45:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:from:date:message-id:subject:to; bh=puibvbS/GKK0sJ6ErgXVrlHig+OJ4Ja3HZITAgwM2M4=; b=QUhwaLPEZl9KHveJLfpRgBqShIObPyS0LyYiYy3x2FQJ0luhw+7knTVD+GpKdamoyA TX681DR+mnNnvS+CcJjBj+7S41uNHSbt8IAVwWbUXR8YEQvzt04h9mWHFlrP9B1xILRz ca3V8UsVUalUyRDbcM6iW51N1yXNkmq0HCSw3+B0bnZviT447telNzm0uNNR/7F7Q/x+ E/R2oTSln+mQyhEbpcUVjw8c1qdK0BQZ65ipv//I/w6PwYkowBUXl0U6QLc95yz9Ty9i Cfd/QXJbsoz+LXIMFe1GNHrUSaGeitzJNW0JgB32+QE6veG5K4gBtqa7zyZ+uC4ZX8hO J68A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=puibvbS/GKK0sJ6ErgXVrlHig+OJ4Ja3HZITAgwM2M4=; b=MckBgcgNxGUOACcBJ9GDoM/ATJ6MRHOnyS/9JbxQWe5e+sR97JxE7d/w4tQj9QUQtZ CACHp/7WEiJ8f+Ds+Su2b46kjLwReXhN99KI0SBXCk+2nYR1I9SuDWxBbQ8sygeEvBdq fjXPb7DFmQS7GrjD1kmtoKmy+42E8+sTZjOPtK1G8/p+iYkD2OZ4pi8KIc8C59XhGoMs PYcRs9Cdc+6Y6Xnp7H5sjs2nmqZapvPGeLobbQ4Es6viEZWTgYCrvfmPdlDLmJ2QYRLx xc3DHPwMS8Z0WwxRNSocP2w0+LhpmbV/7pCAqnqfiYKmnKEEGENcWzpKkXMAw3ctamV4 aYTg==
+X-Gm-Message-State: AODbwcD/18b19apENY/uqdAqcPW7U5Oq7QCA2mbiB305x6r8gsGO17Iu H+NFJIZU+RfIz6g4xI1BSwTz2O0FYA==
+X-Received: by 10.31.166.139 with SMTP id p133mr12811379vke.123.1496252744008;  Wed, 31 May 2017 10:45:44 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.31.167.78 with HTTP; Wed, 31 May 2017 10:45:43 -0700 (PDT)
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+Date: Wed, 31 May 2017 10:45:43 -0700
+Message-ID: <CAKmdBpcgEJinPy=9LhB7XCCiSep9iy117z=--Rp1K30h96Qriw@mail.gmail.com>
+To: lo <6lo@ietf.org>
+Content-Type: multipart/alternative; boundary="001a1142d9924d0a180550d57d85"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/tLe4NInfZY5QgG1o98_ID1WW7Ow>
+Subject: [6lo] Request for IETF99@Prague 6lo Agenda items
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 31 May 2017 17:45:46 -0000
+
+--001a1142d9924d0a180550d57d85
+Content-Type: text/plain; charset="UTF-8"
+
+Hello 6lo WG:
+
+It is the time again for requesting agenda items for Prague IETF meeting.
+We have requested  for 2 hour slot this time.
+
+Please send your requests for 6lo agenda items by June 23rd (6-23-2017).
+The preliminary IETF agenda will be published around mid-June.
+
+As always please include the following in your request and send the request
+to both the chairs.
+
+Draft-name:
+Brief summary of description:
+Name of presenter:
+Purpose of the presentation/discussion:
+
+Cheers,
+-Samita
+
+--001a1142d9924d0a180550d57d85
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello 6lo WG:<div><br></div><div>It is the time again for =
+requesting agenda items for Prague IETF meeting.</div><div>We have requeste=
+d =C2=A0for 2 hour slot this time.</div><div><br></div><div>Please send you=
+r requests for 6lo agenda items by June 23rd (6-23-2017). The preliminary I=
+ETF agenda will be published around mid-June.=C2=A0</div><div><br></div><di=
+v>As always please include the following in your request and send the reque=
+st to both the chairs.</div><div><br></div><div>Draft-name:</div><div>Brief=
+ summary of description:</div><div>Name of presenter:</div><div>Purpose of =
+the presentation/discussion:</div><div><br></div><div>Cheers,</div><div>-Sa=
+mita</div></div>
+
+--001a1142d9924d0a180550d57d85--
+
+
+From nobody Wed May 31 11:19:30 2017
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 7FDA5129576 for <6lo@ietfa.amsl.com>; Wed, 31 May 2017 11:19:18 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.999
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.999 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id aHtI-uWh-poG for <6lo@ietfa.amsl.com>; Wed, 31 May 2017 11:19:17 -0700 (PDT)
+Received: from mail-ua0-x236.google.com (mail-ua0-x236.google.com [IPv6:2607:f8b0:400c:c08::236]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 2AEB4128854 for <6lo@ietf.org>; Wed, 31 May 2017 11:19:17 -0700 (PDT)
+Received: by mail-ua0-x236.google.com with SMTP id j17so14364145uag.3 for <6lo@ietf.org>; Wed, 31 May 2017 11:19:17 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:from:date:message-id:subject:to; bh=cq8W3q3t2/FK0K4HDpmTfh4r6Yd3+XwmAQFjLE63a4o=; b=AFLYFzmgyHU0tCT8qK4j1rC57LIhAteiSkFk1eb3oDTJSsFdR317H9cgKQJ00Z/bBR h0o/KWYflpUfGjCF3pC86qXzgB2euesyjbqoFghrBp0O96f8k1aT/Wu+csSw5s9egBYY vknw11jTUIgz9FW8Pg2yFe9ndhxz5vKITpLbPc9nH4TrvhVZFrSUEbnvy1Xe3TamghWK xhwAVjFTJOmIA45M1P4fXiCiz4bvKO/sfgkd5fEejv0v8WMxAPwpomXSgiDJ0tIDou5V ICBHYYuAPLhxYiFHhaMKAkyCEgLF52pzwLHEYbxD0F+ly0x3iVXO3skMOxftz/wTPMJ+ ZWHQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=cq8W3q3t2/FK0K4HDpmTfh4r6Yd3+XwmAQFjLE63a4o=; b=XhbiRptt+YCSJ4uLOaskjvMEryC43FmMUD4ErdSkRe1fhHyTGiQDYZskouflEwxfwB eorvrR3C+Ow319Lsw+RE3ZNWji7L03bxfyJu1KBYe42UdZd7jKvhPOYeETzXTx7MFYhH g3rYzROGwHR3G/3X7Ga6biFcpy8blK6RvcOzimb4VlZkz8qmmLj9g/9X11Wx2tj9LfET FNkssxsEpwJymVomZU7v+OjTrmHlWWCb7c2WJ+Hd96IA/pUKLQaex/QVdW+YnXlyNwFU 5yuMvsVQeXdC1jiPI1oFSJBVkeP0siL5iNG2qKkuSfm4hFb7qfmhov5j8WACKfubqSMT Tejw==
+X-Gm-Message-State: AODbwcBv5q8gAd/AkZLlG7+ZbTqb0XeKbWglmrHPrKKhO7cPQNwldtby bcvXBf77IxZVmaJqNzqF8NWFrm+3LBVY
+X-Received: by 10.176.91.83 with SMTP id v19mr11983159uae.26.1496254756161; Wed, 31 May 2017 11:19:16 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.31.167.78 with HTTP; Wed, 31 May 2017 11:19:15 -0700 (PDT)
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+Date: Wed, 31 May 2017 11:19:15 -0700
+Message-ID: <CAKmdBpcPcy2b0SSBfiSZh05pevK2SmOuBDwB-deMZNZJcBc9vg@mail.gmail.com>
+To: lo <6lo@ietf.org>
+Content-Type: multipart/alternative; boundary="f403045f897c3c10080550d5f581"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/2F37aC6F10z1HhxjocKqJ51oAlE>
+Subject: [6lo] Recent RFCs
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 31 May 2017 18:19:19 -0000
+
+--f403045f897c3c10080550d5f581
+Content-Type: text/plain; charset="UTF-8"
+
+FYI:
+
+Congratulations to co-authors, reviewers, shepherds and all involved in
+publication of the following new documents since last IETF!
+
+IEEE 802.15.4 Information Element for the IETF - RFC 8137 [ non-WG item ]
+Transmission of IPv6 over MS/TP networks - RFC 8163
+Transmission of IPv6 over DECT-ULE -  RFC 8105
+
+Thanks to our AD, Suresh as well!
+-Samita & Gabriel
+
+--f403045f897c3c10080550d5f581
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">FYI:<div><br></div><div>Congratulations to co-authors, rev=
+iewers, shepherds and all involved in publication of the following new docu=
+ments since last IETF!</div><div><br></div><div>IEEE 802.15.4 Information E=
+lement for the IETF - RFC 8137<span style=3D"background-color:rgb(255,253,2=
+45);color:rgb(0,0,0);font-family:&quot;PT Mono&quot;,Monaco,monospace;font-=
+size:14px">=C2=A0[ non-WG item ]</span></div><div><span style=3D"background=
+-color:rgb(255,253,245);color:rgb(0,0,0);font-family:&quot;PT Mono&quot;,Mo=
+naco,monospace;font-size:14px">Transmission of IPv6 over MS/TP networks - R=
+FC 8163</span></div><div><span style=3D"background-color:rgb(255,253,245);c=
+olor:rgb(0,0,0);font-family:&quot;PT Mono&quot;,Monaco,monospace;font-size:=
+14px">Transmission of IPv6 over DECT-ULE - =C2=A0RFC 8105</span></div><div>=
+<span style=3D"background-color:rgb(255,253,245);color:rgb(0,0,0);font-fami=
+ly:&quot;PT Mono&quot;,Monaco,monospace;font-size:14px"><br></span></div><d=
+iv><span style=3D"background-color:rgb(255,253,245);color:rgb(0,0,0);font-f=
+amily:&quot;PT Mono&quot;,Monaco,monospace;font-size:14px">Thanks to our AD=
+, Suresh as well!</span></div><div><span style=3D"background-color:rgb(255,=
+253,245);color:rgb(0,0,0);font-family:&quot;PT Mono&quot;,Monaco,monospace;=
+font-size:14px">-Samita &amp; Gabriel</span></div></div>
+
+--f403045f897c3c10080550d5f581--
+

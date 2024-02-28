@@ -40,8 +40,8 @@ def download_from_url(url):
     for file_date in re.findall(r"\d\d\d\d-\d\d", page.text):
         response = requests.get(f"{url}{file_date}.mail", headers=headers, stream=True)
 
-        with open(f"{out_dir}/{file_date}.mail", "w+") as file:
-            file.write(response.text)
+        with open(f"{out_dir}/{file_date}.mail", "wb+") as file:
+            file.write(response.content)
 
 def main() -> None:
 

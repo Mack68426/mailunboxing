@@ -1,0 +1,1046 @@
+
+From ulrich@herberg.name  Tue Jul  2 22:34:50 2013
+Return-Path: <ulrich@herberg.name>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id C093D21F9AF3 for <6lo@ietfa.amsl.com>; Tue,  2 Jul 2013 22:34:50 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.978
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.978 tagged_above=-999 required=5 tests=[BAYES_00=-2.599, FM_FORGED_GMAIL=0.622, NO_RELAYS=-0.001]
+Received: from mail.ietf.org ([12.22.58.30]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id SB7P4IIqqaPD for <6lo@ietfa.amsl.com>; Tue,  2 Jul 2013 22:34:50 -0700 (PDT)
+Received: from mail-vb0-x22a.google.com (mail-vb0-x22a.google.com [IPv6:2607:f8b0:400c:c02::22a]) by ietfa.amsl.com (Postfix) with ESMTP id 7451121F9AF0 for <6lo@ietf.org>; Tue,  2 Jul 2013 22:34:50 -0700 (PDT)
+Received: by mail-vb0-f42.google.com with SMTP id i3so5335082vbh.29 for <6lo@ietf.org>; Tue, 02 Jul 2013 22:34:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=herberg.name; s=dkim; h=mime-version:in-reply-to:references:date:message-id:subject:from:to :content-type; bh=42bdCwWi83LMadomXh+RLfjZoprbYsTb0llgwP+L01U=; b=tTMPXgcrH/V84IVsaSN2qTQIobp5vGtfdk11ixZw72Y4pd9sqzRA2+mfzX0acu41ro CH2wTYEIHdBbqwyoglcytasestP6rQXEC7d9/2CDF7vBoxaM3rqECHkqZu/ms7dmBY/B HKDqDgkQdHGDBArFOvfAav9tTTQ/s57KMXJ9I=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=20120113; h=mime-version:in-reply-to:references:date:message-id:subject:from:to :content-type:x-gm-message-state; bh=42bdCwWi83LMadomXh+RLfjZoprbYsTb0llgwP+L01U=; b=n2c++qquybfcxMonWt82lL4gpkQjfnQj8CrLbx5pQrTwNmm4dzrkSLjsALoi5LSfSX CF4pxpFqpbkDwqzgMJ4AeJyRdH10uNK91qtM2LkCcRbVOHVHRbTbtSxL7LB+9kxdoBRE 46kembWbDBvptPTtIa/749tcPUzHE25r+KnDAvfS4zO3gisVHe19/5vfyZMlmWes6O6u CuUFR/Y3cBYV3rRDtsscUkLz/HJ9t25nue2OXUO1fIjCdZ98fE597q66KPDj0KIY4HjH eIGJBGbfrqU5O30tto52DeVQH+BXTzqsDlQ0RkQm+tG/QORoR5c+agKoucLbUxkfXq0M tp2Q==
+MIME-Version: 1.0
+X-Received: by 10.221.4.138 with SMTP id oc10mr12663316vcb.26.1372829689654; Tue, 02 Jul 2013 22:34:49 -0700 (PDT)
+Received: by 10.221.55.70 with HTTP; Tue, 2 Jul 2013 22:34:49 -0700 (PDT)
+In-Reply-To: <20130703051701.22549.85585.idtracker@ietfa.amsl.com>
+References: <20130703051701.22549.85585.idtracker@ietfa.amsl.com>
+Date: Tue, 2 Jul 2013 22:34:49 -0700
+Message-ID: <CAK=bVC_4BNCwit2wPBx=pT6quVB+SZpCaT4MP6BX7vCNLRDHiw@mail.gmail.com>
+From: Ulrich Herberg <ulrich@herberg.name>
+To: 6lo@ietf.org
+Content-Type: text/plain; charset=ISO-8859-1
+X-Gm-Message-State: ALoCoQns1RuGln8hQeG0qBtvwbDyi2codCFObe9FaOHsQ63Stz8vK55Bf55N9+uQIa1JTYhKvIjf
+Subject: [6lo] Fwd: Draft submission deadlines change
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: "Mailing list for discussion of a WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/6lo>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 03 Jul 2013 05:34:50 -0000
+
+FYI
+
+---------- Forwarded message ----------
+From: IETF Chair <chair@ietf.org>
+Date: Tue, Jul 2, 2013 at 10:17 PM
+Subject: Draft submission deadlines change
+To: IETF Announcement List <ietf-announce@ietf.org>
+
+
+Please note that for IETF 87, there is only one deadline for draft
+submission: Monday 15th July. Previously, there had been two different
+deadlines, one for -00 and another one for other versions. The IESG
+has decided to experiment with just one deadline for now to simplify
+the set of deadlines and enable easier submission of new drafts. While
+we realise that the change comes near the deadline, we hope that you
+find the extra time useful.
+
+But please do note that working group chairs will continue to make
+smart decisions about what topics are worthwhile for discussing in a
+session in the upcoming meeting, and will also set their agendas in a
+timely manner and create deadlines for their working groups that must
+be adhered to. The earlier new drafts are submitted, the more time
+there is to talk about them on the mailing lists and consider them for
+the session agendas. This is particularly important for BoFs.
+
+Jari Arkko for the IESG
+
+From cabo@tzi.org  Thu Jul  4 12:50:29 2013
+Return-Path: <cabo@tzi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 80F1711E81A1; Thu,  4 Jul 2013 12:50:29 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -105.949
+X-Spam-Level: 
+X-Spam-Status: No, score=-105.949 tagged_above=-999 required=5 tests=[AWL=-0.300, BAYES_00=-2.599, HELO_EQ_DE=0.35, J_CHICKENPOX_13=0.6, RCVD_IN_DNSWL_MED=-4, USER_IN_WHITELIST=-100]
+Received: from mail.ietf.org ([12.22.58.30]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id TvpV2ZL70Ah3; Thu,  4 Jul 2013 12:50:24 -0700 (PDT)
+Received: from informatik.uni-bremen.de (mailhost.informatik.uni-bremen.de [IPv6:2001:638:708:30c9::12]) by ietfa.amsl.com (Postfix) with ESMTP id 48BBB11E81A3; Thu,  4 Jul 2013 12:50:23 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at informatik.uni-bremen.de
+Received: from smtp-fb3.informatik.uni-bremen.de (smtp-fb3.informatik.uni-bremen.de [134.102.224.120]) by informatik.uni-bremen.de (8.14.4/8.14.4) with ESMTP id r64JoKMG027779; Thu, 4 Jul 2013 21:50:20 +0200 (CEST)
+Received: from [192.168.217.105] (p548940C7.dip0.t-ipconnect.de [84.137.64.199]) (using TLSv1 with cipher AES128-SHA (128/128 bits)) (No client certificate requested) by smtp-fb3.informatik.uni-bremen.de (Postfix) with ESMTPSA id E20393FA1; Thu,  4 Jul 2013 21:50:18 +0200 (CEST)
+From: Carsten Bormann <cabo@tzi.org>
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+Date: Thu, 4 Jul 2013 21:50:15 +0200
+To: "lwip@ietf.org" <lwip@ietf.org>, "core@ietf.org WG" <core@ietf.org>, roll WG <roll@ietf.org>, "6lowpan@ietf.org" <6lowpan@ietf.org>, dice@ietf.org, "6lo@ietf.org" <6lo@ietf.org>, IETF 6TSCH <6tsch@ietf.org>
+Message-Id: <BF987FA0-F34B-41ED-9BD6-1F43A65B8F8A@tzi.org>
+Mime-Version: 1.0 (Mac OS X Mail 6.5 \(1508\))
+X-Mailer: Apple Mail (2.1508)
+Subject: [6lo] Constrained Node/Network Cluster @ IETF87
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: "Mailing list for discussion of a WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/6lo>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 04 Jul 2013 19:50:29 -0000
+
+Here is my usual eclectic condensed agenda.  All times are CEST =
+(UTC+0200).
+Note that there is no ROLL meeting in Berlin (and, as usual, no 6lowpan =
+meeting, but indeed a 6lo BOF).
+
+Note that the times can still change in the course of conflict =
+resolution.
+The CoRE/saag conflict is unfortunate, but because of the overful agenda =
+there is little chance in fixing it.
+We probably should do all security-related CoRE work on Monday.
+
+Let me also take the opportunity to point to the colocated ETSI 6lowpan =
+plugtest on July 27/28.
+You can still register (and thanks to EC support, there is no charge)!
+http://www.etsi.org/news-events/events/663-2013-6lowpan-plugtests
+
+Gr=FC=DFe, Carsten
+
+
+MONDAY, July 29, 2013
+
+0900-1130  Morning Session I
+Charl_burg 2/3	APP	appsawg	Applications Area Working Group WG - =
+Combined with APPAREA
+Potsdam 1	INT	homenet	Home Networking WG
+Schoeneberg 1/2	OPS	eman	Energy Management WG - 0900-1000
+Potsdam 2	TSV	tsvwg	Transport Area Working Group WG
+
+1300-1500  Afternoon Session I
+Potsdam 3	APP ***	core	Constrained RESTful Environments WG
+
+1510-1610  Afternoon Session II
+Bellevue	INT	6man	IPv6 Maintenance WG
+Charl_burg 2/3	TSV	tsvwg	Transport Area Working Group WG
+
+1620-1720  Afternoon Session III
+Bellevue	INT	6man	IPv6 Maintenance WG
+
+TUESDAY, July 30, 2013
+
+1300-1500  Afternoon Session I
+Potsdam 1	OPS	v6ops	IPv6 Operations WG
+Potsdam 3	RTG	rtgarea	Routing Area Open Meeting
+Charl_burg 2/3	SEC	jose	Javascript Object Signing and Encryption =
+WG
+
+1520-1650  Afternoon Session II
+Bellevue	INT ***	6tsch	Deterministic IPv6 over IEEE802.15.4e =
+Timeslotted Channel Hopping  BOF
+
+WEDNESDAY, July 31, 2013
+
+0900-1130  Morning Session I
+Potsdam 1	OPS	v6ops	IPv6 Operations WG
+Tiergarten 1/2	SEC	oauth	Web Authorization Protocol WG
+
+1300-1500  Afternoon Session I
+Potsdam 3	INT ***	lwig	Light-Weight Implementation Guidance WG
+Potsdam 2	SEC	httpauth	Hypertext Transfer Protocol =
+Authentication WG
+
+1510-1610  Afternoon Session II
+Potsdam 2	APP	httpbis	Hypertext Transfer Protocol Bis WG
+Potsdam 3	SEC ***	dice	DTLS In Constrained Environments BOF
+
+1620-1720  Afternoon Session III
+Potsdam 2	APP	httpbis	Hypertext Transfer Protocol Bis WG
+
+THURSDAY, August 1, 2013
+
+0900-1020  Morning Session I
+Potsdam 2	APP	json	JavaScript Object Notation WG
+Potsdam 3	TSV	tsvarea	Transport Area Open Meeting
+
+1030-1130  Morning Session II
+Potsdam 3	TSV	tsvarea	Transport Area Open Meeting
+
+1300-1500  Afternoon Session I
+Bellevue	APP ***	core	Constrained RESTful Environments WG
+Potsdam 1	SEC	saag	Security Area Open Meeting
+Charl_burg 2/3	TSV	rmcat	RTP Media Congestion Avoidance =
+Techniques WG
+
+1700-1830  Afternoon Session III
+Bellevue	INT ***	6lo	IPv6 over networks of =
+resource-constrained nodes BOF
+
+FRIDAY, August 2, 2013
+
+0900-1100  Morning Session I
+Bellevue	APP	httpbis	Hypertext Transfer Protocol Bis WG
+Potsdam 3	INT	dnssdext	DNS-SD Extensions BOF
+Charl_burg 1	SEC	tls	Transport Layer Security WG
+
+1120-1220  Afternoon Session I
+Potsdam 3	INT	intarea	Internet Area Working Group WG
+
+1230-1330  Afternoon Session II
+Potsdam 3	INT	intarea	Internet Area Working Group WG
+
+
+
+From rdroms.ietf@gmail.com  Mon Jul  8 12:04:02 2013
+Return-Path: <rdroms.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id C564821F99F1 for <6lo@ietfa.amsl.com>; Mon,  8 Jul 2013 12:04:02 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -102.801
+X-Spam-Level: 
+X-Spam-Status: No, score=-102.801 tagged_above=-999 required=5 tests=[AWL=-0.201, BAYES_00=-2.599, NO_RELAYS=-0.001, USER_IN_WHITELIST=-100]
+Received: from mail.ietf.org ([12.22.58.30]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id vWtODWatFp97 for <6lo@ietfa.amsl.com>; Mon,  8 Jul 2013 12:04:02 -0700 (PDT)
+Received: from mail-vb0-x231.google.com (mail-vb0-x231.google.com [IPv6:2607:f8b0:400c:c02::231]) by ietfa.amsl.com (Postfix) with ESMTP id 4578B21F9AC5 for <6lo@ietf.org>; Mon,  8 Jul 2013 12:03:57 -0700 (PDT)
+Received: by mail-vb0-f49.google.com with SMTP id 12so3659881vbf.8 for <6lo@ietf.org>; Mon, 08 Jul 2013 12:03:56 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=content-type:mime-version:subject:from:in-reply-to:date:cc :content-transfer-encoding:message-id:references:to:x-mailer; bh=vxDvRUnpVxEIpXrQo7UxelQ5HIqj5T0OSh6qgJErMgo=; b=oYvDizXqRlRtgTvfdsgWWDnJyxM3X0RIofY4uhu4btvIoO1gPpcoztCGylaDkxzA9a FC6p8SxfPNhYBqW803+i6cB7yWklrinZZYKnpRzn6L9BouLIXB+mNfzsgOVbeOKFZ8jq HLebY291s8PL5X8coycHtzWxu1hd+R0t4t5BrkD0nGQXocSNaclnjZ1KkS4m0zAcm2kN 1q7eyESN2V+nmeSCkE9TUxC1IW8Ps0eBKwcTx5xho6yWoMwHGkN1g2k9ePmnOlfhRLbi psH7LQQWZtfSLV4Ha6M0/uK5UrGHi2qplJsWiDlpdyBs4YGUU69C3DLKyUySOVshcB9p gskw==
+X-Received: by 10.58.67.9 with SMTP id j9mr14767176vet.22.1373310236719; Mon, 08 Jul 2013 12:03:56 -0700 (PDT)
+Received: from dhcp-i7prhfzrgrwle.d.cisco.com ([2001:420:2c52:1316:f9c6:c3df:d81:5cf6]) by mx.google.com with ESMTPSA id lm13sm16651716vec.8.2013.07.08.12.03.55 for <multiple recipients> (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128); Mon, 08 Jul 2013 12:03:55 -0700 (PDT)
+Content-Type: text/plain; charset=us-ascii
+Mime-Version: 1.0 (Mac OS X Mail 6.5 \(1508\))
+From: Ralph Droms <rdroms.ietf@gmail.com>
+In-Reply-To: <87sj0g1sh7.fsf@kelsey-ws.hq.ember.com>
+Date: Mon, 8 Jul 2013 15:03:49 -0400
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <0419CD9D-9F30-4622-8B87-66311D483F4F@gmail.com>
+References: <87sj0g1sh7.fsf@kelsey-ws.hq.ember.com>
+To: Richard Kelsey <richard.kelsey@silabs.com>
+X-Mailer: Apple Mail (2.1508)
+Cc: "ulrich@herberg.name Herberg" <ulrich@herberg.name>, 6lo@ietf.org
+Subject: Re: [6lo] draft-kelsey-intarea-mesh-link-establishment (was Re: Focusing the charter)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: "Mailing list for discussion of a WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/6lo>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 08 Jul 2013 19:04:02 -0000
+
+Richard - what is the state of this draft at present?
+
+- Ralph
+
+On Jun 17, 2013, at 2:51 PM 6/17/13, Richard Kelsey =
+<richard.kelsey@silabs.com> wrote:
+
+>> From: Ulrich Herberg <ulrich@herberg.name>
+>> Date: Fri, 14 Jun 2013 08:21:22 -0700
+>>=20
+>> [...]
+>>=20
+>> I am a bit concerned about
+>> draft-kelsey-intarea-mesh-link-establishment, which I remember
+>> I read when it was posted on the MANET mailing list. There were
+>> some review comments that the same functionality could be
+>> achieved with RFC6130 (NHDP). It may need further discussions
+>> to see if there is a unique use case and if it's the best way
+>> to achieve what is intended.
+>=20
+> There was some confusion with the reviewers about the purpose
+> of the draft, in particular that the link establishment operates
+> below the routing layer.  I updated the draft to make this clearer.
+> Here is the current abstract:
+>=20
+>   This document defines the mesh link establishment (MLE) protocol for
+>   establishing and configuring secure radio links in IEEE 802.15.4
+>   radio mesh networks.  MLE extends IEEE 802.15.4 for use in multihop
+>   mesh networks by adding three capabilities: 1) dynamically
+>   configuring and securing radio links, 2) enabling network-wide
+>   changes to radio parameters, and 3) detecting neighboring devices.
+>   MLE operates below the routing layer, insulating it from the details
+>   of configuring, securing, and maintaining individual radio links
+>   within a larger mesh network.
+>=20
+> Please send me any comments.
+>=20
+>                                   -Richard Kelsey
+> This message (including any attachments) is intended only for the use =
+of the individual or entity to which it is addressed and may contain =
+information that is non-public, proprietary, privileged, confidential, =
+and exempt from disclosure under applicable law or may constitute as =
+attorney work product.  If you are not the intended recipient, you are =
+hereby notified that any use, dissemination, distribution, or copying of =
+this communication is strictly prohibited. If you have received this =
+communication in error, notify us immediately by telephone and (i) =
+destroy this message if a facsimile or (ii) delete this message =
+immediately if this is an electronic communication. =20
+>=20
+> Thank you.
+>=20
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+
+
+From Richard.Kelsey@silabs.com  Wed Jul 10 05:52:26 2013
+Return-Path: <Richard.Kelsey@silabs.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 5B9BA21F9F9A for <6lo@ietfa.amsl.com>; Wed, 10 Jul 2013 05:52:23 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -6.599
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.599 tagged_above=-999 required=5 tests=[BAYES_00=-2.599, RCVD_IN_DNSWL_MED=-4]
+Received: from mail.ietf.org ([12.22.58.30]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id r4D8KpoLxAhp for <6lo@ietfa.amsl.com>; Wed, 10 Jul 2013 05:52:14 -0700 (PDT)
+Received: from na3sys009aog102.obsmtp.com (na3sys009aog102.obsmtp.com [74.125.149.69]) by ietfa.amsl.com (Postfix) with ESMTP id 955D321F9DC6 for <6lo@ietf.org>; Wed, 10 Jul 2013 05:52:06 -0700 (PDT)
+Received: from mxsause01.silabs.com ([66.193.122.70]) (using TLSv1) by na3sys009aob102.postini.com ([74.125.148.12]) with SMTP ID DSNKUd1Y6zkcHz/Adr4XbuOgQQvDqjEEFKrA@postini.com; Wed, 10 Jul 2013 05:52:06 PDT
+Received: from EXCAUS010.silabs.com (unknown [10.100.0.94]) (using TLSv1 with cipher AES128-SHA (128/128 bits)) (No client certificate requested) by mxsause01.silabs.com (Postfix) with ESMTP id 180F2FF0BA; Wed, 10 Jul 2013 07:51:35 -0500 (CDT)
+Received: from kelsey-ws (10.4.148.23) by EXCAUS010.silabs.com (10.100.0.59) with Microsoft SMTP Server (TLS) id 14.3.123.3; Wed, 10 Jul 2013 07:51:34 -0500
+Date: Wed, 10 Jul 2013 08:55:15 -0400
+Message-ID: <87li5emv64.fsf@kelsey-ws.hq.ember.com>
+From: Richard Kelsey <richard.kelsey@silabs.com>
+To: <rdroms.ietf@gmail.com>
+In-Reply-To: <0419CD9D-9F30-4622-8B87-66311D483F4F@gmail.com> (rdroms.ietf@gmail.com)
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+References: <mailman.106.1373396435.29409.6lo@ietf.org>
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Originating-IP: [10.4.148.23]
+Cc: 6lo@ietf.org
+Subject: Re: [6lo] draft-kelsey-intarea-mesh-link-establishment (was Re: Focusing the charter)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: "Mailing list for discussion of a WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/6lo>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 10 Jul 2013 12:52:26 -0000
+
+Ralph,
+
+It has stalled.  From the datatracker history Ted Lemon is waiting
+for something for me and from my email log I am waiting for something
+from him.  I'll ping him and try to get get it moving again.
+
+                                      -Richard
+
+> From: Ralph Droms <rdroms.ietf@gmail.com>
+> Date: Mon, 8 Jul 2013 15:03:49 -0400
+> 
+> Richard - what is the state of this draft at present?
+> 
+> - Ralph
+> 
+> On Jun 17, 2013, at 2:51 PM 6/17/13, Richard Kelsey <richard.kelsey@silabs.com> wrote:
+> 
+> >> From: Ulrich Herberg <ulrich@herberg.name>
+> >> Date: Fri, 14 Jun 2013 08:21:22 -0700
+> >> 
+> >> [...]
+> >> 
+> >> I am a bit concerned about
+> >> draft-kelsey-intarea-mesh-link-establishment, which I remember
+> >> I read when it was posted on the MANET mailing list. There were
+> >> some review comments that the same functionality could be
+> >> achieved with RFC6130 (NHDP). It may need further discussions
+> >> to see if there is a unique use case and if it's the best way
+> >> to achieve what is intended.
+> > 
+> > There was some confusion with the reviewers about the purpose
+> > of the draft, in particular that the link establishment operates
+> > below the routing layer.  I updated the draft to make this clearer.
+> > Here is the current abstract:
+> > 
+> >   This document defines the mesh link establishment (MLE) protocol for
+> >   establishing and configuring secure radio links in IEEE 802.15.4
+> >   radio mesh networks.  MLE extends IEEE 802.15.4 for use in multihop
+> >   mesh networks by adding three capabilities: 1) dynamically
+> >   configuring and securing radio links, 2) enabling network-wide
+> >   changes to radio parameters, and 3) detecting neighboring devices.
+> >   MLE operates below the routing layer, insulating it from the details
+> >   of configuring, securing, and maintaining individual radio links
+> >   within a larger mesh network.
+> > 
+> > Please send me any comments.
+> > 
+> >                                   -Richard Kelsey
+This message (including any attachments) is intended only for the use of the individual or entity to which it is addressed and may contain information that is non-public, proprietary, privileged, confidential, and exempt from disclosure under applicable law or may constitute as attorney work product.  If you are not the intended recipient, you are hereby notified that any use, dissemination, distribution, or copying of this communication is strictly prohibited. If you have received this communication in error, notify us immediately by telephone and (i) destroy this message if a facsimile or (ii) delete this message immediately if this is an electronic communication.  
+
+Thank you.
+
+
+From ulrich@herberg.name  Mon Jul 15 10:18:51 2013
+Return-Path: <ulrich@herberg.name>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id AC8D311E8105 for <6lo@ietfa.amsl.com>; Mon, 15 Jul 2013 10:18:51 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.941
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.941 tagged_above=-999 required=5 tests=[AWL=0.037,  BAYES_00=-2.599, FM_FORGED_GMAIL=0.622, NO_RELAYS=-0.001]
+Received: from mail.ietf.org ([12.22.58.30]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id MbgUisoV1GMB for <6lo@ietfa.amsl.com>; Mon, 15 Jul 2013 10:18:51 -0700 (PDT)
+Received: from mail-vc0-x22f.google.com (mail-vc0-x22f.google.com [IPv6:2607:f8b0:400c:c03::22f]) by ietfa.amsl.com (Postfix) with ESMTP id 7C76821E8107 for <6lo@ietf.org>; Mon, 15 Jul 2013 10:18:46 -0700 (PDT)
+Received: by mail-vc0-f175.google.com with SMTP id hr11so9280753vcb.6 for <6lo@ietf.org>; Mon, 15 Jul 2013 10:18:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=herberg.name; s=dkim; h=mime-version:in-reply-to:references:date:message-id:subject:from:to :content-type; bh=ReWBvfF5tDU7l9NklW1TxXC/8GVzLb8d1HNfGopeJ+s=; b=txepyVjdcutznnNFIKGaD5XHcCbT6iWvPzLHiObWN4uw5ytB4IKvnuz7KP8SvSHt2B 7mUc5T8dkouluLz2VmUqldwjzTDEQCBE6x9uRQ6G7/ieNK5ZtD1X8ICLWmp2RBl4D/aA FA0gWmShMDuT9s8ySbd1b+tut631avcxIq1vY=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=20120113; h=mime-version:in-reply-to:references:date:message-id:subject:from:to :content-type:x-gm-message-state; bh=ReWBvfF5tDU7l9NklW1TxXC/8GVzLb8d1HNfGopeJ+s=; b=l3yFxOPFdrj4moAKp2WhCF+tqm2LKLKfex84QGrpFu8ch49Dp7f2ejCuVgxEuzKstM 5PtglC4l0CI9rgnwEViqtBUAzX+Oz64C7F+t9uuObN98AzsHKTur/snv20BPDAJHL1zO 6S1X9QsyN1gvk5F50BDYwj5/gu+6KTTVw0u8rr8B+0XTi4THEf0PThnvHApyT+MfHEdC SYzqCHJeDDR0gbEm6/ryuF29UWsgnrxatdfjxckSEKokpvo1frOsARe1zQSGBBxx8JlZ XOG0YS+/KL5Ghw7RRvoYCy3dffusHZy+rZZiXSNQ1ll0aTFDGQ346NFyAyS3KCSJpoht k4Jg==
+MIME-Version: 1.0
+X-Received: by 10.52.70.66 with SMTP id k2mr23694818vdu.17.1373908725853; Mon, 15 Jul 2013 10:18:45 -0700 (PDT)
+Received: by 10.221.55.70 with HTTP; Mon, 15 Jul 2013 10:18:45 -0700 (PDT)
+In-Reply-To: <20130715170923.16712.32343.idtracker@ietfa.amsl.com>
+References: <20130715170923.16712.32343.idtracker@ietfa.amsl.com>
+Date: Mon, 15 Jul 2013 10:18:45 -0700
+Message-ID: <CAK=bVC-Qw2v-TkkjoLpmuy3FerffhD-s0m+25GLQZPHgbdutOA@mail.gmail.com>
+From: Ulrich Herberg <ulrich@herberg.name>
+To: 6lo@ietf.org
+Content-Type: text/plain; charset=ISO-8859-1
+X-Gm-Message-State: ALoCoQkMBMMOHb4qsR9XfONR9U1eqFKv/qKVd4L5XDk8m3rrjudq4CMfWLggJ0xLvgXVLPniMPta
+Subject: [6lo] Fwd: Internet Draft Submission Cut-Off Today
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: "Mailing list for discussion of a WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/6lo>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 15 Jul 2013 17:18:51 -0000
+
+Reminder: draft submission cut-off today, UTC 24:00.
+Early-bird registration deadline: This Friday, July 19.
+
+---------- Forwarded message ----------
+From: IETF Secretariat <ietf-secretariat@ietf.org>
+Date: Mon, Jul 15, 2013 at 10:09 AM
+Subject: Internet Draft Submission Cut-Off Today
+To: IETF Announcement List <ietf-announce@ietf.org>
+Cc: ietf@ietf.org
+
+
+This is a reminder that the Internet Draft Submission cut-off is
+today, Monday, July 15, 2013.
+
+All submissions are due by UTC 24:00.
+
+All drafts can be uploaded using the ID submission tool located here:
+https://datatracker.ietf.org/submit/
+
+The Internet-Draft cutoff dates as well as other significant dates for
+IETF 87 can be found at:
+https://www.ietf.org/meeting/cutoff-dates-2013.html#IETF87
+
+Thank you for your understanding and cooperation. If you have any
+questions or concerns, then please send a message to
+internet-drafts@ietf.org.
+
+From samita.chakrabarti@ericsson.com  Mon Jul 15 19:16:09 2013
+Return-Path: <samita.chakrabarti@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 5103F11E818E; Mon, 15 Jul 2013 19:16:09 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.598
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.598 tagged_above=-999 required=5 tests=[BAYES_00=-2.599, HTML_MESSAGE=0.001]
+Received: from mail.ietf.org ([12.22.58.30]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id H48Jd8ymFX-9; Mon, 15 Jul 2013 19:15:53 -0700 (PDT)
+Received: from usevmg20.ericsson.net (usevmg20.ericsson.net [198.24.6.45]) by ietfa.amsl.com (Postfix) with ESMTP id 5186811E817B; Mon, 15 Jul 2013 19:15:53 -0700 (PDT)
+X-AuditID: c618062d-b7fc36d0000032ea-f9-51e4acd7fbeb
+Received: from EUSAAHC004.ericsson.se (Unknown_Domain [147.117.188.84]) by usevmg20.ericsson.net (Symantec Mail Security) with SMTP id 1D.92.13034.7DCA4E15; Tue, 16 Jul 2013 04:15:52 +0200 (CEST)
+Received: from EUSAAMB103.ericsson.se ([147.117.188.120]) by EUSAAHC004.ericsson.se ([147.117.188.84]) with mapi id 14.02.0328.009; Mon, 15 Jul 2013 22:15:51 -0400
+From: Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+To: "6man@ietf.org" <6man@ietf.org>, "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: draft-chakrabarti-nordmark-6man-efficient-nd-02 submitted
+Thread-Index: Ac6BxnHoPpTQzrivR8KlRMSgd1HBBw==
+Date: Tue, 16 Jul 2013 02:15:50 +0000
+Message-ID: <ECA43DA70480A3498E43C3471FB2E1F01BF0D3E7@eusaamb103.ericsson.se>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.134]
+Content-Type: multipart/alternative; boundary="_000_ECA43DA70480A3498E43C3471FB2E1F01BF0D3E7eusaamb103erics_"
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFvrJLMWRmVeSWpSXmKPExsUyuXRPiO6NNU8CDRrOKVg0TxGwWLniLpPF 1vf72CyOTLnLatE/dSeTxeS2FWwWM6a8Y3Rg97h8xdtjyu+NrB4Hj31k9Ng56y67x5IlP5k8 pi3KDGCL4rJJSc3JLEst0rdL4MrY37qCuaAxu2Lh7v8sDYyn4roYOTkkBEwkbhx/zgphi0lc uLeerYuRi0NI4CijxNn3t5khnOWMEk3/N7OAVLEJWEl09O5hB7FFBJwk5l9/yg5SxCwwiUni +6+DTCAJYaDEoxU/mCCK3CUWvJ/JBmHrSTQ+OckIYrMIqEpsb9wJtppXwFfi5/InYDYj0Bnf T60B62UWEJe49WQ+E8R5AhJL9pxnhrBFJV4+/gd1trLEkif7WSDq8yUOfD7JDjFTUOLkzCcs ExiFZyEZNQtJ2SwkZRBxHYkFuz+xQdjaEssWvmaGsc8ceMyELL6AkX0VI0dpcWpZbrqRwSZG YPQdk2DT3cG456XlIUZpDhYlcd5VemcChQTSE0tSs1NTC1KL4otKc1KLDzEycXBKNTB6fFpY /SvogOEcgwmvtggdL5S0MfO9eST406LL3zMtGMIC7+34KeTHvYaNrb/64JuGCRmuGhNCp7sU 3OC3Z+yxb86WWe3ooLX4s9r9ajc7hh/3+yOX/wycH2a46sb8MtWQa41eQfsUpeIMJnSbLVm7 68/ZvuCCwtA+pcd/3Vec2niVu36m9zwlluKMREMt5qLiRACye52sjAIAAA==
+Cc: "Erik Nordmark \(nordmark@acm.org\)" <nordmark@acm.org>, "Ole Troan \(otroan@employees.org\)" <otroan@employees.org>, "pthubert@cisco.com" <pthubert@cisco.com>, "Bob Hinden \(bob.hinden@gmail.com\)" <bob.hinden@gmail.com>, "Carsten Bormann \(cabo@tzi.org\)" <cabo@tzi.org>
+Subject: [6lo] draft-chakrabarti-nordmark-6man-efficient-nd-02 submitted
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: "Mailing list for discussion of a WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/6lo>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 16 Jul 2013 02:16:09 -0000
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F01BF0D3E7eusaamb103erics_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Hello All:
+
+We submitted a revision of efficient-nd (02) version  to incorporate the co=
+mments  after last IETF .
+
+*         Added a new field for Transaction ID in the Address registration =
+message
+
+*         Updated the local mobility and NCE handling sections to address t=
+he effect of TID field in multi-router/transit link scenario
+
+*         Added more text for ND-Proxy behavior
+
+*         Added implications for RPL
+
+*         Separated the use cases in the Appendix
+
+
+
+Some more editorial work will be performed in the next revision in addition=
+ to any technical changes.
+
+
+
+Thanks,
+
+-Samita, Erik and Pascal
+
+
+Filename:            draft-chakrabarti-nordmark-6man-efficient-nd
+Revision:              02
+Title:                      Efficiency aware IPv6 Neighbor Discovery Optimi=
+zations
+Creation date:   2013-07-15
+Group:                  Individual Submission
+Number of pages: 31
+URL:             http://www.ietf.org/internet-drafts/draft-chakrabarti-nord=
+mark-6man-efficient-nd-02.txt
+Status:          http://datatracker.ietf.org/doc/draft-chakrabarti-nordmark=
+-6man-efficient-nd
+Htmlized:        http://tools.ietf.org/html/draft-chakrabarti-nordmark-6man=
+-efficient-nd-02
+Diff:            http://www.ietf.org/rfcdiff?url2=3Ddraft-chakrabarti-nordm=
+ark-6man-efficient-nd-02
+
+Abstract:
+   IPv6 Neighbor Discovery (RFC 4861) protocol has been designed for
+   neighbor's address resolution, unreachability detection, address
+   autoconfiguration, router advertisement and solicitation.  With the
+   progress of Internet adoption on various industries including home,
+   wireless, M2M and cellular networks there is a desire for optimizing
+   the legacy IPv6 Neighbor Discovery protocol.  This document describes
+   a method of optimization by reducing multicast messages and
+   introducing an IPv6 address Registration mechanism.  Efficient IPv6
+   Neighbor Discovery protocol is useful for energy-efficient and low-
+   power IPv6 networks and as well as Data Center and Home Networks.
+   The solution is capable of handling existing legacy IPv6 nodes in the
+   network with local mobility.
+
+
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F01BF0D3E7eusaamb103erics_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:2062629729;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1698977288 1690737124 67698691 67698693 67698689 676=
+98691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:20.25pt;
+	text-indent:-.25in;
+	font-family:Symbol;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:56.25pt;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:92.25pt;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:128.25pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:164.25pt;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:200.25pt;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:236.25pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:272.25pt;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:308.25pt;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<div style=3D"mso-element:para-border-div;border:none;border-bottom:solid w=
+indowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+<p class=3D"MsoNormal" style=3D"border:none;padding:0in"><o:p>&nbsp;</o:p><=
+/p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hello All:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">We submitted a revision of efficient-nd (02) version=
+&nbsp; to incorporate the comments&nbsp; after last IETF .<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:20.25pt;text-indent:-.25=
+in;mso-list:l0 level1 lfo1">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Added a new field for Transaction ID in the =
+Address registration message<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:20.25pt;text-indent:-.25=
+in;mso-list:l0 level1 lfo1">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Updated the local mobility and NCE handling =
+sections to address the effect of TID field in multi-router/transit link sc=
+enario<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:20.25pt;text-indent:-.25=
+in;mso-list:l0 level1 lfo1">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Added more text for ND-Proxy behavior <o:p><=
+/o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:20.25pt;text-indent:-.25=
+in;mso-list:l0 level1 lfo1">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Added implications for RPL <o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:20.25pt;text-indent:-.25=
+in;mso-list:l0 level1 lfo1">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Separated the use cases in the Appendix<o:p>=
+</o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:20.25pt"><o:p>&nbsp;</o:=
+p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:20.25pt">Some more edito=
+rial work will be performed in the next revision in addition to any technic=
+al changes.<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:20.25pt"><o:p>&nbsp;</o:=
+p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:20.25pt">Thanks,<o:p></o=
+:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:20.25pt">-Samita, Erik a=
+nd Pascal<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Filename:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp; draft-chakrabarti-nordmark-6man-efficient-nd<o:p></=
+o:p></p>
+<p class=3D"MsoNormal">Revision:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 02<o:p></o:p></p>
+<p class=3D"MsoNormal">Title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp; Efficiency aware IPv6 Neighbor Discovery Optimizations<o:p></o:p></p>
+<p class=3D"MsoNormal">Creation date:&nbsp;&nbsp; 2013-07-15<o:p></o:p></p>
+<p class=3D"MsoNormal">Group:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Individual Submiss=
+ion<o:p></o:p></p>
+<p class=3D"MsoNormal">Number of pages: 31<o:p></o:p></p>
+<p class=3D"MsoNormal">URL:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp; <a href=3D"http://www.ietf.org/internet-drafts/dra=
+ft-chakrabarti-nordmark-6man-efficient-nd-02.txt">
+http://www.ietf.org/internet-drafts/draft-chakrabarti-nordmark-6man-efficie=
+nt-nd-02.txt</a><o:p></o:p></p>
+<p class=3D"MsoNormal">Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; <a href=3D"http://datatracker.ietf.org/doc/draft-chakrabarti-nord=
+mark-6man-efficient-nd">
+http://datatracker.ietf.org/doc/draft-chakrabarti-nordmark-6man-efficient-n=
+d</a><o:p></o:p></p>
+<p class=3D"MsoNormal">Htmlized:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<a href=3D"http://tools.ietf.org/html/draft-chakrabarti-nordmark-6man-effic=
+ient-nd-02">
+http://tools.ietf.org/html/draft-chakrabarti-nordmark-6man-efficient-nd-02<=
+/a><o:p></o:p></p>
+<p class=3D"MsoNormal">Diff:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; <a href=3D"http://www.ietf.org/rfcdiff?url2=3Ddraft-cha=
+krabarti-nordmark-6man-efficient-nd-02">
+http://www.ietf.org/rfcdiff?url2=3Ddraft-chakrabarti-nordmark-6man-efficien=
+t-nd-02</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Abstract:<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; IPv6 Neighbor Discovery (RFC 4861) prot=
+ocol has been designed for<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; neighbor's address resolution, unreacha=
+bility detection, address<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; autoconfiguration, router advertisement=
+ and solicitation.&nbsp; With the<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; progress of Internet adoption on variou=
+s industries including home,<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; wireless, M2M and cellular networks the=
+re is a desire for optimizing<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; the legacy IPv6 Neighbor Discovery prot=
+ocol.&nbsp; This document describes<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; a method of optimization by reducing mu=
+lticast messages and<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; introducing an IPv6 address Registratio=
+n mechanism.&nbsp; Efficient IPv6<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; Neighbor Discovery protocol is useful f=
+or energy-efficient and low-<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; power IPv6 networks and as well as Data=
+ Center and Home Networks.<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; The solution is capable of handling exi=
+sting legacy IPv6 nodes in the<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp; network with local mobility.<o:p></o:p>=
+</p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_ECA43DA70480A3498E43C3471FB2E1F01BF0D3E7eusaamb103erics_--
+
+From rdroms.ietf@gmail.com  Tue Jul 23 07:33:33 2013
+Return-Path: <rdroms.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 44DC011E8233; Tue, 23 Jul 2013 07:33:33 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -102.599
+X-Spam-Level: 
+X-Spam-Status: No, score=-102.599 tagged_above=-999 required=5 tests=[AWL=0.000, BAYES_00=-2.599, USER_IN_WHITELIST=-100]
+Received: from mail.ietf.org ([12.22.58.30]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id PDtL8z7rdi5s; Tue, 23 Jul 2013 07:33:32 -0700 (PDT)
+Received: from mail-vb0-x22e.google.com (mail-vb0-x22e.google.com [IPv6:2607:f8b0:400c:c02::22e]) by ietfa.amsl.com (Postfix) with ESMTP id 66EB711E8232; Tue, 23 Jul 2013 07:33:32 -0700 (PDT)
+Received: by mail-vb0-f46.google.com with SMTP id w8so640343vbf.5 for <multiple recipients>; Tue, 23 Jul 2013 07:33:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=from:content-type:content-transfer-encoding:subject:date:references :to:message-id:mime-version:x-mailer; bh=k2XBGbeLr2/Rm1/PjagIFocRK48AeYSXQKlW0DDDWao=; b=B++iGc4N6vynTbubgyOVnp2UEcQ4sUJs8h8zUQJUHYYDVmWWLzF8jh4wqydp1dhj7n wM/TIAGdsKVKM4tSv7zCNf3nWKGXTMjYvBgfliveSRkmfsttcni5s1JoSQ115p0N3DLg BGW30qXIe+Xomu+lseOlOK5OXuoyuwtUc4K/ozuc1xhst5/OqeQbd/h+Aik7DztmESqt 99+tJ+3vttWWqGvPJVIkI8BGBepWBbz2tMF93Gllkw0Ww21N0LUdTLolX8A1eH/34FOW N0qD9f3a/c+KzgR+mYQws7NkTEwJMsnYsBab/IlSRAgFT75BHeXYhaPNzewgN7XHbJKr pShg==
+X-Received: by 10.220.163.72 with SMTP id z8mr11668609vcx.89.1374590010785; Tue, 23 Jul 2013 07:33:30 -0700 (PDT)
+Received: from [10.86.252.74] (198-135-0-233.cisco.com. [198.135.0.233]) by mx.google.com with ESMTPSA id zy9sm10563112veb.7.2013.07.23.07.33.28 for <multiple recipients> (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128); Tue, 23 Jul 2013 07:33:30 -0700 (PDT)
+From: Ralph Droms <rdroms.ietf@gmail.com>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Date: Tue, 23 Jul 2013 16:33:25 +0200
+References: <285EAD53-1801-461E-813F-D0C250DDE03E@netapp.com>
+To: "6lo@ietf.org" <6lo@ietf.org>, 6lowpan 6lowpan <6lowpan@ietf.org>
+Message-Id: <84D03F32-FA45-45E6-91EB-A1C0DD40A8E4@gmail.com>
+Mime-Version: 1.0 (Mac OS X Mail 6.5 \(1508\))
+X-Mailer: Apple Mail (2.1508)
+Subject: [6lo] IETF Mentor Program
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: "Mailing list for discussion of a WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/6lo>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 23 Jul 2013 14:33:33 -0000
+
+We have newcomers who are interested in IoT topics generally and we need =
+some more mentors from those areas to volunteer.  The information about =
+the program is at http://www.ietf.org/resources/mentoring-program.html  =
+Please get in touch (soon!) if you're willing to be a mentor.
+
+- Ralph
+>=20
+
+> Begin forwarded message:
+>=20
+>> From: IETF Chair <chair@ietf.org>
+>> Subject: IETF Mentor Program
+>> Date: July 1, 2013 21:39:36 GMT+02:00
+>> To: IETF Announcement List <ietf-announce@ietf.org>
+>> Reply-To: <ietf@ietf.org>
+>>=20
+>> Hi all,
+>>=20
+>>  Based on discussions during IETF 86, we are trialing an IETF =
+mentoring program.  During this trial period, we would like to pair =
+newcomers (people who have attended 3 or fewer meetings or have =
+registered as students) with existing IETF participants.  The goal is to =
+provide a resource for the newcomer who can assist them with integrating =
+into the IETF community.  Mentors and newcomers will be paired prior to =
+IETF 87.
+>>=20
+>>  What we need is for people to volunteer to be mentors. As a mentor, =
+we would ask that you be willing to assist your mentoring participant =
+before, during, and (hopefully) after IETF 87.  The actual level of =
+interaction will be driven by an agreement between the mentor and the =
+mentoring participant. Additionally, we would need a brief description =
+of your areas of expertise, technical interests, and conversational =
+languages.
+>>=20
+>>  A description of the Mentor Program (including a FAQ describing
+>> how to volunteer to be a mentor) is available:
+>>=20
+>> http://www.ietf.org/resources/mentoring-program.html.
+>>=20
+>>  Anyone interested in being a mentor should follow the sign-up
+>> instructions contained in the above URL.  The more volunteers we =
+have,
+>> the stronger the program will be!
+>>=20
+>> Regards,
+>> IETF Chair
+>=20
+
+
+
+From cabo@tzi.org  Sun Jul 28 05:13:29 2013
+Return-Path: <cabo@tzi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id B00D421F89EB for <6lo@ietfa.amsl.com>; Sun, 28 Jul 2013 05:13:29 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -104.949
+X-Spam-Level: 
+X-Spam-Status: No, score=-104.949 tagged_above=-999 required=5 tests=[AWL=1.300, BAYES_00=-2.599, HELO_EQ_DE=0.35, RCVD_IN_DNSWL_MED=-4, USER_IN_WHITELIST=-100]
+Received: from mail.ietf.org ([12.22.58.30]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id aTYpD3bHRpdZ for <6lo@ietfa.amsl.com>; Sun, 28 Jul 2013 05:13:24 -0700 (PDT)
+Received: from informatik.uni-bremen.de (mailhost.informatik.uni-bremen.de [IPv6:2001:638:708:30c9::12]) by ietfa.amsl.com (Postfix) with ESMTP id 870CE21F89A6 for <6lo@ietf.org>; Sun, 28 Jul 2013 05:13:24 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at informatik.uni-bremen.de
+Received: from smtp-fb3.informatik.uni-bremen.de (smtp-fb3.informatik.uni-bremen.de [134.102.224.120]) by informatik.uni-bremen.de (8.14.4/8.14.4) with ESMTP id r6SCDI4t023705 for <6lo@ietf.org>; Sun, 28 Jul 2013 14:13:18 +0200 (CEST)
+Received: from dhcp-9032.meeting.ietf.org (dhcp-9032.meeting.ietf.org [130.129.8.50]) (using TLSv1 with cipher AES128-SHA (128/128 bits)) (No client certificate requested) by smtp-fb3.informatik.uni-bremen.de (Postfix) with ESMTPSA id 0047D99D; Sun, 28 Jul 2013 14:13:17 +0200 (CEST)
+From: Carsten Bormann <cabo@tzi.org>
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+Date: Sun, 28 Jul 2013 14:13:17 +0200
+To: "6lo@ietf.org" <6lo@ietf.org>
+Message-Id: <0CB4C0A0-F075-4B43-9F65-CD60EC46A740@tzi.org>
+Mime-Version: 1.0 (Mac OS X Mail 6.5 \(1508\))
+X-Mailer: Apple Mail (2.1508)
+Subject: [6lo] Make it clear that 6Lo is not about routing
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: "Mailing list for discussion of a WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/6lo>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sun, 28 Jul 2013 12:13:29 -0000
+
+During hallway discussions here at IETF87, we noticed that while we =
+explicitly exclude security and management work from the scope, we =
+didn't do so for routing.  I think that this has been tacit consensus =
+and we might benefit from making it explicit.
+
+I added the sentence:
+
+	Work related to routing is out of scope.
+
+Enjoy at https://github.com/6lo/charter
+
+Gr=FC=DFe, Carsten
+
+
+From cabo@tzi.org  Mon Jul 29 09:12:35 2013
+Return-Path: <cabo@tzi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id CCCD021F949F for <6lo@ietfa.amsl.com>; Mon, 29 Jul 2013 09:12:34 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -105.816
+X-Spam-Level: 
+X-Spam-Status: No, score=-105.816 tagged_above=-999 required=5 tests=[AWL=0.433, BAYES_00=-2.599, HELO_EQ_DE=0.35, RCVD_IN_DNSWL_MED=-4, USER_IN_WHITELIST=-100]
+Received: from mail.ietf.org ([12.22.58.30]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id FvfqxKF2T9p9 for <6lo@ietfa.amsl.com>; Mon, 29 Jul 2013 09:12:28 -0700 (PDT)
+Received: from informatik.uni-bremen.de (mailhost.informatik.uni-bremen.de [IPv6:2001:638:708:30c9::12]) by ietfa.amsl.com (Postfix) with ESMTP id 80F3821F9D0F for <6lo@ietf.org>; Mon, 29 Jul 2013 09:11:42 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at informatik.uni-bremen.de
+Received: from smtp-fb3.informatik.uni-bremen.de (smtp-fb3.informatik.uni-bremen.de [134.102.224.120]) by informatik.uni-bremen.de (8.14.4/8.14.4) with ESMTP id r6TGBem2001682 for <6lo@ietf.org>; Mon, 29 Jul 2013 18:11:40 +0200 (CEST)
+Received: from dhcp-90f8.meeting.ietf.org (dhcp-90f8.meeting.ietf.org [130.129.8.248]) (using TLSv1 with cipher AES128-SHA (128/128 bits)) (No client certificate requested) by smtp-fb3.informatik.uni-bremen.de (Postfix) with ESMTPSA id 6C4FFF4E; Mon, 29 Jul 2013 18:11:39 +0200 (CEST)
+Content-Type: text/plain; charset=iso-8859-1
+Mime-Version: 1.0 (Mac OS X Mail 6.5 \(1508\))
+From: Carsten Bormann <cabo@tzi.org>
+Date: Mon, 29 Jul 2013 18:11:37 +0200
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <F0E2F22B-E0A5-4EAC-A96A-452B42230EC3@tzi.org>
+References: <5F03BF21-CCE0-4D13-B502-C2CE721206BF@tzi.org>
+To: "6lo@ietf.org" <6lo@ietf.org>
+X-Mailer: Apple Mail (2.1508)
+Subject: [6lo] Fwd: [6lowpan] Tuesday morning: Calling all Contiki/sicslowpan/open-source 6LoWPAN developers @ IETF87
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: "Mailing list for discussion of a WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/6lo>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 29 Jul 2013 16:12:35 -0000
+
+Whoops, forgot to add this list.
+
+Gr=FC=DFe, Carsten
+
+
+Begin forwarded message:
+
+> From: Carsten Bormann <cabo@tzi.org>
+> Date: July 29, 2013 17:56:09 +0200
+> To: "6lowpan@ietf.org" <6lowpan@ietf.org>
+> Cc: "6lowpan_plugtests@list.etsi.org" =
+<6LOWPAN_PLUGTESTS@LIST.ETSI.ORG>
+>=20
+> Without breaking my NDA, I can probably reveal that the wrap-up of =
+last weekend's 6LoWPAN plugtest ended with a slide headlined "Blame =
+Contiki".  What is going on?  How can we get better interoperability =
+with the 6LoWPAN standards into Contiki and the open-source projects =
+that use Contiki/sicslowpan code?  What about the other open-source OSes =
+for constrained nodes?
+>=20
+> We'll meet at 08:10 in the "Chess" room at IETF87 (second floor; plan =
+some time to find it).  We have to be done at 08:50, so people have time =
+to go on to their 09:00 meetings.
+>=20
+> I know that is an early time, but some people are leaving during =
+Tuesday.
+>=20
+> If that is desired, we might also talk about the 6Lo BOF and the =
+future of the 6LoWPAN WG in the IETF.
+>=20
+> Gr=FC=DFe, Carsten
+
+

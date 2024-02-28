@@ -1,0 +1,2920 @@
+
+From nobody Thu Aug  1 06:08:17 2019
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 3243B120151 for <6lo@ietfa.amsl.com>; Thu,  1 Aug 2019 06:08:16 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.197
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.197 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id XV2BWXXiVfg8 for <6lo@ietfa.amsl.com>; Thu,  1 Aug 2019 06:08:14 -0700 (PDT)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 9D8ED120159 for <6lo@ietf.org>; Thu,  1 Aug 2019 06:08:13 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.39.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id x71D8ARx016072 for <6lo@ietf.org>; Thu, 1 Aug 2019 15:08:11 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id D95B41D53C1 for <6lo@ietf.org>; Thu,  1 Aug 2019 15:08:10 +0200 (CEST)
+Received: from 131.111.5.142 by webmail.entel.upc.edu with HTTP; Thu, 1 Aug 2019 15:08:10 +0200
+Message-ID: <5fe42fac8a86ec6a856063c786cf07ad.squirrel@webmail.entel.upc.edu>
+Date: Thu, 1 Aug 2019 15:08:10 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.2 at violet
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Thu, 01 Aug 2019 15:08:11 +0200 (CEST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/biiMhYdjf8lr6He1jYfx2qRoylw>
+Subject: [6lo] Minutes of the 6Lo WG session at IETF 105 (Montreal)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 01 Aug 2019 13:08:16 -0000
+
+Dear 6Lo WG,
+
+Please find below a link to the initial version of the minutes from the
+6Lo WG session at IETF 105 (Montreal):
+https://datatracker.ietf.org/meeting/105/materials/minutes-105-6lo-00
+
+Should you have any comments on the minutes, please do not hesitate to let
+us know.
+
+Finally, we would like to thank Dominique very much for taking the minutes!
+
+Cheers,
+
+Shwetha and Carles
+
+
+
+From nobody Thu Aug  1 10:52:28 2019
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id E7D86120182; Thu,  1 Aug 2019 10:52:20 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Alissa Cooper via Datatracker <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-deadline-time@ietf.org, Samita Chakrabarti <samitac.ietf@gmail.com>, Shwetha Bhandari <shwethab@cisco.com>, 6lo-chairs@ietf.org, shwethab@cisco.com, 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.99.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: Alissa Cooper <alissa@cooperw.in>
+Message-ID: <156468194093.19195.17044762634209662889.idtracker@ietfa.amsl.com>
+Date: Thu, 01 Aug 2019 10:52:20 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/jPM4HMRkDsnIsLuNcdTsz6cFM9U>
+Subject: [6lo] Alissa Cooper's No Objection on draft-ietf-6lo-deadline-time-05: (with COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 01 Aug 2019 17:52:21 -0000
+
+Alissa Cooper has entered the following ballot position for
+draft-ietf-6lo-deadline-time-05: No Objection
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/iesg/statement/discuss-criteria.html
+for more information about IESG DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/
+
+
+
+----------------------------------------------------------------------
+COMMENT:
+----------------------------------------------------------------------
+
+Thank you for addressing my DISCUSS and COMMENT.
+
+
+
+From nobody Thu Aug 29 07:01:40 2019
+Return-Path: <rdd@cert.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 38BDD120071; Thu, 29 Aug 2019 07:01:38 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2
+X-Spam-Level: 
+X-Spam-Status: No, score=-2 tagged_above=-999 required=5 tests=[BAYES_00=-1.9,  DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_NONE=-0.0001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cert.org
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id yO6dVpjPilMK; Thu, 29 Aug 2019 07:01:36 -0700 (PDT)
+Received: from veto.sei.cmu.edu (veto.sei.cmu.edu [147.72.252.17]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id DB08B12004A; Thu, 29 Aug 2019 07:01:35 -0700 (PDT)
+Received: from delp.sei.cmu.edu (delp.sei.cmu.edu [10.64.21.31]) by veto.sei.cmu.edu (8.14.7/8.14.7) with ESMTP id x7TE1Qd0035051; Thu, 29 Aug 2019 10:01:27 -0400
+DKIM-Filter: OpenDKIM Filter v2.11.0 veto.sei.cmu.edu x7TE1Qd0035051
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cert.org; s=yc2bmwvrj62m; t=1567087287; bh=y4OZu792CQglPt+3UDk3/EgePMuCQB8pj5OS1zlNGjA=; h=From:To:CC:Subject:Date:References:In-Reply-To:From; b=ktJmZR9hIxoJUA/AZ9ncl7M8Wvaom8eEHW2kFhHwhMxEOQ0chzJJjCGionkM2WP5d AowsvtXDMS74takG8FvFsXCc+Rsb9sFY+h5xpE9Q0w9qyzAuPpTLgwYCBDmtb4usqa sNzERckhci2rwJTGPk/8UhGt+ttkMryIIhuvU+ts=
+Received: from CASCADE.ad.sei.cmu.edu (cascade.ad.sei.cmu.edu [10.64.28.248]) by delp.sei.cmu.edu (8.14.7/8.14.7) with ESMTP id x7TE1Dh3026250; Thu, 29 Aug 2019 10:01:13 -0400
+Received: from MARATHON.ad.sei.cmu.edu ([10.64.28.250]) by CASCADE.ad.sei.cmu.edu ([10.64.28.248]) with mapi id 14.03.0468.000; Thu, 29 Aug 2019 10:01:13 -0400
+From: Roman Danyliw <rdd@cert.org>
+To: Charlie Perkins <charles.perkins@earthlink.net>, The IESG <iesg@ietf.org>
+CC: "draft-ietf-6lo-deadline-time@ietf.org" <draft-ietf-6lo-deadline-time@ietf.org>, Samita Chakrabarti <samitac.ietf@gmail.com>, Shwetha Bhandari <shwethab@cisco.com>, "6lo-chairs@ietf.org" <6lo-chairs@ietf.org>, "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: Roman Danyliw's Discuss on draft-ietf-6lo-deadline-time-04: (with DISCUSS and COMMENT)
+Thread-Index: AQHVC+p0iI1H1iUd+0SYI5WmTYFURaaGFyUAgIneOWA=
+Date: Thu, 29 Aug 2019 14:01:11 +0000
+Message-ID: <359EC4B99E040048A7131E0F4E113AFC01B3442DBB@marathon>
+References: <155801295610.19776.17352306388780302849.idtracker@ietfa.amsl.com> <aaf94f20-fdde-ff3c-aacb-1332e2ae080a@earthlink.net>
+In-Reply-To: <aaf94f20-fdde-ff3c-aacb-1332e2ae080a@earthlink.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.64.22.6]
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/ijKT_KLNrmdWA8jM4CeGeDMzDhs>
+Subject: Re: [6lo] Roman Danyliw's Discuss on draft-ietf-6lo-deadline-time-04: (with DISCUSS and COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 29 Aug 2019 14:01:38 -0000
+
+SGkgQ2hhcmxpZSENCg0KPiAtLS0tLU9yaWdpbmFsIE1lc3NhZ2UtLS0tLQ0KPiBGcm9tOiBDaGFy
+bGllIFBlcmtpbnMgW21haWx0bzpjaGFybGVzLnBlcmtpbnNAZWFydGhsaW5rLm5ldF0NCj4gU2Vu
+dDogRnJpZGF5LCBNYXkgMzEsIDIwMTkgNToxNSBQTQ0KPiBUbzogUm9tYW4gRGFueWxpdyA8cmRk
+QGNlcnQub3JnPjsgVGhlIElFU0cgPGllc2dAaWV0Zi5vcmc+DQo+IENjOiBkcmFmdC1pZXRmLTZs
+by1kZWFkbGluZS10aW1lQGlldGYub3JnOyBTYW1pdGEgQ2hha3JhYmFydGkNCj4gPHNhbWl0YWMu
+aWV0ZkBnbWFpbC5jb20+OyBTaHdldGhhIEJoYW5kYXJpIDxzaHdldGhhYkBjaXNjby5jb20+OyA2
+bG8tDQo+IGNoYWlyc0BpZXRmLm9yZzsgNmxvQGlldGYub3JnDQo+IFN1YmplY3Q6IFJlOiBSb21h
+biBEYW55bGl3J3MgRGlzY3VzcyBvbiBkcmFmdC1pZXRmLTZsby1kZWFkbGluZS10aW1lLTA0Og0K
+PiAod2l0aCBESVNDVVNTIGFuZCBDT01NRU5UKQ0KPiANCj4gSGVsbG8gUm9tYW4sDQo+IA0KPiBQ
+bGVhc2Ugc2VlIGJlbG93IGZvciBzb21lIGZvbGxvdy11cC4uLg0KPiANCj4gT24gNS8xNi8yMDE5
+IDY6MjIgQU0sIFJvbWFuIERhbnlsaXcgdmlhIERhdGF0cmFja2VyIHdyb3RlOg0KPiA+IFJvbWFu
+IERhbnlsaXcgaGFzIGVudGVyZWQgdGhlIGZvbGxvd2luZyBiYWxsb3QgcG9zaXRpb24gZm9yDQo+
+ID4gZHJhZnQtaWV0Zi02bG8tZGVhZGxpbmUtdGltZS0wNDogRGlzY3Vzcw0KPiA+DQo+ID4gLi4u
+DQo+ID4NCj4gPiBUaGUgZG9jdW1lbnQsIGFsb25nIHdpdGggb3RoZXIgYmFsbG90IHBvc2l0aW9u
+cywgY2FuIGJlIGZvdW5kIGhlcmU6DQo+ID4gaHR0cHM6Ly9kYXRhdHJhY2tlci5pZXRmLm9yZy9k
+b2MvZHJhZnQtaWV0Zi02bG8tZGVhZGxpbmUtdGltZS8NCj4gPg0KPiA+IC0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0N
+Cj4gPiBESVNDVVNTOg0KPiA+IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCj4gPg0KPiA+IEkgc3VwcG9ydCBNYWdu
+dXPigJlzIERJU0NVU1MgIzEgKGFuZCBwZXJoYXBzIHdlIGFyZSBub3RpbmcgdGhlIHNhbWUNCj4g
+PiB0aGluZykNCj4gPg0KPiA+IFRoZSBjdXJyZW50IFNlY3VyaXR5IENvbnNpZGVyYXRpb25zIHRl
+eHQgbmVlZHMgZXhwbGljaXQgZGlzY3Vzc2lvbiBvZg0KPiA+IHRoZSBpbXBhY3Qgb2YgdGhlIGRl
+YWRsaW5lIGJlaW5nIG1hbmlwdWxhdGVkLg0KPiANCj4gDQo+IEkgYWdyZWUgd2l0aCB0aGlzLsKg
+IFBsZWFzZSBhbHNvIHJlZmVyIHRvIG15IHJlc3BvbnNlIHRvIE1hZ251cydzIG9ic2VydmF0aW9u
+DQo+IGFuZCBESVNDVVNTLg0KDQpUaGUgbmV3IHRleHQgaW4gLTA1IGFkZHJlc3NlcyBteSBjb25j
+ZXJucy4gVGhhbmsgeW91IGZvciB0aGUgdXBkYXRlLg0KDQo+IA0KPiA+DQo+ID4NCj4gPiAtLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tDQo+ID4gQ09NTUVOVDoNCj4gPiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQo+ID4NCj4gPiAoMSkg
+SSBhbHNvIHN1cHBvcnQgQmFycnnigJlzIERJU0NVU1Mgb24gdGhlIG5lZWQgdG8gZGlzY3VzcyB3
+aGF0IGhhcHBlbnMgdG8gYQ0KPiA+IG5ldHdvcmsgd2hlcmUgYWxsIHNlbmRlcnMgaGF2ZSBzaG9y
+dCBkZWFkbGluZXMNCj4gDQo+IEkgYWxzbyBhZ3JlZSB3aXRoIHRoaXMgYXMgbm90ZWQgaW4gbXkg
+cmVzcG9uc2UgdG8gQmFycnkncyBvYnNlcnZhdGlvbg0KPiBhbmQgRElTQ1VTUy7CoCBXZSB3aWxs
+IGZhc2hpb24gYXBwcm9wcmlhdGUgdGV4dCwgYW5kIG15IGd1ZXNzIGlzIHRoYXQgaXQNCj4gd291
+bGQgZ28gaW50byB0aGUgU2VjdXJpdHkgQ29uc2lkZXJhdGlvbnMuwqAgRG8geW91IHRoaW5rIHRo
+YXQgaXMgdGhlDQo+IHJpZ2h0IHBsYWNlPw0KPg0KPiA+DQo+ID4gKDIpIFNlY3Rpb24gNS4gIFBl
+ciB0aGUgZGVzY3JpcHRpb24gb2YgdGhlIEQgZmxhZywgaG93IHdvdWxkIGEgZm9yd2FyZGluZw0K
+PiA+IGRldmljZSDigJxzdXNwZWN0IHRoYXQgYSBkb3duc3RyZWFtIG5vZGUgbWlnaHQgZmluZCBb
+YSBwYWNrZXRdIHVzZWZ1bOKAnT8NCj4gDQo+IEkgZG9uJ3QgaGF2ZSB0aGUgYW5zd2VyIHRvIHRo
+YXQgcXVlc3Rpb24uwqAgSSBjb3VsZCBpbWFnaW5lIHRoYXQNCj4gaW50ZXJtZWRpYXRlIGRldmlj
+ZXMgYXJlIGNvbmZpZ3VyZWQgd2l0aCB0cmFmZmljIGRlc2NyaXB0b3JzIHRoYXQgY2F1c2UNCj4g
+YSBtYXRjaCB0byB0aGUgIkZvcndhcmRfSUZfRD0wIiBiZWhhdmlvci7CoCBXZSBjb3VsZCBtYWtl
+IGEgc3VnZ2VzdGlvbiwNCj4gYnV0IHRoZW4gYXZvaWQgYSBub3JtYXRpdmUgY29uZGl0aW9uIGZv
+ciB0aGlzIGJlaGF2aW9yIGJ5IHNwZWNpZnlpbmcNCj4gdGhhdCB0aGUgY29uZmlndXJhdGlvbiBk
+ZXRhaWxzIGFyZSBvdXQgb2Ygc2NvcGUgZm9yIHRoaXMgZG9jdW1lbnQuDQo+IFdvdWxkIHRoYXQg
+YmUgTy5LLj8NCg0KTWFrZXMgc2Vuc2UgdG8gbWUuDQogDQo+IA0KPiA+DQo+ID4gKDMpIFNlY3Rp
+b24gNi4gIElzIHRoZXJlIG5vcm1hdGl2ZSBsYW5ndWFnZSBhYm91dCB0aGUgYmVoYXZpb3Igb2YN
+Cj4gZm9yd2FyZGluZw0KPiA+IGVudGl0aWVzIHdoZW4gZW5jb3VudGVyaW5nIHRoZSBEZWFkbGlu
+ZSBoZWFkZXIgaW4gdGhpcyBzZWN0aW9uPyAgSWYgbm90LCBJ4oCZZA0KPiA+IHJlY29tbWVuZCBh
+ZGRpbmcgZXhwbGljaXQgdGV4dCB0byB0aGF0IGVmZmVjdC4NCj4gDQo+IFRoaXMgaGFzIGJlZW4g
+ZGlzY3Vzc2VkIGluIG90aGVyIGVtYWlscyBhcyB3ZWxsLsKgIEl0IGlzIHBvc3NpYmxlIHRvDQo+
+IG1hbmRhdGUgdGhhdCB0aGUgRGVhZGxpbmUgaGVhZGVyIFNIT1VMRCBOT1QgY2F1c2UgcHJlLWVt
+cHRpb24uIEkgdGhpbmsNCj4gc3VjaCBtYW5kYXRlcyBhcmUgbm90IGVuZm9yY2VhYmxlLCBidXQg
+d291bGQgYW55d2F5IHNlcnZlIGFzIGd1aWRhbmNlDQo+IGZvciBpbXBsZW1lbnRhdGlvbi4NCg0K
+SSB0ZW5kIHRvIGFncmVlLg0KDQo+IA0KPiA+DQo+ID4gKDQpIEVkaXRvcmlhbCBuaXRzOg0KPiA+
+ICoqIFNlY3Rpb24gNC4gIFR5cG8uICBzL3RoZSB0aGUvdGhlLw0KPiANCj4gDQo+IFRoYW5rcyBt
+dWNoIGZvciB5b3VyIHJldmlldyENCg0KVGhhbmtzIGZvciB0aGUgdXBkYXRlcyENCg0KUm9tYW4N
+Cg0KPiBSZWdhcmRzLA0KPiBDaGFybGllIFAuDQo+IA0KPiANCj4gPg0KPiA+DQo=
+
+
+From nobody Thu Aug 29 09:55:21 2019
+Return-Path: <session-request@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id A818A1200B8; Thu, 29 Aug 2019 09:55:18 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: IETF Meeting Session Request Tool <session-request@ietf.org>
+To: <session-request@ietf.org>
+Cc: shwetha.bhandari@gmail.com, 6lo-chairs@ietf.org, suresh@kaloom.com, 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.100.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <156709771860.1132.16128385417384017458.idtracker@ietfa.amsl.com>
+Date: Thu, 29 Aug 2019 09:55:18 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/FanLGF5APJ0TLj6M88tnY1uVWMY>
+Subject: [6lo] 6lo - New Meeting Session Request for IETF 106
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 29 Aug 2019 16:55:19 -0000
+
+A new meeting session request has just been submitted by Shwetha Bhandari, a Chair of the 6lo working group.
+
+
+---------------------------------------------------------
+Working Group Name: IPv6 over Networks of Resource-constrained Nodes
+Area Name: Internet Area
+Session Requester: Shwetha Bhandari
+
+Number of Sessions: 1
+Length of Session(s):  1.5 Hours
+Number of Attendees: 62
+Conflicts to Avoid: 
+ Chair Conflict: lwig lpwan tcpm ippm rats
+ Technology Overlap: intarea roll core 6tisch 6man ipwave ace detnet icnrg t2trg iccrg manet cbor homenet v6ops lake
+
+
+
+People who must be present:
+  Suresh Krishnan
+  Carles Gomez
+  Shwetha Bhandari
+
+Resources Requested:
+
+Special Requests:
+  
+---------------------------------------------------------
+
+
+From nobody Thu Aug 29 09:56:09 2019
+Return-Path: <session-request@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 2F3511209A8; Thu, 29 Aug 2019 09:56:05 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: IETF Meeting Session Request Tool <session-request@ietf.org>
+To: <session-request@ietf.org>
+Cc: shwetha.bhandari@gmail.com, 6lo-chairs@ietf.org, suresh@kaloom.com, 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.100.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <156709776518.1132.4187198802783492708.idtracker@ietfa.amsl.com>
+Date: Thu, 29 Aug 2019 09:56:05 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/UWpnrgRa79Mgw8GyimdIMZczHwo>
+Subject: [6lo] 6lo - Update to a Meeting Session Request for IETF 106
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 29 Aug 2019 16:56:05 -0000
+
+An update to a meeting session request has just been submitted by Shwetha Bhandari, a Chair of the 6lo working group.
+
+
+---------------------------------------------------------
+Working Group Name: IPv6 over Networks of Resource-constrained Nodes
+Area Name: Internet Area
+Session Requester: Shwetha Bhandari
+
+Number of Sessions: 1
+Length of Session(s):  1.5 Hours
+Number of Attendees: 55
+Conflicts to Avoid: 
+ Chair Conflict: lwig lpwan tcpm ippm rats
+ Technology Overlap: intarea roll core 6tisch 6man ipwave ace detnet icnrg t2trg iccrg manet cbor homenet v6ops lake
+
+
+
+People who must be present:
+  Suresh Krishnan
+  Carles Gomez
+  Shwetha Bhandari
+
+Resources Requested:
+
+Special Requests:
+  Please also avoid collision with IoT-related BOFs.
+---------------------------------------------------------
+
+
+From nobody Fri Aug 30 02:41:31 2019
+Return-Path: <m.lenders@fu-berlin.de>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0B8D8120124 for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 02:41:30 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.199
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.199 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, SPF_HELO_NONE=0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id GkSGfxvl52IY for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 02:41:28 -0700 (PDT)
+Received: from outpost1.zedat.fu-berlin.de (outpost1.zedat.fu-berlin.de [130.133.4.66]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 227AC12004F for <6lo@ietf.org>; Fri, 30 Aug 2019 02:41:28 -0700 (PDT)
+Received: from inpost2.zedat.fu-berlin.de ([130.133.4.69]) by outpost.zedat.fu-berlin.de (Exim 4.85) for 6lo@ietf.org with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (envelope-from <m.lenders@fu-berlin.de>) id <1i3dPK-001WoC-93>; Fri, 30 Aug 2019 11:41:26 +0200
+Received: from mail-ot1-f45.google.com ([209.85.210.45]) by inpost2.zedat.fu-berlin.de (Exim 4.85) for 6lo@ietf.org with esmtpsa (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (envelope-from <m.lenders@fu-berlin.de>) id <1i3dPJ-002Fng-K6>; Fri, 30 Aug 2019 11:41:26 +0200
+Received: by mail-ot1-f45.google.com with SMTP id 97so3506264otr.4 for <6lo@ietf.org>; Fri, 30 Aug 2019 02:41:25 -0700 (PDT)
+X-Gm-Message-State: APjAAAU+kL3c2RVzV83ol36ZUh5lC2l1X/t562ekN+C0KUMdRuRu8lnY bBh/nr/nmX0CdGdi7v9pcecq0LLeP7oqSbljW0c=
+X-Google-Smtp-Source: APXvYqxxtGu/u13vk05suF07BI71l3co6fN6Z7hE7XepczRty6XHwFk2XGKWK28I/hOW3io6xfW+85ACI8Fs2kj9D9A=
+X-Received: by 2002:a05:6830:1d75:: with SMTP id l21mr10845374oti.121.1567158084514;  Fri, 30 Aug 2019 02:41:24 -0700 (PDT)
+MIME-Version: 1.0
+From: Martine Lenders <m.lenders@fu-berlin.de>
+Date: Fri, 30 Aug 2019 11:40:48 +0200
+X-Gmail-Original-Message-ID: <CALHmdRxLUXy9g94iYn+7Ujmr+0bmBR0Oo3psbHcZOauT08rOHg@mail.gmail.com>
+Message-ID: <CALHmdRxLUXy9g94iYn+7Ujmr+0bmBR0Oo3psbHcZOauT08rOHg@mail.gmail.com>
+To: 6lo@ietf.org
+Content-Type: multipart/alternative; boundary="000000000000ef39b20591526cff"
+X-Originating-IP: 209.85.210.45
+X-ZEDAT-Hint: A
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/DLCTxC2X4bRNtYPHhtEkavMWlz4>
+Subject: [6lo] Question on draft-ietf-6lo-fragment-recovery and VRB
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 30 Aug 2019 09:41:30 -0000
+
+--000000000000ef39b20591526cff
+Content-Type: text/plain; charset="UTF-8"
+
+Hi,
+
+I have an implementation question for the virtual reassembly buffer with
+regards to [draft-ietf-6lo-fragment-recovery]. Section 6.1 of this draft
+states that a tuple (source address, tag) is used to identify a VRB entry
+and cites [draft-ietf-6lo-minimal-fragment] for that. However, as far as I
+understand [draft-ietf-6lo-minimal-fragment] and
+[draft-ietf-lwig-6lowpan-virtual-reassembly] this is not the case.
+[draft-ietf-6lo-minimal-fragment] doesn't mention VRB entry identification
+and only refers to [draft-ietf-lwig-6lowpan-virtual-reassembly]. That in
+turn only recounts the classic (source address, destination address, size,
+tag) tuple defined in RFC4944 and states that the only difference between
+the classic and VRB is the lack of the reassembled packet and addition of
+the next hop's address and the newly assigned tag:
+
+To reduce the memory requirement for reassembly buffers, the implementation
+> may opt to not keep the actual packet data in the reassembly buffer.
+> Instead, it may attempt to send out the data for a fragment in the form of
+> a forwarded fragment, as soon as all necessary information for that is
+> available. Obviously, all fragments need to be sent with the same outgoing
+> address (otherwise a full reassembly implementation would discard the
+> fragments) and the same datagram_tag.
+
+
+So my question is: Is the tuple definition in
+[draft-ietf-6lo-fragment-recovery] really correct? For exclusion datagram
+size I agree that it could be somewhat redundant. However, a node could
+have multiple destination addresses (either via multiple interfaces or
+IEEE-802.15.4-style short and long address). So, as the tag is
+link-specific (defined by a (source, destination) tuple), there could be
+distinct datagrams that have the same tuple (source, tag), or am I missing
+something?
+
+I already implemented the VRB with draft-ietf-6lo-minimal-fragment in mind
+and thus used the classic 4-tuple for indexing. But now I'm wondering: Can
+I reduce its index or would that be not advised?
+
+Kind regards,
+Martine
+
+--000000000000ef39b20591526cff
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi,<div><br></div><div>I have an implementation question f=
+or the virtual reassembly buffer with regards to [draft-ietf-6lo-fragment-r=
+ecovery]. Section 6.1 of this draft states that a tuple (source address, ta=
+g) is used to identify a VRB entry and cites [draft-ietf-6lo-minimal-fragme=
+nt] for that. However, as far as I understand [draft-ietf-6lo-minimal-fragm=
+ent] and [draft-ietf-lwig-6lowpan-virtual-reassembly] this is not the case.=
+ [draft-ietf-6lo-minimal-fragment] doesn&#39;t mention VRB entry identifica=
+tion and only refers to [draft-ietf-lwig-6lowpan-virtual-reassembly]. That =
+in turn only recounts the classic (source=C2=A0address, destination address=
+, size, tag) tuple defined in RFC4944 and states that the only difference b=
+etween the classic and VRB is the lack of the reassembled packet and additi=
+on of the next hop&#39;s address and the newly assigned tag:<br><br><blockq=
+uote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1p=
+x solid rgb(204,204,204);padding-left:1ex">To reduce the memory requirement=
+ for reassembly buffers, the implementation may opt to not keep the actual =
+packet data in the reassembly buffer. Instead, it may attempt to send out t=
+he data for a fragment in the form of a forwarded fragment, as soon as all =
+necessary information for that is available. Obviously, all fragments need =
+to be sent with the same outgoing address (otherwise a full reassembly impl=
+ementation would discard the fragments) and the same datagram_tag.</blockqu=
+ote><div><br></div><div>So my question is: Is the tuple definition in [draf=
+t-ietf-6lo-fragment-recovery] really correct? For exclusion datagram size I=
+ agree that it could be somewhat redundant. However, a node could have mult=
+iple destination addresses (either via multiple interfaces or IEEE-802.15.4=
+-style short and long address). So, as the tag is link-specific (defined by=
+ a (source, destination) tuple), there could be distinct datagrams that hav=
+e the same tuple (source, tag), or am I missing something?</div></div><div>=
+<br></div><div>I already implemented the VRB with draft-ietf-6lo-minimal-fr=
+agment in mind and thus used the classic 4-tuple for indexing. But now I&#3=
+9;m wondering: Can I reduce its index or would that be not advised?</div><d=
+iv><br></div><div>Kind regards,</div><div>Martine</div></div>
+
+--000000000000ef39b20591526cff--
+
+
+From nobody Fri Aug 30 04:44:36 2019
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 692F81200B6 for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 04:44:33 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.499
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.499 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com header.b=IWCNUbfa; dkim=pass (1024-bit key) header.d=cisco.onmicrosoft.com header.b=E65sMx2X
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id bPjLaUfv295H for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 04:44:30 -0700 (PDT)
+Received: from alln-iport-2.cisco.com (alln-iport-2.cisco.com [173.37.142.89]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 6E49112003E for <6lo@ietf.org>; Fri, 30 Aug 2019 04:44:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=32004; q=dns/txt; s=iport; t=1567165470; x=1568375070; h=from:to:subject:date:message-id:references:in-reply-to: mime-version; bh=T0pPts9tuxFM6gtNEZMAYk2INp+9Ft5ZnL5CmnwiWa0=; b=IWCNUbfawPXuVUgLEXg4R2UpyTpXi02X7xzX6JpAKdqZXicXlG9EDFoV GPnm3j0eelU/c7LltucIcBODUIBO+y8mmN11wwkhJBbC8Zw732KWKa70G bQw05nRs+esCeeta4tMQSFNlSAGTE+uNcnrDfT6b8l6IaUMHG6qqqwY8J o=;
+IronPort-PHdr: =?us-ascii?q?9a23=3AoF2W7RBcUI2wBT/mE0v2UyQJPHJ1sqjoPgMT9p?= =?us-ascii?q?ssgq5PdaLm5Zn5IUjD/qs03kTRU9Dd7PRJw6rNvqbsVHZIwK7JsWtKMfkuHw?= =?us-ascii?q?QAld1QmgUhBMCfDkiuNOLqciY3BthqX15+9Hb9Ok9QS47z?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0A2AAAMC2ld/5tdJa1cChoBAQEBAQI?= =?us-ascii?q?BAQEBBwIBAQEBgVYCAQEBAQsBgRUvJCwDbVYgBAsqhCGDRwOKc02Ze4JSA1Q?= =?us-ascii?q?JAQEBDAEBJQgCAQGEPwIXgkkjNwYOAgMIAQEEAQEBAgEGBG2FLgyFSwIEEhE?= =?us-ascii?q?KEwEBJRMPAgEIDioKAgICMCUCBAEaGoMBgR1NAx0BAgyhDwKBOIhhc4Eygnw?= =?us-ascii?q?BAQWFDxiCFgMGgTQBhH+GeBiBQD+BEUaBTn4+gmEBAQIBgTMtK4JeMoImjyi?= =?us-ascii?q?FHJdPCoIfhnCOAoIyhzaKWIQijXKHc5BRAgQCBAUCDgEBBYFmIoFYcBWDJ4J?= =?us-ascii?q?Cg3KFFIU/cgGBKI1KAQE?=
+X-IronPort-AV: E=Sophos;i="5.64,447,1559520000";  d="scan'208,217";a="322281315"
+Received: from rcdn-core-4.cisco.com ([173.37.93.155]) by alln-iport-2.cisco.com with ESMTP/TLS/DHE-RSA-SEED-SHA; 30 Aug 2019 11:44:29 +0000
+Received: from XCH-ALN-002.cisco.com (xch-aln-002.cisco.com [173.36.7.12]) by rcdn-core-4.cisco.com (8.15.2/8.15.2) with ESMTPS id x7UBiTAX002988 (version=TLSv1.2 cipher=AES256-SHA bits=256 verify=FAIL); Fri, 30 Aug 2019 11:44:29 GMT
+Received: from xhs-rtp-001.cisco.com (64.101.210.228) by XCH-ALN-002.cisco.com (173.36.7.12) with Microsoft SMTP Server (TLS) id 15.0.1473.3; Fri, 30 Aug 2019 06:44:28 -0500
+Received: from xhs-aln-003.cisco.com (173.37.135.120) by xhs-rtp-001.cisco.com (64.101.210.228) with Microsoft SMTP Server (TLS) id 15.0.1473.3; Fri, 30 Aug 2019 07:44:28 -0400
+Received: from NAM04-CO1-obe.outbound.protection.outlook.com (173.37.151.57) by xhs-aln-003.cisco.com (173.37.135.120) with Microsoft SMTP Server (TLS) id 15.0.1473.3 via Frontend Transport; Fri, 30 Aug 2019 06:44:27 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; b=QjzI8SMeDs3Zgw0RjXqMDkq8I3KXCc++T5LMuXpJWwdCblJrO2FupZCmzrYgcIZeKKbIMkLUR64C7SFaP1Dgp9RYZZnc8P+QhW+uGu8xzlhcWOgJeQaQfx0YgIHf+idqw+VE8IdnP7xMkoI9ntFC5NXXB627LYaM3h0hhHLSi6Rs0cb1mWMTTlbU3chAoyvQFzoPyYnmbJYLgfibrwgA0cftdjVQyJN09h/e5gaooaairhzWgpNUsCdb1wnKumETCrFTT3rhAsndfsPgLgNBljRJl0w0bWTz9shi/bN4NLN6T/RpLL0QIFHyCU2Z4E+oBJ39mMsJMarPyQsKHLCYGQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;  s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=T0pPts9tuxFM6gtNEZMAYk2INp+9Ft5ZnL5CmnwiWa0=; b=CmCylWw9razfa7powHY+TxH6BEbZxRduIl/vcp5lAAEDtgOklVGqmtPhN0fWB2/soHWvXufPRshoAXxpmK0QqVcdcE6xzUSTmgAXG5cktefYhEbkdtOu0vD1JtNzjFvw8+QsTwaibxSsmDSx6wy7JkK81wPZ9m2LmuxbjCVo4TyhGFHWx2PyPozajCmBd0AGr39JwjWWuOYIFQ9CP1hMZHsIks0rx57ipyyV0jlxqPje9U9O6yO54Kb4aX2tDSuX5/dc9dzRT/sPMeiMwQ37uFsehgvSnFKBtE+aLxuCmwxZcNLywo0Di1VXarbm/BEiRTMeNvTIDR92SQBgulrkwg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=cisco.com; dmarc=pass action=none header.from=cisco.com; dkim=pass header.d=cisco.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cisco.onmicrosoft.com;  s=selector2-cisco-onmicrosoft-com; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=T0pPts9tuxFM6gtNEZMAYk2INp+9Ft5ZnL5CmnwiWa0=; b=E65sMx2XbzW2bvLdYoZePGKoH8NyT+coL33viu9T1zQNrAOIIruwwfyjwysP24wuiKk2XMsuQlNFh6YFLcVwIK0yVc6sjSvuNgbJI6XcNyF4gADXk0goeU+Arrtifx3BTbZWH4M1+yvV9TTXbmi8QsdJjcAIrVGg4PWl1E193xg=
+Received: from MN2PR11MB3565.namprd11.prod.outlook.com (20.178.250.159) by MN2PR11MB3695.namprd11.prod.outlook.com (20.178.252.156) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2220.19; Fri, 30 Aug 2019 11:44:26 +0000
+Received: from MN2PR11MB3565.namprd11.prod.outlook.com ([fe80::89cf:9d:8a75:266e]) by MN2PR11MB3565.namprd11.prod.outlook.com ([fe80::89cf:9d:8a75:266e%3]) with mapi id 15.20.2220.013; Fri, 30 Aug 2019 11:44:26 +0000
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: Martine Lenders <m.lenders@fu-berlin.de>, "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: [6lo] Question on draft-ietf-6lo-fragment-recovery and VRB
+Thread-Index: AQHVXxckGX8iRyyyNUODZAbfHFSG36cTiwwA
+Date: Fri, 30 Aug 2019 11:44:02 +0000
+Deferred-Delivery: Fri, 30 Aug 2019 11:43:21 +0000
+Message-ID: <MN2PR11MB35658D8325E730B3FD593019D8BD0@MN2PR11MB3565.namprd11.prod.outlook.com>
+References: <CALHmdRxLUXy9g94iYn+7Ujmr+0bmBR0Oo3psbHcZOauT08rOHg@mail.gmail.com>
+In-Reply-To: <CALHmdRxLUXy9g94iYn+7Ujmr+0bmBR0Oo3psbHcZOauT08rOHg@mail.gmail.com>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=pthubert@cisco.com; 
+x-originating-ip: [2001:420:c0c0:1003::52]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: ad56cb67-a4da-4241-939d-08d72d3f690a
+x-microsoft-antispam: BCL:0; PCL:0; RULEID:(2390118)(7020095)(4652040)(8989299)(4534185)(4627221)(201703031133081)(201702281549075)(8990200)(5600166)(711020)(4605104)(1401327)(2017052603328)(7193020); SRVR:MN2PR11MB3695; 
+x-ms-traffictypediagnostic: MN2PR11MB3695:
+x-ms-exchange-purlcount: 3
+x-microsoft-antispam-prvs: <MN2PR11MB36956A22475425754CC66EF8D8BD0@MN2PR11MB3695.namprd11.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:9508;
+x-forefront-prvs: 0145758B1D
+x-forefront-antispam-report: SFV:NSPM; SFS:(10009020)(4636009)(366004)(136003)(39860400002)(346002)(396003)(376002)(189003)(199004)(476003)(229853002)(11346002)(76176011)(99286004)(52536014)(5660300002)(2501003)(86362001)(7736002)(256004)(486006)(6666004)(6246003)(316002)(478600001)(2906002)(14454004)(53936002)(8936002)(790700001)(6116002)(6506007)(606006)(81156014)(81166006)(55016002)(236005)(8676002)(6306002)(25786009)(54896002)(71190400001)(446003)(74316002)(110136005)(7696005)(33656002)(46003)(71200400001)(66476007)(186003)(66556008)(66946007)(6436002)(76116006)(9686003)(66446008)(64756008)(102836004)(79990200002); DIR:OUT; SFP:1101; SCL:1; SRVR:MN2PR11MB3695; H:MN2PR11MB3565.namprd11.prod.outlook.com; FPR:; SPF:None; LANG:en; PTR:InfoNoRecords; MX:1; A:1; 
+received-spf: None (protection.outlook.com: cisco.com does not designate permitted sender hosts)
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam-message-info: nczw6mP0EphW7j2kgMZtSIj45zNUIP+yhDMJCL7dUs6zpZHceXfqFS8dp6hDVYGQxdaR6HRC34GeEle9ib1dURmSMGIMMftxSVfzYgYp06egHvsCbbTdxI5DgN2fJyLEBpSFca8lFx2IXDerxSKP0bYdmlsJ0Av+Eh9H9rA/oMdSHEHi0bebUW0x8zK1mkD8LjdkYNWQWiXX5qMN+zaP0bnEfYQ0d2ztTuE3wLKW+anGaQj5uLiJFpSqZCDSCq5LhNAgNM8OPznt0zAMKyYewJIp9KtoXY82WJNFSTMqbUg7IlIWLFkGKZ5WdDTBA48Mv4BbQx9g2rlyfoC0QLF958DJ+EQJUU0XOEGF/9w124y94JGPxlsKcMoqkUoS9GDkV4qjMAqbj6a0Rf3dpe7oxLZoPz6rsYJEefvkbeOl1cpIzNJoyUs/f/t+hqYBZ4zGnjSN+zrssOs4vpG1mcgkrQ==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative; boundary="_000_MN2PR11MB35658D8325E730B3FD593019D8BD0MN2PR11MB3565namp_"
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-Network-Message-Id: ad56cb67-a4da-4241-939d-08d72d3f690a
+X-MS-Exchange-CrossTenant-originalarrivaltime: 30 Aug 2019 11:44:26.3645 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 5ae1af62-9505-4097-a69a-c1553ef7840e
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: bL7QIl7ijHfGMCtjrdIJe112Aevi5XKPEnnkh/KfgjGxlIr3MnIbp1P6wAK561q7bDNjnA4TX7/uik7jCWDGIQ==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR11MB3695
+X-OriginatorOrg: cisco.com
+X-Outbound-SMTP-Client: 173.36.7.12, xch-aln-002.cisco.com
+X-Outbound-Node: rcdn-core-4.cisco.com
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/4KDmElE8hPv8s5eBi3aiLrryndg>
+Subject: Re: [6lo] Question on draft-ietf-6lo-fragment-recovery and VRB
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 30 Aug 2019 11:44:34 -0000
+
+--_000_MN2PR11MB35658D8325E730B3FD593019D8BD0MN2PR11MB3565namp_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+SGVsbG8gTWFydGluZQ0KDQpHcmVhdCB0byBoZWFyIGFib3V0IHlvdXIgaW1wbGVtZW50YXRpb24u
+IFRoZSBncm91cCBpcyBpbnRlcmVzdGVkIHRvIGxlYXJuIGFib3V0IHlvdXIgcHJvZ3Jlc3MgKGtl
+ZXAgdXMgdHVuZWQpIGFuZCBoYXBweSB0byBoZWxwIHlvdSB0aHJvdWdoLiBQDQpsZWFzZSBkbyBu
+b3QgaGVzaXRhdGUgdG8gYXNrIGZvciBtb3JlIGNsYXJpZmljYXRpb24gYXMgeW91IGZlZWwgbmVl
+ZGVkLiBFdmVuIGlmIHlvdeKAmXJlIG5vdCB0b28gc3VyZSB5b3Ugc2hvdWxkIGFzaywgaWYgeW91
+IHdvbmRlciB0aGVyZeKAmXMgcHJvYmFibHkgYSByZWFzb24gYW5kIHlvdeKAmXJlIGhlbHBpbmcg
+dGhlIGltcGxlbWVudG9ycyB3aG8gd2lsbCBiZSBmb2xsb3dpbmcgeW91Lg0KDQpQbGVhc2Ugc2Vl
+IGJlbG93Og0KDQpJIGhhdmUgYW4gaW1wbGVtZW50YXRpb24gcXVlc3Rpb24gZm9yIHRoZSB2aXJ0
+dWFsIHJlYXNzZW1ibHkgYnVmZmVyIHdpdGggcmVnYXJkcyB0byBbZHJhZnQtaWV0Zi02bG8tZnJh
+Z21lbnQtcmVjb3ZlcnldLiBTZWN0aW9uIDYuMSBvZiB0aGlzIGRyYWZ0IHN0YXRlcyB0aGF0IGEg
+dHVwbGUgKHNvdXJjZSBhZGRyZXNzLCB0YWcpIGlzIHVzZWQgdG8gaWRlbnRpZnkgYSBWUkIgZW50
+cnkgYW5kIGNpdGVzIFtkcmFmdC1pZXRmLTZsby1taW5pbWFsLWZyYWdtZW50XSBmb3IgdGhhdC4N
+Cg0Kw5ggICAgQ29ycmVjdCwgYW5kIHRoZSBtZWFuaW5nIGlzIHNvdXJjZSBNQUMgYWRkcmVzcyBu
+b3Qgc291cmNlIElQIGFkZHJlc3MuIFRoZSBleGFjdCBzZW50ZW5jZSBpcw0KDQrDmCAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFVwb24gYSBmaXJzdCBmcmFnbWVudCAoaS5l
+LiB3aXRoIGENCg0Kw5ggICAgIHNlcXVlbmNlIG9mIHplcm8pLCBhIFZSQiBhbmQgdGhlIGFzc29j
+aWF0ZWQgTFNQIHN0YXRlIGFyZSBjcmVhdGVkIGZvcg0KDQrDmCAgICAgdGhlIHR1cGxlIChzb3Vy
+Y2UgTUFDIGFkZHJlc3MsIGRhdGFncmFtX3RhZykgYW5kIHRoZSBmcmFnbWVudCBpcw0KDQrDmCAg
+ICAgZm9yd2FyZGVkIGFsb25nIHRoZSBJUHY2IHJvdXRlIHRoYXQgbWF0Y2hlcyB0aGUgZGVzdGlu
+YXRpb24gSVB2Ng0KDQrDmCAgICAgYWRkcmVzcyBpbiB0aGUgSVB2NiBoZWFkZXIgYXMgcHJlc2Ny
+aWJlZCBieQ0KDQrDmCAgICAgW0ktRC5pZXRmLTZsby1taW5pbWFsLWZyYWdtZW50PGh0dHBzOi8v
+dG9vbHMuaWV0Zi5vcmcvaHRtbC9kcmFmdC1pZXRmLTZsby1mcmFnbWVudC1yZWNvdmVyeS0wNSNy
+ZWYtSS1ELmlldGYtNmxvLW1pbmltYWwtZnJhZ21lbnQ+XS4NCg0Kw5gNCkhvd2V2ZXIsIGFzIGZh
+ciBhcyBJIHVuZGVyc3RhbmQgW2RyYWZ0LWlldGYtNmxvLW1pbmltYWwtZnJhZ21lbnRdIGFuZCBb
+ZHJhZnQtaWV0Zi1sd2lnLTZsb3dwYW4tdmlydHVhbC1yZWFzc2VtYmx5XSB0aGlzIGlzIG5vdCB0
+aGUgY2FzZS4gW2RyYWZ0LWlldGYtNmxvLW1pbmltYWwtZnJhZ21lbnRdIGRvZXNuJ3QgbWVudGlv
+biBWUkIgZW50cnkgaWRlbnRpZmljYXRpb24gYW5kIG9ubHkgcmVmZXJzIHRvIFtkcmFmdC1pZXRm
+LWx3aWctNmxvd3Bhbi12aXJ0dWFsLXJlYXNzZW1ibHldLg0KDQogICogICBJdCB3b3VsZCBub3Qg
+aHVydCB0byBtZW50aW9uIGl0IHRob3VnaC4gSW50ZXJlc3RpbmcuIE1pbmltYWwgaGFzOuKAnSBB
+bGwgZnJhZ21lbnRzIGFyZSB0YWdnZWQgd2l0aCBhIDE2LWJpdA0KDQogICAiICAgIEVhY2ggZGF0
+YWdyYW0gY2FuIGJlIHVuaXF1ZWx5IGlkZW50aWZpZWQgYnkgdGhlIHNvdXJjZSBhbmQgZmluYWwN
+Cg0KICAgZGVzdGluYXRpb24gbGluay1sYXllciBhZGRyZXNzZXMgb2YgdGhlIGZyYW1lIHRoYXQg
+Y2FycmllcyBpdCwgdGhlDQoNCiAgIGZyYWdtZW50IHNpemUgYW5kIHRoZSBkYXRhZ3JhbV90YWcu
+DQoNCg0KDQrDmCAgICBUaGF04oCZcyAgbWlzbGVhZGluZ+KApiBJ4oCZbGwgY29ycmVjdCBpdC4N
+ClRoYXQgaW4gdHVybiBvbmx5IHJlY291bnRzIHRoZSBjbGFzc2ljIChzb3VyY2UgYWRkcmVzcywg
+ZGVzdGluYXRpb24gYWRkcmVzcywgc2l6ZSwgdGFnKSB0dXBsZSBkZWZpbmVkIGluIFJGQzQ5NDQN
+Cg0KICAqICAgV2hlbiByZWNlaXZpbmcgYSBmcmFnbWVudCwgdGhlIGRlc3RpbmF0aW9uIGlzIHNl
+bGYgYW5kIHRoZSBzaXplIG1heSB2YXJ5IGZyb20gYSBkYXRhZ3JhbSB0byB0aGUgbmV4dC4gU28g
+dGhlIG9ubHkgdGhpbmcgdGhhdCByZWFsbHkgaWRlbnRpZnkgdGhlIGRhdGFncmFtIGlzIHRoZSBz
+b3VyY2UgTUFDIGFuZCB0aGUgdGFnLg0KYW5kIHN0YXRlcyB0aGF0IHRoZSBvbmx5IGRpZmZlcmVu
+Y2UgYmV0d2VlbiB0aGUgY2xhc3NpYyBhbmQgVlJCIGlzIHRoZSBsYWNrIG9mIHRoZSByZWFzc2Vt
+YmxlZCBwYWNrZXQgYW5kIGFkZGl0aW9uIG9mIHRoZSBuZXh0IGhvcCdzIGFkZHJlc3MgYW5kIHRo
+ZSBuZXdseSBhc3NpZ25lZCB0YWc6DQoNCsOYICAgIEFjdHVhbGx5IHRoZSBmb3J3YXJkZXIgc2Vu
+ZHMgdGhlIGRhdGFncmFtIHdpdGggc2VsZiBhcyBzb3VyY2UgdG8gdGhlIHNvdXJjZSBtYWMgYWRk
+cmVzcyBpcyBzd2FwcGVkIG5hdHVyYWxseS4gSXQgaGFzIHRvIHNldCB0aGUgbmV4dCBob3DigJlz
+IG1hYyBhZGRyZXNzIGFuZCB0aGUgc3dhcHBlZCBkYXRhZ3JhbSB0YWcuIFRoZSBuZXh0IGhvcOKA
+mXMgTUFDIGFkZHJlc3MgaWRlbnRpZmllcyB0aGUgbm9kZSB0aGF0IHNob3VsZCByZWNlaXZlIHRo
+ZSBwYWNrZXQgYW5kIHRoZSBkYXRhZ3JhbSB0YWcgdG9nZXRoZXIgd2l0aCB0aGUgc291cmNlIG1h
+YyBpZGVudGlmeSB0aGUgcmVhc3NlbWJseSBidWZmZXIgd2l0aGluIHRoZSByZWNlaXZlci4gVGhl
+cmUgaXMgbm8gY29udHJhZGljdGlvbi4NClRvIHJlZHVjZSB0aGUgbWVtb3J5IHJlcXVpcmVtZW50
+IGZvciByZWFzc2VtYmx5IGJ1ZmZlcnMsIHRoZSBpbXBsZW1lbnRhdGlvbiBtYXkgb3B0IHRvIG5v
+dCBrZWVwIHRoZSBhY3R1YWwgcGFja2V0IGRhdGEgaW4gdGhlIHJlYXNzZW1ibHkgYnVmZmVyLiBJ
+bnN0ZWFkLCBpdCBtYXkgYXR0ZW1wdCB0byBzZW5kIG91dCB0aGUgZGF0YSBmb3IgYSBmcmFnbWVu
+dCBpbiB0aGUgZm9ybSBvZiBhIGZvcndhcmRlZCBmcmFnbWVudCwgYXMgc29vbiBhcyBhbGwgbmVj
+ZXNzYXJ5IGluZm9ybWF0aW9uIGZvciB0aGF0IGlzIGF2YWlsYWJsZS4gT2J2aW91c2x5LCBhbGwg
+ZnJhZ21lbnRzIG5lZWQgdG8gYmUgc2VudCB3aXRoIHRoZSBzYW1lIG91dGdvaW5nIGFkZHJlc3Mg
+KG90aGVyd2lzZSBhIGZ1bGwgcmVhc3NlbWJseSBpbXBsZW1lbnRhdGlvbiB3b3VsZCBkaXNjYXJk
+IHRoZSBmcmFnbWVudHMpIGFuZCB0aGUgc2FtZSBkYXRhZ3JhbV90YWcuDQoNClNvIG15IHF1ZXN0
+aW9uIGlzOiBJcyB0aGUgdHVwbGUgZGVmaW5pdGlvbiBpbiBbZHJhZnQtaWV0Zi02bG8tZnJhZ21l
+bnQtcmVjb3ZlcnldIHJlYWxseSBjb3JyZWN0Pw0KDQoNCiAgKiAgIEl0IGlzLg0KDQpGb3IgZXhj
+bHVzaW9uIGRhdGFncmFtIHNpemUgSSBhZ3JlZSB0aGF0IGl0IGNvdWxkIGJlIHNvbWV3aGF0IHJl
+ZHVuZGFudC4gSG93ZXZlciwgYSBub2RlIGNvdWxkIGhhdmUgbXVsdGlwbGUgZGVzdGluYXRpb24g
+YWRkcmVzc2VzIChlaXRoZXIgdmlhIG11bHRpcGxlIGludGVyZmFjZXMgb3IgSUVFRS04MDIuMTUu
+NC1zdHlsZSBzaG9ydCBhbmQgbG9uZyBhZGRyZXNzKS4gU28sIGFzIHRoZSB0YWcgaXMgbGluay1z
+cGVjaWZpYyAoZGVmaW5lZCBieSBhIChzb3VyY2UsIGRlc3RpbmF0aW9uKSB0dXBsZSksIHRoZXJl
+IGNvdWxkIGJlIGRpc3RpbmN0IGRhdGFncmFtcyB0aGF0IGhhdmUgdGhlIHNhbWUgdHVwbGUgKHNv
+dXJjZSwgdGFnKSwgb3IgYW0gSSBtaXNzaW5nIHNvbWV0aGluZz8NCg0KDQrDmCAgICBZZXMsIHRo
+ZSByb2xlIG9mIHRoZSBkZXN0aW5hdGlvbiBNQUMgYWRkcmVzcyBpcyB0byByZWFjaCB0aGUgbmV4
+dCBob3AsIGJ1dCBkb2VzIG5vdCBjaGFuZ2UgdGhlIHByb2Nlc3Npbmcgd2l0aGluIHRoYXQgbm9k
+ZS4gSSBjb3VsZCBjaGFuZ2UgdGhlIEwyIGFkZHJlc3MgSSB1c2UgdG8gcmVmZXIgdG8gdGhlIG5l
+eHQgaG9wIGluIHRoZSBtaWRkbGUgb2YgYSBmcmFnbWVudGVkIHBhY2tldCwgaXQgaXMgc3RpbGwg
+dGhlIHNhbWUgZnJhZ21lbnRlZCBwYWNrZXQuIEluIG90aGVyIHdvcmRzLCBwbGVhc2UgZG8gbm90
+IHVzZSB0aGUgZG1hYyBhcyB0byBpbmRleCB0aGUgVlJCLiBGcm9tIHlvdXIgcXVlc3Rpb24gSSB0
+aGluayB0aGUgTFdJRyBkcmFmdCBzaG91bGQgY2xhcmlmeSwgYW5kIHdlIGNhbiBjaGFuZ2UgbWlu
+aW1hbCBkcmFmdCB0byBjbGFyaWZ5IGFzIHdlbGwuDQoNCkkgYWxyZWFkeSBpbXBsZW1lbnRlZCB0
+aGUgVlJCIHdpdGggZHJhZnQtaWV0Zi02bG8tbWluaW1hbC1mcmFnbWVudCBpbiBtaW5kIGFuZCB0
+aHVzIHVzZWQgdGhlIGNsYXNzaWMgNC10dXBsZSBmb3IgaW5kZXhpbmcuIEJ1dCBub3cgSSdtIHdv
+bmRlcmluZzogQ2FuIEkgcmVkdWNlIGl0cyBpbmRleCBvciB3b3VsZCB0aGF0IGJlIG5vdCBhZHZp
+c2VkPw0KDQoNCsOYICAgIFlvdSBzaG91bGQgcmVkdWNlIHRoZSBpbmRleCA6ICkgVGhlcmUgY2Fu
+IG5vdCBiZSAyIGRpZmZlcmVudCBkYXRhZ3JhbXMgY29taW5nIGluIHBhcmFsbGVsIGZyb20gYSBz
+YW1lIHByZXZpb3VzIGhvcCBhbmQgd2l0aCBhIHNhbWUgZGF0YWdyYW0gdGFnLiBUaGVyZSBtdXN0
+IGJlIGEgc2VudGVuY2Ugc29tZXdoZXJlIGluIHRoZSBMV0lHIGRyYWZ0IHRoYXQgc2F5cyB0aGF0
+IGEgbmV3IGFuZCBjdXJyZW50bHkgdW51c2VkIGRhdGFncmFtIHRhZyBpcyBjaG9zZW4gZm9yIGEg
+bmV3IGluY29taW5nIGRhdGFncmFtLCBjb3JyZWN0PyAgTWluaW1hbCBzYXlzDQoNCsOYICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+IFVwb24NCg0Kw5ggICAgIHJlY2VpdmluZyBhIGZyYWdtZW50IGZyb20gbm9kZSBBIHdpdGggYSBk
+YXRhZ3JhbV90YWcgcHJldmlvdXNseQ0KDQrDmCAgICAgdW5zZWVuIGZyb20gbm9kZSBBLCBub2Rl
+IEIgYWxsb2NhdGVzIGEgYnVmZmVyIGxhcmdlIGVub3VnaCB0byBob2xkDQoNCsOYICAgICB0aGUg
+ZW50aXJlIHBhY2tldC4NCg0KDQoNCsOYICAgIFRoaXMgdGV4dCBvbmx5IGluZGV4ZXMgdGhlIFZS
+QiB3aXRoIGFueSBpZGVudGlmaWVyIG9mIG5vZGUgQSBhbmQgdGhlIHRhZ+KApiBBbmQgdGhpcyBp
+cyBjb3JyZWN0LiBXaGF04oCZcyBhIGJpdCBtb3JlIHVnbHkgaXMgdGhhdCBOb2RlIEEgc2hvdWxk
+IG5vdCBjaGFuZ2UgdGhlIHNvdXJjZSBNQUMgaW4gYmV0d2VlbiBmcmFnbWVudHMgYmVjYXVzZSB0
+aGF0IHdpbGwgY29uZmlzZSBub2RlIEIuIEkgbmVlZCB0byBhZGQgdGV4dCBvbiB0aGF0IHRvby4N
+Cg0KDQpNYW55IHRoYW5rcyBNYXJ0aW5lIGZvciByYWlzaW5nIGFsbCB0aGlzLCBhbmQgYWxsIHRo
+ZSBiZXN0IGZvciB5b3VyIGltcGxlbWVudGF0aW9uLg0KDQpQYXNjYWwNCg==
+
+--_000_MN2PR11MB35658D8325E730B3FD593019D8BD0MN2PR11MB3565namp_
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiIHhtbG5zOm89InVy
+bjpzY2hlbWFzLW1pY3Jvc29mdC1jb206b2ZmaWNlOm9mZmljZSIgeG1sbnM6dz0idXJuOnNjaGVt
+YXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6d29yZCIgeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMubWlj
+cm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+VFIvUkVDLWh0bWw0MCI+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIg
+Y29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjxtZXRhIG5hbWU9IkdlbmVyYXRv
+ciIgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUgKGZpbHRlcmVkIG1lZGl1bSkiPg0KPHN0eWxl
+PjwhLS0NCi8qIEZvbnQgRGVmaW5pdGlvbnMgKi8NCkBmb250LWZhY2UNCgl7Zm9udC1mYW1pbHk6
+V2luZ2RpbmdzOw0KCXBhbm9zZS0xOjUgMCAwIDAgMCAwIDAgMCAwIDA7fQ0KQGZvbnQtZmFjZQ0K
+CXtmb250LWZhbWlseToiQ2FtYnJpYSBNYXRoIjsNCglwYW5vc2UtMToyIDQgNSAzIDUgNCA2IDMg
+MiA0O30NCkBmb250LWZhY2UNCgl7Zm9udC1mYW1pbHk6Q2FsaWJyaTsNCglwYW5vc2UtMToyIDE1
+IDUgMiAyIDIgNCAzIDIgNDt9DQovKiBTdHlsZSBEZWZpbml0aW9ucyAqLw0KcC5Nc29Ob3JtYWws
+IGxpLk1zb05vcm1hbCwgZGl2Lk1zb05vcm1hbA0KCXttYXJnaW46MGNtOw0KCW1hcmdpbi1ib3R0
+b206LjAwMDFwdDsNCglmb250LXNpemU6MTEuMHB0Ow0KCWZvbnQtZmFtaWx5OiJDYWxpYnJpIixz
+YW5zLXNlcmlmO30NCmE6bGluaywgc3Bhbi5Nc29IeXBlcmxpbmsNCgl7bXNvLXN0eWxlLXByaW9y
+aXR5Ojk5Ow0KCWNvbG9yOiMwNTYzQzE7DQoJdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTt9DQph
+OnZpc2l0ZWQsIHNwYW4uTXNvSHlwZXJsaW5rRm9sbG93ZWQNCgl7bXNvLXN0eWxlLXByaW9yaXR5
+Ojk5Ow0KCWNvbG9yOiM5NTRGNzI7DQoJdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTt9DQpwcmUN
+Cgl7bXNvLXN0eWxlLXByaW9yaXR5Ojk5Ow0KCW1zby1zdHlsZS1saW5rOiJIVE1MIFByZWZvcm1h
+dHRlZCBDaGFyIjsNCgltYXJnaW46MGNtOw0KCW1hcmdpbi1ib3R0b206LjAwMDFwdDsNCglmb250
+LXNpemU6MTAuMHB0Ow0KCWZvbnQtZmFtaWx5OiJDb3VyaWVyIE5ldyI7fQ0KcC5Nc29MaXN0UGFy
+YWdyYXBoLCBsaS5Nc29MaXN0UGFyYWdyYXBoLCBkaXYuTXNvTGlzdFBhcmFncmFwaA0KCXttc28t
+c3R5bGUtcHJpb3JpdHk6MzQ7DQoJbWFyZ2luLXRvcDowY207DQoJbWFyZ2luLXJpZ2h0OjBjbTsN
+CgltYXJnaW4tYm90dG9tOjBjbTsNCgltYXJnaW4tbGVmdDozNi4wcHQ7DQoJbWFyZ2luLWJvdHRv
+bTouMDAwMXB0Ow0KCWZvbnQtc2l6ZToxMS4wcHQ7DQoJZm9udC1mYW1pbHk6IkNhbGlicmkiLHNh
+bnMtc2VyaWY7fQ0KcC5tc29ub3JtYWwwLCBsaS5tc29ub3JtYWwwLCBkaXYubXNvbm9ybWFsMA0K
+CXttc28tc3R5bGUtbmFtZTptc29ub3JtYWw7DQoJbXNvLW1hcmdpbi10b3AtYWx0OmF1dG87DQoJ
+bWFyZ2luLXJpZ2h0OjBjbTsNCgltc28tbWFyZ2luLWJvdHRvbS1hbHQ6YXV0bzsNCgltYXJnaW4t
+bGVmdDowY207DQoJZm9udC1zaXplOjExLjBwdDsNCglmb250LWZhbWlseToiQ2FsaWJyaSIsc2Fu
+cy1zZXJpZjt9DQpzcGFuLkVtYWlsU3R5bGUxOA0KCXttc28tc3R5bGUtdHlwZTpwZXJzb25hbC1y
+ZXBseTsNCglmb250LWZhbWlseToiQ2FsaWJyaSIsc2Fucy1zZXJpZjsNCgljb2xvcjp3aW5kb3d0
+ZXh0O30NCnNwYW4uSFRNTFByZWZvcm1hdHRlZENoYXINCgl7bXNvLXN0eWxlLW5hbWU6IkhUTUwg
+UHJlZm9ybWF0dGVkIENoYXIiOw0KCW1zby1zdHlsZS1wcmlvcml0eTo5OTsNCgltc28tc3R5bGUt
+bGluazoiSFRNTCBQcmVmb3JtYXR0ZWQiOw0KCWZvbnQtZmFtaWx5OiJDb3VyaWVyIE5ldyI7fQ0K
+Lk1zb0NocERlZmF1bHQNCgl7bXNvLXN0eWxlLXR5cGU6ZXhwb3J0LW9ubHk7DQoJZm9udC1mYW1p
+bHk6IkNhbGlicmkiLHNhbnMtc2VyaWY7fQ0KQHBhZ2UgV29yZFNlY3Rpb24xDQoJe3NpemU6NjEy
+LjBwdCA3OTIuMHB0Ow0KCW1hcmdpbjo3MC44NXB0IDcwLjg1cHQgNzAuODVwdCA3MC44NXB0O30N
+CmRpdi5Xb3JkU2VjdGlvbjENCgl7cGFnZTpXb3JkU2VjdGlvbjE7fQ0KLyogTGlzdCBEZWZpbml0
+aW9ucyAqLw0KQGxpc3QgbDANCgl7bXNvLWxpc3QtaWQ6NjUzMjI0ODMwOw0KCW1zby1saXN0LXR5
+cGU6aHlicmlkOw0KCW1zby1saXN0LXRlbXBsYXRlLWlkczotMTA1OTAwMDQxNiAxOTAyOTQzNDEw
+IDY3Njk4NjkxIDY3Njk4NjkzIDY3Njk4Njg5IDY3Njk4NjkxIDY3Njk4NjkzIDY3Njk4Njg5IDY3
+Njk4NjkxIDY3Njk4NjkzO30NCkBsaXN0IGwwOmxldmVsMQ0KCXttc28tbGV2ZWwtc3RhcnQtYXQ6
+NTsNCgltc28tbGV2ZWwtbnVtYmVyLWZvcm1hdDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ674OY
+Ow0KCW1zby1sZXZlbC10YWItc3RvcDpub25lOw0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246
+bGVmdDsNCgl0ZXh0LWluZGVudDotMTguMHB0Ow0KCWZvbnQtZmFtaWx5OldpbmdkaW5nczsNCglt
+c28tZmFyZWFzdC1mb250LWZhbWlseTpDYWxpYnJpOw0KCW1zby1iaWRpLWZvbnQtZmFtaWx5OkFy
+aWFsO30NCkBsaXN0IGwwOmxldmVsMg0KCXttc28tbGV2ZWwtbnVtYmVyLWZvcm1hdDpidWxsZXQ7
+DQoJbXNvLWxldmVsLXRleHQ6bzsNCgltc28tbGV2ZWwtdGFiLXN0b3A6bm9uZTsNCgltc28tbGV2
+ZWwtbnVtYmVyLXBvc2l0aW9uOmxlZnQ7DQoJdGV4dC1pbmRlbnQ6LTE4LjBwdDsNCglmb250LWZh
+bWlseToiQ291cmllciBOZXciO30NCkBsaXN0IGwwOmxldmVsMw0KCXttc28tbGV2ZWwtbnVtYmVy
+LWZvcm1hdDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ674KnOw0KCW1zby1sZXZlbC10YWItc3Rv
+cDpub25lOw0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0ZXh0LWluZGVudDot
+MTguMHB0Ow0KCWZvbnQtZmFtaWx5OldpbmdkaW5nczt9DQpAbGlzdCBsMDpsZXZlbDQNCgl7bXNv
+LWxldmVsLW51bWJlci1mb3JtYXQ6YnVsbGV0Ow0KCW1zby1sZXZlbC10ZXh0Ou+CtzsNCgltc28t
+bGV2ZWwtdGFiLXN0b3A6bm9uZTsNCgltc28tbGV2ZWwtbnVtYmVyLXBvc2l0aW9uOmxlZnQ7DQoJ
+dGV4dC1pbmRlbnQ6LTE4LjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3QgbDA6bGV2
+ZWw1DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDpv
+Ow0KCW1zby1sZXZlbC10YWItc3RvcDpub25lOw0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246
+bGVmdDsNCgl0ZXh0LWluZGVudDotMTguMHB0Ow0KCWZvbnQtZmFtaWx5OiJDb3VyaWVyIE5ldyI7
+fQ0KQGxpc3QgbDA6bGV2ZWw2DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCglt
+c28tbGV2ZWwtdGV4dDrvgqc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOm5vbmU7DQoJbXNvLWxldmVs
+LW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJZm9udC1mYW1p
+bHk6V2luZ2RpbmdzO30NCkBsaXN0IGwwOmxldmVsNw0KCXttc28tbGV2ZWwtbnVtYmVyLWZvcm1h
+dDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ674K3Ow0KCW1zby1sZXZlbC10YWItc3RvcDpub25l
+Ow0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0ZXh0LWluZGVudDotMTguMHB0
+Ow0KCWZvbnQtZmFtaWx5OlN5bWJvbDt9DQpAbGlzdCBsMDpsZXZlbDgNCgl7bXNvLWxldmVsLW51
+bWJlci1mb3JtYXQ6YnVsbGV0Ow0KCW1zby1sZXZlbC10ZXh0Om87DQoJbXNvLWxldmVsLXRhYi1z
+dG9wOm5vbmU7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50
+Oi0xOC4wcHQ7DQoJZm9udC1mYW1pbHk6IkNvdXJpZXIgTmV3Ijt9DQpAbGlzdCBsMDpsZXZlbDkN
+Cgl7bXNvLWxldmVsLW51bWJlci1mb3JtYXQ6YnVsbGV0Ow0KCW1zby1sZXZlbC10ZXh0Ou+CpzsN
+Cgltc28tbGV2ZWwtdGFiLXN0b3A6bm9uZTsNCgltc28tbGV2ZWwtbnVtYmVyLXBvc2l0aW9uOmxl
+ZnQ7DQoJdGV4dC1pbmRlbnQ6LTE4LjBwdDsNCglmb250LWZhbWlseTpXaW5nZGluZ3M7fQ0Kb2wN
+Cgl7bWFyZ2luLWJvdHRvbTowY207fQ0KdWwNCgl7bWFyZ2luLWJvdHRvbTowY207fQ0KLS0+PC9z
+dHlsZT48IS0tW2lmIGd0ZSBtc28gOV0+PHhtbD4NCjxvOnNoYXBlZGVmYXVsdHMgdjpleHQ9ImVk
+aXQiIHNwaWRtYXg9IjEwMjYiIC8+DQo8L3htbD48IVtlbmRpZl0tLT48IS0tW2lmIGd0ZSBtc28g
+OV0+PHhtbD4NCjxvOnNoYXBlbGF5b3V0IHY6ZXh0PSJlZGl0Ij4NCjxvOmlkbWFwIHY6ZXh0PSJl
+ZGl0IiBkYXRhPSIxIiAvPg0KPC9vOnNoYXBlbGF5b3V0PjwveG1sPjwhW2VuZGlmXS0tPg0KPC9o
+ZWFkPg0KPGJvZHkgbGFuZz0iRU4tVVMiIGxpbms9IiMwNTYzQzEiIHZsaW5rPSIjOTU0RjcyIj4N
+CjxkaXYgY2xhc3M9IldvcmRTZWN0aW9uMSI+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5IZWxsbyBN
+YXJ0aW5lPG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwv
+bzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPkdyZWF0IHRvIGhlYXIgYWJvdXQgeW91ciBp
+bXBsZW1lbnRhdGlvbi4gVGhlIGdyb3VwIGlzIGludGVyZXN0ZWQgdG8gbGVhcm4gYWJvdXQgeW91
+ciBwcm9ncmVzcyAoa2VlcCB1cyB0dW5lZCkgYW5kIGhhcHB5IHRvIGhlbHAgeW91IHRocm91Z2gu
+IFA8bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPmxlYXNlIGRvIG5vdCBoZXNp
+dGF0ZSB0byBhc2sgZm9yIG1vcmUgY2xhcmlmaWNhdGlvbiBhcyB5b3UgZmVlbCBuZWVkZWQuIEV2
+ZW4gaWYgeW914oCZcmUgbm90IHRvbyBzdXJlIHlvdSBzaG91bGQgYXNrLCBpZiB5b3Ugd29uZGVy
+IHRoZXJl4oCZcyBwcm9iYWJseSBhIHJlYXNvbiBhbmQgeW914oCZcmUgaGVscGluZyB0aGUgaW1w
+bGVtZW50b3JzIHdobyB3aWxsIGJlIGZvbGxvd2luZyB5b3UuPG86cD48L286cD48L3A+DQo8cCBj
+bGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3Jt
+YWwiPlBsZWFzZSBzZWUgYmVsb3c6PG86cD48L286cD48L3A+DQo8ZGl2IHN0eWxlPSJib3JkZXI6
+bm9uZTtib3JkZXItbGVmdDpzb2xpZCBibHVlIDEuNXB0O3BhZGRpbmc6MGNtIDBjbSAwY20gNC4w
+cHQiPg0KPGRpdj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwvbzpw
+PjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4t
+Ym90dG9tOjEyLjBwdCI+SSBoYXZlIGFuIGltcGxlbWVudGF0aW9uIHF1ZXN0aW9uIGZvciB0aGUg
+dmlydHVhbCByZWFzc2VtYmx5IGJ1ZmZlciB3aXRoIHJlZ2FyZHMgdG8gW2RyYWZ0LWlldGYtNmxv
+LWZyYWdtZW50LXJlY292ZXJ5XS4gU2VjdGlvbiA2LjEgb2YgdGhpcyBkcmFmdCBzdGF0ZXMgdGhh
+dCBhIHR1cGxlIChzb3VyY2UgYWRkcmVzcywgdGFnKSBpcyB1c2VkIHRvIGlkZW50aWZ5DQogYSBW
+UkIgZW50cnkgYW5kIGNpdGVzIFtkcmFmdC1pZXRmLTZsby1taW5pbWFsLWZyYWdtZW50XSBmb3Ig
+dGhhdC4gPG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTGlzdFBhcmFncmFwaCIgc3R5bGU9
+Im1zby1tYXJnaW4tdG9wLWFsdDowY207bWFyZ2luLXJpZ2h0OjBjbTttYXJnaW4tYm90dG9tOjEy
+LjBwdDttYXJnaW4tbGVmdDowY207dGV4dC1pbmRlbnQ6MGNtO21zby1saXN0OmwwIGxldmVsMSBs
+Zm8xIj4NCjwhW2lmICFzdXBwb3J0TGlzdHNdPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpXaW5n
+ZGluZ3MiPjxzcGFuIHN0eWxlPSJtc28tbGlzdDpJZ25vcmUiPsOYPHNwYW4gc3R5bGU9ImZvbnQ6
+Ny4wcHQgJnF1b3Q7VGltZXMgTmV3IFJvbWFuJnF1b3Q7Ij4mbmJzcDsmbmJzcDsmbmJzcDsNCjwv
+c3Bhbj48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXT5Db3JyZWN0LCBhbmQgdGhlIG1lYW5pbmcgaXMg
+c291cmNlIE1BQyBhZGRyZXNzIG5vdCBzb3VyY2UgSVAgYWRkcmVzcy4gVGhlIGV4YWN0IHNlbnRl
+bmNlIGlzDQo8bzpwPjwvbzpwPjwvcD4NCjxwcmUgc3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBwdDt0
+ZXh0LWluZGVudDotMTguMHB0O21zby1saXN0OmwwIGxldmVsMSBsZm8xIj48IVtpZiAhc3VwcG9y
+dExpc3RzXT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6V2luZ2RpbmdzIj48c3BhbiBzdHlsZT0i
+bXNvLWxpc3Q6SWdub3JlIj7DmDxzcGFuIHN0eWxlPSJmb250OjcuMHB0ICZxdW90O1RpbWVzIE5l
+dyBSb21hbiZxdW90OyI+Jm5ic3A7IDwvc3Bhbj48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXT4mbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtVcG9uIGEgZmly
+c3QgZnJhZ21lbnQgKGkuZS4gd2l0aCBhPG86cD48L286cD48L3ByZT4NCjxwcmUgc3R5bGU9Im1h
+cmdpbi1sZWZ0OjM2LjBwdDt0ZXh0LWluZGVudDotMTguMHB0O21zby1saXN0OmwwIGxldmVsMSBs
+Zm8xIj48IVtpZiAhc3VwcG9ydExpc3RzXT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6V2luZ2Rp
+bmdzIj48c3BhbiBzdHlsZT0ibXNvLWxpc3Q6SWdub3JlIj7DmDxzcGFuIHN0eWxlPSJmb250Ojcu
+MHB0ICZxdW90O1RpbWVzIE5ldyBSb21hbiZxdW90OyI+Jm5ic3A7IDwvc3Bhbj48L3NwYW4+PC9z
+cGFuPjwhW2VuZGlmXT4mbmJzcDsmbmJzcDsmbmJzcDtzZXF1ZW5jZSBvZiB6ZXJvKSwgYSBWUkIg
+YW5kIHRoZSBhc3NvY2lhdGVkIExTUCBzdGF0ZSBhcmUgY3JlYXRlZCBmb3I8bzpwPjwvbzpwPjwv
+cHJlPg0KPHByZSBzdHlsZT0ibWFyZ2luLWxlZnQ6MzYuMHB0O3RleHQtaW5kZW50Oi0xOC4wcHQ7
+bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzEiPjwhW2lmICFzdXBwb3J0TGlzdHNdPjxzcGFuIHN0eWxl
+PSJmb250LWZhbWlseTpXaW5nZGluZ3MiPjxzcGFuIHN0eWxlPSJtc28tbGlzdDpJZ25vcmUiPsOY
+PHNwYW4gc3R5bGU9ImZvbnQ6Ny4wcHQgJnF1b3Q7VGltZXMgTmV3IFJvbWFuJnF1b3Q7Ij4mbmJz
+cDsgPC9zcGFuPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdPiZuYnNwOyZuYnNwOyZuYnNwO3RoZSB0
+dXBsZSAoPHNwYW4gc3R5bGU9ImJhY2tncm91bmQ6eWVsbG93O21zby1oaWdobGlnaHQ6eWVsbG93
+Ij5zb3VyY2UgTUFDIGFkZHJlc3MsIGRhdGFncmFtX3RhZyk8L3NwYW4+IGFuZCB0aGUgZnJhZ21l
+bnQgaXM8bzpwPjwvbzpwPjwvcHJlPg0KPHByZSBzdHlsZT0ibWFyZ2luLWxlZnQ6MzYuMHB0O3Rl
+eHQtaW5kZW50Oi0xOC4wcHQ7bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzEiPjwhW2lmICFzdXBwb3J0
+TGlzdHNdPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpXaW5nZGluZ3MiPjxzcGFuIHN0eWxlPSJt
+c28tbGlzdDpJZ25vcmUiPsOYPHNwYW4gc3R5bGU9ImZvbnQ6Ny4wcHQgJnF1b3Q7VGltZXMgTmV3
+IFJvbWFuJnF1b3Q7Ij4mbmJzcDsgPC9zcGFuPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdPiZuYnNw
+OyZuYnNwOyZuYnNwO2ZvcndhcmRlZCBhbG9uZyB0aGUgSVB2NiByb3V0ZSB0aGF0IG1hdGNoZXMg
+dGhlIGRlc3RpbmF0aW9uIElQdjY8bzpwPjwvbzpwPjwvcHJlPg0KPHByZSBzdHlsZT0ibWFyZ2lu
+LWxlZnQ6MzYuMHB0O3RleHQtaW5kZW50Oi0xOC4wcHQ7bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzEi
+PjwhW2lmICFzdXBwb3J0TGlzdHNdPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpXaW5nZGluZ3Mi
+PjxzcGFuIHN0eWxlPSJtc28tbGlzdDpJZ25vcmUiPsOYPHNwYW4gc3R5bGU9ImZvbnQ6Ny4wcHQg
+JnF1b3Q7VGltZXMgTmV3IFJvbWFuJnF1b3Q7Ij4mbmJzcDsgPC9zcGFuPjwvc3Bhbj48L3NwYW4+
+PCFbZW5kaWZdPiZuYnNwOyZuYnNwOyZuYnNwO2FkZHJlc3MgaW4gdGhlIElQdjYgaGVhZGVyIGFz
+IHByZXNjcmliZWQgYnk8bzpwPjwvbzpwPjwvcHJlPg0KPHByZSBzdHlsZT0ibWFyZ2luLWxlZnQ6
+MzYuMHB0O3RleHQtaW5kZW50Oi0xOC4wcHQ7bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzEiPjwhW2lm
+ICFzdXBwb3J0TGlzdHNdPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpXaW5nZGluZ3MiPjxzcGFu
+IHN0eWxlPSJtc28tbGlzdDpJZ25vcmUiPsOYPHNwYW4gc3R5bGU9ImZvbnQ6Ny4wcHQgJnF1b3Q7
+VGltZXMgTmV3IFJvbWFuJnF1b3Q7Ij4mbmJzcDsgPC9zcGFuPjwvc3Bhbj48L3NwYW4+PCFbZW5k
+aWZdPiZuYnNwOyZuYnNwOyZuYnNwO1s8YSBocmVmPSJodHRwczovL3Rvb2xzLmlldGYub3JnL2h0
+bWwvZHJhZnQtaWV0Zi02bG8tZnJhZ21lbnQtcmVjb3ZlcnktMDUjcmVmLUktRC5pZXRmLTZsby1t
+aW5pbWFsLWZyYWdtZW50Ij5JLUQuaWV0Zi02bG8tbWluaW1hbC1mcmFnbWVudDwvYT5dLiA8bzpw
+PjwvbzpwPjwvcHJlPg0KPHAgY2xhc3M9Ik1zb0xpc3RQYXJhZ3JhcGgiIHN0eWxlPSJtc28tbWFy
+Z2luLXRvcC1hbHQ6MGNtO21hcmdpbi1yaWdodDowY207bWFyZ2luLWJvdHRvbToxMi4wcHQ7bWFy
+Z2luLWxlZnQ6NS4yNXB0O3RleHQtaW5kZW50OjBjbTttc28tbGlzdDpsMCBsZXZlbDEgbGZvMSI+
+DQo8IVtpZiAhc3VwcG9ydExpc3RzXT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6V2luZ2Rpbmdz
+Ij48c3BhbiBzdHlsZT0ibXNvLWxpc3Q6SWdub3JlIj7DmDxzcGFuIHN0eWxlPSJmb250OjcuMHB0
+ICZxdW90O1RpbWVzIE5ldyBSb21hbiZxdW90OyI+Jm5ic3A7Jm5ic3A7DQo8L3NwYW4+PC9zcGFu
+Pjwvc3Bhbj48IVtlbmRpZl0+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9y
+bWFsIiBzdHlsZT0ibWFyZ2luLWJvdHRvbToxMi4wcHQiPkhvd2V2ZXIsIGFzIGZhciBhcyBJIHVu
+ZGVyc3RhbmQgW2RyYWZ0LWlldGYtNmxvLW1pbmltYWwtZnJhZ21lbnRdIGFuZCBbZHJhZnQtaWV0
+Zi1sd2lnLTZsb3dwYW4tdmlydHVhbC1yZWFzc2VtYmx5XSB0aGlzIGlzIG5vdCB0aGUgY2FzZS4g
+W2RyYWZ0LWlldGYtNmxvLW1pbmltYWwtZnJhZ21lbnRdIGRvZXNuJ3QgbWVudGlvbiBWUkIgZW50
+cnkgaWRlbnRpZmljYXRpb24NCiBhbmQgb25seSByZWZlcnMgdG8gW2RyYWZ0LWlldGYtbHdpZy02
+bG93cGFuLXZpcnR1YWwtcmVhc3NlbWJseV0uIDxvOnA+PC9vOnA+PC9wPg0KPHVsIHN0eWxlPSJt
+YXJnaW4tdG9wOjBjbSIgdHlwZT0iZGlzYyI+DQo8bGkgY2xhc3M9Ik1zb0xpc3RQYXJhZ3JhcGgi
+IHN0eWxlPSJtYXJnaW4tYm90dG9tOjEyLjBwdDttYXJnaW4tbGVmdDowY207bXNvLWxpc3Q6bDAg
+bGV2ZWwxIGxmbzEiPg0KSXQgd291bGQgbm90IGh1cnQgdG8gbWVudGlvbiBpdCB0aG91Z2guIElu
+dGVyZXN0aW5nLiBNaW5pbWFsIGhhczrigJ0gQWxsIGZyYWdtZW50cyBhcmUgdGFnZ2VkIHdpdGgg
+YSAxNi1iaXQ8bzpwPjwvbzpwPjwvbGk+PC91bD4NCjxwcmU+Jm5ic3A7Jm5ic3A7ICZxdW90OyZu
+YnNwOyAmbmJzcDsmbmJzcDtFYWNoIGRhdGFncmFtIGNhbiBiZSB1bmlxdWVseSBpZGVudGlmaWVk
+IGJ5IHRoZSBzb3VyY2UgYW5kIGZpbmFsPG86cD48L286cD48L3ByZT4NCjxwcmU+Jm5ic3A7Jm5i
+c3A7IGRlc3RpbmF0aW9uIGxpbmstbGF5ZXIgYWRkcmVzc2VzIG9mIHRoZSBmcmFtZSB0aGF0IGNh
+cnJpZXMgaXQsIHRoZTxvOnA+PC9vOnA+PC9wcmU+DQo8cHJlPiZuYnNwOyZuYnNwOyBmcmFnbWVu
+dCBzaXplIGFuZCB0aGUgZGF0YWdyYW1fdGFnLiA8bzpwPjwvbzpwPjwvcHJlPg0KPHByZT48bzpw
+PiZuYnNwOzwvbzpwPjwvcHJlPg0KPHAgY2xhc3M9Ik1zb0xpc3RQYXJhZ3JhcGgiIHN0eWxlPSJt
+c28tbWFyZ2luLXRvcC1hbHQ6MGNtO21hcmdpbi1yaWdodDowY207bWFyZ2luLWJvdHRvbToxMi4w
+cHQ7bWFyZ2luLWxlZnQ6MGNtO3RleHQtaW5kZW50OjBjbTttc28tbGlzdDpsMCBsZXZlbDEgbGZv
+MSI+DQo8IVtpZiAhc3VwcG9ydExpc3RzXT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6V2luZ2Rp
+bmdzIj48c3BhbiBzdHlsZT0ibXNvLWxpc3Q6SWdub3JlIj7DmDxzcGFuIHN0eWxlPSJmb250Ojcu
+MHB0ICZxdW90O1RpbWVzIE5ldyBSb21hbiZxdW90OyI+Jm5ic3A7Jm5ic3A7Jm5ic3A7DQo8L3Nw
+YW4+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0+VGhhdOKAmXMmbmJzcDsgbWlzbGVhZGluZ+KApiBJ
+4oCZbGwgY29ycmVjdCBpdC48bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0
+eWxlPSJtYXJnaW4tYm90dG9tOjEyLjBwdCI+VGhhdCBpbiB0dXJuIG9ubHkgcmVjb3VudHMgdGhl
+IGNsYXNzaWMgKHNvdXJjZSZuYnNwO2FkZHJlc3MsIGRlc3RpbmF0aW9uIGFkZHJlc3MsIHNpemUs
+IHRhZykgdHVwbGUgZGVmaW5lZCBpbiBSRkM0OTQ0DQo8bzpwPjwvbzpwPjwvcD4NCjx1bCBzdHls
+ZT0ibWFyZ2luLXRvcDowY20iIHR5cGU9ImRpc2MiPg0KPGxpIGNsYXNzPSJNc29MaXN0UGFyYWdy
+YXBoIiBzdHlsZT0ibWFyZ2luLWJvdHRvbToxMi4wcHQ7bWFyZ2luLWxlZnQ6MGNtO21zby1saXN0
+OmwwIGxldmVsMSBsZm8xIj4NCldoZW4gcmVjZWl2aW5nIGEgZnJhZ21lbnQsIHRoZSBkZXN0aW5h
+dGlvbiBpcyBzZWxmIGFuZCB0aGUgc2l6ZSBtYXkgdmFyeSBmcm9tIGEgZGF0YWdyYW0gdG8gdGhl
+IG5leHQuIFNvIHRoZSBvbmx5IHRoaW5nIHRoYXQgcmVhbGx5IGlkZW50aWZ5IHRoZSBkYXRhZ3Jh
+bSBpcyB0aGUgc291cmNlIE1BQyBhbmQgdGhlIHRhZy4NCjxvOnA+PC9vOnA+PC9saT48L3VsPg0K
+PHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdpbi1ib3R0b206MTIuMHB0Ij5hbmQgc3Rh
+dGVzIHRoYXQgdGhlIG9ubHkgZGlmZmVyZW5jZSBiZXR3ZWVuIHRoZSBjbGFzc2ljIGFuZCBWUkIg
+aXMgdGhlIGxhY2sgb2YgdGhlIHJlYXNzZW1ibGVkIHBhY2tldCBhbmQgYWRkaXRpb24gb2YgdGhl
+IG5leHQgaG9wJ3MgYWRkcmVzcyBhbmQgdGhlIG5ld2x5IGFzc2lnbmVkIHRhZzo8bzpwPjwvbzpw
+PjwvcD4NCjxwIGNsYXNzPSJNc29MaXN0UGFyYWdyYXBoIiBzdHlsZT0ibXNvLW1hcmdpbi10b3At
+YWx0OjBjbTttYXJnaW4tcmlnaHQ6MGNtO21hcmdpbi1ib3R0b206MTIuMHB0O21hcmdpbi1sZWZ0
+OjBjbTt0ZXh0LWluZGVudDowY207bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzEiPg0KPCFbaWYgIXN1
+cHBvcnRMaXN0c10+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OldpbmdkaW5ncyI+PHNwYW4gc3R5
+bGU9Im1zby1saXN0Oklnbm9yZSI+w5g8c3BhbiBzdHlsZT0iZm9udDo3LjBwdCAmcXVvdDtUaW1l
+cyBOZXcgUm9tYW4mcXVvdDsiPiZuYnNwOyZuYnNwOyZuYnNwOw0KPC9zcGFuPjwvc3Bhbj48L3Nw
+YW4+PCFbZW5kaWZdPkFjdHVhbGx5IHRoZSBmb3J3YXJkZXIgc2VuZHMgdGhlIGRhdGFncmFtIHdp
+dGggc2VsZiBhcyBzb3VyY2UgdG8gdGhlIHNvdXJjZSBtYWMgYWRkcmVzcyBpcyBzd2FwcGVkIG5h
+dHVyYWxseS4gSXQgaGFzIHRvIHNldCB0aGUgbmV4dCBob3DigJlzIG1hYyBhZGRyZXNzIGFuZCB0
+aGUgc3dhcHBlZCBkYXRhZ3JhbSB0YWcuIFRoZSBuZXh0IGhvcOKAmXMgTUFDIGFkZHJlc3MgaWRl
+bnRpZmllcyB0aGUgbm9kZQ0KIHRoYXQgc2hvdWxkIHJlY2VpdmUgdGhlIHBhY2tldCBhbmQgdGhl
+IGRhdGFncmFtIHRhZyB0b2dldGhlciB3aXRoIHRoZSBzb3VyY2UgbWFjIGlkZW50aWZ5IHRoZSBy
+ZWFzc2VtYmx5IGJ1ZmZlciB3aXRoaW4gdGhlIHJlY2VpdmVyLiBUaGVyZSBpcyBubyBjb250cmFk
+aWN0aW9uLjxvOnA+PC9vOnA+PC9wPg0KPGJsb2NrcXVvdGUgc3R5bGU9ImJvcmRlcjpub25lO2Jv
+cmRlci1sZWZ0OnNvbGlkICNDQ0NDQ0MgMS4wcHQ7cGFkZGluZzowY20gMGNtIDBjbSA2LjBwdDtt
+YXJnaW4tbGVmdDo0LjhwdDttYXJnaW4tcmlnaHQ6MGNtIj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwi
+PlRvIHJlZHVjZSB0aGUgbWVtb3J5IHJlcXVpcmVtZW50IGZvciByZWFzc2VtYmx5IGJ1ZmZlcnMs
+IHRoZSBpbXBsZW1lbnRhdGlvbiBtYXkgb3B0IHRvIG5vdCBrZWVwIHRoZSBhY3R1YWwgcGFja2V0
+IGRhdGEgaW4gdGhlIHJlYXNzZW1ibHkgYnVmZmVyLiBJbnN0ZWFkLCBpdCBtYXkgYXR0ZW1wdCB0
+byBzZW5kIG91dCB0aGUgZGF0YSBmb3IgYSBmcmFnbWVudCBpbiB0aGUgZm9ybSBvZiBhIGZvcndh
+cmRlZCBmcmFnbWVudCwNCiBhcyBzb29uIGFzIGFsbCBuZWNlc3NhcnkgaW5mb3JtYXRpb24gZm9y
+IHRoYXQgaXMgYXZhaWxhYmxlLiBPYnZpb3VzbHksIGFsbCBmcmFnbWVudHMgbmVlZCB0byBiZSBz
+ZW50IHdpdGggdGhlIHNhbWUgb3V0Z29pbmcgYWRkcmVzcyAob3RoZXJ3aXNlIGEgZnVsbCByZWFz
+c2VtYmx5IGltcGxlbWVudGF0aW9uIHdvdWxkIGRpc2NhcmQgdGhlIGZyYWdtZW50cykgYW5kIHRo
+ZSBzYW1lIGRhdGFncmFtX3RhZy48bzpwPjwvbzpwPjwvcD4NCjwvYmxvY2txdW90ZT4NCjxkaXY+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRp
+dj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPlNvIG15IHF1ZXN0aW9uIGlzOiBJcyB0aGUgdHVwbGUg
+ZGVmaW5pdGlvbiBpbiBbZHJhZnQtaWV0Zi02bG8tZnJhZ21lbnQtcmVjb3ZlcnldIHJlYWxseSBj
+b3JyZWN0PzxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86cD4mbmJzcDs8
+L286cD48L3A+DQo8dWwgc3R5bGU9Im1hcmdpbi10b3A6MGNtIiB0eXBlPSJkaXNjIj4NCjxsaSBj
+bGFzcz0iTXNvTGlzdFBhcmFncmFwaCIgc3R5bGU9Im1hcmdpbi1sZWZ0OjBjbTttc28tbGlzdDps
+MCBsZXZlbDEgbGZvMSI+SXQgaXMuPG86cD48L286cD48L2xpPjwvdWw+DQo8cCBjbGFzcz0iTXNv
+Tm9ybWFsIj48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPkZvciBl
+eGNsdXNpb24gZGF0YWdyYW0gc2l6ZSBJIGFncmVlIHRoYXQgaXQgY291bGQgYmUgc29tZXdoYXQg
+cmVkdW5kYW50LiBIb3dldmVyLCBhIG5vZGUgY291bGQgaGF2ZSBtdWx0aXBsZSBkZXN0aW5hdGlv
+biBhZGRyZXNzZXMgKGVpdGhlciB2aWEgbXVsdGlwbGUgaW50ZXJmYWNlcyBvciBJRUVFLTgwMi4x
+NS40LXN0eWxlIHNob3J0IGFuZCBsb25nIGFkZHJlc3MpLiBTbywgYXMgdGhlIHRhZyBpcyBsaW5r
+LXNwZWNpZmljDQogKGRlZmluZWQgYnkgYSAoc291cmNlLCBkZXN0aW5hdGlvbikgdHVwbGUpLCB0
+aGVyZSBjb3VsZCBiZSBkaXN0aW5jdCBkYXRhZ3JhbXMgdGhhdCBoYXZlIHRoZSBzYW1lIHR1cGxl
+IChzb3VyY2UsIHRhZyksIG9yIGFtIEkgbWlzc2luZyBzb21ldGhpbmc/PG86cD48L286cD48L3A+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJN
+c29MaXN0UGFyYWdyYXBoIiBzdHlsZT0ibWFyZ2luLWxlZnQ6MGNtO3RleHQtaW5kZW50OjBjbTtt
+c28tbGlzdDpsMCBsZXZlbDEgbGZvMSI+DQo8IVtpZiAhc3VwcG9ydExpc3RzXT48c3BhbiBzdHls
+ZT0iZm9udC1mYW1pbHk6V2luZ2RpbmdzIj48c3BhbiBzdHlsZT0ibXNvLWxpc3Q6SWdub3JlIj7D
+mDxzcGFuIHN0eWxlPSJmb250OjcuMHB0ICZxdW90O1RpbWVzIE5ldyBSb21hbiZxdW90OyI+Jm5i
+c3A7Jm5ic3A7Jm5ic3A7DQo8L3NwYW4+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0+WWVzLCB0aGUg
+cm9sZSBvZiB0aGUgZGVzdGluYXRpb24gTUFDIGFkZHJlc3MgaXMgdG8gcmVhY2ggdGhlIG5leHQg
+aG9wLCBidXQgZG9lcyBub3QgY2hhbmdlIHRoZSBwcm9jZXNzaW5nIHdpdGhpbiB0aGF0IG5vZGUu
+IEkgY291bGQgY2hhbmdlIHRoZSBMMiBhZGRyZXNzIEkgdXNlIHRvIHJlZmVyIHRvIHRoZSBuZXh0
+IGhvcCBpbiB0aGUgbWlkZGxlIG9mIGEgZnJhZ21lbnRlZCBwYWNrZXQsIGl0DQogaXMgc3RpbGwg
+dGhlIHNhbWUgZnJhZ21lbnRlZCBwYWNrZXQuIEluIG90aGVyIHdvcmRzLCBwbGVhc2UgZG8gbm90
+IHVzZSB0aGUgZG1hYyBhcyB0byBpbmRleCB0aGUgVlJCLiBGcm9tIHlvdXIgcXVlc3Rpb24gSSB0
+aGluayB0aGUgTFdJRyBkcmFmdCBzaG91bGQgY2xhcmlmeSwgYW5kIHdlIGNhbiBjaGFuZ2UgbWlu
+aW1hbCBkcmFmdCB0byBjbGFyaWZ5IGFzIHdlbGwuPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjwv
+ZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0K
+PC9kaXY+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+SSBhbHJlYWR5IGltcGxlbWVudGVk
+IHRoZSBWUkIgd2l0aCBkcmFmdC1pZXRmLTZsby1taW5pbWFsLWZyYWdtZW50IGluIG1pbmQgYW5k
+IHRodXMgdXNlZCB0aGUgY2xhc3NpYyA0LXR1cGxlIGZvciBpbmRleGluZy4gQnV0IG5vdyBJJ20g
+d29uZGVyaW5nOiBDYW4gSSByZWR1Y2UgaXRzIGluZGV4IG9yIHdvdWxkIHRoYXQgYmUgbm90IGFk
+dmlzZWQ/PG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwv
+bzpwPjwvcD4NCjxwIGNsYXNzPSJNc29MaXN0UGFyYWdyYXBoIiBzdHlsZT0ibWFyZ2luLWxlZnQ6
+MGNtO3RleHQtaW5kZW50OjBjbTttc28tbGlzdDpsMCBsZXZlbDEgbGZvMSI+DQo8IVtpZiAhc3Vw
+cG9ydExpc3RzXT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6V2luZ2RpbmdzIj48c3BhbiBzdHls
+ZT0ibXNvLWxpc3Q6SWdub3JlIj7DmDxzcGFuIHN0eWxlPSJmb250OjcuMHB0ICZxdW90O1RpbWVz
+IE5ldyBSb21hbiZxdW90OyI+Jm5ic3A7Jm5ic3A7Jm5ic3A7DQo8L3NwYW4+PC9zcGFuPjwvc3Bh
+bj48IVtlbmRpZl0+WW91IHNob3VsZCByZWR1Y2UgdGhlIGluZGV4IDogKSBUaGVyZSBjYW4gbm90
+IGJlIDIgZGlmZmVyZW50IGRhdGFncmFtcyBjb21pbmcgaW4gcGFyYWxsZWwgZnJvbSBhIHNhbWUg
+cHJldmlvdXMgaG9wIGFuZCB3aXRoIGEgc2FtZSBkYXRhZ3JhbSB0YWcuIFRoZXJlIG11c3QgYmUg
+YSBzZW50ZW5jZSBzb21ld2hlcmUgaW4gdGhlIExXSUcgZHJhZnQgdGhhdCBzYXlzIHRoYXQgYSBu
+ZXcgYW5kIGN1cnJlbnRseQ0KIHVudXNlZCBkYXRhZ3JhbSB0YWcgaXMgY2hvc2VuIGZvciBhIG5l
+dyBpbmNvbWluZyBkYXRhZ3JhbSwgY29ycmVjdD8gJm5ic3A7TWluaW1hbCBzYXlzPG86cD48L286
+cD48L3A+DQo8cHJlIHN0eWxlPSJtYXJnaW4tbGVmdDozNi4wcHQ7dGV4dC1pbmRlbnQ6LTE4LjBw
+dDttc28tbGlzdDpsMCBsZXZlbDEgbGZvMSI+PCFbaWYgIXN1cHBvcnRMaXN0c10+PHNwYW4gc3R5
+bGU9ImZvbnQtZmFtaWx5OldpbmdkaW5ncyI+PHNwYW4gc3R5bGU9Im1zby1saXN0Oklnbm9yZSI+
+w5g8c3BhbiBzdHlsZT0iZm9udDo3LjBwdCAmcXVvdDtUaW1lcyBOZXcgUm9tYW4mcXVvdDsiPiZu
+YnNwOyA8L3NwYW4+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7VXBvbjxvOnA+PC9vOnA+PC9wcmU+DQo8cHJlIHN0eWxlPSJtYXJnaW4tbGVmdDoz
+Ni4wcHQ7dGV4dC1pbmRlbnQ6LTE4LjBwdDttc28tbGlzdDpsMCBsZXZlbDEgbGZvMSI+PCFbaWYg
+IXN1cHBvcnRMaXN0c10+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OldpbmdkaW5ncyI+PHNwYW4g
+c3R5bGU9Im1zby1saXN0Oklnbm9yZSI+w5g8c3BhbiBzdHlsZT0iZm9udDo3LjBwdCAmcXVvdDtU
+aW1lcyBOZXcgUm9tYW4mcXVvdDsiPiZuYnNwOyA8L3NwYW4+PC9zcGFuPjwvc3Bhbj48IVtlbmRp
+Zl0+Jm5ic3A7Jm5ic3A7Jm5ic3A7cmVjZWl2aW5nIGEgZnJhZ21lbnQgZnJvbSBub2RlIEEgd2l0
+aCBhIGRhdGFncmFtX3RhZyBwcmV2aW91c2x5PG86cD48L286cD48L3ByZT4NCjxwcmUgc3R5bGU9
+Im1hcmdpbi1sZWZ0OjM2LjBwdDt0ZXh0LWluZGVudDotMTguMHB0O21zby1saXN0OmwwIGxldmVs
+MSBsZm8xIj48IVtpZiAhc3VwcG9ydExpc3RzXT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6V2lu
+Z2RpbmdzIj48c3BhbiBzdHlsZT0ibXNvLWxpc3Q6SWdub3JlIj7DmDxzcGFuIHN0eWxlPSJmb250
+OjcuMHB0ICZxdW90O1RpbWVzIE5ldyBSb21hbiZxdW90OyI+Jm5ic3A7IDwvc3Bhbj48L3NwYW4+
+PC9zcGFuPjwhW2VuZGlmXT4mbmJzcDsmbmJzcDsmbmJzcDt1bnNlZW4gZnJvbSBub2RlIEEsIG5v
+ZGUgQiBhbGxvY2F0ZXMgYSBidWZmZXIgbGFyZ2UgZW5vdWdoIHRvIGhvbGQ8bzpwPjwvbzpwPjwv
+cHJlPg0KPHByZSBzdHlsZT0ibWFyZ2luLWxlZnQ6MzYuMHB0O3RleHQtaW5kZW50Oi0xOC4wcHQ7
+bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzEiPjwhW2lmICFzdXBwb3J0TGlzdHNdPjxzcGFuIHN0eWxl
+PSJmb250LWZhbWlseTpXaW5nZGluZ3MiPjxzcGFuIHN0eWxlPSJtc28tbGlzdDpJZ25vcmUiPsOY
+PHNwYW4gc3R5bGU9ImZvbnQ6Ny4wcHQgJnF1b3Q7VGltZXMgTmV3IFJvbWFuJnF1b3Q7Ij4mbmJz
+cDsgPC9zcGFuPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdPiZuYnNwOyZuYnNwOyZuYnNwO3RoZSBl
+bnRpcmUgcGFja2V0LiZuYnNwOyA8bzpwPjwvbzpwPjwvcHJlPg0KPHByZSBzdHlsZT0ibWFyZ2lu
+LWxlZnQ6MzYuMHB0Ij48bzpwPiZuYnNwOzwvbzpwPjwvcHJlPg0KPHAgY2xhc3M9Ik1zb0xpc3RQ
+YXJhZ3JhcGgiIHN0eWxlPSJtYXJnaW4tbGVmdDowY207dGV4dC1pbmRlbnQ6MGNtO21zby1saXN0
+OmwwIGxldmVsMSBsZm8xIj4NCjwhW2lmICFzdXBwb3J0TGlzdHNdPjxzcGFuIHN0eWxlPSJmb250
+LWZhbWlseTpXaW5nZGluZ3MiPjxzcGFuIHN0eWxlPSJtc28tbGlzdDpJZ25vcmUiPsOYPHNwYW4g
+c3R5bGU9ImZvbnQ6Ny4wcHQgJnF1b3Q7VGltZXMgTmV3IFJvbWFuJnF1b3Q7Ij4mbmJzcDsmbmJz
+cDsmbmJzcDsNCjwvc3Bhbj48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXT5UaGlzIHRleHQgb25seSBp
+bmRleGVzIHRoZSBWUkIgd2l0aCBhbnkgaWRlbnRpZmllciBvZiBub2RlIEEgYW5kIHRoZSB0YWfi
+gKYgQW5kIHRoaXMgaXMgY29ycmVjdC4gV2hhdOKAmXMgYSBiaXQgbW9yZSB1Z2x5IGlzIHRoYXQg
+Tm9kZSBBIHNob3VsZCBub3QgY2hhbmdlIHRoZSBzb3VyY2UgTUFDIGluIGJldHdlZW4gZnJhZ21l
+bnRzIGJlY2F1c2UgdGhhdCB3aWxsIGNvbmZpc2Ugbm9kZSBCLiBJIG5lZWQNCiB0byBhZGQgdGV4
+dCBvbiB0aGF0IHRvby48bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJN
+c29Ob3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86
+cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5NYW55IHRoYW5rcyBNYXJ0
+aW5lIGZvciByYWlzaW5nIGFsbCB0aGlzLCBhbmQgYWxsIHRoZSBiZXN0IGZvciB5b3VyIGltcGxl
+bWVudGF0aW9uLjxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86cD4mbmJz
+cDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5QYXNjYWw8bzpwPjwvbzpwPjwvcD4N
+CjwvZGl2Pg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9ib2R5Pg0KPC9odG1sPg0K
+
+--_000_MN2PR11MB35658D8325E730B3FD593019D8BD0MN2PR11MB3565namp_--
+
+
+From nobody Fri Aug 30 05:17:15 2019
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id BE722120820 for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 05:17:12 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.499
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.499 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com header.b=Vpo5dY/s; dkim=pass (1024-bit key) header.d=cisco.onmicrosoft.com header.b=GsGFTCxr
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id fwzk2Yqp8Jgj for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 05:17:10 -0700 (PDT)
+Received: from alln-iport-7.cisco.com (alln-iport-7.cisco.com [173.37.142.94]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 5292612018D for <6lo@ietf.org>; Fri, 30 Aug 2019 05:17:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=55808; q=dns/txt; s=iport; t=1567167430; x=1568377030; h=from:to:subject:date:message-id:mime-version; bh=q+Nr6p31fP58a3xJP5TtYe3YvWcFk2SI9wS8JkWwPrs=; b=Vpo5dY/sxmOInL5b0+PTpF3BVmOcobnPcuJoiHPwRTd7+m3G4xca7iYN 1SU0H/+ZXnbsmxWQv4ft2Jr4Ej2bKVb7pLIvthh5Ie88689BAElB29tpN erJCU1Cs370ONqgAl1W6HFVn/nmm9PnzDa720pEeKw75abgqx0U7a+lnz c=;
+IronPort-PHdr: =?us-ascii?q?9a23=3ANGvcZxIRFZrQp5ao3tmcpTVXNCE6p7X5OBIU4Z?= =?us-ascii?q?M7irVIN76u5InmIFeBvKd2lFGcW4Ld5roEkOfQv636EU04qZea+DFnEtRXUg?= =?us-ascii?q?Mdz8AfngguGsmAXFXnLOPgYjYmNM9DT1RiuXq8NBsdFQ=3D=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0AkAQBIE2ld/4gNJK1cChoBAQEBAQI?= =?us-ascii?q?BAQEBBwIBAQEBgWeBFi8kLANtViAECxcThCGDRwOKdE2Ze4JSA1QJAQEBDAE?= =?us-ascii?q?BJQgCAQGEPwIXgkkjOBMCAwgBAQQBAQECAQYEbYUuDIVKAQEXEQoTAQElExE?= =?us-ascii?q?BGQQBASEBCQIEMB0JAQQBEggagwGBHU0DHQECDKEWAoE4iGFzgTKCfAEBBYU?= =?us-ascii?q?NGIIWAwaBNIUAhngYgUA/gRFGgU6BPIJhAQECAYEzLSuCXjKCJo8ohRyJD45?= =?us-ascii?q?ACoIfhnCOAoIyhzaKWIQiiWKEEIdzkFECBAIEBQIOAQEFgWchgVhwFYMngkI?= =?us-ascii?q?4gzqFFIU/cgGBKI1KAQE?=
+X-IronPort-AV: E=Sophos;i="5.64,447,1559520000";  d="scan'208,217";a="316732239"
+Received: from alln-core-3.cisco.com ([173.36.13.136]) by alln-iport-7.cisco.com with ESMTP/TLS/DHE-RSA-SEED-SHA; 30 Aug 2019 12:16:59 +0000
+Received: from XCH-ALN-020.cisco.com (xch-aln-020.cisco.com [173.36.7.30]) by alln-core-3.cisco.com (8.15.2/8.15.2) with ESMTPS id x7UCGxUa006772 (version=TLSv1.2 cipher=AES256-SHA bits=256 verify=FAIL); Fri, 30 Aug 2019 12:16:59 GMT
+Received: from xhs-rtp-002.cisco.com (64.101.210.229) by XCH-ALN-020.cisco.com (173.36.7.30) with Microsoft SMTP Server (TLS) id 15.0.1473.3; Fri, 30 Aug 2019 07:16:58 -0500
+Received: from xhs-aln-002.cisco.com (173.37.135.119) by xhs-rtp-002.cisco.com (64.101.210.229) with Microsoft SMTP Server (TLS) id 15.0.1473.3; Fri, 30 Aug 2019 08:16:57 -0400
+Received: from NAM04-BN3-obe.outbound.protection.outlook.com (173.37.151.57) by xhs-aln-002.cisco.com (173.37.135.119) with Microsoft SMTP Server (TLS) id 15.0.1473.3 via Frontend Transport; Fri, 30 Aug 2019 07:16:57 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; b=mZuv69mdhvGPOf/ArhNl0TBMIDEeMNvFyhq1g2QB39cjVtC9NaPRTBdDcC7dhAHkRjVDvJ3NEGx+ceYNS7tCyTd4+Xa4ml4/3L7E4nY+t2uBF2tsIYzhU+JthaMc91M2poRvFzoRj3HGvP06/VPgDFBRSFMZohi32b7cyvqHZK8Icf0bb3/7DEWYW+HkazhdvXfyrac6WOGZ6EdQNJ+1bCFCl8E/tLDHX/MlJ+z0aPWvgf7kmxvUcQxPL3/24zQJdOfFmTtglIEwJdYF+CzYTYbCV05nB8crHAk79tmxVA/12w4V20debRm/n8MG1ZR4pDjhXG/+ujleSZ5jgpyujg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;  s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=q+Nr6p31fP58a3xJP5TtYe3YvWcFk2SI9wS8JkWwPrs=; b=oKj8I2xO5Zm7Oz0ztIopMM7LxKF0jXH31VMR2HT0vkn0p/5Xg0C08nOhAiNTxiQzyGSjLEsMYblc/jXWPK7KFvEeVfTF+7cwr2SrtaJL1w5egC9/3onvYUG602fNo64pZ1aiuVw2LnOo6byHWT4fowHD+EweYwDfe8WoMlaQSdMOzCNZDpZiJBeThpOrigStmvrNHa9Mw+Mk/1l1EAvXIamyU87tqHkx7TRy3EWxZmsrV+AUQWRg8di8DU4xb7GCVgOW7O4R3o2J3Cmo1vqya2fFTNiwhYI+bLy1raAnQi2ezWrLqzH8fgF05WQFJHKt57+ZeY/xIB7TBPrCBJ19NQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=cisco.com; dmarc=pass action=none header.from=cisco.com; dkim=pass header.d=cisco.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cisco.onmicrosoft.com;  s=selector2-cisco-onmicrosoft-com; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=q+Nr6p31fP58a3xJP5TtYe3YvWcFk2SI9wS8JkWwPrs=; b=GsGFTCxroZi3dhjNpAjiyf9gWZXsiv43uHEPtwnemZauSqJA3WQOayvp26llFedadcw+I0kBWznf3m78gdxKRdQR01fHRnvqBsMEMQVlCZJ3nP00YHQOMAUw2LHHrolI0OKsjWh12k21+jT5UqeNiKW2N7BksEGtqXmVatYk+ko=
+Received: from MN2PR11MB3565.namprd11.prod.outlook.com (20.178.250.159) by MN2PR11MB4046.namprd11.prod.outlook.com (20.179.149.156) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2199.21; Fri, 30 Aug 2019 12:16:56 +0000
+Received: from MN2PR11MB3565.namprd11.prod.outlook.com ([fe80::89cf:9d:8a75:266e]) by MN2PR11MB3565.namprd11.prod.outlook.com ([fe80::89cf:9d:8a75:266e%3]) with mapi id 15.20.2220.013; Fri, 30 Aug 2019 12:16:56 +0000
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: "Pascal Thubert (pthubert)" <pthubert@cisco.com>, Martine Lenders <m.lenders@fu-berlin.de>, "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: clarifications in minimal fragments [ was :Question on draft-ietf-6lo-fragment-recovery and VRB ]
+Thread-Index: AdVfLH235BQ6tM3LQO6Bj0OReTdNwg==
+Date: Fri, 30 Aug 2019 12:16:35 +0000
+Deferred-Delivery: Fri, 30 Aug 2019 12:15:39 +0000
+Message-ID: <MN2PR11MB35650CA7B31C2BC23B0418B2D8BD0@MN2PR11MB3565.namprd11.prod.outlook.com>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=pthubert@cisco.com; 
+x-originating-ip: [2001:420:c0c0:1003::52]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 2f65bdf5-4e7b-4b75-4d94-08d72d43f35e
+x-microsoft-antispam: BCL:0; PCL:0; RULEID:(2390118)(7020095)(4652040)(8989299)(4534185)(4627221)(201703031133081)(201702281549075)(8990200)(5600166)(711020)(4605104)(1401327)(2017052603328)(7193020); SRVR:MN2PR11MB4046; 
+x-ms-traffictypediagnostic: MN2PR11MB4046:
+x-ms-exchange-purlcount: 3
+x-ms-exchange-transport-forked: True
+x-microsoft-antispam-prvs: <MN2PR11MB4046DCB88D40749CBC7EC207D8BD0@MN2PR11MB4046.namprd11.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:9508;
+x-forefront-prvs: 0145758B1D
+x-forefront-antispam-report: SFV:NSPM; SFS:(10009020)(4636009)(376002)(366004)(396003)(39860400002)(136003)(346002)(189003)(199004)(53936002)(74316002)(25786009)(9686003)(316002)(52536014)(71200400001)(55016002)(46003)(71190400001)(54896002)(6306002)(8936002)(110136005)(186003)(66556008)(66946007)(64756008)(66476007)(76116006)(66446008)(236005)(5660300002)(53946003)(256004)(2906002)(66574012)(6666004)(14444005)(476003)(2501003)(6506007)(606006)(8676002)(81156014)(81166006)(33656002)(86362001)(6436002)(6116002)(7736002)(14454004)(790700001)(99286004)(478600001)(53546011)(486006)(7696005)(102836004)(79990200002); DIR:OUT; SFP:1101; SCL:1; SRVR:MN2PR11MB4046; H:MN2PR11MB3565.namprd11.prod.outlook.com; FPR:; SPF:None; LANG:en; PTR:InfoNoRecords; MX:1; A:1; 
+received-spf: None (protection.outlook.com: cisco.com does not designate permitted sender hosts)
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam-message-info: 9q5awbrvqBoxP4IRBRtc+q0J612U1sOZKyktTpspaCXGerzPg489p33QKyQbmokV0HqCh7fGVOFzmwVo7lzvPP8LoOhvG/O9SFUkM2Okfyb7MPIMkZnaMZwGGSxIpd6UeJvi0gUCibg4ZzPyX/c6jmhBKmowEGZ9+is0HK1wfZ3Rwb0cUaUz46Oyx37OqDvz2Cwr7+Xg4zLUtosU8XdaTxtSuq8qCd4BtmzZ8xQa5vJQ1jqtKJ1XSjFseyYYB5tkvEykA0RT2/wJ4bP5RkRvKSu4wwOi/Pw7tT/TiRB9wKk/gTp86H/Q/o6zaiurD9T9BZ5f0+O96nAPOjo8q+AQuO9JUYxPy4+axtEC4TZDLWmHdVr4MT+tiDlrxCAf5mxcREDF6SYTbt8heNsrheoDwS2wyTgysa28W9RQ7olW9M2k8XBSpsly/qc7dP/wT0Qwq0qoa3qXV3EcMslpcuKvGQ==
+Content-Type: multipart/alternative; boundary="_000_MN2PR11MB35650CA7B31C2BC23B0418B2D8BD0MN2PR11MB3565namp_"
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2f65bdf5-4e7b-4b75-4d94-08d72d43f35e
+X-MS-Exchange-CrossTenant-originalarrivaltime: 30 Aug 2019 12:16:56.3627 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 5ae1af62-9505-4097-a69a-c1553ef7840e
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: e68CSKdrS9dUGjW+fCsRo7+FoGDviL3dNlsR0OSkycL2OVJlMAUj7t1c0AQ2PTuWiE7sSMimeyFXPxEyCn6v0w==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR11MB4046
+X-OriginatorOrg: cisco.com
+X-Outbound-SMTP-Client: 173.36.7.30, xch-aln-020.cisco.com
+X-Outbound-Node: alln-core-3.cisco.com
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/eiKXLRa7iNWoCYXIvLvQVgm2iTs>
+Subject: [6lo] clarifications in minimal fragments [ was :Question on draft-ietf-6lo-fragment-recovery and VRB ]
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 30 Aug 2019 12:17:13 -0000
+
+--_000_MN2PR11MB35650CA7B31C2BC23B0418B2D8BD0MN2PR11MB3565namp_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+Rm9sbG93aW5nIE1hcnRpbmXigJlzIHF1ZXN0aW9ucywgcGxlYXNlIGZpbmQgcHJvcG9zZWQgYWRk
+aXRpb25zIG9yIHVwZGF0ZXMgdG8gdGhlIG1pbmltYWwgZnJhZ21lbnQgZHJhZnQ6DQoNCg0KQmVm
+b3JlOg0K4oCcDQoNCiAgIENvbmNlcHR1YWxseSwgYSByZWFzc2VtYmx5IGJ1ZmZlciBmb3IgNkxv
+V1BBTiBjb250YWluczoNCg0KICAgbyAgYSBkYXRhZ3JhbV9zaXplLA0KICAgbyAgYSBkYXRhZ3Jh
+bV90YWcsIGFzc29jaWF0ZWQgdG8gdGhlIGxpbmstbGF5ZXIgc2VuZGVyIGFuZCByZWNlaXZlcg0K
+ICAgICAgYWRkcmVzc2VzIHRvIHdoaWNoIHRoZSBkYXRhZ3JhbV90YWcgaXMgbG9jYWwsDQogICBv
+ICB0aGUgYWN0dWFsIHBhY2tldCBkYXRhIGZyb20gdGhlIGZyYWdtZW50cyByZWNlaXZlZCBzbyBm
+YXIsIGluIGENCiAgICAgIGZvcm0gdGhhdCBtYWtlcyBpdCBwb3NzaWJsZSB0byBkZXRlY3Qgd2hl
+biB0aGUgd2hvbGUgcGFja2V0IGhhcw0KICAgICAgYmVlbiByZWNlaXZlZCBhbmQgY2FuIGJlIHBy
+b2Nlc3NlZCBvciBmb3J3YXJkZWQsDQogICBvICBhIHRpbWVyIHRoYXQgYWxsb3dzIGRpc2NhcmRp
+bmcgYSBwYXJ0aWFsbHkgcmVhc3NlbWJsZWQgcGFja2V0DQogICAgICBhZnRlciBzb21lIHRpbWVv
+dXQuDQoNCuKAnA0KQWZ0ZXINCuKAnA0KDQpUaGUgcmVhc3NlbWJseSBidWZmZXIgZm9yIDZMb1dQ
+QU4gaXMgaW5kZXhlZCBpbiBub2RlIEIgYnkNCi0gYSB1bmlxdWUgSWRlbnRpZmllciBvZiBOb2Rl
+IEEgKGUuZy4sIE5vZGUgQSdzIGxpbmstbGF5ZXIgYWRkcmVzcykNCi0gdGhlIGRhdGFncmFtX3Rh
+ZyBjaG9zZW4gYnkgbm9kZSBBIGZvciB0aGlzIGZyYWdtZW50ZWQgZGF0YWdyYW0NCg0KQmVjYXVz
+ZSBpdCBtYXkgYmUgaGFyZCBmb3Igbm9kZSBCIHRvIGNvcnJlbGF0ZSBhbGwgcG9zc2libGUgbGlu
+ay1sYXllciBhZGRyZXNzZXMgdGhhdCBub2RlIEEgbWF5IHVzZSAoZS5nLiwgc2hvcnQgdnMuIGxv
+bmcgYWRkcmVzc2VzKSwgbm9kZSBBIE1VU1QgdXNlIHRoZSBzYW1lIGxpbmstbGF5ZXIgYWRkcmVz
+cyB0byBzZW5kIGFsbCB0aGUgZnJhZ21lbnRzIG9mIGEgc2FtZSBkYXRhZ3JhbSB0byBub2RlIEIu
+DQoNCkNvbmNlcHR1YWxseSwgdGhlIHJlYXNzZW1ibHkgYnVmZmVyIGluIG5vZGUgQiBjb250YWlu
+cywgYXNzdW1pbmcgdGhhdCBub2RlIEIgaXMgbmVpdGhlciB0aGUgc291cmNlIG9yIHRoZSBmaW5h
+bCBkZXN0aW5hdGlvbjoNCi0gYSBkYXRhZ3JhbV90YWcgYXMgcmVjZWl2ZWQgaW4gdGhlIGluY29t
+aW5nIGZyYWdtZW50cywgYXNzb2NpYXRlZCB0byBsaW5rLWxheWVyIGFkZHJlc3Mgb2Ygbm9kZSBB
+IHRvIHdoaWNoIHRoZSByZWNlaXZlZCBkYXRhZ3JhbV90YWcgaXMgbG9jYWwsDQotIHRoZSBsaW5r
+LWxheWVyIGFkZHJlc3MgdGhhdCBub2RlIEIgdXNlcyB0byBmb3J3YXJkIHRoZSBmcmFnbWVudHMN
+Ci0gdGhlIGxpbmstbGF5ZXIgYWRkcmVzcyBvZiB0aGUgbmV4dCBob3AgdGhhdCBpcyByZXNvbHZl
+ZCBvbiB0aGUgZmlyc3QgZnJhZ21lbnQNCi0gYSBkYXRhZ3JhbV90YWcgdGhhdCBub2RlIEIgYWxs
+b2NhdGVkIGZvciB0aGlzIGRhdGFncmFtIGFuZCB0aGF0IGlzIHVzZWQgd2hlbiBmb3J3YXJkaW5n
+IHRoZSBmcmFnbWVudHMgb2YgdGhlIGRhdGFncmFtDQotIHRoZSBhY3R1YWwgcGFja2V0IGRhdGEg
+ZnJvbSB0aGUgZnJhZ21lbnRzIHJlY2VpdmVkIHNvIGZhciwgaW4gYSBmb3JtIHRoYXQgbWFrZXMg
+aXQgcG9zc2libGUgdG8gZGV0ZWN0IHdoZW4gdGhlIHdob2xlIHBhY2tldCBoYXMgYmVlbiByZWNl
+aXZlZCBhbmQgY2FuIGJlIHByb2Nlc3NlZCBvciBmb3J3YXJkZWQsDQotIGEgZGF0YWdyYW1fc2l6
+ZSwNCi0gYSBidWZmZXIgZm9yIHRoZSByZW1haW5kZXIgb2YgYSBwcmV2aW91cyBmcmFnbWVudCBs
+ZWZ0IHRvIGJlIHNlbnQsDQotIGEgdGltZXIgdGhhdCBhbGxvd3MgZGlzY2FyZGluZyBhIHBhcnRp
+YWxseSByZWFzc2VtYmxlZCBwYWNrZXQgYWZ0ZXIgc29tZSB0aW1lb3V0Lg0K4oCcDQoNCg0KQW5k
+IGxhdGVyOg0KDQpCZWZvcmUNCg0K4oCcICAgICAgRWFjaCBkYXRhZ3JhbSBjYW4gYmUgdW5pcXVl
+bHkgaWRlbnRpZmllZCBieSB0aGUgc291cmNlIGFuZCBmaW5hbA0KICAgZGVzdGluYXRpb24gbGlu
+ay1sYXllciBhZGRyZXNzZXMgb2YgdGhlIGZyYW1lIHRoYXQgY2FycmllcyBpdCwgdGhlDQogICBm
+cmFnbWVudCBzaXplIGFuZCB0aGUgZGF0YWdyYW1fdGFnLg0KDQrigJwNCkFmdGVyDQrigJwNCkVh
+Y2ggZGF0YWdyYW0gY2FuIGJlIHVuaXF1ZWx5IGlkZW50aWZpZWQgYnkgdGhlIHNlbmRlciBsaW5r
+LWxheWVyIGFkZHJlc3NlcyBvZiB0aGUgZnJhbWUgdGhhdCBjYXJyaWVzIGl0IGFuZCB0aGUgZGF0
+YWdyYW1fdGFnIHRoYXQgdGhlIHNlbmRlciBhbGxvY2F0ZWQgZm9yIHRoaXMgZGF0YWdyYW0uDQri
+gJwNCg0KUGxlYXNlIGxldCBtZSBrbm93IGlmIHlvdSBzZWUgYW4gaXNzdWUgd2l0aCB0aGF0LiBJ
+IHdpc2ggdG8gcHVibGlzaCBzb29uIGFzIHdlIGVudGVyIHRoZSBJRVNHIHJldmlldyBmb3IgdGhp
+cyBzcGVjLg0KDQpBbGwgdGhlIGJlc3QsDQoNClBhc2NhbA0KDQpGcm9tOiA2bG8gPDZsby1ib3Vu
+Y2VzQGlldGYub3JnPiBPbiBCZWhhbGYgT2YgUGFzY2FsIFRodWJlcnQgKHB0aHViZXJ0KQ0KU2Vu
+dDogdmVuZHJlZGkgMzAgYW/Du3QgMjAxOSAxMzo0NA0KVG86IE1hcnRpbmUgTGVuZGVycyA8bS5s
+ZW5kZXJzQGZ1LWJlcmxpbi5kZT47IDZsb0BpZXRmLm9yZw0KU3ViamVjdDogUmU6IFs2bG9dIFF1
+ZXN0aW9uIG9uIGRyYWZ0LWlldGYtNmxvLWZyYWdtZW50LXJlY292ZXJ5IGFuZCBWUkINCg0KSGVs
+bG8gTWFydGluZQ0KDQpHcmVhdCB0byBoZWFyIGFib3V0IHlvdXIgaW1wbGVtZW50YXRpb24uIFRo
+ZSBncm91cCBpcyBpbnRlcmVzdGVkIHRvIGxlYXJuIGFib3V0IHlvdXIgcHJvZ3Jlc3MgKGtlZXAg
+dXMgdHVuZWQpIGFuZCBoYXBweSB0byBoZWxwIHlvdSB0aHJvdWdoLiBQDQpsZWFzZSBkbyBub3Qg
+aGVzaXRhdGUgdG8gYXNrIGZvciBtb3JlIGNsYXJpZmljYXRpb24gYXMgeW91IGZlZWwgbmVlZGVk
+LiBFdmVuIGlmIHlvdeKAmXJlIG5vdCB0b28gc3VyZSB5b3Ugc2hvdWxkIGFzaywgaWYgeW91IHdv
+bmRlciB0aGVyZeKAmXMgcHJvYmFibHkgYSByZWFzb24gYW5kIHlvdeKAmXJlIGhlbHBpbmcgdGhl
+IGltcGxlbWVudG9ycyB3aG8gd2lsbCBiZSBmb2xsb3dpbmcgeW91Lg0KDQpQbGVhc2Ugc2VlIGJl
+bG93Og0KDQpJIGhhdmUgYW4gaW1wbGVtZW50YXRpb24gcXVlc3Rpb24gZm9yIHRoZSB2aXJ0dWFs
+IHJlYXNzZW1ibHkgYnVmZmVyIHdpdGggcmVnYXJkcyB0byBbZHJhZnQtaWV0Zi02bG8tZnJhZ21l
+bnQtcmVjb3ZlcnldLiBTZWN0aW9uIDYuMSBvZiB0aGlzIGRyYWZ0IHN0YXRlcyB0aGF0IGEgdHVw
+bGUgKHNvdXJjZSBhZGRyZXNzLCB0YWcpIGlzIHVzZWQgdG8gaWRlbnRpZnkgYSBWUkIgZW50cnkg
+YW5kIGNpdGVzIFtkcmFmdC1pZXRmLTZsby1taW5pbWFsLWZyYWdtZW50XSBmb3IgdGhhdC4NCg0K
+w5ggICBDb3JyZWN0LCBhbmQgdGhlIG1lYW5pbmcgaXMgc291cmNlIE1BQyBhZGRyZXNzIG5vdCBz
+b3VyY2UgSVAgYWRkcmVzcy4gVGhlIGV4YWN0IHNlbnRlbmNlIGlzDQoNCsOYICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgVXBvbiBhIGZpcnN0IGZyYWdtZW50IChpLmUuIHdp
+dGggYQ0KDQrDmCAgICAgc2VxdWVuY2Ugb2YgemVybyksIGEgVlJCIGFuZCB0aGUgYXNzb2NpYXRl
+ZCBMU1Agc3RhdGUgYXJlIGNyZWF0ZWQgZm9yDQoNCsOYICAgICB0aGUgdHVwbGUgKHNvdXJjZSBN
+QUMgYWRkcmVzcywgZGF0YWdyYW1fdGFnKSBhbmQgdGhlIGZyYWdtZW50IGlzDQoNCsOYICAgICBm
+b3J3YXJkZWQgYWxvbmcgdGhlIElQdjYgcm91dGUgdGhhdCBtYXRjaGVzIHRoZSBkZXN0aW5hdGlv
+biBJUHY2DQoNCsOYICAgICBhZGRyZXNzIGluIHRoZSBJUHY2IGhlYWRlciBhcyBwcmVzY3JpYmVk
+IGJ5DQoNCsOYICAgICBbSS1ELmlldGYtNmxvLW1pbmltYWwtZnJhZ21lbnQ8aHR0cHM6Ly90b29s
+cy5pZXRmLm9yZy9odG1sL2RyYWZ0LWlldGYtNmxvLWZyYWdtZW50LXJlY292ZXJ5LTA1I3JlZi1J
+LUQuaWV0Zi02bG8tbWluaW1hbC1mcmFnbWVudD5dLg0KDQrDmA0KSG93ZXZlciwgYXMgZmFyIGFz
+IEkgdW5kZXJzdGFuZCBbZHJhZnQtaWV0Zi02bG8tbWluaW1hbC1mcmFnbWVudF0gYW5kIFtkcmFm
+dC1pZXRmLWx3aWctNmxvd3Bhbi12aXJ0dWFsLXJlYXNzZW1ibHldIHRoaXMgaXMgbm90IHRoZSBj
+YXNlLiBbZHJhZnQtaWV0Zi02bG8tbWluaW1hbC1mcmFnbWVudF0gZG9lc24ndCBtZW50aW9uIFZS
+QiBlbnRyeSBpZGVudGlmaWNhdGlvbiBhbmQgb25seSByZWZlcnMgdG8gW2RyYWZ0LWlldGYtbHdp
+Zy02bG93cGFuLXZpcnR1YWwtcmVhc3NlbWJseV0uDQoNCiAgKiAgIEl0IHdvdWxkIG5vdCBodXJ0
+IHRvIG1lbnRpb24gaXQgdGhvdWdoLiBJbnRlcmVzdGluZy4gTWluaW1hbCBoYXM64oCdIEFsbCBm
+cmFnbWVudHMgYXJlIHRhZ2dlZCB3aXRoIGEgMTYtYml0DQoNCiAgICIgICAgRWFjaCBkYXRhZ3Jh
+bSBjYW4gYmUgdW5pcXVlbHkgaWRlbnRpZmllZCBieSB0aGUgc291cmNlIGFuZCBmaW5hbA0KDQog
+ICBkZXN0aW5hdGlvbiBsaW5rLWxheWVyIGFkZHJlc3NlcyBvZiB0aGUgZnJhbWUgdGhhdCBjYXJy
+aWVzIGl0LCB0aGUNCg0KICAgZnJhZ21lbnQgc2l6ZSBhbmQgdGhlIGRhdGFncmFtX3RhZy4NCg0K
+DQoNCsOYICAgVGhhdOKAmXMgIG1pc2xlYWRpbmfigKYgSeKAmWxsIGNvcnJlY3QgaXQuDQpUaGF0
+IGluIHR1cm4gb25seSByZWNvdW50cyB0aGUgY2xhc3NpYyAoc291cmNlIGFkZHJlc3MsIGRlc3Rp
+bmF0aW9uIGFkZHJlc3MsIHNpemUsIHRhZykgdHVwbGUgZGVmaW5lZCBpbiBSRkM0OTQ0DQoNCiAg
+KiAgIFdoZW4gcmVjZWl2aW5nIGEgZnJhZ21lbnQsIHRoZSBkZXN0aW5hdGlvbiBpcyBzZWxmIGFu
+ZCB0aGUgc2l6ZSBtYXkgdmFyeSBmcm9tIGEgZGF0YWdyYW0gdG8gdGhlIG5leHQuIFNvIHRoZSBv
+bmx5IHRoaW5nIHRoYXQgcmVhbGx5IGlkZW50aWZ5IHRoZSBkYXRhZ3JhbSBpcyB0aGUgc291cmNl
+IE1BQyBhbmQgdGhlIHRhZy4NCmFuZCBzdGF0ZXMgdGhhdCB0aGUgb25seSBkaWZmZXJlbmNlIGJl
+dHdlZW4gdGhlIGNsYXNzaWMgYW5kIFZSQiBpcyB0aGUgbGFjayBvZiB0aGUgcmVhc3NlbWJsZWQg
+cGFja2V0IGFuZCBhZGRpdGlvbiBvZiB0aGUgbmV4dCBob3AncyBhZGRyZXNzIGFuZCB0aGUgbmV3
+bHkgYXNzaWduZWQgdGFnOg0KDQrDmCAgIEFjdHVhbGx5IHRoZSBmb3J3YXJkZXIgc2VuZHMgdGhl
+IGRhdGFncmFtIHdpdGggc2VsZiBhcyBzb3VyY2UgdG8gdGhlIHNvdXJjZSBtYWMgYWRkcmVzcyBp
+cyBzd2FwcGVkIG5hdHVyYWxseS4gSXQgaGFzIHRvIHNldCB0aGUgbmV4dCBob3DigJlzIG1hYyBh
+ZGRyZXNzIGFuZCB0aGUgc3dhcHBlZCBkYXRhZ3JhbSB0YWcuIFRoZSBuZXh0IGhvcOKAmXMgTUFD
+IGFkZHJlc3MgaWRlbnRpZmllcyB0aGUgbm9kZSB0aGF0IHNob3VsZCByZWNlaXZlIHRoZSBwYWNr
+ZXQgYW5kIHRoZSBkYXRhZ3JhbSB0YWcgdG9nZXRoZXIgd2l0aCB0aGUgc291cmNlIG1hYyBpZGVu
+dGlmeSB0aGUgcmVhc3NlbWJseSBidWZmZXIgd2l0aGluIHRoZSByZWNlaXZlci4gVGhlcmUgaXMg
+bm8gY29udHJhZGljdGlvbi4NClRvIHJlZHVjZSB0aGUgbWVtb3J5IHJlcXVpcmVtZW50IGZvciBy
+ZWFzc2VtYmx5IGJ1ZmZlcnMsIHRoZSBpbXBsZW1lbnRhdGlvbiBtYXkgb3B0IHRvIG5vdCBrZWVw
+IHRoZSBhY3R1YWwgcGFja2V0IGRhdGEgaW4gdGhlIHJlYXNzZW1ibHkgYnVmZmVyLiBJbnN0ZWFk
+LCBpdCBtYXkgYXR0ZW1wdCB0byBzZW5kIG91dCB0aGUgZGF0YSBmb3IgYSBmcmFnbWVudCBpbiB0
+aGUgZm9ybSBvZiBhIGZvcndhcmRlZCBmcmFnbWVudCwgYXMgc29vbiBhcyBhbGwgbmVjZXNzYXJ5
+IGluZm9ybWF0aW9uIGZvciB0aGF0IGlzIGF2YWlsYWJsZS4gT2J2aW91c2x5LCBhbGwgZnJhZ21l
+bnRzIG5lZWQgdG8gYmUgc2VudCB3aXRoIHRoZSBzYW1lIG91dGdvaW5nIGFkZHJlc3MgKG90aGVy
+d2lzZSBhIGZ1bGwgcmVhc3NlbWJseSBpbXBsZW1lbnRhdGlvbiB3b3VsZCBkaXNjYXJkIHRoZSBm
+cmFnbWVudHMpIGFuZCB0aGUgc2FtZSBkYXRhZ3JhbV90YWcuDQoNClNvIG15IHF1ZXN0aW9uIGlz
+OiBJcyB0aGUgdHVwbGUgZGVmaW5pdGlvbiBpbiBbZHJhZnQtaWV0Zi02bG8tZnJhZ21lbnQtcmVj
+b3ZlcnldIHJlYWxseSBjb3JyZWN0Pw0KDQoNCiAgKiAgIEl0IGlzLg0KDQpGb3IgZXhjbHVzaW9u
+IGRhdGFncmFtIHNpemUgSSBhZ3JlZSB0aGF0IGl0IGNvdWxkIGJlIHNvbWV3aGF0IHJlZHVuZGFu
+dC4gSG93ZXZlciwgYSBub2RlIGNvdWxkIGhhdmUgbXVsdGlwbGUgZGVzdGluYXRpb24gYWRkcmVz
+c2VzIChlaXRoZXIgdmlhIG11bHRpcGxlIGludGVyZmFjZXMgb3IgSUVFRS04MDIuMTUuNC1zdHls
+ZSBzaG9ydCBhbmQgbG9uZyBhZGRyZXNzKS4gU28sIGFzIHRoZSB0YWcgaXMgbGluay1zcGVjaWZp
+YyAoZGVmaW5lZCBieSBhIChzb3VyY2UsIGRlc3RpbmF0aW9uKSB0dXBsZSksIHRoZXJlIGNvdWxk
+IGJlIGRpc3RpbmN0IGRhdGFncmFtcyB0aGF0IGhhdmUgdGhlIHNhbWUgdHVwbGUgKHNvdXJjZSwg
+dGFnKSwgb3IgYW0gSSBtaXNzaW5nIHNvbWV0aGluZz8NCg0KDQrDmCAgIFllcywgdGhlIHJvbGUg
+b2YgdGhlIGRlc3RpbmF0aW9uIE1BQyBhZGRyZXNzIGlzIHRvIHJlYWNoIHRoZSBuZXh0IGhvcCwg
+YnV0IGRvZXMgbm90IGNoYW5nZSB0aGUgcHJvY2Vzc2luZyB3aXRoaW4gdGhhdCBub2RlLiBJIGNv
+dWxkIGNoYW5nZSB0aGUgTDIgYWRkcmVzcyBJIHVzZSB0byByZWZlciB0byB0aGUgbmV4dCBob3Ag
+aW4gdGhlIG1pZGRsZSBvZiBhIGZyYWdtZW50ZWQgcGFja2V0LCBpdCBpcyBzdGlsbCB0aGUgc2Ft
+ZSBmcmFnbWVudGVkIHBhY2tldC4gSW4gb3RoZXIgd29yZHMsIHBsZWFzZSBkbyBub3QgdXNlIHRo
+ZSBkbWFjIGFzIHRvIGluZGV4IHRoZSBWUkIuIEZyb20geW91ciBxdWVzdGlvbiBJIHRoaW5rIHRo
+ZSBMV0lHIGRyYWZ0IHNob3VsZCBjbGFyaWZ5LCBhbmQgd2UgY2FuIGNoYW5nZSBtaW5pbWFsIGRy
+YWZ0IHRvIGNsYXJpZnkgYXMgd2VsbC4NCg0KSSBhbHJlYWR5IGltcGxlbWVudGVkIHRoZSBWUkIg
+d2l0aCBkcmFmdC1pZXRmLTZsby1taW5pbWFsLWZyYWdtZW50IGluIG1pbmQgYW5kIHRodXMgdXNl
+ZCB0aGUgY2xhc3NpYyA0LXR1cGxlIGZvciBpbmRleGluZy4gQnV0IG5vdyBJJ20gd29uZGVyaW5n
+OiBDYW4gSSByZWR1Y2UgaXRzIGluZGV4IG9yIHdvdWxkIHRoYXQgYmUgbm90IGFkdmlzZWQ/DQoN
+Cg0Kw5ggICBZb3Ugc2hvdWxkIHJlZHVjZSB0aGUgaW5kZXggOiApIFRoZXJlIGNhbiBub3QgYmUg
+MiBkaWZmZXJlbnQgZGF0YWdyYW1zIGNvbWluZyBpbiBwYXJhbGxlbCBmcm9tIGEgc2FtZSBwcmV2
+aW91cyBob3AgYW5kIHdpdGggYSBzYW1lIGRhdGFncmFtIHRhZy4gVGhlcmUgbXVzdCBiZSBhIHNl
+bnRlbmNlIHNvbWV3aGVyZSBpbiB0aGUgTFdJRyBkcmFmdCB0aGF0IHNheXMgdGhhdCBhIG5ldyBh
+bmQgY3VycmVudGx5IHVudXNlZCBkYXRhZ3JhbSB0YWcgaXMgY2hvc2VuIGZvciBhIG5ldyBpbmNv
+bWluZyBkYXRhZ3JhbSwgY29ycmVjdD8gIE1pbmltYWwgc2F5cw0KDQrDmCAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBVcG9uDQoN
+CsOYICAgICByZWNlaXZpbmcgYSBmcmFnbWVudCBmcm9tIG5vZGUgQSB3aXRoIGEgZGF0YWdyYW1f
+dGFnIHByZXZpb3VzbHkNCg0Kw5ggICAgIHVuc2VlbiBmcm9tIG5vZGUgQSwgbm9kZSBCIGFsbG9j
+YXRlcyBhIGJ1ZmZlciBsYXJnZSBlbm91Z2ggdG8gaG9sZA0KDQrDmCAgICAgdGhlIGVudGlyZSBw
+YWNrZXQuDQoNCg0KDQrDmCAgIFRoaXMgdGV4dCBvbmx5IGluZGV4ZXMgdGhlIFZSQiB3aXRoIGFu
+eSBpZGVudGlmaWVyIG9mIG5vZGUgQSBhbmQgdGhlIHRhZ+KApiBBbmQgdGhpcyBpcyBjb3JyZWN0
+LiBXaGF04oCZcyBhIGJpdCBtb3JlIHVnbHkgaXMgdGhhdCBOb2RlIEEgc2hvdWxkIG5vdCBjaGFu
+Z2UgdGhlIHNvdXJjZSBNQUMgaW4gYmV0d2VlbiBmcmFnbWVudHMgYmVjYXVzZSB0aGF0IHdpbGwg
+Y29uZmlzZSBub2RlIEIuIEkgbmVlZCB0byBhZGQgdGV4dCBvbiB0aGF0IHRvby4NCg0KDQpNYW55
+IHRoYW5rcyBNYXJ0aW5lIGZvciByYWlzaW5nIGFsbCB0aGlzLCBhbmQgYWxsIHRoZSBiZXN0IGZv
+ciB5b3VyIGltcGxlbWVudGF0aW9uLg0KDQpQYXNjYWwNCg==
+
+--_000_MN2PR11MB35650CA7B31C2BC23B0418B2D8BD0MN2PR11MB3565namp_
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiIHhtbG5zOm89InVy
+bjpzY2hlbWFzLW1pY3Jvc29mdC1jb206b2ZmaWNlOm9mZmljZSIgeG1sbnM6dz0idXJuOnNjaGVt
+YXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6d29yZCIgeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMubWlj
+cm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+VFIvUkVDLWh0bWw0MCI+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIg
+Y29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjxtZXRhIG5hbWU9IkdlbmVyYXRv
+ciIgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUgKGZpbHRlcmVkIG1lZGl1bSkiPg0KPHN0eWxl
+PjwhLS0NCi8qIEZvbnQgRGVmaW5pdGlvbnMgKi8NCkBmb250LWZhY2UNCgl7Zm9udC1mYW1pbHk6
+V2luZ2RpbmdzOw0KCXBhbm9zZS0xOjUgMCAwIDAgMCAwIDAgMCAwIDA7fQ0KQGZvbnQtZmFjZQ0K
+CXtmb250LWZhbWlseToiQ2FtYnJpYSBNYXRoIjsNCglwYW5vc2UtMToyIDQgNSAzIDUgNCA2IDMg
+MiA0O30NCkBmb250LWZhY2UNCgl7Zm9udC1mYW1pbHk6Q2FsaWJyaTsNCglwYW5vc2UtMToyIDE1
+IDUgMiAyIDIgNCAzIDIgNDt9DQovKiBTdHlsZSBEZWZpbml0aW9ucyAqLw0KcC5Nc29Ob3JtYWws
+IGxpLk1zb05vcm1hbCwgZGl2Lk1zb05vcm1hbA0KCXttYXJnaW46MGNtOw0KCW1hcmdpbi1ib3R0
+b206LjAwMDFwdDsNCglmb250LXNpemU6MTEuMHB0Ow0KCWZvbnQtZmFtaWx5OiJDYWxpYnJpIixz
+YW5zLXNlcmlmO30NCmE6bGluaywgc3Bhbi5Nc29IeXBlcmxpbmsNCgl7bXNvLXN0eWxlLXByaW9y
+aXR5Ojk5Ow0KCWNvbG9yOiMwNTYzQzE7DQoJdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTt9DQph
+OnZpc2l0ZWQsIHNwYW4uTXNvSHlwZXJsaW5rRm9sbG93ZWQNCgl7bXNvLXN0eWxlLXByaW9yaXR5
+Ojk5Ow0KCWNvbG9yOiM5NTRGNzI7DQoJdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTt9DQpwcmUN
+Cgl7bXNvLXN0eWxlLXByaW9yaXR5Ojk5Ow0KCW1zby1zdHlsZS1saW5rOiJIVE1MIFByZWZvcm1h
+dHRlZCBDaGFyIjsNCgltYXJnaW46MGNtOw0KCW1hcmdpbi1ib3R0b206LjAwMDFwdDsNCglmb250
+LXNpemU6MTAuMHB0Ow0KCWZvbnQtZmFtaWx5OiJDb3VyaWVyIE5ldyI7fQ0KcC5Nc29MaXN0UGFy
+YWdyYXBoLCBsaS5Nc29MaXN0UGFyYWdyYXBoLCBkaXYuTXNvTGlzdFBhcmFncmFwaA0KCXttc28t
+c3R5bGUtcHJpb3JpdHk6MzQ7DQoJbWFyZ2luLXRvcDowY207DQoJbWFyZ2luLXJpZ2h0OjBjbTsN
+CgltYXJnaW4tYm90dG9tOjBjbTsNCgltYXJnaW4tbGVmdDozNi4wcHQ7DQoJbWFyZ2luLWJvdHRv
+bTouMDAwMXB0Ow0KCWZvbnQtc2l6ZToxMS4wcHQ7DQoJZm9udC1mYW1pbHk6IkNhbGlicmkiLHNh
+bnMtc2VyaWY7fQ0Kc3Bhbi5IVE1MUHJlZm9ybWF0dGVkQ2hhcg0KCXttc28tc3R5bGUtbmFtZToi
+SFRNTCBQcmVmb3JtYXR0ZWQgQ2hhciI7DQoJbXNvLXN0eWxlLXByaW9yaXR5Ojk5Ow0KCW1zby1z
+dHlsZS1saW5rOiJIVE1MIFByZWZvcm1hdHRlZCI7DQoJZm9udC1mYW1pbHk6IkNvdXJpZXIgTmV3
+Ijt9DQpwLm1zb25vcm1hbDAsIGxpLm1zb25vcm1hbDAsIGRpdi5tc29ub3JtYWwwDQoJe21zby1z
+dHlsZS1uYW1lOm1zb25vcm1hbDsNCgltc28tbWFyZ2luLXRvcC1hbHQ6YXV0bzsNCgltYXJnaW4t
+cmlnaHQ6MGNtOw0KCW1zby1tYXJnaW4tYm90dG9tLWFsdDphdXRvOw0KCW1hcmdpbi1sZWZ0OjBj
+bTsNCglmb250LXNpemU6MTEuMHB0Ow0KCWZvbnQtZmFtaWx5OiJDYWxpYnJpIixzYW5zLXNlcmlm
+O30NCnNwYW4uRW1haWxTdHlsZTIxDQoJe21zby1zdHlsZS10eXBlOnBlcnNvbmFsOw0KCWZvbnQt
+ZmFtaWx5OiJDYWxpYnJpIixzYW5zLXNlcmlmOw0KCWNvbG9yOndpbmRvd3RleHQ7fQ0Kc3Bhbi5F
+bWFpbFN0eWxlMjINCgl7bXNvLXN0eWxlLXR5cGU6cGVyc29uYWwtcmVwbHk7DQoJZm9udC1mYW1p
+bHk6IkNhbGlicmkiLHNhbnMtc2VyaWY7DQoJY29sb3I6d2luZG93dGV4dDt9DQouTXNvQ2hwRGVm
+YXVsdA0KCXttc28tc3R5bGUtdHlwZTpleHBvcnQtb25seTsNCglmb250LXNpemU6MTAuMHB0O30N
+CkBwYWdlIFdvcmRTZWN0aW9uMQ0KCXtzaXplOjYxMi4wcHQgNzkyLjBwdDsNCgltYXJnaW46NzAu
+ODVwdCA3MC44NXB0IDcwLjg1cHQgNzAuODVwdDt9DQpkaXYuV29yZFNlY3Rpb24xDQoJe3BhZ2U6
+V29yZFNlY3Rpb24xO30NCi8qIExpc3QgRGVmaW5pdGlvbnMgKi8NCkBsaXN0IGwwDQoJe21zby1s
+aXN0LWlkOjY1MzIyNDgzMDsNCgltc28tbGlzdC10eXBlOmh5YnJpZDsNCgltc28tbGlzdC10ZW1w
+bGF0ZS1pZHM6LTEwNTkwMDA0MTYgMTkwMjk0MzQxMCA2NzY5ODY5MSA2NzY5ODY5MyA2NzY5ODY4
+OSA2NzY5ODY5MSA2NzY5ODY5MyA2NzY5ODY4OSA2NzY5ODY5MSA2NzY5ODY5Mzt9DQpAbGlzdCBs
+MDpsZXZlbDENCgl7bXNvLWxldmVsLXN0YXJ0LWF0OjU7DQoJbXNvLWxldmVsLW51bWJlci1mb3Jt
+YXQ6YnVsbGV0Ow0KCW1zby1sZXZlbC10ZXh0Ou+DmDsNCgltc28tbGV2ZWwtdGFiLXN0b3A6bm9u
+ZTsNCgltc28tbGV2ZWwtbnVtYmVyLXBvc2l0aW9uOmxlZnQ7DQoJdGV4dC1pbmRlbnQ6LTE4LjBw
+dDsNCglmb250LWZhbWlseTpXaW5nZGluZ3M7DQoJbXNvLWZhcmVhc3QtZm9udC1mYW1pbHk6Q2Fs
+aWJyaTsNCgltc28tYmlkaS1mb250LWZhbWlseTpBcmlhbDt9DQpAbGlzdCBsMDpsZXZlbDINCgl7
+bXNvLWxldmVsLW51bWJlci1mb3JtYXQ6YnVsbGV0Ow0KCW1zby1sZXZlbC10ZXh0Om87DQoJbXNv
+LWxldmVsLXRhYi1zdG9wOm5vbmU7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0K
+CXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJZm9udC1mYW1pbHk6IkNvdXJpZXIgTmV3Ijt9DQpAbGlz
+dCBsMDpsZXZlbDMNCgl7bXNvLWxldmVsLW51bWJlci1mb3JtYXQ6YnVsbGV0Ow0KCW1zby1sZXZl
+bC10ZXh0Ou+CpzsNCgltc28tbGV2ZWwtdGFiLXN0b3A6bm9uZTsNCgltc28tbGV2ZWwtbnVtYmVy
+LXBvc2l0aW9uOmxlZnQ7DQoJdGV4dC1pbmRlbnQ6LTE4LjBwdDsNCglmb250LWZhbWlseTpXaW5n
+ZGluZ3M7fQ0KQGxpc3QgbDA6bGV2ZWw0DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxl
+dDsNCgltc28tbGV2ZWwtdGV4dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOm5vbmU7DQoJbXNv
+LWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJZm9u
+dC1mYW1pbHk6U3ltYm9sO30NCkBsaXN0IGwwOmxldmVsNQ0KCXttc28tbGV2ZWwtbnVtYmVyLWZv
+cm1hdDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ6bzsNCgltc28tbGV2ZWwtdGFiLXN0b3A6bm9u
+ZTsNCgltc28tbGV2ZWwtbnVtYmVyLXBvc2l0aW9uOmxlZnQ7DQoJdGV4dC1pbmRlbnQ6LTE4LjBw
+dDsNCglmb250LWZhbWlseToiQ291cmllciBOZXciO30NCkBsaXN0IGwwOmxldmVsNg0KCXttc28t
+bGV2ZWwtbnVtYmVyLWZvcm1hdDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ674KnOw0KCW1zby1s
+ZXZlbC10YWItc3RvcDpub25lOw0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0
+ZXh0LWluZGVudDotMTguMHB0Ow0KCWZvbnQtZmFtaWx5OldpbmdkaW5nczt9DQpAbGlzdCBsMDps
+ZXZlbDcNCgl7bXNvLWxldmVsLW51bWJlci1mb3JtYXQ6YnVsbGV0Ow0KCW1zby1sZXZlbC10ZXh0
+Ou+CtzsNCgltc28tbGV2ZWwtdGFiLXN0b3A6bm9uZTsNCgltc28tbGV2ZWwtbnVtYmVyLXBvc2l0
+aW9uOmxlZnQ7DQoJdGV4dC1pbmRlbnQ6LTE4LjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0K
+QGxpc3QgbDA6bGV2ZWw4DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28t
+bGV2ZWwtdGV4dDpvOw0KCW1zby1sZXZlbC10YWItc3RvcDpub25lOw0KCW1zby1sZXZlbC1udW1i
+ZXItcG9zaXRpb246bGVmdDsNCgl0ZXh0LWluZGVudDotMTguMHB0Ow0KCWZvbnQtZmFtaWx5OiJD
+b3VyaWVyIE5ldyI7fQ0KQGxpc3QgbDA6bGV2ZWw5DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0
+OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDrvgqc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOm5vbmU7
+DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7
+DQoJZm9udC1mYW1pbHk6V2luZ2RpbmdzO30NCkBsaXN0IGwxDQoJe21zby1saXN0LWlkOjEyNjAw
+MTg2ODY7DQoJbXNvLWxpc3QtdHlwZTpoeWJyaWQ7DQoJbXNvLWxpc3QtdGVtcGxhdGUtaWRzOjEy
+NjI2NjE2NTggMTM2Mzk0NzMzNiA2NzY5ODY5MSA2NzY5ODY5MyA2NzY5ODY4OSA2NzY5ODY5MSA2
+NzY5ODY5MyA2NzY5ODY4OSA2NzY5ODY5MSA2NzY5ODY5Mzt9DQpAbGlzdCBsMTpsZXZlbDENCgl7
+bXNvLWxldmVsLXN0YXJ0LWF0OjU7DQoJbXNvLWxldmVsLW51bWJlci1mb3JtYXQ6YnVsbGV0Ow0K
+CW1zby1sZXZlbC10ZXh0Ou+DqDsNCgltc28tbGV2ZWwtdGFiLXN0b3A6bm9uZTsNCgltc28tbGV2
+ZWwtbnVtYmVyLXBvc2l0aW9uOmxlZnQ7DQoJdGV4dC1pbmRlbnQ6LTE4LjBwdDsNCglmb250LWZh
+bWlseTpXaW5nZGluZ3M7DQoJbXNvLWZhcmVhc3QtZm9udC1mYW1pbHk6Q2FsaWJyaTsNCgltc28t
+YmlkaS1mb250LWZhbWlseTpBcmlhbDt9DQpAbGlzdCBsMTpsZXZlbDINCgl7bXNvLWxldmVsLW51
+bWJlci1mb3JtYXQ6YnVsbGV0Ow0KCW1zby1sZXZlbC10ZXh0Om87DQoJbXNvLWxldmVsLXRhYi1z
+dG9wOm5vbmU7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50
+Oi0xOC4wcHQ7DQoJZm9udC1mYW1pbHk6IkNvdXJpZXIgTmV3Ijt9DQpAbGlzdCBsMTpsZXZlbDMN
+Cgl7bXNvLWxldmVsLW51bWJlci1mb3JtYXQ6YnVsbGV0Ow0KCW1zby1sZXZlbC10ZXh0Ou+CpzsN
+Cgltc28tbGV2ZWwtdGFiLXN0b3A6bm9uZTsNCgltc28tbGV2ZWwtbnVtYmVyLXBvc2l0aW9uOmxl
+ZnQ7DQoJdGV4dC1pbmRlbnQ6LTE4LjBwdDsNCglmb250LWZhbWlseTpXaW5nZGluZ3M7fQ0KQGxp
+c3QgbDE6bGV2ZWw0DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2
+ZWwtdGV4dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOm5vbmU7DQoJbXNvLWxldmVsLW51bWJl
+ci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJZm9udC1mYW1pbHk6U3lt
+Ym9sO30NCkBsaXN0IGwxOmxldmVsNQ0KCXttc28tbGV2ZWwtbnVtYmVyLWZvcm1hdDpidWxsZXQ7
+DQoJbXNvLWxldmVsLXRleHQ6bzsNCgltc28tbGV2ZWwtdGFiLXN0b3A6bm9uZTsNCgltc28tbGV2
+ZWwtbnVtYmVyLXBvc2l0aW9uOmxlZnQ7DQoJdGV4dC1pbmRlbnQ6LTE4LjBwdDsNCglmb250LWZh
+bWlseToiQ291cmllciBOZXciO30NCkBsaXN0IGwxOmxldmVsNg0KCXttc28tbGV2ZWwtbnVtYmVy
+LWZvcm1hdDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ674KnOw0KCW1zby1sZXZlbC10YWItc3Rv
+cDpub25lOw0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0ZXh0LWluZGVudDot
+MTguMHB0Ow0KCWZvbnQtZmFtaWx5OldpbmdkaW5nczt9DQpAbGlzdCBsMTpsZXZlbDcNCgl7bXNv
+LWxldmVsLW51bWJlci1mb3JtYXQ6YnVsbGV0Ow0KCW1zby1sZXZlbC10ZXh0Ou+CtzsNCgltc28t
+bGV2ZWwtdGFiLXN0b3A6bm9uZTsNCgltc28tbGV2ZWwtbnVtYmVyLXBvc2l0aW9uOmxlZnQ7DQoJ
+dGV4dC1pbmRlbnQ6LTE4LjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3QgbDE6bGV2
+ZWw4DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDpv
+Ow0KCW1zby1sZXZlbC10YWItc3RvcDpub25lOw0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246
+bGVmdDsNCgl0ZXh0LWluZGVudDotMTguMHB0Ow0KCWZvbnQtZmFtaWx5OiJDb3VyaWVyIE5ldyI7
+fQ0KQGxpc3QgbDE6bGV2ZWw5DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCglt
+c28tbGV2ZWwtdGV4dDrvgqc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOm5vbmU7DQoJbXNvLWxldmVs
+LW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJZm9udC1mYW1p
+bHk6V2luZ2RpbmdzO30NCkBsaXN0IGwyDQoJe21zby1saXN0LWlkOjE1MzUwNzc3Nzc7DQoJbXNv
+LWxpc3QtdGVtcGxhdGUtaWRzOjkyODAyMzQwODt9DQpAbGlzdCBsMjpsZXZlbDENCgl7bXNvLWxl
+dmVsLW51bWJlci1mb3JtYXQ6YnVsbGV0Ow0KCW1zby1sZXZlbC10ZXh0Ou+CtzsNCgltc28tbGV2
+ZWwtdGFiLXN0b3A6MzYuMHB0Ow0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0
+ZXh0LWluZGVudDotMTguMHB0Ow0KCW1zby1hbnNpLWZvbnQtc2l6ZToxMC4wcHQ7DQoJZm9udC1m
+YW1pbHk6U3ltYm9sO30NCkBsaXN0IGwyOmxldmVsMg0KCXttc28tbGV2ZWwtbnVtYmVyLWZvcm1h
+dDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ674K3Ow0KCW1zby1sZXZlbC10YWItc3RvcDo3Mi4w
+cHQ7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4w
+cHQ7DQoJbXNvLWFuc2ktZm9udC1zaXplOjEwLjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0K
+QGxpc3QgbDI6bGV2ZWwzDQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28t
+bGV2ZWwtdGV4dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOjEwOC4wcHQ7DQoJbXNvLWxldmVs
+LW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJbXNvLWFuc2kt
+Zm9udC1zaXplOjEwLjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3QgbDI6bGV2ZWw0
+DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDrvgrc7
+DQoJbXNvLWxldmVsLXRhYi1zdG9wOjE0NC4wcHQ7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlv
+bjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJbXNvLWFuc2ktZm9udC1zaXplOjEwLjBw
+dDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3QgbDI6bGV2ZWw1DQoJe21zby1sZXZlbC1u
+dW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDrvgrc7DQoJbXNvLWxldmVsLXRh
+Yi1zdG9wOjE4MC4wcHQ7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQt
+aW5kZW50Oi0xOC4wcHQ7DQoJbXNvLWFuc2ktZm9udC1zaXplOjEwLjBwdDsNCglmb250LWZhbWls
+eTpTeW1ib2w7fQ0KQGxpc3QgbDI6bGV2ZWw2DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1
+bGxldDsNCgltc28tbGV2ZWwtdGV4dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOjIxNi4wcHQ7
+DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7
+DQoJbXNvLWFuc2ktZm9udC1zaXplOjEwLjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0KQGxp
+c3QgbDI6bGV2ZWw3DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2
+ZWwtdGV4dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOjI1Mi4wcHQ7DQoJbXNvLWxldmVsLW51
+bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJbXNvLWFuc2ktZm9u
+dC1zaXplOjEwLjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3QgbDI6bGV2ZWw4DQoJ
+e21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDrvgrc7DQoJ
+bXNvLWxldmVsLXRhYi1zdG9wOjI4OC4wcHQ7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjps
+ZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJbXNvLWFuc2ktZm9udC1zaXplOjEwLjBwdDsN
+Cglmb250LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3QgbDI6bGV2ZWw5DQoJe21zby1sZXZlbC1udW1i
+ZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1z
+dG9wOjMyNC4wcHQ7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5k
+ZW50Oi0xOC4wcHQ7DQoJbXNvLWFuc2ktZm9udC1zaXplOjEwLjBwdDsNCglmb250LWZhbWlseTpT
+eW1ib2w7fQ0KQGxpc3QgbDMNCgl7bXNvLWxpc3QtaWQ6MTcwNDM1NzczMTsNCgltc28tbGlzdC10
+ZW1wbGF0ZS1pZHM6LTU3OTgyNTc5ODt9DQpAbGlzdCBsMzpsZXZlbDENCgl7bXNvLWxldmVsLW51
+bWJlci1mb3JtYXQ6YnVsbGV0Ow0KCW1zby1sZXZlbC10ZXh0Ou+CtzsNCgltc28tbGV2ZWwtdGFi
+LXN0b3A6MzYuMHB0Ow0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0ZXh0LWlu
+ZGVudDotMTguMHB0Ow0KCW1zby1hbnNpLWZvbnQtc2l6ZToxMC4wcHQ7DQoJZm9udC1mYW1pbHk6
+U3ltYm9sO30NCkBsaXN0IGwzOmxldmVsMg0KCXttc28tbGV2ZWwtbnVtYmVyLWZvcm1hdDpidWxs
+ZXQ7DQoJbXNvLWxldmVsLXRleHQ674K3Ow0KCW1zby1sZXZlbC10YWItc3RvcDo3Mi4wcHQ7DQoJ
+bXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJ
+bXNvLWFuc2ktZm9udC1zaXplOjEwLjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3Qg
+bDM6bGV2ZWwzDQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwt
+dGV4dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOjEwOC4wcHQ7DQoJbXNvLWxldmVsLW51bWJl
+ci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJbXNvLWFuc2ktZm9udC1z
+aXplOjEwLjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3QgbDM6bGV2ZWw0DQoJe21z
+by1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDrvgrc7DQoJbXNv
+LWxldmVsLXRhYi1zdG9wOjE0NC4wcHQ7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0
+Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJbXNvLWFuc2ktZm9udC1zaXplOjEwLjBwdDsNCglm
+b250LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3QgbDM6bGV2ZWw1DQoJe21zby1sZXZlbC1udW1iZXIt
+Zm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1zdG9w
+OjE4MC4wcHQ7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50
+Oi0xOC4wcHQ7DQoJbXNvLWFuc2ktZm9udC1zaXplOjEwLjBwdDsNCglmb250LWZhbWlseTpTeW1i
+b2w7fQ0KQGxpc3QgbDM6bGV2ZWw2DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsN
+Cgltc28tbGV2ZWwtdGV4dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOjIxNi4wcHQ7DQoJbXNv
+LWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJbXNv
+LWFuc2ktZm9udC1zaXplOjEwLjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3QgbDM6
+bGV2ZWw3DQoJe21zby1sZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4
+dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOjI1Mi4wcHQ7DQoJbXNvLWxldmVsLW51bWJlci1w
+b3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJbXNvLWFuc2ktZm9udC1zaXpl
+OjEwLjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3QgbDM6bGV2ZWw4DQoJe21zby1s
+ZXZlbC1udW1iZXItZm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDrvgrc7DQoJbXNvLWxl
+dmVsLXRhYi1zdG9wOjI4OC4wcHQ7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0K
+CXRleHQtaW5kZW50Oi0xOC4wcHQ7DQoJbXNvLWFuc2ktZm9udC1zaXplOjEwLjBwdDsNCglmb250
+LWZhbWlseTpTeW1ib2w7fQ0KQGxpc3QgbDM6bGV2ZWw5DQoJe21zby1sZXZlbC1udW1iZXItZm9y
+bWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1zdG9wOjMy
+NC4wcHQ7DQoJbXNvLWxldmVsLW51bWJlci1wb3NpdGlvbjpsZWZ0Ow0KCXRleHQtaW5kZW50Oi0x
+OC4wcHQ7DQoJbXNvLWFuc2ktZm9udC1zaXplOjEwLjBwdDsNCglmb250LWZhbWlseTpTeW1ib2w7
+fQ0KQGxpc3QgbDQNCgl7bXNvLWxpc3QtaWQ6MTg1NjgzOTkyMDsNCgltc28tbGlzdC10ZW1wbGF0
+ZS1pZHM6LTE2ODE4ODMxNTg7fQ0KQGxpc3QgbDQ6bGV2ZWwxDQoJe21zby1sZXZlbC1udW1iZXIt
+Zm9ybWF0OmJ1bGxldDsNCgltc28tbGV2ZWwtdGV4dDrvgrc7DQoJbXNvLWxldmVsLXRhYi1zdG9w
+OjM2LjBwdDsNCgltc28tbGV2ZWwtbnVtYmVyLXBvc2l0aW9uOmxlZnQ7DQoJdGV4dC1pbmRlbnQ6
+LTE4LjBwdDsNCgltc28tYW5zaS1mb250LXNpemU6MTAuMHB0Ow0KCWZvbnQtZmFtaWx5OlN5bWJv
+bDt9DQpAbGlzdCBsNDpsZXZlbDINCgl7bXNvLWxldmVsLW51bWJlci1mb3JtYXQ6YnVsbGV0Ow0K
+CW1zby1sZXZlbC10ZXh0Ou+CtzsNCgltc28tbGV2ZWwtdGFiLXN0b3A6NzIuMHB0Ow0KCW1zby1s
+ZXZlbC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0ZXh0LWluZGVudDotMTguMHB0Ow0KCW1zby1h
+bnNpLWZvbnQtc2l6ZToxMC4wcHQ7DQoJZm9udC1mYW1pbHk6U3ltYm9sO30NCkBsaXN0IGw0Omxl
+dmVsMw0KCXttc28tbGV2ZWwtbnVtYmVyLWZvcm1hdDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ6
+74K3Ow0KCW1zby1sZXZlbC10YWItc3RvcDoxMDguMHB0Ow0KCW1zby1sZXZlbC1udW1iZXItcG9z
+aXRpb246bGVmdDsNCgl0ZXh0LWluZGVudDotMTguMHB0Ow0KCW1zby1hbnNpLWZvbnQtc2l6ZTox
+MC4wcHQ7DQoJZm9udC1mYW1pbHk6U3ltYm9sO30NCkBsaXN0IGw0OmxldmVsNA0KCXttc28tbGV2
+ZWwtbnVtYmVyLWZvcm1hdDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ674K3Ow0KCW1zby1sZXZl
+bC10YWItc3RvcDoxNDQuMHB0Ow0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0
+ZXh0LWluZGVudDotMTguMHB0Ow0KCW1zby1hbnNpLWZvbnQtc2l6ZToxMC4wcHQ7DQoJZm9udC1m
+YW1pbHk6U3ltYm9sO30NCkBsaXN0IGw0OmxldmVsNQ0KCXttc28tbGV2ZWwtbnVtYmVyLWZvcm1h
+dDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ674K3Ow0KCW1zby1sZXZlbC10YWItc3RvcDoxODAu
+MHB0Ow0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0ZXh0LWluZGVudDotMTgu
+MHB0Ow0KCW1zby1hbnNpLWZvbnQtc2l6ZToxMC4wcHQ7DQoJZm9udC1mYW1pbHk6U3ltYm9sO30N
+CkBsaXN0IGw0OmxldmVsNg0KCXttc28tbGV2ZWwtbnVtYmVyLWZvcm1hdDpidWxsZXQ7DQoJbXNv
+LWxldmVsLXRleHQ674K3Ow0KCW1zby1sZXZlbC10YWItc3RvcDoyMTYuMHB0Ow0KCW1zby1sZXZl
+bC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0ZXh0LWluZGVudDotMTguMHB0Ow0KCW1zby1hbnNp
+LWZvbnQtc2l6ZToxMC4wcHQ7DQoJZm9udC1mYW1pbHk6U3ltYm9sO30NCkBsaXN0IGw0OmxldmVs
+Nw0KCXttc28tbGV2ZWwtbnVtYmVyLWZvcm1hdDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ674K3
+Ow0KCW1zby1sZXZlbC10YWItc3RvcDoyNTIuMHB0Ow0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRp
+b246bGVmdDsNCgl0ZXh0LWluZGVudDotMTguMHB0Ow0KCW1zby1hbnNpLWZvbnQtc2l6ZToxMC4w
+cHQ7DQoJZm9udC1mYW1pbHk6U3ltYm9sO30NCkBsaXN0IGw0OmxldmVsOA0KCXttc28tbGV2ZWwt
+bnVtYmVyLWZvcm1hdDpidWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ674K3Ow0KCW1zby1sZXZlbC10
+YWItc3RvcDoyODguMHB0Ow0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0ZXh0
+LWluZGVudDotMTguMHB0Ow0KCW1zby1hbnNpLWZvbnQtc2l6ZToxMC4wcHQ7DQoJZm9udC1mYW1p
+bHk6U3ltYm9sO30NCkBsaXN0IGw0OmxldmVsOQ0KCXttc28tbGV2ZWwtbnVtYmVyLWZvcm1hdDpi
+dWxsZXQ7DQoJbXNvLWxldmVsLXRleHQ674K3Ow0KCW1zby1sZXZlbC10YWItc3RvcDozMjQuMHB0
+Ow0KCW1zby1sZXZlbC1udW1iZXItcG9zaXRpb246bGVmdDsNCgl0ZXh0LWluZGVudDotMTguMHB0
+Ow0KCW1zby1hbnNpLWZvbnQtc2l6ZToxMC4wcHQ7DQoJZm9udC1mYW1pbHk6U3ltYm9sO30NCm9s
+DQoJe21hcmdpbi1ib3R0b206MGNtO30NCnVsDQoJe21hcmdpbi1ib3R0b206MGNtO30NCi0tPjwv
+c3R5bGU+PCEtLVtpZiBndGUgbXNvIDldPjx4bWw+DQo8bzpzaGFwZWRlZmF1bHRzIHY6ZXh0PSJl
+ZGl0IiBzcGlkbWF4PSIxMDI2IiAvPg0KPC94bWw+PCFbZW5kaWZdLS0+PCEtLVtpZiBndGUgbXNv
+IDldPjx4bWw+DQo8bzpzaGFwZWxheW91dCB2OmV4dD0iZWRpdCI+DQo8bzppZG1hcCB2OmV4dD0i
+ZWRpdCIgZGF0YT0iMSIgLz4NCjwvbzpzaGFwZWxheW91dD48L3htbD48IVtlbmRpZl0tLT4NCjwv
+aGVhZD4NCjxib2R5IGxhbmc9IkVOLVVTIiBsaW5rPSIjMDU2M0MxIiB2bGluaz0iIzk1NEY3MiI+
+DQo8ZGl2IGNsYXNzPSJXb3JkU2VjdGlvbjEiPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+Rm9sbG93
+aW5nIE1hcnRpbmXigJlzIHF1ZXN0aW9ucywgcGxlYXNlIGZpbmQgcHJvcG9zZWQgYWRkaXRpb25z
+IG9yIHVwZGF0ZXMgdG8gdGhlIG1pbmltYWwgZnJhZ21lbnQgZHJhZnQ6PG86cD48L286cD48L3A+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJN
+c29Ob3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+QmVm
+b3JlOjxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZv
+bnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPuKAnDxv
+OnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJm
+b250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij48bzpw
+PiZuYnNwOzwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHls
+ZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90OyI+
+Jm5ic3A7Jm5ic3A7IENvbmNlcHR1YWxseSwgYSByZWFzc2VtYmx5IGJ1ZmZlciBmb3IgNkxvV1BB
+TiBjb250YWluczo8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48
+c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5l
+dyZxdW90OyI+PG86cD4mbmJzcDs8L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1h
+bCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q291cmll
+ciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyBvJm5ic3A7IGEgZGF0YWdyYW1fc2l6ZSw8bzpwPjwv
+bzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1z
+aXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90OyI+Jm5ic3A7Jm5i
+c3A7IG8mbmJzcDsgYSBkYXRhZ3JhbV90YWcsIGFzc29jaWF0ZWQgdG8gdGhlIGxpbmstbGF5ZXIg
+c2VuZGVyIGFuZCByZWNlaXZlcjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29O
+b3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0Nv
+dXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgYWRkcmVzc2Vz
+IHRvIHdoaWNoIHRoZSBkYXRhZ3JhbV90YWcgaXMgbG9jYWwsPG86cD48L286cD48L3NwYW4+PC9w
+Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9u
+dC1mYW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyBvJm5ic3A7IHRo
+ZSBhY3R1YWwgcGFja2V0IGRhdGEgZnJvbSB0aGUgZnJhZ21lbnRzIHJlY2VpdmVkIHNvIGZhciwg
+aW4gYTxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0
+eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7
+Ij4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgZm9ybSB0aGF0IG1ha2VzIGl0IHBvc3Np
+YmxlIHRvIGRldGVjdCB3aGVuIHRoZSB3aG9sZSBwYWNrZXQgaGFzPG86cD48L286cD48L3NwYW4+
+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7
+Zm9udC1mYW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyBiZWVuIHJlY2VpdmVkIGFuZCBjYW4gYmUgcHJvY2Vzc2VkIG9yIGZvcndhcmRl
+ZCw8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHls
+ZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90OyI+
+Jm5ic3A7Jm5ic3A7IG8mbmJzcDsgYSB0aW1lciB0aGF0IGFsbG93cyBkaXNjYXJkaW5nIGEgcGFy
+dGlhbGx5IHJlYXNzZW1ibGVkIHBhY2tldDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNz
+PSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZx
+dW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgYWZ0
+ZXIgc29tZSB0aW1lb3V0LjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3Jt
+YWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+4oCcPG86cD48
+L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5BZnRlcjxvOnA+PC9vOnA+PC9wPg0KPHAg
+Y2xhc3M9Ik1zb05vcm1hbCI+4oCcPG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFs
+Ij48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPlRoZSByZWFzc2Vt
+Ymx5IGJ1ZmZlciBmb3IgNkxvV1BBTiBpcyBpbmRleGVkIGluIG5vZGUgQiBieTxvOnA+PC9vOnA+
+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+LSBhIHVuaXF1ZSBJZGVudGlmaWVyIG9mIE5vZGUg
+QSAoZS5nLiwgTm9kZSBBJ3MgbGluay1sYXllciBhZGRyZXNzKTxvOnA+PC9vOnA+PC9wPg0KPHAg
+Y2xhc3M9Ik1zb05vcm1hbCI+LSB0aGUgZGF0YWdyYW1fdGFnIGNob3NlbiBieSBub2RlIEEgZm9y
+IHRoaXMgZnJhZ21lbnRlZCBkYXRhZ3JhbTxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05v
+cm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5CZWNhdXNl
+IGl0IG1heSBiZSBoYXJkIGZvciBub2RlIEIgdG8gY29ycmVsYXRlIGFsbCBwb3NzaWJsZSBsaW5r
+LWxheWVyIGFkZHJlc3NlcyB0aGF0IG5vZGUgQSBtYXkgdXNlIChlLmcuLCBzaG9ydCB2cy4gbG9u
+ZyBhZGRyZXNzZXMpLCBub2RlIEEgTVVTVCB1c2UgdGhlIHNhbWUgbGluay1sYXllciBhZGRyZXNz
+IHRvIHNlbmQgYWxsIHRoZSBmcmFnbWVudHMgb2YgYSBzYW1lIGRhdGFncmFtIHRvIG5vZGUgQi48
+bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9w
+Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+Q29uY2VwdHVhbGx5LCB0aGUgcmVhc3NlbWJseSBidWZm
+ZXIgaW4gbm9kZSBCIGNvbnRhaW5zLCBhc3N1bWluZyB0aGF0IG5vZGUgQiBpcyBuZWl0aGVyIHRo
+ZSBzb3VyY2Ugb3IgdGhlIGZpbmFsIGRlc3RpbmF0aW9uOjxvOnA+PC9vOnA+PC9wPg0KPHAgY2xh
+c3M9Ik1zb05vcm1hbCI+LSBhIGRhdGFncmFtX3RhZyBhcyByZWNlaXZlZCBpbiB0aGUgaW5jb21p
+bmcgZnJhZ21lbnRzLCBhc3NvY2lhdGVkIHRvIGxpbmstbGF5ZXIgYWRkcmVzcyBvZiBub2RlIEEg
+dG8gd2hpY2ggdGhlIHJlY2VpdmVkIGRhdGFncmFtX3RhZyBpcyBsb2NhbCw8bzpwPjwvbzpwPjwv
+cD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPi0gdGhlIGxpbmstbGF5ZXIgYWRkcmVzcyB0aGF0IG5v
+ZGUgQiB1c2VzIHRvIGZvcndhcmQgdGhlIGZyYWdtZW50czxvOnA+PC9vOnA+PC9wPg0KPHAgY2xh
+c3M9Ik1zb05vcm1hbCI+LSB0aGUgbGluay1sYXllciBhZGRyZXNzIG9mIHRoZSBuZXh0IGhvcCB0
+aGF0IGlzIHJlc29sdmVkIG9uIHRoZSBmaXJzdCBmcmFnbWVudDxvOnA+PC9vOnA+PC9wPg0KPHAg
+Y2xhc3M9Ik1zb05vcm1hbCI+LSBhIGRhdGFncmFtX3RhZyB0aGF0IG5vZGUgQiBhbGxvY2F0ZWQg
+Zm9yIHRoaXMgZGF0YWdyYW0gYW5kIHRoYXQgaXMgdXNlZCB3aGVuIGZvcndhcmRpbmcgdGhlIGZy
+YWdtZW50cyBvZiB0aGUgZGF0YWdyYW08bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3Jt
+YWwiPi0gdGhlIGFjdHVhbCBwYWNrZXQgZGF0YSBmcm9tIHRoZSBmcmFnbWVudHMgcmVjZWl2ZWQg
+c28gZmFyLCBpbiBhIGZvcm0gdGhhdCBtYWtlcyBpdCBwb3NzaWJsZSB0byBkZXRlY3Qgd2hlbiB0
+aGUgd2hvbGUgcGFja2V0IGhhcyBiZWVuIHJlY2VpdmVkIGFuZCBjYW4gYmUgcHJvY2Vzc2VkIG9y
+IGZvcndhcmRlZCw8bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPi0gYSBkYXRh
+Z3JhbV9zaXplLDxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+LSBhIGJ1ZmZl
+ciBmb3IgdGhlIHJlbWFpbmRlciBvZiBhIHByZXZpb3VzIGZyYWdtZW50IGxlZnQgdG8gYmUgc2Vu
+dCw8bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPi0gYSB0aW1lciB0aGF0IGFs
+bG93cyBkaXNjYXJkaW5nIGEgcGFydGlhbGx5IHJlYXNzZW1ibGVkIHBhY2tldCBhZnRlciBzb21l
+IHRpbWVvdXQuPG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj7igJw8bzpwPjwv
+bzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAg
+Y2xhc3M9Ik1zb05vcm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9y
+bWFsIj5BbmQgbGF0ZXI6PG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpw
+PiZuYnNwOzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPkJlZm9yZSA8bzpwPjwvbzpw
+PjwvcD4NCjxwcmU+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OiZxdW90O0NhbGlicmkmcXVvdDss
+c2Fucy1zZXJpZiI+4oCcJm5ic3A7ICZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO0U8L3NwYW4+YWNo
+IGRhdGFncmFtIGNhbiBiZSB1bmlxdWVseSBpZGVudGlmaWVkIGJ5IHRoZSBzb3VyY2UgYW5kIGZp
+bmFsPG86cD48L286cD48L3ByZT4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJm
+b250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4mbmJz
+cDsmbmJzcDsgZGVzdGluYXRpb24gbGluay1sYXllciBhZGRyZXNzZXMgb2YgdGhlIGZyYW1lIHRo
+YXQgY2FycmllcyBpdCwgdGhlPG86cD48L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05v
+cm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q291
+cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyBmcmFnbWVudCBzaXplIGFuZCB0aGUgZGF0YWdy
+YW1fdGFnLiZuYnNwOw0KPG86cD48L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1h
+bCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj7igJw8bzpwPjwv
+bzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPkFmdGVyIDxvOnA+PC9vOnA+PC9wPg0KPHAg
+Y2xhc3M9Ik1zb05vcm1hbCI+4oCcPG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFs
+Ij5FYWNoIGRhdGFncmFtIGNhbiBiZSB1bmlxdWVseSBpZGVudGlmaWVkIGJ5IHRoZSBzZW5kZXIg
+bGluay1sYXllciBhZGRyZXNzZXMgb2YgdGhlIGZyYW1lIHRoYXQgY2FycmllcyBpdCBhbmQgdGhl
+IGRhdGFncmFtX3RhZyB0aGF0IHRoZSBzZW5kZXIgYWxsb2NhdGVkIGZvciB0aGlzIGRhdGFncmFt
+LjxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+4oCcPG86cD48L286cD48L3A+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJN
+c29Ob3JtYWwiPlBsZWFzZSBsZXQgbWUga25vdyBpZiB5b3Ugc2VlIGFuIGlzc3VlIHdpdGggdGhh
+dC4gSSB3aXNoIHRvIHB1Ymxpc2ggc29vbiBhcyB3ZSBlbnRlciB0aGUgSUVTRyByZXZpZXcgZm9y
+IHRoaXMgc3BlYy48bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxvOnA+Jm5i
+c3A7PC9vOnA+PC9wPg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPkFsbCB0aGUgYmVzdCw8
+bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9w
+Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+UGFzY2FsPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjxw
+IGNsYXNzPSJNc29Ob3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPGRpdiBzdHlsZT0iYm9y
+ZGVyOm5vbmU7Ym9yZGVyLWxlZnQ6c29saWQgYmx1ZSAxLjVwdDtwYWRkaW5nOjBjbSAwY20gMGNt
+IDQuMHB0Ij4NCjxkaXY+DQo8ZGl2IHN0eWxlPSJib3JkZXI6bm9uZTtib3JkZXItdG9wOnNvbGlk
+ICNFMUUxRTEgMS4wcHQ7cGFkZGluZzozLjBwdCAwY20gMGNtIDBjbSI+DQo8cCBjbGFzcz0iTXNv
+Tm9ybWFsIj48Yj5Gcm9tOjwvYj4gNmxvICZsdDs2bG8tYm91bmNlc0BpZXRmLm9yZyZndDsgPGI+
+T24gQmVoYWxmIE9mIDwvYj4NClBhc2NhbCBUaHViZXJ0IChwdGh1YmVydCk8YnI+DQo8Yj5TZW50
+OjwvYj4gdmVuZHJlZGkgMzAgYW/Du3QgMjAxOSAxMzo0NDxicj4NCjxiPlRvOjwvYj4gTWFydGlu
+ZSBMZW5kZXJzICZsdDttLmxlbmRlcnNAZnUtYmVybGluLmRlJmd0OzsgNmxvQGlldGYub3JnPGJy
+Pg0KPGI+U3ViamVjdDo8L2I+IFJlOiBbNmxvXSBRdWVzdGlvbiBvbiBkcmFmdC1pZXRmLTZsby1m
+cmFnbWVudC1yZWNvdmVyeSBhbmQgVlJCPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjwvZGl2Pg0K
+PHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNv
+Tm9ybWFsIj5IZWxsbyBNYXJ0aW5lPG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFs
+Ij48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPkdyZWF0IHRvIGhl
+YXIgYWJvdXQgeW91ciBpbXBsZW1lbnRhdGlvbi4gVGhlIGdyb3VwIGlzIGludGVyZXN0ZWQgdG8g
+bGVhcm4gYWJvdXQgeW91ciBwcm9ncmVzcyAoa2VlcCB1cyB0dW5lZCkgYW5kIGhhcHB5IHRvIGhl
+bHAgeW91IHRocm91Z2guIFA8bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPmxl
+YXNlIGRvIG5vdCBoZXNpdGF0ZSB0byBhc2sgZm9yIG1vcmUgY2xhcmlmaWNhdGlvbiBhcyB5b3Ug
+ZmVlbCBuZWVkZWQuIEV2ZW4gaWYgeW914oCZcmUgbm90IHRvbyBzdXJlIHlvdSBzaG91bGQgYXNr
+LCBpZiB5b3Ugd29uZGVyIHRoZXJl4oCZcyBwcm9iYWJseSBhIHJlYXNvbiBhbmQgeW914oCZcmUg
+aGVscGluZyB0aGUgaW1wbGVtZW50b3JzIHdobyB3aWxsIGJlIGZvbGxvd2luZyB5b3UuPG86cD48
+L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxw
+IGNsYXNzPSJNc29Ob3JtYWwiPlBsZWFzZSBzZWUgYmVsb3c6PG86cD48L286cD48L3A+DQo8ZGl2
+IHN0eWxlPSJib3JkZXI6bm9uZTtib3JkZXItbGVmdDpzb2xpZCBibHVlIDEuNXB0O3BhZGRpbmc6
+MGNtIDBjbSAwY20gNC4wcHQiPg0KPGRpdj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48
+bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwi
+IHN0eWxlPSJtYXJnaW4tYm90dG9tOjEyLjBwdCI+SSBoYXZlIGFuIGltcGxlbWVudGF0aW9uIHF1
+ZXN0aW9uIGZvciB0aGUgdmlydHVhbCByZWFzc2VtYmx5IGJ1ZmZlciB3aXRoIHJlZ2FyZHMgdG8g
+W2RyYWZ0LWlldGYtNmxvLWZyYWdtZW50LXJlY292ZXJ5XS4gU2VjdGlvbiA2LjEgb2YgdGhpcyBk
+cmFmdCBzdGF0ZXMgdGhhdCBhIHR1cGxlIChzb3VyY2UgYWRkcmVzcywgdGFnKSBpcyB1c2VkIHRv
+IGlkZW50aWZ5DQogYSBWUkIgZW50cnkgYW5kIGNpdGVzIFtkcmFmdC1pZXRmLTZsby1taW5pbWFs
+LWZyYWdtZW50XSBmb3IgdGhhdC4gPG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTGlzdFBh
+cmFncmFwaCIgc3R5bGU9Im1zby1tYXJnaW4tdG9wLWFsdDowY207bWFyZ2luLXJpZ2h0OjBjbTtt
+YXJnaW4tYm90dG9tOjEyLjBwdDttYXJnaW4tbGVmdDowY207dGV4dC1pbmRlbnQ6MGNtO21zby1s
+aXN0OmwwIGxldmVsMSBsZm8yIj4NCjwhW2lmICFzdXBwb3J0TGlzdHNdPjxzcGFuIHN0eWxlPSJm
+b250LWZhbWlseTpXaW5nZGluZ3MiPjxzcGFuIHN0eWxlPSJtc28tbGlzdDpJZ25vcmUiPsOYPHNw
+YW4gc3R5bGU9ImZvbnQ6Ny4wcHQgJnF1b3Q7VGltZXMgTmV3IFJvbWFuJnF1b3Q7Ij4mbmJzcDsm
+bmJzcDsNCjwvc3Bhbj48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXT5Db3JyZWN0LCBhbmQgdGhlIG1l
+YW5pbmcgaXMgc291cmNlIE1BQyBhZGRyZXNzIG5vdCBzb3VyY2UgSVAgYWRkcmVzcy4gVGhlIGV4
+YWN0IHNlbnRlbmNlIGlzDQo8bzpwPjwvbzpwPjwvcD4NCjxwcmUgc3R5bGU9Im1hcmdpbi1sZWZ0
+OjM2LjBwdDt0ZXh0LWluZGVudDotMTguMHB0O21zby1saXN0OmwwIGxldmVsMSBsZm8yIj48IVtp
+ZiAhc3VwcG9ydExpc3RzXT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6V2luZ2RpbmdzIj48c3Bh
+biBzdHlsZT0ibXNvLWxpc3Q6SWdub3JlIj7DmDxzcGFuIHN0eWxlPSJmb250OjcuMHB0ICZxdW90
+O1RpbWVzIE5ldyBSb21hbiZxdW90OyI+Jm5ic3A7IDwvc3Bhbj48L3NwYW4+PC9zcGFuPjwhW2Vu
+ZGlmXT4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtV
+cG9uIGEgZmlyc3QgZnJhZ21lbnQgKGkuZS4gd2l0aCBhPG86cD48L286cD48L3ByZT4NCjxwcmUg
+c3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBwdDt0ZXh0LWluZGVudDotMTguMHB0O21zby1saXN0Omww
+IGxldmVsMSBsZm8yIj48IVtpZiAhc3VwcG9ydExpc3RzXT48c3BhbiBzdHlsZT0iZm9udC1mYW1p
+bHk6V2luZ2RpbmdzIj48c3BhbiBzdHlsZT0ibXNvLWxpc3Q6SWdub3JlIj7DmDxzcGFuIHN0eWxl
+PSJmb250OjcuMHB0ICZxdW90O1RpbWVzIE5ldyBSb21hbiZxdW90OyI+Jm5ic3A7IDwvc3Bhbj48
+L3NwYW4+PC9zcGFuPjwhW2VuZGlmXT4mbmJzcDsmbmJzcDsmbmJzcDtzZXF1ZW5jZSBvZiB6ZXJv
+KSwgYSBWUkIgYW5kIHRoZSBhc3NvY2lhdGVkIExTUCBzdGF0ZSBhcmUgY3JlYXRlZCBmb3I8bzpw
+PjwvbzpwPjwvcHJlPg0KPHByZSBzdHlsZT0ibWFyZ2luLWxlZnQ6MzYuMHB0O3RleHQtaW5kZW50
+Oi0xOC4wcHQ7bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzIiPjwhW2lmICFzdXBwb3J0TGlzdHNdPjxz
+cGFuIHN0eWxlPSJmb250LWZhbWlseTpXaW5nZGluZ3MiPjxzcGFuIHN0eWxlPSJtc28tbGlzdDpJ
+Z25vcmUiPsOYPHNwYW4gc3R5bGU9ImZvbnQ6Ny4wcHQgJnF1b3Q7VGltZXMgTmV3IFJvbWFuJnF1
+b3Q7Ij4mbmJzcDsgPC9zcGFuPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdPiZuYnNwOyZuYnNwOyZu
+YnNwO3RoZSB0dXBsZSAoPHNwYW4gc3R5bGU9ImJhY2tncm91bmQ6eWVsbG93O21zby1oaWdobGln
+aHQ6eWVsbG93Ij5zb3VyY2UgTUFDIGFkZHJlc3MsIGRhdGFncmFtX3RhZyk8L3NwYW4+IGFuZCB0
+aGUgZnJhZ21lbnQgaXM8bzpwPjwvbzpwPjwvcHJlPg0KPHByZSBzdHlsZT0ibWFyZ2luLWxlZnQ6
+MzYuMHB0O3RleHQtaW5kZW50Oi0xOC4wcHQ7bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzIiPjwhW2lm
+ICFzdXBwb3J0TGlzdHNdPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpXaW5nZGluZ3MiPjxzcGFu
+IHN0eWxlPSJtc28tbGlzdDpJZ25vcmUiPsOYPHNwYW4gc3R5bGU9ImZvbnQ6Ny4wcHQgJnF1b3Q7
+VGltZXMgTmV3IFJvbWFuJnF1b3Q7Ij4mbmJzcDsgPC9zcGFuPjwvc3Bhbj48L3NwYW4+PCFbZW5k
+aWZdPiZuYnNwOyZuYnNwOyZuYnNwO2ZvcndhcmRlZCBhbG9uZyB0aGUgSVB2NiByb3V0ZSB0aGF0
+IG1hdGNoZXMgdGhlIGRlc3RpbmF0aW9uIElQdjY8bzpwPjwvbzpwPjwvcHJlPg0KPHByZSBzdHls
+ZT0ibWFyZ2luLWxlZnQ6MzYuMHB0O3RleHQtaW5kZW50Oi0xOC4wcHQ7bXNvLWxpc3Q6bDAgbGV2
+ZWwxIGxmbzIiPjwhW2lmICFzdXBwb3J0TGlzdHNdPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpX
+aW5nZGluZ3MiPjxzcGFuIHN0eWxlPSJtc28tbGlzdDpJZ25vcmUiPsOYPHNwYW4gc3R5bGU9ImZv
+bnQ6Ny4wcHQgJnF1b3Q7VGltZXMgTmV3IFJvbWFuJnF1b3Q7Ij4mbmJzcDsgPC9zcGFuPjwvc3Bh
+bj48L3NwYW4+PCFbZW5kaWZdPiZuYnNwOyZuYnNwOyZuYnNwO2FkZHJlc3MgaW4gdGhlIElQdjYg
+aGVhZGVyIGFzIHByZXNjcmliZWQgYnk8bzpwPjwvbzpwPjwvcHJlPg0KPHByZSBzdHlsZT0ibWFy
+Z2luLWxlZnQ6MzYuMHB0O3RleHQtaW5kZW50Oi0xOC4wcHQ7bXNvLWxpc3Q6bDAgbGV2ZWwxIGxm
+bzIiPjwhW2lmICFzdXBwb3J0TGlzdHNdPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpXaW5nZGlu
+Z3MiPjxzcGFuIHN0eWxlPSJtc28tbGlzdDpJZ25vcmUiPsOYPHNwYW4gc3R5bGU9ImZvbnQ6Ny4w
+cHQgJnF1b3Q7VGltZXMgTmV3IFJvbWFuJnF1b3Q7Ij4mbmJzcDsgPC9zcGFuPjwvc3Bhbj48L3Nw
+YW4+PCFbZW5kaWZdPiZuYnNwOyZuYnNwOyZuYnNwO1s8YSBocmVmPSJodHRwczovL3Rvb2xzLmll
+dGYub3JnL2h0bWwvZHJhZnQtaWV0Zi02bG8tZnJhZ21lbnQtcmVjb3ZlcnktMDUjcmVmLUktRC5p
+ZXRmLTZsby1taW5pbWFsLWZyYWdtZW50Ij5JLUQuaWV0Zi02bG8tbWluaW1hbC1mcmFnbWVudDwv
+YT5dLiA8bzpwPjwvbzpwPjwvcHJlPg0KPHAgY2xhc3M9Ik1zb0xpc3RQYXJhZ3JhcGgiIHN0eWxl
+PSJtc28tbWFyZ2luLXRvcC1hbHQ6MGNtO21hcmdpbi1yaWdodDowY207bWFyZ2luLWJvdHRvbTox
+Mi4wcHQ7bWFyZ2luLWxlZnQ6NS4yNXB0O3RleHQtaW5kZW50OjBjbTttc28tbGlzdDpsMCBsZXZl
+bDEgbGZvMiI+DQo8IVtpZiAhc3VwcG9ydExpc3RzXT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6
+V2luZ2RpbmdzIj48c3BhbiBzdHlsZT0ibXNvLWxpc3Q6SWdub3JlIj7DmDxzcGFuIHN0eWxlPSJm
+b250OjcuMHB0ICZxdW90O1RpbWVzIE5ldyBSb21hbiZxdW90OyI+Jm5ic3A7DQo8L3NwYW4+PC9z
+cGFuPjwvc3Bhbj48IVtlbmRpZl0+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNv
+Tm9ybWFsIiBzdHlsZT0ibWFyZ2luLWJvdHRvbToxMi4wcHQiPkhvd2V2ZXIsIGFzIGZhciBhcyBJ
+IHVuZGVyc3RhbmQgW2RyYWZ0LWlldGYtNmxvLW1pbmltYWwtZnJhZ21lbnRdIGFuZCBbZHJhZnQt
+aWV0Zi1sd2lnLTZsb3dwYW4tdmlydHVhbC1yZWFzc2VtYmx5XSB0aGlzIGlzIG5vdCB0aGUgY2Fz
+ZS4gW2RyYWZ0LWlldGYtNmxvLW1pbmltYWwtZnJhZ21lbnRdIGRvZXNuJ3QgbWVudGlvbiBWUkIg
+ZW50cnkgaWRlbnRpZmljYXRpb24NCiBhbmQgb25seSByZWZlcnMgdG8gW2RyYWZ0LWlldGYtbHdp
+Zy02bG93cGFuLXZpcnR1YWwtcmVhc3NlbWJseV0uIDxvOnA+PC9vOnA+PC9wPg0KPHVsIHN0eWxl
+PSJtYXJnaW4tdG9wOjBjbSIgdHlwZT0iZGlzYyI+DQo8bGkgY2xhc3M9Ik1zb0xpc3RQYXJhZ3Jh
+cGgiIHN0eWxlPSJtYXJnaW4tYm90dG9tOjEyLjBwdDttYXJnaW4tbGVmdDowY207bXNvLWxpc3Q6
+bDAgbGV2ZWwxIGxmbzIiPg0KSXQgd291bGQgbm90IGh1cnQgdG8gbWVudGlvbiBpdCB0aG91Z2gu
+IEludGVyZXN0aW5nLiBNaW5pbWFsIGhhczrigJ0gQWxsIGZyYWdtZW50cyBhcmUgdGFnZ2VkIHdp
+dGggYSAxNi1iaXQ8bzpwPjwvbzpwPjwvbGk+PC91bD4NCjxwcmU+Jm5ic3A7Jm5ic3A7ICZxdW90
+OyZuYnNwOyAmbmJzcDsmbmJzcDtFYWNoIGRhdGFncmFtIGNhbiBiZSB1bmlxdWVseSBpZGVudGlm
+aWVkIGJ5IHRoZSBzb3VyY2UgYW5kIGZpbmFsPG86cD48L286cD48L3ByZT4NCjxwcmU+Jm5ic3A7
+Jm5ic3A7IGRlc3RpbmF0aW9uIGxpbmstbGF5ZXIgYWRkcmVzc2VzIG9mIHRoZSBmcmFtZSB0aGF0
+IGNhcnJpZXMgaXQsIHRoZTxvOnA+PC9vOnA+PC9wcmU+DQo8cHJlPiZuYnNwOyZuYnNwOyBmcmFn
+bWVudCBzaXplIGFuZCB0aGUgZGF0YWdyYW1fdGFnLiA8bzpwPjwvbzpwPjwvcHJlPg0KPHByZT48
+bzpwPiZuYnNwOzwvbzpwPjwvcHJlPg0KPHAgY2xhc3M9Ik1zb0xpc3RQYXJhZ3JhcGgiIHN0eWxl
+PSJtc28tbWFyZ2luLXRvcC1hbHQ6MGNtO21hcmdpbi1yaWdodDowY207bWFyZ2luLWJvdHRvbTox
+Mi4wcHQ7bWFyZ2luLWxlZnQ6MGNtO3RleHQtaW5kZW50OjBjbTttc28tbGlzdDpsMCBsZXZlbDEg
+bGZvMiI+DQo8IVtpZiAhc3VwcG9ydExpc3RzXT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6V2lu
+Z2RpbmdzIj48c3BhbiBzdHlsZT0ibXNvLWxpc3Q6SWdub3JlIj7DmDxzcGFuIHN0eWxlPSJmb250
+OjcuMHB0ICZxdW90O1RpbWVzIE5ldyBSb21hbiZxdW90OyI+Jm5ic3A7Jm5ic3A7DQo8L3NwYW4+
+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0+VGhhdOKAmXMmbmJzcDsgbWlzbGVhZGluZ+KApiBJ4oCZ
+bGwgY29ycmVjdCBpdC48bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxl
+PSJtYXJnaW4tYm90dG9tOjEyLjBwdCI+VGhhdCBpbiB0dXJuIG9ubHkgcmVjb3VudHMgdGhlIGNs
+YXNzaWMgKHNvdXJjZSZuYnNwO2FkZHJlc3MsIGRlc3RpbmF0aW9uIGFkZHJlc3MsIHNpemUsIHRh
+ZykgdHVwbGUgZGVmaW5lZCBpbiBSRkM0OTQ0DQo8bzpwPjwvbzpwPjwvcD4NCjx1bCBzdHlsZT0i
+bWFyZ2luLXRvcDowY20iIHR5cGU9ImRpc2MiPg0KPGxpIGNsYXNzPSJNc29MaXN0UGFyYWdyYXBo
+IiBzdHlsZT0ibWFyZ2luLWJvdHRvbToxMi4wcHQ7bWFyZ2luLWxlZnQ6MGNtO21zby1saXN0Omww
+IGxldmVsMSBsZm8yIj4NCldoZW4gcmVjZWl2aW5nIGEgZnJhZ21lbnQsIHRoZSBkZXN0aW5hdGlv
+biBpcyBzZWxmIGFuZCB0aGUgc2l6ZSBtYXkgdmFyeSBmcm9tIGEgZGF0YWdyYW0gdG8gdGhlIG5l
+eHQuIFNvIHRoZSBvbmx5IHRoaW5nIHRoYXQgcmVhbGx5IGlkZW50aWZ5IHRoZSBkYXRhZ3JhbSBp
+cyB0aGUgc291cmNlIE1BQyBhbmQgdGhlIHRhZy4NCjxvOnA+PC9vOnA+PC9saT48L3VsPg0KPHAg
+Y2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdpbi1ib3R0b206MTIuMHB0Ij5hbmQgc3RhdGVz
+IHRoYXQgdGhlIG9ubHkgZGlmZmVyZW5jZSBiZXR3ZWVuIHRoZSBjbGFzc2ljIGFuZCBWUkIgaXMg
+dGhlIGxhY2sgb2YgdGhlIHJlYXNzZW1ibGVkIHBhY2tldCBhbmQgYWRkaXRpb24gb2YgdGhlIG5l
+eHQgaG9wJ3MgYWRkcmVzcyBhbmQgdGhlIG5ld2x5IGFzc2lnbmVkIHRhZzo8bzpwPjwvbzpwPjwv
+cD4NCjxwIGNsYXNzPSJNc29MaXN0UGFyYWdyYXBoIiBzdHlsZT0ibXNvLW1hcmdpbi10b3AtYWx0
+OjBjbTttYXJnaW4tcmlnaHQ6MGNtO21hcmdpbi1ib3R0b206MTIuMHB0O21hcmdpbi1sZWZ0OjBj
+bTt0ZXh0LWluZGVudDowY207bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzIiPg0KPCFbaWYgIXN1cHBv
+cnRMaXN0c10+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OldpbmdkaW5ncyI+PHNwYW4gc3R5bGU9
+Im1zby1saXN0Oklnbm9yZSI+w5g8c3BhbiBzdHlsZT0iZm9udDo3LjBwdCAmcXVvdDtUaW1lcyBO
+ZXcgUm9tYW4mcXVvdDsiPiZuYnNwOyZuYnNwOw0KPC9zcGFuPjwvc3Bhbj48L3NwYW4+PCFbZW5k
+aWZdPkFjdHVhbGx5IHRoZSBmb3J3YXJkZXIgc2VuZHMgdGhlIGRhdGFncmFtIHdpdGggc2VsZiBh
+cyBzb3VyY2UgdG8gdGhlIHNvdXJjZSBtYWMgYWRkcmVzcyBpcyBzd2FwcGVkIG5hdHVyYWxseS4g
+SXQgaGFzIHRvIHNldCB0aGUgbmV4dCBob3DigJlzIG1hYyBhZGRyZXNzIGFuZCB0aGUgc3dhcHBl
+ZCBkYXRhZ3JhbSB0YWcuIFRoZSBuZXh0IGhvcOKAmXMgTUFDIGFkZHJlc3MgaWRlbnRpZmllcyB0
+aGUgbm9kZQ0KIHRoYXQgc2hvdWxkIHJlY2VpdmUgdGhlIHBhY2tldCBhbmQgdGhlIGRhdGFncmFt
+IHRhZyB0b2dldGhlciB3aXRoIHRoZSBzb3VyY2UgbWFjIGlkZW50aWZ5IHRoZSByZWFzc2VtYmx5
+IGJ1ZmZlciB3aXRoaW4gdGhlIHJlY2VpdmVyLiBUaGVyZSBpcyBubyBjb250cmFkaWN0aW9uLjxv
+OnA+PC9vOnA+PC9wPg0KPGJsb2NrcXVvdGUgc3R5bGU9ImJvcmRlcjpub25lO2JvcmRlci1sZWZ0
+OnNvbGlkICNDQ0NDQ0MgMS4wcHQ7cGFkZGluZzowY20gMGNtIDBjbSA2LjBwdDttYXJnaW4tbGVm
+dDo0LjhwdDttYXJnaW4tdG9wOjUuMHB0O21hcmdpbi1yaWdodDowY207bWFyZ2luLWJvdHRvbTo1
+LjBwdCI+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5UbyByZWR1Y2UgdGhlIG1lbW9yeSByZXF1aXJl
+bWVudCBmb3IgcmVhc3NlbWJseSBidWZmZXJzLCB0aGUgaW1wbGVtZW50YXRpb24gbWF5IG9wdCB0
+byBub3Qga2VlcCB0aGUgYWN0dWFsIHBhY2tldCBkYXRhIGluIHRoZSByZWFzc2VtYmx5IGJ1ZmZl
+ci4gSW5zdGVhZCwgaXQgbWF5IGF0dGVtcHQgdG8gc2VuZCBvdXQgdGhlIGRhdGEgZm9yIGEgZnJh
+Z21lbnQgaW4gdGhlIGZvcm0gb2YgYSBmb3J3YXJkZWQgZnJhZ21lbnQsDQogYXMgc29vbiBhcyBh
+bGwgbmVjZXNzYXJ5IGluZm9ybWF0aW9uIGZvciB0aGF0IGlzIGF2YWlsYWJsZS4gT2J2aW91c2x5
+LCBhbGwgZnJhZ21lbnRzIG5lZWQgdG8gYmUgc2VudCB3aXRoIHRoZSBzYW1lIG91dGdvaW5nIGFk
+ZHJlc3MgKG90aGVyd2lzZSBhIGZ1bGwgcmVhc3NlbWJseSBpbXBsZW1lbnRhdGlvbiB3b3VsZCBk
+aXNjYXJkIHRoZSBmcmFnbWVudHMpIGFuZCB0aGUgc2FtZSBkYXRhZ3JhbV90YWcuPG86cD48L286
+cD48L3A+DQo8L2Jsb2NrcXVvdGU+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86cD4m
+bmJzcDs8L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5TbyBt
+eSBxdWVzdGlvbiBpczogSXMgdGhlIHR1cGxlIGRlZmluaXRpb24gaW4gW2RyYWZ0LWlldGYtNmxv
+LWZyYWdtZW50LXJlY292ZXJ5XSByZWFsbHkgY29ycmVjdD88bzpwPjwvbzpwPjwvcD4NCjxwIGNs
+YXNzPSJNc29Ob3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHVsIHN0eWxlPSJtYXJnaW4t
+dG9wOjBjbSIgdHlwZT0iZGlzYyI+DQo8bGkgY2xhc3M9Ik1zb0xpc3RQYXJhZ3JhcGgiIHN0eWxl
+PSJtYXJnaW4tbGVmdDowY207bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzIiPkl0IGlzLjxvOnA+PC9v
+OnA+PC9saT48L3VsPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5Gb3IgZXhjbHVzaW9uIGRhdGFncmFtIHNpemUgSSBhZ3Jl
+ZSB0aGF0IGl0IGNvdWxkIGJlIHNvbWV3aGF0IHJlZHVuZGFudC4gSG93ZXZlciwgYSBub2RlIGNv
+dWxkIGhhdmUgbXVsdGlwbGUgZGVzdGluYXRpb24gYWRkcmVzc2VzIChlaXRoZXIgdmlhIG11bHRp
+cGxlIGludGVyZmFjZXMgb3IgSUVFRS04MDIuMTUuNC1zdHlsZSBzaG9ydCBhbmQgbG9uZyBhZGRy
+ZXNzKS4gU28sIGFzIHRoZSB0YWcgaXMgbGluay1zcGVjaWZpYw0KIChkZWZpbmVkIGJ5IGEgKHNv
+dXJjZSwgZGVzdGluYXRpb24pIHR1cGxlKSwgdGhlcmUgY291bGQgYmUgZGlzdGluY3QgZGF0YWdy
+YW1zIHRoYXQgaGF2ZSB0aGUgc2FtZSB0dXBsZSAoc291cmNlLCB0YWcpLCBvciBhbSBJIG1pc3Np
+bmcgc29tZXRoaW5nPzxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86cD4m
+bmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTGlzdFBhcmFncmFwaCIgc3R5bGU9Im1hcmdp
+bi1sZWZ0OjBjbTt0ZXh0LWluZGVudDowY207bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzIiPg0KPCFb
+aWYgIXN1cHBvcnRMaXN0c10+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OldpbmdkaW5ncyI+PHNw
+YW4gc3R5bGU9Im1zby1saXN0Oklnbm9yZSI+w5g8c3BhbiBzdHlsZT0iZm9udDo3LjBwdCAmcXVv
+dDtUaW1lcyBOZXcgUm9tYW4mcXVvdDsiPiZuYnNwOyZuYnNwOw0KPC9zcGFuPjwvc3Bhbj48L3Nw
+YW4+PCFbZW5kaWZdPlllcywgdGhlIHJvbGUgb2YgdGhlIGRlc3RpbmF0aW9uIE1BQyBhZGRyZXNz
+IGlzIHRvIHJlYWNoIHRoZSBuZXh0IGhvcCwgYnV0IGRvZXMgbm90IGNoYW5nZSB0aGUgcHJvY2Vz
+c2luZyB3aXRoaW4gdGhhdCBub2RlLiBJIGNvdWxkIGNoYW5nZSB0aGUgTDIgYWRkcmVzcyBJIHVz
+ZSB0byByZWZlciB0byB0aGUgbmV4dCBob3AgaW4gdGhlIG1pZGRsZSBvZiBhIGZyYWdtZW50ZWQg
+cGFja2V0LCBpdA0KIGlzIHN0aWxsIHRoZSBzYW1lIGZyYWdtZW50ZWQgcGFja2V0LiBJbiBvdGhl
+ciB3b3JkcywgcGxlYXNlIGRvIG5vdCB1c2UgdGhlIGRtYWMgYXMgdG8gaW5kZXggdGhlIFZSQi4g
+RnJvbSB5b3VyIHF1ZXN0aW9uIEkgdGhpbmsgdGhlIExXSUcgZHJhZnQgc2hvdWxkIGNsYXJpZnks
+IGFuZCB3ZSBjYW4gY2hhbmdlIG1pbmltYWwgZHJhZnQgdG8gY2xhcmlmeSBhcyB3ZWxsLjxvOnA+
+PC9vOnA+PC9wPg0KPC9kaXY+DQo8L2Rpdj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48
+bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwi
+PkkgYWxyZWFkeSBpbXBsZW1lbnRlZCB0aGUgVlJCIHdpdGggZHJhZnQtaWV0Zi02bG8tbWluaW1h
+bC1mcmFnbWVudCBpbiBtaW5kIGFuZCB0aHVzIHVzZWQgdGhlIGNsYXNzaWMgNC10dXBsZSBmb3Ig
+aW5kZXhpbmcuIEJ1dCBub3cgSSdtIHdvbmRlcmluZzogQ2FuIEkgcmVkdWNlIGl0cyBpbmRleCBv
+ciB3b3VsZCB0aGF0IGJlIG5vdCBhZHZpc2VkPzxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1z
+b05vcm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTGlzdFBhcmFncmFw
+aCIgc3R5bGU9Im1hcmdpbi1sZWZ0OjBjbTt0ZXh0LWluZGVudDowY207bXNvLWxpc3Q6bDAgbGV2
+ZWwxIGxmbzIiPg0KPCFbaWYgIXN1cHBvcnRMaXN0c10+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5
+OldpbmdkaW5ncyI+PHNwYW4gc3R5bGU9Im1zby1saXN0Oklnbm9yZSI+w5g8c3BhbiBzdHlsZT0i
+Zm9udDo3LjBwdCAmcXVvdDtUaW1lcyBOZXcgUm9tYW4mcXVvdDsiPiZuYnNwOyZuYnNwOw0KPC9z
+cGFuPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdPllvdSBzaG91bGQgcmVkdWNlIHRoZSBpbmRleCA6
+ICkgVGhlcmUgY2FuIG5vdCBiZSAyIGRpZmZlcmVudCBkYXRhZ3JhbXMgY29taW5nIGluIHBhcmFs
+bGVsIGZyb20gYSBzYW1lIHByZXZpb3VzIGhvcCBhbmQgd2l0aCBhIHNhbWUgZGF0YWdyYW0gdGFn
+LiBUaGVyZSBtdXN0IGJlIGEgc2VudGVuY2Ugc29tZXdoZXJlIGluIHRoZSBMV0lHIGRyYWZ0IHRo
+YXQgc2F5cyB0aGF0IGEgbmV3IGFuZCBjdXJyZW50bHkNCiB1bnVzZWQgZGF0YWdyYW0gdGFnIGlz
+IGNob3NlbiBmb3IgYSBuZXcgaW5jb21pbmcgZGF0YWdyYW0sIGNvcnJlY3Q/ICZuYnNwO01pbmlt
+YWwgc2F5czxvOnA+PC9vOnA+PC9wPg0KPHByZSBzdHlsZT0ibWFyZ2luLWxlZnQ6MzYuMHB0O3Rl
+eHQtaW5kZW50Oi0xOC4wcHQ7bXNvLWxpc3Q6bDAgbGV2ZWwxIGxmbzIiPjwhW2lmICFzdXBwb3J0
+TGlzdHNdPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpXaW5nZGluZ3MiPjxzcGFuIHN0eWxlPSJt
+c28tbGlzdDpJZ25vcmUiPsOYPHNwYW4gc3R5bGU9ImZvbnQ6Ny4wcHQgJnF1b3Q7VGltZXMgTmV3
+IFJvbWFuJnF1b3Q7Ij4mbmJzcDsgPC9zcGFuPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdPiZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO1Vwb248bzpwPjwvbzpwPjwvcHJlPg0KPHByZSBzdHls
+ZT0ibWFyZ2luLWxlZnQ6MzYuMHB0O3RleHQtaW5kZW50Oi0xOC4wcHQ7bXNvLWxpc3Q6bDAgbGV2
+ZWwxIGxmbzIiPjwhW2lmICFzdXBwb3J0TGlzdHNdPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpX
+aW5nZGluZ3MiPjxzcGFuIHN0eWxlPSJtc28tbGlzdDpJZ25vcmUiPsOYPHNwYW4gc3R5bGU9ImZv
+bnQ6Ny4wcHQgJnF1b3Q7VGltZXMgTmV3IFJvbWFuJnF1b3Q7Ij4mbmJzcDsgPC9zcGFuPjwvc3Bh
+bj48L3NwYW4+PCFbZW5kaWZdPiZuYnNwOyZuYnNwOyZuYnNwO3JlY2VpdmluZyBhIGZyYWdtZW50
+IGZyb20gbm9kZSBBIHdpdGggYSBkYXRhZ3JhbV90YWcgcHJldmlvdXNseTxvOnA+PC9vOnA+PC9w
+cmU+DQo8cHJlIHN0eWxlPSJtYXJnaW4tbGVmdDozNi4wcHQ7dGV4dC1pbmRlbnQ6LTE4LjBwdDtt
+c28tbGlzdDpsMCBsZXZlbDEgbGZvMiI+PCFbaWYgIXN1cHBvcnRMaXN0c10+PHNwYW4gc3R5bGU9
+ImZvbnQtZmFtaWx5OldpbmdkaW5ncyI+PHNwYW4gc3R5bGU9Im1zby1saXN0Oklnbm9yZSI+w5g8
+c3BhbiBzdHlsZT0iZm9udDo3LjBwdCAmcXVvdDtUaW1lcyBOZXcgUm9tYW4mcXVvdDsiPiZuYnNw
+OyA8L3NwYW4+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0+Jm5ic3A7Jm5ic3A7Jm5ic3A7dW5zZWVu
+IGZyb20gbm9kZSBBLCBub2RlIEIgYWxsb2NhdGVzIGEgYnVmZmVyIGxhcmdlIGVub3VnaCB0byBo
+b2xkPG86cD48L286cD48L3ByZT4NCjxwcmUgc3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBwdDt0ZXh0
+LWluZGVudDotMTguMHB0O21zby1saXN0OmwwIGxldmVsMSBsZm8yIj48IVtpZiAhc3VwcG9ydExp
+c3RzXT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6V2luZ2RpbmdzIj48c3BhbiBzdHlsZT0ibXNv
+LWxpc3Q6SWdub3JlIj7DmDxzcGFuIHN0eWxlPSJmb250OjcuMHB0ICZxdW90O1RpbWVzIE5ldyBS
+b21hbiZxdW90OyI+Jm5ic3A7IDwvc3Bhbj48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXT4mbmJzcDsm
+bmJzcDsmbmJzcDt0aGUgZW50aXJlIHBhY2tldC4mbmJzcDsgPG86cD48L286cD48L3ByZT4NCjxw
+cmUgc3R5bGU9Im1hcmdpbi1sZWZ0OjM2LjBwdCI+PG86cD4mbmJzcDs8L286cD48L3ByZT4NCjxw
+IGNsYXNzPSJNc29MaXN0UGFyYWdyYXBoIiBzdHlsZT0ibWFyZ2luLWxlZnQ6MGNtO3RleHQtaW5k
+ZW50OjBjbTttc28tbGlzdDpsMCBsZXZlbDEgbGZvMiI+DQo8IVtpZiAhc3VwcG9ydExpc3RzXT48
+c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6V2luZ2RpbmdzIj48c3BhbiBzdHlsZT0ibXNvLWxpc3Q6
+SWdub3JlIj7DmDxzcGFuIHN0eWxlPSJmb250OjcuMHB0ICZxdW90O1RpbWVzIE5ldyBSb21hbiZx
+dW90OyI+Jm5ic3A7Jm5ic3A7DQo8L3NwYW4+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0+VGhpcyB0
+ZXh0IG9ubHkgaW5kZXhlcyB0aGUgVlJCIHdpdGggYW55IGlkZW50aWZpZXIgb2Ygbm9kZSBBIGFu
+ZCB0aGUgdGFn4oCmIEFuZCB0aGlzIGlzIGNvcnJlY3QuIFdoYXTigJlzIGEgYml0IG1vcmUgdWds
+eSBpcyB0aGF0IE5vZGUgQSBzaG91bGQgbm90IGNoYW5nZSB0aGUgc291cmNlIE1BQyBpbiBiZXR3
+ZWVuIGZyYWdtZW50cyBiZWNhdXNlIHRoYXQgd2lsbCBjb25maXNlIG5vZGUgQi4gSSBuZWVkDQog
+dG8gYWRkIHRleHQgb24gdGhhdCB0b28uPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8
+cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29O
+b3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+TWFueSB0
+aGFua3MgTWFydGluZSBmb3IgcmFpc2luZyBhbGwgdGhpcywgYW5kIGFsbCB0aGUgYmVzdCBmb3Ig
+eW91ciBpbXBsZW1lbnRhdGlvbi48bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwi
+PjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+UGFzY2FsPG86cD48
+L286cD48L3A+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9ib2R5
+Pg0KPC9odG1sPg0K
+
+--_000_MN2PR11MB35650CA7B31C2BC23B0418B2D8BD0MN2PR11MB3565namp_--
+
+
+From nobody Fri Aug 30 05:48:38 2019
+Return-Path: <m.lenders@fu-berlin.de>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 67D3D120086 for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 05:48:36 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.198
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.198 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id mUwT1dVA7JS9 for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 05:48:33 -0700 (PDT)
+Received: from outpost1.zedat.fu-berlin.de (outpost1.zedat.fu-berlin.de [130.133.4.66]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 49B31120B6D for <6lo@ietf.org>; Fri, 30 Aug 2019 05:48:33 -0700 (PDT)
+Received: from inpost2.zedat.fu-berlin.de ([130.133.4.69]) by outpost.zedat.fu-berlin.de (Exim 4.85) for 6lo@ietf.org with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (envelope-from <m.lenders@fu-berlin.de>) id <1i3gKN-002dOj-Ay>; Fri, 30 Aug 2019 14:48:31 +0200
+Received: from mail-oi1-f182.google.com ([209.85.167.182]) by inpost2.zedat.fu-berlin.de (Exim 4.85) for 6lo@ietf.org with esmtpsa (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (envelope-from <m.lenders@fu-berlin.de>) id <1i3gKM-002nbE-PE>; Fri, 30 Aug 2019 14:48:31 +0200
+Received: by mail-oi1-f182.google.com with SMTP id a127so5250340oii.2 for <6lo@ietf.org>; Fri, 30 Aug 2019 05:48:30 -0700 (PDT)
+X-Gm-Message-State: APjAAAW1Mlx4ovFTMaj0VGFFXyfVAe4Y/ZwSgduNg8SopJZzbJVnrsaH ItfH9uVwrLFMBe50GYQ6LTXCcBsZB2oKOdu+CmM=
+X-Google-Smtp-Source: APXvYqz/ndBH7FO0W6xuiUgj7QfF4jyw+ACaXNIcIFwNktEJ+VyIKyfgfI46SHLIIa/s4yizc9KyXgdcei6wYUm5QVQ=
+X-Received: by 2002:aca:2313:: with SMTP id e19mr10116491oie.2.1567169309579;  Fri, 30 Aug 2019 05:48:29 -0700 (PDT)
+MIME-Version: 1.0
+References: <CALHmdRxLUXy9g94iYn+7Ujmr+0bmBR0Oo3psbHcZOauT08rOHg@mail.gmail.com> <MN2PR11MB35658D8325E730B3FD593019D8BD0@MN2PR11MB3565.namprd11.prod.outlook.com>
+In-Reply-To: <MN2PR11MB35658D8325E730B3FD593019D8BD0@MN2PR11MB3565.namprd11.prod.outlook.com>
+From: Martine Lenders <m.lenders@fu-berlin.de>
+Date: Fri, 30 Aug 2019 14:47:53 +0200
+X-Gmail-Original-Message-ID: <CALHmdRwnK2jjs7vUfpk-b=teW9TyFds_n2SwBN_-VNn2s+ovUw@mail.gmail.com>
+Message-ID: <CALHmdRwnK2jjs7vUfpk-b=teW9TyFds_n2SwBN_-VNn2s+ovUw@mail.gmail.com>
+To: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+Cc: "6lo@ietf.org" <6lo@ietf.org>
+Content-Type: multipart/alternative; boundary="0000000000000020740591550a1c"
+X-Originating-IP: 209.85.167.182
+X-ZEDAT-Hint: A
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/gdeZakcGa9Dlv9D643eWwSsRBwM>
+Subject: Re: [6lo] Question on draft-ietf-6lo-fragment-recovery and VRB
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 30 Aug 2019 12:48:36 -0000
+
+--0000000000000020740591550a1c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Thanks for your quick response!
+
+Cheers,
+Martine
+
+Am Fr., 30. Aug. 2019 um 13:44 Uhr schrieb Pascal Thubert (pthubert) <
+pthubert@cisco.com>:
+
+> Hello Martine
+>
+>
+>
+> Great to hear about your implementation. The group is interested to learn
+> about your progress (keep us tuned) and happy to help you through. P
+>
+> lease do not hesitate to ask for more clarification as you feel needed.
+> Even if you=E2=80=99re not too sure you should ask, if you wonder there=
+=E2=80=99s probably
+> a reason and you=E2=80=99re helping the implementors who will be followin=
+g you.
+>
+>
+>
+> Please see below:
+>
+>
+>
+> I have an implementation question for the virtual reassembly buffer with
+> regards to [draft-ietf-6lo-fragment-recovery]. Section 6.1 of this draft
+> states that a tuple (source address, tag) is used to identify a VRB entry
+> and cites [draft-ietf-6lo-minimal-fragment] for that.
+>
+> =C3=98    Correct, and the meaning is source MAC address not source IP
+> address. The exact sentence is
+>
+> =C3=98                                       Upon a first fragment (i.e. =
+with a
+>
+> =C3=98     sequence of zero), a VRB and the associated LSP state are crea=
+ted for
+>
+> =C3=98     the tuple (source MAC address, datagram_tag) and the fragment =
+is
+>
+> =C3=98     forwarded along the IPv6 route that matches the destination IP=
+v6
+>
+> =C3=98     address in the IPv6 header as prescribed by
+>
+> =C3=98     [I-D.ietf-6lo-minimal-fragment <https://tools.ietf.org/html/dr=
+aft-ietf-6lo-fragment-recovery-05#ref-I-D.ietf-6lo-minimal-fragment>].
+>
+> =C3=98
+>
+> However, as far as I understand [draft-ietf-6lo-minimal-fragment] and
+> [draft-ietf-lwig-6lowpan-virtual-reassembly] this is not the case.
+> [draft-ietf-6lo-minimal-fragment] doesn't mention VRB entry identificatio=
+n
+> and only refers to [draft-ietf-lwig-6lowpan-virtual-reassembly].
+>
+>    - It would not hurt to mention it though. Interesting. Minimal has:=E2=
+=80=9D
+>    All fragments are tagged with a 16-bit
+>
+>    "    Each datagram can be uniquely identified by the source and final
+>
+>    destination link-layer addresses of the frame that carries it, the
+>
+>    fragment size and the datagram_tag.
+>
+>
+>
+> =C3=98    That=E2=80=99s  misleading=E2=80=A6 I=E2=80=99ll correct it.
+>
+> That in turn only recounts the classic (source address, destination
+> address, size, tag) tuple defined in RFC4944
+>
+>    - When receiving a fragment, the destination is self and the size may
+>    vary from a datagram to the next. So the only thing that really identi=
+fy
+>    the datagram is the source MAC and the tag.
+>
+> and states that the only difference between the classic and VRB is the
+> lack of the reassembled packet and addition of the next hop's address and
+> the newly assigned tag:
+>
+> =C3=98    Actually the forwarder sends the datagram with self as source t=
+o the
+> source mac address is swapped naturally. It has to set the next hop=E2=80=
+=99s mac
+> address and the swapped datagram tag. The next hop=E2=80=99s MAC address =
+identifies
+> the node that should receive the packet and the datagram tag together wit=
+h
+> the source mac identify the reassembly buffer within the receiver. There =
+is
+> no contradiction.
+>
+> To reduce the memory requirement for reassembly buffers, the
+> implementation may opt to not keep the actual packet data in the reassemb=
+ly
+> buffer. Instead, it may attempt to send out the data for a fragment in th=
+e
+> form of a forwarded fragment, as soon as all necessary information for th=
+at
+> is available. Obviously, all fragments need to be sent with the same
+> outgoing address (otherwise a full reassembly implementation would discar=
+d
+> the fragments) and the same datagram_tag.
+>
+>
+>
+> So my question is: Is the tuple definition in
+> [draft-ietf-6lo-fragment-recovery] really correct?
+>
+>
+>
+>    - It is.
+>
+>
+>
+> For exclusion datagram size I agree that it could be somewhat redundant.
+> However, a node could have multiple destination addresses (either via
+> multiple interfaces or IEEE-802.15.4-style short and long address). So, a=
+s
+> the tag is link-specific (defined by a (source, destination) tuple), ther=
+e
+> could be distinct datagrams that have the same tuple (source, tag), or am=
+ I
+> missing something?
+>
+>
+>
+> =C3=98    Yes, the role of the destination MAC address is to reach the ne=
+xt
+> hop, but does not change the processing within that node. I could change
+> the L2 address I use to refer to the next hop in the middle of a fragment=
+ed
+> packet, it is still the same fragmented packet. In other words, please do
+> not use the dmac as to index the VRB. From your question I think the LWIG
+> draft should clarify, and we can change minimal draft to clarify as well.
+>
+>
+>
+> I already implemented the VRB with draft-ietf-6lo-minimal-fragment in min=
+d
+> and thus used the classic 4-tuple for indexing. But now I'm wondering: Ca=
+n
+> I reduce its index or would that be not advised?
+>
+>
+>
+> =C3=98    You should reduce the index : ) There can not be 2 different
+> datagrams coming in parallel from a same previous hop and with a same
+> datagram tag. There must be a sentence somewhere in the LWIG draft that
+> says that a new and currently unused datagram tag is chosen for a new
+> incoming datagram, correct?  Minimal says
+>
+> =C3=98                                                                Upo=
+n
+>
+> =C3=98     receiving a fragment from node A with a datagram_tag previousl=
+y
+>
+> =C3=98     unseen from node A, node B allocates a buffer large enough to =
+hold
+>
+> =C3=98     the entire packet.
+>
+>
+>
+> =C3=98    This text only indexes the VRB with any identifier of node A an=
+d the
+> tag=E2=80=A6 And this is correct. What=E2=80=99s a bit more ugly is that =
+Node A should not
+> change the source MAC in between fragments because that will confise node
+> B. I need to add text on that too.
+>
+>
+>
+>
+>
+> Many thanks Martine for raising all this, and all the best for your
+> implementation.
+>
+>
+>
+> Pascal
+>
+
+--0000000000000020740591550a1c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Thanks for your quick response!<div><br></div><div>Cheers,=
+</div><div>Martine</div></div><br><div class=3D"gmail_quote"><div dir=3D"lt=
+r" class=3D"gmail_attr">Am Fr., 30. Aug. 2019 um 13:44=C2=A0Uhr schrieb Pas=
+cal Thubert (pthubert) &lt;<a href=3D"mailto:pthubert@cisco.com">pthubert@c=
+isco.com</a>&gt;:<br></div><blockquote class=3D"gmail_quote" style=3D"margi=
+n:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex=
+">
+
+
+
+
+
+<div lang=3D"EN-US">
+<div class=3D"gmail-m_8107676898440476173WordSection1">
+<p class=3D"MsoNormal">Hello Martine<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">Great to hear about your implementation. The group i=
+s interested to learn about your progress (keep us tuned) and happy to help=
+ you through. P<u></u><u></u></p>
+<p class=3D"MsoNormal">lease do not hesitate to ask for more clarification =
+as you feel needed. Even if you=E2=80=99re not too sure you should ask, if =
+you wonder there=E2=80=99s probably a reason and you=E2=80=99re helping the=
+ implementors who will be following you.<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">Please see below:<u></u><u></u></p>
+<div style=3D"border-top:none;border-right:none;border-bottom:none;border-l=
+eft:1.5pt solid blue;padding:0cm 0cm 0cm 4pt">
+<div>
+<div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12pt">I have an implementatio=
+n question for the virtual reassembly buffer with regards to [draft-ietf-6l=
+o-fragment-recovery]. Section 6.1 of this draft states that a tuple (source=
+ address, tag) is used to identify
+ a VRB entry and cites [draft-ietf-6lo-minimal-fragment] for that. <u></u><=
+u></u></p>
+<p class=3D"gmail-m_8107676898440476173MsoListParagraph" style=3D"margin-ri=
+ght:0cm;margin-bottom:12pt;margin-left:0cm;text-indent:0cm">
+<u></u><span style=3D"font-family:Wingdings"><span>=C3=98<span style=3D"fon=
+t:7pt &quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=A0
+</span></span></span><u></u>Correct, and the meaning is source MAC address =
+not source IP address. The exact sentence is
+<u></u><u></u></p>
+<pre style=3D"margin-left:36pt"><u></u><span style=3D"font-family:Wingdings=
+"><span>=C3=98<span style=3D"font:7pt &quot;Times New Roman&quot;">=C2=A0 <=
+/span></span></span><u></u>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0Upon a first fragment (i.e. with a<u></u><u></u></p=
+re>
+<pre style=3D"margin-left:36pt"><u></u><span style=3D"font-family:Wingdings=
+"><span>=C3=98<span style=3D"font:7pt &quot;Times New Roman&quot;">=C2=A0 <=
+/span></span></span><u></u>=C2=A0=C2=A0=C2=A0sequence of zero), a VRB and t=
+he associated LSP state are created for<u></u><u></u></pre>
+<pre style=3D"margin-left:36pt"><u></u><span style=3D"font-family:Wingdings=
+"><span>=C3=98<span style=3D"font:7pt &quot;Times New Roman&quot;">=C2=A0 <=
+/span></span></span><u></u>=C2=A0=C2=A0=C2=A0the tuple (<span style=3D"back=
+ground:yellow">source MAC address, datagram_tag)</span> and the fragment is=
+<u></u><u></u></pre>
+<pre style=3D"margin-left:36pt"><u></u><span style=3D"font-family:Wingdings=
+"><span>=C3=98<span style=3D"font:7pt &quot;Times New Roman&quot;">=C2=A0 <=
+/span></span></span><u></u>=C2=A0=C2=A0=C2=A0forwarded along the IPv6 route=
+ that matches the destination IPv6<u></u><u></u></pre>
+<pre style=3D"margin-left:36pt"><u></u><span style=3D"font-family:Wingdings=
+"><span>=C3=98<span style=3D"font:7pt &quot;Times New Roman&quot;">=C2=A0 <=
+/span></span></span><u></u>=C2=A0=C2=A0=C2=A0address in the IPv6 header as =
+prescribed by<u></u><u></u></pre>
+<pre style=3D"margin-left:36pt"><u></u><span style=3D"font-family:Wingdings=
+"><span>=C3=98<span style=3D"font:7pt &quot;Times New Roman&quot;">=C2=A0 <=
+/span></span></span><u></u>=C2=A0=C2=A0=C2=A0[<a href=3D"https://tools.ietf=
+.org/html/draft-ietf-6lo-fragment-recovery-05#ref-I-D.ietf-6lo-minimal-frag=
+ment" target=3D"_blank">I-D.ietf-6lo-minimal-fragment</a>]. <u></u><u></u><=
+/pre>
+<p class=3D"gmail-m_8107676898440476173MsoListParagraph" style=3D"margin-ri=
+ght:0cm;margin-bottom:12pt;margin-left:5.25pt;text-indent:0cm">
+<u></u><span style=3D"font-family:Wingdings"><span>=C3=98<span style=3D"fon=
+t:7pt &quot;Times New Roman&quot;">=C2=A0=C2=A0
+</span></span></span><u></u><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12pt">However, as far as I un=
+derstand [draft-ietf-6lo-minimal-fragment] and [draft-ietf-lwig-6lowpan-vir=
+tual-reassembly] this is not the case. [draft-ietf-6lo-minimal-fragment] do=
+esn&#39;t mention VRB entry identification
+ and only refers to [draft-ietf-lwig-6lowpan-virtual-reassembly]. <u></u><u=
+></u></p>
+<ul style=3D"margin-top:0cm" type=3D"disc">
+<li class=3D"gmail-m_8107676898440476173MsoListParagraph" style=3D"margin-b=
+ottom:12pt;margin-left:0cm">
+It would not hurt to mention it though. Interesting. Minimal has:=E2=80=9D =
+All fragments are tagged with a 16-bit<u></u><u></u></li></ul>
+<pre>=C2=A0=C2=A0 &quot;=C2=A0 =C2=A0=C2=A0Each datagram can be uniquely id=
+entified by the source and final<u></u><u></u></pre>
+<pre>=C2=A0=C2=A0 destination link-layer addresses of the frame that carrie=
+s it, the<u></u><u></u></pre>
+<pre>=C2=A0=C2=A0 fragment size and the datagram_tag. <u></u><u></u></pre>
+<pre><u></u>=C2=A0<u></u></pre>
+<p class=3D"gmail-m_8107676898440476173MsoListParagraph" style=3D"margin-ri=
+ght:0cm;margin-bottom:12pt;margin-left:0cm;text-indent:0cm">
+<u></u><span style=3D"font-family:Wingdings"><span>=C3=98<span style=3D"fon=
+t:7pt &quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=A0
+</span></span></span><u></u>That=E2=80=99s=C2=A0 misleading=E2=80=A6 I=E2=
+=80=99ll correct it.<u></u><u></u></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12pt">That in turn only recou=
+nts the classic (source=C2=A0address, destination address, size, tag) tuple=
+ defined in RFC4944
+<u></u><u></u></p>
+<ul style=3D"margin-top:0cm" type=3D"disc">
+<li class=3D"gmail-m_8107676898440476173MsoListParagraph" style=3D"margin-b=
+ottom:12pt;margin-left:0cm">
+When receiving a fragment, the destination is self and the size may vary fr=
+om a datagram to the next. So the only thing that really identify the datag=
+ram is the source MAC and the tag.
+<u></u><u></u></li></ul>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12pt">and states that the onl=
+y difference between the classic and VRB is the lack of the reassembled pac=
+ket and addition of the next hop&#39;s address and the newly assigned tag:<=
+u></u><u></u></p>
+<p class=3D"gmail-m_8107676898440476173MsoListParagraph" style=3D"margin-ri=
+ght:0cm;margin-bottom:12pt;margin-left:0cm;text-indent:0cm">
+<u></u><span style=3D"font-family:Wingdings"><span>=C3=98<span style=3D"fon=
+t:7pt &quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=A0
+</span></span></span><u></u>Actually the forwarder sends the datagram with =
+self as source to the source mac address is swapped naturally. It has to se=
+t the next hop=E2=80=99s mac address and the swapped datagram tag. The next=
+ hop=E2=80=99s MAC address identifies the node
+ that should receive the packet and the datagram tag together with the sour=
+ce mac identify the reassembly buffer within the receiver. There is no cont=
+radiction.<u></u><u></u></p>
+<blockquote style=3D"border-top:none;border-right:none;border-bottom:none;b=
+order-left:1pt solid rgb(204,204,204);padding:0cm 0cm 0cm 6pt;margin-left:4=
+.8pt;margin-right:0cm">
+<p class=3D"MsoNormal">To reduce the memory requirement for reassembly buff=
+ers, the implementation may opt to not keep the actual packet data in the r=
+eassembly buffer. Instead, it may attempt to send out the data for a fragme=
+nt in the form of a forwarded fragment,
+ as soon as all necessary information for that is available. Obviously, all=
+ fragments need to be sent with the same outgoing address (otherwise a full=
+ reassembly implementation would discard the fragments) and the same datagr=
+am_tag.<u></u><u></u></p>
+</blockquote>
+<div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">So my question is: Is the tuple definition in [draft=
+-ietf-6lo-fragment-recovery] really correct?<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<ul style=3D"margin-top:0cm" type=3D"disc">
+<li class=3D"gmail-m_8107676898440476173MsoListParagraph" style=3D"margin-l=
+eft:0cm">It is.<u></u><u></u></li></ul>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">For exclusion datagram size I agree that it could be=
+ somewhat redundant. However, a node could have multiple destination addres=
+ses (either via multiple interfaces or IEEE-802.15.4-style short and long a=
+ddress). So, as the tag is link-specific
+ (defined by a (source, destination) tuple), there could be distinct datagr=
+ams that have the same tuple (source, tag), or am I missing something?<u></=
+u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"gmail-m_8107676898440476173MsoListParagraph" style=3D"margin-le=
+ft:0cm;text-indent:0cm">
+<u></u><span style=3D"font-family:Wingdings"><span>=C3=98<span style=3D"fon=
+t:7pt &quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=A0
+</span></span></span><u></u>Yes, the role of the destination MAC address is=
+ to reach the next hop, but does not change the processing within that node=
+. I could change the L2 address I use to refer to the next hop in the middl=
+e of a fragmented packet, it
+ is still the same fragmented packet. In other words, please do not use the=
+ dmac as to index the VRB. From your question I think the LWIG draft should=
+ clarify, and we can change minimal draft to clarify as well.<u></u><u></u>=
+</p>
+</div>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">I already implemented the VRB with draft-ietf-6lo-mi=
+nimal-fragment in mind and thus used the classic 4-tuple for indexing. But =
+now I&#39;m wondering: Can I reduce its index or would that be not advised?=
+<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"gmail-m_8107676898440476173MsoListParagraph" style=3D"margin-le=
+ft:0cm;text-indent:0cm">
+<u></u><span style=3D"font-family:Wingdings"><span>=C3=98<span style=3D"fon=
+t:7pt &quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=A0
+</span></span></span><u></u>You should reduce the index : ) There can not b=
+e 2 different datagrams coming in parallel from a same previous hop and wit=
+h a same datagram tag. There must be a sentence somewhere in the LWIG draft=
+ that says that a new and currently
+ unused datagram tag is chosen for a new incoming datagram, correct?=C2=A0 =
+Minimal says<u></u><u></u></p>
+<pre style=3D"margin-left:36pt"><u></u><span style=3D"font-family:Wingdings=
+"><span>=C3=98<span style=3D"font:7pt &quot;Times New Roman&quot;">=C2=A0 <=
+/span></span></span><u></u>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0Upon<u></u><u></u></pre>
+<pre style=3D"margin-left:36pt"><u></u><span style=3D"font-family:Wingdings=
+"><span>=C3=98<span style=3D"font:7pt &quot;Times New Roman&quot;">=C2=A0 <=
+/span></span></span><u></u>=C2=A0=C2=A0=C2=A0receiving a fragment from node=
+ A with a datagram_tag previously<u></u><u></u></pre>
+<pre style=3D"margin-left:36pt"><u></u><span style=3D"font-family:Wingdings=
+"><span>=C3=98<span style=3D"font:7pt &quot;Times New Roman&quot;">=C2=A0 <=
+/span></span></span><u></u>=C2=A0=C2=A0=C2=A0unseen from node A, node B all=
+ocates a buffer large enough to hold<u></u><u></u></pre>
+<pre style=3D"margin-left:36pt"><u></u><span style=3D"font-family:Wingdings=
+"><span>=C3=98<span style=3D"font:7pt &quot;Times New Roman&quot;">=C2=A0 <=
+/span></span></span><u></u>=C2=A0=C2=A0=C2=A0the entire packet.=C2=A0 <u></=
+u><u></u></pre>
+<pre style=3D"margin-left:36pt"><u></u>=C2=A0<u></u></pre>
+<p class=3D"gmail-m_8107676898440476173MsoListParagraph" style=3D"margin-le=
+ft:0cm;text-indent:0cm">
+<u></u><span style=3D"font-family:Wingdings"><span>=C3=98<span style=3D"fon=
+t:7pt &quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=A0
+</span></span></span><u></u>This text only indexes the VRB with any identif=
+ier of node A and the tag=E2=80=A6 And this is correct. What=E2=80=99s a bi=
+t more ugly is that Node A should not change the source MAC in between frag=
+ments because that will confise node B. I need
+ to add text on that too.<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">Many thanks Martine for raising all this, and all th=
+e best for your implementation.<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">Pascal<u></u><u></u></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</blockquote></div>
+
+--0000000000000020740591550a1c--
+
+
+From nobody Fri Aug 30 06:08:03 2019
+Return-Path: <m.lenders@fu-berlin.de>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 514CF120120 for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 06:08:01 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -3.177
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.177 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, MISSING_HEADERS=1.021, RCVD_IN_DNSWL_MED=-2.3, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id hstLkVOF58fb for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 06:07:59 -0700 (PDT)
+Received: from outpost1.zedat.fu-berlin.de (outpost1.zedat.fu-berlin.de [130.133.4.66]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 53AC2120115 for <6lo@ietf.org>; Fri, 30 Aug 2019 06:07:59 -0700 (PDT)
+Received: from inpost2.zedat.fu-berlin.de ([130.133.4.69]) by outpost.zedat.fu-berlin.de (Exim 4.85) for 6lo@ietf.org with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (envelope-from <m.lenders@fu-berlin.de>) id <1i3gdB-002kfH-KE>; Fri, 30 Aug 2019 15:07:57 +0200
+Received: from mail-oi1-f179.google.com ([209.85.167.179]) by inpost2.zedat.fu-berlin.de (Exim 4.85) for 6lo@ietf.org with esmtpsa (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (envelope-from <m.lenders@fu-berlin.de>) id <1i3gdB-002qTq-7L>; Fri, 30 Aug 2019 15:07:57 +0200
+Received: by mail-oi1-f179.google.com with SMTP id n1so5300023oic.3 for <6lo@ietf.org>; Fri, 30 Aug 2019 06:07:57 -0700 (PDT)
+X-Gm-Message-State: APjAAAWOWjLqSCSeCgNcFB1nO831o4/jUr8baV1wp7yVCNBp886yWFaN 7qRdA7UphJ1Y3VzMTnEEWFps+kj6DZ8F4bt97VE=
+X-Google-Smtp-Source: APXvYqx/CE/I6f9br1Zt50uGpVwyFbG0bAbr55PsPNFvY17ZLbZ8f9gk7pHi+pKtaDF1n2QmU5TJGip+EaNPODteCHU=
+X-Received: by 2002:a54:4108:: with SMTP id l8mr9660231oic.97.1567170476096; Fri, 30 Aug 2019 06:07:56 -0700 (PDT)
+MIME-Version: 1.0
+References: <CALHmdRxLUXy9g94iYn+7Ujmr+0bmBR0Oo3psbHcZOauT08rOHg@mail.gmail.com> <MN2PR11MB35658D8325E730B3FD593019D8BD0@MN2PR11MB3565.namprd11.prod.outlook.com>
+In-Reply-To: <MN2PR11MB35658D8325E730B3FD593019D8BD0@MN2PR11MB3565.namprd11.prod.outlook.com>
+From: Martine Lenders <m.lenders@fu-berlin.de>
+Date: Fri, 30 Aug 2019 15:07:19 +0200
+X-Gmail-Original-Message-ID: <CALHmdRxsfbqtdr=pPrm6ngkqAS_fWD2xLZMoU2C+gtrV+3NUqg@mail.gmail.com>
+Message-ID: <CALHmdRxsfbqtdr=pPrm6ngkqAS_fWD2xLZMoU2C+gtrV+3NUqg@mail.gmail.com>
+Cc: "6lo@ietf.org" <6lo@ietf.org>
+Content-Type: multipart/alternative; boundary="00000000000087c3170591554f02"
+X-Originating-IP: 209.85.167.179
+X-ZEDAT-Hint: A
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/tZ3hLNJQLi1QVMWek8pNPSkTC6w>
+Subject: [6lo] Paper on minimal fragment forwarding (was Question on draft-ietf-6lo-fragment-recovery and VRB)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 30 Aug 2019 13:08:02 -0000
+
+--00000000000087c3170591554f02
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+Am Fr., 30. Aug. 2019 um 13:44 Uhr schrieb Pascal Thubert (pthubert) <
+pthubert@cisco.com>:
+
+> Great to hear about your implementation. The group is interested to learn
+> about your progress (keep us tuned) and happy to help you through. P
+>
+
+That reminded me that I actually wanted to tell the group about a paper of
+ours ages ago. It evaluates our implementation of
+draft-ietf-6lo-minimal-fragment:
+
+- M. S. Lenders, T. C. Schmidt, M. W=C3=A4hlisch. "A Lesson in Scaling 6LoW=
+PAN -
+Minimal Fragment Forwarding in Lossy Networks." in Proc. of IEEE LCN, 2019.
+
+All the better now, as it allows me to show you the pre-print of its final
+form, as it got accepted for IEEE LCN'19 [1]. The implementation itself is
+PR'd against RIOT on GitHub [2]. Not many surprises, but maybe an
+interesting read for some.
+
+Kind regards,
+Martine
+
+[1] https://arxiv.org/abs/1905.08089
+[2] https://github.com/RIOT-OS/RIOT/pull/11068
+
+>
+
+--00000000000087c3170591554f02
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hi,</div><br><div class=3D"gmail_quote"><div dir=3D"l=
+tr" class=3D"gmail_attr">Am Fr., 30. Aug. 2019 um 13:44=C2=A0Uhr schrieb Pa=
+scal Thubert (pthubert) &lt;<a href=3D"mailto:pthubert@cisco.com">pthubert@=
+cisco.com</a>&gt;:</div><blockquote class=3D"gmail_quote" style=3D"margin:0=
+px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex"><=
+div lang=3D"EN-US"><div class=3D"gmail-m_8107676898440476173WordSection1">
+<p class=3D"MsoNormal">Great to hear about your implementation. The group i=
+s interested to learn about your progress (keep us tuned) and happy to help=
+ you through. P</p></div></div></blockquote><br>That reminded me that I act=
+ually wanted to tell the group about a paper of ours ages ago. It evaluates=
+ our implementation of draft-ietf-6lo-minimal-fragment:<br><br>- M. S. Lend=
+ers, T. C. Schmidt, M. W=C3=A4hlisch. &quot;A Lesson in Scaling 6LoWPAN - M=
+inimal Fragment Forwarding in Lossy Networks.&quot; in Proc. of IEEE LCN, 2=
+019.<div><br></div><div>All the better now, as it allows me to show you the=
+ pre-print of its final form, as it got accepted for IEEE LCN&#39;19 [1]. T=
+he implementation itself is PR&#39;d against RIOT on GitHub [2]. Not many s=
+urprises, but maybe an interesting read for some.</div><div><br></div><div>=
+Kind regards,</div><div>Martine</div><div><br></div><div>[1]=C2=A0<a href=
+=3D"https://arxiv.org/abs/1905.08089">https://arxiv.org/abs/1905.08089</a><=
+/div><div>[2]=C2=A0<a href=3D"https://github.com/RIOT-OS/RIOT/pull/11068">h=
+ttps://github.com/RIOT-OS/RIOT/pull/11068</a></div><blockquote class=3D"gma=
+il_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,2=
+04,204);padding-left:1ex"><div lang=3D"EN-US"><div class=3D"gmail-m_8107676=
+898440476173WordSection1"><div style=3D"border-top:none;border-right:none;b=
+order-bottom:none;border-left:1.5pt solid blue;padding:0cm 0cm 0cm 4pt"><di=
+v><div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</blockquote></div></div>
+
+--00000000000087c3170591554f02--
+
+
+From nobody Fri Aug 30 10:45:26 2019
+Return-Path: <lijo@cdac.in>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 57EA0120944; Fri, 30 Aug 2019 10:45:22 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.999
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.999 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_NONE=-0.0001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cdac.in
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id rHWq8wSgtayY; Fri, 30 Aug 2019 10:45:15 -0700 (PDT)
+Received: from mailsender.cdac.in (mailsender.cdac.in [196.1.113.117]) (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 16FDB120914; Fri, 30 Aug 2019 10:45:13 -0700 (PDT)
+Received: from ims.pune.cdac.in (ims.pune.cdac.in [10.208.1.15]) by mailsender.cdac.in (8.14.2/8.13.8) with ESMTP id x7UHiD2p014778 (version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT); Fri, 30 Aug 2019 23:14:18 +0530
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cdac.in; s=default; t=1567187071; bh=9zoXQhI81u8cuXz715hcV4nQXEM5rb1uj7qeYLxKioU=; h=From:To:Cc:References:In-Reply-To:Subject:Date; b=WO2SUyNbd5w6/1kKApv+pET5mI221NI7kSDlpi/20lTW4z3vs7ycHpZDLxdFqmVXP MoFzNXQ+YnE52BC7m0QS4vbk3esiF110AXzVOzq89On3WjM9RBUJUzZvWqXElKTG+A ce3RXvv4XMeBrgKSMRcfPK4mWGluoD8o33fDzM10=
+Received: from mailgw.pune.cdac.in ([10.208.1.4]) by ims.pune.cdac.in (8.14.4/8.14.4) with ESMTP id x7UHhxbw009733; Fri, 30 Aug 2019 23:14:01 +0530
+X-AuthUser: lijo
+Received: from Lijo (202.34.92.111.asianet.co.in [111.92.34.202] (may be forged)) (authenticated bits=0) by mailgw.pune.cdac.in (8.14.2/8.13.8) with ESMTP id x7UHhu1E002274 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=NOT); Fri, 30 Aug 2019 23:13:57 +0530
+From: "Lijo Thomas" <lijo@cdac.in>
+To: <magnus.westerlund@ericsson.com>, "'The IESG'" <iesg@ietf.org>, <6lo@ietf.org>
+Cc: <6lo-chairs@ietf.org>, "'Samita Chakrabarti'" <samitac.ietf@gmail.com>, "'Shwetha Bhandari'" <shwethab@cisco.com>, <anand@ece.iisc.ernet.in>, "'satish anamalamudi'" <satishnaidu80@gmail.com>, "'Charlie Perkins'" <charles.perkins@earthlink.net>
+References: <155801295610.19776.17352306388780302849.idtracker@ietfa.amsl.com> <aaf94f20-fdde-ff3c-aacb-1332e2ae080a@earthlink.net> <359EC4B99E040048A7131E0F4E113AFC01B3442DBB@marathon>
+In-Reply-To: <359EC4B99E040048A7131E0F4E113AFC01B3442DBB@marathon>
+Date: Fri, 30 Aug 2019 23:13:53 +0530
+Message-ID: <000001d55f5a$7f5db280$7e191780$@in>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AQHVC+p0iI1H1iUd+0SYI5WmTYFURaaGFyUAgIneOWCABKFFEA==
+Content-Language: en-in
+X-CDAC-PUNE-MailScanner-ID: x7UHhxbw009733
+X-CDAC-PUNE-MailScanner: Found to be clean, Found to be clean
+X-CDAC-PUNE-MailScanner-MCPCheck-IMS: MCP-Clean, MCP-Checker (score=0, required 1)
+X-CDAC-PUNE-MailScanner-SpamCheck: not spam, SpamAssassin (not cached, score=-0.199, required 6, autolearn=disabled, ALL_TRUSTED -1.00, BAYES_50 0.80, URIBL_BLOCKED 0.00), not spam, SpamAssassin (not cached, score=-1.799, required 6, autolearn=disabled, ALL_TRUSTED -1.80, BAYES_50 0.00)
+X-CDAC-PUNE-MailScanner-Information: Please contact npsfhelp@cdac.in/mailadmin@cdac.in for more information
+X-MailScanner-ID: x7UHiD2p014778
+X-CDAC-PUNE-MailScanner-From: lijo@cdac.in
+X-CDAC-MailScanner-Spam-Status: No
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/vak_1FHJPJGJV03MDdvdgp_I0-k>
+Subject: Re: [6lo] Magnus Westerlund's Discuss on draft-ietf-6lo-deadline-time-04: (with DISCUSS and COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 30 Aug 2019 17:45:23 -0000
+
+Hello Magnus:
+
+Please recall the Discuss in regard with our deadline-time draft and we bel=
+ieve we addressed your comments in the current revision (05).
+
+It will be great if you could pass the Discuss positions in the record, if =
+the security concerns raised are addressed.
+
+The relevant text from security portion of 05 revision is below, for your q=
+uick reference.
+
+<<
+
+   The protocol elements specified in this document are designed to work
+   in controlled operational environments (e.g., industrial process
+   control and automation).  In order to avoid misuse of the deadline
+   information that could potentially result in a Denial of Service
+   (DoS) attack, proper functioning of this deadline time mechanism
+   requires the provisioning and management of network resources for
+   supporting traffic flows with deadlines, performance monitoring, and
+   admission control policy enforcement.  The network provisioning can
+   be done either centrally or in a distributed fashion.  For example,
+   tracks in a 6tisch network could be established by a centralized PCE,
+   as described in the 6tisch architecture
+   [I-D.ietf-6tisch-architecture].
+
+   The Security Considerations of Detnet architecture
+   [I-D.ietf-detnet-architecture] mostly apply to this document as well,
+   as follows.  To secure the request and control of resources allocated
+   for tracks, authentication and authorization can be used for each
+   device, and network controller devices.  In the case of distributed
+   control protocols, security is expected to be provided by the
+   security properties of the protocols in use.
+
+   When deadline bearing flows are identified on a per-flow basis, which
+   may provide attackers with additional information about the data
+   flows, when compared to networks that do not include per-flow
+   identification.  The security implications of disclosing that
+   additional information deserve consideration when implementing this
+   deadline specification.
+=20=20=20
+   Because of the requirement of precise time synchronization, the
+   accuracy, availability, and integrity of time synchronization is of
+   critical importance.  Extensive discussion of this topic can be found
+   in [RFC7384].
+>>
+
+ Kindly let us know if your comments and valuable inputs.
+
+ Thanks & Regards
+ Lijo Thomas
+
+
+---------------------------------------------------------------------------=
+-------------------
+
+Subject: 	Re: [6lo] Magnus Westerlund's Discuss on draft-ietf-6lo-deadline-=
+time-04: (with DISCUSS and COMMENT)
+Date: 	Thu, 6 Jun 2019 09:46:17 +0530
+From: 	Lijo Thomas <lijo@cdac.in>
+
+To: 	'Magnus Westerlund' <magnus.westerlund@ericsson.com>
+
+CC: 	6lo@ietf.org
+
+
+
+Hi Magnus,
+
+Thanks for the great response, we will update the draft accordingly.
+
+Thanks & Regards,
+Lijo Thomas=20
+-----Original Message-----
+From: Magnus Westerlund <magnus.westerlund@ericsson.com> Sent: 05 June 2019=
+ 17:23
+To: Lijo Thomas <lijo@cdac.in>; 'Charlie Perkins'
+<charles.perkins@earthlink.net>; 'The IESG' <iesg@ietf.org>
+Cc: 6lo-chairs@ietf.org; 'Samita Chakrabarti' <samitac.ietf@gmail.com>;
+'Shwetha Bhandari' <shwethab@cisco.com>; 6lo@ietf.org;
+anand@ece.iisc.ernet.in; 'satish anamalamudi' <satishnaidu80@gmail.com>;
+draft-ietf-6lo-deadline-time@ietf.org
+Subject: Re: [6lo] Magnus Westerlund's Discuss on
+draft-ietf-6lo-deadline-time-04: (with DISCUSS and COMMENT)
+
+Hi,
+
+Thanks for providing some background information. From my perspective I
+think there are some benefit to indicate the context the solution was
+developed in. Note this is really comment level and not required.
+
+
+
+On 2019-06-05 07:54, Lijo Thomas wrote:
+
+Hi Magnus,
+
+Thanks for your detailed review and really appreciate your time taken for t=
+he effort !!!!.
+
+Please find our below response for the frame work query addressed by you.
+
+One of the main use cases of the draft is the industrial automation and con=
+trol applications. The end point of such applications puts the deadline inf=
+ormation as per its delay requirements.
+I agree that the underlying 6Lo network needs to ensure that the deadline i=
+s met using its delay sensitive routing and scheduling mechanisms while for=
+warding the packet along the path. The 6Lo network can support such a QoS r=
+equirement through end-to-end provisioning of the required network resource=
+s either centrally and/or in a distributed
+fashion .
+
+
+In the case of a 6tisch network, one could think of setting up tracks [draf=
+t-ietf-6tisch-architecture] along with delay aware Scheduling Function impl=
+emented by the intermediate nodes. The deadline draft works well within the=
+ context of the framework described in the draft-6tisch-architecture draft.=
+ The 6tisch architecture draft defines tracks which could either be set up =
+by a centralised entity PCE or by setting up tracks in a distributed fashio=
+n by reserving network resources that provide end-to-end delay guarantees. =
+Packets of application flows can be sent over these tracks and scheduled ba=
+sed on their deadlines. The CAC can be exercised where reservation fails fo=
+r a new track setup. There are situations like asynchronous time critical e=
+mergency messages where track set up delay is not acceptable. In such cases=
+, we can use distributed on-the-fly scheduling using 6P protocol described =
+in RFC 8480 that takes into
+consideration the deadline information.
+
+There are several deadline based scheduling algorithms that have proposed i=
+n the literature including the basic Earliest Deadline First (EDF). Based o=
+n our deadline draft, we implemented this scheme over a 6tisch network runn=
+ing on OpenWSN protocol stack and our draft implementation has been merged =
+with the OpenWSN environment for future
+downloads too.
+
+We would be happy to add some additional text specifying that ** a network =
+monitoring entity with call admission policy is expected to be in place for=
+ observation and consequently better results during real
+implementations**.
+
+The proposed sentence appears problematic from two perspective. One that it
+might be an overly complex solution for certain closed systems.
+Secondly, is it really "call admission" rather than flow admission?
+
+I think the right way forward here is that you document the security issues
+that anyone that intend to deploy this needs to consider. I think that
+discussion can discuss potential mitigations, but without specific surround
+contexts it is impossible to mandate any such.
+
+Cheers
+
+Magnus
+
+
+
+
+Hope this address your few concerns and based on your response we will upda=
+te the draft.
+
+Happy to receive your further thoughts and valuable inputs.
+
+Thanks & Regards,
+Lijo Thomas
+
+-----Original Message-----
+From: 6lo <6lo-bounces@ietf.org> On Behalf Of Magnus Westerlund
+Sent: 03 June 2019 18:27
+To: Charlie Perkins <charles.perkins@earthlink.net>; The IESG <iesg@ietf.or=
+g>
+Cc: draft-ietf-6lo-deadline-time@ietf.org; 6lo-chairs@ietf.org; Samita Chak=
+rabarti <samitac.ietf@gmail.com>; Shwetha Bhandari <shwethab@cisco.com>; 6l=
+o@ietf.org
+Subject: Re: [6lo] Magnus Westerlund's Discuss on
+draft-ietf-6lo-deadline-time-04: (with DISCUSS and COMMENT)
+
+Hi Charlie,
+
+Please see for further comments inline.
+
+On 2019-05-30 23:16, Charlie Perkins wrote:
+
+On 5/13/2019 6:41 AM, Magnus Westerlund via Datatracker wrote:
+
+Magnus Westerlund has entered the following ballot position for
+draft-ietf-6lo-deadline-time-04: Discuss
+
+
+
+
+--------------------------------------------------------------------
+-
+-
+DISCUSS:
+--------------------------------------------------------------------
+-
+-
+
+The security consideration section have significant short comings as this m=
+echanism enables multiple ways to attack both the packet and the system to =
+my understanding. I would appreaciate your clarifications
+on these matters.
+
+First of all by changing the dead-line so that it gets dropped because it i=
+s already late, alternatively move the deadline time out further in time (l=
+ater), so that the forwarders may deliver it so late that the receiver cons=
+iders it to late.
+Agreed that this vulnerability should be mentioned in the Security Consider=
+ations.
+
+
+
+Secondly, there is the question if extensive use of this header will cause =
+overload or affect the scheduling of packet transmission affect other traff=
+ic negatively. There appear to exist potential for new ways of bad interflo=
+w interactions here.
+If other packet transmissions have to be pre-empted in order for the deadli=
+ne to be met for a particular packet, then indeed this could affect other t=
+raffic. It is also a matter of possible interest what might happen if there=
+ were two packets in the transmission queue with the same or different dead=
+lines. However, the processing in these cases is a local matter at each int=
+ermediate point, and out of scope for
+this
+
+draft. Does this also belong to be mentioned in the Security Considerations?
+Yes, I think so, as it points to a requirement to consider either admission=
+ control or other solutions to keep the interaction on an
+acceptable level.
+
+
+
+
+
+
+--------------------------------------------------------------------
+-
+-
+COMMENT:
+--------------------------------------------------------------------
+-
+-
+
+Looking at this mechanism it appears to me as something that should fit int=
+o a frame work, but that is not explicitly given. The main reason I am rais=
+ing that is that it appears to not care about a number of interesting and c=
+hallenging questions for a mechanism like this. Questions that a particular=
+ framework can take care of, or which any user of this mechanism would need=
+ to consider in their deployment before they can determine if they can safe=
+ly deploy it. It might be that some of the questions have answers and I mis=
+sed. In that case please straighten me out. And if you have some additional=
+ document that provides more detailed usage which discuss any of these
+issues I would appreciate a pointer.
+
+This mechanism is a simple kind of signaling that could fit into various fr=
+ameworks, and exploring that space would be pretty interesting. But it woul=
+d represent a huge digression away from the point of this draft, which all =
+along was intended to offer a simple mechanisms without getting involved wi=
+th messy issues of policy. If there is something missing in the basic mecha=
+nism, then that should be fixed. But I don't see what is missing. Some of t=
+he discussion below is also relevant to this point.
+
+So, there no specific first initial framework that this solution has been d=
+eveloped to support? And you say you do not want to deal with policy, and i=
+nstead put that on the ones attempting to utilize it.
+Considering the security issues, and the higher layer requirements that thi=
+s solution appears to create I think that is far from optimal. I really thi=
+nk this document should have a section making the assumptions about its exp=
+ected deployments clear.
+
+
+
+
+So quesitons that I got when reading this specification:
+
+1. Are there any mechanism to provide feedback if the packets reach the rec=
+eiver in time? If the sender sets the deadline shorter than the minimal one=
+-way path delay, then all packets will be late. Will any feedback be provid=
+ed that this is happening? In cases D=3D1 this appear to be a recipe for a =
+black hole for the traffic. One can also end up in situation where a large =
+fraction of the packet are late.
+This kind of signaling is far more appropriate at the application level. To=
+ fully characterize the expected distribution of latency values is out of s=
+cope for the draft, and the information needed would usually depend on the =
+application. Some applications don't care much for dropped packets but don'=
+t want to handle packets coming in too late. For other applications, knowin=
+g the distribution would allow for setting a deadline that would usually al=
+l reception of 85% of the packets (or some percentage predetermined by the =
+application). It's hard for me to see that as in scope for our draft.
+
+Sure, but the document could make it clear that there exist a need to monit=
+or the actual performance to know if the application will work successful
+
+
+
+
+
+2. Any mechanism that exist to determine what the expected latency are from=
+ sender to receiver?
+As above, I think this is most properly handled by the application
+
+
+
+3. Are there any type of admittance or policy approval to use this
+mechanism?
+
+The policy details are out of scope for this draft. However, it might be wo=
+rthwhile to mention that (similar to many QoS efforts) care must be taken t=
+o avoid abuse.
+
+Please do.
+
+
+
+
+4. What is the relationship between traffic with a dead-line and other traf=
+fic without a dead-line. Are traffic with a dead-line implicitly allowed to=
+ pre-empt other traffic or at least to delay it in
+its queue?
+
+We don't specify that, and since it's a local matter at each node, a mandat=
+e would be unenforceable. However, if it is important, we could design an a=
+dvisory extension to the draft for this purpose. The problem is that the ap=
+plication should not necessarily need to be involved with changing its beha=
+vior in response to (highly dynamic)
+traffic conditions.
+
+Ok, I can agree that there is difficult to be descriptive here. As long at =
+the potential impact is a discussed security issue I think this will be con=
+sidered addressed.
+
+
+5. As Barry noted, what are the protection against missuse?
+
+These are issue that a framework or architecture would consider, I note tha=
+t https://datatracker.ietf.org/doc/draft-ietf-detnet-architecture/
+include some discussion of these topics. Still DETNET architecture appear
+more constrained when it comes to usage than what this mechanism through it=
+s examples.
+
+I think it would be best to enlarge the discussion in the draft to explain =
+about the potential for abuse. I don't see just how the simple mechanism at=
+ the level of 6LoRH should be charged with the responsibility for an entire=
+ framework, and I really hope that simple mechanisms such as this one can b=
+e found to have value even without specification of a much larger set of pr=
+otections and repairs.
+
+My questions where more coming from the aspect, how do you have been part o=
+f developing this technical solution without having at least one framework =
+that addresses the raised issue?
+
+Thus, my preference that in the absence of a framework to point at, that th=
+e assumptions on the hypothetical framework are documented.
+
+Cheers
+
+Magnus Westerlund
+
+----------------------------------------------------------------------
+Network Architecture & Protocols, Ericsson Research
+----------------------------------------------------------------------
+Ericsson AB | Phone +46 10 7148287
+Torshamnsgatan 23 | Mobile +46 73 0949079
+SE-164 80 Stockholm, Sweden | mailto: magnus.westerlund@ericsson.com
+----------------------------------------------------------------------
+
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org
+https://www.ietf.org/mailman/listinfo/6lo
+
+
+----------------------------------------------------------------------
+--------------------------------------
+[ C-DAC is on Social-Media too. Kindly follow us at:
+Facebook: https://www.facebook.com/CDACINDIA & Twitter: @cdacindia ]
+
+This e-mail is for the sole use of the intended recipient(s) and may contai=
+n confidential and privileged information. If you are not the intended reci=
+pient, please contact the sender by reply e-mail and destroy all copies and=
+ the original message. Any unauthorized review, use, disclosure, disseminat=
+ion, forwarding, printing or copying of this email is strictly prohibited a=
+nd appropriate legal action will be
+taken.
+
+----------------------------------------------------------------------
+--------------------------------------
+
+
+--=20
+
+Magnus Westerlund=20
+----------------------------------------------------------------------
+Network Architecture & Protocols, Ericsson Research
+----------------------------------------------------------------------
+Ericsson AB                 | Phone  +46 10 7148287
+Torshamnsgatan 23           | Mobile +46 73 0949079
+SE-164 80 Stockholm, Sweden | mailto: magnus.westerlund@ericsson.com
+----------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------=
+---------------------------------
+[ C-DAC is on Social-Media too. Kindly follow us at:
+Facebook: https://www.facebook.com/CDACINDIA & Twitter: @cdacindia ]
+
+This e-mail is for the sole use of the intended recipient(s) and may
+contain confidential and privileged information. If you are not the
+intended recipient, please contact the sender by reply e-mail and destroy
+all copies and the original message. Any unauthorized review, use,
+disclosure, dissemination, forwarding, printing or copying of this email
+is strictly prohibited and appropriate legal action will be taken.
+---------------------------------------------------------------------------=
+---------------------------------
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org
+https://www.ietf.org/mailman/listinfo/6lo
+
+
+
+---------------------------------------------------------------------------=
+---------------------------------
+[ C-DAC is on Social-Media too. Kindly follow us at:
+Facebook: https://www.facebook.com/CDACINDIA & Twitter: @cdacindia ]
+
+This e-mail is for the sole use of the intended recipient(s) and may
+contain confidential and privileged information. If you are not the
+intended recipient, please contact the sender by reply e-mail and destroy
+all copies and the original message. Any unauthorized review, use,
+disclosure, dissemination, forwarding, printing or copying of this email
+is strictly prohibited and appropriate legal action will be taken.
+---------------------------------------------------------------------------=
+---------------------------------
+
+
+From nobody Fri Aug 30 11:10:16 2019
+Return-Path: <rahul.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id D7BA3120B57 for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 11:10:07 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.999
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.999 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 7S6MZDHEdWun for <6lo@ietfa.amsl.com>; Fri, 30 Aug 2019 11:10:06 -0700 (PDT)
+Received: from mail-vs1-xe2a.google.com (mail-vs1-xe2a.google.com [IPv6:2607:f8b0:4864:20::e2a]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id F18B8120B4F for <6lo@ietf.org>; Fri, 30 Aug 2019 11:10:05 -0700 (PDT)
+Received: by mail-vs1-xe2a.google.com with SMTP id m18so5348302vsr.0 for <6lo@ietf.org>; Fri, 30 Aug 2019 11:10:05 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:from:date:message-id:subject:to; bh=uWOELv/SaJFwSVNAUB8bENGwbeKPGBKnrQN6YkNaQGo=; b=iYr9VqcLwXEaQ5TLzDXq8oi1YN3g+y3+cCMlzfdwe0NVlnDoWEQ3h5mUxweP+aidQP yx6TSXN4DoJPft1Ynrkky5ogd2+0e/pq9FN8g7M3jcpnivam4caE9KUX55kQuTKjOV2A +aIwa71RhvVHE2rKZhCk4Y7uHvzLwU+hh+yBcGiJWSh29U7WJcDPeJxzX6rcoKjv/sR5 ULBCmAM+VrdXH4hnOHeZnylVOhdiS+ugF4yfuroI+TCa9kO/cLr9FxDU6dqf//VzfqxI QcFDPZfJ4uruYPobTkGbszDWCSV4jigeOvr3J1/s4XHsW/nPGzi5GvoTEQ03D/na3nyN DPqg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=uWOELv/SaJFwSVNAUB8bENGwbeKPGBKnrQN6YkNaQGo=; b=XJcDmGesDpTbB4SDf/hMwaIKNBON5iMa6bBrRJs7wkKC+TlNAiKcII4hjq952UCRvs rau4vaaGOitb5vZVdUBVw38Uj3B+imTlMKOz4c2Iak/fOOS8h41o7ZN44i+f721RlKh5 nf0YUXUxijuSJoEmO2ZOqofjVq67z0i4QN3dblBz+q6UDEAHlF485fbPwjYgfKXEsW7x BCBK0sBR+2F6fBfnHc/ECvwTe2wsdgGuE4/T9Eex2Nhn/XPKffYZ6The3F6fDbTFh6Ge osYuupiMQtMkQ1Azm4a8+jxK2BXkKD3btr5vDUFdA8o7X5iyqzIfHKFJtEERroqo4WzD E66Q==
+X-Gm-Message-State: APjAAAUCr9UvZ5YtXxkCk2qd+9cDWGZUXLlnbWKBOYczINLtjRBZBQGv QXwsNgke3M/xWyKQjbwJE/NQNwLAvNcU82QWooapOZKSosEBAg==
+X-Google-Smtp-Source: APXvYqzeyggn/4AtmnMLtDSK8YJuxIcqcJTquwH+mIwtA8b+Z+HUTPxBAm/9Me+aeqFyOZMHcdMXD76Sn/bU8dbNYl0=
+X-Received: by 2002:a67:d601:: with SMTP id n1mr6622178vsj.170.1567188604815;  Fri, 30 Aug 2019 11:10:04 -0700 (PDT)
+MIME-Version: 1.0
+From: Rahul Jadhav <rahul.ietf@gmail.com>
+Date: Sat, 31 Aug 2019 02:09:53 +0800
+Message-ID: <CAO0Djp2Of3ERSvZoHvPosDvp1D6jGhKa4UU64uaQ5AX0a12dpA@mail.gmail.com>
+To: lo <6lo@ietf.org>
+Content-Type: text/plain; charset="UTF-8"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/SbvPf7kwPhiRjmorbflfDacoRxg>
+Subject: [6lo] review of 6lo-blemesh
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 30 Aug 2019 18:10:15 -0000
+
+Dear authors,
+
+Following are some review comments based on the latest updates to the document:
+1. In the last revision, the draft mandated the use of NS(EARO) in
+place NS(ARO). This change is not consistently applied in the
+document. E.g., in section 3.3.3, the draft continues to use NS(ARO).
+2. Section 3.3.3 also mandates the use of the 6CO option. 6CO option
+may not be necessary in case a single prefix is used in the network.
+The CID defaults to zero which results in the use of default prefix.
+3. Section 3.3.3 the following statement is not clear, "In particular,
+the latter comprise link-local interactions, non-link- local packet
+transmissions originated and performed by a 6LN, and non-link-local
+packets transmitted (but not necessarily originated) by the neighbor
+of a 6LN to that 6LN."
+4. I think the draft will benefit from a call flow diagram depicting
+the node joining procedure.
+   6LN ----(RS)-------> 6LR
+   6LN <---(RA-PIO)---- 6LR
+   6LN ----(NS-EARO)--> 6LR
+   [Multihop DAD procedure]
+   6LN <---(NA)--------  6LR
+   6LN can now start acting as 6LR and advertise its own RA
+   6LN ----(RA)--
+
+Regards,
+Rahul
+

@@ -1,0 +1,639 @@
+
+From nobody Mon Jan  8 22:08:22 2018
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 7A9D112D7EA; Mon,  8 Jan 2018 22:08:15 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.68.2
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <151547809548.9592.958222546711201124@ietfa.amsl.com>
+Date: Mon, 08 Jan 2018 22:08:15 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/NujgiE9sm9pakDPdPhpab-Xa0YE>
+Subject: [6lo] I-D Action: draft-ietf-6lo-nfc-09.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 09 Jan 2018 06:08:15 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : Transmission of IPv6 Packets over Near Field Communication
+        Authors         : Younghwan Choi
+                          Yong-Geun Hong
+                          Joo-Sang Youn
+                          Dongkyun Kim
+                          JinHyouk Choi
+	Filename        : draft-ietf-6lo-nfc-09.txt
+	Pages           : 17
+	Date            : 2018-01-08
+
+Abstract:
+   Near field communication (NFC) is a set of standards for smartphones
+   and portable devices to establish radio communication with each other
+   by touching them together or bringing them into proximity, usually no
+   more than 10 cm.  NFC standards cover communications protocols and
+   data exchange formats, and are based on existing radio-frequency
+   identification (RFID) standards including ISO/IEC 14443 and FeliCa.
+   The standards include ISO/IEC 18092 and those defined by the NFC
+   Forum.  The NFC technology has been widely implemented and available
+   in mobile phones, laptop computers, and many other devices.  This
+   document describes how IPv6 is transmitted over NFC using 6LowPAN
+   techniques.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-nfc/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-nfc-09
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-nfc-09
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-nfc-09
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Tue Jan  9 05:49:09 2018
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 436D9126C19; Tue,  9 Jan 2018 05:49:08 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.68.2
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <151550574823.9620.6718415966238484422@ietfa.amsl.com>
+Date: Tue, 09 Jan 2018 05:49:08 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/2HDBuP9MKD_DfjM52EpBDu6cD7E>
+Subject: [6lo] I-D Action: draft-ietf-6lo-backbone-router-05.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 09 Jan 2018 13:49:08 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : IPv6 Backbone Router
+        Author          : Pascal Thubert
+	Filename        : draft-ietf-6lo-backbone-router-05.txt
+	Pages           : 29
+	Date            : 2018-01-09
+
+Abstract:
+   This specification proposes proxy operations for IPv6 Neighbor
+   Discovery on behalf of devices located on broadcast-inefficient
+   wireless networks.  A broadcast-efficient backbone running classical
+   IPv6 Neighbor Discovery federates multiple wireless links to form a
+   large MultiLink Subnet, but the broadcast domain does not need to
+   extend to the wireless links for the purpose of ND operation.
+   Backbone Routers placed at the wireless edge of the backbone proxy
+   the ND operation and route packets from/to registered nodes, and
+   wireless nodes register or are proxy-registered to the Backbone
+   Router to setup proxy services in a fashion that is essentially
+   similar to a classical Layer-2 association.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-backbone-router/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-backbone-router-05
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-backbone-router-05
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-backbone-router-05
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Tue Jan 16 02:27:34 2018
+Return-Path: <g.e.montenegro@hotmail.com>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 9AC0B12FB5E; Tue, 16 Jan 2018 02:27:32 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Gabriel Montenegro <g.e.montenegro@hotmail.com>
+To: <suresh@kaloom.com>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.68.3
+Auto-Submitted: auto-generated
+Precedence: bulk
+Cc: 6lo-chairs@ietf.org, iesg-secretary@ietf.org, Gabriel.Montenegro@microsoft.com, Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>, 6lo@ietf.org
+Message-ID: <151609845262.11700.4355558797347273414.idtracker@ietfa.amsl.com>
+Date: Tue, 16 Jan 2018 02:27:32 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/uZ7G3zpbt9xYiH4VXnhd5mSpGsc>
+Subject: [6lo] Publication has been requested for draft-ietf-6lo-rfc6775-update-11
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 16 Jan 2018 10:27:33 -0000
+
+Gabriel Montenegro has requested publication of draft-ietf-6lo-rfc6775-update-11 as Proposed Standard on behalf of the 6LO working group.
+
+Please verify the document's state at https://datatracker.ietf.org/doc/draft-ietf-6lo-rfc6775-update/
+
+
+From nobody Wed Jan 24 11:27:38 2018
+Return-Path: <session-request@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 0E83E1271DF; Wed, 24 Jan 2018 11:27:36 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: IETF Meeting Session Request Tool <session-request@ietf.org>
+To: <session-request@ietf.org>
+Cc: g.e.montenegro@hotmail.com, 6lo-chairs@ietf.org, suresh@kaloom.com, 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.70.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <151682205605.22689.1470450160943344380.idtracker@ietfa.amsl.com>
+Date: Wed, 24 Jan 2018 11:27:36 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/RTnQzVj5NmbAWr-B6yBXJC8g314>
+Subject: [6lo] 6lo - New Meeting Session Request for IETF 101
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 24 Jan 2018 19:27:36 -0000
+
+A new meeting session request has just been submitted by Gabriel Montenegro, a Chair of the 6lo working group.
+
+
+---------------------------------------------------------
+Working Group Name: IPv6 over Networks of Resource-constrained Nodes
+Area Name: Internet Area
+Session Requester: Gabriel Montenegro
+
+Number of Sessions: 1
+Length of Session(s):  2 Hours
+Number of Attendees: 61
+Conflicts to Avoid: 
+ First Priority: lwig intarea core ace 6tisch 6man manet homenet lpwan httpbis quic
+ Second Priority: roll v6ops detnet icnrg t2trg
+
+
+
+People who must be present:
+  Samita Chakrabarti
+  Suresh Krishnan
+  james woodyatt
+  Gabriel Montenegro
+
+Resources Requested:
+
+Special Requests:
+  No sessions on Friday.
+---------------------------------------------------------
+
+
+From nobody Tue Jan 30 00:44:59 2018
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 30712129BBF; Tue, 30 Jan 2018 00:44:54 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.70.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <151730189414.27511.591165228245266459@ietfa.amsl.com>
+Date: Tue, 30 Jan 2018 00:44:54 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/yaAbj2S62XlsHeRj2wh9nqye17U>
+Subject: [6lo] I-D Action: draft-ietf-6lo-ap-nd-05.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 30 Jan 2018 08:44:54 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : Address Protected Neighbor Discovery for Low-power and Lossy Networks
+        Authors         : Pascal Thubert
+                          Behcet Sarikaya
+                          Mohit Sethi
+	Filename        : draft-ietf-6lo-ap-nd-05.txt
+	Pages           : 21
+	Date            : 2018-01-30
+
+Abstract:
+   This document defines an extension to 6LoWPAN Neighbor Discovery (ND)
+   [RFC6775][I-D.ietf-6lo-rfc6775-update] called Address Protected ND
+   (AP-ND); AP-ND protects the owner of an address against address theft
+   and impersonation inside a low-power and lossy network (LLN).  Nodes
+   supporting this extension compute a cryptographic Owner Unique
+   Interface ID and associate it with one or more of their Registered
+   Addresses.  The Cryptographic ID uniquely identifies the owner of the
+   Registered Address and can be used for proof-of-ownership.  It is
+   used in 6LoWPAN ND in place of the EUI-64-based unique ID that is
+   associated with the registration.  Once an address is registered with
+   a Cryptographic ID, only the owner of that ID can modify the anchor
+   state information of the Registered Address, and Source Address
+   Validation can be enforced.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-ap-nd/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-ap-nd-05
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-ap-nd-05
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-ap-nd-05
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Tue Jan 30 00:52:35 2018
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 8F2BD131A98 for <6lo@ietfa.amsl.com>; Tue, 30 Jan 2018 00:52:27 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.53
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.53 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, T_RP_MATCHES_RCVD=-0.01, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id FuyhpSD__wpp for <6lo@ietfa.amsl.com>; Tue, 30 Jan 2018 00:52:20 -0800 (PST)
+Received: from rcdn-iport-4.cisco.com (rcdn-iport-4.cisco.com [173.37.86.75]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 85305131A4F for <6lo@ietf.org>; Tue, 30 Jan 2018 00:50:37 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=8417; q=dns/txt; s=iport; t=1517302237; x=1518511837; h=from:to:subject:date:message-id:mime-version; bh=KdGqMmKMaUOKoWV6Ei0E7pioJ4QrbIJ4L3ZJIijyFqw=; b=YJCliELTp7m22wfPXtWvY2KjZkZ5Odoy+oAwyjP8Z7LxdXqENoQoMUAa nrwKGN7ZAR9TRwCC+85mmMDJ71/qR46E4OcDGheNrQZQ0pY/frLzLe1XF h+mHuIXngmHO8+AWhz7u+Pf7L6H4kes5Pq1lAEa7ytt3XJVPENafWHded g=;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0C4AABgMXBa/5RdJa1bGQEBAQEBAQEBA?= =?us-ascii?q?QEBAQcBAQEBAYJKeGZ1Mo16jmuTcYVUFYICCod4VBgBAQEBAQEBAQJrHQuFV14?= =?us-ascii?q?BgQAmAQQbiUlkqBOKaAEBAQEGAQEBAQEjhFSCFYFXgWeIGRGGIwWkFQKCBZNYl?= =?us-ascii?q?DKXOQIRGQGBOwEfOYFQcBWCaIJTHYIGjUQCJQeBBoEXAQEB?=
+X-IronPort-AV: E=Sophos;i="5.46,433,1511827200";  d="scan'208,217";a="349402132"
+Received: from rcdn-core-12.cisco.com ([173.37.93.148]) by rcdn-iport-4.cisco.com with ESMTP/TLS/DHE-RSA-AES256-GCM-SHA384; 30 Jan 2018 08:50:36 +0000
+Received: from XCH-RCD-001.cisco.com (xch-rcd-001.cisco.com [173.37.102.11]) by rcdn-core-12.cisco.com (8.14.5/8.14.5) with ESMTP id w0U8oavl005303 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=FAIL) for <6lo@ietf.org>; Tue, 30 Jan 2018 08:50:36 GMT
+Received: from xch-rcd-001.cisco.com (173.37.102.11) by XCH-RCD-001.cisco.com (173.37.102.11) with Microsoft SMTP Server (TLS) id 15.0.1320.4; Tue, 30 Jan 2018 02:50:35 -0600
+Received: from xch-rcd-001.cisco.com ([173.37.102.11]) by XCH-RCD-001.cisco.com ([173.37.102.11]) with mapi id 15.00.1320.000; Tue, 30 Jan 2018 02:50:35 -0600
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: Strength of the 64 bits token in AP-ND
+Thread-Index: AdOJLOOdWndHOQdZQtOP9MzhQrch4Q==
+Date: Tue, 30 Jan 2018 08:50:32 +0000
+Deferred-Delivery: Tue, 30 Jan 2018 08:50:15 +0000
+Message-ID: <0a085ad4ea6d4a119a34c9108db42a0f@XCH-RCD-001.cisco.com>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [10.61.83.124]
+Content-Type: multipart/alternative; boundary="_000_0a085ad4ea6d4a119a34c9108db42a0fXCHRCD001ciscocom_"
+MIME-Version: 1.0
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/25Yec-vvDCw28BkHLDVyI8DsxCU>
+Subject: [6lo] Strength of the 64 bits token in AP-ND
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 30 Jan 2018 08:52:28 -0000
+
+--_000_0a085ad4ea6d4a119a34c9108db42a0fXCHRCD001ciscocom_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear all:
+
+
+
+As you now, AP ND is backward compatible with RFC 6775 and uses the same me=
+ssage formats. The EUI 64 field in the ARO and in the DAR/DAC message is us=
+ed to transport the token that enables the proof of ownership validation. W=
+ith the current draft, the token is mostly a compressed form of a public ke=
+y. We use SHA-256 so we could make it 256 bits long. But for backward compa=
+tibility we use only 64 bits from the hash. This makes it easier for an att=
+acker to form its own keypair that would derive into the same token.
+
+
+
+When the device moves, it is challenged by the new 6LR, which will validate=
+ the token as above and check with the 6LBR that the token is the same as e=
+arlier with the other 6LR, in a fashion consistent with RFC 6775.
+
+Only the 6LR will have visibility on the entire public key used during the =
+challenge, there is no room in the DAR/DAC for it. An attacker may fake a m=
+oving device and be able to claim the address if it can build an identical =
+token with a key of its own. One key question is the level of protection th=
+at we get with this.
+
+
+
+I see the following possibilities (hopefully there's more?):
+
+-  by compressing the public key to 64 bits as the draft does today we have=
+ a limited security; may be acceptable in some networks, and provides backw=
+ards compatibility
+
+-  using the whole 256 bits out of the SHA hash, the size of DAR and DAC me=
+ssages and the ARO option would be impacted. We'd have to rework the backwa=
+rd compatibility with 6LoWPAN ND, ensure that the 6LR / 6LBR supports this =
+spec before using a larger token, and use a larger field when the network i=
+s not backlevel
+
+-  RFC 3972 has a trick whereby the cost of generating a new CGA depends ex=
+ponentially on a security parameter Sec, both for the attacker and the defe=
+nder. This allows more security with 64 bits only, but is exponentially com=
+pute intensive on the 6LN if it has to generate the token. Note that in som=
+e cases the token modifier could be provisioned to the device together with=
+ the key pair.
+
+
+
+In our description we are not going through the CGA steps. It might be that=
+ they are encumbered. We have a small modifier to be able to generate a lim=
+ited number of tokens for one key, but it is small enough so an attacker ca=
+nnot generate too many tokens for one key, so it has to generate many keys =
+before it finds one that derives into a same token.
+
+What do people think?
+
+Pascal
+
+--_000_0a085ad4ea6d4a119a34c9108db42a0fXCHRCD001ciscocom_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle20
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoPlainText">Dear all:<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">As you now, AP ND is backward compatible with RFC=
+ 6775 and uses the same message formats. The EUI 64 field in the ARO and in=
+ the DAR/DAC message is used to transport the token that enables the proof =
+of ownership validation. With the
+ current draft, the token is mostly a compressed form of a public key. We u=
+se SHA-256 so we could make it 256 bits long. But for backward compatibilit=
+y we use only 64 bits from the hash. This makes it easier for an attacker t=
+o form its own keypair that would
+ derive into the same token.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">When the device moves, it is challenged by the ne=
+w 6LR, which will validate the token as above and check with the 6LBR that =
+the token is the same as earlier with the other 6LR, in a fashion consisten=
+t with RFC 6775.<o:p></o:p></p>
+<p class=3D"MsoPlainText">Only the 6LR will have visibility on the entire p=
+ublic key used during the challenge, there is no room in the DAR/DAC for it=
+. An attacker may fake a moving device and be able to claim the address if =
+it can build an identical token with
+ a key of its own. One key question is the level of protection that we get =
+with this.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">I see the following possibilities (hopefully ther=
+e&#8217;s more?):<o:p></o:p></p>
+<p class=3D"MsoPlainText">-&nbsp; by compressing the public key to 64 bits =
+as the draft does today we have a limited security; may be acceptable in so=
+me networks, and provides backwards compatibility<o:p></o:p></p>
+<p class=3D"MsoPlainText">-&nbsp; using the whole 256 bits out of the SHA h=
+ash, the size of DAR and DAC messages and the ARO option would be impacted.=
+ We'd have to rework the backward compatibility with 6LoWPAN ND, ensure tha=
+t the 6LR / 6LBR supports this spec before
+ using a larger token, and use a larger field when the network is not backl=
+evel<b><o:p></o:p></b></p>
+<p class=3D"MsoPlainText">-&nbsp; RFC 3972 has a trick whereby the cost of =
+generating a new CGA depends exponentially on a security parameter Sec, bot=
+h for the attacker and the defender. This allows more security with 64 bits=
+ only, but is exponentially compute intensive
+ on the 6LN if it has to generate the token. Note that in some cases the to=
+ken modifier could be provisioned to the device together with the key pair.=
+<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">In our description we are not going through the C=
+GA steps. It might be that they are encumbered. We have a small modifier to=
+ be able to generate a limited number of tokens for one key, but it is smal=
+l enough so an attacker cannot generate
+ too many tokens for one key, so it has to generate many keys before it fin=
+ds one that derives into a same token.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">What do people think?<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Pascal<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_0a085ad4ea6d4a119a34c9108db42a0fXCHRCD001ciscocom_--
+
+
+From nobody Tue Jan 30 08:43:51 2018
+Return-Path: <mcr+ietf@sandelman.ca>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 8F76F12DA4E for <6lo@ietfa.amsl.com>; Tue, 30 Jan 2018 08:43:49 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.91
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.91 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, T_RP_MATCHES_RCVD=-0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 1ejo6h4I_Y8q for <6lo@ietfa.amsl.com>; Tue, 30 Jan 2018 08:43:47 -0800 (PST)
+Received: from tuna.sandelman.ca (tuna.sandelman.ca [209.87.249.19]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 9253912EC6A for <6lo@ietf.org>; Tue, 30 Jan 2018 08:42:46 -0800 (PST)
+Received: from sandelman.ca (obiwan.sandelman.ca [209.87.249.21]) by tuna.sandelman.ca (Postfix) with ESMTP id 8EF1820095; Tue, 30 Jan 2018 11:48:51 -0500 (EST)
+Received: from obiwan.sandelman.ca (localhost [IPv6:::1]) by sandelman.ca (Postfix) with ESMTP id 9139B80C6E; Tue, 30 Jan 2018 11:42:45 -0500 (EST)
+From: Michael Richardson <mcr+ietf@sandelman.ca>
+To: "Pascal Thubert \(pthubert\)" <pthubert@cisco.com>
+cc: "6lo\@ietf.org" <6lo@ietf.org>
+In-Reply-To: <0a085ad4ea6d4a119a34c9108db42a0f@XCH-RCD-001.cisco.com>
+References: <0a085ad4ea6d4a119a34c9108db42a0f@XCH-RCD-001.cisco.com>
+X-Mailer: MH-E 8.6; nmh 1.7-RC3; GNU Emacs 24.5.1
+X-Face: $\n1pF)h^`}$H>Hk{L"x@)JS7<%Az}5RyS@k9X%29-lHB$Ti.V>2bi.~ehC0; <'$9xN5Ub# z!G,p`nR&p7Fz@^UXIn156S8.~^@MJ*mMsD7=QFeq%AL4m<nPbLgmtKK-5dC@#:k
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-="; micalg=pgp-sha256; protocol="application/pgp-signature"
+Date: Tue, 30 Jan 2018 11:42:45 -0500
+Message-ID: <4653.1517330565@obiwan.sandelman.ca>
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/XP8zT7hLiW-JgeCj-HKTg_SNy-U>
+Subject: Re: [6lo] Strength of the 64 bits token in AP-ND
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 30 Jan 2018 16:43:50 -0000
+
+--=-=-=
+Content-Type: text/plain
+
+
+Pascal Thubert (pthubert) <pthubert@cisco.com> wrote:
+    > - using the whole 256 bits out of the SHA hash, the size of DAR and
+    > DAC messages and the ARO option would be impacted. We'd have to rework
+    > the backward compatibility with 6LoWPAN ND, ensure that the 6LR / 6LBR
+    > supports this spec before using a larger token, and use a larger field
+    > when the network is not backlevel
+
+I believe that you have the only deployed code that makes use of this, so I
+think that there are limited issues with backward compatibility.
+
+    > - RFC 3972 has a trick whereby the cost of generating a new CGA
+    > depends exponentially on a security parameter Sec, both for the
+
+I believe that this discussion would benefit from looking at some of the work
+of hosnieh.rafiee@huawei.com:
+   https://www.ietf.org/archive/id/draft-rafiee-rfc3972-bis-00.txt
+   https://datatracker.ietf.org/doc/search/?name=rafiee&sort=&rfcs=on&activedrafts=on&olddrafts=on
+--
+Michael Richardson <mcr+IETF@sandelman.ca>, Sandelman Software Works
+ -= IPv6 IoT consulting =-
+
+
+
+
+--=-=-=
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEbsyLEzg/qUTA43uogItw+93Q3WUFAlpwoIUACgkQgItw+93Q
+3WXusgf/SPuet4xWXi5sNzDFIn7Nurv5v7SLvttLalLn8hMje4mSBzzmIgL/S3Hm
+RT+7M89plT2Pc0f1WPCOCtM/e5QsdysuNPJixvfQB9rYVPLjhRzJVwyI+t8N5UaR
+8hHPTPFL7OOqQMtq3DG8/pNSuX5tXcovrQ3u/Jz9zgdsOa8T9rvjoZH82Ukj5gIK
+5Le9IT+zWtf9bh+AV+wZb2pOXBwR7uk6qKcGjXyITILw5XC6QL3D7adHHJqKdlZB
+p38GqIXIzY2+Z/T2dmAHmbV4Hnk1kstR8QqmSKABNpdjYIdlaKffgVvBTOLJaUje
+hwzJTFdMFE80SN+GFv3F7LgabemGUA==
+=/nKw
+-----END PGP SIGNATURE-----
+--=-=-=--
+

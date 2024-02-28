@@ -1,0 +1,103 @@
+
+From nobody Thu May 27 00:07:30 2021
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0BFA93A0EFF for <6lo@ietfa.amsl.com>; Thu, 27 May 2021 00:07:28 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.894
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.894 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_BLOCKED=0.001, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id AGCiqSAFEh1A for <6lo@ietfa.amsl.com>; Thu, 27 May 2021 00:07:23 -0700 (PDT)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 858B23A0EFA for <6lo@ietf.org>; Thu, 27 May 2021 00:07:22 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 14R77HEL009999 for <6lo@ietf.org>; Thu, 27 May 2021 09:07:19 +0200
+Received: from wmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id 3AB731D53C1 for <6lo@ietf.org>; Thu, 27 May 2021 09:07:17 +0200 (CEST)
+Received: from 83.53.208.63 by wmail.entel.upc.edu with HTTP; Thu, 27 May 2021 09:20:28 +0200
+Message-ID: <40b684d4c52b372a20b6005a4329d487.squirrel@wmail.entel.upc.edu>
+Date: Thu, 27 May 2021 09:20:28 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Thu, 27 May 2021 09:07:19 +0200 (CEST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/sSg-Qy1BWT-XFWQcuoQ0Tzwihn0>
+Subject: [6lo] [Fwd: NomCom 2021-2022 Call for Volunteers]
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 27 May 2021 07:07:28 -0000
+
+Dear 6Lo WG,
+
+The NomCom 2021-2022 Call for Volunteers has been published:
+https://mailarchive.ietf.org/arch/msg/ietf-announce/T_WVH96pH-5QVTRqd0yTT1TaPaU/
+
+The IETF benefits from having a good, sizable pool of volunteers to be
+NomCom members. Please, volunteer if you think you can serve on NomCom.
+
+Cheers,
+
+Shwetha and Carles
+
+
+
+
+---------------------------- Original Message ----------------------------
+Subject: NomCom 2021-2022 Call for Volunteers
+From:    g_e_montenegro=40yahoo.com@dmarc.ietf.org
+Date:    Wed, May 26, 2021 6:39 pm
+To:      wgchairs@ietf.org
+--------------------------------------------------------------------------
+
+Hi,
+
+
+
+As you may have seen, the NomCom 2021-2022 Call for Volunteers went out
+today:
+
+
+
+https://mailarchive.ietf.org/arch/msg/ietf-announce/T_WVH96pH-5QVTRqd0yTT1Ta
+PaU/
+
+
+
+The IETF benefits from having a good, sizable pool of volunteers to be
+NomCom members.
+
+
+
+Please consider publicizing the announcement in your respective WGs.
+
+
+
+Thanks,
+
+
+
+Gabriel
+
+(as NomCom Chair)
+
+
+
+
+
+
+
+
+

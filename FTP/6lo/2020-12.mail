@@ -1,0 +1,1188 @@
+
+From nobody Fri Dec  4 13:05:53 2020
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 91EA33A0C37; Fri,  4 Dec 2020 13:05:51 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Pete Resnick via Datatracker <noreply@ietf.org>
+To: <gen-art@ietf.org>
+Cc: last-call@ietf.org, draft-ietf-6lo-blemesh.all@ietf.org, 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.23.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <160711595155.19658.8436612763808758937@ietfa.amsl.com>
+Reply-To: Pete Resnick <resnick@episteme.net>
+Date: Fri, 04 Dec 2020 13:05:51 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/yHLCcGh4D0j6dfMNJf4woEYc8xU>
+Subject: [6lo] Genart last call review of draft-ietf-6lo-blemesh-08
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 04 Dec 2020 21:05:52 -0000
+
+Reviewer: Pete Resnick
+Review result: Ready with Issues
+
+I am the assigned Gen-ART reviewer for this draft. The General Area
+Review Team (Gen-ART) reviews all IETF documents being processed
+by the IESG for the IETF Chair.  Please treat these comments just
+like any other last call comments.
+
+For more information, please see the FAQ at
+
+<https://trac.ietf.org/trac/gen/wiki/GenArtfaq>.
+
+Document: draft-ietf-6lo-blemesh-08
+Reviewer: Pete Resnick
+Review Date: 2020-12-04
+IETF LC End Date: 2020-10-21
+IESG Telechat date: Not scheduled for a telechat
+
+Summary: Looks good to me, with two items that seemed confusing enough that
+they should be addressed.
+
+Note that this review is being done well after the close of the Last Call.
+Since this is not yet scheduled for a telechat, the AD asked that I go ahead
+and complete the review anyway.
+
+Major issues: None
+
+Minor issues:
+
+3.3.2, #4:
+
+   Implementations of this specification MAY support
+   the features described in sections 8.1 and 8.2 of RFC 6775, as
+   updated by RFC 8505, unless some alternative ("substitute") from some
+   other specification is supported by the implementation.
+
+This bit confused me. I think it was the "unless". Do you mean it MAY support
+the 6775/8505 features, or MAY support some substitute, or MAY support neither,
+or do you mean that it MUST support either the 6775/8505 features or MUST
+support some substitute? I think you want to rewrite this to make it clear
+which one you mean.
+
+3.3.3, last two paragraphs:
+
+   When a 6LN transmits a packet, with a non-link-local source address
+   that the 6LN has registered with EARO in the next-hop router for the
+   indicated prefix, the source address MUST be fully elided if it is
+   the latest address that the 6LN has registered for the indicated
+   prefix (SAC=1, SAM=11).  If the source non-link-local address is not
+   the latest registered by the 6LN, then the 64 bits of the IID SHALL
+   be fully carried in-line (SAC=1, SAM=01) or if the first 48 bits of
+   the IID match with the latest address registered by the 6LN, then the
+   last 16 bits of the IID SHALL be carried in-line (SAC=1, SAM=10).
+
+   When a router transmits a packet to a neighboring 6LN, with a non-
+   link-local destination address, the router MUST fully elide the
+   destination IPv6 address if the destination address is the latest
+   registered by the 6LN with EARO for the indicated context (DAC=1,
+   DAM=11).  If the destination address is a non-link-local address and
+   not the latest registered, then the 6LN MUST either include the IID
+   part fully in-line (DAM=01) or, if the first 48 bits of the IID match
+   to the latest registered address, then elide those 48 bits (DAM=10).
+
+Both of these were a bit confusing to me. I think you want to reverse the order
+of the last two choices. Say something like (for the first paragraph), "If the
+source non-link-local address is not the latest registered by the 6LN and the
+first 48 bits match..., then the last 16 bits SHALL be carried in-line.
+Otherwise, if first 48 bits do not match, then the 64 bits shall be carried
+inline." Similarly for the second. As it is, it takes a while to figure out
+what it means.
+
+Nits/editorial comments: Do fix the reference nits noted by the nits tool; they
+appear to be simple typos.
+
+
+
+From nobody Mon Dec  7 23:17:53 2020
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 94A493A0D47; Mon,  7 Dec 2020 23:17:47 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.23.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: 6lo@ietf.org
+Message-ID: <160741186754.21715.16549540069936371874@ietfa.amsl.com>
+Date: Mon, 07 Dec 2020 23:17:47 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/QJovTPgI8ynNIZvRAYb-ABtRabM>
+Subject: [6lo] I-D Action: draft-ietf-6lo-blemesh-09.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 08 Dec 2020 07:17:48 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : IPv6 Mesh over BLUETOOTH(R) Low Energy using IPSP
+        Authors         : Carles Gomez
+                          Seyed Mahdi Darroudi
+                          Teemu Savolainen
+                          Michael Spoerk
+	Filename        : draft-ietf-6lo-blemesh-09.txt
+	Pages           : 16
+	Date            : 2020-12-07
+
+Abstract:
+   RFC 7668 describes the adaptation of 6LoWPAN techniques to enable
+   IPv6 over Bluetooth low energy networks that follow the star
+   topology.  However, recent Bluetooth specifications allow the
+   formation of extended topologies as well.  This document specifies
+   mechanisms that are needed to enable IPv6 mesh over Bluetooth Low
+   Energy links established by using the Bluetooth Internet Protocol
+   Support Profile.  This document does not specify the routing protocol
+   to be used in an IPv6 mesh over Bluetooth LE links.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-blemesh/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-blemesh-09
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-blemesh-09
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-blemesh-09
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+
+From nobody Mon Dec  7 23:33:41 2020
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0A8E33A0A3E for <6lo@ietfa.amsl.com>; Mon,  7 Dec 2020 23:33:40 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.917
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.917 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id eUEZSmtcQEEh for <6lo@ietfa.amsl.com>; Mon,  7 Dec 2020 23:33:38 -0800 (PST)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 45C0C3A090D for <6lo@ietf.org>; Mon,  7 Dec 2020 23:33:37 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 0B87Xapk045643 for <6lo@ietf.org>; Tue, 8 Dec 2020 08:33:36 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id C71251D53C1 for <6lo@ietf.org>; Tue,  8 Dec 2020 08:33:34 +0100 (CET)
+Received: from 79.152.1.171 by webmail.entel.upc.edu with HTTP; Tue, 8 Dec 2020 08:33:35 +0100
+Message-ID: <8094b0c5bcdc269ad67f4b1f03551982.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <160741186754.21715.16549540069936371874@ietfa.amsl.com>
+References: <160741186754.21715.16549540069936371874@ietfa.amsl.com>
+Date: Tue, 8 Dec 2020 08:33:35 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Tue, 08 Dec 2020 08:33:36 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/S54pUKdxMb7k8CxelWa56d7WAFI>
+Subject: Re: [6lo] I-D Action: draft-ietf-6lo-blemesh-09.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 08 Dec 2020 07:33:40 -0000
+
+Dear all,
+
+We have updated draft-ietf-6lo-blemesh, with the aim to address the
+comments from Dominique Barthel (IoTDIR), Acee Lindem (RTGDIR), Catherine
+Meadows (SECDIR) and Pete Resnick (Gen-ART).
+
+We would like to thank the above mentioned reviewers for their time and
+for their valuable comments.
+
+Kind regards,
+
+Carles (on behalf of the authors)
+
+
+
+> A New Internet-Draft is available from the on-line Internet-Drafts
+> directories.
+> This draft is a work item of the IPv6 over Networks of
+> Resource-constrained Nodes WG of the IETF.
+>
+>         Title           : IPv6 Mesh over BLUETOOTH(R) Low Energy using
+> IPSP
+>         Authors         : Carles Gomez
+>                           Seyed Mahdi Darroudi
+>                           Teemu Savolainen
+>                           Michael Spoerk
+> 	Filename        : draft-ietf-6lo-blemesh-09.txt
+> 	Pages           : 16
+> 	Date            : 2020-12-07
+>
+> Abstract:
+>    RFC 7668 describes the adaptation of 6LoWPAN techniques to enable
+>    IPv6 over Bluetooth low energy networks that follow the star
+>    topology.  However, recent Bluetooth specifications allow the
+>    formation of extended topologies as well.  This document specifies
+>    mechanisms that are needed to enable IPv6 mesh over Bluetooth Low
+>    Energy links established by using the Bluetooth Internet Protocol
+>    Support Profile.  This document does not specify the routing protocol
+>    to be used in an IPv6 mesh over Bluetooth LE links.
+>
+>
+> The IETF datatracker status page for this draft is:
+> https://datatracker.ietf.org/doc/draft-ietf-6lo-blemesh/
+>
+> There are also htmlized versions available at:
+> https://tools.ietf.org/html/draft-ietf-6lo-blemesh-09
+> https://datatracker.ietf.org/doc/html/draft-ietf-6lo-blemesh-09
+>
+> A diff from the previous version is available at:
+> https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-blemesh-09
+>
+>
+> Please note that it may take a couple of minutes from the time of
+> submission
+> until the htmlized version and diff are available at tools.ietf.org.
+>
+> Internet-Drafts are also available by anonymous FTP at:
+> ftp://ftp.ietf.org/internet-drafts/
+>
+>
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+
+
+
+From nobody Tue Dec  8 00:19:10 2020
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 329AF3A0E07; Tue,  8 Dec 2020 00:19:08 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.917
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.917 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H4=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id BheLYzcgk9ty; Tue,  8 Dec 2020 00:19:06 -0800 (PST)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 3BCE03A0E03; Tue,  8 Dec 2020 00:19:04 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 0B88J26D006245; Tue, 8 Dec 2020 09:19:02 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id C112D1D53C1; Tue,  8 Dec 2020 09:19:01 +0100 (CET)
+Received: from 79.152.1.171 by webmail.entel.upc.edu with HTTP; Tue, 8 Dec 2020 09:19:02 +0100
+Message-ID: <07c5a3a14692091671c431793c701079.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <160389187977.20412.7270735327411399214@ietfa.amsl.com>
+References: <160389187977.20412.7270735327411399214@ietfa.amsl.com>
+Date: Tue, 8 Dec 2020 09:19:02 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: "Dominique Barthel" <dominique.barthel@orange.com>
+Cc: iot-directorate@ietf.org, last-call@ietf.org, draft-ietf-6lo-blemesh.all@ietf.org, 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at violet
+X-Virus-Status: Clean
+X-Greylist: Delayed for 00:45:26 by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Tue, 08 Dec 2020 09:19:03 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/Ifptj2Ny3Um9mpeR2hecc8R1d38>
+Subject: Re: [6lo] Iotdir last call review of draft-ietf-6lo-blemesh-08
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 08 Dec 2020 08:19:08 -0000
+
+Hi Dominique,
+
+Sorry for the late reply, and thanks a lot for your thorough review of the
+draft!
+
+We just submitted -09, which aims at addressing the last round of review
+comments, including yours:
+https://tools.ietf.org/html/draft-ietf-6lo-blemesh-09
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-blemesh-09
+
+Please find below our inline responses to your comments/questions:
+
+> Reviewer: Dominique Barthel
+> Review result: Ready with Nits
+>
+> Thanks for this useful and timely draft.
+> I found it ready for publication, but for a few questions/comments, and a
+> few
+> nits.
+>
+> Questions
+> 1. RFC 2119 is referenced. Shouln't RFC 8174 be referenced as well?
+
+Yes! We added a reference to RFC 8174.
+
+> 2. Section 3.3.2 states "Note that in some cases (e.g. very short-lived
+> connections) it may not be worthwhile for a 6LN to send an NS with EARO
+> for
+> registering its address".
+>    It would be useful to describe the consequences of not registering the
+>    address. What about reachability from the other end, in case a response
+> is
+>    expected? DAD?
+
+We added one sentence to explicitly indicate the consequences of not
+registering the address:
+
+NEW:
+   However, the consequences of not registering the address (including non-
+   reachability of the 6LN, and absence of DAD) need to be carefully
+   considered.
+
+> 3. Section 3.3.2 states "If the 6LN registers multiple addresses that are
+> not
+> based on Bluetooth device address using the same compression context, the
+> header compression efficiency will decrease".
+>    I found this sentence difficult to parse.
+>    It seems to summarize considerations developped in Section 3.2.4 of
+> RFC7668.
+>    If this is true, a reference to that section would help the reader.
+
+Yes, we added that reference. We also changed the "will decrease" to "may
+decrease", and briefly explained the reason why:
+
+NEW:
+   If the 6LN registers multiple addresses that are not based on the
+   Bluetooth device address using the same compression context, the
+   header compression efficiency may decrease, since only the last
+   registered address can be fully elided (see Section 3.2.4 of RFC
+   7668).
+
+> Checking
+>    the details of Section 3.2.4 of RFC7668, I realized that I had not
+> fully
+>    understood it yet. Even though it is a long-published RFC, can you
+> educate
+>    me on why the address last registered with the ARO gets a better
+> compression
+>    than other addresses that share the same prefix? For example, see "and
+> if
+>    SAC=1 and SAM=11, the 6LN MUST have registered the source IPv6 address
+> with
+>    the prefix related to the compression context, and the 6LN MUST be
+> referring
+>    to the latest registered address related to the compression context".
+> Does
+>    it imply that the ARO modifies the 6282 compression context at the 6LR?
+> How
+>    does the ARO relate to the compression context? A related, and
+> striking,
+>    sentence in RFC7668 is "The 6LN can register a new address, or
+> re-register
+>    an expired address, to become able to again fully elide an address",
+>    seemingly implying a connection between registration and compression.
+> Please
+>    advise.
+
+In RFC 7668, which focuses on a star topology where links are formed via
+BLE Link Layer connections, a 6LBR that receives a packet from a 6LN knows
+that the packet comes from *that* 6LN (since the packet arrives at the
+6LBR via a specific BLE Link Layer connection), but the 6LBR does not
+necessarily know which is the current non-link-local address of the 6LN.
+(The prefix of that address may always be the same, but perhaps the IID
+may change somewhat frequently, e.g. for privacy reasons, and the IID may
+be independent of the BLE Link Layer connection identifier.) In order to
+allow the 6LBR know which is the current non-link-local address, RFC 7668
+uses ARO, so that the last registered non-link-local address is the
+current one. If the 6LN uses the last registered address, then the IPv6
+source address can be (actually is) fully elided, since the 6LBR will be
+able to decompress that address (i.e. the 6LBR knows the current
+non-link-local address of the 6LN). For previously used 6LN addresses
+(which are not the current/last one, but have the same prefix), only the
+prefix can be elided.
+
+So, back to your question �why the address last registered with the ARO
+gets a better compression than other addresses that share the same
+prefix?�, the answer is that header compression exploits not only the 6282
+context, but also the underlying star network topology, the fact that
+links in that topology are based on connections, and the fact that ARO
+provides additional information about which is the current 6LN
+non-link-local address in use.
+
+> 4. Section 3.3.3 states "Note that 6CO is not needed for context-based
+> compression when a single prefix is used in the network". Can you please
+> explain how you do context-based compression without loading the context
+> via a
+> 6CO? Do you assume the context is pre-provisioned via some out-of-band
+> means?
+
+Yes, that is our assumption. We have clarified that in -09:
+
+NEW:
+   Note that 6CO is not needed for context-based
+   compression when context is pre-provisioned or provided by out-of-
+   band means.
+
+> If yes, how is it specific to the case where a single prefix is used in
+> the
+> network? If no, is it because some registration/compression connection
+> that I
+> missed (see comment #3)?
+
+It is not specific to the case where a single prefix is used in the
+network. The updated text (above) does not mention the single prefix case.
+
+>    RFC 7668 has a MUST instead of a MAY in the sentence "To enable
+> efficient
+>    header compression, when the 6LBR sends a Router Advertisement it MAY
+>    include a 6LoWPAN Context Option (6CO) [RFC6775] matching each address
+>    prefix advertised via a Prefix Information Option (PIO) [RFC4861] for
+> use in
+>    stateless address autoconfiguration". Is this a short sighting of
+> RFC7668,
+>    that would be worth an update? Or is the MAY specific to the mesh
+> version of
+>    BLE networks?
+
+I must admit that I don't actually remember why a MUST was used when we
+wrote RFC 7668. Perhaps constraining the space of allowed options was
+considered valuable for the sake of simplicity.
+
+Perhaps an update might make sense. On the other hand, a set of devices
+where there are no 6LRs (i.e., only 6LNs and a 6LBR) implementing
+draft-ietf-6lo-blemesh may form a star-topology network supporting
+pre-provisioned context or context provided by out-of-band means.
+
+> 5. Section 3.3.3 states "These cases comprise link-local interactions,
+> non-link-local packet transmissions originated by a 6LN, and
+> non-link-local
+> packets intended for a 6LN that are originated or forwarded by a neighbor
+> of
+> that 6LN".
+>    Pretending for a moment that I undestood compression as specified per
+> RFC
+>    7668, do I understand correctly that, in the BLE mesh, 7668-like
+> compression
+>    only applies to the first hop from a 6LN or to the last hop toward a
+> 6LN,
+>    and that any hop beyond that cannot use 7668-like compression? Would
+> this be
+>    a better text to replace the one I just quoted?
+
+We tried to improve clarity of the text by adding text between
+parentheses, as follows.
+
+NEW:
+   These cases comprise
+   link-local interactions, non-link-local packet transmissions
+   originated by a 6LN (i.e. the first hop from a 6LN), and non-link-
+   local packets intended for a 6LN that are originated or forwarded by
+   a neighbor of that 6LN (i.e. the last hop toward a 6LN).
+
+> Nits:
+> - 3.3.2: "For sending Router Solicitations and processing Router
+> Advertisements
+> the Bluetooth LE hosts MUST, respectively, follow ..."
+>    There is no such thing as a BLE host in the Terminology. Do you mean
+> "IPSP
+>    Node" or "IPv6 host that participates in the BLE mesh"?
+
+We used a form inspired by the latter in -09:
+
+    "... the hosts that participate in an IPv6 mesh over BLE"
+
+> - 3.3.2: "A 6LBR uses the IPSP Router role since the 6LBR is initialized".
+> What
+> does "is initialized" specifically mean, in this sentence? The 6LN and 6LR
+> are
+> also initialized at startup, but I guess they lack the state that you
+> assume is
+> preconfigured in the 6LBR.
+
+We aimed to clarify the meaning of that text as follows.
+
+NEW:
+   is initialized, that is, the 6LBR uses both the IPSP Node and IPSP Router
+   roles at all times.  See an example in Appendix B.
+
+- 3.3.2: "See an example in the Appendix" -->
+> "See
+> an example in Appendix B"
+
+Done.
+
+- Appendix A is not referenced anywhere in the
+> body
+> of the document.
+
+It is now referenced from the last paragraph of Section 2.
+
+Once again, thanks a lot for your detailed and insightful comments!
+
+Cheers,
+
+Carles (on behalf of the authors)
+
+
+From nobody Tue Dec  8 00:27:20 2020
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id A54B83A0E12; Tue,  8 Dec 2020 00:27:15 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.917
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.917 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H4=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id ervwrz5Ml5Xf; Tue,  8 Dec 2020 00:27:14 -0800 (PST)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id B0AB43A0E0E; Tue,  8 Dec 2020 00:27:13 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 0B88R8Ov007492; Tue, 8 Dec 2020 09:27:08 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id D5FF41D53C1; Tue,  8 Dec 2020 09:27:06 +0100 (CET)
+Received: from 79.152.1.171 by webmail.entel.upc.edu with HTTP; Tue, 8 Dec 2020 09:27:07 +0100
+Message-ID: <ad88403fc33476945d3685a56b8785e8.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <160416970565.21546.14455941867187000136@ietfa.amsl.com>
+References: <160416970565.21546.14455941867187000136@ietfa.amsl.com>
+Date: Tue, 8 Dec 2020 09:27:07 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: "Acee Lindem" <acee@cisco.com>
+Cc: rtg-dir@ietf.org, last-call@ietf.org, draft-ietf-6lo-blemesh.all@ietf.org,  6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at violet
+X-Virus-Status: Clean
+X-Greylist: Delayed for 00:08:06 by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Tue, 08 Dec 2020 09:27:08 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/fMmSvEpLLZnmSgOMLpyxCVtbtL0>
+Subject: Re: [6lo] Rtgdir last call review of draft-ietf-6lo-blemesh-08
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 08 Dec 2020 08:27:16 -0000
+
+Hi Acee,
+
+Sorry for the late reply, and thanks a lot for your review of the draft!
+
+We just submitted -09, which aims at addressing the last round of review
+comments, including yours:
+https://tools.ietf.org/html/draft-ietf-6lo-blemesh-09
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-blemesh-09
+
+We believe that we incorporated your points below into the document.
+
+Should you have further comments, please do not hesitate to let us know.
+
+Cheers,
+
+Carles (on behalf of the authors)
+
+
+
+> Reviewer: Acee Lindem
+> Review result: Has Nits
+>
+> Hello,
+>
+> I have been selected as the Routing Directorate reviewer for this draft.
+> The Routing Directorate seeks to review all routing or routing-related
+> drafts as they pass through IETF last call and IESG review, and
+> sometimes on special request. The purpose of the review is to provide
+> assistance to the Routing ADs. For more information about the Routing
+> Directorate, please see ​
+>
+>   http://trac.tools.ietf.org/area/rtg/trac/wiki/RtgDir
+>
+> Although these comments are primarily for the use of the Routing ADs,
+> it would be helpful if you could consider them along with any other
+> IETF Early Review/Last Call  comments that you receive, and strive to
+> resolve them through discussion or by updating the draft.
+>
+> Document: draft-ietf-6lo-blemesh-08.txt
+> Reviewer: Acee Lindem
+> Review Date: October 31st, 2020
+> IETF LC End Date:
+> Intended Status: Standards Track
+>
+> Summary: This document is basically ready for publication, but has nits
+> that should be considered prior to publication.
+>
+> Comments:
+>
+> The document extends the 6LoWPAN mechanisms to Bluetooth mesh network.
+> The document is well written and didn't and fairly easy to read given the
+> subject matter. Since I had not followed this standard previously, a
+> rudimentary understanding of RFC 7668. Additionally, familiarity with
+> RFC 6282 mechanisms is required to understand the header compression
+> extensions. My Routing Directorate review was primary from the routing
+> perspective.
+>
+> Major Issues: None
+>
+> Minor Issues: None
+>
+> Nits:
+>
+>    In section 3.2, it would be better to reference route-over in RFC 6775
+> in
+>    the first paragraph as it is essential to the viability of the subnet
+>    model.
+>
+>    Define or Expand acronyms in figure 1 before using.
+>
+> Editorial suggestions:
+>
+> ACEE-M-3B86:Desktop acee$ diff draft-ietf-6lo-blemesh-08.txt.orig
+> draft-ietf-6lo-blemesh-08.txt 153c153 <    subsequent Bluetooth versions
+> (e.g.
+> Bluetooth 4.2 [BTCorev4.2] or
+> ---
+>>    subsequent Bluetooth versions (e.g.,  Bluetooth 4.2 [BTCorev4.2] or
+> 199,202c199,202
+> <        -  - +-------------------------------------------------+- - - HCI
+> <             |               Bluetooth LE Link Layer           |
+> <             +-------------------------------------------------+
+> <             |                Bluetooth LE Physical            |
+> ---
+>> Host   -  - +-------------------------------------------------+- - -
+>> Controllor  |               Bluetooth LE Link Layer           |
+>> Interface   +-------------------------------------------------+
+>> (HCI)       |                Bluetooth LE Physical            |
+> 293c293
+> <    6LN, 6LR and 6LBR IPv6 addresses in an IPv6 mesh over Bluetooth LE
+> ---
+>>    6LN, 6LR, and 6LBR IPv6 addresses in an IPv6 mesh over Bluetooth LE
+> 296c296
+> <    Multihop DAD functionality as defined in section 8.2 of RFC 6775 and
+> ---
+>>    Multihop Dupicate Address Detection (DAD) functionality as defined in
+> section 8.2 of RFC 6775 and 317c317 <    (e.g. very short-lived
+> connections) it
+> may not be worthwhile for a
+> ---
+>>    (e.g., very short-lived connections) it may not be worthwhile for a
+> 331c331
+> <    Bluetooth device address using the same compression context, the
+> ---
+>>    the Bluetooth device address using the same compression context, the
+> 342c342
+> <    Advertisements the Bluetooth LE hosts MUST, respectively, follow
+> ---
+>>    Advertisements, the Bluetooth LE hosts MUST, respectively, follow
+> 440c440
+> <    if the node is battery powered.  A router (i.e. a 6LR or a 6LBR) MUST
+> ---
+>>    if the node is battery powered.  A router (i.e., a 6LR or a 6LBR)
+>> MUST
+> 443c443
+> <    listeners for multicast groups the packets belong to.
+> ---
+>>    listeners for multicast groups to which the multicast packets
+>> destined.
+>
+> Thanks,
+> Acee
+>
+>
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+
+
+
+From nobody Tue Dec  8 00:32:32 2020
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id AE5003A0E1F; Tue,  8 Dec 2020 00:32:27 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.917
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.917 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H4=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id AOX-qnY53mjm; Tue,  8 Dec 2020 00:32:26 -0800 (PST)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id D05983A0DE9; Tue,  8 Dec 2020 00:32:25 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 0B88WMs6008369; Tue, 8 Dec 2020 09:32:22 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id 083E81D53C1; Tue,  8 Dec 2020 09:32:21 +0100 (CET)
+Received: from 79.152.1.171 by webmail.entel.upc.edu with HTTP; Tue, 8 Dec 2020 09:32:22 +0100
+Message-ID: <faa50295c07427c63e71e89466ed2872.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <160573826402.16462.7124606612381130154@ietfa.amsl.com>
+References: <160573826402.16462.7124606612381130154@ietfa.amsl.com>
+Date: Tue, 8 Dec 2020 09:32:22 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: "Catherine Meadows" <catherine.meadows@nrl.navy.mil>
+Cc: secdir@ietf.org, last-call@ietf.org, draft-ietf-6lo-blemesh.all@ietf.org,  6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at violet
+X-Virus-Status: Clean
+X-Greylist: IP, sender and recipient auto-whitelisted, not delayed by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Tue, 08 Dec 2020 09:32:23 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/Pg60mYFhuMPMcDYFW_mMXFxG8L4>
+Subject: Re: [6lo] Secdir last call review of draft-ietf-6lo-blemesh-08
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 08 Dec 2020 08:32:28 -0000
+
+Hi Catherine,
+
+Sorry for the late reply.
+
+Thank you very much for your review, which has been very valuable to us.
+
+We understand that no action is needed from our side in the context of
+your review.
+
+Should you have any further comments, please do not hesitate to let us know.
+
+Cheers,
+
+Carles (on behalf of the authors)
+
+
+> Reviewer: Catherine Meadows
+> Review result: Ready
+>
+> I have reviewed this document as part of the security directorate's
+> ongoing
+> effort to review all IETF documents being processed by the IESG.  These
+> comments were written primarily for the benefit of the security area
+> directors.
+>  Document editors and WG chairs should treat these comments just like any
+> other
+> last call comments. This document specifies mechanisms that are needed to
+> enable IPv6 mesh topologies over Bluetooth Low Energy Links established
+> using
+> the Bluetooth Internet Protocol Support Profile.  It does not specify the
+> routing protocol to be used in an IPv6, and it does not specify security
+> mechanisms.
+>
+> In the Security Considerations Section the document directs the reader to
+> the
+> relevant documents. For most security issues, it points the reader to RFC
+> 7668,
+> “IPv6 over BLUETOOTH(R) Low Energy.”  For security issues produced by
+> the
+> routing protocol, the reader is directed to RFC 7416, “ A Security
+> Threat
+> Analysis for the Routing Protocol for Low-Power and Lossy Networks
+> (RPLs)”, and
+> it is noted that the issues addressed in that RFC are useful for other low
+> energy routing protocols as well.  Finally it is noted that the
+> Registration
+> Ownership Verifier (ROVR) field can be derived from the Bluetooth address,
+> and
+> that this field is also subject to impersonation and spoofing.  For this
+> the
+> document refers the reader the Internet Draft on "Address Protected
+> Neighbor
+> Discovery for Low-power and Lossy Networks.”
+>
+> I think that this document does an excellent job of identifying the
+> relevant
+> security issues to related to its topic, and of directing the reader to
+> the
+> relevant documents.
+>
+> I consider this document Ready.
+>
+>
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+
+
+
+From nobody Tue Dec  8 00:37:29 2020
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 9F7FB3A0E1F; Tue,  8 Dec 2020 00:37:24 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.917
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.917 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H4=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Lv0zx4GMHnHI; Tue,  8 Dec 2020 00:37:22 -0800 (PST)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 8086A3A03EF; Tue,  8 Dec 2020 00:37:22 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 0B88bA3C009123; Tue, 8 Dec 2020 09:37:10 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id 6E5EB1D53C1; Tue,  8 Dec 2020 09:37:09 +0100 (CET)
+Received: from 79.152.1.171 by webmail.entel.upc.edu with HTTP; Tue, 8 Dec 2020 09:37:10 +0100
+Message-ID: <4d07e6443cb2b1d0bd76033bb92872b0.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <160711595155.19658.8436612763808758937@ietfa.amsl.com>
+References: <160711595155.19658.8436612763808758937@ietfa.amsl.com>
+Date: Tue, 8 Dec 2020 09:37:10 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: "Pete Resnick" <resnick@episteme.net>
+Cc: gen-art@ietf.org, last-call@ietf.org, draft-ietf-6lo-blemesh.all@ietf.org,  6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at violet
+X-Virus-Status: Clean
+X-Greylist: IP, sender and recipient auto-whitelisted, not delayed by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Tue, 08 Dec 2020 09:37:10 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/NzT-fjiQeRWN3Ho0GdgJ_EZgi0k>
+Subject: Re: [6lo] Genart last call review of draft-ietf-6lo-blemesh-08
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 08 Dec 2020 08:37:25 -0000
+
+Hi Pete,
+
+Thanks a lot for your review of the draft!
+
+We just submitted -09, which aims at addressing the last round of review
+comments, including yours:
+https://tools.ietf.org/html/draft-ietf-6lo-blemesh-09
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-blemesh-09
+
+Please find below our inline responses to your comments:
+
+> Reviewer: Pete Resnick
+> Review result: Ready with Issues
+>
+> I am the assigned Gen-ART reviewer for this draft. The General Area
+> Review Team (Gen-ART) reviews all IETF documents being processed
+> by the IESG for the IETF Chair.  Please treat these comments just
+> like any other last call comments.
+>
+> For more information, please see the FAQ at
+>
+> <https://trac.ietf.org/trac/gen/wiki/GenArtfaq>.
+>
+> Document: draft-ietf-6lo-blemesh-08
+> Reviewer: Pete Resnick
+> Review Date: 2020-12-04
+> IETF LC End Date: 2020-10-21
+> IESG Telechat date: Not scheduled for a telechat
+>
+> Summary: Looks good to me, with two items that seemed confusing enough
+> that
+> they should be addressed.
+>
+> Note that this review is being done well after the close of the Last Call.
+> Since this is not yet scheduled for a telechat, the AD asked that I go
+> ahead
+> and complete the review anyway.
+>
+> Major issues: None
+>
+> Minor issues:
+>
+> 3.3.2, #4:
+>
+>    Implementations of this specification MAY support
+>    the features described in sections 8.1 and 8.2 of RFC 6775, as
+>    updated by RFC 8505, unless some alternative ("substitute") from some
+>    other specification is supported by the implementation.
+>
+> This bit confused me. I think it was the "unless". Do you mean it MAY
+> support
+> the 6775/8505 features, or MAY support some substitute, or MAY support
+> neither,
+> or do you mean that it MUST support either the 6775/8505 features or MUST
+> support some substitute? I think you want to rewrite this to make it clear
+> which one you mean.
+
+Agreed. We modified the text as follows:
+
+NEW:
+   Implementations of this specification MUST either
+   support the features described in sections 8.1 and 8.2 of RFC 6775,
+   as updated by RFC 8505, or some alternative ("substitute") mechanism.
+
+> 3.3.3, last two paragraphs:
+>
+>    When a 6LN transmits a packet, with a non-link-local source address
+>    that the 6LN has registered with EARO in the next-hop router for the
+>    indicated prefix, the source address MUST be fully elided if it is
+>    the latest address that the 6LN has registered for the indicated
+>    prefix (SAC=1, SAM=11).  If the source non-link-local address is not
+>    the latest registered by the 6LN, then the 64 bits of the IID SHALL
+>    be fully carried in-line (SAC=1, SAM=01) or if the first 48 bits of
+>    the IID match with the latest address registered by the 6LN, then the
+>    last 16 bits of the IID SHALL be carried in-line (SAC=1, SAM=10).
+>
+>    When a router transmits a packet to a neighboring 6LN, with a non-
+>    link-local destination address, the router MUST fully elide the
+>    destination IPv6 address if the destination address is the latest
+>    registered by the 6LN with EARO for the indicated context (DAC=1,
+>    DAM=11).  If the destination address is a non-link-local address and
+>    not the latest registered, then the 6LN MUST either include the IID
+>    part fully in-line (DAM=01) or, if the first 48 bits of the IID match
+>    to the latest registered address, then elide those 48 bits (DAM=10).
+>
+> Both of these were a bit confusing to me. I think you want to reverse the
+> order
+> of the last two choices. Say something like (for the first paragraph), "If
+> the
+> source non-link-local address is not the latest registered by the 6LN and
+> the
+> first 48 bits match..., then the last 16 bits SHALL be carried in-line.
+> Otherwise, if first 48 bits do not match, then the 64 bits shall be
+> carried
+> inline." Similarly for the second. As it is, it takes a while to figure
+> out
+> what it means.
+
+We modified the two paragraphs as per your suggestion.
+
+> Nits/editorial comments: Do fix the reference nits noted by the nits tool;
+> they
+> appear to be simple typos.
+
+Done!
+
+Cheers,
+
+Carles (on behalf of the authors)
+
+
+From nobody Tue Dec  8 04:21:54 2020
+Return-Path: <acee@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 1C7393A0C82; Tue,  8 Dec 2020 04:21:51 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -9.62
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.62 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com header.b=X7qu9Pnk; dkim=pass (1024-bit key) header.d=cisco.onmicrosoft.com header.b=WT+G3RNg
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id yQjWs3TMqETF; Tue,  8 Dec 2020 04:21:48 -0800 (PST)
+Received: from rcdn-iport-9.cisco.com (rcdn-iport-9.cisco.com [173.37.86.80]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 0AF113A0C62; Tue,  8 Dec 2020 04:21:47 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=7342; q=dns/txt; s=iport; t=1607430108; x=1608639708; h=from:to:cc:subject:date:message-id:references: in-reply-to:content-id:content-transfer-encoding: mime-version; bh=HQ3a/RHJG9KBqCF2LknvrmuW7haZzcVeFdGAPgSDRcI=; b=X7qu9Pnk1Ax9+jOgEQUOH9aVThzvnaYqKHpC/++f213GclDhSIqIyikQ OhSdx+9lIV1C4WoQgU/xAFqp0MSAeU7AY6GXPPrY5IMR4DDIi9D1TNrR9 BSHNu56OBCGJ5XK2oukYj0rXdPWx9wS7Tpv3JARCoStftaLA6Cm/1C+ze Y=;
+IronPort-PHdr: =?us-ascii?q?9a23=3ASVhsVBBgjtlJVY9IxV1gUyQJPHJ1sqjoPgMT9p?= =?us-ascii?q?ssgq5PdaLm5Zn5IUjD/qw31g3EW5nW77RZk+GQvqz9CiQM4peE5XYFdpEEFx?= =?us-ascii?q?oIkt4fkAFoBsmZQVb6I/jnY21ffoxCWVZp8mv9PR1TH8DzNFDUvnC2qyMKEV?= =?us-ascii?q?PyORcmbujwE5TZ2sKw0e368pbPYgJO0Ty6Z746LBi/oQjL8McMho43IacqwR?= =?us-ascii?q?yPqXxNKOk=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0CvCQCfbs9f/5hdJa1iDhABAQsSDEC?= =?us-ascii?q?DIVEHdVsvLgqENINIA41bA5kJglMDVAsBAQENAQEYCwoCBAEBhEoCF4FnAiU?= =?us-ascii?q?4EwIDAQELAQEFAQEBAgEGBHGFYQyFcwEBAwEBARAREQwBASwLAQ8CAQYCFAY?= =?us-ascii?q?CJgICAiULFRACBA4FIoMEAYJVAw4gAQ6QOJBrAoE8iGl2gTKDBAEBBYEzAQM?= =?us-ascii?q?Cg3gYghAJgQ4qgnOCZhI8QoZYG4IAgRABJxyCVT6CUgsBAQIBFoEDQ4MXM4I?= =?us-ascii?q?sgVmBTgQYFxQOAQEhLgtEOAoEGgIECx4Kj08Ugyqjf4EGCoJ0iR6SIgMfgyO?= =?us-ascii?q?BLYh3hVePFp8FkUQghDMCBAIEBQIOAQEFgW0jgVdwFTsqAYI+CUcXAg1XjUq?= =?us-ascii?q?DcYUUhQRAdAI1AgYBCQEBAwl8il8BgRABAQ?=
+X-IronPort-AV: E=Sophos;i="5.78,402,1599523200"; d="scan'208";a="746905375"
+Received: from rcdn-core-1.cisco.com ([173.37.93.152]) by rcdn-iport-9.cisco.com with ESMTP/TLS/DHE-RSA-SEED-SHA; 08 Dec 2020 12:21:46 +0000
+Received: from XCH-RCD-002.cisco.com (xch-rcd-002.cisco.com [173.37.102.12]) by rcdn-core-1.cisco.com (8.15.2/8.15.2) with ESMTPS id 0B8CLkU0018522 (version=TLSv1.2 cipher=AES256-SHA bits=256 verify=FAIL); Tue, 8 Dec 2020 12:21:46 GMT
+Received: from xhs-aln-001.cisco.com (173.37.135.118) by XCH-RCD-002.cisco.com (173.37.102.12) with Microsoft SMTP Server (TLS) id 15.0.1497.2; Tue, 8 Dec 2020 06:21:46 -0600
+Received: from xhs-rcd-001.cisco.com (173.37.227.246) by xhs-aln-001.cisco.com (173.37.135.118) with Microsoft SMTP Server (TLS) id 15.0.1497.2; Tue, 8 Dec 2020 06:21:46 -0600
+Received: from NAM12-MW2-obe.outbound.protection.outlook.com (72.163.14.9) by xhs-rcd-001.cisco.com (173.37.227.246) with Microsoft SMTP Server (TLS) id 15.0.1497.2 via Frontend Transport; Tue, 8 Dec 2020 06:21:46 -0600
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; b=WcCauU6frAa0xDAzUg9zr/ZnGpSHmdmqhBOtRpGA5Un8ldQO9w3gpwlGv8J6du7PSkv7gfL6uG6iJdi2js/GYW6fle/iDgIBys6Rw6ARt9ZEjFvW6Pyd+u5NOltB2hU1NVYCKn5FbEl9Vxq/uxRxDdeMNcwrB3U/m9l/EOnZIwp1R9RuirXgAObcr+/mzs9nPbFqd1dLQQoRF7RsjfX1z8Zz4LKmYVYhGdItFCLc3YW65ScDj9Pkb39IgEvFW8ZdwClGzrGbrEOeebUoysJB59PrrWX2QI02pMVw3tnxaSqW6oAHG0MWe1/jbhm6GbZ2Kqg5xNIa8z/bznxNI4uN8Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;  s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=HQ3a/RHJG9KBqCF2LknvrmuW7haZzcVeFdGAPgSDRcI=; b=e4/lZLh4Wx/9WeCmQ1tWrO8/DOqlyM3/Y3IVoiRBzbLpEGiY8COTjZv/G95JtZBvQmI66t9VqWZ0p49hsuCGV0LnrTNaTCoKj7ZsVjYpJTV2obQkp/9Jleo39hjjIh2XIlNUd8+ghuMaXuUpvTHIbcgVU2CUlSQ8bLqXTgLJg+/1tIqJ4WD601dXcpr/FD+CZqyFO+8kbeBItz1Tv0LvGChEgu4qEftvY7vFC6Gxndb3bUBa9YMLCXMSl6qpjmHaFdJ+WpwE1a+1zoCNro2J+2OWYVntnAdjy+JtQiWnXwEfXNm5lkv6NtefnJt6bYDyocRbetWuSfF+Mqo0QhlrVg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=cisco.com; dmarc=pass action=none header.from=cisco.com; dkim=pass header.d=cisco.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cisco.onmicrosoft.com;  s=selector2-cisco-onmicrosoft-com; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=HQ3a/RHJG9KBqCF2LknvrmuW7haZzcVeFdGAPgSDRcI=; b=WT+G3RNgJOjRWKgMgC1y20r+IuzUgRQTzeDeHinlHkWJPYZA2S43/AQph9gSwnISNag+2brSPp05h0NHjwEqzqSKtYfeDZtbUxX773obx8vxLKb0Z1rpWOIT51r2cbD24cwAKSshHqA2n5xedjFbIv5DKVyQrjv88oUhz7/Ah2k=
+Received: from BYAPR11MB2887.namprd11.prod.outlook.com (2603:10b6:a03:89::27) by BYAPR11MB3462.namprd11.prod.outlook.com (2603:10b6:a03:76::16) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3632.21; Tue, 8 Dec 2020 12:21:44 +0000
+Received: from BYAPR11MB2887.namprd11.prod.outlook.com ([fe80::65a7:2fad:a960:2557]) by BYAPR11MB2887.namprd11.prod.outlook.com ([fe80::65a7:2fad:a960:2557%3]) with mapi id 15.20.3632.021; Tue, 8 Dec 2020 12:21:44 +0000
+From: "Acee Lindem (acee)" <acee@cisco.com>
+To: Carles Gomez Montenegro <carlesgo@entel.upc.edu>
+CC: "rtg-dir@ietf.org" <rtg-dir@ietf.org>, "last-call@ietf.org" <last-call@ietf.org>, "draft-ietf-6lo-blemesh.all@ietf.org" <draft-ietf-6lo-blemesh.all@ietf.org>, "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: [6lo] Rtgdir last call review of draft-ietf-6lo-blemesh-08
+Thread-Index: AQHWzTv1nXqxE2+7N0yPcnFCPsfkSqnsyxUA
+Date: Tue, 8 Dec 2020 12:21:44 +0000
+Message-ID: <7E3A807F-6C65-4F28-9FFD-68D3EDE67122@cisco.com>
+References: <160416970565.21546.14455941867187000136@ietfa.amsl.com> <ad88403fc33476945d3685a56b8785e8.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <ad88403fc33476945d3685a56b8785e8.squirrel@webmail.entel.upc.edu>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+user-agent: Microsoft-MacOutlook/16.43.20110804
+authentication-results: entel.upc.edu; dkim=none (message not signed) header.d=none;entel.upc.edu; dmarc=none action=none header.from=cisco.com;
+x-originating-ip: [136.56.133.70]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: a00141a8-5eae-40b4-866e-08d89b73d392
+x-ms-traffictypediagnostic: BYAPR11MB3462:
+x-microsoft-antispam-prvs: <BYAPR11MB34628042BAD4588A3F9A14DFC2CD0@BYAPR11MB3462.namprd11.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:10000;
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: YqBfTZ5q8cRGwVUwf5PvLDFPvE2YTjMcko1jWIlAeRgnUO3tf58SetdhcNokR0lfnn34grNsA0+7E9h0n2e9Hjb+peDzwHXIl9Ys+6bpRXON9v6AcprdvcHputtW7zGk+Vo3Pw5ltnx/4GJqVghU6PfbWM56hrLe3s4NSYaJ2j4PkfU73pnFNn0+QPfMg4EIK1yxBKczZRkKOYxbvQN9BGy60mlsw5+gv0jmczHOkWvwv0vHSz7ZHvPngzD2up9DemNOZFip5TzlsZTC8nAcPUG6/Sq8c00xERw4VyIGnq6Af+JaqcIuiXBJBNcJ3VrD9mYuCaeBOF5xodbeK0Zs6XdqUIdgKM1Awy9csRS5qT9qlWSNlGBFLS6GB6eopWbexvtZVtV1qNQjSKmuOTQ9oGwNcrknXaHawHYWmlOda8piL2SGVSlbqI8+XXS5B4ikXGqMRolBJgK6oDkeMmTeWg==
+x-forefront-antispam-report: CIP:255.255.255.255; CTRY:; LANG:en; SCL:1; SRV:;  IPV:NLI; SFV:NSPM; H:BYAPR11MB2887.namprd11.prod.outlook.com; PTR:; CAT:NONE;  SFS:(376002)(39860400002)(346002)(136003)(366004)(396003)(6506007)(66574015)(86362001)(71200400001)(83380400001)(54906003)(36756003)(76116006)(4326008)(6916009)(966005)(186003)(33656002)(26005)(2616005)(64756008)(316002)(66476007)(66556008)(8936002)(2906002)(478600001)(5660300002)(6486002)(66946007)(6512007)(8676002)(66446008)(45980500001); DIR:OUT; SFP:1101; 
+x-ms-exchange-antispam-messagedata: =?utf-8?B?YnJBQmtVMlZkdkV0ZjVOS29oN1ZUV2hYczBoenpudzkrMEFKVVFOb1JiR0p0?= =?utf-8?B?R29EKzNQRVNzK2J2V2J0WXRQdkUvblhLQ0k2YzU1OGlwbjBMTVRtR3k3VVI4?= =?utf-8?B?S3Rzb2lxcStKQ1owVWxRWi9abUVBTjNEUk9jOC9jZ0FmazBHTko5MnBWalB4?= =?utf-8?B?c1dmcy8xaHZhV3V4UGQ2SGM1VFBzNjJWaFJKUFZVK1R2aUJ2L3hYV0VhcVdj?= =?utf-8?B?bm9yb2ZxU05kNkR1NXFZam9zdlUvUDBEZ1JTbkdOdjNhV21WdllUNklldFBx?= =?utf-8?B?eU52WitXQ0VqaEpvRmRETlFyNTErbnE2eDR2QnEyS0tZTzVvaU9FWG5lZUxu?= =?utf-8?B?TlBBd0VZMDhvMzJwNWhoUzRWMmFQNThQUjlIazBmaWZRcGFBZmRDUW1sMkRC?= =?utf-8?B?MWN3OWYrTkJBTVVmWFRXZEs1T3E2c3JlcmVFQVo4NWVURlVpUHFSblR2Wk5T?= =?utf-8?B?ZWJYUHd4YVV0cUd3aG83anc2Z2xITnE4SlpvZ0dSeTBuT3BJcWdPVXNYdWt2?= =?utf-8?B?MDhhbE1lZE5palV0dkJBVlZzOUZuK0FHd0hpSjFFYmVCemQ4N09vTTRoNm9B?= =?utf-8?B?WFRIdGw2Z2FVNHJ5SGg3SWxFb0pMbVhKQjJKY0x1V0JMTGNCdCt2bDYvUldN?= =?utf-8?B?SG5wTFVoM0JobUdBUFZsQzhjN0RVWVduMFNwMnNnZG5WYjEreWtMN295VzY5?= =?utf-8?B?eEIwQjhTTTBOYUVxcjZmUUlBaDBBOUo1aVRVcGRlbXhmZ3g4aDZVOWcvQkRG?= =?utf-8?B?MEEzTXovaFV0cVQxMDE2WWZMR0ZaMVVwVWNSNTVvb3RiaklmTkt1a3o3M1RY?= =?utf-8?B?V3Jaa2RRcTlHNEJQbWpXKzhDUTh0d3pjYmtveEVwUmIxSmF3WGRuRDk0dUVT?= =?utf-8?B?Q2NiWVduNG0vaTBCdEdtWFZZTFRleEoxL1IxbHRZaDdzbVRoa0lzQ2djVFYr?= =?utf-8?B?OVIxT05UUXJ6MmpUMElSSWVxUmgrcEo4eDYvWUcyNlpRbW1RSkJBVEJmSldZ?= =?utf-8?B?Q3ZtSjdCQUtQOXRWZWRrSTFJU2xkNFZsWmhRdDRmR1BGTlYwdXBjanR1OHh4?= =?utf-8?B?Rld0dk1ZVjJ2dzRzVTNoMTh4Y21sUWYvRy9PMEtzaHVRanp0WlFSSnJFZ3U1?= =?utf-8?B?cngzYm0weEhoUXVSeFE0eUVJVE52NmRSTUhsZEhQR0c5Z0toOE5zU1l2YTBq?= =?utf-8?B?VCtiUkErWjRPcGRZRjV5SCtXWHpDSXFiRGZTdEdFdk1COWlGOGtTM25ucVNJ?= =?utf-8?B?Yko0Z2RHTi9UUVV5MmZrdlBzRkVpaFp6ZFo0RTA0bS9yOXpHQ0RLT0RHTXdu?= =?utf-8?Q?DacU/N+nfHaNaUzFLQsvk2qyVWu0oIO5vE?=
+x-ms-exchange-transport-forked: True
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <4474671E3285B84CAD3F84580D662BAE@namprd11.prod.outlook.com>
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BYAPR11MB2887.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: a00141a8-5eae-40b4-866e-08d89b73d392
+X-MS-Exchange-CrossTenant-originalarrivaltime: 08 Dec 2020 12:21:44.5285 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 5ae1af62-9505-4097-a69a-c1553ef7840e
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: 8lxUfnU2YvYbEnz5lFbDZP/6d6XhIvCdTHEAAJEUD0J2klSzAPuW8LroJA+/PHkz
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR11MB3462
+X-OriginatorOrg: cisco.com
+X-Outbound-SMTP-Client: 173.37.102.12, xch-rcd-002.cisco.com
+X-Outbound-Node: rcdn-core-1.cisco.com
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/_QUYu5MVdUh99iG5_bYygfsK9QU>
+Subject: Re: [6lo] Rtgdir last call review of draft-ietf-6lo-blemesh-08
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 08 Dec 2020 12:21:51 -0000
+
+SGkgQ2FybGVzLCANClRoZSBjaGFuZ2VzIGxvb2sgZ29vZCB0byBtZS4gTm90ZSB0aGF0IHNpbmNl
+IG15IGNvbW1lbnRzIHdlcmUgbml0cywgSSBoYWQgYWxyZWFkeSBtYXJrZWQgdGhlIHJldmlldyBj
+b21wbGV0ZWQuICANClRoYW5rcywNCkFjZWUNCg0K77u/T24gMTIvOC8yMCwgMzoyNyBBTSwgIkNh
+cmxlcyBHb21leiBNb250ZW5lZ3JvIiA8Y2FybGVzZ29AZW50ZWwudXBjLmVkdT4gd3JvdGU6DQoN
+CiAgICBIaSBBY2VlLA0KDQogICAgU29ycnkgZm9yIHRoZSBsYXRlIHJlcGx5LCBhbmQgdGhhbmtz
+IGEgbG90IGZvciB5b3VyIHJldmlldyBvZiB0aGUgZHJhZnQhDQoNCiAgICBXZSBqdXN0IHN1Ym1p
+dHRlZCAtMDksIHdoaWNoIGFpbXMgYXQgYWRkcmVzc2luZyB0aGUgbGFzdCByb3VuZCBvZiByZXZp
+ZXcNCiAgICBjb21tZW50cywgaW5jbHVkaW5nIHlvdXJzOg0KICAgIGh0dHBzOi8vdG9vbHMuaWV0
+Zi5vcmcvaHRtbC9kcmFmdC1pZXRmLTZsby1ibGVtZXNoLTA5DQogICAgaHR0cHM6Ly93d3cuaWV0
+Zi5vcmcvcmZjZGlmZj91cmwyPWRyYWZ0LWlldGYtNmxvLWJsZW1lc2gtMDkNCg0KICAgIFdlIGJl
+bGlldmUgdGhhdCB3ZSBpbmNvcnBvcmF0ZWQgeW91ciBwb2ludHMgYmVsb3cgaW50byB0aGUgZG9j
+dW1lbnQuDQoNCiAgICBTaG91bGQgeW91IGhhdmUgZnVydGhlciBjb21tZW50cywgcGxlYXNlIGRv
+IG5vdCBoZXNpdGF0ZSB0byBsZXQgdXMga25vdy4NCg0KICAgIENoZWVycywNCg0KICAgIENhcmxl
+cyAob24gYmVoYWxmIG9mIHRoZSBhdXRob3JzKQ0KDQoNCg0KICAgID4gUmV2aWV3ZXI6IEFjZWUg
+TGluZGVtDQogICAgPiBSZXZpZXcgcmVzdWx0OiBIYXMgTml0cw0KICAgID4NCiAgICA+IEhlbGxv
+LA0KICAgID4NCiAgICA+IEkgaGF2ZSBiZWVuIHNlbGVjdGVkIGFzIHRoZSBSb3V0aW5nIERpcmVj
+dG9yYXRlIHJldmlld2VyIGZvciB0aGlzIGRyYWZ0Lg0KICAgID4gVGhlIFJvdXRpbmcgRGlyZWN0
+b3JhdGUgc2Vla3MgdG8gcmV2aWV3IGFsbCByb3V0aW5nIG9yIHJvdXRpbmctcmVsYXRlZA0KICAg
+ID4gZHJhZnRzIGFzIHRoZXkgcGFzcyB0aHJvdWdoIElFVEYgbGFzdCBjYWxsIGFuZCBJRVNHIHJl
+dmlldywgYW5kDQogICAgPiBzb21ldGltZXMgb24gc3BlY2lhbCByZXF1ZXN0LiBUaGUgcHVycG9z
+ZSBvZiB0aGUgcmV2aWV3IGlzIHRvIHByb3ZpZGUNCiAgICA+IGFzc2lzdGFuY2UgdG8gdGhlIFJv
+dXRpbmcgQURzLiBGb3IgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCB0aGUgUm91dGluZw0KICAgID4g
+RGlyZWN0b3JhdGUsIHBsZWFzZSBzZWUgw6LigqzigLkNCiAgICA+DQogICAgPiAgIGh0dHA6Ly90
+cmFjLnRvb2xzLmlldGYub3JnL2FyZWEvcnRnL3RyYWMvd2lraS9SdGdEaXINCiAgICA+DQogICAg
+PiBBbHRob3VnaCB0aGVzZSBjb21tZW50cyBhcmUgcHJpbWFyaWx5IGZvciB0aGUgdXNlIG9mIHRo
+ZSBSb3V0aW5nIEFEcywNCiAgICA+IGl0IHdvdWxkIGJlIGhlbHBmdWwgaWYgeW91IGNvdWxkIGNv
+bnNpZGVyIHRoZW0gYWxvbmcgd2l0aCBhbnkgb3RoZXINCiAgICA+IElFVEYgRWFybHkgUmV2aWV3
+L0xhc3QgQ2FsbCAgY29tbWVudHMgdGhhdCB5b3UgcmVjZWl2ZSwgYW5kIHN0cml2ZSB0bw0KICAg
+ID4gcmVzb2x2ZSB0aGVtIHRocm91Z2ggZGlzY3Vzc2lvbiBvciBieSB1cGRhdGluZyB0aGUgZHJh
+ZnQuDQogICAgPg0KICAgID4gRG9jdW1lbnQ6IGRyYWZ0LWlldGYtNmxvLWJsZW1lc2gtMDgudHh0
+DQogICAgPiBSZXZpZXdlcjogQWNlZSBMaW5kZW0NCiAgICA+IFJldmlldyBEYXRlOiBPY3RvYmVy
+IDMxc3QsIDIwMjANCiAgICA+IElFVEYgTEMgRW5kIERhdGU6DQogICAgPiBJbnRlbmRlZCBTdGF0
+dXM6IFN0YW5kYXJkcyBUcmFjaw0KICAgID4NCiAgICA+IFN1bW1hcnk6IFRoaXMgZG9jdW1lbnQg
+aXMgYmFzaWNhbGx5IHJlYWR5IGZvciBwdWJsaWNhdGlvbiwgYnV0IGhhcyBuaXRzDQogICAgPiB0
+aGF0IHNob3VsZCBiZSBjb25zaWRlcmVkIHByaW9yIHRvIHB1YmxpY2F0aW9uLg0KICAgID4NCiAg
+ICA+IENvbW1lbnRzOg0KICAgID4NCiAgICA+IFRoZSBkb2N1bWVudCBleHRlbmRzIHRoZSA2TG9X
+UEFOIG1lY2hhbmlzbXMgdG8gQmx1ZXRvb3RoIG1lc2ggbmV0d29yay4NCiAgICA+IFRoZSBkb2N1
+bWVudCBpcyB3ZWxsIHdyaXR0ZW4gYW5kIGRpZG4ndCBhbmQgZmFpcmx5IGVhc3kgdG8gcmVhZCBn
+aXZlbiB0aGUNCiAgICA+IHN1YmplY3QgbWF0dGVyLiBTaW5jZSBJIGhhZCBub3QgZm9sbG93ZWQg
+dGhpcyBzdGFuZGFyZCBwcmV2aW91c2x5LCBhDQogICAgPiBydWRpbWVudGFyeSB1bmRlcnN0YW5k
+aW5nIG9mIFJGQyA3NjY4LiBBZGRpdGlvbmFsbHksIGZhbWlsaWFyaXR5IHdpdGgNCiAgICA+IFJG
+QyA2MjgyIG1lY2hhbmlzbXMgaXMgcmVxdWlyZWQgdG8gdW5kZXJzdGFuZCB0aGUgaGVhZGVyIGNv
+bXByZXNzaW9uDQogICAgPiBleHRlbnNpb25zLiBNeSBSb3V0aW5nIERpcmVjdG9yYXRlIHJldmll
+dyB3YXMgcHJpbWFyeSBmcm9tIHRoZSByb3V0aW5nDQogICAgPiBwZXJzcGVjdGl2ZS4NCiAgICA+
+DQogICAgPiBNYWpvciBJc3N1ZXM6IE5vbmUNCiAgICA+DQogICAgPiBNaW5vciBJc3N1ZXM6IE5v
+bmUNCiAgICA+DQogICAgPiBOaXRzOg0KICAgID4NCiAgICA+ICAgIEluIHNlY3Rpb24gMy4yLCBp
+dCB3b3VsZCBiZSBiZXR0ZXIgdG8gcmVmZXJlbmNlIHJvdXRlLW92ZXIgaW4gUkZDIDY3NzUNCiAg
+ICA+IGluDQogICAgPiAgICB0aGUgZmlyc3QgcGFyYWdyYXBoIGFzIGl0IGlzIGVzc2VudGlhbCB0
+byB0aGUgdmlhYmlsaXR5IG9mIHRoZSBzdWJuZXQNCiAgICA+ICAgIG1vZGVsLg0KICAgID4NCiAg
+ICA+ICAgIERlZmluZSBvciBFeHBhbmQgYWNyb255bXMgaW4gZmlndXJlIDEgYmVmb3JlIHVzaW5n
+Lg0KICAgID4NCiAgICA+IEVkaXRvcmlhbCBzdWdnZXN0aW9uczoNCiAgICA+DQogICAgPiBBQ0VF
+LU0tM0I4NjpEZXNrdG9wIGFjZWUkIGRpZmYgZHJhZnQtaWV0Zi02bG8tYmxlbWVzaC0wOC50eHQu
+b3JpZw0KICAgID4gZHJhZnQtaWV0Zi02bG8tYmxlbWVzaC0wOC50eHQgMTUzYzE1MyA8ICAgIHN1
+YnNlcXVlbnQgQmx1ZXRvb3RoIHZlcnNpb25zDQogICAgPiAoZS5nLg0KICAgID4gQmx1ZXRvb3Ro
+IDQuMiBbQlRDb3JldjQuMl0gb3INCiAgICA+IC0tLQ0KICAgID4+ICAgIHN1YnNlcXVlbnQgQmx1
+ZXRvb3RoIHZlcnNpb25zIChlLmcuLCAgQmx1ZXRvb3RoIDQuMiBbQlRDb3JldjQuMl0gb3INCiAg
+ICA+IDE5OSwyMDJjMTk5LDIwMg0KICAgID4gPCAgICAgICAgLSAgLSArLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSstIC0gLSBIQ0kNCiAgICA+IDwgICAg
+ICAgICAgICAgfCAgICAgICAgICAgICAgIEJsdWV0b290aCBMRSBMaW5rIExheWVyICAgICAgICAg
+ICB8DQogICAgPiA8ICAgICAgICAgICAgICstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tKw0KICAgID4gPCAgICAgICAgICAgICB8ICAgICAgICAgICAgICAg
+IEJsdWV0b290aCBMRSBQaHlzaWNhbCAgICAgICAgICAgIHwNCiAgICA+IC0tLQ0KICAgID4+IEhv
+c3QgICAtICAtICstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tKy0gLSAtDQogICAgPj4gQ29udHJvbGxvciAgfCAgICAgICAgICAgICAgIEJsdWV0b290aCBM
+RSBMaW5rIExheWVyICAgICAgICAgICB8DQogICAgPj4gSW50ZXJmYWNlICAgKy0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rDQogICAgPj4gKEhDSSkgICAg
+ICAgfCAgICAgICAgICAgICAgICBCbHVldG9vdGggTEUgUGh5c2ljYWwgICAgICAgICAgICB8DQog
+ICAgPiAyOTNjMjkzDQogICAgPiA8ICAgIDZMTiwgNkxSIGFuZCA2TEJSIElQdjYgYWRkcmVzc2Vz
+IGluIGFuIElQdjYgbWVzaCBvdmVyIEJsdWV0b290aCBMRQ0KICAgID4gLS0tDQogICAgPj4gICAg
+NkxOLCA2TFIsIGFuZCA2TEJSIElQdjYgYWRkcmVzc2VzIGluIGFuIElQdjYgbWVzaCBvdmVyIEJs
+dWV0b290aCBMRQ0KICAgID4gMjk2YzI5Ng0KICAgID4gPCAgICBNdWx0aWhvcCBEQUQgZnVuY3Rp
+b25hbGl0eSBhcyBkZWZpbmVkIGluIHNlY3Rpb24gOC4yIG9mIFJGQyA2Nzc1IGFuZA0KICAgID4g
+LS0tDQogICAgPj4gICAgTXVsdGlob3AgRHVwaWNhdGUgQWRkcmVzcyBEZXRlY3Rpb24gKERBRCkg
+ZnVuY3Rpb25hbGl0eSBhcyBkZWZpbmVkIGluDQogICAgPiBzZWN0aW9uIDguMiBvZiBSRkMgNjc3
+NSBhbmQgMzE3YzMxNyA8ICAgIChlLmcuIHZlcnkgc2hvcnQtbGl2ZWQNCiAgICA+IGNvbm5lY3Rp
+b25zKSBpdA0KICAgID4gbWF5IG5vdCBiZSB3b3J0aHdoaWxlIGZvciBhDQogICAgPiAtLS0NCiAg
+ICA+PiAgICAoZS5nLiwgdmVyeSBzaG9ydC1saXZlZCBjb25uZWN0aW9ucykgaXQgbWF5IG5vdCBi
+ZSB3b3J0aHdoaWxlIGZvciBhDQogICAgPiAzMzFjMzMxDQogICAgPiA8ICAgIEJsdWV0b290aCBk
+ZXZpY2UgYWRkcmVzcyB1c2luZyB0aGUgc2FtZSBjb21wcmVzc2lvbiBjb250ZXh0LCB0aGUNCiAg
+ICA+IC0tLQ0KICAgID4+ICAgIHRoZSBCbHVldG9vdGggZGV2aWNlIGFkZHJlc3MgdXNpbmcgdGhl
+IHNhbWUgY29tcHJlc3Npb24gY29udGV4dCwgdGhlDQogICAgPiAzNDJjMzQyDQogICAgPiA8ICAg
+IEFkdmVydGlzZW1lbnRzIHRoZSBCbHVldG9vdGggTEUgaG9zdHMgTVVTVCwgcmVzcGVjdGl2ZWx5
+LCBmb2xsb3cNCiAgICA+IC0tLQ0KICAgID4+ICAgIEFkdmVydGlzZW1lbnRzLCB0aGUgQmx1ZXRv
+b3RoIExFIGhvc3RzIE1VU1QsIHJlc3BlY3RpdmVseSwgZm9sbG93DQogICAgPiA0NDBjNDQwDQog
+ICAgPiA8ICAgIGlmIHRoZSBub2RlIGlzIGJhdHRlcnkgcG93ZXJlZC4gIEEgcm91dGVyIChpLmUu
+IGEgNkxSIG9yIGEgNkxCUikgTVVTVA0KICAgID4gLS0tDQogICAgPj4gICAgaWYgdGhlIG5vZGUg
+aXMgYmF0dGVyeSBwb3dlcmVkLiAgQSByb3V0ZXIgKGkuZS4sIGEgNkxSIG9yIGEgNkxCUikNCiAg
+ICA+PiBNVVNUDQogICAgPiA0NDNjNDQzDQogICAgPiA8ICAgIGxpc3RlbmVycyBmb3IgbXVsdGlj
+YXN0IGdyb3VwcyB0aGUgcGFja2V0cyBiZWxvbmcgdG8uDQogICAgPiAtLS0NCiAgICA+PiAgICBs
+aXN0ZW5lcnMgZm9yIG11bHRpY2FzdCBncm91cHMgdG8gd2hpY2ggdGhlIG11bHRpY2FzdCBwYWNr
+ZXRzDQogICAgPj4gZGVzdGluZWQuDQogICAgPg0KICAgID4gVGhhbmtzLA0KICAgID4gQWNlZQ0K
+ICAgID4NCiAgICA+DQogICAgPiBfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fXw0KICAgID4gNmxvIG1haWxpbmcgbGlzdA0KICAgID4gNmxvQGlldGYub3JnDQog
+ICAgPiBodHRwczovL3d3dy5pZXRmLm9yZy9tYWlsbWFuL2xpc3RpbmZvLzZsbw0KICAgID4NCg0K
+DQoNCg==
+

@@ -1,0 +1,2287 @@
+
+From nobody Mon Sep 14 03:40:49 2015
+Return-Path: <stokcons@xs4all.nl>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (ietfa.amsl.com [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0BDFB1B420C for <6lo@ietfa.amsl.com>; Mon, 14 Sep 2015 03:40:48 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: 2.749
+X-Spam-Level: **
+X-Spam-Status: No, score=2.749 tagged_above=-999 required=5 tests=[BAYES_50=0.8, HELO_EQ_FR=0.35, MANGLED_LIST=2.3, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001] autolearn=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id K3mxYsJXBamY for <6lo@ietfa.amsl.com>; Mon, 14 Sep 2015 03:40:46 -0700 (PDT)
+Received: from lb1-smtp-cloud6.xs4all.net (lb1-smtp-cloud6.xs4all.net [194.109.24.24]) (using TLSv1 with cipher DHE-RSA-AES128-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id E79031B3C21 for <6lo@ietf.org>; Mon, 14 Sep 2015 03:40:43 -0700 (PDT)
+Received: from webmail.xs4all.nl ([194.109.20.204]) by smtp-cloud6.xs4all.net with ESMTP id Gygh1r00Z4QBLo201yghD4; Mon, 14 Sep 2015 12:40:41 +0200
+Received: from AMontpellier-654-1-59-4.w86-202.abo.wanadoo.fr ([86.202.194.4]) by webmail.xs4all.nl with HTTP (HTTP/1.1 POST); Mon, 14 Sep 2015 12:40:41 +0200
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+Date: Mon, 14 Sep 2015 12:40:41 +0200
+From: peter van der Stok <stokcons@xs4all.nl>
+To: robert cragie <robert.cragie@gridmerge.com>, 6lo@ietf.org
+Organization: vanderstok consultancy
+Mail-Reply-To: consultancy@vanderstok.org
+Message-ID: <1fae6bc94395057d115a8a101353fd3e@xs4all.nl>
+X-Sender: stokcons@xs4all.nl (tPHwfO8+uxGUtgwYCwpoXkw7BZozfR+b)
+User-Agent: XS4ALL Webmail
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/4-N477dmyj09PlzuRSTw-PnCyeU>
+Subject: [6lo] Review of draft-kelsey-6lo-mesh-link-establishment
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.15
+Precedence: list
+Reply-To: consultancy@vanderstok.org
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 14 Sep 2015 10:40:48 -0000
+
+Hi Robert,
+
+Below my review of the mle draft.
+The way the draft removes unreliable links looks really great and must 
+be very useful.
+However, I got muddled about the security aspects. I hope my questions 
+help solve the issues I had.
+
+Greetings,
+
+peter
+____________________________________________________________________________________________________
+
+Abstract
+Three capabilities: Put 3) as first. Difference between 2) and 1) is not 
+very clear.
+A full stop (.) is needed between …. configuration. MLE….
+Section 1 Introduction.
+1st al.
+A reference to existing 802.15.4 MIB RFC7388 would help, and also an 
+explanation why this is not sufficient.
+
+3rd al
+MLE can also be used……across a network identified by its channel and PAN 
+ID.
+Forwarding with simple flooding (you mean TRICKLE ?)
+If ZigBee IP standard reference is needed, should “thread” not be 
+mentioned as well?
+Section 4:
+Last line page 4, remove: before…….them.
+Section 4.1:
+1st al: Again what is relation with RFC7388. Is an extension to 7388 
+sufficient?
+2nd al. This is very terse, and completely incomprehensible to anyone 
+not familiar with 802.15.4 security standards section. And even then I 
+wonder what is meant. More motivation would be welcome (probably 
+including an example)
+Section 4.2
+Relation with draft-ietf-roll-mpl-parameter-configuration-07 needs to be 
+clarified.
+Section 5.
+It will be helpful when the draft explains how neighbours use link 
+security and how MLE uses 802.15.4 security for the MLE messages. Do I 
+understand correctly that a link can be secured with 802.15.4 mechanisms 
+and MLE uses 802,15.4 mechanism on the MLE message sent over this 
+secured link? In fact the MLE message is secured twice once at UDP level 
+and once at link level?
+The figure is encouraged to include the MAC layer as well.
+Section 6.
+Why still use TLV at this stage. In other wgs the use of CBOR is 
+considered advantageous.
+Section 7
+Is it wise to start with type = 0,  not better to start with type=1, to 
+reduce error scenarios
+Section 7.6
+Because the MLE message containing this TLV is sent within a 802.15.4 
+frame, the frame counter in the TLV must be identical to the frame 
+counter in 802.15.4 header? Is that not superfluous?
+Does this mean that MLE uses key1 + frame counter and link uses key2 + 
+frame counter with key1 NEQ key2?
+Section 7.7: Add a reference to section 12.
+Section 7.8: is link parameter, or interface parameter not a bitter 
+title?
+The consequences of modifying the PAN ID or channel number are not clear 
+to me. Can there be some explanatory text on this aspect?
+To what 802.15.4 parameter does Permit Joining correspond?
+Section 7.9: I thought MLE frame counter is equal to link frame counter, 
+so why two separate ones?
+Section 8, 1st al: do you mean realm-local or admin-local ? see also 
+section 11
+Section 8. This description really needs more text and probably some 
+examples and should be better related to section 5.  A scenario 
+describing the process in full would be really helpful.
+Section 9 2nd al. What are “reserved command type values”?
+Section 9 3rd al. As in section 8, What does joining the network mean? 
+If I understand correctly that means that a network with a PAN ID has 
+been formed, and a secured network segment exists with neighbours 
+communicating over 802.15.4 secured links and another unsecured segment 
+with neighbours which communicate over unsecured links. Joining means 
+that a node from unsecured segment leaves the unsecured segment and 
+joins the secured one. Under what conditions can a node in a secured 
+segment communicate with a node in the unsecured segment?
+In addition, does joining also mean that secured MLE messages MUST be 
+exchanged? Can there be MLE secured messages which are transported over 
+unsecured links? As pointed out earlier, I miss the overview.
+
+________________________________________________________________________________________________________________
+
+-- 
+Peter van der Stok
+vanderstok consultancy
+mailto: consultancy@vanderstok.org
+www: www.vanderstok.org
+tel NL: +31(0)492474673     F: +33(0)966015248
+
+
+From nobody Mon Sep 14 11:12:11 2015
+Return-Path: <mcr@sandelman.ca>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (ietfa.amsl.com [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 917C71B4498 for <6lo@ietfa.amsl.com>; Mon, 14 Sep 2015 11:12:10 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.611
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.611 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001, T_RP_MATCHES_RCVD=-0.01] autolearn=ham
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Zdv9GPC-89Gg for <6lo@ietfa.amsl.com>; Mon, 14 Sep 2015 11:12:09 -0700 (PDT)
+Received: from tuna.sandelman.ca (tuna.sandelman.ca [209.87.249.19]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 69D291B442C for <6lo@ietf.org>; Mon, 14 Sep 2015 11:12:09 -0700 (PDT)
+Received: from sandelman.ca (obiwan.sandelman.ca [209.87.249.21]) by tuna.sandelman.ca (Postfix) with ESMTP id D6BE72002A; Mon, 14 Sep 2015 14:12:47 -0400 (EDT)
+Received: by sandelman.ca (Postfix, from userid 179) id 9829C63B18; Mon, 14 Sep 2015 14:12:08 -0400 (EDT)
+Received: from sandelman.ca (localhost [127.0.0.1]) by sandelman.ca (Postfix) with ESMTP id 7DD8C63AD9; Mon, 14 Sep 2015 14:12:08 -0400 (EDT)
+From: Michael Richardson <mcr+ietf@sandelman.ca>
+To: 6lo <6lo@ietf.org>
+X-Attribution: mcr
+X-Mailer: MH-E 8.6; nmh 1.3-dev; GNU Emacs 24.4.2
+X-Face: $\n1pF)h^`}$H>Hk{L"x@)JS7<%Az}5RyS@k9X%29-lHB$Ti.V>2bi.~ehC0; <'$9xN5Ub# z!G,p`nR&p7Fz@^UXIn156S8.~^@MJ*mMsD7=QFeq%AL4m<nPbLgmtKK-5dC@#:k
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-="; micalg=pgp-sha1; protocol="application/pgp-signature"
+Date: Mon, 14 Sep 2015 14:12:08 -0400
+Message-ID: <8466.1442254328@sandelman.ca>
+Sender: mcr@sandelman.ca
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/aBPLjnWHMxidiMbdirMGdgl8_68>
+Cc: MiguelAngel.ReinaOrtega@etsi.org
+Subject: [6lo] about the 6lo plugfest after IETF93
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.15
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 14 Sep 2015 18:12:10 -0000
+
+--=-=-=
+Content-Type: text/plain
+
+
+I was looking at:
+  http://www.etsi.org/news-events/events/1003-6lo-plugtests
+
+and realized that it 802.15.4 6lo was not considered important here.
+The focus is on: bacnet, dect, btle and nfc.
+
+While we haven't updated the base 6lo/802.15.4 specifications yet
+(IPHC/NHC/etc. discussion not yet completed), I think that we have
+things like Efficient-ND which have not yet been subject to plugfests.
+
+--
+Michael Richardson <mcr+IETF@sandelman.ca>, Sandelman Software Works
+ -= IPv6 IoT consulting =-
+
+
+
+
+--=-=-=
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEVAwUBVfcN9YCLcPvd0N1lAQIlVwgAwT1gW7VAkJPAyjXfBg5YIa8ZFixg20YW
+8/c6WFvff7InMcjsVhi2QvgRYejQYNwc+yrUYymX17wnNYgukdhqLVx46Al5xhfB
+Dft2gu503gurQmhhYlBVbcthQjquJ2iXWc8SB7x4xvAh59P2c7vUwuqEb4o2x1xV
+AaJ+tEEJVCL4iac62mCFhN8wFPh1EkM9tsTcpbtLNdKPBmlH6aueuP7Nd0oHpJKl
+6MngES/4NH9X8j/Bi7kN04R2QO4QxsyBIy6jz77qKIxUNXEym/gG7unfaCvaRg3P
+VU90MpTXgJEyUyORVeop05haeyPJDIdNlPCikPqjZhTAn9Co0pl7tg==
+=Z/Qs
+-----END PGP SIGNATURE-----
+--=-=-=--
+
+
+From nobody Mon Sep 14 11:53:48 2015
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (ietfa.amsl.com [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 823CC1B4FF0 for <6lo@ietfa.amsl.com>; Mon, 14 Sep 2015 11:53:47 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.511
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.511 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001, T_RP_MATCHES_RCVD=-0.01, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 8yxWSPO7dM-H for <6lo@ietfa.amsl.com>; Mon, 14 Sep 2015 11:53:46 -0700 (PDT)
+Received: from rcdn-iport-5.cisco.com (rcdn-iport-5.cisco.com [173.37.86.76]) (using TLSv1 with cipher RC4-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id EAAF31B4FEB for <6lo@ietf.org>; Mon, 14 Sep 2015 11:53:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=1099; q=dns/txt; s=iport; t=1442256826; x=1443466426; h=from:to:cc:subject:date:message-id:references: in-reply-to:content-transfer-encoding:mime-version; bh=Nm4Y7PdF5xKqZHHU1/GzgsnGJLchqCeEACT18KzKbmQ=; b=OE0Z+rrZdA2K0LNNs844DMyDrbV1rSwUCogbmSP5qvnJFGCSP9J/Tkfk Xz3K2kYzaemdeYUiPpyMS+56ejU9Iv/tT6MZnXRwlJE5uCmercQrh1Vte xkajmvdHs/I4pNmPjhpbDZcUb0UWtM608olUU3L32pl8+o14xo7gW3CwR k=;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: A0BmAgCiFvdV/4gNJK1dgyNUab1CAQ2BbwqCQ4M2AoE7OBQBAQEBAQEBgQqEJAEBAwEBAQFrCwULAgEIRicLJQIEDgUJEYgMCA3LFwEBAQEBAQEBAQEBAQEBAQEBAQEBAReGc4IPgm6EWjMHgxiBFAWNMYgmAYx9mn4fAQFChAFxin0BAQE
+X-IronPort-AV: E=Sophos;i="5.17,530,1437436800"; d="scan'208";a="28805166"
+Received: from alln-core-3.cisco.com ([173.36.13.136]) by rcdn-iport-5.cisco.com with ESMTP; 14 Sep 2015 18:53:45 +0000
+Received: from XCH-RCD-016.cisco.com (xch-rcd-016.cisco.com [173.37.102.26]) by alln-core-3.cisco.com (8.14.5/8.14.5) with ESMTP id t8EIriJA002072 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=FAIL); Mon, 14 Sep 2015 18:53:45 GMT
+Received: from xch-rcd-016.cisco.com (173.37.102.26) by XCH-RCD-016.cisco.com (173.37.102.26) with Microsoft SMTP Server (TLS) id 15.0.1104.5; Mon, 14 Sep 2015 13:53:43 -0500
+Received: from xhc-aln-x11.cisco.com (173.36.12.85) by xch-rcd-016.cisco.com (173.37.102.26) with Microsoft SMTP Server (TLS) id 15.0.1104.5 via Frontend Transport; Mon, 14 Sep 2015 13:53:43 -0500
+Received: from xmb-rcd-x01.cisco.com ([169.254.1.191]) by xhc-aln-x11.cisco.com ([173.36.12.85]) with mapi id 14.03.0248.002; Mon, 14 Sep 2015 13:53:43 -0500
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: Michael Richardson <mcr+ietf@sandelman.ca>
+Thread-Topic: [6lo] about the 6lo plugfest after IETF93
+Thread-Index: AQHQ7xjiw/Sz6TpvAEO3t41JYMkyzJ48Xylj
+Date: Mon, 14 Sep 2015 18:53:43 +0000
+Message-ID: <2E528A7F-98DB-4EEE-AE64-3D8D8826DA5D@cisco.com>
+References: <8466.1442254328@sandelman.ca>
+In-Reply-To: <8466.1442254328@sandelman.ca>
+Accept-Language: fr-FR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/TGdD0KtLqbSUF-_iuAvLKvaLKho>
+Cc: "MiguelAngel.ReinaOrtega@etsi.org" <MiguelAngel.ReinaOrtega@etsi.org>, 6lo <6lo@ietf.org>
+Subject: Re: [6lo] about the 6lo plugfest after IETF93
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.15
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 14 Sep 2015 18:53:47 -0000
+
+Hello Michael=20
+
+The Backbone router draft is now a 6lo draft but it is scheduled for plug t=
+est with 6TiSCH next summer.
+
+This is close to efficient ND though it does not perform registration on th=
+e backbone Ethernet where the method is still debated at 6MAN...
+
+All the best,
+
+Pascal
+
+> Le 14 sept. 2015 =E0 20:12, Michael Richardson <mcr+ietf@sandelman.ca> a =
+=E9crit :
+>=20
+>=20
+> I was looking at:
+>  http://www.etsi.org/news-events/events/1003-6lo-plugtests
+>=20
+> and realized that it 802.15.4 6lo was not considered important here.
+> The focus is on: bacnet, dect, btle and nfc.
+>=20
+> While we haven't updated the base 6lo/802.15.4 specifications yet
+> (IPHC/NHC/etc. discussion not yet completed), I think that we have
+> things like Efficient-ND which have not yet been subject to plugfests.
+>=20
+> --
+> Michael Richardson <mcr+IETF@sandelman.ca>, Sandelman Software Works
+> -=3D IPv6 IoT consulting =3D-
+>=20
+>=20
+>=20
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+
+
+From nobody Mon Sep 14 16:25:30 2015
+Return-Path: <samita.chakrabarti@ericsson.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (ietfa.amsl.com [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 8961C1B3649 for <6lo@ietfa.amsl.com>; Mon, 14 Sep 2015 16:25:28 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.201
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.201 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, SPF_PASS=-0.001] autolearn=ham
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id PwkzZkznLNaU for <6lo@ietfa.amsl.com>; Mon, 14 Sep 2015 16:25:26 -0700 (PDT)
+Received: from usevmg20.ericsson.net (usevmg20.ericsson.net [198.24.6.45]) (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 65A661B3FDE for <6lo@ietf.org>; Mon, 14 Sep 2015 16:25:26 -0700 (PDT)
+X-AuditID: c618062d-f79ef6d000007f54-d9-55f6f8af3af8
+Received: from EUSAAHC005.ericsson.se (Unknown_Domain [147.117.188.87]) by usevmg20.ericsson.net (Symantec Mail Security) with SMTP id 08.2E.32596.FA8F6F55; Mon, 14 Sep 2015 18:41:19 +0200 (CEST)
+Received: from EUSAAMB103.ericsson.se ([147.117.188.120]) by EUSAAHC005.ericsson.se ([147.117.188.87]) with mapi id 14.03.0248.002; Mon, 14 Sep 2015 19:25:24 -0400
+From: Samita Chakrabarti <samita.chakrabarti@ericsson.com>
+To: "Pascal Thubert (pthubert)" <pthubert@cisco.com>, Michael Richardson <mcr+ietf@sandelman.ca>
+Thread-Topic: [6lo] about the 6lo plugfest after IETF93
+Thread-Index: AQHQ7xji1XlXXy1rukS0c5esSKhnDZ48ojeAgAAHbAA=
+Date: Mon, 14 Sep 2015 23:25:24 +0000
+Message-ID: <ECA43DA70480A3498E43C3471FB2E1F02226120E@eusaamb103.ericsson.se>
+References: <8466.1442254328@sandelman.ca> <2E528A7F-98DB-4EEE-AE64-3D8D8826DA5D@cisco.com>
+In-Reply-To: <2E528A7F-98DB-4EEE-AE64-3D8D8826DA5D@cisco.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [147.117.188.9]
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFvrCLMWRmVeSWpSXmKPExsUyuXRPuO76H99CDTqfKVk0TxGw6DnUz27R /Gwyo8WMKe8YHVg8pvzeyOrxael0Jo8lS34yebTM2cMcwBLFZZOSmpNZllqkb5fAlfGnbQJz wUn+ij3NTcwNjLd4uhg5OSQETCROLGlngbDFJC7cW8/WxcjFISRwlFHiystfzBDOckaJ+R+a mUGq2ASsJDp697CD2CICSRKnb6xlA7GZBeIlrlw8DRYXFjCT2NQ2hxGixlxiY8sHNgjbSmJB RzuYzSKgKnFj8itWEJtXwFfib8chsF4hgViJ4x3TwGxOAVuJKc9ugNUwAl33/dQaJohd4hK3 nsxngrhaQGLJnvPMELaoxMvH/1ghbEWJff3T2SHq9SRuTJ0Cdae2xLKFr5kh9gpKnJz5hGUC o9gsJGNnIWmZhaRlFpKWBYwsqxg5SotTy3LTjQw2MQKj6ZgEm+4Oxj0vLQ8xCnAwKvHwJjR+ DRViTSwrrsw9xCjNwaIkzrt/yf1QIYH0xJLU7NTUgtSi+KLSnNTiQ4xMHJxSDYwuhtPPeU1n qugNLhP/9y16hVrzmsNz9x1U6zfaGL7Hfn9Wy/wtEjrnXnbznuhfrT81b7HSGnERqcirGWYK 2Ut5jH99Wnnqv+WDibEFuwQvG9c0nP5pb/stdvMCKe/n72PyX3qd61lvznv+xsvDkvtkp577 FNXEw1u5QeJp/Ix6v2B1vemP3kkrsRRnJBpqMRcVJwIAfhGCfocCAAA=
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/_bEEL8XauAKCE7MI7SN2dGWF780>
+Cc: "MiguelAngel.ReinaOrtega@etsi.org" <MiguelAngel.ReinaOrtega@etsi.org>, 6lo <6lo@ietf.org>
+Subject: Re: [6lo] about the 6lo plugfest after IETF93
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.15
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 14 Sep 2015 23:25:28 -0000
+
+Hi Michael and Pascal:
+
+
+I have discussed with Miguel  on the writeup which does not clearly state a=
+bout IEEE802.15.4 part of 6lo testing a few weeks ago  and requested to cla=
+rify on the mailing list.
+
+Indeed, IEEE 802.15.4 or 6lowpan stack should be part of the testcases and =
+interop.
+
+Let me touch base with Miguel again and let us setup a interop-test prep me=
+eting with Miguel and relevant participants to clarify the testcases.
+
+Thanks,
+-Samita
+
+
+
+
+-----Original Message-----
+From: 6lo [mailto:6lo-bounces@ietf.org] On Behalf Of Pascal Thubert (pthube=
+rt)
+Sent: Monday, September 14, 2015 11:54 AM
+To: Michael Richardson
+Cc: MiguelAngel.ReinaOrtega@etsi.org; 6lo
+Subject: Re: [6lo] about the 6lo plugfest after IETF93
+
+Hello Michael=20
+
+The Backbone router draft is now a 6lo draft but it is scheduled for plug t=
+est with 6TiSCH next summer.
+
+This is close to efficient ND though it does not perform registration on th=
+e backbone Ethernet where the method is still debated at 6MAN...
+
+All the best,
+
+Pascal
+
+> Le 14 sept. 2015 =E0 20:12, Michael Richardson <mcr+ietf@sandelman.ca> a =
+=E9crit :
+>=20
+>=20
+> I was looking at:
+>  http://www.etsi.org/news-events/events/1003-6lo-plugtests
+>=20
+> and realized that it 802.15.4 6lo was not considered important here.
+> The focus is on: bacnet, dect, btle and nfc.
+>=20
+> While we haven't updated the base 6lo/802.15.4 specifications yet=20
+> (IPHC/NHC/etc. discussion not yet completed), I think that we have=20
+> things like Efficient-ND which have not yet been subject to plugfests.
+>=20
+> --
+> Michael Richardson <mcr+IETF@sandelman.ca>, Sandelman Software Works=20
+> -=3D IPv6 IoT consulting =3D-
+>=20
+>=20
+>=20
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org
+https://www.ietf.org/mailman/listinfo/6lo
+
+
+From nobody Tue Sep 15 08:18:27 2015
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (ietfa.amsl.com [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 34B711A00A7; Tue, 15 Sep 2015 08:18:25 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.9
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.9 tagged_above=-999 required=5 tests=[BAYES_00=-1.9] autolearn=ham
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id vJ9KBnIONxKp; Tue, 15 Sep 2015 08:18:23 -0700 (PDT)
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id CE60B1A0094; Tue, 15 Sep 2015 08:18:23 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.4.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <20150915151823.9512.29903.idtracker@ietfa.amsl.com>
+Date: Tue, 15 Sep 2015 08:18:23 -0700
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/8TCKn-9ABMYQrEMpSPMBDjNFNjI>
+Cc: 6lo@ietf.org
+Subject: [6lo] I-D Action: draft-ietf-6lo-dect-ule-03.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.15
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 15 Sep 2015 15:18:25 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+ This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes Working Group of the IETF.
+
+        Title           : Transmission of IPv6 Packets over DECT Ultra Low Energy
+        Authors         : Peter B. Mariager
+                          Jens Toftgaard Petersen
+                          Zach Shelby
+                          Marco van de Logt
+                          Dominique Barthel
+	Filename        : draft-ietf-6lo-dect-ule-03.txt
+	Pages           : 18
+	Date            : 2015-09-15
+
+Abstract:
+   DECT Ultra Low Energy is a low power air interface technology that is
+   defined by the DECT Forum and specified by ETSI.
+
+   The DECT air interface technology has been used world-wide in
+   communication devices for more than 20 years, primarily carrying
+   voice for cordless telephony but has also been deployed for data
+   centric services.
+
+   The DECT Ultra Low Energy is a recent addition to the DECT interface
+   primarily intended for low-bandwidth, low-power applications such as
+   sensor devices, smart meters, home automation etc.  As the DECT Ultra
+   Low Energy interface inherits many of the capabilities from DECT, it
+   benefits from long range, interference free operation, world wide
+   reserved frequency band, low silicon prices and maturity.  There is
+   an added value in the ability to communicate with IPv6 over DECT ULE
+   such as for Internet of Things applications.
+
+   This document describes how IPv6 is transported over DECT ULE using
+   6LoWPAN techniques.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-dect-ule/
+
+There's also a htmlized version available at:
+https://tools.ietf.org/html/draft-ietf-6lo-dect-ule-03
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-dect-ule-03
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Wed Sep 16 02:34:05 2015
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (ietfa.amsl.com [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 06B2A1B3ACF; Wed, 16 Sep 2015 02:34:03 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.51
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.51 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001, T_RP_MATCHES_RCVD=-0.01, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id JPm4x5O88U6B; Wed, 16 Sep 2015 02:34:02 -0700 (PDT)
+Received: from alln-iport-6.cisco.com (alln-iport-6.cisco.com [173.37.142.93]) (using TLSv1 with cipher RC4-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id C33A91B3ACA; Wed, 16 Sep 2015 02:34:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=3031; q=dns/txt; s=iport; t=1442396041; x=1443605641; h=from:to:cc:subject:date:message-id:mime-version; bh=61mz4lKwIMGks0q76TBYxWNdHSjtsjIbv2Wa8sSJmmI=; b=LbaqKmUbbwyBsrTTRqVUvbv4KDe7lUwrDTbjP/kOSv381GqxQd4YvQcx w412p98mRr6OtMrieeaa51fRp+rFpWNY6RbVETeMg/rI4BUTorRR+vuXw gVczyR7Xk9RMmD0seM8kQWqwyGZHV8jDh0WG7+53uc2WLMhmNaOW39c6m o=;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: A0DxAQCkNvlV/5JdJa1dglZNVG+9LAENgXmFeQKBQzgUAQEBAQEBAX8LhCUBBC1MEgEMHlYmAQQODYgmDclRAQEBAQEBAQEBAQEBAQEBAQEBAQEBEwSGc4R9hFwtBIMfgRQFlV4BdYQah3WbDh8BAUKEAYoWgQUBAQE
+X-IronPort-AV: E=Sophos;i="5.17,538,1437436800";  d="scan'208,217";a="188503463"
+Received: from rcdn-core-10.cisco.com ([173.37.93.146]) by alln-iport-6.cisco.com with ESMTP; 16 Sep 2015 09:34:01 +0000
+Received: from XCH-RCD-020.cisco.com (xch-rcd-020.cisco.com [173.37.102.30]) by rcdn-core-10.cisco.com (8.14.5/8.14.5) with ESMTP id t8G9Y1LQ014479 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=FAIL); Wed, 16 Sep 2015 09:34:01 GMT
+Received: from xch-rcd-020.cisco.com (173.37.102.30) by XCH-RCD-020.cisco.com (173.37.102.30) with Microsoft SMTP Server (TLS) id 15.0.1104.5; Wed, 16 Sep 2015 04:34:00 -0500
+Received: from xhc-rcd-x04.cisco.com (173.37.183.78) by xch-rcd-020.cisco.com (173.37.102.30) with Microsoft SMTP Server (TLS) id 15.0.1104.5 via Frontend Transport; Wed, 16 Sep 2015 04:34:00 -0500
+Received: from xmb-rcd-x01.cisco.com ([169.254.1.101]) by xhc-rcd-x04.cisco.com ([173.37.183.78]) with mapi id 14.03.0248.002; Wed, 16 Sep 2015 04:34:00 -0500
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: New routing dispatch and RPL
+Thread-Index: AdDwYMeoWoUnc7yfSZGKU8XVBJVQeQ==
+Date: Wed, 16 Sep 2015 09:33:59 +0000
+Deferred-Delivery: Wed, 16 Sep 2015 09:33:15 +0000
+Message-ID: <E045AECD98228444A58C61C200AE1BD84A048732@xmb-rcd-x01.cisco.com>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.228.42.123]
+Content-Type: multipart/alternative; boundary="_000_E045AECD98228444A58C61C200AE1BD84A048732xmbrcdx01ciscoc_"
+MIME-Version: 1.0
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/j7csFSHqXKvvhVXJcCr5KacqYA8>
+Cc: Routing Over Low power and Lossy networks <roll@ietf.org>
+Subject: [6lo] New routing dispatch and RPL
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.15
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 16 Sep 2015 09:34:03 -0000
+
+--_000_E045AECD98228444A58C61C200AE1BD84A048732xmbrcdx01ciscoc_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear all:
+
+We packed pretty much all we got from the meeting(s) in Prague into https:/=
+/tools.ietf.org/html/draft-thubert-6lo-routing-dispatch-06
+Do you see some consequent change we need to make before we ask for last ca=
+ll?
+
+Cheers,
+
+Pascal
+
+
+--_000_E045AECD98228444A58C61C200AE1BD84A048732xmbrcdx01ciscoc_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Dear all:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">We packed pretty much all we got from the meeting(s)=
+ in Prague into
+<a href=3D"https://tools.ietf.org/html/draft-thubert-6lo-routing-dispatch-0=
+6">https://tools.ietf.org/html/draft-thubert-6lo-routing-dispatch-06</a>
+<o:p></o:p></p>
+<p class=3D"MsoNormal">Do you see some consequent change we need to make be=
+fore we ask for last call?
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Cheers,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Pascal<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_E045AECD98228444A58C61C200AE1BD84A048732xmbrcdx01ciscoc_--
+
+
+From nobody Wed Sep 16 12:02:45 2015
+Return-Path: <Gabriel.Montenegro@microsoft.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (ietfa.amsl.com [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id F306D1A902C for <6lo@ietfa.amsl.com>; Wed, 16 Sep 2015 12:02:42 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.001
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.001 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001] autolearn=ham
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id OxpClBcjXQsx for <6lo@ietfa.amsl.com>; Wed, 16 Sep 2015 12:02:40 -0700 (PDT)
+Received: from na01-bn1-obe.outbound.protection.outlook.com (mail-bn1bon0734.outbound.protection.outlook.com [IPv6:2a01:111:f400:fc10::1:734]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id CD0C91A8BBE for <6lo@ietf.org>; Wed, 16 Sep 2015 12:01:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=selector1; h=From:To:Date:Subject:Message-ID:Content-Type:MIME-Version; bh=/3Xppz3E4a0zI2V7MKDQzewUkhQn82iCp9RbK9LYszo=; b=lHGMAyFO6AbuRpOtQwOT7eBMhemeIrRXnEHk+FiFKySol18Qaid0xKADuhgt6xTVmagnC4TJEo7zgJven3503ca76HywnJeHLXedMIcf0dNs1iaIHBm0g1jLRe77huNgQMiP11gtoc4n6ESozlfzOIPyhfNJWvu4BGIbiYBgCzA=
+Received: from BN1PR03MB072.namprd03.prod.outlook.com (10.255.225.156) by BN1PR03MB072.namprd03.prod.outlook.com (10.255.225.156) with Microsoft SMTP Server (TLS) id 15.1.262.15; Wed, 16 Sep 2015 19:01:37 +0000
+Received: from BN1PR03MB072.namprd03.prod.outlook.com ([169.254.7.193]) by BN1PR03MB072.namprd03.prod.outlook.com ([169.254.7.193]) with mapi id 15.01.0262.022; Wed, 16 Sep 2015 19:01:37 +0000
+From: Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: Requests for discussion slots in Yokohama IETF
+Thread-Index: AdDwshuIQn4iuacTSI+Be6UpVQ2f+w==
+Date: Wed, 16 Sep 2015 19:01:37 +0000
+Message-ID: <BN1PR03MB0729EB6860B4E81A6B80B5C955B0@BN1PR03MB072.namprd03.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=Gabriel.Montenegro@microsoft.com; 
+x-originating-ip: [2001:4898:80e8:7::3da]
+x-microsoft-exchange-diagnostics: 1; BN1PR03MB072; 5:cr6AipUTj2IgB0M/DqPTxNOHNr74dCh4fqDl0jZ547PiaDqktzplp8sba2mOwbOZdEEm/99N8topG/4trrg3Jh5s3dYMpGAeLs4AtSZLahG9U8C+Dl+KesPpE0/zFBVXxkrJkDkpF4j+NnLx3z1xeg==; 24:VxLtFdQliGBHPDhVQLhjpT2vM+Smt/+tAIkoq3aYDQGill7WDUQf68eOvQaTyhVyJpuDneYyiXnyoCzGN0pfxOJn9HjxqzNv3NOxhotnYQg=; 20:684dWUCyxVOanYBKcDM4qs2Tbtmyq1hlGS/5Hgjm0vHJaUHRnNOCqNseWA1zn9ul/y8dSniZveOY5yxNs1QYQA==
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:;SRVR:BN1PR03MB072;
+x-microsoft-antispam-prvs: <BN1PR03MB072CCDC6841EA20126F3E14955B0@BN1PR03MB072.namprd03.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:(108003899814671);
+x-exchange-antispam-report-cfa-test: BCL:0; PCL:0; RULEID:(601004)(2401001)(5005006)(8121501046)(520078)(520075)(3002001); SRVR:BN1PR03MB072; BCL:0; PCL:0; RULEID:; SRVR:BN1PR03MB072; 
+x-forefront-prvs: 07013D7479
+x-forefront-antispam-report: SFV:NSPM; SFS:(10019020)(6009001)(199003)(46034005)(164054003)(377454003)(189002)(11100500001)(10090500001)(15975445007)(81156007)(102836002)(5003600100002)(62966003)(8990500004)(68736005)(4001540100001)(99286002)(122556002)(76576001)(10290500002)(97736004)(2501003)(5007970100001)(5005710100001)(2900100001)(5001830100001)(77156002)(10400500002)(64706001)(450100001)(5004730100002)(92566002)(5001920100001)(86362001)(106356001)(189998001)(5001960100002)(86612001)(5002640100001)(2351001)(5001860100001)(46102003)(105586002)(33656002)(107886002)(74316001)(110136002)(19625215002)(50986999)(40100003)(19300405004)(87936001)(16236675004)(19580395003)(229853001)(101416001)(54356999)(3826002); DIR:OUT; SFP:1102; SCL:1; SRVR:BN1PR03MB072; H:BN1PR03MB072.namprd03.prod.outlook.com; FPR:; SPF:None; PTR:InfoNoRecords; A:1; MX:1; LANG:en; 
+received-spf: None (protection.outlook.com: microsoft.com does not designate permitted sender hosts)
+spamdiagnosticoutput: 1:23
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative; boundary="_000_BN1PR03MB0729EB6860B4E81A6B80B5C955B0BN1PR03MB072namprd_"
+MIME-Version: 1.0
+X-OriginatorOrg: microsoft.com
+X-MS-Exchange-CrossTenant-originalarrivaltime: 16 Sep 2015 19:01:37.2003 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 72f988bf-86f1-41af-91ab-2d7cd011db47
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN1PR03MB072
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/prOtzZQqDGUtLdTwArvSBhXQLhI>
+Subject: [6lo] Requests for discussion slots in Yokohama IETF
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.15
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 16 Sep 2015 19:02:43 -0000
+
+--_000_BN1PR03MB0729EB6860B4E81A6B80B5C955B0BN1PR03MB072namprd_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi folks,
+
+If you're going to request a slot for discussion in Yokohama, please respon=
+d by this Friday at UTC 17:00 (10am PST) with this information:
+
+
+*        Title of Presentation and Name of Presentor
+
+*        Associated draft (if any)
+
+*        Suggested duration in minutes
+
+NOTE: Deadline to request a slot for Yokohama is also this Friday at UTC 23=
+:59 (4:59 PM PST) so your responses will help us gauge how much time to req=
+uest.
+
+Thanks,
+
+chairs
+
+
+--_000_BN1PR03MB0729EB6860B4E81A6B80B5C955B0BN1PR03MB072namprd_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:dt=3D"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:m=3D"http://sc=
+hemas.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-=
+html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:1619605695;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1674078240 484449920 67698691 67698693 67698689 6769=
+8691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-start-at:2015;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:4.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span lang=3D"ES-CO">Hi folks,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-CO"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal">If you&#8217;re going to request a slot for discussi=
+on in Yokohama, please respond by this Friday at UTC 17:00 (10am PST) with =
+this information:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:.75in;text-indent:-.25in=
+;mso-list:l0 level1 lfo1">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Title of Presentation and Name of Presentor<=
+o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:.75in;text-indent:-.25in=
+;mso-list:l0 level1 lfo1">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Associated draft (if any)<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:.75in;text-indent:-.25in=
+;mso-list:l0 level1 lfo1">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Suggested duration in minutes<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">NOTE: Deadline to request a slot for Yokohama is als=
+o this Friday
+<span style=3D"font-size:9.5pt;font-family:&quot;Verdana&quot;,sans-serif;c=
+olor:black">at UTC 23:59 (</span>4:59 PM PST) so your responses will help u=
+s gauge how much time to request.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">chairs<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_BN1PR03MB0729EB6860B4E81A6B80B5C955B0BN1PR03MB072namprd_--
+
+
+From nobody Mon Sep 21 06:30:31 2015
+Return-Path: <MiguelAngel.ReinaOrtega@etsi.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (ietfa.amsl.com [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id F05FD1B3180; Mon, 21 Sep 2015 06:30:29 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.927
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.927 tagged_above=-999 required=5 tests=[BAYES_50=0.8, DEAR_SOMETHING=1.973, GB_I_INVITATION=-2, GB_I_LETTER=-2, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001, T_FILL_THIS_FORM_SHORT=0.01, T_RP_MATCHES_RCVD=-0.01] autolearn=ham
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id OAT7KIuNDxze; Mon, 21 Sep 2015 06:30:25 -0700 (PDT)
+Received: from outbound.etsi.org (outbound.etsi.org [195.238.226.43]) (using TLSv1 with cipher RC4-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 3CCCA1B318E; Mon, 21 Sep 2015 06:30:25 -0700 (PDT)
+Received: from XMAIL.etsihq.org (172.27.1.75) by xMail.etsihq.org (172.27.1.75) with Microsoft SMTP Server (TLS) id 15.0.847.32; Mon, 21 Sep 2015 15:30:04 +0200
+Received: from XMAIL.etsihq.org ([172.27.1.75]) by xMail.etsihq.org ([172.27.1.75]) with mapi id 15.00.0847.040; Mon, 21 Sep 2015 15:30:04 +0200
+From: Miguel Angel Reina Ortega <MiguelAngel.ReinaOrtega@etsi.org>
+To: "6lo@ietf.org" <6lo@ietf.org>, "6tisch@ietf.org" <6tisch@ietf.org>
+Thread-Topic: ETSI CL15_3221: Invitation to the 1st 6lo PlugtestsTM event, 6-8 November 2015, in Yokohama, Japan
+Thread-Index: AdDcI4RliGFtl8lcQBqZdJDzmyKCUQCIggxQBYpyoSA=
+Date: Mon, 21 Sep 2015 13:30:03 +0000
+Message-ID: <80c0bc4425a9491d84c52f5d62f688ce@xMail.etsihq.org>
+References: <de680f78433a47aaaa98a0dbd7a639cc@xMail.etsihq.org>
+In-Reply-To: <de680f78433a47aaaa98a0dbd7a639cc@xMail.etsihq.org>
+Accept-Language: en-US, en-GB
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [90.43.137.137]
+Content-Type: multipart/alternative; boundary="_000_80c0bc4425a9491d84c52f5d62f688cexMailetsihqorg_"
+MIME-Version: 1.0
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/TCMu2gvxMFrl5dJVLJU8X0s9FnM>
+Subject: Re: [6lo] ETSI CL15_3221: Invitation to the 1st 6lo PlugtestsTM event, 6-8 November 2015, in Yokohama, Japan
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.15
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 21 Sep 2015 13:30:30 -0000
+
+--_000_80c0bc4425a9491d84c52f5d62f688cexMailetsihqorg_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear all,
+
+Please, let me get your attention on the following updated details with reg=
+arding to the 6lo Plugtests to be held in Yokohama from 6th to 8th November=
+:
+
+
+-          After receiving some questions about the scope of the Plugtests,=
+ I would like to clarify that IEEE 802.15.4 is part of the Plugtests scope.=
+ We have updated the Plugtests website (http://www.etsi.org/news-events/eve=
+nts/1003-6lo-plugtests) accordingly.
+
+-          Regarding the registration deadline, we have had to change the d=
+eadline to 9th October due to some logistic details that need to be prepare=
+d in advance as the event will be in Japan. So, please, take into account t=
+he new date if you're considering your participation.
+
+Should you have any other question, please, do not hesitate to contact us.
+
+Please, do not hesitate to forward this email to other colleagues.
+
+Best regards.
+
+-------------------------------------------
+Miguel A. Reina Ortega
+Technical Expert
+Centre for Testing and Interoperability (CTI)
+ETSI
+
+tel:    +33 (0)4 92 94 43 49
+mob: +33 (0)6 76 73 60 99
+fax:    +33 (0)4 93 65 47 16
+web: http://www.etsi.org<http://www.etsi.org/>
+
+From: 6lo [mailto:6lo-bounces@ietf.org] On Behalf Of Miguel Angel Reina Ort=
+ega
+Sent: 24 August 2015 10:23 AM
+To: 6lo@ietf.org
+Subject: [6lo] FW: ETSI CL15_3221: Invitation to the 1st 6lo PlugtestsTM ev=
+ent, 6-8 November 2015, in Yokohama, Japan
+
+Dear all,
+
+Please, let me forward the Invitation Letter that has been recently sent ou=
+t from ETSI for the upcoming 1st 6lo Plugtests that will be held in Yokoham=
+a from 6th to 8th November right after the 94th IETF meeting. In there, you=
+ will find the 6lo Plugtests website where more details can be found. Also,=
+ registration to the event has been open and you can find the link at the 6=
+lo website.
+
+Please, note that the document is password protected (only for ETSI members=
+) but the whole content of the document is the body of the email below.
+
+Should you have any question, do not hesitate to drop me an email.
+
+Best regards.
+
+-------------------------------------------
+Miguel A. Reina Ortega
+Technical Expert
+Centre for Testing and Interoperability (CTI)
+ETSI
+
+tel:    +33 (0)4 92 94 43 49
+mob: +33 (0)6 76 73 60 99
+fax:    +33 (0)4 93 65 47 16
+web: http://www.etsi.org<http://www.etsi.org/>
+
+From: Jeanne Lancry-Gulino
+Sent: 21 August 2015 5:15 PM
+To: CL-DISPATCH
+Cc: SEC [ETSI Secretariat Distribution List]; STFs [All active STF experts]
+Subject: ETSI CL15_3221: Invitation to the 1st 6lo PlugtestsTM event, 6-8 N=
+ovember 2015, in Yokohama, Japan
+
+The complete file (and annexes if any) of this Collective Letter can be dow=
+nloaded at the following location: http://docbox.etsi.org/C_Letter/CL2015/C=
+L15_3221_Invitation_6lo_Plugtests.doc
+
+To:              ETSI MEMBERS, OBSERVERS AND COUNSELLORS
+Subject:     Invitation to the 1st 6lo PlugtestsTM event, 6-8 November 2015=
+, in Yokohama, Japan
+
+Dear Madam,
+Dear Sir,
+
+ETSI's Centre for Testing and Interoperability (CTI) is organizing the 1st =
+6lo (IPv6 over Networks of Resource-constrained Nodes) Plugtests(tm) event.=
+ This event will be held from 6 to 8 November 2015 in Yokohama, Japan, with=
+ the support of the Internet Engineering Task Force (IETF) 6lo Working Grou=
+p, co-located with the 94th IETF meeting (1 to 6 November 2015).
+
+This Plugtests(tm) event will focus on assessing the interoperability of di=
+fferent implementations based on the 6LoWPAN specifications RFC4944, RFC628=
+2 and RFC6775 adapted to:
+-       Constrained wired networks (draft-ietf-6lo-6lobac-02)
+-       DECT Ultra Low Energy air interface (draft-ietf-6lo-dect-ule-02)
+-       Bluetooth low energy air interface* (draft-ietf-6lo-btle-17)
+-       Near Field Communication* (NFC) radio interface* (draft-ietf-6lo-nf=
+c-01)
+
+(* if number of implementations permits)
+
+The testing campaign will be based on the test cases developed by ETSI in c=
+ollaboration with IETF 6lo WG members and will focus on the interoperabilit=
+y of these different technologies.
+
+It will give a unique opportunity to participating 6lo vendors to test thei=
+r product against different implementations.
+
+Vendors participating in this event will also benefit from a great deal of =
+communication and marketing.
+
+The event is free of charge and is open to both ETSI members and non-member=
+s.
+
+All information related to this event along with registration details may b=
+e found at the following address: http://www.etsi.org/news-events/events/10=
+03-6lo-plugtests.
+
+You can also contact us via email: Plugtests@etsi.org<mailto:Plugtests@etsi=
+.org>.
+
+Yours faithfully,
+
+
+Luis Jorge Romero Saro
+Director-General
+
+
+NOTE: ETSI Collective Letters are sent to:
+
+*         Official Contacts of Full/Associate Members, Observers, Counsello=
+rs
+
+*         Board members, TB/WG officials and Active Rapporteurs
+TB/WG/Voting Officials and Active Rapporteurs may OPT-OUT from receiving Co=
+llectives Letters. To do so, please send an email to Jeanne.Lancry-Gulino@e=
+tsi.org<mailto:Jeanne.Lancry-Gulino@etsi.org> requesting this option
+
+
+--_000_80c0bc4425a9491d84c52f5d62f688cexMailetsihqorg_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 12 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:Consolas;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.StdColl4Char
+	{mso-style-name:"Std_Coll4 Char";
+	font-family:"Arial","sans-serif";}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle23
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:452788788;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1292564934 -811554544 67698691 67698693 67698689 676=
+98691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:Calibri;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Dear all, <o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Please, let me get you=
+r attention on the following updated details with regarding to the 6lo Plug=
+tests to be held in Yokohama from 6<sup>th</sup> to 8<sup>th</sup> November=
+:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-18.0pt;mso-list:l0 leve=
+l1 lfo1"><![if !supportLists]><span style=3D"color:#1F497D"><span style=3D"=
+mso-list:Ignore">-<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"color:#1F497D">After receivin=
+g some questions about the scope of the Plugtests, I would like to clarify =
+that
+<b>IEEE 802.15.4 is part of the Plugtests scope</b>. We have updated the Pl=
+ugtests website (</span><a href=3D"http://www.etsi.org/news-events/events/1=
+003-6lo-plugtests">http://www.etsi.org/news-events/events/1003-6lo-plugtest=
+s</a>)
+<span style=3D"color:#1F497D">accordingly.<o:p></o:p></span></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-18.0pt;mso-list:l0 leve=
+l1 lfo1"><![if !supportLists]><span style=3D"color:#1F497D"><span style=3D"=
+mso-list:Ignore">-<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"color:#1F497D">Regarding the =
+registration deadline, we have had to change the deadline to
+<b>9<sup>th</sup> October</b> due to some logistic details that need to be =
+prepared in advance as the event will be in Japan. So, please, take into ac=
+count the new date if you&#8217;re considering your participation.<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Should you have any ot=
+her question, please, do not hesitate to contact us.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Please, do not hesitat=
+e to forward this email to other colleagues.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Best regards.<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"font-size:7.5pt;colo=
+r:#1F497D">-------------------------------------------<o:p></o:p></span></p=
+>
+<p class=3D"MsoNormal"><b><span lang=3D"ES-TRAD" style=3D"font-size:10.0pt;=
+color:#1F497D">Miguel A. Reina Ortega<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"font-size:10.0pt;col=
+or:#1F497D">Technical Expert</span><span lang=3D"ES-TRAD" style=3D"color:#1=
+F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">Centre for Testing and Interoperability (CTI)<o:p></o:p></span></=
+p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">ETSI</span><span lang=3D"EN-GB" style=3D"font-size:12.0pt;color:#=
+1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"color:#1F497D">&nbsp;<=
+/span><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color:#1F497D"><o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">tel:&nbsp;&nbsp;&nbsp; &#43;33 (0)4 92 94 43 49<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">mob: &#43;33 (0)6&nbsp;76 73 60 99<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">fax:&nbsp;&nbsp;&nbsp; &#43;33 (0)4 93 65 47 16
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">web:
+</span><span lang=3D"EN-GB" style=3D"color:#1F497D"><a href=3D"http://www.e=
+tsi.org/"><span style=3D"font-size:10.0pt">http://www.etsi.org</span></a><o=
+:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> 6lo [mai=
+lto:6lo-bounces@ietf.org]
+<b>On Behalf Of </b>Miguel Angel Reina Ortega<br>
+<b>Sent:</b> 24 August 2015 10:23 AM<br>
+<b>To:</b> 6lo@ietf.org<br>
+<b>Subject:</b> [6lo] FW: ETSI CL15_3221: Invitation to the 1st 6lo Plugtes=
+tsTM event, 6-8 November 2015, in Yokohama, Japan<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Dear all, <o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Please, let me forward=
+ the Invitation Letter that has been recently sent out from ETSI for the up=
+coming 1<sup>st</sup> 6lo Plugtests that will be held in Yokohama from 6<su=
+p>th</sup> to 8<sup>th</sup> November
+ right after the 94<sup>th</sup> IETF meeting. In there, you will find the =
+6lo Plugtests website where more details can be found. Also, registration t=
+o the event has been open and you can find the link at the 6lo website.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Please, note that the =
+document is password protected (only for ETSI members) but the whole conten=
+t of the document is the body of the email below.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Should you have any qu=
+estion, do not hesitate to drop me an email.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Best regards. <o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:7.5pt;color:#1F497D">------=
+-------------------------------------<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;color:#1F497D">Mi=
+guel A. Reina Ortega<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#1F497D">Techn=
+ical Expert</span><span style=3D"color:#1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">Centre for Testing and Interoperability (CTI)<o:p></o:p></span></=
+p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">ETSI</span><span lang=3D"EN-GB" style=3D"font-size:12.0pt;color:#=
+1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"color:#1F497D">&nbsp;<=
+/span><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color:#1F497D"><o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">tel:&nbsp;&nbsp;&nbsp; &#43;33 (0)4 92 94 43 49<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">mob: &#43;33 (0)6&nbsp;76 73 60 99<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">fax:&nbsp;&nbsp;&nbsp; &#43;33 (0)4 93 65 47 16
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color=
+:#1F497D">web:
+</span><span lang=3D"EN-GB" style=3D"color:#1F497D"><a href=3D"http://www.e=
+tsi.org/"><span style=3D"font-size:10.0pt">http://www.etsi.org</span></a><o=
+:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Jeanne L=
+ancry-Gulino
+<br>
+<b>Sent:</b> 21 August 2015 5:15 PM<br>
+<b>To:</b> CL-DISPATCH<br>
+<b>Cc:</b> SEC [ETSI Secretariat Distribution List]; STFs [All active STF e=
+xperts]<br>
+<b>Subject:</b> ETSI CL15_3221: Invitation to the 1st 6lo PlugtestsTM event=
+, 6-8 November 2015, in Yokohama, Japan<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB">The complete file (and annexes =
+if any) of this Collective Letter can be downloaded at the following locati=
+on:
+<a href=3D"http://docbox.etsi.org/C_Letter/CL2015/CL15_3221_Invitation_6lo_=
+Plugtests.doc">
+http://docbox.etsi.org/C_Letter/CL2015/CL15_3221_Invitation_6lo_Plugtests.d=
+oc</a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span lang=3D"EN-GB" style=3D"font-size:12.0pt"><=
+o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span lang=3D"EN-GB" style=3D"font-size:12.0pt">T=
+o:</span></b><span lang=3D"EN-GB" style=3D"font-size:12.0pt">
+</span><b><span style=3D"font-size:12.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ETSI MEMBERS, OBSERVERS AND COUNSE=
+LLORS</span></b><span lang=3D"EN-GB" style=3D"font-size:12.0pt"><o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><b><span lang=3D"EN-GB" style=3D"font-size:12.0pt">S=
+ubject: &nbsp;&nbsp;&nbsp; Invitation to the 1st 6lo Plugtests<sup>TM</sup>=
+ event, 6-8 November 2015, in Yokohama, Japan<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:12.0pt"><o:p=
+>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal">Dear Madam,<o:p></o:p></p>
+<p class=3D"MsoNormal">Dear Sir,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB">ETSI&#8217;s Centre for Testing=
+ and Interoperability (CTI) is organizing the 1<sup>st</sup> 6lo (IPv6 over=
+ Networks of Resource-constrained Nodes) Plugtests&#8482; event. This event=
+ will be held from 6 to 8 November 2015 in Yokohama,
+ Japan, with the support of the Internet Engineering Task Force (IETF) 6lo =
+Working Group, co-located with the 94<sup>th</sup> IETF meeting (1 to 6 Nov=
+ember 2015).</span><span lang=3D"EN-GB" style=3D"font-size:10.0pt;font-fami=
+ly:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB">This Plugtests&#8482; event wil=
+l focus on assessing the interoperability of different implementations base=
+d on the 6LoWPAN specifications RFC4944, RFC6282 and RFC6775 adapted to:<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt;text-align:justify;text-=
+indent:-18.0pt;punctuation-wrap:simple;text-autospace:none">
+<span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&quot;,&quot;sans-seri=
+f&quot;">-</span><span lang=3D"EN-GB" style=3D"font-size:7.0pt;font-family:=
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;
+</span><span lang=3D"EN-GB">Constrained wired networks (draft-ietf-6lo-6lob=
+ac-02)<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt;text-align:justify;text-=
+indent:-18.0pt;punctuation-wrap:simple;text-autospace:none">
+<span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&quot;,&quot;sans-seri=
+f&quot;">-</span><span lang=3D"EN-GB" style=3D"font-size:7.0pt;font-family:=
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;
+</span><span lang=3D"EN-GB">DECT Ultra Low Energy air interface (draft-ietf=
+-6lo-dect-ule-02)<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt;text-align:justify;text-=
+indent:-18.0pt;punctuation-wrap:simple;text-autospace:none">
+<span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&quot;,&quot;sans-seri=
+f&quot;">-</span><span lang=3D"EN-GB" style=3D"font-size:7.0pt;font-family:=
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;
+</span><span lang=3D"EN-GB">Bluetooth low energy air interface* (draft-ietf=
+-6lo-btle-17)<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt;text-align:justify;text-=
+indent:-18.0pt;punctuation-wrap:simple;text-autospace:none">
+<span lang=3D"EN-GB" style=3D"font-family:&quot;Arial&quot;,&quot;sans-seri=
+f&quot;">-</span><span lang=3D"EN-GB" style=3D"font-size:7.0pt;font-family:=
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;
+</span><span lang=3D"EN-GB">Near Field Communication* (NFC) radio interface=
+* (draft-ietf-6lo-nfc-01)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB">(* if number of implementations=
+ permits)<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-left:36.0pt"><span lang=3D"EN-GB"><o=
+:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB">The testing campaign will be ba=
+sed on the test cases developed by ETSI in collaboration with IETF 6lo WG m=
+embers and will focus on the interoperability of these different technologi=
+es.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB">It will give a unique opportuni=
+ty to participating 6lo vendors to test their product against different imp=
+lementations.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB">Vendors participating in this e=
+vent will also benefit from a great deal of communication and marketing.<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB">The event is <b><u>free of char=
+ge</u></b> and is open to both ETSI members and non-members.<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB">All information related to this=
+ event along with registration details may be found at the following addres=
+s:
+<a href=3D"http://www.etsi.org/news-events/events/1003-6lo-plugtests">http:=
+//www.etsi.org/news-events/events/1003-6lo-plugtests</a>.<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB">You can also contact us via ema=
+il: <a href=3D"mailto:Plugtests@etsi.org">
+Plugtests@etsi.org</a>.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Yours faithfully,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Luis Jorge Romero Saro<o:p></o:p></p>
+<p class=3D"MsoNormal">Director-General<o:p></o:p></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;font-=
+family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p>&nbsp;</o:p></span></=
+p>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB" style=3D"font-size:10.0pt;font-=
+family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p>&nbsp;</o:p></span></=
+p>
+<div>
+<p class=3D"MsoNormal"><i><span lang=3D"EN-GB" style=3D"font-size:10.0pt;co=
+lor:gray">NOTE: ETSI Collective Letters are sent to:
+<o:p></o:p></span></i></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-18.0pt"><span lang=3D"E=
+N-GB" style=3D"font-size:10.0pt;font-family:Symbol;color:gray">&middot;</sp=
+an><span lang=3D"EN-GB" style=3D"font-size:7.0pt;font-family:&quot;Times Ne=
+w Roman&quot;,&quot;serif&quot;;color:gray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;
+</span><i><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color:gray">Offici=
+al Contacts of Full/Associate Members, Observers, Counsellors<o:p></o:p></s=
+pan></i></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-18.0pt"><span lang=3D"E=
+N-GB" style=3D"font-size:10.0pt;font-family:Symbol;color:gray">&middot;</sp=
+an><span lang=3D"EN-GB" style=3D"font-size:7.0pt;font-family:&quot;Times Ne=
+w Roman&quot;,&quot;serif&quot;;color:gray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;
+</span><i><span lang=3D"EN-GB" style=3D"font-size:10.0pt;color:gray">Board =
+members, TB/WG officials and Active Rapporteurs
+<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><i><span lang=3D"EN-GB" style=3D"font-size:10.0pt;co=
+lor:gray">TB/WG/Voting Officials and Active Rapporteurs may OPT-OUT from re=
+ceiving Collectives Letters. To do so, please send an email to</span></i><i=
+><span lang=3D"EN-GB" style=3D"font-size:10.0pt">
+</span></i><span lang=3D"EN-GB"><a href=3D"mailto:Jeanne.Lancry-Gulino@etsi=
+.org"><i><span style=3D"font-size:10.0pt">Jeanne.Lancry-Gulino@etsi.org</sp=
+an></i></a></span><i><span lang=3D"EN-GB" style=3D"font-size:10.0pt">
+<span style=3D"color:gray">requesting this option<o:p></o:p></span></span><=
+/i></p>
+</div>
+<p class=3D"MsoNormal"><span lang=3D"EN-GB"><o:p>&nbsp;</o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_80c0bc4425a9491d84c52f5d62f688cexMailetsihqorg_--
+
+
+From nobody Mon Sep 21 08:55:46 2015
+Return-Path: <Richard.Kelsey@silabs.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (ietfa.amsl.com [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id BED551B33C8 for <6lo@ietfa.amsl.com>; Mon, 21 Sep 2015 08:55:44 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: 0.398
+X-Spam-Level: 
+X-Spam-Status: No, score=0.398 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, MANGLED_LIST=2.3, SPF_HELO_PASS=-0.001, SPF_PASS=-0.001] autolearn=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id HkGzbXlO8Fln for <6lo@ietfa.amsl.com>; Mon, 21 Sep 2015 08:55:39 -0700 (PDT)
+Received: from na01-bn1-obe.outbound.protection.outlook.com (mail-bn1on0691.outbound.protection.outlook.com [IPv6:2a01:111:f400:fc10::691]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 38C881B33C3 for <6lo@ietf.org>; Mon, 21 Sep 2015 08:55:39 -0700 (PDT)
+Received: from SN1PR0701MB1821.namprd07.prod.outlook.com (10.162.100.150) by SN1PR0701MB1821.namprd07.prod.outlook.com (10.162.100.150) with Microsoft SMTP Server (TLS) id 15.1.268.17; Mon, 21 Sep 2015 15:55:19 +0000
+Received: from SN1PR0701MB1821.namprd07.prod.outlook.com ([10.162.100.150]) by SN1PR0701MB1821.namprd07.prod.outlook.com ([10.162.100.150]) with mapi id 15.01.0268.017; Mon, 21 Sep 2015 15:55:19 +0000
+From: Richard Kelsey <Richard.Kelsey@silabs.com>
+To: "consultancy@vanderstok.org" <consultancy@vanderstok.org>, robert cragie <robert.cragie@gridmerge.com>, "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: [6lo] Review of draft-kelsey-6lo-mesh-link-establishment
+Thread-Index: AQHQ7x+bZ3B2KD8aZ0eINllCHN6+9J5HKSIH
+Date: Mon, 21 Sep 2015 15:55:18 +0000
+Message-ID: <SN1PR0701MB1821231BD49F05DF843C5C02F7460@SN1PR0701MB1821.namprd07.prod.outlook.com>
+References: <1fae6bc94395057d115a8a101353fd3e@xs4all.nl>
+In-Reply-To: <1fae6bc94395057d115a8a101353fd3e@xs4all.nl>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=Richard.Kelsey@silabs.com; 
+x-originating-ip: [216.236.254.7]
+x-microsoft-exchange-diagnostics: 1; SN1PR0701MB1821; 5:5AtDH10Wi5/NSU5O3mp0aWONxzbsbmq6+Nq+A72ThqTUs9953SD58w/GjfBCZr+GpKjGM9PVOMaoF8s8SXIYGKVbs+AOfTH7u1yvH+nu7uMYGbRkPPE+cToGZl5jCymiBfHHF8VJcxJ97KmTv+Kb7A==; 24:dlVbKnjIj0cKk9gLjECctG3sC5arHLFGDxNL01Ugbvk6vcVcz5R3debhtAcZ66+KgRlZ9wtdpw0mqSgjDOp3Xbc+X2R339VctwlVHb+mfdM=; 20:l4G3trcqCdkS/kWieXYdlURw3Gjma0MxPpNjU4+XTK8w98F1BgH7wnmEc7rliPJXvjEnCatQUwYB7fKksvkpFg==
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:;SRVR:SN1PR0701MB1821;
+x-microsoft-antispam-prvs: <SN1PR0701MB18216BB8F9D30F2E9112FD5DF7460@SN1PR0701MB1821.namprd07.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:;
+x-exchange-antispam-report-cfa-test: BCL:0; PCL:0; RULEID:(601004)(520075)(520078)(5005006)(8121501046)(3002001); SRVR:SN1PR0701MB1821; BCL:0; PCL:0; RULEID:; SRVR:SN1PR0701MB1821; 
+x-forefront-prvs: 07063A0A30
+x-forefront-antispam-report: SFV:NSPM; SFS:(10009020)(6009001)(199003)(189002)(377454003)(33656002)(5001960100002)(15974865002)(122556002)(5003600100002)(2900100001)(19580395003)(4001540100001)(81156007)(230783001)(87936001)(99286002)(5002640100001)(106116001)(86362001)(68736005)(102836002)(2950100001)(107886002)(62966003)(5001860100001)(40100003)(19580405001)(105586002)(77156002)(92566002)(5001770100001)(5007970100001)(46102003)(76576001)(54356999)(74316001)(64706001)(77096005)(101416001)(11100500001)(10400500002)(5001830100001)(5890100001)(66066001)(189998001)(2501003)(50986999)(76176999)(106356001)(97736004)(5004730100002); DIR:OUT; SFP:1101; SCL:1; SRVR:SN1PR0701MB1821; H:SN1PR0701MB1821.namprd07.prod.outlook.com; FPR:; SPF:None; PTR:InfoNoRecords; A:1; MX:1; LANG:en; 
+received-spf: None (protection.outlook.com: silabs.com does not designate permitted sender hosts)
+spamdiagnosticoutput: 1:23
+spamdiagnosticmetadata: NSPM
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-OriginatorOrg: silabs.com
+X-MS-Exchange-CrossTenant-originalarrivaltime: 21 Sep 2015 15:55:18.6335 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 54dbd822-5231-4b20-944d-6f4abcd541fb
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN1PR0701MB1821
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/pSAl7hopOh6kVAZ9ByNmVT6j2qg>
+Subject: Re: [6lo] Review of draft-kelsey-6lo-mesh-link-establishment
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.15
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 21 Sep 2015 15:55:44 -0000
+
+Peter, thank you for the comments.  As a general response, the
+draft is informational and describes MLE as it is used in ZigBee IP.
+Some of the choices made depended on the particular needs of
+ZigBee IP and on the RFCs and drafts that were available at the
+time (2009-2012).
+
+> The way the draft removes unreliable links looks really great and
+> must be very useful.
+
+Determining link reliability is not a primary goal of MLE.  That
+really requires collecting ongoing statistics about transmission
+attempts and successes, which MLE does not do.
+
+> Abstract
+>=20
+> Three capabilities: Put 3) as first. Difference between 2) and 1)
+> is not very clear.
+
+1) is concerned with configuring an individual radio link between
+two neighboring devices in a mesh.  It deals with the specific
+values for communication between those two devices. This is the
+primary purpose for MLE, which is why it is listed first.
+
+2) is for setting mesh-wide shared values, such as the channel
+or PAN ID.  This could be done in lots of ways.  ZigBee IP
+happened to use MLE.  Removing this functionality would not
+affect the rest of the protocol.
+
+3) is an optimization to make 1) more efficient.  It isn't
+strictly necessary. =20
+
+I suspect the confusion between 1) and 2) is partly due to the
+multiple meanings of the word "link".  Would this be better?
+
+   MLE extends IEEE 802.15.4 for use in multihop mesh networks by
+   adding three capabilities: 1) dynamically configuring and
+   securing radio connections between neighboring devices, 2)
+   enabling network-wide changes to shared radio parameters, and
+   3) allowing the determination of radio link quality prior to
+   configuration.
+
+> Section 1 Introduction.
+> 1st al.
+> A reference to existing 802.15.4 MIB RFC7388 would help, and also an
+> explanation why this is not sufficient.
+
+RFC 7388 defines statistics for 6LoWPAN packet reception and
+transmission.  I don't see how this is relevent to management
+of 802.15.4 radio links.
+
+> 3rd al
+>=20
+>  MLE can also be used=85=85across a network identified by its channel
+> and PAN ID.  Forwarding with simple flooding (you mean TRICKLE ?)
+
+The point here is that there is no dependency on the multicast
+forwarding protocol or on its being efficient.
+
+> If ZigBee IP standard reference is needed, should =93thread=94 not be
+> mentioned as well?
+
+The draft describes MLE as used in ZigBee IP, not as it is used
+in Thread. =20
+
+> Section 4.1:
+>=20
+> 1st al: Again what is relation with RFC7388. Is an extension to 7388
+> sufficient?
+
+Again, I don't see any connection to RFC7388's 6LoWPAN message
+statistics.
+
+> 2nd al. This is very terse, and completely incomprehensible to
+> anyone not familiar with 802.15.4 security standards
+> section. And even then I wonder what is meant. More motivation
+> would be welcome (probably including an example)
+
+How about the following:
+
+   IEEE 802.15.4 security uses frame counters to detect replayed
+   messages.  Each sender maintains an outgoing frame counter
+   that is included in outgoing secured messages and is
+   incremented for each message sent.  Receivers store the
+   highest frame counter yet seen from each neighbor.  Messages
+   that arrive with a frame counter less than or equal to the
+   highest previously-seen frame counter are discarded.
+
+   In a mesh network neighbors come and go as the mesh topology
+   changes.  When a message arrives from a previously unheard
+   neighbor, the receiver has no stored frame counter that can be
+   used to determine if the message has been replayed by an
+   attacker.  MLE solves this by providing a simple handshake
+   mechanism that allows the receiver to securely obtain the
+   sender's current outgoing frame counter.
+
+> Section 4.2
+>=20
+> Relation with draft-ietf-roll-mpl-parameter-configuration-07
+> needs to be clarified.
+
+ZigBee IP, and thus the version of MLE described in the draft,
+predates draft-ietf-roll-mpl-parameter-configuration.  I'm not
+sure what needs to be clarified.
+
+> Section 5.
+
+> It will be helpful when the draft explains how neighbours use link
+> security and how MLE uses 802.15.4 security for the MLE messages. Do I
+> understand correctly that a link can be secured with 802.15.4 mechanisms
+> and MLE uses 802,15.4 mechanism on the MLE message sent over this
+> secured link? In fact the MLE message is secured twice once at UDP level
+> and once at link level?
+
+MLE messages secured at the UDP level are not secured at the
+link level.  I see that the draft does not state this explicitly;
+I'll fix this.
+
+> The figure is encouraged to include the MAC layer as well.
+
+You mean something like this?
+
+ +------------+-----------+------------+-----+------------+---------+-----+
+ | MAC Header | IP Header | UDP Header |  0  | Aux Header | Command | MIC |
+ +------------+-----------+------------+-----+------------+---------+-----+
+
+I'm not sure I see the point.
+
+> Section 6.
+>
+> Why still use TLV at this stage. In other wgs the use of CBOR is
+> considered advantageous.
+
+One reason is that ZigBee IP development predated the appearance
+of CBOR.
+
+That aside, switching to CBOR would add considerable complexity
+to both the draft and to implementations.  I don't see what
+advantages CBOR would bring that would be worth the extra
+complexity.
+
+> Section 7
+> Is it wise to start with type =3D 0,  not better to start with type=3D1, =
+to
+> reduce error scenarios
+
+I don't see how that helps.
+
+> Section 7.6
+>=20
+> Because the MLE message containing this TLV is sent within a 802.15.4
+> frame, the frame counter in the TLV must be identical to the frame
+> counter in 802.15.4 header? Is that not superfluous?
+
+The 802.15.4 frame is not secured and does not have a frame counter.
+
+> Does this mean that MLE uses key1 + frame counter and link uses key2 +
+> frame counter with key1 NEQ key2?
+
+They use different keys.  From section 5:
+
+   MLE security MUST NOT use any key that is being used by the link (or
+   any other) layer.
+
+The two key counters may or may not be the same.  It may be, for
+example, that MLE may be running on a host processor while 802.15.4
+is running on an attached coprocessor.  This would make coordinating
+a single frame counter difficult.  On the other hand, if the two
+are running on a single processor, nothing is gained by requiring
+the the two counters be different.
+
+> Section 7.8: is link parameter, or interface parameter not a bitter
+> title?
+
+I don't think so, although "network" might not be the best term
+either.  These parameters apply to the entire mesh, not just a
+single link or interface.
+
+> The consequences of modifying the PAN ID or channel number are not clear
+> to me. Can there be some explanatory text on this aspect?
+
+Yes, I can see that more needs to be said here.
+
+> To what 802.15.4 parameter does Permit Joining correspond?
+
+The permit joining flag in the beacon header.
+
+> Section 7.9: I thought MLE frame counter is equal to link frame counter,
+> so why two separate ones?
+
+Practical considerations.  See the note on section 7.6 above.
+
+> Section 8, 1st al: do you mean realm-local or admin-local ? see also
+> section 11
+
+Realm-local.  This nees to be fixed in the draft.
+
+> Section 8. This description really needs more text and probably some
+> examples and should be better related to section 5.  A scenario
+> describing the process in full would be really helpful.
+
+I agree that the description is too sparse.
+
+> Section 9 2nd al. What are =93reserved command type values=94?
+
+The currently unassigned values.  This needs to be made
+consistent with section 14.
+
+> Section 9 3rd al. As in section 8, What does joining the network mean?
+> If I understand correctly that means that a network with a PAN ID has
+> been formed, and a secured network segment exists with neighbours
+> communicating over 802.15.4 secured links and another unsecured segment
+> with neighbours which communicate over unsecured links. Joining means
+> that a node from unsecured segment leaves the unsecured segment and
+> joins the secured one. Under what conditions can a node in a secured
+> segment communicate with a node in the unsecured segment?
+> In addition, does joining also mean that secured MLE messages MUST be
+> exchanged? Can there be MLE secured messages which are transported over
+> unsecured links? As pointed out earlier, I miss the overview.
+
+Starting to talk about joining opens a Pandora's box of issues,
+given how many different ways there are of handling joining.
+Better would be to leave it out of scope and remove this
+sentence:
+
+   The one exception to this is messages sent to or from a
+   device that is joining the network and does not yet have
+   the necessary keys.
+
+-Richard Kelsey
+
+________________________________________
+From: peter van der Stok [stokcons@xs4all.nl]
+Sent: Monday, September 14, 2015 6:40 AM
+To: robert cragie; 6lo@ietf.org
+Subject: [6lo] Review of draft-kelsey-6lo-mesh-link-establishment
+
+Hi Robert,
+
+Below my review of the mle draft.
+The way the draft removes unreliable links looks really great and must
+be very useful.
+However, I got muddled about the security aspects. I hope my questions
+help solve the issues I had.
+
+Greetings,
+
+peter
+___________________________________________________________________________=
+_________________________
+
+Abstract
+Three capabilities: Put 3) as first. Difference between 2) and 1) is not
+very clear.
+A full stop (.) is needed between =85. configuration. MLE=85.
+Section 1 Introduction.
+1st al.
+A reference to existing 802.15.4 MIB RFC7388 would help, and also an
+explanation why this is not sufficient.
+
+3rd al
+MLE can also be used=85=85across a network identified by its channel and PA=
+N
+ID.
+Forwarding with simple flooding (you mean TRICKLE ?)
+If ZigBee IP standard reference is needed, should =93thread=94 not be
+mentioned as well?
+Section 4:
+Last line page 4, remove: before=85=85.them.
+Section 4.1:
+1st al: Again what is relation with RFC7388. Is an extension to 7388
+sufficient?
+2nd al. This is very terse, and completely incomprehensible to anyone
+not familiar with 802.15.4 security standards section. And even then I
+wonder what is meant. More motivation would be welcome (probably
+including an example)
+Section 4.2
+Relation with draft-ietf-roll-mpl-parameter-configuration-07 needs to be
+clarified.
+Section 5.
+It will be helpful when the draft explains how neighbours use link
+security and how MLE uses 802.15.4 security for the MLE messages. Do I
+understand correctly that a link can be secured with 802.15.4 mechanisms
+and MLE uses 802,15.4 mechanism on the MLE message sent over this
+secured link? In fact the MLE message is secured twice once at UDP level
+and once at link level?
+The figure is encouraged to include the MAC layer as well.
+Section 6.
+Why still use TLV at this stage. In other wgs the use of CBOR is
+considered advantageous.
+Section 7
+Is it wise to start with type =3D 0,  not better to start with type=3D1, to
+reduce error scenarios
+Section 7.6
+Because the MLE message containing this TLV is sent within a 802.15.4
+frame, the frame counter in the TLV must be identical to the frame
+counter in 802.15.4 header? Is that not superfluous?
+Does this mean that MLE uses key1 + frame counter and link uses key2 +
+frame counter with key1 NEQ key2?
+Section 7.7: Add a reference to section 12.
+Section 7.8: is link parameter, or interface parameter not a bitter
+title?
+The consequences of modifying the PAN ID or channel number are not clear
+to me. Can there be some explanatory text on this aspect?
+To what 802.15.4 parameter does Permit Joining correspond?
+Section 7.9: I thought MLE frame counter is equal to link frame counter,
+so why two separate ones?
+Section 8, 1st al: do you mean realm-local or admin-local ? see also
+section 11
+Section 8. This description really needs more text and probably some
+examples and should be better related to section 5.  A scenario
+describing the process in full would be really helpful.
+Section 9 2nd al. What are =93reserved command type values=94?
+Section 9 3rd al. As in section 8, What does joining the network mean?
+If I understand correctly that means that a network with a PAN ID has
+been formed, and a secured network segment exists with neighbours
+communicating over 802.15.4 secured links and another unsecured segment
+with neighbours which communicate over unsecured links. Joining means
+that a node from unsecured segment leaves the unsecured segment and
+joins the secured one. Under what conditions can a node in a secured
+segment communicate with a node in the unsecured segment?
+In addition, does joining also mean that secured MLE messages MUST be
+exchanged? Can there be MLE secured messages which are transported over
+unsecured links? As pointed out earlier, I miss the overview.
+
+___________________________________________________________________________=
+_____________________________________
+
+--
+Peter van der Stok
+vanderstok consultancy
+mailto: consultancy@vanderstok.org
+www: www.vanderstok.org
+tel NL: +31(0)492474673     F: +33(0)966015248
+
+
+
+From nobody Tue Sep 22 01:18:10 2015
+Return-Path: <stokcons@xs4all.nl>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (ietfa.amsl.com [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 198FB1A0262 for <6lo@ietfa.amsl.com>; Tue, 22 Sep 2015 01:17:44 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -0.352
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.352 tagged_above=-999 required=5 tests=[BAYES_40=-0.001, HELO_EQ_FR=0.35, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001] autolearn=ham
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id ojWMt4qa-fJ3 for <6lo@ietfa.amsl.com>; Tue, 22 Sep 2015 01:17:41 -0700 (PDT)
+Received: from lb3-smtp-cloud6.xs4all.net (lb3-smtp-cloud6.xs4all.net [194.109.24.31]) (using TLSv1 with cipher DHE-RSA-AES128-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 9B3D61A01F0 for <6lo@ietf.org>; Tue, 22 Sep 2015 01:17:40 -0700 (PDT)
+Received: from webmail.xs4all.nl ([194.109.20.199]) by smtp-cloud6.xs4all.net with ESMTP id L8Hd1r00W4Hiz6i018HdEV; Tue, 22 Sep 2015 10:17:38 +0200
+Received: from AMontpellier-654-1-72-200.w90-0.abo.wanadoo.fr ([90.0.47.200]) by webmail.xs4all.nl with HTTP (HTTP/1.1 POST); Tue, 22 Sep 2015 10:17:37 +0200
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+Date: Tue, 22 Sep 2015 10:17:37 +0200
+From: peter van der Stok <stokcons@xs4all.nl>
+To: Richard Kelsey <Richard.Kelsey@silabs.com>
+Organization: vanderstok consultancy
+Mail-Reply-To: consultancy@vanderstok.org
+In-Reply-To: <SN1PR0701MB1821231BD49F05DF843C5C02F7460@SN1PR0701MB1821.namprd07.prod.outlook.com>
+References: <1fae6bc94395057d115a8a101353fd3e@xs4all.nl> <SN1PR0701MB1821231BD49F05DF843C5C02F7460@SN1PR0701MB1821.namprd07.prod.outlook.com>
+Message-ID: <bc628aaa90581ba44984f81d5c486d4f@xs4all.nl>
+X-Sender: stokcons@xs4all.nl (mJAX4VgkZPtboENWJiPEgcZvv46ebpU5)
+User-Agent: XS4ALL Webmail
+Archived-At: <http://mailarchive.ietf.org/arch/msg/6lo/f9i-qild5UiUHs0ddmcDBfU72pg>
+Cc: robert cragie <robert.cragie@gridmerge.com>, consultancy@vanderstok.org, 6lo@ietf.org
+Subject: Re: [6lo] Review of draft-kelsey-6lo-mesh-link-establishment
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.15
+Precedence: list
+Reply-To: consultancy@vanderstok.org
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 22 Sep 2015 08:17:44 -0000
+
+Hi Richard,
+
+thanks for the answers.
+Some additional clarifications below in the text.
+
+Richard Kelsey schreef op 2015-09-21 17:55:
+> Peter, thank you for the comments.  As a general response, the
+> draft is informational and describes MLE as it is used in ZigBee IP.
+> Some of the choices made depended on the particular needs of
+> ZigBee IP and on the RFCs and drafts that were available at the
+> time (2009-2012).
+<pvds>
+Ok, I understand that. I thought there was a special reason beyond 
+ZigBee/IP that motivated a possibly re-edited version of the draft.
+</pvds>
+> 
+>> The way the draft removes unreliable links looks really great and
+>> must be very useful.
+> 
+> Determining link reliability is not a primary goal of MLE.  That
+> really requires collecting ongoing statistics about transmission
+> attempts and successes, which MLE does not do.
+<pvds>
+That is clear, but MLE can be used to exploit the statistics?
+</pvds>
+> 
+>> Abstract
+>> 
+>> Three capabilities: Put 3) as first. Difference between 2) and 1)
+>> is not very clear.
+> 
+> 1) is concerned with configuring an individual radio link between
+> two neighboring devices in a mesh.  It deals with the specific
+> values for communication between those two devices. This is the
+> primary purpose for MLE, which is why it is listed first.
+> 
+> 2) is for setting mesh-wide shared values, such as the channel
+> or PAN ID.  This could be done in lots of ways.  ZigBee IP
+> happened to use MLE.  Removing this functionality would not
+> affect the rest of the protocol.
+> 
+> 3) is an optimization to make 1) more efficient.  It isn't
+> strictly necessary.
+> 
+> I suspect the confusion between 1) and 2) is partly due to the
+> multiple meanings of the word "link".  Would this be better?
+> 
+>    MLE extends IEEE 802.15.4 for use in multihop mesh networks by
+>    adding three capabilities: 1) dynamically configuring and
+>    securing radio connections between neighboring devices, 2)
+>    enabling network-wide changes to shared radio parameters, and
+>    3) allowing the determination of radio link quality prior to
+>    configuration.
+
+<pvds>
+For me this is much clearer.
+</pvds>
+> 
+>> Section 1 Introduction.
+>> 1st al.
+>> A reference to existing 802.15.4 MIB RFC7388 would help, and also an
+>> explanation why this is not sufficient.
+> 
+> RFC 7388 defines statistics for 6LoWPAN packet reception and
+> transmission.  I don't see how this is relevent to management
+> of 802.15.4 radio links.
+<pvds>
+The remark was made because the scope of MLE was nor clear to me.
+And 7388 acquires statistics about link quality (derivable from lowpan 
+packet statistics)
+> 
+>> 3rd al
+>> 
+>>  MLE can also be used……across a network identified by its channel
+>> and PAN ID.  Forwarding with simple flooding (you mean TRICKLE ?)
+> 
+> The point here is that there is no dependency on the multicast
+> forwarding protocol or on its being efficient.
+> 
+>> If ZigBee IP standard reference is needed, should “thread” not be
+>> mentioned as well?
+> 
+> The draft describes MLE as used in ZigBee IP, not as it is used
+> in Thread.
+> 
+>> Section 4.1:
+>> 
+>> 1st al: Again what is relation with RFC7388. Is an extension to 7388
+>> sufficient?
+> 
+> Again, I don't see any connection to RFC7388's 6LoWPAN message
+> statistics.
+> 
+>> 2nd al. This is very terse, and completely incomprehensible to
+>> anyone not familiar with 802.15.4 security standards
+>> section. And even then I wonder what is meant. More motivation
+>> would be welcome (probably including an example)
+> 
+> How about the following:
+> 
+>    IEEE 802.15.4 security uses frame counters to detect replayed
+>    messages.  Each sender maintains an outgoing frame counter
+>    that is included in outgoing secured messages and is
+>    incremented for each message sent.  Receivers store the
+>    highest frame counter yet seen from each neighbor.  Messages
+>    that arrive with a frame counter less than or equal to the
+>    highest previously-seen frame counter are discarded.
+> 
+>    In a mesh network neighbors come and go as the mesh topology
+>    changes.  When a message arrives from a previously unheard
+>    neighbor, the receiver has no stored frame counter that can be
+>    used to determine if the message has been replayed by an
+>    attacker.  MLE solves this by providing a simple handshake
+>    mechanism that allows the receiver to securely obtain the
+>    sender's current outgoing frame counter.
+
+<pvds>
+Thanks, this helps a lot. I still think a scenario would help the reader 
+focus quickly and better grasp the meaning of the later sections.
+IMO the problem of the MLE message security is rather subtle and not 
+immediately recognized.
+</pvds>
+> 
+>> Section 4.2
+>> 
+>> Relation with draft-ietf-roll-mpl-parameter-configuration-07
+>> needs to be clarified.
+> 
+> ZigBee IP, and thus the version of MLE described in the draft,
+> predates draft-ietf-roll-mpl-parameter-configuration.  I'm not
+> sure what needs to be clarified.
+<pvds>
+Motivated by my earlier assumption that this version is a re-edit.
+</pvds>
+> 
+>> Section 5.
+> 
+>> It will be helpful when the draft explains how neighbours use link
+>> security and how MLE uses 802.15.4 security for the MLE messages. Do I
+>> understand correctly that a link can be secured with 802.15.4 
+>> mechanisms
+>> and MLE uses 802,15.4 mechanism on the MLE message sent over this
+>> secured link? In fact the MLE message is secured twice once at UDP 
+>> level
+>> and once at link level?
+> 
+> MLE messages secured at the UDP level are not secured at the
+> link level.  I see that the draft does not state this explicitly;
+> I'll fix this.
+> 
+>> The figure is encouraged to include the MAC layer as well.
+> 
+> You mean something like this?
+> 
+>  
+> +------------+-----------+------------+-----+------------+---------+-----+
+>  | MAC Header | IP Header | UDP Header |  0  | Aux Header | Command | 
+> MIC |
+>  
+> +------------+-----------+------------+-----+------------+---------+-----+
+> 
+> I'm not sure I see the point.
+<pvds>
+I don't any more, because I was under the wrong impression that there 
+was a relation between frame counter in MLE message and 802.15.4 header
+and that the figure might illustrate this.
+The phrase in 4.1: "..... The MLE message containing a neighbor's frame 
+counter is not....." made me wonder what relation there was.
+The phrase in 5 " CCM requires that each key and nonce pair be used 
+exactly one, which is most easily achieved by using different keys"
+suggested to me that the frame numbers would usually be equal.
+</pvds>
+> 
+>> Section 6.
+>> 
+>> Why still use TLV at this stage. In other wgs the use of CBOR is
+>> considered advantageous.
+> 
+> One reason is that ZigBee IP development predated the appearance
+> of CBOR.
+> 
+> That aside, switching to CBOR would add considerable complexity
+> to both the draft and to implementations.  I don't see what
+> advantages CBOR would bring that would be worth the extra
+> complexity.
+> 
+>> Section 7
+>> Is it wise to start with type = 0,  not better to start with type=1, 
+>> to
+>> reduce error scenarios
+> 
+> I don't see how that helps.
+> 
+>> Section 7.6
+>> 
+>> Because the MLE message containing this TLV is sent within a 802.15.4
+>> frame, the frame counter in the TLV must be identical to the frame
+>> counter in 802.15.4 header? Is that not superfluous?
+> 
+> The 802.15.4 frame is not secured and does not have a frame counter.
+> 
+>> Does this mean that MLE uses key1 + frame counter and link uses key2 +
+>> frame counter with key1 NEQ key2?
+> 
+> They use different keys.  From section 5:
+> 
+>    MLE security MUST NOT use any key that is being used by the link (or
+>    any other) layer.
+> 
+> The two key counters may or may not be the same.  It may be, for
+> example, that MLE may be running on a host processor while 802.15.4
+> is running on an attached coprocessor.  This would make coordinating
+> a single frame counter difficult.  On the other hand, if the two
+> are running on a single processor, nothing is gained by requiring
+> the the two counters be different.
+> 
+>> Section 7.8: is link parameter, or interface parameter not a bitter
+>> title?
+> 
+> I don't think so, although "network" might not be the best term
+> either.  These parameters apply to the entire mesh, not just a
+> single link or interface.
+> 
+>> The consequences of modifying the PAN ID or channel number are not 
+>> clear
+>> to me. Can there be some explanatory text on this aspect?
+> 
+> Yes, I can see that more needs to be said here.
+> 
+>> To what 802.15.4 parameter does Permit Joining correspond?
+> 
+> The permit joining flag in the beacon header.
+> 
+>> Section 7.9: I thought MLE frame counter is equal to link frame 
+>> counter,
+>> so why two separate ones?
+> 
+> Practical considerations.  See the note on section 7.6 above.
+> 
+>> Section 8, 1st al: do you mean realm-local or admin-local ? see also
+>> section 11
+> 
+> Realm-local.  This nees to be fixed in the draft.
+> 
+>> Section 8. This description really needs more text and probably some
+>> examples and should be better related to section 5.  A scenario
+>> describing the process in full would be really helpful.
+> 
+> I agree that the description is too sparse.
+> 
+>> Section 9 2nd al. What are “reserved command type values”?
+> 
+> The currently unassigned values.  This needs to be made
+> consistent with section 14.
+> 
+>> Section 9 3rd al. As in section 8, What does joining the network mean?
+>> If I understand correctly that means that a network with a PAN ID has
+>> been formed, and a secured network segment exists with neighbours
+>> communicating over 802.15.4 secured links and another unsecured 
+>> segment
+>> with neighbours which communicate over unsecured links. Joining means
+>> that a node from unsecured segment leaves the unsecured segment and
+>> joins the secured one. Under what conditions can a node in a secured
+>> segment communicate with a node in the unsecured segment?
+>> In addition, does joining also mean that secured MLE messages MUST be
+>> exchanged? Can there be MLE secured messages which are transported 
+>> over
+>> unsecured links? As pointed out earlier, I miss the overview.
+> 
+> Starting to talk about joining opens a Pandora's box of issues,
+> given how many different ways there are of handling joining.
+> Better would be to leave it out of scope and remove this
+> sentence:
+> 
+>    The one exception to this is messages sent to or from a
+>    device that is joining the network and does not yet have
+>    the necessary keys.
+> 
+> -Richard Kelsey
+> 
+
+

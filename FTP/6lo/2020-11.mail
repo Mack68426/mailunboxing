@@ -1,0 +1,1130 @@
+
+From nobody Sun Nov  1 22:38:55 2020
+Return-Path: <remy.liubing@huawei.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id E9FB03A0E05 for <6lo@ietfa.amsl.com>; Sun,  1 Nov 2020 22:38:52 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.9
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.9 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id yBH-S4p4qNBo for <6lo@ietfa.amsl.com>; Sun,  1 Nov 2020 22:38:51 -0800 (PST)
+Received: from huawei.com (lhrrgout.huawei.com [185.176.76.210]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id E18CB3A0E04 for <6lo@ietf.org>; Sun,  1 Nov 2020 22:38:50 -0800 (PST)
+Received: from lhreml722-chm.china.huawei.com (unknown [172.18.7.106]) by Forcepoint Email with ESMTP id 9BE7125EBC77A3B7923F for <6lo@ietf.org>; Mon,  2 Nov 2020 06:38:48 +0000 (GMT)
+Received: from lhreml722-chm.china.huawei.com (10.201.108.73) by lhreml722-chm.china.huawei.com (10.201.108.73) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.1913.5; Mon, 2 Nov 2020 06:38:48 +0000
+Received: from DGGEMM422-HUB.china.huawei.com (10.1.198.39) by lhreml722-chm.china.huawei.com (10.201.108.73) with Microsoft SMTP Server (version=TLS1_0, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA) id 15.1.1913.5 via Frontend Transport; Mon, 2 Nov 2020 06:38:48 +0000
+Received: from DGGEMM506-MBX.china.huawei.com ([169.254.3.202]) by dggemm422-hub.china.huawei.com ([169.254.138.104]) with mapi id 14.03.0487.000; Mon, 2 Nov 2020 14:38:44 +0800
+From: "Liubing (Remy)" <remy.liubing@huawei.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: Comments on draft-ietf-6lo-use-cases Re: [6lo] 2nd WGLC for draft-ietf-6lo-use-cases
+Thread-Index: Adaw4s4ci2JYukmESnOJLwdydhwigA==
+Date: Mon, 2 Nov 2020 06:38:44 +0000
+Message-ID: <BB09947B5326FE42BA3918FA28765C2E013EC4C9@DGGEMM506-MBX.china.huawei.com>
+Accept-Language: zh-CN, en-US
+Content-Language: zh-CN
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.108.242.194]
+Content-Type: multipart/alternative; boundary="_000_BB09947B5326FE42BA3918FA28765C2E013EC4C9DGGEMM506MBXchi_"
+MIME-Version: 1.0
+X-CFilter-Loop: Reflected
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/u_7e7lZ0IK_7WyDqGf3Hl92ltWU>
+Subject: [6lo] Comments on draft-ietf-6lo-use-cases Re: 2nd WGLC for draft-ietf-6lo-use-cases
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 02 Nov 2020 06:38:53 -0000
+
+--_000_BB09947B5326FE42BA3918FA28765C2E013EC4C9DGGEMM506MBXchi_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+SGVsbG8gYXV0aG9ycywNCg0KVGhhbmsgeW91IGZvciB5b3VyIGdyZWF0IGVmZm9ydHMgb24gdGhl
+IGRyYWZ0Lg0KDQpSZWdhcmRpbmcgdG8gdGhlIHN0cnVjdHVyZSBvZiB0aGUgZHJhZnQsIHRoZSBz
+ZWN0aW9uIDQgYW5kIDYgc2VlbSB0byBiZSBib3RoIHRhbGtpbmcgYWJvdXQgdXNhZ2Ugc2NlbmFy
+aW9zLiBBbiBvcHRpb24gaXMgdG8gbWVyZ2UgdGhlc2UgdHdvIHNlY3Rpb25zLiBBbmQgdGhlIHRl
+Y2hub2xvZ2llcyBtZW50aW9uZWQgaW4gdGhlIHNlY3Rpb24gMyBhcmUgbm90IHBlcmZlY3RseSBh
+bGlnbmVkIHdpdGggdGhlIG9uZXMgbWVudGlvbmVkIGluIHRoZSB1c2FnZSBzY2VuYXJpb3MuIEZv
+ciBleGFtcGxlLCB0aGUgRzMtcGxjIGlzIG5vdCBtZW50aW9uZWQgaW4gdGhlIHNlY3Rpb24gMy4N
+Cg0KQmVzdCByZWdhcmRzLA0KUmVteQ0K5Y+R5Lu25Lq6OiA2bG8gW21haWx0bzo2bG8tYm91bmNl
+c0BpZXRmLm9yZ10g5Luj6KGoIFNod2V0aGENCuWPkemAgeaXtumXtDogMjAyMOW5tDEw5pyINOaX
+pSAxNTowMw0K5pS25Lu25Lq6OiA2bG9AaWV0Zi5vcmcNCuS4u+mimDogWzZsb10gMm5kIFdHTEMg
+Zm9yIGRyYWZ0LWlldGYtNmxvLXVzZS1jYXNlcw0KDQpUaGlzIGluaXRpYXRlcyBhIDJuZCBXR0xD
+IG9uIHRoZSB1c2UtY2FzZXMgYW5kIGFwcGxpY2FiaWxpdHkgZHJhZnQ6DQoNCmh0dHBzOi8vZGF0
+YXRyYWNrZXIuaWV0Zi5vcmcvZG9jL2RyYWZ0LWlldGYtNmxvLXVzZS1jYXNlcy8NCg0KVGhlIGZp
+cnN0IFdHTEMgaW5pdGlhdGVkIGluIE5vdmVtYmVyIDIwMTggZGlkbid0IGNvbmNsdWRlIGR1ZSB0
+byBsYWNrIG9mIHJlc3BvbnNlcy4gSG93ZXZlciB0aGUgd29ya2dyb3VwIGhhcyByZXZpZXdlZCB0
+aGUgbGF0ZXN0IHJldmlzaW9ucyBhbmQgYXV0aG9ycyBoYXZlIGFkZHJlc3NlZCB0aGUgY29tbWVu
+dHMgaW4gLTA5IHBlbmRpbmcgb25lIGNvbW1lbnQgaHR0cHM6Ly9tYWlsYXJjaGl2ZS5pZXRmLm9y
+Zy9hcmNoL21zZy82bG8vSWI0UDNacS1DQ2Y2WWU0dUtMVS1OSUhscF9JLyM8aHR0cHM6Ly9tYWls
+YXJjaGl2ZS5pZXRmLm9yZy9hcmNoL21zZy82bG8vSWI0UDNacS1DQ2Y2WWU0dUtMVS1OSUhscF9J
+Lz4NCg0KQXMgcGVyIHRoZSBkaXNjdXNzaW9uIGF0IHRoZSA2bG8gc2Vzc2lvbiBkdXJpbmcgSUVU
+RiAxMDgsIHRoaXMgc3RhcnRzIGEgV0dMQy4gVGhpcyBXR0xDIHdpbGwgY29uY2x1ZGUgaW4gdHdv
+IHdlZWtzIG9uIE1vbmRheSBPY3RvYmVyIDE5dGguDQoNClBsZWFzZSBzZW5kIHlvdXIgY29tbWVu
+dHMgdG8gZXZhbHVhdGUgcHJvZ3Jlc3NpbmcgdGhpcyBkcmFmdC4NCg0KVGhhbmtzLA0KU2h3ZXRo
+YQ0K
+
+--_000_BB09947B5326FE42BA3918FA28765C2E013EC4C9DGGEMM506MBXchi_
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiIHhtbG5zOm89InVy
+bjpzY2hlbWFzLW1pY3Jvc29mdC1jb206b2ZmaWNlOm9mZmljZSIgeG1sbnM6dz0idXJuOnNjaGVt
+YXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6d29yZCIgeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMubWlj
+cm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+VFIvUkVDLWh0bWw0MCI+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIg
+Y29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjxtZXRhIG5hbWU9IkdlbmVyYXRv
+ciIgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUgKGZpbHRlcmVkIG1lZGl1bSkiPg0KPHN0eWxl
+PjwhLS0NCi8qIEZvbnQgRGVmaW5pdGlvbnMgKi8NCkBmb250LWZhY2UNCgl7Zm9udC1mYW1pbHk6
+5a6L5L2TOw0KCXBhbm9zZS0xOjIgMSA2IDAgMyAxIDEgMSAxIDE7fQ0KQGZvbnQtZmFjZQ0KCXtm
+b250LWZhbWlseTpQTWluZ0xpVTsNCglwYW5vc2UtMToyIDEgNiAxIDAgMSAxIDEgMSAxO30NCkBm
+b250LWZhY2UNCgl7Zm9udC1mYW1pbHk6UE1pbmdMaVU7DQoJcGFub3NlLTE6MiAxIDYgMSAwIDEg
+MSAxIDEgMTt9DQpAZm9udC1mYWNlDQoJe2ZvbnQtZmFtaWx5OkNhbGlicmk7DQoJcGFub3NlLTE6
+MiAxNSA1IDIgMiAyIDQgMyAyIDQ7fQ0KQGZvbnQtZmFjZQ0KCXtmb250LWZhbWlseTrlvq7ova/p
+m4Xpu5E7DQoJcGFub3NlLTE6MiAxMSA1IDMgMiAyIDQgMiAyIDQ7fQ0KQGZvbnQtZmFjZQ0KCXtm
+b250LWZhbWlseToiXEDlvq7ova/pm4Xpu5EiOw0KCXBhbm9zZS0xOjIgMTEgNSAzIDIgMiA0IDIg
+MiA0O30NCkBmb250LWZhY2UNCgl7Zm9udC1mYW1pbHk6IlxA5a6L5L2TIjsNCglwYW5vc2UtMToy
+IDEgNiAwIDMgMSAxIDEgMSAxO30NCkBmb250LWZhY2UNCgl7Zm9udC1mYW1pbHk6IlxAUE1pbmdM
+aVUiOw0KCXBhbm9zZS0xOjAgMCAwIDAgMCAwIDAgMCAwIDA7fQ0KLyogU3R5bGUgRGVmaW5pdGlv
+bnMgKi8NCnAuTXNvTm9ybWFsLCBsaS5Nc29Ob3JtYWwsIGRpdi5Nc29Ob3JtYWwNCgl7bWFyZ2lu
+OjBjbTsNCgltYXJnaW4tYm90dG9tOi4wMDAxcHQ7DQoJZm9udC1zaXplOjEyLjBwdDsNCglmb250
+LWZhbWlseTrlrovkvZM7fQ0KYTpsaW5rLCBzcGFuLk1zb0h5cGVybGluaw0KCXttc28tc3R5bGUt
+cHJpb3JpdHk6OTk7DQoJY29sb3I6Ymx1ZTsNCgl0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lO30N
+CmE6dmlzaXRlZCwgc3Bhbi5Nc29IeXBlcmxpbmtGb2xsb3dlZA0KCXttc28tc3R5bGUtcHJpb3Jp
+dHk6OTk7DQoJY29sb3I6cHVycGxlOw0KCXRleHQtZGVjb3JhdGlvbjp1bmRlcmxpbmU7fQ0Kc3Bh
+bi5FbWFpbFN0eWxlMTcNCgl7bXNvLXN0eWxlLXR5cGU6cGVyc29uYWw7DQoJZm9udC1mYW1pbHk6
+IkNhbGlicmkiLHNhbnMtc2VyaWY7DQoJY29sb3I6IzFGNDk3RDt9DQpzcGFuLkVtYWlsU3R5bGUx
+OA0KCXttc28tc3R5bGUtdHlwZTpwZXJzb25hbC1jb21wb3NlOw0KCWZvbnQtZmFtaWx5OiJDYWxp
+YnJpIixzYW5zLXNlcmlmOw0KCWNvbG9yOndpbmRvd3RleHQ7fQ0KLk1zb0NocERlZmF1bHQNCgl7
+bXNvLXN0eWxlLXR5cGU6ZXhwb3J0LW9ubHk7DQoJZm9udC1mYW1pbHk6IkNhbGlicmkiLHNhbnMt
+c2VyaWY7fQ0KQHBhZ2UgV29yZFNlY3Rpb24xDQoJe3NpemU6NjEyLjBwdCA3OTIuMHB0Ow0KCW1h
+cmdpbjo3Mi4wcHQgOTAuMHB0IDcyLjBwdCA5MC4wcHQ7fQ0KZGl2LldvcmRTZWN0aW9uMQ0KCXtw
+YWdlOldvcmRTZWN0aW9uMTt9DQotLT48L3N0eWxlPjwhLS1baWYgZ3RlIG1zbyA5XT48eG1sPg0K
+PG86c2hhcGVkZWZhdWx0cyB2OmV4dD0iZWRpdCIgc3BpZG1heD0iMTAyNiIgLz4NCjwveG1sPjwh
+W2VuZGlmXS0tPjwhLS1baWYgZ3RlIG1zbyA5XT48eG1sPg0KPG86c2hhcGVsYXlvdXQgdjpleHQ9
+ImVkaXQiPg0KPG86aWRtYXAgdjpleHQ9ImVkaXQiIGRhdGE9IjEiIC8+DQo8L286c2hhcGVsYXlv
+dXQ+PC94bWw+PCFbZW5kaWZdLS0+DQo8L2hlYWQ+DQo8Ym9keSBsYW5nPSJaSC1DTiIgbGluaz0i
+Ymx1ZSIgdmxpbms9InB1cnBsZSI+DQo8ZGl2IGNsYXNzPSJXb3JkU2VjdGlvbjEiPg0KPHAgY2xh
+c3M9Ik1zb05vcm1hbCI+PHNwYW4gbGFuZz0iRU4tVVMiIHN0eWxlPSJmb250LXNpemU6MTAuNXB0
+O2ZvbnQtZmFtaWx5OiZxdW90O0NhbGlicmkmcXVvdDssc2Fucy1zZXJpZjtjb2xvcjojMUY0OTdE
+Ij5IZWxsbyBhdXRob3JzLDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3Jt
+YWwiPjxzcGFuIGxhbmc9IkVOLVVTIiBzdHlsZT0iZm9udC1zaXplOjEwLjVwdDtmb250LWZhbWls
+eTomcXVvdDtDYWxpYnJpJnF1b3Q7LHNhbnMtc2VyaWY7Y29sb3I6IzFGNDk3RCI+PG86cD4mbmJz
+cDs8L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gbGFuZz0iRU4t
+VVMiIHN0eWxlPSJmb250LXNpemU6MTAuNXB0O2ZvbnQtZmFtaWx5OiZxdW90O0NhbGlicmkmcXVv
+dDssc2Fucy1zZXJpZjtjb2xvcjojMUY0OTdEIj5UaGFuayB5b3UgZm9yIHlvdXIgZ3JlYXQgZWZm
+b3J0cyBvbiB0aGUgZHJhZnQuPG86cD48L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05v
+cm1hbCI+PHNwYW4gbGFuZz0iRU4tVVMiIHN0eWxlPSJmb250LXNpemU6MTAuNXB0O2ZvbnQtZmFt
+aWx5OiZxdW90O0NhbGlicmkmcXVvdDssc2Fucy1zZXJpZjtjb2xvcjojMUY0OTdEIj48bzpwPiZu
+YnNwOzwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBsYW5nPSJF
+Ti1VUyIgc3R5bGU9ImZvbnQtc2l6ZToxMC41cHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q2FsaWJyaSZx
+dW90OyxzYW5zLXNlcmlmO2NvbG9yOiMxRjQ5N0QiPlJlZ2FyZGluZyB0byB0aGUgc3RydWN0dXJl
+IG9mIHRoZSBkcmFmdCwgdGhlIHNlY3Rpb24gNCBhbmQgNiBzZWVtIHRvIGJlIGJvdGggdGFsa2lu
+ZyBhYm91dCB1c2FnZSBzY2VuYXJpb3MuIEFuIG9wdGlvbiBpcyB0byBtZXJnZSB0aGVzZSB0d28g
+c2VjdGlvbnMuDQogQW5kIHRoZSB0ZWNobm9sb2dpZXMgbWVudGlvbmVkIGluIHRoZSBzZWN0aW9u
+IDMgYXJlIG5vdCBwZXJmZWN0bHkgYWxpZ25lZCB3aXRoIHRoZSBvbmVzIG1lbnRpb25lZCBpbiB0
+aGUgdXNhZ2Ugc2NlbmFyaW9zLiBGb3IgZXhhbXBsZSwgdGhlIEczLXBsYyBpcyBub3QgbWVudGlv
+bmVkIGluIHRoZSBzZWN0aW9uIDMuPG86cD48L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1z
+b05vcm1hbCI+PHNwYW4gbGFuZz0iRU4tVVMiIHN0eWxlPSJmb250LXNpemU6MTAuNXB0O2ZvbnQt
+ZmFtaWx5OiZxdW90O0NhbGlicmkmcXVvdDssc2Fucy1zZXJpZjtjb2xvcjojMUY0OTdEIj48bzpw
+PiZuYnNwOzwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBsYW5n
+PSJFTi1VUyIgc3R5bGU9ImZvbnQtc2l6ZToxMC41cHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q2FsaWJy
+aSZxdW90OyxzYW5zLXNlcmlmO2NvbG9yOiMxRjQ5N0QiPkJlc3QgcmVnYXJkcyw8bzpwPjwvbzpw
+Pjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBsYW5nPSJFTi1VUyIgc3R5
+bGU9ImZvbnQtc2l6ZToxMC41cHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q2FsaWJyaSZxdW90OyxzYW5z
+LXNlcmlmO2NvbG9yOiMxRjQ5N0QiPlJlbXk8L3NwYW4+PHNwYW4gbGFuZz0iRU4tVVMiIHN0eWxl
+PSJmb250LXNpemU6MTAuNXB0O2ZvbnQtZmFtaWx5OiZxdW90O0NhbGlicmkmcXVvdDssc2Fucy1z
+ZXJpZjtjb2xvcjojMUY0OTdEIj48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNv
+Tm9ybWFsIj48Yj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExLjBwdDtmb250LWZhbWlseTomcXVv
+dDvlvq7ova/pm4Xpu5EmcXVvdDssc2Fucy1zZXJpZiI+5Y+R5Lu25Lq6PHNwYW4gbGFuZz0iRU4t
+VVMiPjo8L3NwYW4+PC9zcGFuPjwvYj48c3BhbiBsYW5nPSJFTi1VUyIgc3R5bGU9ImZvbnQtc2l6
+ZToxMS4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q75b6u6L2v6ZuF6buRJnF1b3Q7LHNhbnMtc2VyaWYi
+PiA2bG8gW21haWx0bzo2bG8tYm91bmNlc0BpZXRmLm9yZ10NCjwvc3Bhbj48Yj48c3BhbiBzdHls
+ZT0iZm9udC1zaXplOjExLjBwdDtmb250LWZhbWlseTomcXVvdDvlvq7ova/pm4Xpu5EmcXVvdDss
+c2Fucy1zZXJpZiI+5Luj6KGoIDwvc3Bhbj4NCjwvYj48c3BhbiBsYW5nPSJFTi1VUyIgc3R5bGU9
+ImZvbnQtc2l6ZToxMS4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q75b6u6L2v6ZuF6buRJnF1b3Q7LHNh
+bnMtc2VyaWYiPlNod2V0aGE8YnI+DQo8L3NwYW4+PGI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTox
+MS4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q75b6u6L2v6ZuF6buRJnF1b3Q7LHNhbnMtc2VyaWYiPuWP
+kemAgeaXtumXtDxzcGFuIGxhbmc9IkVOLVVTIj46PC9zcGFuPjwvc3Bhbj48L2I+PHNwYW4gbGFu
+Zz0iRU4tVVMiIHN0eWxlPSJmb250LXNpemU6MTEuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O+W+rui9
+r+mbhem7kSZxdW90OyxzYW5zLXNlcmlmIj4gMjAyMDwvc3Bhbj48c3BhbiBzdHlsZT0iZm9udC1z
+aXplOjExLjBwdDtmb250LWZhbWlseTomcXVvdDvlvq7ova/pm4Xpu5EmcXVvdDssc2Fucy1zZXJp
+ZiI+5bm0PHNwYW4gbGFuZz0iRU4tVVMiPjEwPC9zcGFuPuaciDxzcGFuIGxhbmc9IkVOLVVTIj40
+PC9zcGFuPuaXpTxzcGFuIGxhbmc9IkVOLVVTIj4NCiAxNTowMzxicj4NCjwvc3Bhbj48Yj7mlLbk
+u7bkuro8c3BhbiBsYW5nPSJFTi1VUyI+Ojwvc3Bhbj48L2I+PHNwYW4gbGFuZz0iRU4tVVMiPiA2
+bG9AaWV0Zi5vcmc8YnI+DQo8L3NwYW4+PGI+5Li76aKYPHNwYW4gbGFuZz0iRU4tVVMiPjo8L3Nw
+YW4+PC9iPjxzcGFuIGxhbmc9IkVOLVVTIj4gWzZsb10gMm5kIFdHTEMgZm9yIGRyYWZ0LWlldGYt
+NmxvLXVzZS1jYXNlczxvOnA+PC9vOnA+PC9zcGFuPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNv
+Tm9ybWFsIj48c3BhbiBsYW5nPSJFTi1VUyI+PG86cD4mbmJzcDs8L286cD48L3NwYW4+PC9wPg0K
+PGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIGxhbmc9IkVOLVVTIj5UaGlzIGluaXRp
+YXRlcyBhIDJuZCBXR0xDIG9uIHRoZSB1c2UtY2FzZXMgYW5kIGFwcGxpY2FiaWxpdHkgZHJhZnQ6
+PG86cD48L286cD48L3NwYW4+PC9wPg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFu
+IGxhbmc9IkVOLVVTIj48bzpwPiZuYnNwOzwvbzpwPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCjxkaXY+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBsYW5nPSJFTi1VUyI+PGEgaHJlZj0iaHR0cHM6
+Ly9kYXRhdHJhY2tlci5pZXRmLm9yZy9kb2MvZHJhZnQtaWV0Zi02bG8tdXNlLWNhc2VzLyIgdGFy
+Z2V0PSJfYmxhbmsiPmh0dHBzOi8vZGF0YXRyYWNrZXIuaWV0Zi5vcmcvZG9jL2RyYWZ0LWlldGYt
+NmxvLXVzZS1jYXNlcy88L2E+PG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0K
+PHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gbGFuZz0iRU4tVVMiPjxvOnA+Jm5ic3A7PC9vOnA+
+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIGxh
+bmc9IkVOLVVTIj5UaGUgZmlyc3QgV0dMQyBpbml0aWF0ZWQgaW4gTm92ZW1iZXIgMjAxOCBkaWRu
+J3QgY29uY2x1ZGUgZHVlIHRvIGxhY2sgb2YgcmVzcG9uc2VzLiBIb3dldmVyIHRoZSB3b3JrZ3Jv
+dXAgaGFzIHJldmlld2VkIHRoZSBsYXRlc3QgcmV2aXNpb25zIGFuZCBhdXRob3JzIGhhdmUgYWRk
+cmVzc2VkIHRoZSBjb21tZW50cyBpbiAtMDkgcGVuZGluZyBvbmUgY29tbWVudCZuYnNwOzxhIGhy
+ZWY9Imh0dHBzOi8vbWFpbGFyY2hpdmUuaWV0Zi5vcmcvYXJjaC9tc2cvNmxvL0liNFAzWnEtQ0Nm
+NlllNHVLTFUtTklIbHBfSS8iIHRhcmdldD0iX2JsYW5rIj5odHRwczovL21haWxhcmNoaXZlLmll
+dGYub3JnL2FyY2gvbXNnLzZsby9JYjRQM1pxLUNDZjZZZTR1S0xVLU5JSGxwX0kvIzwvYT48bzpw
+PjwvbzpwPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48
+c3BhbiBsYW5nPSJFTi1VUyI+PG86cD4mbmJzcDs8L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQo8
+ZGl2Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gbGFuZz0iRU4tVVMiPkFzIHBlciB0aGUg
+ZGlzY3Vzc2lvbiZuYnNwO2F0IHRoZSA2bG8gc2Vzc2lvbiBkdXJpbmcgSUVURiAxMDgsIHRoaXMg
+c3RhcnRzIGEgV0dMQy4gVGhpcyBXR0xDIHdpbGwgY29uY2x1ZGUgaW4gdHdvIHdlZWtzIG9uIE1v
+bmRheSBPY3RvYmVyIDE5dGguPG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0K
+PHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gbGFuZz0iRU4tVVMiPjxvOnA+Jm5ic3A7PC9vOnA+
+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIGxh
+bmc9IkVOLVVTIj5QbGVhc2Ugc2VuZCB5b3VyIGNvbW1lbnRzIHRvIGV2YWx1YXRlIHByb2dyZXNz
+aW5nIHRoaXMgZHJhZnQuPG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAg
+Y2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gbGFuZz0iRU4tVVMiPjxvOnA+Jm5ic3A7PC9vOnA+PC9z
+cGFuPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIGxhbmc9
+IkVOLVVTIj5UaGFua3MsPG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAg
+Y2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gbGFuZz0iRU4tVVMiPlNod2V0aGE8bzpwPjwvbzpwPjwv
+c3Bhbj48L3A+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9kaXY+DQo8L2JvZHk+DQo8L2h0bWw+DQo=
+
+--_000_BB09947B5326FE42BA3918FA28765C2E013EC4C9DGGEMM506MBXchi_--
+
+
+From nobody Tue Nov  3 09:43:54 2020
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 544153A0E58 for <6lo@ietfa.amsl.com>; Tue,  3 Nov 2020 09:43:53 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.895
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.895 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id YwR29qatuWAR for <6lo@ietfa.amsl.com>; Tue,  3 Nov 2020 09:43:51 -0800 (PST)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 3FA4F3A0E53 for <6lo@ietf.org>; Tue,  3 Nov 2020 09:43:50 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 0A3HhmgT054414 for <6lo@ietf.org>; Tue, 3 Nov 2020 18:43:48 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id 87B2D1D53C1 for <6lo@ietf.org>; Tue,  3 Nov 2020 18:43:47 +0100 (CET)
+Received: from 147.83.113.31 by webmail.entel.upc.edu with HTTP; Tue, 3 Nov 2020 18:43:48 +0100
+Message-ID: <bd89aa731255c8fb466774c6c8a58394.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <05168fff8967391c7ee663cb22dfcff3.squirrel@webmail.entel.upc.edu>
+References: <05168fff8967391c7ee663cb22dfcff3.squirrel@webmail.entel.upc.edu>
+Date: Tue, 3 Nov 2020 18:43:48 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Tue, 03 Nov 2020 18:43:48 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/yDsjtLDf14RMarIRvBIztu-4tv0>
+Subject: Re: [6lo] Poll: WG opinion on draft-ayers-low-power-interop
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 03 Nov 2020 17:43:53 -0000
+
+Dear WG,
+
+Just a gentle reminder on the poll mentioned below.
+
+Thanks,
+
+Carles
+
+
+> Dear 6Lo WG,
+>
+> Authors of draft-ayers-low-power-interop have approached the independent
+> submission editor for possible publication of the document.
+>
+> Before proceeding further, we would need to know which is the opinion of
+> the WG regarding this document. The document was presented at IETF 102 and
+> IETF 108. While some feedback was given by 6Lo participants in both
+> meetings, we believe that there is not enough information to determine
+> what is the opinion of the WG regarding the document.
+>
+> In particular, we would like to know if the WG would like to work in this
+> document. Additional feedback on specific topics, such as whether protocol
+> actions and new functionality suggested in the document should be
+> developed or not, will be very useful as well.
+>
+> This message starts a two-week call for opinions and feedback on this
+> document, which will end by Friday, 6th of November, EOB.
+>
+> Thank you in advance.
+>
+> Cheers,
+>
+> Shwetha and Carles
+>
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+
+
+
+From nobody Wed Nov 11 23:16:48 2020
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 525A83A157C for <6lo@ietfa.amsl.com>; Wed, 11 Nov 2020 23:16:42 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: 0.033
+X-Spam-Level: 
+X-Spam-Status: No, score=0.033 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H4=0.001, RCVD_IN_MSPIKE_WL=0.001, RCVD_IN_SORBS_HTTP=0.001, RCVD_IN_SORBS_SOCKS=1.927, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=no autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id wxWMfjxDgpz3 for <6lo@ietfa.amsl.com>; Wed, 11 Nov 2020 23:16:40 -0800 (PST)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 87F543A153C for <6lo@ietf.org>; Wed, 11 Nov 2020 23:16:33 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 0AC7GWLa012911 for <6lo@ietf.org>; Thu, 12 Nov 2020 08:16:32 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id 19D851D53C1 for <6lo@ietf.org>; Thu, 12 Nov 2020 08:16:31 +0100 (CET)
+Received: from 83.38.106.121 by webmail.entel.upc.edu with HTTP; Thu, 12 Nov 2020 08:16:32 +0100
+Message-ID: <a5274d3594a7fa23529144d76f04e1f3.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <CA+SnWFHitoWfkWf=eEyV4c+rhwPdJMv7wA9kkzZ+Gk4_zqTHgg@mail.gmail.com>
+References: <CA+SnWFHitoWfkWf=eEyV4c+rhwPdJMv7wA9kkzZ+Gk4_zqTHgg@mail.gmail.com>
+Date: Thu, 12 Nov 2020 08:16:32 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at violet
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Thu, 12 Nov 2020 08:16:32 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/g173dGYccaF4EwhR3ZOCX14oJAY>
+Subject: [6lo] 6lo session cancellation (was Call for agenda items - IETF 109)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 12 Nov 2020 07:16:47 -0000
+
+Dear 6Lo WG,
+
+We hereby announce the cancellation of the 6Lo WG session that had
+initially been scheduled for IETF 109.
+
+The reason for the cancellation is that we (the chairs) received a low
+number of presentation requests.
+
+Based on the feedback that we received, we actually plan to hold an IETF
+110 6Lo WG meeting. Meanwhile, we encourage you to continue working on and
+contributing to the progress of existing or new drafts. Regarding the
+latter, we welcome ideas that are of interest to this group to work on.
+Please reach out to us if you have ideas that are in scope for 6Lo.
+
+We would like to thank all authors, reviewers, and everyone who helped
+progressing 6Lo documents for their hard work.
+
+Finally, please find a quick summary of the WG status at the end of this
+message.
+
+Cheers, and stay safe,
+
+Shwetha and Carles
+
+
+---------------------------
+
+WG status
+*********
+
+There are five 6Lo WG documents in the RFC Editor Queue:
+
+- draft-ietf-6lo-ap-nd-23 (AUTH48-DONE, RFC-to-be 8928)
+- draft-ietf-6lo-backbone-router-20 (AUTH48-DONE, RFC-to-be 8929)
+- draft-ietf-6lo-minimal-fragment-15 (AUTH48-DONE, RFC-to-be 8930)
+- draft-ietf-6lo-fragment-recovery-21 (AUTH48-DONE, RFC-to-be 8931)
+- draft-ietf-6lo-deadline-time-05
+
+There is also another WG document in IESG processing:
+
+- draft-ietf-6lo-nfc-17
+
+The three other WG documents are at different stages:
+
+- draft-ietf-6lo-blemesh-07: to be updated after IoT and RTG directorates'
+                             reviews
+
+- draft-ietf-6lo-use-cases-09: to be updated after 2nd WGLC.
+
+- draft-ietf-6lo-plc-05: awaiting shepherd writeup.
+
+And there is one active individual document:
+
+- draft-gomez-6lo-schc-dispatch-01
+
+---------------------------
+
+> Dear 6Lo WG,
+>
+> We have IETF 109 online 6lo session scheduled for Wednesday, 18 November
+> 2020, Session II 1430-1530 UTC +07.
+>
+> Please send your request to present updates on existing drafts or new
+> proposals by Tuesday, 3rd November 2020.
+>
+> Please include:
+>
+> -------------------------------------
+>
+> - Draft name and a short description
+>
+> - Presenter name
+>
+> - Purpose of the presentation
+>
+> - Time needed for the presentation
+>
+> -------------------------------------
+>
+>
+> Thanks,
+> Carles and Shwetha
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+
+
+
+From nobody Sat Nov 14 00:37:32 2020
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0B8683A1366 for <6lo@ietfa.amsl.com>; Sat, 14 Nov 2020 00:37:31 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: 0.033
+X-Spam-Level: 
+X-Spam-Status: No, score=0.033 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H4=0.001, RCVD_IN_MSPIKE_WL=0.001, RCVD_IN_SORBS_HTTP=0.001, RCVD_IN_SORBS_SOCKS=1.927, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=no autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 3GuGHd7iPwJu for <6lo@ietfa.amsl.com>; Sat, 14 Nov 2020 00:37:28 -0800 (PST)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 3337E3A1365 for <6lo@ietf.org>; Sat, 14 Nov 2020 00:37:27 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 0AE8bPeU003586 for <6lo@ietf.org>; Sat, 14 Nov 2020 09:37:25 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id 13B4F1D53C1 for <6lo@ietf.org>; Sat, 14 Nov 2020 09:37:25 +0100 (CET)
+Received: from 83.38.106.121 by webmail.entel.upc.edu with HTTP; Sat, 14 Nov 2020 09:37:25 +0100
+Message-ID: <0dd93c3f85098009dc4f27cb992295e0.squirrel@webmail.entel.upc.edu>
+Date: Sat, 14 Nov 2020 09:37:25 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at violet
+X-Virus-Status: Clean
+X-Greylist: Delayed for 49:20:53 by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Sat, 14 Nov 2020 09:37:25 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/GeURovEN5y0gHqIIrcBbvD4iWwM>
+Subject: [6lo] NomCom feedback needed
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 14 Nov 2020 08:37:31 -0000
+
+NomCom is considering nominees for AD positions, IETF Chair, IAB, LLC
+Board, and IETF Trust. We need more input from the community both on
+specific nominees and on over-arching topics regarding what the community
+wants from these specific groups and wants from its leadership in general.
+We need *your* input.
+
+** Deadline for community feedback is Friday November 20. **
+
+We've paid attention to discussions on the ietf list. Issues raised there
+have been brought up in interviews.
+
+We've also asked questions of nominees based on feedback received, and
+based on the "Topics" that people said were important.
+We're listening to you.
+
+But most of the input to date has come from a few consistently vocal
+people. We need to hear from more of you.
+
+I scheduled our office hours during the 2 weeks before next week's IETF,
+because IETF week is so busy. We have one more left (18:00-19:00 UTC
+November 11). No-one but NomCom members showed up for our first 3. &#9785;
+If there is demand for more office hours, I'll schedule them; but this
+really doesn't seem to be the preferred format for input.
+
+Most input is coming in as either
+- email to nomcom20@ietf.org
+- feedback on https://datatracker.ietf.org/nomcom/2020/feedback/
+On the feedback page, the specific nominees are all listed at the top.
+General Topics are at the bottom.
+We pay attention to all the comments we get through these channels.
+
+I'll also try to hang out in Gather.Town during IETF breaks next week.
+I'm not going to have a specific NomCom area in Gather.Town, because it
+was really lonely hanging out there during IETF 108.
+But please feel free to hunt me down and bend my ear -- on NomCom issues
+or just to chat.
+I miss seeing all of y'all!
+Barbara
+
+Barbara Stark
+NomCom 2020 Chair
+
+
+From nobody Wed Nov 18 14:24:30 2020
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 113D03A0DEE; Wed, 18 Nov 2020 14:24:24 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+From: Catherine Meadows via Datatracker <noreply@ietf.org>
+To: <secdir@ietf.org>
+Cc: 6lo@ietf.org, draft-ietf-6lo-blemesh.all@ietf.org, last-call@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.23.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <160573826402.16462.7124606612381130154@ietfa.amsl.com>
+Reply-To: Catherine Meadows <catherine.meadows@nrl.navy.mil>
+Date: Wed, 18 Nov 2020 14:24:24 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/kcoDOvNF5sY4I_7KNz4QFkTxSC8>
+Subject: [6lo] Secdir last call review of draft-ietf-6lo-blemesh-08
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 18 Nov 2020 22:24:24 -0000
+
+Reviewer: Catherine Meadows
+Review result: Ready
+
+I have reviewed this document as part of the security directorate's ongoing
+effort to review all IETF documents being processed by the IESG.  These
+comments were written primarily for the benefit of the security area directors.
+ Document editors and WG chairs should treat these comments just like any other
+last call comments. This document specifies mechanisms that are needed to
+enable IPv6 mesh topologies over Bluetooth Low Energy Links established using
+the Bluetooth Internet Protocol Support Profile.  It does not specify the
+routing protocol to be used in an IPv6, and it does not specify security
+mechanisms.
+
+In the Security Considerations Section the document directs the reader to the
+relevant documents. For most security issues, it points the reader to RFC 7668,
+“IPv6 over BLUETOOTH(R) Low Energy.”  For security issues produced by the
+routing protocol, the reader is directed to RFC 7416, “ A Security Threat
+Analysis for the Routing Protocol for Low-Power and Lossy Networks (RPLs)”, and
+it is noted that the issues addressed in that RFC are useful for other low
+energy routing protocols as well.  Finally it is noted that the Registration
+Ownership Verifier (ROVR) field can be derived from the Bluetooth address, and
+that this field is also subject to impersonation and spoofing.  For this the
+document refers the reader the Internet Draft on "Address Protected Neighbor
+Discovery for Low-power and Lossy Networks.”
+
+I think that this document does an excellent job of identifying the relevant
+security issues to related to its topic, and of directing the reader to the
+relevant documents.
+
+I consider this document Ready.
+
+
+
+From nobody Mon Nov 23 12:05:21 2020
+Return-Path: <wwwrun@rfc-editor.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id D5BB93A0B1A; Mon, 23 Nov 2020 12:05:17 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: 0
+X-Spam-Level: 
+X-Spam-Status: No, score=0 tagged_above=-999 required=5 tests=[SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Zt_pxL9fhMVP; Mon, 23 Nov 2020 12:05:15 -0800 (PST)
+Received: from rfc-editor.org (rfc-editor.org [4.31.198.49]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 181E23A09F9; Mon, 23 Nov 2020 12:05:09 -0800 (PST)
+Received: by rfc-editor.org (Postfix, from userid 30) id AC688F40768; Mon, 23 Nov 2020 12:05:07 -0800 (PST)
+To: ietf-announce@ietf.org, rfc-dist@rfc-editor.org
+X-PHP-Originating-Script: 1005:ams_util_lib.php
+From: rfc-editor@rfc-editor.org
+Cc: rfc-editor@rfc-editor.org, drafts-update-ref@iana.org, 6lo@ietf.org
+Content-type: text/plain; charset=UTF-8
+Message-Id: <20201123200507.AC688F40768@rfc-editor.org>
+Date: Mon, 23 Nov 2020 12:05:07 -0800 (PST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/yP-wUwC1H8hPIOYejlV345ghY6U>
+Subject: [6lo] =?utf-8?q?RFC_8928_on_Address-Protected_Neighbor_Discovery?= =?utf-8?q?_for_Low-Power_and_Lossy_Networks?=
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 23 Nov 2020 20:05:20 -0000
+
+A new Request for Comments is now available in online RFC libraries.
+
+        
+        RFC 8928
+
+        Title:      Address-Protected Neighbor Discovery for  
+                    Low-Power and Lossy Networks 
+        Author:     P. Thubert, Ed.,
+                    B. Sarikaya, 
+                    M. Sethi,
+                    R. Struik
+        Status:     Standards Track
+        Stream:     IETF
+        Date:       November 2020
+        Mailbox:    pthubert@cisco.com, 
+                    sarikaya@ieee.org, 
+                    mohit@piuha.net,  
+                    rstruik.ext@gmail.com
+        Pages:      29
+        Updates:    RFC 8505
+
+        I-D Tag:    draft-ietf-6lo-ap-nd-23.txt
+
+        URL:        https://www.rfc-editor.org/info/rfc8928
+
+        DOI:        10.17487/RFC8928
+
+This document updates the IPv6 over Low-Power Wireless Personal Area
+Network (6LoWPAN) Neighbor Discovery (ND) protocol defined in RFCs
+6775 and 8505.  The new extension is called Address-Protected
+Neighbor Discovery (AP-ND), and it protects the owner of an address
+against address theft and impersonation attacks in a Low-Power and
+Lossy Network (LLN).  Nodes supporting this extension compute a
+cryptographic identifier (Crypto-ID), and use it with one or more of
+their Registered Addresses. The Crypto-ID identifies the owner of the
+Registered Address and can be used to provide proof of ownership of
+the Registered Addresses. Once an address is registered with the
+Crypto-ID and a proof of ownership is provided, only the owner of
+that address can modify the registration information, thereby
+enforcing Source Address Validation.
+
+This document is a product of the IPv6 over Networks of Resource-constrained Nodes Working Group of the IETF.
+
+This is now a Proposed Standard.
+
+STANDARDS TRACK: This document specifies an Internet Standards Track
+protocol for the Internet community, and requests discussion and suggestions
+for improvements.  Please refer to the current edition of the Official
+Internet Protocol Standards (https://www.rfc-editor.org/standards) for the 
+standardization state and status of this protocol.  Distribution of this 
+memo is unlimited.
+
+This announcement is sent to the IETF-Announce and rfc-dist lists.
+To subscribe or unsubscribe, see
+  https://www.ietf.org/mailman/listinfo/ietf-announce
+  https://mailman.rfc-editor.org/mailman/listinfo/rfc-dist
+
+For searching the RFC series, see https://www.rfc-editor.org/search
+For downloading RFCs, see https://www.rfc-editor.org/retrieve/bulk
+
+Requests for special distribution should be addressed to either the
+author of the RFC in question, or to rfc-editor@rfc-editor.org.  Unless
+specifically noted otherwise on the RFC itself, all RFCs are for
+unlimited distribution.
+
+
+The RFC Editor Team
+Association Management Solutions, LLC
+
+
+From nobody Mon Nov 23 12:05:28 2020
+Return-Path: <wwwrun@rfc-editor.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 00EF53A0BF5; Mon, 23 Nov 2020 12:05:23 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: 0
+X-Spam-Level: 
+X-Spam-Status: No, score=0 tagged_above=-999 required=5 tests=[SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id Abj1QS10Ys61; Mon, 23 Nov 2020 12:05:21 -0800 (PST)
+Received: from rfc-editor.org (rfc-editor.org [4.31.198.49]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 7804F3A0BF4; Mon, 23 Nov 2020 12:05:13 -0800 (PST)
+Received: by rfc-editor.org (Postfix, from userid 30) id 054BAF40782; Mon, 23 Nov 2020 12:05:12 -0800 (PST)
+To: ietf-announce@ietf.org, rfc-dist@rfc-editor.org
+X-PHP-Originating-Script: 1005:ams_util_lib.php
+From: rfc-editor@rfc-editor.org
+Cc: rfc-editor@rfc-editor.org, drafts-update-ref@iana.org, 6lo@ietf.org
+Content-type: text/plain; charset=UTF-8
+Message-Id: <20201123200512.054BAF40782@rfc-editor.org>
+Date: Mon, 23 Nov 2020 12:05:12 -0800 (PST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/ALXakv7jwfl37qbHbXfSRQVxV1I>
+Subject: [6lo] =?utf-8?q?RFC_8929_on_IPv6_Backbone_Router?=
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 23 Nov 2020 20:05:27 -0000
+
+A new Request for Comments is now available in online RFC libraries.
+
+        
+        RFC 8929
+
+        Title:      IPv6 Backbone Router 
+        Author:     P. Thubert, Ed.,
+                    C.E. Perkins, 
+                    E. Levy-Abegnoli
+        Status:     Standards Track
+        Stream:     IETF
+        Date:       November 2020
+        Mailbox:    pthubert@cisco.com, 
+                    charliep@computer.org, 
+                    elevyabe@cisco.com
+        Pages:      32
+        Updates:    RFC 6775, RFC 8505
+
+        I-D Tag:    draft-ietf-6lo-backbone-router-20.txt
+
+        URL:        https://www.rfc-editor.org/info/rfc8929
+
+        DOI:        10.17487/RFC8929
+
+This document updates RFCs 6775 and 8505 in order to enable proxy
+services for IPv6 Neighbor Discovery by Routing Registrars called
+"Backbone Routers". Backbone Routers are placed along the wireless
+edge of a backbone and federate multiple wireless links to form a
+single Multi-Link Subnet (MLSN).
+
+This document is a product of the IPv6 over Networks of Resource-constrained Nodes Working Group of the IETF.
+
+This is now a Proposed Standard.
+
+STANDARDS TRACK: This document specifies an Internet Standards Track
+protocol for the Internet community, and requests discussion and suggestions
+for improvements.  Please refer to the current edition of the Official
+Internet Protocol Standards (https://www.rfc-editor.org/standards) for the 
+standardization state and status of this protocol.  Distribution of this 
+memo is unlimited.
+
+This announcement is sent to the IETF-Announce and rfc-dist lists.
+To subscribe or unsubscribe, see
+  https://www.ietf.org/mailman/listinfo/ietf-announce
+  https://mailman.rfc-editor.org/mailman/listinfo/rfc-dist
+
+For searching the RFC series, see https://www.rfc-editor.org/search
+For downloading RFCs, see https://www.rfc-editor.org/retrieve/bulk
+
+Requests for special distribution should be addressed to either the
+author of the RFC in question, or to rfc-editor@rfc-editor.org.  Unless
+specifically noted otherwise on the RFC itself, all RFCs are for
+unlimited distribution.
+
+
+The RFC Editor Team
+Association Management Solutions, LLC
+
+
+From nobody Mon Nov 23 12:05:41 2020
+Return-Path: <wwwrun@rfc-editor.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 96A083A0C04; Mon, 23 Nov 2020 12:05:34 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: 0.01
+X-Spam-Level: 
+X-Spam-Status: No, score=0.01 tagged_above=-999 required=5 tests=[SPF_PASS=-0.001, T_SPF_HELO_TEMPERROR=0.01, URIBL_BLOCKED=0.001] autolearn=unavailable autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id L8hmwN-BWivx; Mon, 23 Nov 2020 12:05:30 -0800 (PST)
+Received: from rfc-editor.org (rfc-editor.org [4.31.198.49]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id BA89C3A0C40; Mon, 23 Nov 2020 12:05:18 -0800 (PST)
+Received: by rfc-editor.org (Postfix, from userid 30) id 3E191F4078C; Mon, 23 Nov 2020 12:05:17 -0800 (PST)
+To: ietf-announce@ietf.org, rfc-dist@rfc-editor.org
+X-PHP-Originating-Script: 1005:ams_util_lib.php
+From: rfc-editor@rfc-editor.org
+Cc: rfc-editor@rfc-editor.org, drafts-update-ref@iana.org, 6lo@ietf.org
+Content-type: text/plain; charset=UTF-8
+Message-Id: <20201123200517.3E191F4078C@rfc-editor.org>
+Date: Mon, 23 Nov 2020 12:05:17 -0800 (PST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/Ige8o2Q6pADTC4V9UlPbliJNfcI>
+Subject: [6lo] =?utf-8?q?RFC_8930_on_On_Forwarding_6LoWPAN_Fragments_over?= =?utf-8?q?_a_Multi-Hop_IPv6_Network?=
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 23 Nov 2020 20:05:39 -0000
+
+A new Request for Comments is now available in online RFC libraries.
+
+        
+        RFC 8930
+
+        Title:      On Forwarding 6LoWPAN Fragments over 
+                    a Multi-Hop IPv6 Network 
+        Author:     T. Watteyne, Ed.,
+                    P. Thubert, Ed.,
+                    C. Bormann
+        Status:     Standards Track
+        Stream:     IETF
+        Date:       November 2020
+        Mailbox:    thomas.watteyne@analog.com, 
+                    pthubert@cisco.com, 
+                    cabo@tzi.org
+        Pages:      12
+        Updates/Obsoletes/SeeAlso:   None
+
+        I-D Tag:    draft-ietf-6lo-minimal-fragment-15.txt
+
+        URL:        https://www.rfc-editor.org/info/rfc8930
+
+        DOI:        10.17487/RFC8930
+
+This document provides generic rules to enable the forwarding of an
+IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN) fragment
+over a route-over network. Forwarding fragments can improve both
+end-to-end latency and reliability as well as reduce the buffer
+requirements in intermediate nodes; it may be implemented using RFC
+4944 and Virtual Reassembly Buffers (VRBs).
+
+This document is a product of the IPv6 over Networks of Resource-constrained Nodes Working Group of the IETF.
+
+This is now a Proposed Standard.
+
+STANDARDS TRACK: This document specifies an Internet Standards Track
+protocol for the Internet community, and requests discussion and suggestions
+for improvements.  Please refer to the current edition of the Official
+Internet Protocol Standards (https://www.rfc-editor.org/standards) for the 
+standardization state and status of this protocol.  Distribution of this 
+memo is unlimited.
+
+This announcement is sent to the IETF-Announce and rfc-dist lists.
+To subscribe or unsubscribe, see
+  https://www.ietf.org/mailman/listinfo/ietf-announce
+  https://mailman.rfc-editor.org/mailman/listinfo/rfc-dist
+
+For searching the RFC series, see https://www.rfc-editor.org/search
+For downloading RFCs, see https://www.rfc-editor.org/retrieve/bulk
+
+Requests for special distribution should be addressed to either the
+author of the RFC in question, or to rfc-editor@rfc-editor.org.  Unless
+specifically noted otherwise on the RFC itself, all RFCs are for
+unlimited distribution.
+
+
+The RFC Editor Team
+Association Management Solutions, LLC
+
+
+From nobody Mon Nov 23 12:05:47 2020
+Return-Path: <wwwrun@rfc-editor.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 458C73A0FAD; Mon, 23 Nov 2020 12:05:36 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: 0
+X-Spam-Level: 
+X-Spam-Status: No, score=0 tagged_above=-999 required=5 tests=[SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id b0Ul_YGc7yJL; Mon, 23 Nov 2020 12:05:34 -0800 (PST)
+Received: from rfc-editor.org (rfc-editor.org [4.31.198.49]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 28E6D3A0C58; Mon, 23 Nov 2020 12:05:23 -0800 (PST)
+Received: by rfc-editor.org (Postfix, from userid 30) id A3BC0F4078F; Mon, 23 Nov 2020 12:05:21 -0800 (PST)
+To: ietf-announce@ietf.org, rfc-dist@rfc-editor.org
+X-PHP-Originating-Script: 1005:ams_util_lib.php
+From: rfc-editor@rfc-editor.org
+Cc: rfc-editor@rfc-editor.org, drafts-update-ref@iana.org, 6lo@ietf.org
+Content-type: text/plain; charset=UTF-8
+Message-Id: <20201123200521.A3BC0F4078F@rfc-editor.org>
+Date: Mon, 23 Nov 2020 12:05:21 -0800 (PST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/nLL5pcxeL3HCEivU0byKBPvUYoc>
+Subject: [6lo] =?utf-8?q?RFC_8931_on_IPv6_over_Low-Power_Wireless_Persona?= =?utf-8?q?l_Area_Network_=286LoWPAN=29_Selective_Fragment_Recovery?=
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 23 Nov 2020 20:05:41 -0000
+
+A new Request for Comments is now available in online RFC libraries.
+
+        
+        RFC 8931
+
+        Title:      IPv6 over Low-Power Wireless Personal Area 
+                    Network (6LoWPAN) Selective Fragment Recovery 
+        Author:     P. Thubert, Ed.
+        Status:     Standards Track
+        Stream:     IETF
+        Date:       November 2020
+        Mailbox:    pthubert@cisco.com
+        Pages:      28
+        Updates:    RFC 4944
+
+        I-D Tag:    draft-ietf-6lo-fragment-recovery-21.txt
+
+        URL:        https://www.rfc-editor.org/info/rfc8931
+
+        DOI:        10.17487/RFC8931
+
+This document updates RFC 4944 with a protocol that forwards
+individual fragments across a route-over mesh and recovers them end
+to end, with congestion control capabilities to protect the network.
+
+This document is a product of the IPv6 over Networks of Resource-constrained Nodes Working Group of the IETF.
+
+This is now a Proposed Standard.
+
+STANDARDS TRACK: This document specifies an Internet Standards Track
+protocol for the Internet community, and requests discussion and suggestions
+for improvements.  Please refer to the current edition of the Official
+Internet Protocol Standards (https://www.rfc-editor.org/standards) for the 
+standardization state and status of this protocol.  Distribution of this 
+memo is unlimited.
+
+This announcement is sent to the IETF-Announce and rfc-dist lists.
+To subscribe or unsubscribe, see
+  https://www.ietf.org/mailman/listinfo/ietf-announce
+  https://mailman.rfc-editor.org/mailman/listinfo/rfc-dist
+
+For searching the RFC series, see https://www.rfc-editor.org/search
+For downloading RFCs, see https://www.rfc-editor.org/retrieve/bulk
+
+Requests for special distribution should be addressed to either the
+author of the RFC in question, or to rfc-editor@rfc-editor.org.  Unless
+specifically noted otherwise on the RFC itself, all RFCs are for
+unlimited distribution.
+
+
+The RFC Editor Team
+Association Management Solutions, LLC
+
+
+From nobody Wed Nov 25 11:41:37 2020
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 189563A15A5; Wed, 25 Nov 2020 11:41:32 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Alissa Cooper via Datatracker <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-nfc@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org, Samita Chakrabarti <samitac.ietf@gmail.com>, Carles Gomez <carlesgo@entel.upc.edu>, carlesgo@entel.upc.edu
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.23.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: Alissa Cooper <alissa@cooperw.in>
+Message-ID: <160633329208.9252.667983807565666502@ietfa.amsl.com>
+Date: Wed, 25 Nov 2020 11:41:32 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/sb8v7TCC_bUBADPAk2ZmRsnYyeU>
+Subject: [6lo] Alissa Cooper's No Objection on draft-ietf-6lo-nfc-17: (with COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 25 Nov 2020 19:41:32 -0000
+
+Alissa Cooper has entered the following ballot position for
+draft-ietf-6lo-nfc-17: No Objection
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/iesg/statement/discuss-criteria.html
+for more information about IESG DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-nfc/
+
+
+
+----------------------------------------------------------------------
+COMMENT:
+----------------------------------------------------------------------
+
+Thanks for addressing my DISCUSS points. Original COMMENT below:
+
+= General =
+
+I agree with Benjamin that the marketing-type language in the document should
+be removed.
+
+I wonder about the claims of security based on proximity in this document.
+Presumably attacks in which users are induced to tap their device against
+another node or terminal which has been compromised by an attacker are becoming
+more common as NFC becomes more common; adding IPV6 connectivity to the
+terminal stack surely broadens the potential damage done in such a case. This
+seems worth noting.
+
+= Section 1 =
+
+OLD
+It has been used in devices such as mobile phones, running Android operating
+   system, named with a feature called "Android Beam".  In addition, it
+   is expected for the other mobile phones, running the other operating
+   systems (e.g., iOS, etc.) to be equipped with NFC technology in the
+   near future.
+
+NEW
+At the time of this writing, it had been used in devices such as mobile phones,
+running Android operating
+   system, named with a feature called "Android Beam".  It was expected for the
+   other mobile phones, running the other operating systems (e.g., iOS, etc.)
+   to be equipped with NFC technology in the near future.
+
+= Section 4.5 =
+
+Per the Gen-ART review, the use of the term "meet" is confusing in this
+section. Please re-phrase.
+
+
+
+
+From nobody Wed Nov 25 14:49:47 2020
+Return-Path: <yhc@etri.re.kr>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 472563A1F32 for <6lo@ietfa.amsl.com>; Wed, 25 Nov 2020 14:49:46 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.899
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.899 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=unavailable autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=dooray.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id gky_BRpkz42r for <6lo@ietfa.amsl.com>; Wed, 25 Nov 2020 14:49:43 -0800 (PST)
+Received: from mscreen.etri.re.kr (mscreen.etri.re.kr [129.254.9.16]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 1A5323A1F33 for <6lo@ietf.org>; Wed, 25 Nov 2020 14:49:42 -0800 (PST)
+Received: from unknown (HELO send002-relay.gov-dooray.com) (211.180.235.153) by 129.254.9.16 with ESMTP; 26 Nov 2020 07:49:34 +0900
+X-Original-SENDERIP: 211.180.235.153
+X-Original-MAILFROM: yhc@etri.re.kr
+X-Original-RCPTTO: 6lo@ietf.org
+Received: from [10.162.225.109] (HELO send002.gov-dooray.com) ([10.162.225.109]) by send002-relay.gov-dooray.com with SMTP id 9c4e7c885fbedf84; Thu, 26 Nov 2020 07:49:40 +0900
+DKIM-Signature: a=rsa-sha256; b=zzG0CDAVSbs9b6SHlB08z7sLHbyNFMdwYfF3+ElDjXQw+Ub2139FLgEuZNlmayneT2dzkD/b89 tZcMQVxjsmQVDp7FFF4Z2SHW4iwlXrruVV0cPWyPy8CHugSdeAPXJvgMjw253HSgidI/Iiyminkk 0NwvzhDndCnSE7I8VQSEhm+exhnkpOVjzN55GTOI3Qf3Wc68R4dcYZPKWryRsbuVQTlCSBzRq6ZE Tmh+O+6knVVwVZFlMSiOKa/KMcWqhTpfLWPSVyYGC3rsSDLNCWKoxQiThVTx6XCYW5lIRbVY7ONY 9eQ8gWcXuEhfL5u19ZuqPeUof7UKvaGM5SCYd+NA==; c=relaxed/relaxed; s=selector; d=dooray.com; v=1; bh=/m63UfJ9hnYDwwj2RndQiWQvvAvyfSXJlaRXWdIu9fY=; h=From:To:Subject:Message-ID;
+From: =?UTF-8?B?7LWc7JiB7ZmY?= <yhc@etri.re.kr>
+To: The IESG <iesg@ietf.org>, Alissa Cooper <alissa@cooperw.in>
+Cc: draft-ietf-6lo-nfc@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org,  Samita Chakrabarti <samitac.ietf@gmail.com>,  Carles Gomez <carlesgo@entel.upc.edu>
+Message-ID: <lxcx8wbrts9p.lxcx8wbun0gp.g1@dooray.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+X-Dsn-Request: true
+X-Dooray-Agent: mail-api
+X-Dooray-Mail-Id: 2886021522598869853
+Importance: Normal
+X-Priority: Normal
+X-MSMail-Priority: Normal
+Date: Thu, 26 Nov 2020 07:49:38 +0900 (KST)
+Sender: yhc@etri.re.kr
+References: <160633329208.9252.667983807565666502@ietfa.amsl.com>
+In-Reply-To: <160633329208.9252.667983807565666502@ietfa.amsl.com>
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/3ghnQy7cInRGltqx48k9iWtNHAE>
+Subject: Re: [6lo] Alissa Cooper's No Objection on draft-ietf-6lo-nfc-17: (with COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 25 Nov 2020 22:49:46 -0000
+
+VGhhbmsgeW91IHNvIG11Y2gsIEFsaXNzYSBDb29wZXIuCgpCUnMsCllvdW5naHdhbiBDaG9pCgot
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQpZT1VOR0hXQU4g
+Q0hPSSwgUGguRC4KU2VuaW9yIFJlc2VhcmNoZXIsIFBFQyzCoEVUUkkKVGVsICs4Mi00Mi04NjAt
+MTQyOcKgwqAgRmF4ICs4Mi00Mi04NjAtNTQwNMKgCkVtYWlswqAgeWhjQGV0cmkucmUua3IKCi0t
+LS0tT3JpZ2luYWwgTWVzc2FnZS0tLS0tCkZyb206ICAiQWxpc3NhIENvb3BlciB2aWEgRGF0YXRy
+YWNrZXIiIDxub3JlcGx5QGlldGYub3JnPgpUbzogICAgICJUaGUgSUVTRyIgPGllc2dAaWV0Zi5v
+cmc+OyAKQ2M6ICAgICAgPGRyYWZ0LWlldGYtNmxvLW5mY0BpZXRmLm9yZz47ICAgPDZsby1jaGFp
+cnNAaWV0Zi5vcmc+OyAgIDw2bG9AaWV0Zi5vcmc+OyAgIlNhbWl0YSBDaGFrcmFiYXJ0aSIgPHNh
+bWl0YWMuaWV0ZkBnbWFpbC5jb20+OyAgIkNhcmxlcyBHb21leiIgPGNhcmxlc2dvQGVudGVsLnVw
+Yy5lZHU+OyAgIDxjYXJsZXNnb0BlbnRlbC51cGMuZWR1PjsgClNlbnQ6ICAyMDIwLTExLTI2ICjr
+qqkpIDA0OjQxOjM1IChVVEMrMDk6MDApClN1YmplY3Q6IEFsaXNzYSBDb29wZXIncyBObyBPYmpl
+Y3Rpb24gb24gZHJhZnQtaWV0Zi02bG8tbmZjLTE3OiAod2l0aCBDT01NRU5UKQoKQWxpc3NhIENv
+b3BlciBoYXMgZW50ZXJlZCB0aGUgZm9sbG93aW5nIGJhbGxvdCBwb3NpdGlvbiBmb3IKZHJhZnQt
+aWV0Zi02bG8tbmZjLTE3OiBObyBPYmplY3Rpb24KCldoZW4gcmVzcG9uZGluZywgcGxlYXNlIGtl
+ZXAgdGhlIHN1YmplY3QgbGluZSBpbnRhY3QgYW5kIHJlcGx5IHRvIGFsbAplbWFpbCBhZGRyZXNz
+ZXMgaW5jbHVkZWQgaW4gdGhlIFRvIGFuZCBDQyBsaW5lcy4gKEZlZWwgZnJlZSB0byBjdXQgdGhp
+cwppbnRyb2R1Y3RvcnkgcGFyYWdyYXBoLCBob3dldmVyLikKCgpQbGVhc2UgcmVmZXIgdG8gaHR0
+cHM6Ly93d3cuaWV0Zi5vcmcvaWVzZy9zdGF0ZW1lbnQvZGlzY3Vzcy1jcml0ZXJpYS5odG1sCmZv
+ciBtb3JlIGluZm9ybWF0aW9uIGFib3V0IElFU0cgRElTQ1VTUyBhbmQgQ09NTUVOVCBwb3NpdGlv
+bnMuCgoKVGhlIGRvY3VtZW50LCBhbG9uZyB3aXRoIG90aGVyIGJhbGxvdCBwb3NpdGlvbnMsIGNh
+biBiZSBmb3VuZCBoZXJlOgpodHRwczovL2RhdGF0cmFja2VyLmlldGYub3JnL2RvYy9kcmFmdC1p
+ZXRmLTZsby1uZmMvCgoKCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KQ09NTUVOVDoKLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKVGhh
+bmtzIGZvciBhZGRyZXNzaW5nIG15IERJU0NVU1MgcG9pbnRzLiBPcmlnaW5hbCBDT01NRU5UIGJl
+bG93OgoKPSBHZW5lcmFsID0KCkkgYWdyZWUgd2l0aCBCZW5qYW1pbiB0aGF0IHRoZSBtYXJrZXRp
+bmctdHlwZSBsYW5ndWFnZSBpbiB0aGUgZG9jdW1lbnQgc2hvdWxkCmJlIHJlbW92ZWQuCgpJIHdv
+bmRlciBhYm91dCB0aGUgY2xhaW1zIG9mIHNlY3VyaXR5IGJhc2VkIG9uIHByb3hpbWl0eSBpbiB0
+aGlzIGRvY3VtZW50LgpQcmVzdW1hYmx5IGF0dGFja3MgaW4gd2hpY2ggdXNlcnMgYXJlIGluZHVj
+ZWQgdG8gdGFwIHRoZWlyIGRldmljZSBhZ2FpbnN0CmFub3RoZXIgbm9kZSBvciB0ZXJtaW5hbCB3
+aGljaCBoYXMgYmVlbiBjb21wcm9taXNlZCBieSBhbiBhdHRhY2tlciBhcmUgYmVjb21pbmcKbW9y
+ZSBjb21tb24gYXMgTkZDIGJlY29tZXMgbW9yZSBjb21tb247IGFkZGluZyBJUFY2IGNvbm5lY3Rp
+dml0eSB0byB0aGUKdGVybWluYWwgc3RhY2sgc3VyZWx5IGJyb2FkZW5zIHRoZSBwb3RlbnRpYWwg
+ZGFtYWdlIGRvbmUgaW4gc3VjaCBhIGNhc2UuIFRoaXMKc2VlbXMgd29ydGggbm90aW5nLgoKPSBT
+ZWN0aW9uIDEgPQoKT0xECkl0IGhhcyBiZWVuIHVzZWQgaW4gZGV2aWNlcyBzdWNoIGFzIG1vYmls
+ZSBwaG9uZXMsIHJ1bm5pbmcgQW5kcm9pZCBvcGVyYXRpbmcKICAgc3lzdGVtLCBuYW1lZCB3aXRo
+IGEgZmVhdHVyZSBjYWxsZWQgIkFuZHJvaWQgQmVhbSIuICBJbiBhZGRpdGlvbiwgaXQKICAgaXMg
+ZXhwZWN0ZWQgZm9yIHRoZSBvdGhlciBtb2JpbGUgcGhvbmVzLCBydW5uaW5nIHRoZSBvdGhlciBv
+cGVyYXRpbmcKICAgc3lzdGVtcyAoZS5nLiwgaU9TLCBldGMuKSB0byBiZSBlcXVpcHBlZCB3aXRo
+IE5GQyB0ZWNobm9sb2d5IGluIHRoZQogICBuZWFyIGZ1dHVyZS4KCk5FVwpBdCB0aGUgdGltZSBv
+ZiB0aGlzIHdyaXRpbmcsIGl0IGhhZCBiZWVuIHVzZWQgaW4gZGV2aWNlcyBzdWNoIGFzIG1vYmls
+ZSBwaG9uZXMsCnJ1bm5pbmcgQW5kcm9pZCBvcGVyYXRpbmcKICAgc3lzdGVtLCBuYW1lZCB3aXRo
+IGEgZmVhdHVyZSBjYWxsZWQgIkFuZHJvaWQgQmVhbSIuICBJdCB3YXMgZXhwZWN0ZWQgZm9yIHRo
+ZQogICBvdGhlciBtb2JpbGUgcGhvbmVzLCBydW5uaW5nIHRoZSBvdGhlciBvcGVyYXRpbmcgc3lz
+dGVtcyAoZS5nLiwgaU9TLCBldGMuKQogICB0byBiZSBlcXVpcHBlZCB3aXRoIE5GQyB0ZWNobm9s
+b2d5IGluIHRoZSBuZWFyIGZ1dHVyZS4KCj0gU2VjdGlvbiA0LjUgPQoKUGVyIHRoZSBHZW4tQVJU
+IHJldmlldywgdGhlIHVzZSBvZiB0aGUgdGVybSAibWVldCIgaXMgY29uZnVzaW5nIGluIHRoaXMK
+c2VjdGlvbi4gUGxlYXNlIHJlLXBocmFzZS4KCgoKCg==
+
+

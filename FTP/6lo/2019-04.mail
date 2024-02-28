@@ -1,0 +1,1106 @@
+
+From nobody Tue Apr  2 01:33:48 2019
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 01509120111 for <6lo@ietfa.amsl.com>; Tue,  2 Apr 2019 01:33:47 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.499
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.499 tagged_above=-999 required=5 tests=[BAYES_50=0.8, RCVD_IN_DNSWL_MED=-2.3, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id xRYmIazNKwnb for <6lo@ietfa.amsl.com>; Tue,  2 Apr 2019 01:33:44 -0700 (PDT)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 41F6C1200DB for <6lo@ietf.org>; Tue,  2 Apr 2019 01:33:44 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.39.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id x328XfSv001030 for <6lo@ietf.org>; Tue, 2 Apr 2019 10:33:41 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id 707361D53C1; Tue,  2 Apr 2019 10:33:41 +0200 (CEST)
+Received: from 131.111.5.141 by webmail.entel.upc.edu with HTTP; Tue, 2 Apr 2019 10:33:41 +0200
+Message-ID: <4f84588f9fdc3607c5482eabf619fd9a.squirrel@webmail.entel.upc.edu>
+Date: Tue, 2 Apr 2019 10:33:41 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.2 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Tue, 02 Apr 2019 10:33:41 +0200 (CEST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/l_hJKlzO4sIyI0c_fCBxPCD2Ba0>
+Subject: [6lo] Minutes from IETF 104
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 02 Apr 2019 08:33:47 -0000
+
+Dear 6lo WG,
+
+A first version of the minutes from the 6lo WG meeting at IETF 104 has
+just been posted:
+https://datatracker.ietf.org/meeting/104/materials/minutes-104-6lo-00.txt
+
+We would like to thank our minute takers, Dominique Barthel and Antoine
+Bernard, for kindly providing us with very good minutes from the session.
+
+Should anyone identify any corrections that need to be made to the
+minutes, please let us know.
+
+Thanks,
+
+Shwetha and Carles
+
+
+
+
+From nobody Wed Apr 10 18:34:56 2019
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 9C36B120123; Wed, 10 Apr 2019 18:34:48 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.95.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: 6lo@ietf.org
+Message-ID: <155494648859.22640.11105760629485711702@ietfa.amsl.com>
+Date: Wed, 10 Apr 2019 18:34:48 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/ne2YcoWemBdWsIRpGJj5WZXWkVE>
+Subject: [6lo] I-D Action: draft-ietf-6lo-ap-nd-12.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 11 Apr 2019 01:34:49 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : Address Protected Neighbor Discovery for Low-power and Lossy Networks
+        Authors         : Pascal Thubert
+                          Behcet Sarikaya
+                          Mohit Sethi
+                          Rene Struik
+	Filename        : draft-ietf-6lo-ap-nd-12.txt
+	Pages           : 28
+	Date            : 2019-04-10
+
+Abstract:
+   This document specifies an extension to 6LoWPAN Neighbor Discovery
+   (ND) protocol defined in RFC6775 and updated in RFC8505.  The new
+   extension is called Address Protected Neighbor Discovery (AP-ND) and
+   it protects the owner of an address against address theft and
+   impersonation attacks in a low-power and lossy network (LLN).  Nodes
+   supporting this extension compute a cryptographic identifier (Crypto-
+   ID) and use it with one or more of their Registered Addresses.  The
+   Crypto-ID identifies the owner of the Registered Address and can be
+   used to provide proof of ownership of the Registered Addresses.  Once
+   an address is registered with the Crypto-ID and a proof-of-ownership
+   is provided, only the owner of that address can modify the
+   registration information, thereby enforcing Source Address
+   Validation.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-ap-nd/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-ap-nd-12
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-ap-nd-12
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-ap-nd-12
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Fri Apr 12 07:46:01 2019
+Return-Path: <shwethab@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 9911D1207B0 for <6lo@ietfa.amsl.com>; Fri, 12 Apr 2019 07:45:21 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.5
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.5 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com header.b=kKI3KUvl; dkim=pass (1024-bit key) header.d=cisco.onmicrosoft.com header.b=OEToyBnA
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id nimdcxkcpkVL for <6lo@ietfa.amsl.com>; Fri, 12 Apr 2019 07:45:17 -0700 (PDT)
+Received: from rcdn-iport-9.cisco.com (rcdn-iport-9.cisco.com [173.37.86.80]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 0B5881207CB for <6lo@ietf.org>; Fri, 12 Apr 2019 07:45:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=4730; q=dns/txt; s=iport; t=1555080317; x=1556289917; h=from:to:subject:date:message-id:content-id: content-transfer-encoding:mime-version; bh=F5P0I243koAuYaHTiPhTLZ/I4Sb1FplEdFgo4214Idc=; b=kKI3KUvlqwkpDbI7JeLyXxDz+TkHCJkRRmfbHk/rIlmT9HBj+OLd5ETe PVcixJJ2/ic839P13u2GDMNRRYWHw6+QOq3JkP9JOgiLX8l24mP5ud7o5 UOn0dDRmXc11jJzaknZA5oylrBaWacErhAc7k2JtQlbk4TKQEJWUGpFHE I=;
+IronPort-PHdr: =?us-ascii?q?9a23=3Aq4LQlxE/rbfZVSE+g9quF51GYnJ96bzpIg4Y7I?= =?us-ascii?q?YmgLtSc6Oluo7vJ1Hb+e4z1Q3SRYuO7fVChqKWqK3mVWEaqbe5+HEZON0pNV?= =?us-ascii?q?cejNkO2QkpAcqLE0r+eeXqcCEmHM1IfFRk5Hq8d0NSHZW2ag=3D=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0CDAACZo7Bc/4gNJK1lHgEGBwaBUQk?= =?us-ascii?q?LAYE9UANoVCAECyiEDoNHA48VSoFolz+BLoEkA1QOAQEYCwqEWYVfIzQJDgE?= =?us-ascii?q?DAQEKAQIBAm0cAQuFUgEhEQwBASwMEQEbBwImAgQlCxUSBBODIgGBaQMcAQ6?= =?us-ascii?q?hYQKKFHGBL4J5AQEFgTEBAwIOQUCCOxiCDQmBCycBhF6FJIFEF4FAP4EQASc?= =?us-ascii?q?ME4VrAQECAQEWgSuDJjGCJo0jmQAJAoIFhgeMChqCB12FPYxOi1+GKo1mAgQ?= =?us-ascii?q?CBAUCDgEBBYFPOIFWcBUaISoBgkEJggELGINMglaCPoU/coEpjHkrgiQBAQ?=
+X-IronPort-AV: E=Sophos;i="5.60,341,1549929600"; d="scan'208";a="461287527"
+Received: from alln-core-3.cisco.com ([173.36.13.136]) by rcdn-iport-9.cisco.com with ESMTP/TLS/DHE-RSA-SEED-SHA; 12 Apr 2019 14:45:15 +0000
+Received: from XCH-RCD-008.cisco.com (xch-rcd-008.cisco.com [173.37.102.18]) by alln-core-3.cisco.com (8.15.2/8.15.2) with ESMTPS id x3CEjFE6013470 (version=TLSv1.2 cipher=AES256-SHA bits=256 verify=FAIL) for <6lo@ietf.org>; Fri, 12 Apr 2019 14:45:15 GMT
+Received: from xhs-rtp-001.cisco.com (64.101.210.228) by XCH-RCD-008.cisco.com (173.37.102.18) with Microsoft SMTP Server (TLS) id 15.0.1473.3; Fri, 12 Apr 2019 09:45:14 -0500
+Received: from xhs-rcd-001.cisco.com (173.37.227.246) by xhs-rtp-001.cisco.com (64.101.210.228) with Microsoft SMTP Server (TLS) id 15.0.1473.3; Fri, 12 Apr 2019 10:45:13 -0400
+Received: from NAM04-CO1-obe.outbound.protection.outlook.com (72.163.14.9) by xhs-rcd-001.cisco.com (173.37.227.246) with Microsoft SMTP Server (TLS) id 15.0.1473.3 via Frontend Transport; Fri, 12 Apr 2019 09:45:13 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cisco.onmicrosoft.com;  s=selector1-cisco-com; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=F5P0I243koAuYaHTiPhTLZ/I4Sb1FplEdFgo4214Idc=; b=OEToyBnAT+Qo1VKxd4kKPXApSxYGKd24HS7uM4IpoyAVgZmpivPTzPbdeiIlkmtnLYK16sjOdjNvLaWG2CVEEW58bqk/WDF/TmJ4dbenBhBx+eskTLl0VvQPcnVTzJs+fGxrkDQzxViA435Yl/AvRmZ2JfJXyniXZHbRf8bBY1o=
+Received: from BN6PR11MB0066.namprd11.prod.outlook.com (10.161.154.146) by BN6PR11MB1826.namprd11.prod.outlook.com (10.175.99.14) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.1792.14; Fri, 12 Apr 2019 14:45:12 +0000
+Received: from BN6PR11MB0066.namprd11.prod.outlook.com ([fe80::2430:aae:6ff6:ea54]) by BN6PR11MB0066.namprd11.prod.outlook.com ([fe80::2430:aae:6ff6:ea54%4]) with mapi id 15.20.1792.018; Fri, 12 Apr 2019 14:45:12 +0000
+From: "Shwetha Bhandari (shwethab)" <shwethab@cisco.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: 2nd and short WGLC for draft-ietf-6lo-ap-nd-12
+Thread-Index: AQHU8T5VZEH5Sdw3ZU2FoQPnT2lFXQ==
+Date: Fri, 12 Apr 2019 14:45:12 +0000
+Message-ID: <58FF67B0-37B1-4034-AE26-B06A77D5B6BF@cisco.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+user-agent: Microsoft-MacOutlook/10.17.0.190309
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=shwethab@cisco.com; 
+x-originating-ip: [2001:420:c0e0:1001::377]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 65c8cce2-ab50-483f-f9d6-08d6bf5577f2
+x-microsoft-antispam: BCL:0; PCL:0; RULEID:(2390118)(7020095)(4652040)(8989299)(4534185)(4627221)(201703031133081)(201702281549075)(8990200)(5600139)(711020)(4605104)(2017052603328)(7193020); SRVR:BN6PR11MB1826; 
+x-ms-traffictypediagnostic: BN6PR11MB1826:
+x-ms-exchange-purlcount: 5
+x-microsoft-antispam-prvs: <BN6PR11MB1826AED64BD21FDD8DA21CA6D6280@BN6PR11MB1826.namprd11.prod.outlook.com>
+x-forefront-prvs: 0005B05917
+x-forefront-antispam-report: SFV:NSPM; SFS:(10009020)(396003)(39860400002)(136003)(376002)(366004)(346002)(189003)(50854003)(53754006)(199004)(6486002)(6116002)(25786009)(256004)(7736002)(478600001)(71200400001)(46003)(83716004)(81166006)(305945005)(476003)(36756003)(97736004)(66574012)(33656002)(81156014)(14444005)(6306002)(2501003)(186003)(6512007)(2906002)(68736007)(8936002)(8676002)(71190400001)(2616005)(53936002)(6916009)(58126008)(99286004)(316002)(86362001)(5660300002)(82746002)(106356001)(14454004)(966005)(5640700003)(105586002)(6436002)(486006)(102836004)(6506007)(2351001); DIR:OUT; SFP:1101; SCL:1; SRVR:BN6PR11MB1826; H:BN6PR11MB0066.namprd11.prod.outlook.com; FPR:; SPF:None; LANG:en; PTR:InfoNoRecords; MX:1; A:1; 
+received-spf: None (protection.outlook.com: cisco.com does not designate permitted sender hosts)
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam-message-info: dDyEW/pOrHdWaJ2NX/uIGQOdieYpvAQdER77mqSNLaF9Q9XBc3Wcxk83LaumFUa5zIQUnYyvAdXQQHXBtwu6NrrwIT4h9ULKzIeIH5OKprOZzeWm9gHRKpSVgeI77vhXQ37Jm7Z6UVvk7EIN10W1zRU8qpRkVwRhoc/P+mdOcRCWAeXWME54nIi3LIQE4jkqagvxYGxN/nyXyIVyHpcrnRtN4gYjIcJBTXtegPkZCr6b93kEG6dQnarpwi706f6DccyDwjadhzpoX7XHQOmLMhUTr45Qy8Rc67x2INdU9/Ptmijafsdogn+4j4/dtgjKrPEmET1LZKGKVlYH4dR25oOV4av2H6tbWqgqUYvOY72KsWMHW3mHIEI0AjgFDIW5Lkk7ZpWdRoY+WXgK/s65p8Vg94q2YkV0F08GRr1VDUw=
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <05828576B58EB046B78A9FC6A68C7466@namprd11.prod.outlook.com>
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-Network-Message-Id: 65c8cce2-ab50-483f-f9d6-08d6bf5577f2
+X-MS-Exchange-CrossTenant-originalarrivaltime: 12 Apr 2019 14:45:12.2379 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 5ae1af62-9505-4097-a69a-c1553ef7840e
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR11MB1826
+X-OriginatorOrg: cisco.com
+X-Outbound-SMTP-Client: 173.37.102.18, xch-rcd-008.cisco.com
+X-Outbound-Node: alln-core-3.cisco.com
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/sbbJk8cNtkqvDDnbSSwfHBwxu6c>
+Subject: [6lo] 2nd and short WGLC for draft-ietf-6lo-ap-nd-12
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 12 Apr 2019 14:45:22 -0000
+
+SGVsbG8gQWxsLA0KDQpEdXJpbmcgdGhlIHNoZXBoZXJkIHJldmlldyBjb25jZXJucyB3ZXJlIHJh
+aXNlZCBieSB0aGUgc2hlcGhlcmQoU2h3ZXRoYSkgYWJvdXQgcmVkZWZpbml0aW9uIG9mIENyeXB0
+byBwYXJhbWV0ZXIgb3B0aW9uIGRlZmluZWQgaW4gUkZDIDM5NzEuIA0KRnJvbSBhIHN1bW1hcnkg
+b2YgY2hhbmdlcyBiL24gLTExICYgLTEyIGJ5IFBhc2NhbDoNCjEuQXV0aG9ycyBhZ3JlZWQgdG8g
+Y2hhbmdlIHRoaXMgYW5kIGhhdmUgcHVibGlzaGVkIC0xMiB3aXRoIG5ldyBORCBvcHRpb25zIHJl
+cXVlc3RzIHRvIGJlIGFzc2lnbmVkIGJ5IElBTkEuDQoyLkluIGFkZGl0aW9uLCBhdXRob3JzIGhh
+dmUgcmVzdG9yZWQgLyBzaW1wbGlmaWVkIHRleHQgb24gdGhlIENyeXB0by1JRCBnZW5lcmF0aW9u
+LiBUaGUgdGV4dCBub3cgaW5kaWNhdGVzIHRvIHNpbXBseSBoYXNoIGluIENJUE8gd2l0aCB0aGUg
+aGFzaCBmdW5jdGlvbiB0aGF0IGlzIHVzZWQgdG8gZG8gdGhlIHNpZ25hdHVyZS4gDQozLlRoZSBk
+cmFmdCBhbHNvIHByb3Bvc2VzIHRvIHVzZSB0aGUgY3J5cHRvLUlEIGFzIHRoZSBpbmRleCBmb3Ig
+c2FmZWtlZXBpbmcgdGhlIHB1YmxpYyBrZXkgKHRoZSB3aG9sZSBDSVBPIGluIGZhY3QpIGFzIG9w
+cG9zZWQgdG8gdGhlIGtleSBoYXNoIHRoYXQgd2FzIGluaGVyaXRlZCBmcm9tIHJldXNpbmcgUkZD
+IDM5NzEgb3B0aW9ucy4NCg0KV2UgcmVxdWVzdCB0aGUgd29ya2luZyBncm91cCB0byByZXZpZXcg
+dGhlIGNoYW5nZXMgY2xvc2VseSwgcHJvdmlkZSBmZWVkYmFjayBhbmQgZXhwcmVzcyB0aGVpciBz
+dXBwb3J0IHRvIHByb2dyZXNzIHRoZSBkcmFmdC4NClBsZWFzZSBjb25zaWRlciB0aGlzIGFzIGEg
+c2hvcnQgV0dMQyB0aGF0IGVuZHMgb24gQXByaWwgMjJuZC4gV2Ugd2lsbCBldmFsdWF0ZSBjb25z
+ZW5zdXMgZm9sbG93aW5nIEFwcmlsIDIybmQuDQoNClRoYW5rcywNCkNhcmxlcyBhbmQgU2h3ZXRo
+YQ0KDQrvu79PbiA0LzExLzE5LCA3OjA1IEFNLCAiaW50ZXJuZXQtZHJhZnRzQGlldGYub3JnIiA8
+aW50ZXJuZXQtZHJhZnRzQGlldGYub3JnPiB3cm90ZToNCg0KICAgIA0KICAgIEEgTmV3IEludGVy
+bmV0LURyYWZ0IGlzIGF2YWlsYWJsZSBmcm9tIHRoZSBvbi1saW5lIEludGVybmV0LURyYWZ0cyBk
+aXJlY3Rvcmllcy4NCiAgICBUaGlzIGRyYWZ0IGlzIGEgd29yayBpdGVtIG9mIHRoZSBJUHY2IG92
+ZXIgTmV0d29ya3Mgb2YgUmVzb3VyY2UtY29uc3RyYWluZWQgTm9kZXMgV0cgb2YgdGhlIElFVEYu
+DQogICAgDQogICAgICAgICAgICBUaXRsZSAgICAgICAgICAgOiBBZGRyZXNzIFByb3RlY3RlZCBO
+ZWlnaGJvciBEaXNjb3ZlcnkgZm9yIExvdy1wb3dlciBhbmQgTG9zc3kgTmV0d29ya3MNCiAgICAg
+ICAgICAgIEF1dGhvcnMgICAgICAgICA6IFBhc2NhbCBUaHViZXJ0DQogICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICBCZWhjZXQgU2FyaWtheWENCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgIE1vaGl0IFNldGhpDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBSZW5lIFN0cnVp
+aw0KICAgIAlGaWxlbmFtZSAgICAgICAgOiBkcmFmdC1pZXRmLTZsby1hcC1uZC0xMi50eHQNCiAg
+ICAJUGFnZXMgICAgICAgICAgIDogMjgNCiAgICAJRGF0ZSAgICAgICAgICAgIDogMjAxOS0wNC0x
+MA0KICAgIA0KICAgIEFic3RyYWN0Og0KICAgICAgIFRoaXMgZG9jdW1lbnQgc3BlY2lmaWVzIGFu
+IGV4dGVuc2lvbiB0byA2TG9XUEFOIE5laWdoYm9yIERpc2NvdmVyeQ0KICAgICAgIChORCkgcHJv
+dG9jb2wgZGVmaW5lZCBpbiBSRkM2Nzc1IGFuZCB1cGRhdGVkIGluIFJGQzg1MDUuICBUaGUgbmV3
+DQogICAgICAgZXh0ZW5zaW9uIGlzIGNhbGxlZCBBZGRyZXNzIFByb3RlY3RlZCBOZWlnaGJvciBE
+aXNjb3ZlcnkgKEFQLU5EKSBhbmQNCiAgICAgICBpdCBwcm90ZWN0cyB0aGUgb3duZXIgb2YgYW4g
+YWRkcmVzcyBhZ2FpbnN0IGFkZHJlc3MgdGhlZnQgYW5kDQogICAgICAgaW1wZXJzb25hdGlvbiBh
+dHRhY2tzIGluIGEgbG93LXBvd2VyIGFuZCBsb3NzeSBuZXR3b3JrIChMTE4pLiAgTm9kZXMNCiAg
+ICAgICBzdXBwb3J0aW5nIHRoaXMgZXh0ZW5zaW9uIGNvbXB1dGUgYSBjcnlwdG9ncmFwaGljIGlk
+ZW50aWZpZXIgKENyeXB0by0NCiAgICAgICBJRCkgYW5kIHVzZSBpdCB3aXRoIG9uZSBvciBtb3Jl
+IG9mIHRoZWlyIFJlZ2lzdGVyZWQgQWRkcmVzc2VzLiAgVGhlDQogICAgICAgQ3J5cHRvLUlEIGlk
+ZW50aWZpZXMgdGhlIG93bmVyIG9mIHRoZSBSZWdpc3RlcmVkIEFkZHJlc3MgYW5kIGNhbiBiZQ0K
+ICAgICAgIHVzZWQgdG8gcHJvdmlkZSBwcm9vZiBvZiBvd25lcnNoaXAgb2YgdGhlIFJlZ2lzdGVy
+ZWQgQWRkcmVzc2VzLiAgT25jZQ0KICAgICAgIGFuIGFkZHJlc3MgaXMgcmVnaXN0ZXJlZCB3aXRo
+IHRoZSBDcnlwdG8tSUQgYW5kIGEgcHJvb2Ytb2Ytb3duZXJzaGlwDQogICAgICAgaXMgcHJvdmlk
+ZWQsIG9ubHkgdGhlIG93bmVyIG9mIHRoYXQgYWRkcmVzcyBjYW4gbW9kaWZ5IHRoZQ0KICAgICAg
+IHJlZ2lzdHJhdGlvbiBpbmZvcm1hdGlvbiwgdGhlcmVieSBlbmZvcmNpbmcgU291cmNlIEFkZHJl
+c3MNCiAgICAgICBWYWxpZGF0aW9uLg0KICAgIA0KICAgIA0KICAgIFRoZSBJRVRGIGRhdGF0cmFj
+a2VyIHN0YXR1cyBwYWdlIGZvciB0aGlzIGRyYWZ0IGlzOg0KICAgIGh0dHBzOi8vZGF0YXRyYWNr
+ZXIuaWV0Zi5vcmcvZG9jL2RyYWZ0LWlldGYtNmxvLWFwLW5kLw0KICAgIA0KICAgIFRoZXJlIGFy
+ZSBhbHNvIGh0bWxpemVkIHZlcnNpb25zIGF2YWlsYWJsZSBhdDoNCiAgICBodHRwczovL3Rvb2xz
+LmlldGYub3JnL2h0bWwvZHJhZnQtaWV0Zi02bG8tYXAtbmQtMTINCiAgICBodHRwczovL2RhdGF0
+cmFja2VyLmlldGYub3JnL2RvYy9odG1sL2RyYWZ0LWlldGYtNmxvLWFwLW5kLTEyDQogICAgDQog
+ICAgQSBkaWZmIGZyb20gdGhlIHByZXZpb3VzIHZlcnNpb24gaXMgYXZhaWxhYmxlIGF0Og0KICAg
+IGh0dHBzOi8vd3d3LmlldGYub3JnL3JmY2RpZmY/dXJsMj1kcmFmdC1pZXRmLTZsby1hcC1uZC0x
+Mg0KICAgIA0KICAgIA0KICAgIFBsZWFzZSBub3RlIHRoYXQgaXQgbWF5IHRha2UgYSBjb3VwbGUg
+b2YgbWludXRlcyBmcm9tIHRoZSB0aW1lIG9mIHN1Ym1pc3Npb24NCiAgICB1bnRpbCB0aGUgaHRt
+bGl6ZWQgdmVyc2lvbiBhbmQgZGlmZiBhcmUgYXZhaWxhYmxlIGF0IHRvb2xzLmlldGYub3JnLg0K
+ICAgIA0KICAgIEludGVybmV0LURyYWZ0cyBhcmUgYWxzbyBhdmFpbGFibGUgYnkgYW5vbnltb3Vz
+IEZUUCBhdDoNCiAgICBmdHA6Ly9mdHAuaWV0Zi5vcmcvaW50ZXJuZXQtZHJhZnRzLw0KICAgIA0K
+ICAgIF9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fDQogICAg
+NmxvIG1haWxpbmcgbGlzdA0KICAgIDZsb0BpZXRmLm9yZw0KICAgIGh0dHBzOi8vd3d3LmlldGYu
+b3JnL21haWxtYW4vbGlzdGluZm8vNmxvDQogICAgDQoNCg==
+
+
+From nobody Tue Apr 23 09:23:56 2019
+Return-Path: <shwethab@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id CC2851200F9 for <6lo@ietfa.amsl.com>; Tue, 23 Apr 2019 09:23:54 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.5
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.5 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com header.b=Z50QdvU4; dkim=pass (1024-bit key) header.d=cisco.onmicrosoft.com header.b=Xz/3aG8J
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id z8Mhd2en5lZ0 for <6lo@ietfa.amsl.com>; Tue, 23 Apr 2019 09:23:51 -0700 (PDT)
+Received: from alln-iport-3.cisco.com (alln-iport-3.cisco.com [173.37.142.90]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 2640E1201B3 for <6lo@ietf.org>; Tue, 23 Apr 2019 09:23:44 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=5502; q=dns/txt; s=iport; t=1556036624; x=1557246224; h=from:to:subject:date:message-id:references:in-reply-to: content-id:content-transfer-encoding:mime-version; bh=c+dsfXBEDvOTJ4jNMWnEXc+LsZ9uCyfcDqeD3nMGIRw=; b=Z50QdvU4M3z17pSUtq/pgxOFuFqfbHBR3XRbEcemGIBwY/dKXliAOSex mD4GcFu3b+RboHxa4wTRbO3mrqyVMCwpVccpZ5FMCAsQjT+SysTFgI4nc H9Cmi4aHdd8uMTebFbfbeG102meSGDYIfDAltBulwNrJ9upuAi3gKhBFW A=;
+IronPort-PHdr: =?us-ascii?q?9a23=3Aa4I+Tx9ElANKV/9uRHGN82YQeigqvan1NQcJ65?= =?us-ascii?q?0hzqhDabmn44+8ZR7E/fs4iljPUM2b8P9Ch+fM+4HYEW0bqdfk0jgZdYBUER?= =?us-ascii?q?oMiMEYhQslVdWFFkDnLPfgRyc7B89FElRi+iLzPA=3D=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0CwAADAO79c/5FdJa1mHQEBBQEHBQG?= =?us-ascii?q?BUgcBCwGBPVADaFUgBAsohA6DRwOPFkqBaJdCgS6Bew4BARgLCoRAAheGECM?= =?us-ascii?q?1CA4BAwEBBAEBAgECbRwBC4VLAgQBASERDAEBLAwPAgEIEwcCJgICAiULFRA?= =?us-ascii?q?CBBODIgGBaQMcAQ6eDwKKFHGBL4J5AQEFgTIBAwIOQUCCNhiCDQmBCycBhGC?= =?us-ascii?q?FJYFEF4FAP4EQAScME4JMPoJhAQECAQEWgSscgwoxgiaNMZkpCQKCCIYPjBs?= =?us-ascii?q?bggtehUuMYIwEhj2NfgIEAgQFAg4BAQWBUQMzgVZwFRohKgGCQQmCBgsYg0y?= =?us-ascii?q?CVoI+hT9ygSmMeSuCJQEB?=
+X-IronPort-AV: E=Sophos;i="5.60,386,1549929600"; d="scan'208";a="267015123"
+Received: from rcdn-core-9.cisco.com ([173.37.93.145]) by alln-iport-3.cisco.com with ESMTP/TLS/DHE-RSA-SEED-SHA; 23 Apr 2019 16:23:20 +0000
+Received: from XCH-RCD-015.cisco.com (xch-rcd-015.cisco.com [173.37.102.25]) by rcdn-core-9.cisco.com (8.15.2/8.15.2) with ESMTPS id x3NGNKuI031807 (version=TLSv1.2 cipher=AES256-SHA bits=256 verify=FAIL) for <6lo@ietf.org>; Tue, 23 Apr 2019 16:23:20 GMT
+Received: from xhs-rcd-001.cisco.com (173.37.227.246) by XCH-RCD-015.cisco.com (173.37.102.25) with Microsoft SMTP Server (TLS) id 15.0.1473.3; Tue, 23 Apr 2019 11:23:19 -0500
+Received: from xhs-rcd-003.cisco.com (173.37.227.248) by xhs-rcd-001.cisco.com (173.37.227.246) with Microsoft SMTP Server (TLS) id 15.0.1473.3; Tue, 23 Apr 2019 11:23:18 -0500
+Received: from NAM01-BY2-obe.outbound.protection.outlook.com (72.163.14.9) by xhs-rcd-003.cisco.com (173.37.227.248) with Microsoft SMTP Server (TLS) id 15.0.1473.3 via Frontend Transport; Tue, 23 Apr 2019 11:23:18 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cisco.onmicrosoft.com;  s=selector1-cisco-com; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=c+dsfXBEDvOTJ4jNMWnEXc+LsZ9uCyfcDqeD3nMGIRw=; b=Xz/3aG8JFpAfpxtaQwKHh0lyijKPDS7tmJGBmKVgtM/4JYVhh743SGx6VO+nzh+9JCvYn+bQhMYeH2GWM16uj22bWyQUftmT02JFc1QD+OWUk6xrPiISgY0O5sjPY4ROBfgo3orRxMuiwjgqP5+SllrYqI7q57S7Iv3eheXZJ+I=
+Received: from CY4PR11MB1511.namprd11.prod.outlook.com (10.172.69.144) by CY4PR11MB1351.namprd11.prod.outlook.com (10.169.252.137) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.1813.14; Tue, 23 Apr 2019 16:23:17 +0000
+Received: from CY4PR11MB1511.namprd11.prod.outlook.com ([fe80::b93d:1cf6:4279:7378]) by CY4PR11MB1511.namprd11.prod.outlook.com ([fe80::b93d:1cf6:4279:7378%5]) with mapi id 15.20.1813.017; Tue, 23 Apr 2019 16:23:17 +0000
+From: "Shwetha Bhandari (shwethab)" <shwethab@cisco.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: 2nd and short WGLC for draft-ietf-6lo-ap-nd-12
+Thread-Index: AQHU8T5VZEH5Sdw3ZU2FoQPnT2lFXaZKW2wA
+Date: Tue, 23 Apr 2019 16:23:16 +0000
+Message-ID: <2F55700A-1007-452F-BB34-410FEFE1FD6C@cisco.com>
+References: <58FF67B0-37B1-4034-AE26-B06A77D5B6BF@cisco.com>
+In-Reply-To: <58FF67B0-37B1-4034-AE26-B06A77D5B6BF@cisco.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+user-agent: Microsoft-MacOutlook/10.17.0.190309
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=shwethab@cisco.com; 
+x-originating-ip: [2001:420:c0e0:1006::474]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: d8b98fc6-dd1c-4c79-10d9-08d6c807fe07
+x-microsoft-antispam: BCL:0; PCL:0; RULEID:(2390118)(7020095)(4652040)(8989299)(4534185)(4627221)(201703031133081)(201702281549075)(8990200)(5600141)(711020)(4605104)(2017052603328)(7193020); SRVR:CY4PR11MB1351; 
+x-ms-traffictypediagnostic: CY4PR11MB1351:
+x-ms-exchange-purlcount: 5
+x-microsoft-antispam-prvs: <CY4PR11MB135156073B53607F0DD004A6D6230@CY4PR11MB1351.namprd11.prod.outlook.com>
+x-forefront-prvs: 0016DEFF96
+x-forefront-antispam-report: SFV:NSPM; SFS:(10009020)(396003)(376002)(366004)(39860400002)(346002)(136003)(53754006)(199004)(189003)(50854003)(36756003)(8936002)(229853002)(81166006)(6246003)(6486002)(8676002)(53936002)(86362001)(81156014)(256004)(6512007)(14444005)(5660300002)(478600001)(2906002)(6116002)(966005)(6306002)(316002)(305945005)(58126008)(99286004)(76176011)(14454004)(82746002)(2351001)(6436002)(25786009)(7736002)(186003)(91956017)(68736007)(6916009)(66574012)(11346002)(476003)(66946007)(2616005)(446003)(46003)(76116006)(2501003)(73956011)(33656002)(486006)(66476007)(66446008)(71200400001)(64756008)(53546011)(6506007)(83716004)(71190400001)(66556008)(102836004)(97736004)(5640700003); DIR:OUT; SFP:1101; SCL:1; SRVR:CY4PR11MB1351; H:CY4PR11MB1511.namprd11.prod.outlook.com; FPR:; SPF:None; LANG:en; PTR:InfoNoRecords; A:1; MX:1; 
+received-spf: None (protection.outlook.com: cisco.com does not designate permitted sender hosts)
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam-message-info: 8vQYYuxFmnGZ1nh1ExFoRc6SbJLZsfcazLt4T2sFB3bT7KzrT3Ue4GiofVH8OmDv6/4fzOxr98x01Azg0mcoFAhttJF8JawhQ+h4zfq5/Ng0LV6ea7ZLuLmgGVG6xT+DQNETGvHZBn680xihO/T9mL2M9PvZPxt1nrlyuBH0K9OGMcii5NNRNZiGZ9Pb2QLjl4UCK9E4tigBAoXEfZ2Lc2733WI7H3lBvuxfRClweiPWoeuTubBzVy8iDvRdzq/RMAKyvfZqVfkdV+at40Fi2wJMI1dErz8c5zmaExU53bR7WmcfrUdH0MnDQ0cq+MriifnllA+iATVSm9xH1kb9miOS8NwJ0GtbKkKLkT8nMX/MJJZVfiiSyNJbF1til6wsCwfDsWrzpszfDc7Q68ytBJiR0NRKq/1qeVVr4Oeey98=
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <DA7219C1EE026743994CC53402814E8D@namprd11.prod.outlook.com>
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-Network-Message-Id: d8b98fc6-dd1c-4c79-10d9-08d6c807fe07
+X-MS-Exchange-CrossTenant-originalarrivaltime: 23 Apr 2019 16:23:17.0424 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 5ae1af62-9505-4097-a69a-c1553ef7840e
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR11MB1351
+X-OriginatorOrg: cisco.com
+X-Outbound-SMTP-Client: 173.37.102.25, xch-rcd-015.cisco.com
+X-Outbound-Node: rcdn-core-9.cisco.com
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/tS3KM9vjZO_zxX7UArjhbZ93N38>
+Subject: Re: [6lo] 2nd and short WGLC for draft-ietf-6lo-ap-nd-12
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 23 Apr 2019 16:23:55 -0000
+
+SGVsbG8gQWxsLA0KDQpTaW5jZSB0aGVyZSBoYXZlIGJlZW4gbm8gb2JqZWN0aW9ucyB0byB0aGUg
+Y2hhbmdlcyBtYWRlIGJ5IHRoZSBhdXRob3JzIHRvIGRyYWZ0LWlldGYtNmxvLWFwLW5kIGluIC0x
+MiB2ZXJzaW9uLCB3ZSBhcmUgcmVhZHkgdG8gcHJvZ3Jlc3MgdGhpcyB0byBJRVNHIHJldmlldy4N
+Cg0KVGhhbmtzLA0KQ2FybGVzICYgU2h3ZXRoYQ0KDQrvu79PbiA0LzEyLzE5LCA4OjE1IFBNLCAi
+U2h3ZXRoYSBCaGFuZGFyaSAoc2h3ZXRoYWIpIiA8c2h3ZXRoYWJAY2lzY28uY29tPiB3cm90ZToN
+Cg0KICAgIEhlbGxvIEFsbCwNCiAgICANCiAgICBEdXJpbmcgdGhlIHNoZXBoZXJkIHJldmlldyBj
+b25jZXJucyB3ZXJlIHJhaXNlZCBieSB0aGUgc2hlcGhlcmQoU2h3ZXRoYSkgYWJvdXQgcmVkZWZp
+bml0aW9uIG9mIENyeXB0byBwYXJhbWV0ZXIgb3B0aW9uIGRlZmluZWQgaW4gUkZDIDM5NzEuIA0K
+ICAgIEZyb20gYSBzdW1tYXJ5IG9mIGNoYW5nZXMgYi9uIC0xMSAmIC0xMiBieSBQYXNjYWw6DQog
+ICAgMS5BdXRob3JzIGFncmVlZCB0byBjaGFuZ2UgdGhpcyBhbmQgaGF2ZSBwdWJsaXNoZWQgLTEy
+IHdpdGggbmV3IE5EIG9wdGlvbnMgcmVxdWVzdHMgdG8gYmUgYXNzaWduZWQgYnkgSUFOQS4NCiAg
+ICAyLkluIGFkZGl0aW9uLCBhdXRob3JzIGhhdmUgcmVzdG9yZWQgLyBzaW1wbGlmaWVkIHRleHQg
+b24gdGhlIENyeXB0by1JRCBnZW5lcmF0aW9uLiBUaGUgdGV4dCBub3cgaW5kaWNhdGVzIHRvIHNp
+bXBseSBoYXNoIGluIENJUE8gd2l0aCB0aGUgaGFzaCBmdW5jdGlvbiB0aGF0IGlzIHVzZWQgdG8g
+ZG8gdGhlIHNpZ25hdHVyZS4gDQogICAgMy5UaGUgZHJhZnQgYWxzbyBwcm9wb3NlcyB0byB1c2Ug
+dGhlIGNyeXB0by1JRCBhcyB0aGUgaW5kZXggZm9yIHNhZmVrZWVwaW5nIHRoZSBwdWJsaWMga2V5
+ICh0aGUgd2hvbGUgQ0lQTyBpbiBmYWN0KSBhcyBvcHBvc2VkIHRvIHRoZSBrZXkgaGFzaCB0aGF0
+IHdhcyBpbmhlcml0ZWQgZnJvbSByZXVzaW5nIFJGQyAzOTcxIG9wdGlvbnMuDQogICAgDQogICAg
+V2UgcmVxdWVzdCB0aGUgd29ya2luZyBncm91cCB0byByZXZpZXcgdGhlIGNoYW5nZXMgY2xvc2Vs
+eSwgcHJvdmlkZSBmZWVkYmFjayBhbmQgZXhwcmVzcyB0aGVpciBzdXBwb3J0IHRvIHByb2dyZXNz
+IHRoZSBkcmFmdC4NCiAgICBQbGVhc2UgY29uc2lkZXIgdGhpcyBhcyBhIHNob3J0IFdHTEMgdGhh
+dCBlbmRzIG9uIEFwcmlsIDIybmQuIFdlIHdpbGwgZXZhbHVhdGUgY29uc2Vuc3VzIGZvbGxvd2lu
+ZyBBcHJpbCAyMm5kLg0KICAgIA0KICAgIFRoYW5rcywNCiAgICBDYXJsZXMgYW5kIFNod2V0aGEN
+CiAgICANCiAgICBPbiA0LzExLzE5LCA3OjA1IEFNLCAiaW50ZXJuZXQtZHJhZnRzQGlldGYub3Jn
+IiA8aW50ZXJuZXQtZHJhZnRzQGlldGYub3JnPiB3cm90ZToNCiAgICANCiAgICAgICAgDQogICAg
+ICAgIEEgTmV3IEludGVybmV0LURyYWZ0IGlzIGF2YWlsYWJsZSBmcm9tIHRoZSBvbi1saW5lIElu
+dGVybmV0LURyYWZ0cyBkaXJlY3Rvcmllcy4NCiAgICAgICAgVGhpcyBkcmFmdCBpcyBhIHdvcmsg
+aXRlbSBvZiB0aGUgSVB2NiBvdmVyIE5ldHdvcmtzIG9mIFJlc291cmNlLWNvbnN0cmFpbmVkIE5v
+ZGVzIFdHIG9mIHRoZSBJRVRGLg0KICAgICAgICANCiAgICAgICAgICAgICAgICBUaXRsZSAgICAg
+ICAgICAgOiBBZGRyZXNzIFByb3RlY3RlZCBOZWlnaGJvciBEaXNjb3ZlcnkgZm9yIExvdy1wb3dl
+ciBhbmQgTG9zc3kgTmV0d29ya3MNCiAgICAgICAgICAgICAgICBBdXRob3JzICAgICAgICAgOiBQ
+YXNjYWwgVGh1YmVydA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEJlaGNldCBT
+YXJpa2F5YQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1vaGl0IFNldGhpDQog
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgUmVuZSBTdHJ1aWsNCiAgICAgICAgCUZp
+bGVuYW1lICAgICAgICA6IGRyYWZ0LWlldGYtNmxvLWFwLW5kLTEyLnR4dA0KICAgICAgICAJUGFn
+ZXMgICAgICAgICAgIDogMjgNCiAgICAgICAgCURhdGUgICAgICAgICAgICA6IDIwMTktMDQtMTAN
+CiAgICAgICAgDQogICAgICAgIEFic3RyYWN0Og0KICAgICAgICAgICBUaGlzIGRvY3VtZW50IHNw
+ZWNpZmllcyBhbiBleHRlbnNpb24gdG8gNkxvV1BBTiBOZWlnaGJvciBEaXNjb3ZlcnkNCiAgICAg
+ICAgICAgKE5EKSBwcm90b2NvbCBkZWZpbmVkIGluIFJGQzY3NzUgYW5kIHVwZGF0ZWQgaW4gUkZD
+ODUwNS4gIFRoZSBuZXcNCiAgICAgICAgICAgZXh0ZW5zaW9uIGlzIGNhbGxlZCBBZGRyZXNzIFBy
+b3RlY3RlZCBOZWlnaGJvciBEaXNjb3ZlcnkgKEFQLU5EKSBhbmQNCiAgICAgICAgICAgaXQgcHJv
+dGVjdHMgdGhlIG93bmVyIG9mIGFuIGFkZHJlc3MgYWdhaW5zdCBhZGRyZXNzIHRoZWZ0IGFuZA0K
+ICAgICAgICAgICBpbXBlcnNvbmF0aW9uIGF0dGFja3MgaW4gYSBsb3ctcG93ZXIgYW5kIGxvc3N5
+IG5ldHdvcmsgKExMTikuICBOb2Rlcw0KICAgICAgICAgICBzdXBwb3J0aW5nIHRoaXMgZXh0ZW5z
+aW9uIGNvbXB1dGUgYSBjcnlwdG9ncmFwaGljIGlkZW50aWZpZXIgKENyeXB0by0NCiAgICAgICAg
+ICAgSUQpIGFuZCB1c2UgaXQgd2l0aCBvbmUgb3IgbW9yZSBvZiB0aGVpciBSZWdpc3RlcmVkIEFk
+ZHJlc3Nlcy4gIFRoZQ0KICAgICAgICAgICBDcnlwdG8tSUQgaWRlbnRpZmllcyB0aGUgb3duZXIg
+b2YgdGhlIFJlZ2lzdGVyZWQgQWRkcmVzcyBhbmQgY2FuIGJlDQogICAgICAgICAgIHVzZWQgdG8g
+cHJvdmlkZSBwcm9vZiBvZiBvd25lcnNoaXAgb2YgdGhlIFJlZ2lzdGVyZWQgQWRkcmVzc2VzLiAg
+T25jZQ0KICAgICAgICAgICBhbiBhZGRyZXNzIGlzIHJlZ2lzdGVyZWQgd2l0aCB0aGUgQ3J5cHRv
+LUlEIGFuZCBhIHByb29mLW9mLW93bmVyc2hpcA0KICAgICAgICAgICBpcyBwcm92aWRlZCwgb25s
+eSB0aGUgb3duZXIgb2YgdGhhdCBhZGRyZXNzIGNhbiBtb2RpZnkgdGhlDQogICAgICAgICAgIHJl
+Z2lzdHJhdGlvbiBpbmZvcm1hdGlvbiwgdGhlcmVieSBlbmZvcmNpbmcgU291cmNlIEFkZHJlc3MN
+CiAgICAgICAgICAgVmFsaWRhdGlvbi4NCiAgICAgICAgDQogICAgICAgIA0KICAgICAgICBUaGUg
+SUVURiBkYXRhdHJhY2tlciBzdGF0dXMgcGFnZSBmb3IgdGhpcyBkcmFmdCBpczoNCiAgICAgICAg
+aHR0cHM6Ly9kYXRhdHJhY2tlci5pZXRmLm9yZy9kb2MvZHJhZnQtaWV0Zi02bG8tYXAtbmQvDQog
+ICAgICAgIA0KICAgICAgICBUaGVyZSBhcmUgYWxzbyBodG1saXplZCB2ZXJzaW9ucyBhdmFpbGFi
+bGUgYXQ6DQogICAgICAgIGh0dHBzOi8vdG9vbHMuaWV0Zi5vcmcvaHRtbC9kcmFmdC1pZXRmLTZs
+by1hcC1uZC0xMg0KICAgICAgICBodHRwczovL2RhdGF0cmFja2VyLmlldGYub3JnL2RvYy9odG1s
+L2RyYWZ0LWlldGYtNmxvLWFwLW5kLTEyDQogICAgICAgIA0KICAgICAgICBBIGRpZmYgZnJvbSB0
+aGUgcHJldmlvdXMgdmVyc2lvbiBpcyBhdmFpbGFibGUgYXQ6DQogICAgICAgIGh0dHBzOi8vd3d3
+LmlldGYub3JnL3JmY2RpZmY/dXJsMj1kcmFmdC1pZXRmLTZsby1hcC1uZC0xMg0KICAgICAgICAN
+CiAgICAgICAgDQogICAgICAgIFBsZWFzZSBub3RlIHRoYXQgaXQgbWF5IHRha2UgYSBjb3VwbGUg
+b2YgbWludXRlcyBmcm9tIHRoZSB0aW1lIG9mIHN1Ym1pc3Npb24NCiAgICAgICAgdW50aWwgdGhl
+IGh0bWxpemVkIHZlcnNpb24gYW5kIGRpZmYgYXJlIGF2YWlsYWJsZSBhdCB0b29scy5pZXRmLm9y
+Zy4NCiAgICAgICAgDQogICAgICAgIEludGVybmV0LURyYWZ0cyBhcmUgYWxzbyBhdmFpbGFibGUg
+YnkgYW5vbnltb3VzIEZUUCBhdDoNCiAgICAgICAgZnRwOi8vZnRwLmlldGYub3JnL2ludGVybmV0
+LWRyYWZ0cy8NCiAgICAgICAgDQogICAgICAgIF9fX19fX19fX19fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fDQogICAgICAgIDZsbyBtYWlsaW5nIGxpc3QNCiAgICAgICAgNmxv
+QGlldGYub3JnDQogICAgICAgIGh0dHBzOi8vd3d3LmlldGYub3JnL21haWxtYW4vbGlzdGluZm8v
+NmxvDQogICAgICAgIA0KICAgIA0KICAgIA0KDQo=
+
+
+From nobody Wed Apr 24 01:54:47 2019
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 5B23F1202FD for <6lo@ietfa.amsl.com>; Wed, 24 Apr 2019 01:54:45 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.199
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.199 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 7vJ_XAdLyxSn for <6lo@ietfa.amsl.com>; Wed, 24 Apr 2019 01:54:42 -0700 (PDT)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 380B3120242 for <6lo@ietf.org>; Wed, 24 Apr 2019 01:54:42 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.39.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id x3O8sd9O023010 for <6lo@ietf.org>; Wed, 24 Apr 2019 10:54:39 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id 620841D53C1 for <6lo@ietf.org>; Wed, 24 Apr 2019 10:54:39 +0200 (CEST)
+Received: from 2.217.56.126 by webmail.entel.upc.edu with HTTP; Wed, 24 Apr 2019 10:54:39 +0200
+Message-ID: <3821d72b6775aa954dec6f8bbb3723f8.squirrel@webmail.entel.upc.edu>
+Date: Wed, 24 Apr 2019 10:54:39 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.2 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Wed, 24 Apr 2019 10:54:39 +0200 (CEST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/5hX8m18cD-2f0RFIRCN_8OQHPy8>
+Subject: [6lo] WG Last Call: draft-ietf-6lo-minimal-fragment-01
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 24 Apr 2019 08:54:46 -0000
+
+Dear 6lo WG,
+
+Authors of draft-ietf-6lo-minimal-fragment-01 expressed in IETF 104 that
+they believe that the document is ready for WGLC. No comments or
+objections were made in this regard.
+
+Therefore, this email starts a WGLC for draft-ietf-6lo-minimal-fragment-01:
+https://tools.ietf.org/html/draft-ietf-6lo-minimal-fragment-01
+
+The WGLC will end on Wednesday, 8th of May.
+
+Please provide your feedback on the document on the mailing list, even if
+it is just a short "looks good" statement.
+
+Thank you in advance.
+
+Cheers,
+
+Shwetha and Carles
+
+
+From nobody Wed Apr 24 02:19:18 2019
+Return-Path: <yasuyuki.tanaka@inria.fr>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 161631202FE for <6lo@ietfa.amsl.com>; Wed, 24 Apr 2019 02:19:17 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -6.9
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.9 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id ECMnVHrVMv9u for <6lo@ietfa.amsl.com>; Wed, 24 Apr 2019 02:19:14 -0700 (PDT)
+Received: from mail3-relais-sop.national.inria.fr (mail3-relais-sop.national.inria.fr [192.134.164.104]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 15CFD12023F for <6lo@ietf.org>; Wed, 24 Apr 2019 02:19:13 -0700 (PDT)
+X-IronPort-AV: E=Sophos;i="5.60,389,1549926000"; d="scan'208";a="303813872"
+Received: from wifi-pro-82-156.paris.inria.fr ([128.93.82.156]) by mail3-relais-sop.national.inria.fr with ESMTP/TLS/DHE-RSA-AES256-GCM-SHA384; 24 Apr 2019 11:19:11 +0200
+Content-Type: text/plain; charset=us-ascii
+Mime-Version: 1.0 (Mac OS X Mail 12.4 \(3445.104.8\))
+From: Yasuyuki Tanaka <yasuyuki.tanaka@inria.fr>
+X-Priority: 3 (Normal)
+In-Reply-To: <3821d72b6775aa954dec6f8bbb3723f8.squirrel@webmail.entel.upc.edu>
+Date: Wed, 24 Apr 2019 11:19:11 +0200
+Cc: Yasuyuki Tanaka <yasuyuki.tanaka@inria.fr>
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <07DBE790-CBA4-4D9D-9687-ADE651C51B79@inria.fr>
+References: <3821d72b6775aa954dec6f8bbb3723f8.squirrel@webmail.entel.upc.edu>
+To: 6lo@ietf.org
+X-Mailer: Apple Mail (2.3445.104.8)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/x0TyJGSAmpPR9eLYUp96mjCUGOI>
+Subject: Re: [6lo] WG Last Call: draft-ietf-6lo-minimal-fragment-01
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 24 Apr 2019 09:19:17 -0000
+
+Looks good!
+
+A couple of trivial comments:
+
+(1) =
+https://tools.ietf.org/html/draft-ietf-6lo-minimal-fragment-01#section-2.2=
+
+>                                             Assuming 1 kB reassembly
+>    buffers, typical nodes only have enough memory for 1-3 reassembly
+>    buffers.
+
+Here, "Assuming a 1kB reassembly buffer"? (singular)
+
+
+(2) =
+https://tools.ietf.org/html/draft-ietf-6lo-minimal-fragment-01#section-7
+
+These two drafts has newer versions:
+
+> [I-D.ietf-lwig-6lowpan-virtual-reassembly]
+> [I-D.thubert-6lo-fragment-recovery]
+
+=
+https://tools.ietf.org/html/draft-ietf-lwig-6lowpan-virtual-reassembly-01
+https://tools.ietf.org/html/draft-ietf-6lo-fragment-recovery-02
+
+Best,
+Yatch
+
+> On Apr 24, 2019, at 10:54, Carles Gomez Montenegro =
+<carlesgo@entel.upc.edu> wrote:
+>=20
+> Dear 6lo WG,
+>=20
+> Authors of draft-ietf-6lo-minimal-fragment-01 expressed in IETF 104 =
+that
+> they believe that the document is ready for WGLC. No comments or
+> objections were made in this regard.
+>=20
+> Therefore, this email starts a WGLC for =
+draft-ietf-6lo-minimal-fragment-01:
+> https://tools.ietf.org/html/draft-ietf-6lo-minimal-fragment-01
+>=20
+> The WGLC will end on Wednesday, 8th of May.
+>=20
+> Please provide your feedback on the document on the mailing list, even =
+if
+> it is just a short "looks good" statement.
+>=20
+> Thank you in advance.
+>=20
+> Cheers,
+>=20
+> Shwetha and Carles
+>=20
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+
+
+From nobody Thu Apr 25 08:40:03 2019
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id A78B512016D; Thu, 25 Apr 2019 08:39:48 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Shwetha Bhandari via Datatracker <noreply@ietf.org>
+To: <suresh@kaloom.com>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.95.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Cc: 6lo-chairs@ietf.org, iesg-secretary@ietf.org, shwethab@cisco.com, Shwetha Bhandari <shwethab@cisco.com>, 6lo@ietf.org
+Message-ID: <155620678867.23402.13887427963426049535.idtracker@ietfa.amsl.com>
+Date: Thu, 25 Apr 2019 08:39:48 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/To6dgwmzHXpueS3HdwSY3BMiorU>
+Subject: [6lo] Publication has been requested for draft-ietf-6lo-ap-nd-12
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 25 Apr 2019 15:40:01 -0000
+
+Shwetha Bhandari has requested publication of draft-ietf-6lo-ap-nd-12 as Proposed Standard on behalf of the 6LO working group.
+
+Please verify the document's state at https://datatracker.ietf.org/doc/draft-ietf-6lo-ap-nd/
+
+
+From nobody Tue Apr 30 07:09:45 2019
+Return-Path: <georgios.papadopoulos@imt-atlantique.fr>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id B696F120116 for <6lo@ietfa.amsl.com>; Tue, 30 Apr 2019 07:09:42 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2
+X-Spam-Level: 
+X-Spam-Status: No, score=-2 tagged_above=-999 required=5 tests=[BAYES_00=-1.9,  DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=imt-atlantique.fr
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 7YYOuT4ZVv1T for <6lo@ietfa.amsl.com>; Tue, 30 Apr 2019 07:09:38 -0700 (PDT)
+Received: from zproxy110.enst.fr (zproxy110.enst.fr [137.194.2.192]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 69CC01200A1 for <6lo@ietf.org>; Tue, 30 Apr 2019 07:09:37 -0700 (PDT)
+Received: from localhost (localhost [IPv6:::1]) by zproxy110.enst.fr (Postfix) with ESMTP id A13C182AA3; Tue, 30 Apr 2019 16:09:35 +0200 (CEST)
+Received: from zproxy110.enst.fr ([IPv6:::1]) by localhost (zproxy110.enst.fr [IPv6:::1]) (amavisd-new, port 10032) with ESMTP id hmEUIXNhsMJb; Tue, 30 Apr 2019 16:09:34 +0200 (CEST)
+Received: from localhost (localhost [IPv6:::1]) by zproxy110.enst.fr (Postfix) with ESMTP id 8770782A98; Tue, 30 Apr 2019 16:09:34 +0200 (CEST)
+DKIM-Filter: OpenDKIM Filter v2.10.3 zproxy110.enst.fr 8770782A98
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=imt-atlantique.fr; s=50EA75E8-DE22-11E6-A6DE-0662BA474D24; t=1556633374; bh=V2FJGo94Gpk8FMLm37bkfVvVWiAQqYc1/H+DxynKEdM=; h=Date:From:To:Message-ID:MIME-Version; b=eRORtVD3de8sqWH145cDw6RCH/H/6Let9Va3rN8oW2qyy4T8qmmhB0sCknnF6f1nN vIGal+N/I//ISTIRBwdCgPdsI/66jtV+RyLZu1NpEVN0n89N8ny6tOsUndQ3L8y4P9 HXCFYNvmJUI0qThHZRbXPJ6tdL54IfJCDlatjXBo=
+X-Virus-Scanned: amavisd-new at zproxy110.enst.fr
+Received: from zproxy110.enst.fr ([IPv6:::1]) by localhost (zproxy110.enst.fr [IPv6:::1]) (amavisd-new, port 10026) with ESMTP id 2aI4-DIkOZqJ; Tue, 30 Apr 2019 16:09:34 +0200 (CEST)
+Received: from zmail132.enst.fr (zmail132.enst.fr [137.194.2.204]) by zproxy110.enst.fr (Postfix) with ESMTP id 5785182A87; Tue, 30 Apr 2019 16:09:34 +0200 (CEST)
+Date: Tue, 30 Apr 2019 16:09:34 +0200 (CEST)
+From: Georgios PAPADOPOULOS <georgios.papadopoulos@imt-atlantique.fr>
+To: Carles Gomez Montenegro <carlesgo@entel.upc.edu>
+Cc: 6lo@ietf.org
+Message-ID: <40213847.7967367.1556633374177.JavaMail.zimbra@imt-atlantique.fr>
+In-Reply-To: <3821d72b6775aa954dec6f8bbb3723f8.squirrel@webmail.entel.upc.edu>
+References: <3821d72b6775aa954dec6f8bbb3723f8.squirrel@webmail.entel.upc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-Originating-IP: [2001:660:7301:3728:4c7a:ed10:732a:ed7]
+X-Mailer: Zimbra 8.8.11_GA_3780 (ZimbraWebClient - GC73 (Mac)/8.8.11_GA_3787)
+Thread-Topic: WG Last Call: draft-ietf-6lo-minimal-fragment-01
+Thread-Index: GLEBTJEqlfh/gvePdOKXl+D6ucT7vQ==
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/JXkaF82msqpqcUPgXWLoUtg-tkI>
+Subject: Re: [6lo] WG Last Call: draft-ietf-6lo-minimal-fragment-01
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 30 Apr 2019 14:09:43 -0000
+
+Hello Carles, Thomas and co-authors,=20
+
+As promised during the last IETF meeting in Prague, here is my review.
+
+In overall, the document seems solid, well structured and well written.
+It is easy to understand and to follow.
+
+I have one main question/comment:
+Considering node A that fragments its packet to three fragments, and intend=
+ to transmit to B.
+B, when employing VRB technique, what would do when it will receive first t=
+he fragment 2
+instead of fragment 1?=20
+
+Bellow is the draft contents with my annotations, starting with =E2=80=9C[G=
+P]".
+
+Cheers,
+Georgios
+
+=E2=80=94 =E2=80=94 =E2=80=94=20
+
+6lo                                                     T. Watteyne, Ed.
+Internet-Draft                                            Analog Devices
+Intended status: Informational                                C. Bormann
+Expires: September 12, 2019                      Universitaet Bremen TZI
+                                                              P. Thubert
+                                                                   Cisco
+                                                          March 11, 2019
+
+
+                    LLN Minimal Fragment Forwarding
+                   draft-ietf-6lo-minimal-fragment-01
+
+Abstract
+
+   This document gives an overview of LLN Minimal Fragment Forwarding.
+   When employing adaptation layer fragmentation in 6LoWPAN, it may be
+   beneficial for a forwarder not to have to reassemble each packet in
+   its entirety before forwarding it.  This has always been possible
+   with the original fragmentation design of RFC4944.  This document is
+   a companion document to [I-D.ietf-lwig-6lowpan-virtual-reassembly],
+   which details the virtual Reassembly Buffer (VRB) implementation
+   technique which reduces the latency and increases end-to-end
+   reliability in route-over forwarding.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on September 12, 2019.
+
+Copyright Notice
+
+   Copyright (c) 2019 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+
+
+
+Watteyne, et al.       Expires September 12, 2019               [Page 1]
+Internet-Draft        watteyne-6lo-minimal-fragment           March 2019
+
+
+   (https://trustee.ietf.org/license-info) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Overview of 6LoWPAN Fragmentation . . . . . . . . . . . . . .   2
+   2.  Limits of Per-Hop Fragmentation and Reassembly  . . . . . . .   4
+     2.1.  Latency . . . . . . . . . . . . . . . . . . . . . . . . .   4
+     2.2.  Memory Management and Reliability . . . . . . . . . . . .   4
+   3.  Virtual Reassembly Buffer (VRB) Implementation  . . . . . . .   5
+   4.  Security Considerations . . . . . . . . . . . . . . . . . . .   5
+   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   6
+   6.  Acknowledgments . . . . . . . . . . . . . . . . . . . . . . .   6
+   7.  Informative References  . . . . . . . . . . . . . . . . . . .   6
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
+
+1.  Overview of 6LoWPAN Fragmentation
+
+   6LoWPAN fragmentation is defined in [RFC4944].  Although [RFC6282]
+   updates [RFC4944], it does not redefine 6LoWPAN fragmentation.
+
+   We use Figure 1 to illustrate 6LoWPAN fragmentation.  We assume node
+   A forwards a packet to node B, possibly as part of a multi-hop route
+   between IPv6 source and destination nodes which are neither A nor B.
+
+                  +---+                     +---+
+           ... ---| A |-------------------->| B |--- ...
+                  +---+                     +---+
+                                 # (frag. 5)
+
+                123456789                 123456789
+               +---------+               +---------+
+               |   #  ###|               |###  #   |
+               +---------+               +---------+
+                  outgoing                incoming
+             fragmentation                reassembly
+                    buffer                buffer
+
+         Figure 1: Fragmentation at node A, reassembly at node B.
+
+   Node A starts by compacting the IPv6 packet using the header
+   compression mechanism defined in [RFC6282].  If the resulting 6LoWPAN
+   packet does not fit into a single link-layer frame, node A's 6LoWPAN
+
+
+
+Watteyne, et al.       Expires September 12, 2019               [Page 2]
+Internet-Draft        watteyne-6lo-minimal-fragment           March 2019
+
+
+   sublayer cuts it into multiple 6LoWPAN fragments, which it transmits
+   as separate link-layer frames to node B.  Node B's 6LoWPAN sublayer
+   reassembles these fragments, inflates the compressed header fields
+   back to the original IPv6 header, and hands over the full IPv6 packet
+   to its IPv6 layer.
+
+   In Figure 1, a packet forwarded by node A to node B is cut into nine
+   fragments, numbered 1 to 9.  Each fragment is represented by the '#'
+   symbol.  Node A has sent fragments 1, 2, 3, 5, 6 to node B.  Node B
+   has received fragments 1, 2, 3, 6 from node A.  Fragment 5 is still
+   being transmitted at the link layer from node A to node B.
+
+
+[GP] Isn=E2=80=99t it more straightforward to consider 1, 2, 3 and 4 been s=
+ent,=20
+5 is still being transmitted, while, 6, 7, 8 and 9 to be transmitted?
+Otherwise, there are concerns, why fragments 5 and 6 before 4?
+Fragment 4 was transmitted earlier and was not successful?
+
+
+   Conceptually, a reassembly buffer for 6LoWPAN contains:
+
+   o  a datagram_size,
+   o  a datagram_tag, associated to the link-layer sender and receiver
+      addresses to which the datagram_tag is local,
+   o  the actual packet data from the fragments received so far, in a
+      form that makes it possible to detect when the whole packet has
+      been received and can be processed or forwarded,
+   o  a timer that allows discarding a partially reassembled packet
+      after some timeout.
+
+   A fragmentation header is added to each fragment; it indicates what
+   portion of the packet that fragment corresponds to.  Section 5.3 of
+   [RFC4944] defines the format of the header for the first and
+   subsequent fragments.  All fragments are tagged with a 16-bit
+   "datagram_tag", used to identify which packet each fragment belongs
+   to.  Each fragment can be uniquely identified by the source and
+   destination link-layer addresses of the frame that carries it, and
+   the datagram_tag.
+
+[GP] This is not entirely true, right? This is yet, another limitation=20
+of RFC 4944. There is no guarantee that two different source nodes=20
+(A and B) may pick up the same =E2=80=9Cdatagram_tag=E2=80=9D, and send the=
+ir=20
+fragments to C, and then C when sending to D, will have two fragments
+with same tags, and the same source and destination link-layer addresses.
+
+=09  The value of the datagram_tag only needs to be
+   locally unique to nodes A and B.
+
+   Node B's typical behavior, per [RFC4944], is as follows.  Upon
+   receiving a fragment from node A with a datagram_tag previously
+   unseen from node A, node B allocates a buffer large enough to hold
+   the entire packet.  The length of the packet is indicated in each
+   fragment (the datagram_size field), so node B can allocate the buffer
+   even if the first fragment it receives is not fragment 1.  As
+   fragments come in, node B fills the buffer.  When all fragments have
+   been received, node B inflates the compressed header fields into an
+   IPv6 header, and hands the resulting IPv6 packet to the IPv6 layer.
+
+   This behavior typically results in per-hop fragmentation and
+   reassembly.  That is, the packet is fully reassembled, then
+   (re)fragmented, at every hop.
+
+
+
+
+
+Watteyne, et al.       Expires September 12, 2019               [Page 3]
+Internet-Draft        watteyne-6lo-minimal-fragment           March 2019
+
+
+2.  Limits of Per-Hop Fragmentation and Reassembly
+
+   There are at least 2 limits to doing per-hop fragmentation and
+   reassembly.  See [ARTICLE] for detailed simulation results on both
+   limits.
+
+2.1.  Latency
+
+   When reassembling, a node needs to wait for all the fragments to be
+   received before being able to generate the IPv6 packet, and possibly
+   forward it to the next hop.  This repeats at every hop.
+
+   This may result in increased end-to-end latency compared to a case
+   where each fragment is forwarded without per-hop reassembly.
+
+2.2.  Memory Management and Reliability
+
+   Constrained nodes have limited memory.  Assuming 1 kB reassembly
+   buffers, typical nodes only have enough memory for 1-3 reassembly
+   buffers.
+
+   Assuming the topology from Figure 2, where nodes A, B, C and D all
+   send packets through node E.  We further assume that node E's memory
+   can only hold 3 reassembly buffers.
+
+                  +---+       +---+
+          ... --->| A |------>| B |
+                  +---+       +---+\
+                                    \
+                                    +---+    +---+
+                                    | E |--->| F | ...
+                                    +---+    +---+
+                                    /
+                                   /
+                  +---+       +---+
+          ... --->| C |------>| D |
+                  +---+       +---+
+
+            Figure 2: Illustrating the Memory Management Issue.
+
+   When nodes A, B and C concurrently send fragmented packets, all 3
+   reassembly buffers in node E are occupied.  If, at that moment, node
+   D also sends a fragmented packet, node E has no option but to drop
+   one of the packets, lowering end-to-end reliability.
+
+
+
+
+
+
+
+Watteyne, et al.       Expires September 12, 2019               [Page 4]
+Internet-Draft        watteyne-6lo-minimal-fragment           March 2019
+
+
+3.  Virtual Reassembly Buffer (VRB) Implementation
+
+   Virtual Reassembly Buffer (VRB) is the implementation technique
+   described in [I-D.ietf-lwig-6lowpan-virtual-reassembly] in which a
+   forwarder does not reassemble each packet in its entirety before
+   forwarding it.
+
+   VRB overcomes the limits listed in Section 2.  Nodes don't=20
+  =20
+[GP] don=E2=80=99t =E2=80=94> do not
+
+   wait for
+   the last fragment before forwarding, reducing end-to-end latency.
+   Similarly, the memory footprint of VRB is just the VRB table,
+   reducing the packet drop probability significantly.
+
+   There are, however, limits:
+
+   Non-zero Packet Drop Probability:  Each VRB table entry can be 12 B
+       (assuming 16-bit link-layer addresses).  This is a footprint 2
+       orders of magnitude smaller compared to needing a 1280-byte
+       reassembly buffer for each packet.  Yet, the size of the VRB
+       table necessarily remains finite.  In the extreme case where a
+       node is required to concurrently forward more packets that it has
+       entries in its VRB table, packets are dropped.
+   No Fragment Recovery:  There is no mechanism in VRB for the node that
+       reassembles a packet to request a single missing fragment.
+       Dropping a fragment requires the whole packet to be resent.  This
+       causes unnecessary traffic, as fragments are forwarded even when
+       the destination node can never construct the original IPv6
+       packet.
+   No Per-Fragment Routing:  All subsequent fragments follow the same
+       sequence of hops from the source to the destination node as
+       fragment 1.
+
+[GP] Maybe a clarification could be added in the last limit, i.e., that=20
+only the fragment 1 has the sources and destination addresses.
+
+   The severity and occurrence of these limits depends on the link-layer
+   used.  Whether these limits are acceptable depends entirely on the
+   requirements the application places on the network.
+
+   If the limits are present and not acceptable for the application,
+   future specifications may define new protocols to overcome these
+   limits.  One example is [I-D.thubert-6lo-fragment-recovery] which
+   defines a protocol which allows fragment recovery.
+
+4.  Security Considerations
+
+   An attacker can perform a DoS attack on a node implementing VRB by
+
+[GP] DoS is not defined earlier
+
+   generating a large number of bogus "fragment 1" fragments without
+   sending subsequent fragments.  This causes the VRB table to fill up.
+
+   Secure joining and the link-layer security that it sets up protects
+   against those attacks from network outsiders.
+
+
+
+Watteyne, et al.       Expires September 12, 2019               [Page 5]
+Internet-Draft        watteyne-6lo-minimal-fragment           March 2019
+
+
+5.  IANA Considerations
+
+   No requests to IANA are made by this document.
+
+6.  Acknowledgments
+
+   The authors would like to thank Yasuyuki Tanaka for his in-depth
+   review of this document.
+
+7.  Informative References
+
+   [ARTICLE]  Tanaka, Y., Minet, P., and T. Watteyne, "6LoWPAN Fragment
+              Forwarding", IEEE Communications Standards Magazine ,
+              2009.
+
+[GP] I assume the year is 2019 and not 2009.
+
+
+   [BOOK]     Shelby, Z. and C. Bormann, "6LoWPAN", John Wiley & Sons,
+              Ltd monograph, DOI 10.1002/9780470686218, November 2009.
+
+   [I-D.ietf-lwig-6lowpan-virtual-reassembly]
+              Bormann, C. and T. Watteyne, "Virtual reassembly buffers
+              in 6LoWPAN", draft-ietf-lwig-6lowpan-virtual-reassembly-00
+              (work in progress), July 2018.
+
+   [I-D.thubert-6lo-fragment-recovery]
+              Thubert, P., "6LoWPAN Selective Fragment Recovery", draft-
+              thubert-6lo-fragment-recovery-01 (work in progress), June
+              2018.
+
+   [RFC4944]  Montenegro, G., Kushalnagar, N., Hui, J., and D. Culler,
+              "Transmission of IPv6 Packets over IEEE 802.15.4
+              Networks", RFC 4944, DOI 10.17487/RFC4944, September 2007,
+              <https://www.rfc-editor.org/info/rfc4944>.
+
+   [RFC6282]  Hui, J., Ed. and P. Thubert, "Compression Format for IPv6
+              Datagrams over IEEE 802.15.4-Based Networks", RFC 6282,
+              DOI 10.17487/RFC6282, September 2011,
+              <https://www.rfc-editor.org/info/rfc6282>.
+
+Authors' Addresses
+
+   Thomas Watteyne (editor)
+   Analog Devices
+   32990 Alvarado-Niles Road, Suite 910
+   Union City, CA  94587
+   USA
+
+   Email: thomas.watteyne@analog.com
+
+
+
+
+Watteyne, et al.       Expires September 12, 2019               [Page 6]
+Internet-Draft        watteyne-6lo-minimal-fragment           March 2019
+
+
+   Carsten Bormann
+   Universitaet Bremen TZI
+   Postfach 330440
+   Bremen  D-28359
+   Germany
+
+   Email: cabo@tzi.org
+
+
+   Pascal Thubert
+   Cisco Systems, Inc
+   Building D
+   45 Allee des Ormes - BP1200
+   MOUGINS - Sophia Antipolis  06254
+   France
+
+   Email: pthubert@cisco.com
+
+Watteyne, et al.       Expires September 12, 2019               [Page 7]
+
+
+
+----- Original Message -----
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+Sent: Wednesday, April 24, 2019 10:54:39 AM
+Subject: [6lo] WG Last Call: draft-ietf-6lo-minimal-fragment-01
+
+Dear 6lo WG,
+
+Authors of draft-ietf-6lo-minimal-fragment-01 expressed in IETF 104 that
+they believe that the document is ready for WGLC. No comments or
+objections were made in this regard.
+
+Therefore, this email starts a WGLC for draft-ietf-6lo-minimal-fragment-01:
+https://tools.ietf.org/html/draft-ietf-6lo-minimal-fragment-01
+
+The WGLC will end on Wednesday, 8th of May.
+
+Please provide your feedback on the document on the mailing list, even if
+it is just a short "looks good" statement.
+
+Thank you in advance.
+
+Cheers,
+
+Shwetha and Carles
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org
+https://www.ietf.org/mailman/listinfo/6lo
+

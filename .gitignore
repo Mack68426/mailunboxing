@@ -1,15 +1,12 @@
 # specific directory
-emails/
-resource/
-mbox*/
-FTP/
 .*
-!.gitignore
+
 
 # specific files
-*.csv
+!.gitignore
 *.tar.gz
 *.txt
+*.csv
 
 # special rules
 *-test.py

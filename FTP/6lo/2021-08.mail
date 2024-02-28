@@ -1,0 +1,2012 @@
+
+From nobody Mon Aug  2 01:56:32 2021
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id AD70E3A142D for <6lo@ietfa.amsl.com>; Mon,  2 Aug 2021 01:56:30 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.195
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.195 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id jbaCBQuMq29u for <6lo@ietfa.amsl.com>; Mon,  2 Aug 2021 01:56:26 -0700 (PDT)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 523B13A142C for <6lo@ietf.org>; Mon,  2 Aug 2021 01:56:26 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 1728uOwa050318 for <6lo@ietf.org>; Mon, 2 Aug 2021 10:56:24 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id 1E5261D53C1 for <6lo@ietf.org>; Mon,  2 Aug 2021 10:56:24 +0200 (CEST)
+Received: from 83.53.210.110 by webmail.entel.upc.edu with HTTP; Mon, 2 Aug 2021 10:58:02 +0200
+Message-ID: <0fe4fb14ae52e6b7fa1e8b48a9ca7cb0.squirrel@webmail.entel.upc.edu>
+Date: Mon, 2 Aug 2021 10:58:02 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Mon, 02 Aug 2021 10:56:24 +0200 (CEST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/UFyJHp9yybOcOVKdYqPdpJUQ8cY>
+Subject: [6lo] Minutes from 6Lo at IETF 111
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 02 Aug 2021 08:56:31 -0000
+
+Dear WG,
+
+Please find below the initial version of the minutes from the 6Lo session
+at IETF 111:
+https://datatracker.ietf.org/meeting/111/materials/minutes-111-6lo-00.txt
+
+Should you have any corrections, please do not hesitate to let us know.
+
+Many thanks to our excellent minute takers, Georgios Z. Papadopoulos, and
+Dominique Barthel.
+
+And many thanks as well to presenters and participants for the productive
+meeting!
+
+Looking forward to follow-up discussions on the mailing list.
+
+Cheers,
+
+Shwetha and Carles
+
+
+From nobody Thu Aug  5 22:29:03 2021
+Return-Path: <wwwrun@rfc-editor.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id D69AE3A1E0D; Thu,  5 Aug 2021 22:28:52 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.901
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.901 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id IGqJt00_RNL4; Thu,  5 Aug 2021 22:28:47 -0700 (PDT)
+Received: from rfc-editor.org (rfc-editor.org [4.31.198.49]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id DA30F3A1E0B; Thu,  5 Aug 2021 22:28:47 -0700 (PDT)
+Received: by rfc-editor.org (Postfix, from userid 30) id 8B897F4071E; Thu,  5 Aug 2021 22:28:19 -0700 (PDT)
+To: kerlyn@ieee.org, kerlyn@ieee.org, jpmartocci@sbcglobal.net, cneilson@deltacontrols.com, stuart.donaldson@honeywell.com
+X-PHP-Originating-Script: 1005:errata_mail_lib.php
+From: RFC Errata System <rfc-editor@rfc-editor.org>
+Cc: ek.ietf@gmail.com, iesg@ietf.org, 6lo@ietf.org, rfc-editor@rfc-editor.org
+Content-Type: text/plain; charset=UTF-8
+Message-Id: <20210806052819.8B897F4071E@rfc-editor.org>
+Date: Thu,  5 Aug 2021 22:28:19 -0700 (PDT)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/k942PcP7NwPr4l8C-13WBQ0VEbw>
+Subject: [6lo] [Errata Verified] RFC8163 (5996)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 06 Aug 2021 05:28:53 -0000
+
+The following errata report has been verified for RFC8163,
+"Transmission of IPv6 over Master-Slave/Token-Passing (MS/TP) Networks". 
+
+--------------------------------------
+You may review the report below and at:
+https://www.rfc-editor.org/errata/eid5996
+
+--------------------------------------
+Status: Verified
+Type: Technical
+
+Reported by: Kerry Lynn <kerlyn@ieee.org>
+Date Reported: 2020-02-27
+Verified by: Erik Kline (IESG)
+
+Section: Appendix B.
+
+Original Text
+-------------
+       /*
+        * Sanity check the encoding to prevent the while() loop below
+        * from overrunning the output buffer.
+        */
+       if (read_index + code > length)
+         return 0;
+
+
+Corrected Text
+--------------
+       /*
+        * Sanity check the encoding to prevent the while() loop below
+        * from overrunning the output buffer.
+        */
+       if (code == 0 || read_index + code > length)
+         return 0;
+
+
+Notes
+-----
+This was submitted as a change to [BACnet], Annex T, by James Butler.  The normative procedure for decoding COBS is correct in [BACnet], 9.10.3.2(a) but this bug appears in the informative example in Annex T.  Since the purpose of COBS encoding is to eliminate all zero bytes from the data, the presence of a zero indicates an error.
+
+--------------------------------------
+RFC8163 (draft-ietf-6lo-6lobac-08)
+--------------------------------------
+Title               : Transmission of IPv6 over Master-Slave/Token-Passing (MS/TP) Networks
+Publication Date    : May 2017
+Author(s)           : K. Lynn, Ed., J. Martocci, C. Neilson, S. Donaldson
+Category            : PROPOSED STANDARD
+Source              : IPv6 over Networks of Resource-constrained Nodes
+Area                : Internet
+Stream              : IETF
+Verifying Party     : IESG
+
+
+From nobody Fri Aug  6 01:07:50 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 31B5F3A245E; Fri,  6 Aug 2021 01:07:44 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Lars Eggert via Datatracker <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-plc@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org, Carles Gomez <carlesgo@entel.upc.edu>, carlesgo@entel.upc.edu
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.35.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: Lars Eggert <lars@eggert.org>
+Message-ID: <162823726414.7159.1497655176870196376@ietfa.amsl.com>
+Date: Fri, 06 Aug 2021 01:07:44 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/P9BqNLJthK9P8BkhdZ9wGJbNRWM>
+Subject: [6lo] Lars Eggert's No Objection on draft-ietf-6lo-plc-06: (with COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 06 Aug 2021 08:07:46 -0000
+
+Lars Eggert has entered the following ballot position for
+draft-ietf-6lo-plc-06: No Objection
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/iesg/statement/discuss-criteria.html
+for more information about DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+
+
+----------------------------------------------------------------------
+COMMENT:
+----------------------------------------------------------------------
+
+Section 3.1. , paragraph 4, comment:
+>                        Figure 1: PLC Protocol Stack
+
+Since this says "TCP/UDP", are other transport protocols not supported? Or else
+should this say "Transport Layer" instead?
+
+Found terminology that should be reviewed for inclusivity; see
+https://www.rfc-editor.org/part2/#inclusive_language for background and more
+guidance:
+
+ * Term "master"; alternatives might be "active", "central", "initiator",
+   "leader", "main", "orchestrator", "parent", "primary", "server".
+
+ * Term "natively"; alternatives might be "built-in", "fundamental",
+   "ingrained", "intrinsic", "original".
+
+-------------------------------------------------------------------------------
+All comments below are about very minor potential issues that you may choose to
+address in some way - or ignore - as you see fit. Some were flagged by
+automated tools (via https://github.com/larseggert/ietf-reviewtool), so there
+will likely be some false positives. There is no need to let me know what you
+did with these suggestions.
+
+Section 1. , paragraph 3, nit:
+-    been fully adapted for IPv6 based constrained networks.  The
+-                               ^
+-    resource-constrained IoT related scenarios lie in the low voltage PLC
+-                            ^
++    been fully adapted for IPv6-based constrained networks.  The
++                               ^
++    resource-constrained IoT-related scenarios lie in the low voltage PLC
++                            ^
+
+Section 1. , paragraph 3, nit:
+-    networks, due to its large address space and efficent address auto-
++    networks, due to its large address space and efficient address auto-
++                                                      +
+
+Section 1. , paragraph 4, nit:
+-    them have LLN (low power and lossy network) characteristics, i.e.
++    them have LLN (low power and lossy network) characteristics, i.e.,
++                                                                     +
+
+Section 3.3. , paragraph 4, nit:
+-    MTU in high-noise communication environment.  Thus the 6lo functions,
++    MTU in high-noise communication environments.  Thus, the 6lo functions,
++                                               +       +
+
+Section 3.3. , paragraph 5, nit:
+-    required for G.9903-based networks to adapt IPv6.
+-                                           ^^^^
++    required for G.9903-based networks to carry IPv6.
++                                          + ^^^
+
+Section 3.4. , paragraph 3, nit:
+-       is a layer 3 routing protocol.  AODV-RPL [I-D.ietf-roll-aodv-rpl]
+-                 ^
++       is a layer-3 routing protocol.  AODV-RPL [I-D.ietf-roll-aodv-rpl]
++                 ^
+
+Section 3.4. , paragraph 4, nit:
+-    o  IEEE 1901.1 supports L2 routing.  Each PLC node maintains a L2
++    o  IEEE 1901.1 supports L2 routing.  Each PLC node maintains an L2
++                                                                  +
+
+Section 4. , paragraph 2, nit:
+-    [RFC8505] provides useful functionality including link-local IPv6
+-                     -
++    [RFC8505] provide useful functionality including link-local IPv6
+
+Section 4.4. , paragraph 3, nit:
+-    layer 3 routing protocol, such as RPL, which may includes the prefix
+-         ^
++    layer-3 routing protocol, such as RPL, which may includes the prefix
++         ^
+
+Section 4.4. , paragraph 5, nit:
+-    sending Neighbor Solicitaitons in order to extract the status
+-                              -
++    sending Neighbor Solicitations in order to extract the status
++                             +
+
+Section 4.6. , paragraph 3, nit:
+-    octects, the fragmentation and reassembly defined in [RFC4944] MUST
+-        -
++    octets, the fragmentation and reassembly defined in [RFC4944] MUST
+
+Section 4.6. , paragraph 5, nit:
+-    frequent incorrectly assembled IP fragments.  For constranied PLC,
+-                                                              -
++    frequent incorrectly assembled IP fragments.  For constrained PLC,
++                                                             +
+
+Section 4.6. , paragraph 5, nit:
+-    thus the 16-bit tag is sufficient to assemble the fragements
+-                                                          -
++    thus the 16-bit tag is sufficient to assemble the fragments
+
+Section 4.4. , paragraph 6, nit:
+> ets and 1576 octets respectively. However when the channel condition is nois
+>                                   ^^^^^^^
+A comma may be missing after the conjunctive/linking adverb "However".
+
+Document references draft-ietf-emu-eap-noob-03, but -05 is the latest available
+revision.
+
+Document references draft-ietf-6tisch-minimal-security, but that has been
+published as RFC9031.
+
+Obsolete reference to RFC4941, obsoleted by RFC8981 (this may be on purpose).
+
+Document references draft-ietf-roll-aodv-rpl-08, but -10 is the latest
+available revision.
+
+Document references draft-ietf-roll-unaware-leaves, but that has been published
+as RFC9010.
+
+Obsolete reference to RFC3315, obsoleted by RFC8415 (this may be on purpose).
+
+
+
+
+From nobody Fri Aug  6 01:08:20 2021
+Return-Path: <lars@eggert.org>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 843293A23F4; Fri,  6 Aug 2021 01:08:11 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.099
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.099 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=eggert.org
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id wzMwrbi9PWED; Fri,  6 Aug 2021 01:08:06 -0700 (PDT)
+Received: from mail.eggert.org (mail.eggert.org [IPv6:2a00:ac00:4000:400:211:32ff:fe22:186f]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 0DD583A21B7; Fri,  6 Aug 2021 01:08:01 -0700 (PDT)
+Received: from smtpclient.apple (unknown [IPv6:2a00:ac00:4000:400:b0b1:974:c10e:6775]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) (No client certificate requested) by mail.eggert.org (Postfix) with ESMTPSA id 41A566003D5; Fri,  6 Aug 2021 11:07:52 +0300 (EEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=eggert.org; s=dkim; t=1628237272; bh=zN0u+ZZiMFYOC6ByM9fFXbzARFUTL99ZKs+6dkHNqiY=; h=From:Subject:Date:In-Reply-To:Cc:To:References; b=M8tET6JGUkP+DMYsgPT9Sc4yd9u8yIznEa5pMeftasnYgrKxEdZynJZfIhiyq5GKY Wq2il7GqhYmv+SSkYVSfyM7YmE1Lx+9LvVvQnXkP6tZkZsZas63cqig3ub7PSO4GLM /+hnLTu4TeFN8TTdR33KS0Yp36cXcFFD5JKMk9f8=
+From: Lars Eggert <lars@eggert.org>
+Message-Id: <F7B94D37-3282-43A3-A66E-BE2F3C9DC1F1@eggert.org>
+Content-Type: multipart/signed; boundary="Apple-Mail=_006EED69-5577-43D4-BDE1-8641922656C3"; protocol="application/pgp-signature"; micalg=pgp-sha512
+Mime-Version: 1.0 (Mac OS X Mail 14.0 \(3654.120.0.1.13\))
+Date: Fri, 6 Aug 2021 11:07:49 +0300
+In-Reply-To: <161346093492.24845.8498364727030638597@ietfa.amsl.com>
+Cc: General Area Review Team <gen-art@ietf.org>, last-call@ietf.org, draft-ietf-6lo-plc.all@ietf.org, 6lo@ietf.org
+To: Meral Shirazipour <meral.shirazipour@ericsson.com>
+References: <161346093492.24845.8498364727030638597@ietfa.amsl.com>
+X-MailScanner-ID: 41A566003D5.A0407
+X-MailScanner: Found to be clean
+X-MailScanner-From: lars@eggert.org
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/Sk612cz4K6kxL5ECEiPw0Eq2LPE>
+Subject: Re: [6lo] [Last-Call] Genart last call review of draft-ietf-6lo-plc-05
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 06 Aug 2021 08:08:12 -0000
+
+--Apple-Mail=_006EED69-5577-43D4-BDE1-8641922656C3
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=us-ascii
+
+Meral, thank you for your review. I have entered a No Objection ballot =
+for this document.
+
+Lars
+
+
+> On 2021-2-16, at 9:35, Meral Shirazipour via Datatracker =
+<noreply@ietf.org> wrote:
+>=20
+> Reviewer: Meral Shirazipour
+> Review result: Almost Ready
+>=20
+> I am the assigned Gen-ART reviewer for this draft. The General Area =
+Review Team
+> (Gen-ART) reviews all IETF documents being processed by the IESG for =
+the IETF
+> Chair.  Please treat these comments just like any other last call =
+comments.
+>=20
+> For more information, please see the FAQ at
+>=20
+> <https://trac.ietf.org/trac/gen/wiki/GenArtfaq>.
+>=20
+> Document: draft-ietf-6lo-plc-05
+>=20
+> Reviewer: Meral Shirazipour
+> Review Date: 2021-02-15
+> IETF LC End Date: 2021-02-15
+> IESG Telechat date: NA
+>=20
+> Summary: This draft is ready to be published as Standards Track RFC , =
+no more
+> comments other than those mentioned on the list already.
+>=20
+> Major issues:
+>=20
+> Minor issues:
+>=20
+> Nits/editorial comments:
+>=20
+> Best Regards,
+> Meral
+> ---
+> Meral Shirazipour
+> Ericsson
+> www.ericsson.com
+>=20
+>=20
+> --
+> last-call mailing list
+> last-call@ietf.org
+> https://www.ietf.org/mailman/listinfo/last-call
+
+
+--Apple-Mail=_006EED69-5577-43D4-BDE1-8641922656C3
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment;
+	filename=signature.asc
+Content-Type: application/pgp-signature;
+	name=signature.asc
+Content-Description: Message signed with OpenPGP
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEmpq0ZpSoejRmyhheVLXDCb9wwVcFAmEM7dUACgkQVLXDCb9w
+wVfvNg//SF4sJKvTK7d8zA0cxLYnwaEfX6ozIdg7E2U0EnQ0ByWqmS1zLacWRV+V
+7IYu8ZbI0odL47kAI8XMCJpBZvVqBeiCqIqlWkNQ51OyMzpbjbGpsr/u+27CKrQq
+fsjkDav37iK+8eNfEjMVoRsBdb9zpG4BagiG0qOkXnFcvqbK3IF5GBPvcy9tXlpy
+vUXHSnbpbQdNVCQpPUTbI45mfkZ+j2l0P07Jf1JUuCSmp0aJ9TzlFKjIxb7gg5Tf
+h6yhVW5XH0Ry3U1Xi6pPjLpI8g6LTf19Gp94nVDUPn2KTAypVcojmreWYBDmSPti
+kluZD60DIP0IpU+1hCyfheNQK0XAhD6kdjrwpfwsFKlrvsQ2gpFNbXPgiH9LquSk
+x7yMzpzyVWRhK2Q+NK3IANk0dasH+5Edi7kRq8nEJng/5F8g7wPlVqfUyAYZtyq9
+uoyPLmnQR7a160F/C5HhWGHRSPG+P7rW7/lQOAASJ6SxGz4NGy3DTv6Ed6Y8l5p0
+OMUelAwfm08eYMqxpsJwem308EBJFvfmYLLuQE1tWbrJyOl1709LP87+hfsxcAci
+rSpaL+bu8IZMeyJ6SCTz3yeBAsff8oTl87lrlcGDGK+KNOr/y0rvSID4Mvvw9B7b
+olwLovBpPI9K2CyCWf5EMnqitO9KtI5cj7Kp0O+lhCTVBIoK/yM=
+=mkCL
+-----END PGP SIGNATURE-----
+
+--Apple-Mail=_006EED69-5577-43D4-BDE1-8641922656C3--
+
+
+From nobody Fri Aug  6 19:03:14 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 088573A2455; Fri,  6 Aug 2021 19:03:13 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Dave Thaler via Datatracker <noreply@ietf.org>
+To: <int-dir@ietf.org>
+Cc: 6lo@ietf.org, draft-ietf-6lo-plc.all@ietf.org, last-call@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.36.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <162830179295.7667.13372087276503711656@ietfa.amsl.com>
+Reply-To: Dave Thaler <dthaler@microsoft.com>
+Date: Fri, 06 Aug 2021 19:03:13 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/btQiU309EZj5BvMgbIpit_Ju45s>
+Subject: [6lo] Intdir telechat review of draft-ietf-6lo-plc-06
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 07 Aug 2021 02:03:13 -0000
+
+Reviewer: Dave Thaler
+Review result: Almost Ready
+
+I am an assigned INT directorate reviewer for draft-ietf-6lo-plc-06.txt. These
+comments were written primarily for the benefit of the Internet Area Directors.
+Document editors and shepherd(s) should treat these comments just like they
+would treat comments from any other IETF contributors and resolve them along
+with any other Last Call comments that have been received. For more details on
+the INT Directorate, see https://datatracker.ietf.org/group/intdir/about/
+<https://datatracker.ietf.org/group/intdir/about/>.
+
+Overall I found the document to be fairly well written and understandable. 
+There were a couple of areas though where I think additional elaboration is
+needed.
+
+Technical comments:
+
+1) Page 8 talks about "the" IPv6 address used for communication with the public
+network, implying there can only be one at a time.  This is not normal in IPv6,
+where you can have a public address, the current temporary address, and the
+previous temporary address (to allow for transition to a new one), all at the
+same time.   Should this be changed to be plural?  If not, how do you support
+privacy addresses in IPv6?  What about cases where you have external
+connectivity to two public networks each with its own prefix?  I don't see this
+answered anywhere in the doc.
+
+2) Page 8 also mentions that a shared secret "or" version number can be used in
+a hash to derive an IID, but never defines any hash details.  To me, that
+implies that this document currently does not provide any guarantee of
+interoperability, in which case why do you need an IETF RFC at all if every
+device has to come from the same vendor with an algorithm not specified in the
+standard?   I expected this document to specify the details of a hash algorithm
+that must be implemented.
+
+3) RFC 8065 explains that privacy of IPv6 link-local addresses is typically
+uninteresting because on broadcast media all devices can see all the link-layer
+addresses and mappings anyway.   At least in the star and tree topologies, I
+suspect this is not the case.   However the document doesn't seem to contain
+any discussion of the privacy considerations in such a case.
+
+4) RFC 8065 section 4 provides a checklist of what adaptation layer
+documents like this need to address. I'd recommend addressing each point
+separately in the Security Considerations section, so it's clear that the
+draft addresses the whole checklist.  For example, there's nothing in the
+document that mentions what the typical link lifetime is (years maybe?)
+As another example, it's really hard to tell from reading the last
+paragraph of section 4.5 of this draft how it addresses RFC
+8065's statement that "any specification using Short
+Addresses should carefully construct an IID generation
+mechanism so as to provide sufficient entropy compared to
+the link lifetime" so elaboration here is warranted here in
+my opinion.
+
+I also have some editorial nits that can be found in a marked up copy at
+https://www.microsoft.com/en-us/research/uploads/prod/2021/08/draft-ietf-6lo-plc-06.pdf
+
+Dave
+
+
+
+From nobody Fri Aug  6 23:48:15 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 9961D3A2CA5; Fri,  6 Aug 2021 23:48:12 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Dan Romascanu via Datatracker <noreply@ietf.org>
+To: <ops-dir@ietf.org>
+Cc: 6lo@ietf.org, draft-ietf-6lo-plc.all@ietf.org, last-call@ietf.org, dromasca@gmail.com
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.36.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <162831889257.26284.17162068772040939840@ietfa.amsl.com>
+Reply-To: Dan Romascanu <dromasca@gmail.com>
+Date: Fri, 06 Aug 2021 23:48:12 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/IGTmXoRHNfW9RidDqfJnbRz02Pw>
+Subject: [6lo] Opsdir telechat review of draft-ietf-6lo-plc-06
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 07 Aug 2021 06:48:13 -0000
+
+Reviewer: Dan Romascanu
+Review result: Has Nits
+
+This document describes how IPv6 packets are transported over constrained Power
+Line Communication (PLC) networks. It is a clear and well-written document and
+its content is relevant for all operators that will have such networks under
+their administration. I had however one concern that I expressed in my WGLC
+review. Version 05 of the document had no information in the document about the
+operational and manageability aspects. Following my review, the authors
+answered on the WG mail list and I find their answer sufficient at this stage.
+Version 6 now includes Section 6. Operations and Manageability Considerations
+which is good.
+
+This document is Ready from an OPS-DIR perspective.
+
+Please fix the typo in Section 6:
+
+s/The recently-formed iotops WG in IETF is aming/The recently-formed iotops WG
+in IETF is aiming/
+
+
+
+From nobody Mon Aug  9 15:21:24 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id A1F9B3A1B15; Mon,  9 Aug 2021 15:21:20 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+From: Roman Danyliw via Datatracker <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-plc@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org, Carles Gomez <carlesgo@entel.upc.edu>, carlesgo@entel.upc.edu
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.36.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: Roman Danyliw <rdd@cert.org>
+Message-ID: <162854767998.22498.13598614756000421326@ietfa.amsl.com>
+Date: Mon, 09 Aug 2021 15:21:20 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/qgfBbVsIbV2u43tAnDktH-hZOBM>
+Subject: [6lo] Roman Danyliw's Discuss on draft-ietf-6lo-plc-06: (with DISCUSS and COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 09 Aug 2021 22:21:21 -0000
+
+Roman Danyliw has entered the following ballot position for
+draft-ietf-6lo-plc-06: Discuss
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/iesg/statement/discuss-criteria.html
+for more information about DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+
+
+----------------------------------------------------------------------
+DISCUSS:
+----------------------------------------------------------------------
+
+** Section 8. A few additional threats should be mentioned.  Note that a robust
+treatment is not needed here (and likely not possible due to the generality of
+this document).  However, they should be acknowledged.
+
+-- This section mentions both availability (DoS) and confidentiality
+(eavesdropping) concerns.  Thank you. Wouldn’t there also be the possibility of
+significant integrity risks given that possible actuators or sensors being
+controlled?   Note if the referenced link layer security mechanisms would be
+useful.
+
+-- Figures 5 – 7 seems to present architectures which connects operational
+technology to the Internet via the PANC.  However, this section doesn’t
+acknowledgement of that risk outright or by citation.
+
+** Section 8.  Per “Thus link layer security mechanisms are designed in the PLC
+technologies mentioned in this document”, which specific mechanisms were being
+cited is not clear.  Is their use required or are they use case dependent?
+
+
+----------------------------------------------------------------------
+COMMENT:
+----------------------------------------------------------------------
+
+Thank you to Robert Sparks for the SECDIR review.
+
+** Section 6.  Per “The onboard status of the devices and the topology of the
+PLC network can be  visualized via the gateway”, this is the first the
+architectural element of a “gateway” is mentioned.  What does it mean to
+“visualize via the gateway”?
+
+** Section 6.  Per “The recently-formed iotops WG in IETF is aming to design
+more features for the management of IOT networks”, I don’t follow the intent of
+this sentence as IOTOPS is not chartered for new protocol work (only
+requirements and operational practices).
+
+** Editorial nits
+
+-- Section 1.  Typo. s/efficent/efficient/
+
+-- Section 4.4.  Typo. s/Solicitaitons/ Solicitations/
+
+-- Section 4.5. s/elided.The/elided. The/
+
+-- Section 4.6.  Typo. s/octects/octets/
+
+-- Section 4.6. Typo. s/constranied/constrained/
+
+-- Section 4.6.  Typo. s/fragements/fragments/
+
+-- Section 6.  s/aming/aiming/
+
+
+
+
+From nobody Mon Aug  9 16:35:20 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id F3F813A1D88; Mon,  9 Aug 2021 16:35:16 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Meral Shirazipour via Datatracker <noreply@ietf.org>
+To: <gen-art@ietf.org>
+Cc: 6lo@ietf.org, draft-ietf-6lo-plc.all@ietf.org, last-call@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.36.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <162855211695.16383.14017091836366559308@ietfa.amsl.com>
+Reply-To: Meral Shirazipour <meral.shirazipour@ericsson.com>
+Date: Mon, 09 Aug 2021 16:35:16 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/luQrfG3IohiCZy7RtNsYRY2DHCw>
+Subject: [6lo] Genart telechat review of draft-ietf-6lo-plc-06
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 09 Aug 2021 23:35:17 -0000
+
+Reviewer: Meral Shirazipour
+Review result: Ready with Nits
+
+I am the assigned Gen-ART reviewer for this draft. The General Area
+Review Team (Gen-ART) reviews all IETF documents being processed
+by the IESG for the IETF Chair. Please wait for direction from your
+document shepherd or AD before posting a new version of the draft.
+
+For more information, please see the FAQ at
+
+<https://trac.ietf.org/trac/gen/wiki/GenArtfaq>.
+
+Document: draft-ietf-6lo-plc-06
+Reviewer: Meral Shirazipour
+Review Date: 2021-08-09
+IETF LC End Date: 2021-02-15
+IESG Telechat date: 2021-08-12
+
+Summary: This draft is almost ready to be published as Standards Track RFC, no
+more comments than those mentioned on the list.
+
+Major issues:
+
+Minor issues:
+
+Nits/editorial comments:
+Section 1, "Efficient"->"efficient"
+Section 4.4, "Solicitaitons"->"Solicitations"
+Section 4.6, "octects"->"octets"; "constranied"->"constrained" ;
+"fragements"->"fragments" Section 6, "aming"->"aiming"
+
+
+
+From nobody Mon Aug  9 22:44:54 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 649213A2839; Mon,  9 Aug 2021 22:44:44 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+From: =?utf-8?q?=C3=89ric_Vyncke_via_Datatracker?= <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-plc@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org, Carles Gomez <carlesgo@entel.upc.edu>, carlesgo@entel.upc.edu, dthaler@microsoft.com
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.36.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: =?utf-8?q?=C3=89ric_Vyncke?= <evyncke@cisco.com>
+Message-ID: <162857428380.16929.11977161343635259321@ietfa.amsl.com>
+Date: Mon, 09 Aug 2021 22:44:44 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/6ZfUxiaS50l7IBWWC3sHtrcSBxU>
+Subject: [6lo] =?utf-8?q?=C3=89ric_Vyncke=27s_Discuss_on_draft-ietf-6lo-p?= =?utf-8?q?lc-06=3A_=28with_DISCUSS_and_COMMENT=29?=
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 10 Aug 2021 05:44:45 -0000
+
+Éric Vyncke has entered the following ballot position for
+draft-ietf-6lo-plc-06: Discuss
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/iesg/statement/discuss-criteria.html
+for more information about DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+
+
+----------------------------------------------------------------------
+DISCUSS:
+----------------------------------------------------------------------
+
+Thank you for the work put into this document.
+
+Special thanks to Carles Gomez for his shepherd's write-up, which contains a
+good summary of the WG consensus *BUT* it does not mention that the IEEE
+normative references are not free. Strange that Carles' email address,
+carlesgo@entel.upc.edu, is not in the datatracker status page.
+
+Please find below some blocking DISCUSS points (probably easy to address), some
+non-blocking COMMENT points (but replies would be appreciated), and some nits.
+
+Please also address Dave Thaler's INT-DIR review at:
+https://datatracker.ietf.org/doc/review-ietf-6lo-plc-06-intdir-telechat-thaler-2021-08-06/
+(some of my DISCUSS points are coming from Dave's review)
+
+I hope that this helps to improve the document,
+
+Regards,
+
+-éric
+
+== DISCUSS ==
+
+Is there any reason why the IETF Last Call
+https://mailarchive.ietf.org/arch/msg/6lo/f59y8rMg-p_aCKYSSEtBzoJK4qQ/ did not
+mention that the two IEEE normative references were behind a paywall ? It
+prevented some more detailed reviews and is an important fact.
+
+How can a PLC node distinguish between an IPv6 PDU and a non-IPv6 PDU ? I.e.,
+is there the equivalent of a EtherType in a layer-2 PLC PDU ? Then, this should
+be mentioned in this document else some text explaining why it is not required
+would be welcome. Especially when the normative IEEE references are not freely
+available.
+
+-- Section 4.1 --
+I am repeating here Dave Thaler's point 1) as it is completely unclear to me
+how the shared secret/version number are shared and provisioned, this could
+prevent interoperation hence my DISCUSS.
+
+While I appreciate that the nodes are constrained, some warnings about having a
+*single global IPv6 address* should be written or if the spec supports more
+than one global IPv6 address per node, then the current text must be changed.
+
+
+----------------------------------------------------------------------
+COMMENT:
+----------------------------------------------------------------------
+
+== COMMENTS ==
+
+A generic and probably naive question of mine: how can a PLC node (which has
+access to electrical power) can be qualified as 'low power' ?
+
+-- Section 2 --
+
+Please add references to the IEEE references before using them in the table 1.
+
+-- Section 3.1 --
+
+Is the I-D limited to TCP & UDP only ? (based on figure 1 even if later RPL is
+mentioned)
+
+-- Section 3.4 --
+
+While not required, an expansion of "LOAD" as in "LOADng" will probably be
+welcome by readers.
+
+-- Section 4.1 --
+
+Strongly suggest to show the 48-bit pseudo MAC address before showing the
+generated 64-bit address, which looks like the old EUI-64 generation. Should
+there be some explanation about the lack of U/L bit flapping in this algorithm ?
+
+Same comment for the 12-bit address.
+
+Should there be some explanations about NID and TEI? Notably about how they are
+provisioned and how can collision be prevented.
+
+  "A PLC host SHOULD use
+   the IID derived from the link-layer short address to configure the
+   IPv6 address used for communication with the public network"
+Is the above text about how to provision the IP address ? E.g., via stateful
+DHCPv6 ?
+
+-- Section 4.3.1 --
+  "In order to avoid the possibility of duplicated IPv6 addresses, the
+   value of the NID MUST be chosen so that the 7th and 8th bits of the
+   first byte of the NID are both zero."
+I failed to understand the reasoning in the above text: how can a reduction of
+entropy decrease the risk of collision ?
+
+Please also specify the receiver's behavior when the padding is not 0 (probably
+'ignore').
+
+Rather than using "7th and 8th bits" please use "bits 6 and 7".
+
+-- Section 4.3.2 --
+Same comments as for section 4.3.1
+
+-- Section 4.4 --
+   "Although PLC devices are electrically powered, sleeping mode SHOULD
+   still be used for power saving."
+Suggest to add some justification for the "SHOULD" or at least explain when a
+PLC device may not use the sleeping mode.
+
+The logical flow is weird in §4 " Duplicate Address Detection (DAD) MUST NOT be
+utilized.  Otherwise, the DAD MUST", i.e., with a "MUST NOT" there should be no
+"Otherwise" :-) The "MUST NOT" is probably a "SHOULD NOT" ?
+
+-- Section 5 --
+Nice and interesting section, may I suggest to move it earlier in the document
+? Just after the introduction for example.
+
+Figure 6 does not have any node "A" or "B" while the § before mentions those
+node names.
+
+== NITS ==
+
+I find it strange that some acronyms are sometimes expanded in the text *and*
+in the terminology (e.g., MTU) while others are not (e.g., PANC).
+
+-- Section 3.3 --
+Is "adapt" the right word in "For this reason, fragmentation and reassembly is
+required for G.9903-based networks to adapt IPv6."
+
+-- Section 3.4 --
+My eyebrows raised when reading "L2 routing"... as "routing" for me is usually
+reserved for layer 3 and above.
+
+-- Section 4.4 --
+s/For IPv6 address prefix dissemination/For IPv6 network prefix dissemination/ ?
+
+
+
+
+From nobody Mon Aug  9 22:48:45 2021
+Return-Path: <evyncke@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 3A0DD3A285A; Mon,  9 Aug 2021 22:48:31 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -9.599
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.599 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, RCVD_IN_MSPIKE_H2=-0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com header.b=f2UH3JCT; dkim=pass (1024-bit key) header.d=cisco.onmicrosoft.com header.b=aLB+9SWP
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id axuk7B4AoM2b; Mon,  9 Aug 2021 22:48:22 -0700 (PDT)
+Received: from rcdn-iport-8.cisco.com (rcdn-iport-8.cisco.com [173.37.86.79]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 415193A2855; Mon,  9 Aug 2021 22:48:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=5868; q=dns/txt; s=iport; t=1628574502; x=1629784102; h=from:to:cc:subject:date:message-id:references: in-reply-to:content-id:content-transfer-encoding: mime-version; bh=pFUlcK5iQ1zvi9obHKsr3lpi3GbpGo9DRjNlDN9sJ1o=; b=f2UH3JCT1EF20bN9aFBVQHxLk0AMCks9wn1sUoyU0aS83k/xOrwPWCLF YAaoKf6pLxGU+uZPkrGbrSjVof2QqssxmhWw1tMSFIBWEAcIJgwhU75gK Oee4aTNh7uSNbPZ79YR2bvU0o5+x4qB6RSBGO7o/JjQ8ZdLdcU/Rn6mE2 Q=;
+IronPort-PHdr: =?us-ascii?q?A9a23=3AZTwgYR+lfWBcdf9uWMfoyV9kXcBvk7D1NRQS8?= =?us-ascii?q?Z0pl/RFdaHwt5jhPUmK4/JrgReJWIjA8PtLhqLQtLyoQm0P55uN8RVgOJxBX?= =?us-ascii?q?hMIk4MaygonBsPWDEzwNvnxaCImWs9FUQwt83SyK0MAHsH4ahXbqWGz6jhHH?= =?us-ascii?q?BL5OEJ1K+35F5SUgd6w0rW5+obYZENDgz/uCY4=3D?=
+IronPort-HdrOrdr: =?us-ascii?q?A9a23=3AM4W786Fttphd16XgpLqFvpLXdLJyesId70?= =?us-ascii?q?hD6qkvc31om52j+fxGws516fatskdvZJkh8erwX5Vp2RvnhN1ICPoqTMmftW?= =?us-ascii?q?7dySmVxeBZnMvfKljbexEWmdQtrpuIH5IObeEYSGIK8foSgzPIVurIouP3ip?= =?us-ascii?q?xA7N22pxwGIG0aCNAD0+46MHfnLqQcfnghOXNNLuvl2iMxnUvYRZ14VLXeOl?= =?us-ascii?q?A1G8z44/HbnpPvZhALQzQ97hOVsD+u4LnmVzCFwxY3SVp0sPMf2FmAtza8yr?= =?us-ascii?q?Sosvm9xBOZ/XTU9Y5qlNzozcYGLNCQi/ISNi7nhm+TFcNcsvy5zXYISdOUmQ?= =?us-ascii?q?4Xeer30kwd1gNIminsl1SO0ELQMs/boWsTAjHZuAOlaDDY0L3ErXoBerp8bM?= =?us-ascii?q?RiA0TkA45KhqAs7EqNtFjp6aa/RCmw7hgUrbLzJmJXv1vxrnw4neEJiXtDFY?= =?us-ascii?q?MYdb9KtIQauFhYCZEaAUvBmcwa+cRVfYvhDcxtAB6nhrHizx9S6c3pWm52Eg?= =?us-ascii?q?aNQ0AEtMDQ2z9KnGphx09dwMAEhH8P+J80VpEBvo3/Q+pVvaALStVTYbN2Be?= =?us-ascii?q?8HT8fyAmvRQQjUOGbXJVj8DqkIN3/Etpay6rQo4+OhfoAO0fIJ6dv8eUIdsX?= =?us-ascii?q?R3d1PlCMWI0pEO+hfRQH+lVTCo0c1a74gRgMy2eFMqC1zKdLkKqbrgnxwyOL?= =?us-ascii?q?yuZx+DAuMePxa4FxqaJW9g5XyIZ6Vv?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0BxDABiEhJh/5xdJa1aHgEBCxIMQIM?= =?us-ascii?q?sUQd3WjcxhEeDSAOFOYhjA4paj1uBQoERA1QLAQEBDQEBNwoEAQGEWAIXgkk?= =?us-ascii?q?CJTgTAQIEAQEBEgEBBQEBAQIBBgSBEROFOwYnDYZCAQEBAQECEhERDAEBNwE?= =?us-ascii?q?LBAIBCA4DAwECAwImAgICHxEUAQgIAgQBDQUigk8BglUDLwEOnCEBgToCih9?= =?us-ascii?q?6gTGBAYIHAQEGBASBNgGDUg0LgjQDBoEQKoJ8hA+GZCccgUlEgRUnDBCCYj6?= =?us-ascii?q?CIEIBAQECgR9FM4JdNoIugl8BawcxDCYBA1MUPC8GE0IKBhgGCxkPApFgSIM?= =?us-ascii?q?NjHCaGjtcCoMoijmOLwSFXwUmpm+WD4w9gzWVKQIEAgQFAg4BAQaBdySBWXA?= =?us-ascii?q?VZQGCCgEzUBkOh0SGWwsBFoNPhRSFSnMCNgIGAQoBAQMJhjEsghsBAQ?=
+X-IronPort-AV: E=Sophos;i="5.84,309,1620691200"; d="scan'208";a="917615411"
+Received: from rcdn-core-5.cisco.com ([173.37.93.156]) by rcdn-iport-8.cisco.com with ESMTP/TLS/DHE-RSA-SEED-SHA; 10 Aug 2021 05:48:20 +0000
+Received: from mail.cisco.com (xbe-rcd-007.cisco.com [173.37.102.22]) by rcdn-core-5.cisco.com (8.15.2/8.15.2) with ESMTPS id 17A5mKGj025303 (version=TLSv1.2 cipher=AES256-SHA bits=256 verify=OK); Tue, 10 Aug 2021 05:48:20 GMT
+Received: from xfe-rcd-001.cisco.com (173.37.227.249) by xbe-rcd-007.cisco.com (173.37.102.22) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.792.15; Tue, 10 Aug 2021 00:48:20 -0500
+Received: from xfe-aln-002.cisco.com (173.37.135.122) by xfe-rcd-001.cisco.com (173.37.227.249) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.792.15; Tue, 10 Aug 2021 00:48:19 -0500
+Received: from NAM10-MW2-obe.outbound.protection.outlook.com (173.37.151.57) by xfe-aln-002.cisco.com (173.37.135.122) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.792.15 via Frontend Transport; Tue, 10 Aug 2021 00:48:19 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; b=frHKcny1imMsyslSnZP3dIK9v06XyGuOLe3+jmLYNp0g81Q82NqXxuvpZDXlPklsnMdawkpmioRdO3jFPCaMiQdbMuAO/Mw049paCyA5FMlfxlpoHAAv4ulorS1KgHfYjKg7ugk2cU0eXj82HS33er/fMiirGVpiAnTDkV8ibae0ni/EHaFsh5+rlQa3KjA0bL4Xti5NuaDQWFDsaJ5f3P/a6a66u+/PsuNUkxCoQSy9OiODvwUZcgNwiRdaWLcNWz4JFafbjKsYgsKcl1jU8OLf+oTCoM1UCUcK42SklRhVmBg/hYN5IAU0jyk8QtQcdfiJDsHX0GyH/KrLZ2UhKA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;  s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=pFUlcK5iQ1zvi9obHKsr3lpi3GbpGo9DRjNlDN9sJ1o=; b=J57dE+hFWvmDowNDZqA+LxJ1vbPc+iARwexwgTPXs9aoNmRr4yQOvT6u+ara/UtuSFI8vSbgU7ekNxojzB4cdghOptvRMZVLDN4KiyLXj4N9l+UJxMBu+hax1tqbo9b2eaZOGm7CDVRWRURUmSBFr4Rh4hdnlosMnzHJivNtOd3ltkVjxI5Rw1Uwp/CD1Hx+HmX/DGI0WE4JQiuTx26kgMXEmir0ciknHDRhuHZT8Go8rRbpKgRv9VZjVa7yqGtIm/SptEHMPGJz0fIn1rpo/bGpEg709BxiYm66h3ej8dHtuuxfg1i7ypaJn9P9iGLVPcEIIgfJYGQSoc9hYFEl1Q==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=cisco.com; dmarc=pass action=none header.from=cisco.com; dkim=pass header.d=cisco.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cisco.onmicrosoft.com;  s=selector2-cisco-onmicrosoft-com; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=pFUlcK5iQ1zvi9obHKsr3lpi3GbpGo9DRjNlDN9sJ1o=; b=aLB+9SWPLPkIx33WvG4RgHHVMhgMXRFCLkxyF0rHJUYrFxwGUzGqwZM0dB0JLWQLm3KuukxUe4S0aeBUDiMHfUl+pVk8LEa3UgoXS+kXFC4QFq3OJg6EyZSb41iNOTDmjJL52voMr/MhW1aTqdns73Z90S+77zzCXbdssncXH9E=
+Received: from PH0PR11MB4966.namprd11.prod.outlook.com (2603:10b6:510:42::21) by PH0PR11MB5064.namprd11.prod.outlook.com (2603:10b6:510:3b::15) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.13; Tue, 10 Aug 2021 05:48:17 +0000
+Received: from PH0PR11MB4966.namprd11.prod.outlook.com ([fe80::6d61:c160:def1:bc64]) by PH0PR11MB4966.namprd11.prod.outlook.com ([fe80::6d61:c160:def1:bc64%3]) with mapi id 15.20.4394.023; Tue, 10 Aug 2021 05:48:17 +0000
+From: "Eric Vyncke (evyncke)" <evyncke@cisco.com>
+To: Dave Thaler <dthaler@microsoft.com>, "int-dir@ietf.org" <int-dir@ietf.org>
+CC: "6lo@ietf.org" <6lo@ietf.org>, "draft-ietf-6lo-plc.all@ietf.org" <draft-ietf-6lo-plc.all@ietf.org>, "last-call@ietf.org" <last-call@ietf.org>
+Thread-Topic: Intdir telechat review of draft-ietf-6lo-plc-06
+Thread-Index: AQHXizBqB30/aMVxoUenA9uNwrv3RKtsYciA
+Date: Tue, 10 Aug 2021 05:48:17 +0000
+Message-ID: <2251144E-10DB-4488-A728-D98777F8639A@cisco.com>
+References: <162830179295.7667.13372087276503711656@ietfa.amsl.com>
+In-Reply-To: <162830179295.7667.13372087276503711656@ietfa.amsl.com>
+Accept-Language: fr-BE, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+user-agent: Microsoft-MacOutlook/16.51.21071101
+authentication-results: microsoft.com; dkim=none (message not signed) header.d=none;microsoft.com; dmarc=none action=none header.from=cisco.com;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: f678c0fb-c160-4ae3-29c7-08d95bc2741f
+x-ms-traffictypediagnostic: PH0PR11MB5064:
+x-microsoft-antispam-prvs: <PH0PR11MB5064D255C906CAA97372BA34A9F79@PH0PR11MB5064.namprd11.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:10000;
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: pbGzzagNUvaaOcaB6xCr03IOvHsl8NRC1DvgVm1Rh6pLXjvHTmxRtZyOBaed8AyyOc8SX69LIPb0Wy+NWIRZoKEWLaotk3c4pFODooe3XNOBCX+e8/8e61YNOeiX+a6K3VEOqZgspNweu+iJdccQ+Ov4+nJ5UvJWfpCFiszvLcbnhnvlsYE+mWPpCMjt8LQNcWyfwiqfHWrf6Os26pUwIOnzuuyGFFyuLbVdjICLd+8UHVOQ6QtechxQVL2ushYjm2qwCDp53txFP21Fjgxl/tp7qtOEXDUYzqAryUU3jPBvNTtKaw3ZTlDLaohNOKW5HLfgpFqnLxev3/V2siOmEY7Lm3RMwMCpMuQnEz6GBEXC9jV6QLTSwLNDVWBZRzJTBphKDOVRuWR1+gxVc9Men41foj6sROOL+e7qU674sQdbIfmvRi4JFOIcNRfUhl4mRjxzzVQIsWEQdhzXAaGLDfDpUK4ActDeFLpsfbnb+MJKD7BlEqtOOsmq6ZnxLEOWhfvmFr7kEmUubehRic+M58Qc/fIwjDUZyZ3DrPk88MrVlS/hpwqHgHdc/B8LzHAq/uBP5GWUeoirq7pSflNzgWx0ozsiO5PtPoNqaW4POiqnK/1Ky9y9YWXTNCrUxR+wbk2sKyALdxNPhkv6jBftCUBwoHuxAOQEQ0Sg2zG+WvFBWwEFk2h/+oh8xaDd2eO/6kg1JqRkmRB8FTfqjwXWzg/cn3E6QX5VOwjTKfsZSp1r2A5yIcPcaWTkoxufsQs53PNbiP56VDKHrfjegElHXl34RaTIKxIHNTAap/76UXCsIgwk95jIgynvTZ7tYwfcbOoIYtqHvM7Mgo2BVH0qUjbSGy6JTW7WDL2sK2GHy7U=
+x-forefront-antispam-report: CIP:255.255.255.255; CTRY:; LANG:en; SCL:1; SRV:;  IPV:NLI; SFV:NSPM; H:PH0PR11MB4966.namprd11.prod.outlook.com; PTR:; CAT:NONE;  SFS:(366004)(508600001)(966005)(186003)(86362001)(66574015)(36756003)(53546011)(6506007)(38070700005)(316002)(54906003)(110136005)(5660300002)(2906002)(2616005)(122000001)(4326008)(66946007)(66446008)(8676002)(66476007)(8936002)(6486002)(6512007)(64756008)(38100700002)(91956017)(76116006)(83380400001)(33656002)(66556008)(71200400001)(45980500001); DIR:OUT; SFP:1101; 
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: =?utf-8?B?Zm1XQW5id2FES3E1OVc0MkJFSm55ZzFCK1FUblNaeUhuMjZ6UWUvckhpaktH?= =?utf-8?B?azJBVDY4T3FJdGY3bGtmWGtxZU5raXUwbnE5Mm1jYllxOTYzRGcxYVVNR2F4?= =?utf-8?B?TkVqbFdvbG5weUN2ZXpZZy83YlBIZHBCK1lISmhmWVNtTkdKZkhmK3Zoa1N2?= =?utf-8?B?M0dsMWJmbW5FSW5nakZIeGlURVRwcVQ0YXhZUXhxMWg2NEYyMk11eU0ybWhF?= =?utf-8?B?MzIxQkpoMjhpU1lCS1NpZkYrRFQ1TCtCTzg5OFNaTGtPRzFmdmVlbW42Wk9t?= =?utf-8?B?UGlFdFZoY01lbzg0UUpVM0JRSHJkeFRBWTFxdWZQOTRqeUxhaEt1emJBYnJ0?= =?utf-8?B?eTFuYjRndXRGQ0xqMEYvZVY1b0FINklUYlFzSFhBS3dRNTFqQVBaZjBKZi93?= =?utf-8?B?RVBDekNhVXRUakR4RDlMNlBFOSszM3pNaVRBZktXWXgxSlg5eXZObWNHMUJD?= =?utf-8?B?d29kaGk4eFNUUndxWFltbWxkMWEzVzRUTEs3c2pQRXRJS3gwemtzZVErcllU?= =?utf-8?B?aFJRbDlmYXJLWjdtcG1uNGQwOG9qaXpMME1VemZaL0EwbFJKUFZxOThJVUhh?= =?utf-8?B?ZXN5U0Ztc1lTSlpEYnJVNmFLZlIzV0FwVXVDa2RMWEd1c2hEMW9VdzBWSDZi?= =?utf-8?B?aWszZm8yVHUvdWwzYTNaSjJ5ODNoV0NHNitWeGZydWRVZm1jY0hLSExmTUNq?= =?utf-8?B?YWlBNkRWSjFLVFpzeUtsdUxzcS9LVzJPOVE3NHlCRjVsQ1NSQ1AvcXRjNGR5?= =?utf-8?B?WGpwK2kxbHloWjJpdk9ZQkc2aitXY24vajZsSUVLMHN5NHA3YzJlazM1aDdU?= =?utf-8?B?UjQycm43L255bG54VER2RUROVHBheWV0WFk1Y2FlTFRNV2NNMU15QkhnY00w?= =?utf-8?B?NmYwd25KdjEyS25aNmEyWUEwTHh0MkowY3FFUXRLUjhCU2Z4VGRTbXdTL3pi?= =?utf-8?B?ZjRmYXZyYXBWMnY0Q1N1bDBIa0lTa3BGOGlHVlYvTzl4MmswTWYrUW1tNXha?= =?utf-8?B?SDN5azk0RmMvMlBpL0FKa1daZFp5YkJQaFFMZHVxQ3BlUEx3eXJKZG5FQUJ4?= =?utf-8?B?K2UrSDFIK2ZsZFBtSUNEN0hDSU5ySTd0L0d6ZXhxL0tMVkVIaExubEdFWnM1?= =?utf-8?B?RXdsVmxKSHBrcklCeHdhVWtUOHZsWGowc3RoQnh2Z0JHdkR1N1k5clZ6RStu?= =?utf-8?B?Znp0ZG1pMlF6VFVWV1N4eU5WYi8yS2NFdXVnTkM4ZloxWXJBNDVQUkZuZUNw?= =?utf-8?B?NVJOU1hGaTc1RDJCVFVYclNkU3doNk11SEtYSmw1MUFtWmNVTk5sR0JQbEFK?= =?utf-8?B?ejFuN0ZrcjV6a2ZTME5qVkUvd1d5RHVUME5FbnBPWC91U3BPeThhZ1lwNVVB?= =?utf-8?B?eWF4RTZQNU5RR2tCS0prODM2MGdYYUR6RG9NRmJ0SnVITHVYTVRwaWlwZm1V?= =?utf-8?B?NmhvYUE0MnMwOHpyNUd5TlhSbXg4dGF5WkJDQVo5MzFRQXlPaFJRLzJuZXM4?= =?utf-8?B?ek05aWFLTEx5dEZoRUhsK1Q3VVRXZEtESlZGMEtIY0cwQ0d6VnZvTGZ5d1hN?= =?utf-8?B?YTI5YXdyVmJzNjVnb25td2dTUXAydmdJdEdSTVc2TnowNDM2TDczeS9OZUNS?= =?utf-8?B?S2ZaSDRjcjY4bld6ckdobFc0ZUZKMm9OdlB1SFowTkNKMitTR0JseGRMSnpy?= =?utf-8?B?c3Q4cThIekpVSmFobTJLcTFlczEvVlpXanVmeE90NjNsNXJ6aTkyM1EwTHo3?= =?utf-8?B?aGxXSlN4R3QyTlJNRGR3Y090SitWcThOSG9rL3pNOENEUU5UOC9PWUd2Rmhr?= =?utf-8?B?U1QxaUZvQ0FWLzRaa3VNWGtObVVWendQeWx0QlNaekYzYXVrZFNKczZXRGo5?= =?utf-8?Q?u/r/Trck6fFhq?=
+x-ms-exchange-transport-forked: True
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <E5852D89E87CA04FA8351355B3D218CE@namprd11.prod.outlook.com>
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: PH0PR11MB4966.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: f678c0fb-c160-4ae3-29c7-08d95bc2741f
+X-MS-Exchange-CrossTenant-originalarrivaltime: 10 Aug 2021 05:48:17.8085 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 5ae1af62-9505-4097-a69a-c1553ef7840e
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: p64bm5VloIEFRVD841jiGZRlGXzID/f6bg2j3BR1TrF0gZ3ckJNWPnFfCDEzJfFXdpNfrR0xib5w4N7galbKGw==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR11MB5064
+X-OriginatorOrg: cisco.com
+X-Outbound-SMTP-Client: 173.37.102.22, xbe-rcd-007.cisco.com
+X-Outbound-Node: rcdn-core-5.cisco.com
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/JDQP0Xe2N37g6o4KkO93vzJyKsM>
+Subject: Re: [6lo] Intdir telechat review of draft-ietf-6lo-plc-06
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 10 Aug 2021 05:48:32 -0000
+
+VGhhbmsgeW91IERhdmUgZm9yIHlvdXIgZGV0YWlsZWQgcmV2aWV3Lg0KDQpOb3RhYmx5IGJhc2Vk
+IG9uIHlvdXIgcmV2aWV3LCBJIGp1c3QgYmFsbG90ZWQgYSBESVNDVVNTICh0byBhZGRyZXNzIHlv
+dXIgcG9pbnRzKSwgdGhpcyBESVNDVVNTIHNob3VsZCBiZSByZWxhdGl2ZWx5IGVhc3kgdG8gYWRk
+cmVzcy4NCg0KUmVnYXJkcw0KDQotw6lyaWMNCg0K77u/LS0tLS1PcmlnaW5hbCBNZXNzYWdlLS0t
+LS0NCkZyb206IERhdmUgVGhhbGVyIHZpYSBEYXRhdHJhY2tlciA8bm9yZXBseUBpZXRmLm9yZz4N
+ClJlcGx5LVRvOiBEYXZlIFRoYWxlciA8ZHRoYWxlckBtaWNyb3NvZnQuY29tPg0KRGF0ZTogU2F0
+dXJkYXksIDcgQXVndXN0IDIwMjEgYXQgMDQ6MDMNClRvOiAiaW50LWRpckBpZXRmLm9yZyIgPGlu
+dC1kaXJAaWV0Zi5vcmc+DQpDYzogIjZsb0BpZXRmLm9yZyIgPDZsb0BpZXRmLm9yZz4sICJkcmFm
+dC1pZXRmLTZsby1wbGMuYWxsQGlldGYub3JnIiA8ZHJhZnQtaWV0Zi02bG8tcGxjLmFsbEBpZXRm
+Lm9yZz4sICJsYXN0LWNhbGxAaWV0Zi5vcmciIDxsYXN0LWNhbGxAaWV0Zi5vcmc+DQpTdWJqZWN0
+OiBJbnRkaXIgdGVsZWNoYXQgcmV2aWV3IG9mIGRyYWZ0LWlldGYtNmxvLXBsYy0wNg0KUmVzZW50
+LUZyb206IDxhbGlhcy1ib3VuY2VzQGlldGYub3JnPg0KUmVzZW50LVRvOiA8Y2FybGVzZ29AZW50
+ZWwudXBjLmVkdT4sIDxpdGNAc2dlcHJpLnNnY2MuY29tLmNuPiwgRXJpYyBWeW5ja2UgPGV2eW5j
+a2VAY2lzY28uY29tPiwgPHNod2V0aGEuYmhhbmRhcmlAZ21haWwuY29tPiwgPHJlbXkubGl1Ymlu
+Z0BodWF3ZWkuY29tPiwgPGhvdWppYW5xaWFuZ0BodWF3ZWkuY29tPiwgPGNoYXJsaWVwQGNvbXB1
+dGVyLm9yZz4sIDxlay5pZXRmQGdtYWlsLmNvbT4sIDxZR0hPTkdARVRSSS5SRS5LUj4NClJlc2Vu
+dC1EYXRlOiBTYXR1cmRheSwgNyBBdWd1c3QgMjAyMSBhdCAwNDowMw0KDQogICAgUmV2aWV3ZXI6
+IERhdmUgVGhhbGVyDQogICAgUmV2aWV3IHJlc3VsdDogQWxtb3N0IFJlYWR5DQoNCiAgICBJIGFt
+IGFuIGFzc2lnbmVkIElOVCBkaXJlY3RvcmF0ZSByZXZpZXdlciBmb3IgZHJhZnQtaWV0Zi02bG8t
+cGxjLTA2LnR4dC4gVGhlc2UNCiAgICBjb21tZW50cyB3ZXJlIHdyaXR0ZW4gcHJpbWFyaWx5IGZv
+ciB0aGUgYmVuZWZpdCBvZiB0aGUgSW50ZXJuZXQgQXJlYSBEaXJlY3RvcnMuDQogICAgRG9jdW1l
+bnQgZWRpdG9ycyBhbmQgc2hlcGhlcmQocykgc2hvdWxkIHRyZWF0IHRoZXNlIGNvbW1lbnRzIGp1
+c3QgbGlrZSB0aGV5DQogICAgd291bGQgdHJlYXQgY29tbWVudHMgZnJvbSBhbnkgb3RoZXIgSUVU
+RiBjb250cmlidXRvcnMgYW5kIHJlc29sdmUgdGhlbSBhbG9uZw0KICAgIHdpdGggYW55IG90aGVy
+IExhc3QgQ2FsbCBjb21tZW50cyB0aGF0IGhhdmUgYmVlbiByZWNlaXZlZC4gRm9yIG1vcmUgZGV0
+YWlscyBvbg0KICAgIHRoZSBJTlQgRGlyZWN0b3JhdGUsIHNlZSBodHRwczovL2RhdGF0cmFja2Vy
+LmlldGYub3JnL2dyb3VwL2ludGRpci9hYm91dC8NCiAgICA8aHR0cHM6Ly9kYXRhdHJhY2tlci5p
+ZXRmLm9yZy9ncm91cC9pbnRkaXIvYWJvdXQvPi4NCg0KICAgIE92ZXJhbGwgSSBmb3VuZCB0aGUg
+ZG9jdW1lbnQgdG8gYmUgZmFpcmx5IHdlbGwgd3JpdHRlbiBhbmQgdW5kZXJzdGFuZGFibGUuIA0K
+ICAgIFRoZXJlIHdlcmUgYSBjb3VwbGUgb2YgYXJlYXMgdGhvdWdoIHdoZXJlIEkgdGhpbmsgYWRk
+aXRpb25hbCBlbGFib3JhdGlvbiBpcw0KICAgIG5lZWRlZC4NCg0KICAgIFRlY2huaWNhbCBjb21t
+ZW50czoNCg0KICAgIDEpIFBhZ2UgOCB0YWxrcyBhYm91dCAidGhlIiBJUHY2IGFkZHJlc3MgdXNl
+ZCBmb3IgY29tbXVuaWNhdGlvbiB3aXRoIHRoZSBwdWJsaWMNCiAgICBuZXR3b3JrLCBpbXBseWlu
+ZyB0aGVyZSBjYW4gb25seSBiZSBvbmUgYXQgYSB0aW1lLiAgVGhpcyBpcyBub3Qgbm9ybWFsIGlu
+IElQdjYsDQogICAgd2hlcmUgeW91IGNhbiBoYXZlIGEgcHVibGljIGFkZHJlc3MsIHRoZSBjdXJy
+ZW50IHRlbXBvcmFyeSBhZGRyZXNzLCBhbmQgdGhlDQogICAgcHJldmlvdXMgdGVtcG9yYXJ5IGFk
+ZHJlc3MgKHRvIGFsbG93IGZvciB0cmFuc2l0aW9uIHRvIGEgbmV3IG9uZSksIGFsbCBhdCB0aGUN
+CiAgICBzYW1lIHRpbWUuICAgU2hvdWxkIHRoaXMgYmUgY2hhbmdlZCB0byBiZSBwbHVyYWw/ICBJ
+ZiBub3QsIGhvdyBkbyB5b3Ugc3VwcG9ydA0KICAgIHByaXZhY3kgYWRkcmVzc2VzIGluIElQdjY/
+ICBXaGF0IGFib3V0IGNhc2VzIHdoZXJlIHlvdSBoYXZlIGV4dGVybmFsDQogICAgY29ubmVjdGl2
+aXR5IHRvIHR3byBwdWJsaWMgbmV0d29ya3MgZWFjaCB3aXRoIGl0cyBvd24gcHJlZml4PyAgSSBk
+b24ndCBzZWUgdGhpcw0KICAgIGFuc3dlcmVkIGFueXdoZXJlIGluIHRoZSBkb2MuDQoNCiAgICAy
+KSBQYWdlIDggYWxzbyBtZW50aW9ucyB0aGF0IGEgc2hhcmVkIHNlY3JldCAib3IiIHZlcnNpb24g
+bnVtYmVyIGNhbiBiZSB1c2VkIGluDQogICAgYSBoYXNoIHRvIGRlcml2ZSBhbiBJSUQsIGJ1dCBu
+ZXZlciBkZWZpbmVzIGFueSBoYXNoIGRldGFpbHMuICBUbyBtZSwgdGhhdA0KICAgIGltcGxpZXMg
+dGhhdCB0aGlzIGRvY3VtZW50IGN1cnJlbnRseSBkb2VzIG5vdCBwcm92aWRlIGFueSBndWFyYW50
+ZWUgb2YNCiAgICBpbnRlcm9wZXJhYmlsaXR5LCBpbiB3aGljaCBjYXNlIHdoeSBkbyB5b3UgbmVl
+ZCBhbiBJRVRGIFJGQyBhdCBhbGwgaWYgZXZlcnkNCiAgICBkZXZpY2UgaGFzIHRvIGNvbWUgZnJv
+bSB0aGUgc2FtZSB2ZW5kb3Igd2l0aCBhbiBhbGdvcml0aG0gbm90IHNwZWNpZmllZCBpbiB0aGUN
+CiAgICBzdGFuZGFyZD8gICBJIGV4cGVjdGVkIHRoaXMgZG9jdW1lbnQgdG8gc3BlY2lmeSB0aGUg
+ZGV0YWlscyBvZiBhIGhhc2ggYWxnb3JpdGhtDQogICAgdGhhdCBtdXN0IGJlIGltcGxlbWVudGVk
+Lg0KDQogICAgMykgUkZDIDgwNjUgZXhwbGFpbnMgdGhhdCBwcml2YWN5IG9mIElQdjYgbGluay1s
+b2NhbCBhZGRyZXNzZXMgaXMgdHlwaWNhbGx5DQogICAgdW5pbnRlcmVzdGluZyBiZWNhdXNlIG9u
+IGJyb2FkY2FzdCBtZWRpYSBhbGwgZGV2aWNlcyBjYW4gc2VlIGFsbCB0aGUgbGluay1sYXllcg0K
+ICAgIGFkZHJlc3NlcyBhbmQgbWFwcGluZ3MgYW55d2F5LiAgIEF0IGxlYXN0IGluIHRoZSBzdGFy
+IGFuZCB0cmVlIHRvcG9sb2dpZXMsIEkNCiAgICBzdXNwZWN0IHRoaXMgaXMgbm90IHRoZSBjYXNl
+LiAgIEhvd2V2ZXIgdGhlIGRvY3VtZW50IGRvZXNuJ3Qgc2VlbSB0byBjb250YWluDQogICAgYW55
+IGRpc2N1c3Npb24gb2YgdGhlIHByaXZhY3kgY29uc2lkZXJhdGlvbnMgaW4gc3VjaCBhIGNhc2Uu
+DQoNCiAgICA0KSBSRkMgODA2NSBzZWN0aW9uIDQgcHJvdmlkZXMgYSBjaGVja2xpc3Qgb2Ygd2hh
+dCBhZGFwdGF0aW9uIGxheWVyDQogICAgZG9jdW1lbnRzIGxpa2UgdGhpcyBuZWVkIHRvIGFkZHJl
+c3MuIEknZCByZWNvbW1lbmQgYWRkcmVzc2luZyBlYWNoIHBvaW50DQogICAgc2VwYXJhdGVseSBp
+biB0aGUgU2VjdXJpdHkgQ29uc2lkZXJhdGlvbnMgc2VjdGlvbiwgc28gaXQncyBjbGVhciB0aGF0
+IHRoZQ0KICAgIGRyYWZ0IGFkZHJlc3NlcyB0aGUgd2hvbGUgY2hlY2tsaXN0LiAgRm9yIGV4YW1w
+bGUsIHRoZXJlJ3Mgbm90aGluZyBpbiB0aGUNCiAgICBkb2N1bWVudCB0aGF0IG1lbnRpb25zIHdo
+YXQgdGhlIHR5cGljYWwgbGluayBsaWZldGltZSBpcyAoeWVhcnMgbWF5YmU/KQ0KICAgIEFzIGFu
+b3RoZXIgZXhhbXBsZSwgaXQncyByZWFsbHkgaGFyZCB0byB0ZWxsIGZyb20gcmVhZGluZyB0aGUg
+bGFzdA0KICAgIHBhcmFncmFwaCBvZiBzZWN0aW9uIDQuNSBvZiB0aGlzIGRyYWZ0IGhvdyBpdCBh
+ZGRyZXNzZXMgUkZDDQogICAgODA2NSdzIHN0YXRlbWVudCB0aGF0ICJhbnkgc3BlY2lmaWNhdGlv
+biB1c2luZyBTaG9ydA0KICAgIEFkZHJlc3NlcyBzaG91bGQgY2FyZWZ1bGx5IGNvbnN0cnVjdCBh
+biBJSUQgZ2VuZXJhdGlvbg0KICAgIG1lY2hhbmlzbSBzbyBhcyB0byBwcm92aWRlIHN1ZmZpY2ll
+bnQgZW50cm9weSBjb21wYXJlZCB0bw0KICAgIHRoZSBsaW5rIGxpZmV0aW1lIiBzbyBlbGFib3Jh
+dGlvbiBoZXJlIGlzIHdhcnJhbnRlZCBoZXJlIGluDQogICAgbXkgb3Bpbmlvbi4NCg0KICAgIEkg
+YWxzbyBoYXZlIHNvbWUgZWRpdG9yaWFsIG5pdHMgdGhhdCBjYW4gYmUgZm91bmQgaW4gYSBtYXJr
+ZWQgdXAgY29weSBhdA0KICAgIGh0dHBzOi8vd3d3Lm1pY3Jvc29mdC5jb20vZW4tdXMvcmVzZWFy
+Y2gvdXBsb2Fkcy9wcm9kLzIwMjEvMDgvZHJhZnQtaWV0Zi02bG8tcGxjLTA2LnBkZg0KDQogICAg
+RGF2ZQ0KDQoNCg0K
+
+
+From nobody Wed Aug 11 10:13:33 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id CA2123A1D57; Wed, 11 Aug 2021 10:13:26 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+From: Benjamin Kaduk via Datatracker <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-plc@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org, Carles Gomez <carlesgo@entel.upc.edu>, carlesgo@entel.upc.edu
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.36.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: Benjamin Kaduk <kaduk@mit.edu>
+Message-ID: <162870200618.22823.15301099161870634413@ietfa.amsl.com>
+Date: Wed, 11 Aug 2021 10:13:26 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/az0uh3HrQw6OjCz81oZD3GIlQCk>
+Subject: [6lo] Benjamin Kaduk's Discuss on draft-ietf-6lo-plc-06: (with DISCUSS and COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 11 Aug 2021 17:13:27 -0000
+
+Benjamin Kaduk has entered the following ballot position for
+draft-ietf-6lo-plc-06: Discuss
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/iesg/statement/discuss-criteria.html
+for more information about DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+
+
+----------------------------------------------------------------------
+DISCUSS:
+----------------------------------------------------------------------
+
+Further details in the COMMENT, but can we briefly discuss the apparent
+requirement for the PANID/NID to have a couple bits set to zero (the
+ones that would be U/L and Individual/Group in the resulting IID)?  It
+seems like (but is not entirely clear to me) this is a new requirement
+on the layer-2 behavior that is being imposed by the IPv6 adaptation
+layer, and in particular that this is setting up a scenario where
+certain existing layer-2 deployments would be unable to utilize the IPv6
+adaptation layer, which would be a very surprising behavior for an IETF
+Proposed Standard.  What alternatives were explored and rejected before
+settling on this approach that introduces new limitations on the
+underlying PLC deployments?
+
+I mention in a few places in the COMMENT scenarios where we pull in part
+of the functionality from RFC 6282 and RFC 4944, e.g., the IP header
+compression scheme and the fragmentation format.  It seems to me that
+the intent is that our payload always use the RFC 4944 "dispatch" scheme
+and that we only use a subset of (and only sometimes?) the particular
+functionality that RFC 4944/6282 can dispatch to.  But the current text
+doesn't mention the dispatch behavior at all, so it's hard for me to be
+certain that my understanding is correct.  It seems that some more
+explicit treatment in the document of how what we are specifying
+interacts with/uses the RFC 4944 dispatch layer would be important in
+order for someone to be able to implement from this document.
+
+I support Roman and Éric's Discusses.
+
+
+----------------------------------------------------------------------
+COMMENT:
+----------------------------------------------------------------------
+
+Section 4.1
+
+   Since the derived Interface ID is not global, the "Universal/Local"
+   (U/L) bit (7th bit) and the Individual/Group bit (8th bit) MUST both
+   be set to zero.  In order to avoid any ambiguity in the derived
+   Interface ID, these two bits MUST NOT be used to generate the PANID
+   (for IEEE 1901.2 and ITU-T G.9903) or NID (for IEEE 1901.1).  In
+   other words, the PANID or NID MUST always be chosen so that these
+   bits are zeros.
+
+Is this a new requirement on the PANID/NID not already imposed by the
+underlying specifications?  If so, it seems that it presents a
+limitation on the ability of already deployed PLC networks to adopt this
+IPv6 adaptation layer.
+
+   For privacy reasons, the IID derived from the MAC address SHOULD only
+   be used for link-local address configuration.  A PLC host SHOULD use
+   the IID derived from the link-layer short address to configure the
+   IPv6 address used for communication with the public network;
+   otherwise, the host's MAC address is exposed.  As per [RFC8065], when
+   short addresses are used on PLC links, a shared secret key or version
+   number from the Authoritative Border Router Option [RFC6775] can be
+   used to improve the entropy of the hash input, thus the generated IID
+   can be spread out to the full range of the IID address space while
+   stateless address compression is still allowed.
+
+The phrasing "derived from" is a little ambiguous to me, since it can
+encompass procedures ranging from the "flip the U/L bit and append PLC
+IID to the network's prefix" procedure to RFC 7217-style stable but
+opaque IIDs that incorporate the MAC address into the pseudorandom
+function's inputs.  Given the follow-up text about "host's MAC address
+is exposed", it feels like this is implying more of the former
+procedure.  Wouldn't the latter type of procedure be preferred, though
+(as implied by the "hash input" in the last sentence)?  In particular,
+the last sentence seems to imply that there is *always* a hash input,
+which is at odds with the "former" interpretation that I present for
+"derived from".  I'm not confident that I understand the intent of this
+paragraph.
+
+Section 4.3.1
+
+   In order to avoid the possibility of duplicated IPv6 addresses, the
+   value of the NID MUST be chosen so that the 7th and 8th bits of the
+   first byte of the NID are both zero.
+
+As above, it's not clear that the NID is something that this adaptation
+layer can assert control over.
+
+Section 4.3.2
+
+   In order to avoid the possibility of duplicated IPv6 addresses, the
+   value of the PAN ID MUST be chosen so that the 7th and 8th bits of
+   the first byte of the PAN ID are both zero.
+
+(likewise)
+
+Section 4.5
+
+   The compression of IPv6 datagrams within PLC MAC frames refers to
+   [RFC6282], which updates [RFC4944].  Header compression as defined in
+   [RFC6282] which specifies the compression format for IPv6 datagrams
+   on top of IEEE 802.15.4, is the basis for IPv6 header compression in
+   PLC.  For situations when PLC MAC MTU cannot support the 1280-octet
+   IPv6 packet, headers MUST be compressed according to [RFC6282]
+   encoding formats.
+
+RFC 6282 refers to both a "Dispatch" value and the LOWPAN_IPHC header
+compression encoding.  I strongly suggest clarifying whether both, or
+just LOWPAN_IPHC, is used.
+
+   For IEEE 1901.2 and G.9903, the IP header compression follows the
+   instruction in [RFC6282].  However, additional adaptation MUST be
+   considered for IEEE 1901.1 since it has a short address of 12 bits
+   instead of 16 bits.  The only modification is the semantics of the
+   "Source Address Mode" when set as "10" in the section 3.1 of
+   [RFC6282], which is illustrated as following.
+
+Is there anything useful to say about how carrying 12 vs 16 bits affects
+byte alignment of the overal compressed message?  A quick survey of RFC
+6282 finds many items that retain byte alignment, and I didn't actually
+find anything that left the encoded bit stream in a non-aligned state.
+
+   SAM: Source Address Mode:
+
+I see that RFC 6282 also has procedures for Destination Address Mode
+(DAM), including a scenario that involves conveying a 16-bit address
+component.  Do we need to treat that DAM analogously to how we treat the
+SAM here?  (This might also handle the byte alignment question from my
+previous remark...)
+
+Section 4.6
+
+   In IEEE 1901.1 and IEEE 1901.2, the MAC layer supports payloads as
+   big as 2031 octets and 1576 octets respectively.  However when the
+   channel condition is noisy, it is possible to configure smaller MTU
+   at the MAC layer.  If the configured MTU is smaller than 1280
+   octects, the fragmentation and reassembly defined in [RFC4944] MUST
+   be used.
+
+Does this imply that implementing the IPv6 adaptation layer
+fragmentation+reassembly logic is mandatory for implementations of IPv6
+over IEEE 1901.1 and 1901.2, since the implementation might be
+configured in a way that requires that support?  Please be clear about
+what is required of implementations and in what circumstances.
+
+Also, as above, please be clear about the interaction with the RFC 4944
+dispatch layer.
+
+Section 5
+
+   node; PAN Devices are typically PLC meters and sensors.  The PANC
+   also serves as the Routing Registrar for proxy registration and DAD
+   procedures, making use of the updated registration procedures in
+   [RFC8505].  IPv6 over PLC networks are built as tree, mesh or star
+
+If the PANC always serves as the Routing Registrar (and thus the RFC
+8505 procedures are always used), why do we allow for both RFC 6775 and
+8505 DAD procedures up in §4.4?
+
+Section 8
+
+We should probably incorporate by reference the security considerations
+of the documents whose technologies we are adopting.
+
+One might hope that it goes without saying, but it's nonetheless
+probably worth noting that the PANC, being in a position to observe all
+traffic, is necessarily a trusted entity.
+
+   Due to the high accessibility of power grid, PLC might be susceptible
+   to eavesdropping within its communication coverage, e.g., one
+   apartment tenant may have the chance to monitor the other smart
+   meters in the same apartment building.  Thus link layer security
+   mechanisms are designed in the PLC technologies mentioned in this
+   document.
+
+Key management for these security mechanisms will of course be quite
+important.  IoT devices are notoriously vulnerable to physical attacks
+and key extraction, so there may be something useful to say about the
+importance of key management and what is exposed if the key material
+available to a single device is compromised.
+
+It's quite hard to make an evaluation of the actual security properties
+provided by the link-layer mechanisms without access to the actual
+specification documents for those technologies.  I'd actually seriously
+consider adding another clause that "and additional end-to-end security
+services can be used for sensitive traffic and as additional
+protection against compromised PLC nodes" (or something in that general
+vein).
+
+Additionally, it's often the case that the link-layer security
+mechanisms involve group-shared symmetric keys, so that a compromise of
+even a single device puts the entire network, or a large chunk of the
+network, at risk.  If this is the case for the PLC link layers, it seems
+imperative to mention that risk in this document.
+
+   Malicious PLC devices could paralyze the whole network via DOS
+   attacks, e.g., keep joining and leaving the network frequently, or
+   multicast routing messages containing fake metrics.  A device may
+
+Is there potential for interfering with/corrupting legitimate traffic as
+a DoS vector, as well?
+   illegal users.  Mutual authentication of network and new device can
+   be conducted during the onboarding process of the new device.
+   Methods include protocols such as [RFC7925] (exchanging pre-installed
+   certificates over DTLS) , [I-D.ietf-6tisch-minimal-security] (which
+   uses pre-shared keys), and
+   [I-D.ietf-6tisch-dtsecurity-zerotouch-join] (which uses IDevID and
+   MASA service).  It is also possible to use EAP methods such as
+   [I-D.ietf-emu-eap-noob] via transports like PANA [RFC5191].  No
+   specific mechanism is specified by this document as an appropriate
+   mechanism will depend upon deployment circumstances.
+
+Would SZTP (RFC 8572) be applicable for these scenarios?
+(Also, I would recognize "BRSKI" more than "IDevID and [a] MASA
+service", though I don't know if I am the right population to be
+sampling for readibility data.)
+
+   scanning.  Schemes such as limited lease period in DHCPv6 [RFC3315],
+   Cryptographically Generated Addresses (CGAs) [RFC3972], privacy
+   extensions [RFC4941], Hash-Based Addresses (HBAs) [RFC5535], or
+   semantically opaque addresses [RFC7217] SHOULD be considered to
+   enhance the IID privacy.
+
+"SHOULD be considered" is a fairly weak guidance; I would think that
+"SHOULD be used" would be more consistent with the IETF consensus
+position, while still leaving ample space for other behaviors.
+
+Section 10.2
+
+I would consider classifying RFC 4291 as normative.
+
+NITS
+
+   meters for electricity.  The inherent advantage of existing
+   electricity infrastructure facilitates the expansion of PLC
+   deployments, and moreover, a wide variety of accessible devices
+   raises the potential demand of IPv6 for future applications.  This
+
+"Advantage" typically implies a comparison with some other thing or
+things as measured on a particular axis or axes.  While one might
+presume that this refers to the advantages of using existing wires over
+new wires in terms of cost and ease of deployment, it's probably worth
+stating it more clearly.
+
+Section 1
+
+   century.  With the advantage of existing power grid, Power Line
+   Communication (PLC) is a good candidate for supporting various
+   service scenarios such as in houses and offices, in trains and
+
+As above, what is "the advantage of existing power grid"?
+
+Section 2
+
+   PANC: PAN Coordinator, a coordinator which also acts as the primary
+         controller of a PAN.
+
+PAN is not marked as "well-known" at
+https://www.rfc-editor.org/materials/abbrev.expansion.txt (in fact, is
+not even defined there), and thus should get its own expansion.
+
+Section 4.4
+
+   information in the replied Neighbor Advertisements from the 6LR.  If
+   DHCPv6 is used to assign addresses or the IPv6 address is derived
+   from unique long or short link layer address, Duplicate Address
+   Detection (DAD) MUST NOT be utilized.  Otherwise, the DAD MUST be
+   performed at the 6LBR (as per [RFC6775]) or proxied by the routing
+   registrar (as per [RFC8505]).  The registration status is feedbacked
+   via the DAC or EDAC message from the 6LBR and the Neighbor
+   Advertisement (NA) from the 6LR.
+
+A few words on how the 6LR+6LBR must know whether 6775 or 8505 is in use
+on the network, and thus there is no ambiguity about which entity is
+performing DAD, might be helpful.
+
+Section 4.5
+
+   10:   12 bits.  The first 116 bits of the address are elided.The
+         value of the first 64 bits is the link-local prefix padded with
+
+spaces after the sentence break.
+
+Section 5
+
+   [RFC8505].  IPv6 over PLC networks are built as tree, mesh or star
+   according to the use cases.  Generally, each PLC network has one
+
+I think "as a tree, mesh or star topology"
+
+   the size of PLC networks.  A simple use case is the smart home
+   scenario where the ON/OFF state of air conditioning is controlled by
+   the state of home lights (ON/OFF) and doors (OPEN/CLOSE).  AODV-RPL
+
+Almost all the other examples in the document refer to PLC meters or
+sensors (mostly meters), so the "smart home" scenario sticks out as
+being rather different when only mentioned in passing like this.  I
+don't question the conclusion, but the overall writing style of the
+document might be improved if we introduced this scenario earlier on so
+that it was a more continual theme.
+
+   enables direct PAN device to PAN device communication, without being
+   obliged to transmit frames through the PANC, which is a requirement
+   often cited for AMI infrastructure.
+
+The only earlier mention of AODV-RPL was in §3.4; we might consider
+repeating the reference here in case the reader missed it the previous
+time.
+
+Section 6
+
+   self-managed.  The software or firmware is flushed into the devices
+
+s/flushed/flashed/?
+
+   before deployment by the vendor or operator.  And during the
+   deployment process, the devices are bootstrapped, and no extra
+   configuration is needed to get the device connected to each other.
+
+s/device/devices/
+
+   gateway.  The recently-formed iotops WG in IETF is aming to design
+   more features for the management of IOT networks.
+
+s/aming/aiming/
+Also, a reference to the WG's datatracker page might be worthwhile.
+
+Section 8
+
+   Malicious PLC devices could paralyze the whole network via DOS
+   attacks, e.g., keep joining and leaving the network frequently, or
+   multicast routing messages containing fake metrics.  A device may
+
+I think s/multicast/sending/multicast/
+
+   also join a wrong or even malicious network, exposing its data to
+   illegal users.  Mutual authentication of network and new device can
+
+Maybe "inadvertently join"?
+
+   IP addresses may be used to track devices on the Internet; such
+   devices can in turn be linked to individuals and their activities.
+
+I think s/can in turn/can often in turn/.  There are some IoT devices
+that are basically uncorrelated to individual humans.
+
+   Cryptographically Generated Addresses (CGAs) [RFC3972], privacy
+   extensions [RFC4941], Hash-Based Addresses (HBAs) [RFC5535], or
+
+RFC 4941 has been obsoleted by RFC 8981.
+
+
+
+
+From nobody Thu Aug 12 00:05:17 2021
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id DA3F13A0C06; Thu, 12 Aug 2021 00:04:54 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Murray Kucherawy via Datatracker <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-plc@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org, Carles Gomez <carlesgo@entel.upc.edu>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.36.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: Murray Kucherawy <superuser@gmail.com>
+Message-ID: <162875189452.23243.9274948191424170586@ietfa.amsl.com>
+Date: Thu, 12 Aug 2021 00:04:54 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/RttROk5aalumUNtWEuZ_-7U_pq8>
+Subject: [6lo] Murray Kucherawy's No Objection on draft-ietf-6lo-plc-06: (with COMMENT)
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 12 Aug 2021 07:04:55 -0000
+
+Murray Kucherawy has entered the following ballot position for
+draft-ietf-6lo-plc-06: No Objection
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/iesg/statement/discuss-criteria.html
+for more information about DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+
+
+----------------------------------------------------------------------
+COMMENT:
+----------------------------------------------------------------------
+
+I also support Roman's and Eric's DISCUSS positions.
+
+Section 2 needs to be reviewed.  It defines "CID", "EV", "IPHC", "LAN", "MSDU",
+"OFDM", and "PSDU", but these terms are not used anywhere in the document.  It
+also defines "WAN" which is not used, though "LPWAN" is used yet not defined.
+
+Please also define "6LR" someplace, or refer to its definition.  It first
+appears in Section 4.4, along with "6LBR" and "6BBR".  Perhaps there should be
+a mention of the 6LowPAN RFC in the Definitions section to import all of these
+definitions.
+
+
+
+
+From nobody Mon Aug 30 08:25:34 2021
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id A733B3A1662 for <6lo@ietfa.amsl.com>; Mon, 30 Aug 2021 08:25:32 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.894
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.894 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id vHtwCkeRNEVl for <6lo@ietfa.amsl.com>; Mon, 30 Aug 2021 08:25:27 -0700 (PDT)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 991E13A1656 for <6lo@ietf.org>; Mon, 30 Aug 2021 08:25:27 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 17UFPOdB017170 for <6lo@ietf.org>; Mon, 30 Aug 2021 17:25:24 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id 0F80D1D53C1 for <6lo@ietf.org>; Mon, 30 Aug 2021 17:25:24 +0200 (CEST)
+Received: from 83.53.210.110 by webmail.entel.upc.edu with HTTP; Mon, 30 Aug 2021 17:25:24 +0200
+Message-ID: <0f5454919eb62f40f3caf9361c36b59f.squirrel@webmail.entel.upc.edu>
+Date: Mon, 30 Aug 2021 17:25:24 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: multipart/mixed;boundary="----=_20210830172524_35096"
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Mon, 30 Aug 2021 17:25:24 +0200 (CEST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/U9n7AryMl2n7eZpDFWg2--TN1jA>
+Subject: [6lo] [Fwd: NomCom 2021-2022 Call for Nominations]
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 30 Aug 2021 15:25:33 -0000
+
+------=_20210830172524_35096
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+
+Dear 6Lo WG,
+
+Please find below information regarding the NomCom 2021-2022 Call for
+Nominations.
+
+Cheers,
+
+Shwetha and Carles
+
+
+-----Original Message-----
+From: ietf <ietf-bounces@ietf.org> On Behalf Of NomCom Chair 2021
+Sent: Monday, August 30, 2021 10:04
+To: IETF Announcement List <ietf-announce@ietf.org>
+Cc: ietf@ietf.org
+Subject: NomCom 2021-2022 Call for Nominations
+
+Finally! The moment we've all been waiting for:
+
+   C A L L       F O R       N O M I N A T I O N S  ! ! !
+
+The 2021-22 IETF Nominating Committee (NomCom) is seeking nominations from
+now until Monday, October 11, 2021.
+
+The open positions and more information are found at the NomCom web site:
+
+https://datatracker.ietf.org/nomcom/2021/
+
+They are also included below for convenience.
+
+Nominations may be made by selecting the Nominate link at the top of the
+NomCom 2021 home page, or by visiting the following URL:
+
+https://datatracker.ietf.org/nomcom/2021/nominate/
+
+Self-nomination is welcome!
+
+Note:  Nominations made using the web tool require an ietf.org datatracker
+account. You can create a datatracker ietf.org account if you don't have
+one already by visiting the following URL:
+
+https://datatracker.ietf.org/accounts/create/
+
+If you are unable to use the web form, nominations may instead be made by
+email to nomcom-2021 at ietf dot org. If using email, please include the
+word "Nominate"
+in the Subject and indicate in the email who is being nominated, their
+email address (to confirm acceptance of the nomination), and the position
+for which you are making the nomination. If you are nominating someone
+other than yourself, please tell us if we may tell the nominee that you
+were the one who made the nomination. If you wish to nominate someone via
+email for more than one position, please use separate emails to do so.
+
+Willing nominees will be asked to fill out a questionnaire specific to the
+position for which they are nominated. The finalized questionnaires will be
+available no later than Monday, September 6, 2021 (preliminary versions are
+already posted) and have a submission deadline of Monday, October 18, 2021.
+
+NomCom 2021-22 will follow the policy for "Open Disclosure of Willing
+Nominees" described in BCP 10/RFC 8713: "The list of nominees willing to be
+considered for positions under review in the current NomCom cycle is not
+confidential". Willing nominees for each position will be listed in a
+publicly accessible way, e.g., anyone with a datatracker account may access
+the lists. Additionally, the nomination form asks if we may share your own
+name with the nominee. In all other ways, the confidentiality requirements
+of BCP
+10 remain in effect. All feedback and all NomCom deliberations will remain
+confidential and will not be disclosed.
+
+There is a field on the form you can mark in order to allow the NomCom to
+tell the nominee that you were the one who made the nomination. This
+defaults to “no” - so if you don't mark the field we won’t tell.
+
+In order to ensure time to collect sufficient community feedback about each
+of the willing nominees, nominations must be received by the NomCom on or
+before Monday, October 11, 2021.
+
+Please submit your nominations as early as possible for the sake of your
+nominees. Note that nominations should not wait for nominee management
+permission, as it is easier to decline the nomination than put one in late.
+
+The NomCom appoints individuals to fill open slots on the IAB, IESG, the
+IETF Trust and the LLC Board:
+
+        ART AD: 1 position
+        INT AD: 1 position
+        OPS AD: 1 position
+        RTG AD: 1 position
+        SEC AD: 1 position
+        TSV AD: 1 position
+        IETF Trust: 1 position
+        IETF LLC: 1 position
+        IAB: 6 positions
+
+The list of people and posts whose terms end with the March 2022 IETF
+meeting, and thus the positions for which this NomCom is responsible, is:
+
+[An asterisk (*) next to a person's name indicates they do not intend to
+accept renomination.]
+
+        LLC Board (3-year term)
+                Jason Livingood
+
+        IETF Trust (3-year term)
+                Kathleen Moriarty
+
+        IAB (2-year term)
+                Ben Campbell *
+                Cullen Jennings
+                Mirja Kühlewind
+                Jared Mauch
+                Tommy Pauly
+                Jiankang Yao
+
+        IESG (2-year term)
+                Murray Kucherawy, ART AD
+                Erik Kline, INT AD
+                Robert Wilton, OPS AD
+                Martin Vigoureux, RTG AD
+                Benjamin Kaduk, SEC AD *
+                Martin Duke, TSV AD
+
+Please be resourceful in identifying possible candidates for these
+positions, as developing our talent is a very crucial requirement for the
+IETF, and also, please consider accepting a nomination. You'll find
+extensive information about specific positions, in individual tabs at:
+
+https://datatracker.ietf.org/nomcom/2021/requirements/
+
+In addition to nominations, the NomCom seeks community input on the
+positions themselves. We need and welcome the community's views and input
+on the jobs within each organization. If you have ideas on the positions’
+responsibilities (more, less, different), please let us know.
+
+Please send suggestions and feedback about this to nomcom-2021 at ietf dot
+org.
+
+Thank you for your help in identifying qualified nominees!
+
+Thanks,
+
+Gabriel Montenegro
+IETF NomCom Chair 2021-22
+nomcom-chair-2021 at ietf dot org
+_______________________________________________
+Roll mailing list
+Roll@ietf.org
+https://www.ietf.org/mailman/listinfo/roll
+
+------=_20210830172524_35096
+Content-Type: text/html; name="untitled-[1.2]"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: attachment; filename="untitled-[1.2]"
+
+<div dir="ltr"><br>FYI,<div><div class="gmail_quote"><br>
+-----Original Message-----<br>
+From: ietf &lt;<a href="mailto:ietf-bounces@ietf.org" target="_blank">ietf-bounces@ietf.org</a>&gt; On Behalf Of NomCom Chair 2021<br>
+Sent: Monday, August 30, 2021 10:04<br>
+To: IETF Announcement List &lt;<a href="mailto:ietf-announce@ietf.org" target="_blank">ietf-announce@ietf.org</a>&gt;<br>
+Cc: <a href="mailto:ietf@ietf.org" target="_blank">ietf@ietf.org</a><br>
+Subject: NomCom 2021-2022 Call for Nominations<br>
+<br>
+Finally! The moment we&#39;ve all been waiting for:<br>
+<br>
+   C A L L       F O R       N O M I N A T I O N S  ! ! !<br>
+<br>
+The 2021-22 IETF Nominating Committee (NomCom) is seeking nominations from now until Monday, October 11, 2021. <br>
+<br>
+The open positions and more information are found at the NomCom web site:<br>
+<br>
+<a href="https://datatracker.ietf.org/nomcom/2021/" rel="noreferrer" target="_blank">https://datatracker.ietf.org/nomcom/2021/</a> <br>
+<br>
+They are also included below for convenience.<br>
+<br>
+Nominations may be made by selecting the Nominate link at the top of the NomCom 2021 home page, or by visiting the following URL: <br>
+<br>
+<a href="https://datatracker.ietf.org/nomcom/2021/nominate/" rel="noreferrer" target="_blank">https://datatracker.ietf.org/nomcom/2021/nominate/</a><br>
+<br>
+Self-nomination is welcome! <br>
+<br>
+Note:  Nominations made using the web tool require an <a href="http://ietf.org" rel="noreferrer" target="_blank">ietf.org</a> datatracker account. You can create a datatracker <a href="http://ietf.org" rel="noreferrer" target="_blank">ietf.org</a> account if you don&#39;t have one already by visiting the following URL: <br>
+<br>
+<a href="https://datatracker.ietf.org/accounts/create/" rel="noreferrer" target="_blank">https://datatracker.ietf.org/accounts/create/</a><br>
+<br>
+If you are unable to use the web form, nominations may instead be made by email to nomcom-2021 at ietf dot org. If using email, please include the word &quot;Nominate&quot; <br>
+in the Subject and indicate in the email who is being nominated, their email address (to confirm acceptance of the nomination), and the position for which you are making the nomination. If you are nominating someone other than yourself, please tell us if we may tell the nominee that you were the one who made the nomination. If you wish to nominate someone via email for more than one position, please use separate emails to do so.<br>
+<br>
+Willing nominees will be asked to fill out a questionnaire specific to the position for which they are nominated. The finalized questionnaires will be available no later than Monday, September 6, 2021 (preliminary versions are already posted) and have a submission deadline of Monday, October 18, 2021. <br>
+<br>
+NomCom 2021-22 will follow the policy for &quot;Open Disclosure of Willing Nominees&quot; described in BCP 10/RFC 8713: &quot;The list of nominees willing to be considered for positions under review in the current NomCom cycle is not confidential&quot;. Willing nominees for each position will be listed in a publicly accessible way, e.g., anyone with a datatracker account may access the lists. Additionally, the nomination form asks if we may share your own name with the nominee. In all other ways, the confidentiality requirements of BCP<br>
+10 remain in effect. All feedback and all NomCom deliberations will remain confidential and will not be disclosed.<br>
+<br>
+There is a field on the form you can mark in order to allow the NomCom to tell the nominee that you were the one who made the nomination. This defaults to “no” - so if you don&#39;t mark the field we won’t tell.<br>
+<br>
+In order to ensure time to collect sufficient community feedback about each of the willing nominees, nominations must be received by the NomCom on or before Monday, October 11, 2021.<br>
+<br>
+Please submit your nominations as early as possible for the sake of your nominees. Note that nominations should not wait for nominee management permission, as it is easier to decline the nomination than put one in late.<br>
+<br>
+The NomCom appoints individuals to fill open slots on the IAB, IESG, the IETF Trust and the LLC Board:<br>
+<br>
+        ART AD: 1 position<br>
+        INT AD: 1 position<br>
+        OPS AD: 1 position<br>
+        RTG AD: 1 position<br>
+        SEC AD: 1 position<br>
+        TSV AD: 1 position<br>
+        IETF Trust: 1 position<br>
+        IETF LLC: 1 position<br>
+        IAB: 6 positions<br>
+<br>
+The list of people and posts whose terms end with the March 2022 IETF meeting, and thus the positions for which this NomCom is responsible, is:<br>
+<br>
+[An asterisk (*) next to a person&#39;s name indicates they do not intend to accept renomination.]<br>
+<br>
+        LLC Board (3-year term)<br>
+                Jason Livingood<br>
+<br>
+        IETF Trust (3-year term)<br>
+                Kathleen Moriarty<br>
+<br>
+        IAB (2-year term)<br>
+                Ben Campbell *<br>
+                Cullen Jennings<br>
+                Mirja Kühlewind<br>
+                Jared Mauch<br>
+                Tommy Pauly<br>
+                Jiankang Yao<br>
+<br>
+        IESG (2-year term)<br>
+                Murray Kucherawy, ART AD<br>
+                Erik Kline, INT AD<br>
+                Robert Wilton, OPS AD<br>
+                Martin Vigoureux, RTG AD<br>
+                Benjamin Kaduk, SEC AD *<br>
+                Martin Duke, TSV AD<br>
+<br>
+Please be resourceful in identifying possible candidates for these positions, as developing our talent is a very crucial requirement for the IETF, and also, please consider accepting a nomination. You&#39;ll find extensive information about specific positions, in individual tabs at: <br>
+<br>
+<a href="https://datatracker.ietf.org/nomcom/2021/requirements/" rel="noreferrer" target="_blank">https://datatracker.ietf.org/nomcom/2021/requirements/</a> <br>
+<br>
+In addition to nominations, the NomCom seeks community input on the positions themselves. We need and welcome the community&#39;s views and input on the jobs within each organization. If you have ideas on the positions’ responsibilities (more, less, different), please let us know.<br>
+<br>
+Please send suggestions and feedback about this to nomcom-2021 at ietf dot org. <br>
+<br>
+Thank you for your help in identifying qualified nominees! <br>
+<br>
+Thanks,<br>
+<br>
+Gabriel Montenegro<br>
+IETF NomCom Chair 2021-22<br>
+nomcom-chair-2021 at ietf dot org<br>
+<br>
+<br>
+</div></div></div>
+------=_20210830172524_35096--
+
+
+
+From nobody Mon Aug 30 18:33:12 2021
+Return-Path: <remy.liubing@huawei.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id B670C3A2AAE; Mon, 30 Aug 2021 18:33:09 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.897
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.897 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id dNu40EVlxkIe; Mon, 30 Aug 2021 18:33:04 -0700 (PDT)
+Received: from frasgout.his.huawei.com (frasgout.his.huawei.com [185.176.79.56]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 6E6803A2AAC; Mon, 30 Aug 2021 18:33:04 -0700 (PDT)
+Received: from fraeml742-chm.china.huawei.com (unknown [172.18.147.201]) by frasgout.his.huawei.com (SkyGuard) with ESMTP id 4Gz8mD4SBSz67FBw; Tue, 31 Aug 2021 09:31:24 +0800 (CST)
+Received: from dggpeml500010.china.huawei.com (7.185.36.155) by fraeml742-chm.china.huawei.com (10.206.15.223) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2308.8; Tue, 31 Aug 2021 03:33:00 +0200
+Received: from dggpeml500011.china.huawei.com (7.185.36.84) by dggpeml500010.china.huawei.com (7.185.36.155) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2176.2; Tue, 31 Aug 2021 09:32:58 +0800
+Received: from dggpeml500011.china.huawei.com ([7.185.36.84]) by dggpeml500011.china.huawei.com ([7.185.36.84]) with mapi id 15.01.2176.012; Tue, 31 Aug 2021 09:32:58 +0800
+From: "Liubing (Remy)" <remy.liubing@huawei.com>
+To: Dave Thaler <dthaler@microsoft.com>, "int-dir@ietf.org" <int-dir@ietf.org>
+CC: "6lo@ietf.org" <6lo@ietf.org>, "draft-ietf-6lo-plc.all@ietf.org" <draft-ietf-6lo-plc.all@ietf.org>, "last-call@ietf.org" <last-call@ietf.org>,  "yonggeun.hong@gmail.com" <yonggeun.hong@gmail.com>
+Thread-Topic: Intdir telechat review of draft-ietf-6lo-plc-06
+Thread-Index: AdeaLH6f+W9ga8xIQze7l97xe1eBFA==
+Date: Tue, 31 Aug 2021 01:32:58 +0000
+Message-ID: <ed85bb00d1be4d6491699483b5f7e259@huawei.com>
+Accept-Language: zh-CN, en-US
+Content-Language: zh-CN
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.110.9.243]
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+X-CFilter-Loop: Reflected
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/bInXZOy6psCqlMHfsBlXehECZK4>
+Subject: Re: [6lo] Intdir telechat review of draft-ietf-6lo-plc-06
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 31 Aug 2021 01:33:10 -0000
+
+SGVsbG8gRGF2ZSwNCg0KTWFueSB0aGFua3MgdG8geW91ciBjb21tZW50cy4gSXQgaGVscHMgYSBs
+b3QuIFdlIHdpbGwgaW5jbHVkZSB0aGUgbW9kaWZpY2F0aW9ucyBpbiB0aGUgbmV4dCB2ZXJzaW9u
+Lg0KDQpQbGVhc2Ugc2VlIG91ciBmZWVkYmFjayBiZWxvdy4NCg0KQmVzdCByZWdhcmRzLA0KUmVt
+eQ0KDQotLS0tLemCruS7tuWOn+S7ti0tLS0tDQrlj5Hku7bkuro6IERhdmUgVGhhbGVyIHZpYSBE
+YXRhdHJhY2tlciBbbWFpbHRvOm5vcmVwbHlAaWV0Zi5vcmddIA0K5Y+R6YCB5pe26Ze0OiAyMDIx
+5bm0OOaciDfml6UgMTA6MDMNCuaUtuS7tuS6ujogaW50LWRpckBpZXRmLm9yZw0K5oqE6YCBOiA2
+bG9AaWV0Zi5vcmc7IGRyYWZ0LWlldGYtNmxvLXBsYy5hbGxAaWV0Zi5vcmc7IGxhc3QtY2FsbEBp
+ZXRmLm9yZw0K5Li76aKYOiBJbnRkaXIgdGVsZWNoYXQgcmV2aWV3IG9mIGRyYWZ0LWlldGYtNmxv
+LXBsYy0wNg0KDQpSZXZpZXdlcjogRGF2ZSBUaGFsZXINClJldmlldyByZXN1bHQ6IEFsbW9zdCBS
+ZWFkeQ0KDQpJIGFtIGFuIGFzc2lnbmVkIElOVCBkaXJlY3RvcmF0ZSByZXZpZXdlciBmb3IgZHJh
+ZnQtaWV0Zi02bG8tcGxjLTA2LnR4dC4gVGhlc2UgY29tbWVudHMgd2VyZSB3cml0dGVuIHByaW1h
+cmlseSBmb3IgdGhlIGJlbmVmaXQgb2YgdGhlIEludGVybmV0IEFyZWEgRGlyZWN0b3JzLg0KRG9j
+dW1lbnQgZWRpdG9ycyBhbmQgc2hlcGhlcmQocykgc2hvdWxkIHRyZWF0IHRoZXNlIGNvbW1lbnRz
+IGp1c3QgbGlrZSB0aGV5IHdvdWxkIHRyZWF0IGNvbW1lbnRzIGZyb20gYW55IG90aGVyIElFVEYg
+Y29udHJpYnV0b3JzIGFuZCByZXNvbHZlIHRoZW0gYWxvbmcgd2l0aCBhbnkgb3RoZXIgTGFzdCBD
+YWxsIGNvbW1lbnRzIHRoYXQgaGF2ZSBiZWVuIHJlY2VpdmVkLiBGb3IgbW9yZSBkZXRhaWxzIG9u
+IHRoZSBJTlQgRGlyZWN0b3JhdGUsIHNlZSBodHRwczovL2RhdGF0cmFja2VyLmlldGYub3JnL2dy
+b3VwL2ludGRpci9hYm91dC8NCjxodHRwczovL2RhdGF0cmFja2VyLmlldGYub3JnL2dyb3VwL2lu
+dGRpci9hYm91dC8+Lg0KDQpPdmVyYWxsIEkgZm91bmQgdGhlIGRvY3VtZW50IHRvIGJlIGZhaXJs
+eSB3ZWxsIHdyaXR0ZW4gYW5kIHVuZGVyc3RhbmRhYmxlLiANClRoZXJlIHdlcmUgYSBjb3VwbGUg
+b2YgYXJlYXMgdGhvdWdoIHdoZXJlIEkgdGhpbmsgYWRkaXRpb25hbCBlbGFib3JhdGlvbiBpcyBu
+ZWVkZWQuDQoNClRlY2huaWNhbCBjb21tZW50czoNCg0KMSkgUGFnZSA4IHRhbGtzIGFib3V0ICJ0
+aGUiIElQdjYgYWRkcmVzcyB1c2VkIGZvciBjb21tdW5pY2F0aW9uIHdpdGggdGhlIHB1YmxpYyBu
+ZXR3b3JrLCBpbXBseWluZyB0aGVyZSBjYW4gb25seSBiZSBvbmUgYXQgYSB0aW1lLiAgVGhpcyBp
+cyBub3Qgbm9ybWFsIGluIElQdjYsIHdoZXJlIHlvdSBjYW4gaGF2ZSBhIHB1YmxpYyBhZGRyZXNz
+LCB0aGUgY3VycmVudCB0ZW1wb3JhcnkgYWRkcmVzcywgYW5kIHRoZSBwcmV2aW91cyB0ZW1wb3Jh
+cnkgYWRkcmVzcyAodG8gYWxsb3cgZm9yIHRyYW5zaXRpb24gdG8gYSBuZXcgb25lKSwgYWxsIGF0
+IHRoZQ0Kc2FtZSB0aW1lLiAgIFNob3VsZCB0aGlzIGJlIGNoYW5nZWQgdG8gYmUgcGx1cmFsPyAg
+SWYgbm90LCBob3cgZG8geW91IHN1cHBvcnQNCnByaXZhY3kgYWRkcmVzc2VzIGluIElQdjY/ICBX
+aGF0IGFib3V0IGNhc2VzIHdoZXJlIHlvdSBoYXZlIGV4dGVybmFsIGNvbm5lY3Rpdml0eSB0byB0
+d28gcHVibGljIG5ldHdvcmtzIGVhY2ggd2l0aCBpdHMgb3duIHByZWZpeD8gIEkgZG9uJ3Qgc2Vl
+IHRoaXMgYW5zd2VyZWQgYW55d2hlcmUgaW4gdGhlIGRvYy4NCltSZW15XSBZb3UncmUgcmlnaHQg
+YWJvdXQgdGhhdC4gQWN0dWFsbHkgd2UgZG9uJ3QgcHJldmVudCB0byBoYXZlIG11bHRpcGxlIElQ
+djYgYWRkcmVzc2VzIGF0IHRoZSBzYW1lIHRpbWUuIFdlIHdpbGwgY2hhbmdlIGl0IHRvIHBsdXJh
+bC4NCg0KMikgUGFnZSA4IGFsc28gbWVudGlvbnMgdGhhdCBhIHNoYXJlZCBzZWNyZXQgIm9yIiB2
+ZXJzaW9uIG51bWJlciBjYW4gYmUgdXNlZCBpbiBhIGhhc2ggdG8gZGVyaXZlIGFuIElJRCwgYnV0
+IG5ldmVyIGRlZmluZXMgYW55IGhhc2ggZGV0YWlscy4gIFRvIG1lLCB0aGF0IGltcGxpZXMgdGhh
+dCB0aGlzIGRvY3VtZW50IGN1cnJlbnRseSBkb2VzIG5vdCBwcm92aWRlIGFueSBndWFyYW50ZWUg
+b2YgaW50ZXJvcGVyYWJpbGl0eSwgaW4gd2hpY2ggY2FzZSB3aHkgZG8geW91IG5lZWQgYW4gSUVU
+RiBSRkMgYXQgYWxsIGlmIGV2ZXJ5IGRldmljZSBoYXMgdG8gY29tZSBmcm9tIHRoZSBzYW1lIHZl
+bmRvciB3aXRoIGFuIGFsZ29yaXRobSBub3Qgc3BlY2lmaWVkIGluIHRoZQ0Kc3RhbmRhcmQ/ICAg
+SSBleHBlY3RlZCB0aGlzIGRvY3VtZW50IHRvIHNwZWNpZnkgdGhlIGRldGFpbHMgb2YgYSBoYXNo
+IGFsZ29yaXRobQ0KdGhhdCBtdXN0IGJlIGltcGxlbWVudGVkLg0KW1JlbXldIFRoYXQncyBhIGdv
+b2Qgc3VnZ2VzdGlvbi4gV2Ugc3VnZ2VzdCB0byB1c2UgU0hBMjU2IGFzIHRoZSBoYXNoIGFsZ29y
+aXRobSwgYW5kIHRoZSB2ZXJzaW9uIG51bWJlciwgdGhlIFBBTklEL05JRCBhbmQgdGhlIHNob3J0
+IGFkZHJlc3MgYXMgdGhlIGlucHV0IGFyZ3VtZW50cy4gVGhlbiB0aGUgMjU2IGJpdHMgaGFzaCBv
+dXRwdXQgaXMgdHJ1bmNhdGVkIGJ5IHRha2luZyB0aGUgaGlnaCA2NCBiaXRzLg0KDQozKSBSRkMg
+ODA2NSBleHBsYWlucyB0aGF0IHByaXZhY3kgb2YgSVB2NiBsaW5rLWxvY2FsIGFkZHJlc3NlcyBp
+cyB0eXBpY2FsbHkgdW5pbnRlcmVzdGluZyBiZWNhdXNlIG9uIGJyb2FkY2FzdCBtZWRpYSBhbGwg
+ZGV2aWNlcyBjYW4gc2VlIGFsbCB0aGUgbGluay1sYXllcg0KYWRkcmVzc2VzIGFuZCBtYXBwaW5n
+cyBhbnl3YXkuICAgQXQgbGVhc3QgaW4gdGhlIHN0YXIgYW5kIHRyZWUgdG9wb2xvZ2llcywgSQ0K
+c3VzcGVjdCB0aGlzIGlzIG5vdCB0aGUgY2FzZS4gICBIb3dldmVyIHRoZSBkb2N1bWVudCBkb2Vz
+bid0IHNlZW0gdG8gY29udGFpbg0KYW55IGRpc2N1c3Npb24gb2YgdGhlIHByaXZhY3kgY29uc2lk
+ZXJhdGlvbnMgaW4gc3VjaCBhIGNhc2UuDQpbUmVteV0gVGhlIGRpZmZlcmVudCB0b3BvbG9naWVz
+IGRvbid0IHJlcXVpcmUgYWRkaXRpb25hbCBjb25zaWRlcmF0aW9ucy4gVGhlIHRvcG9sb2d5IG9m
+IHRoZSBQTEMgbmV0d29yayBpcyBkZWNpZGVkIGJ5IHRoZSBsaW5rIGNvbmRpdGlvbiBhbmQgZGlz
+dGFuY2UgYmV0d2VlbiB0aGUgZGV2aWNlcy4gT25seSBpZiBhIGRldmljZSBjYW4gaGVhciBmcm9t
+IGFub3RoZXIgYW5kIHRoZSBsaW5rIGNvbmRpdGlvbiBpcyBnb29kIGVub3VnaCwgdGhlIHR3byBk
+ZXZpY2VzIGFyZSAibGlua2VkIi4gSW4gc3RhciBhbmQgdHJlZSB0b3BvbG9neSwgYSBkZXZpY2Ug
+bWF5IGJlIGFibGUgdG8gaGVhciBhIHBhcnQgb2YgdGhlIG5ldHdvcmsuIEZvciB0aGlzIHBhcnRp
+dGlvbiBvZiB0aGUgbmV0d29yaywgdGhlIHByaXZhY3kgb2YgSVB2NiBsaW5rLWxvY2FsIGFkZHJl
+c3NlcyBpcyB1bmludGVyZXN0aW5nLiBGb3IgdGhlIHJlc3Qgb2YgdGhlIG5ldHdvcmssIHRoZSBs
+aW5rIGxheWVyIGFkZHJlc3MgYW5kIElQdjYgbGluayBsb2NhbCBhZGRyZXNzIGlzIG5vdCB2aXNp
+YmxlIHRvIHRoaXMgc3BlY2lmaWMgZGV2aWNlLg0KDQo0KSBSRkMgODA2NSBzZWN0aW9uIDQgcHJv
+dmlkZXMgYSBjaGVja2xpc3Qgb2Ygd2hhdCBhZGFwdGF0aW9uIGxheWVyIGRvY3VtZW50cyBsaWtl
+IHRoaXMgbmVlZCB0byBhZGRyZXNzLiBJJ2QgcmVjb21tZW5kIGFkZHJlc3NpbmcgZWFjaCBwb2lu
+dCBzZXBhcmF0ZWx5IGluIHRoZSBTZWN1cml0eSBDb25zaWRlcmF0aW9ucyBzZWN0aW9uLCBzbyBp
+dCdzIGNsZWFyIHRoYXQgdGhlIGRyYWZ0IGFkZHJlc3NlcyB0aGUgd2hvbGUgY2hlY2tsaXN0LiAg
+Rm9yIGV4YW1wbGUsIHRoZXJlJ3Mgbm90aGluZyBpbiB0aGUgZG9jdW1lbnQgdGhhdCBtZW50aW9u
+cyB3aGF0IHRoZSB0eXBpY2FsIGxpbmsgbGlmZXRpbWUgaXMgKHllYXJzIG1heWJlPykgQXMgYW5v
+dGhlciBleGFtcGxlLCBpdCdzIHJlYWxseSBoYXJkIHRvIHRlbGwgZnJvbSByZWFkaW5nIHRoZSBs
+YXN0IHBhcmFncmFwaCBvZiBzZWN0aW9uIDQuNSBvZiB0aGlzIGRyYWZ0IGhvdyBpdCBhZGRyZXNz
+ZXMgUkZDIDgwNjUncyBzdGF0ZW1lbnQgdGhhdCAiYW55IHNwZWNpZmljYXRpb24gdXNpbmcgU2hv
+cnQgQWRkcmVzc2VzIHNob3VsZCBjYXJlZnVsbHkgY29uc3RydWN0IGFuIElJRCBnZW5lcmF0aW9u
+IG1lY2hhbmlzbSBzbyBhcyB0byBwcm92aWRlIHN1ZmZpY2llbnQgZW50cm9weSBjb21wYXJlZCB0
+byB0aGUgbGluayBsaWZldGltZSIgc28gZWxhYm9yYXRpb24gaGVyZSBpcyB3YXJyYW50ZWQgaGVy
+ZSBpbiBteSBvcGluaW9uLg0KW1JlbXldIENvbnNpZGVyIGEgUExDIG5ldHdvcmsgd2l0aCAxMDI0
+IGRldmljZXMgYW5kIGl0cyBsaW5rIGxpZmV0aW1lIGlzIDggeWVhcnMsIGFjY29yZGluZyB0byB0
+aGUgZm9ybXVsYSBpbiBSRkM4MDY1LCBhbiBlbnRyb3B5IG9mIDQwIGJpdHMgaXMgc3VmZmljaWVu
+dC4gUGFkZGluZyB0aGUgc2hvcnQgYWRkcmVzcyAoMTIgb3IgMTYgYml0cykgdG8gZ2VuZXJhdGUg
+dGhlIElJRCBvZiBhIHJvdXRhYmxlIElQdjYgYWRkcmVzcyBpbiB0aGUgcHVibGljIG5ldHdvcmsg
+bWF5IGJlIHZ1bG5lcmFibGUgdG8gZGVhbCB3aXRoIGFkZHJlc3Mgc2NhbnMuIFRodXMgQXMgZXhw
+bGFpbmVkIGluIHRoZSBjb21tZW50ICMyLCBhIGhhc2ggZnVuY3Rpb24gY2FuIGJlIHVzZWQgdG8g
+Z2VuZXJhdGUgYSA2NCBiaXRzIElJRC4gV2hlbiB0aGUgdmVyc2lvbiBudW1iZXIgb2YgdGhlIFBM
+QyBuZXR3b3JrIGlzIGNoYW5nZWQsIHRoZSBJUHY2IGFkZHJlc3NlcyBjYW4gYmUgY2hhbmdlZCBh
+cyB3ZWxsLiBJbiBhbm90aGVyIHdheSwgdGhlIElQdjYgYWRkcmVzc2VzIGNhbiBiZSBhc3NpZ25l
+ZCBhbmQgY2hhbmdlZCB2aWEgREhDUC4gSW4gYSBub3JtYWwgc2l0dWF0aW9uLCBhIFBMQyBkZXZp
+Y2UgZG9lc24ndCAicm9hbSIuIFRoZSBkZXZpY2UgbGVhdmVzIHRoZSBuZXR3b3JrIGZpcnN0IGFu
+ZCBqb2lucyBpbiBhbm90aGVyLiBBbmQgdGhlIHNob3J0IGFkZHJlc3MgYW5kIHRoZSBJUHY2IGFk
+ZHJlc3Mgc2hvdWxkIGNoYW5nZSBkdXJpbmcgdGhpcyBwcm9jZXNzLg0KDQpJIGFsc28gaGF2ZSBz
+b21lIGVkaXRvcmlhbCBuaXRzIHRoYXQgY2FuIGJlIGZvdW5kIGluIGEgbWFya2VkIHVwIGNvcHkg
+YXQgaHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS9lbi11cy9yZXNlYXJjaC91cGxvYWRzL3Byb2Qv
+MjAyMS8wOC9kcmFmdC1pZXRmLTZsby1wbGMtMDYucGRmDQoNCkRhdmUNCg0KDQo=
+

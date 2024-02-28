@@ -1,0 +1,1405 @@
+
+From nobody Wed Sep  2 02:54:38 2020
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 454B43A0F8E; Wed,  2 Sep 2020 02:54:37 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.898
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.898 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, SPF_HELO_NONE=0.001, SPF_NONE=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id h-plxbDHMjCf; Wed,  2 Sep 2020 02:54:35 -0700 (PDT)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 022873A0F86; Wed,  2 Sep 2020 02:54:34 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.39.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 0829sPOo028448; Wed, 2 Sep 2020 11:54:25 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id 2BCF61D53C1; Wed,  2 Sep 2020 11:54:24 +0200 (CEST)
+Received: from 83.53.65.249 by webmail.entel.upc.edu with HTTP; Wed, 2 Sep 2020 11:54:25 +0200
+Message-ID: <b7ec07d19ccc2b88c6984a032c0c3c04.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <BB09947B5326FE42BA3918FA28765C2E01355B55@DGGEMM506-MBX.china.huawei.com>
+References: <BB09947B5326FE42BA3918FA28765C2E01355B55@DGGEMM506-MBX.china.huawei.com>
+Date: Wed, 2 Sep 2020 11:54:25 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: "Liubing (Remy)" <remy.liubing@huawei.com>
+Cc: "draft-ietf-6lo-plc@ietf.org" <draft-ietf-6lo-plc@ietf.org>, "6lo@ietf.org" <6lo@ietf.org>
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at violet
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Wed, 02 Sep 2020 11:54:25 +0200 (CEST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/2f7kX5in2b-VRsoNByAsj0m6teI>
+Subject: Re: [6lo] Shepherd review of draft-ietf-6lo-plc
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 02 Sep 2020 09:54:37 -0000
+
+Hello Remy,
+
+First of all, sorry for the late response.
+
+Thanks for taking my comments into consideration.
+
+Please find below my inline responses (labeled [Carles]):
+
+> Hello Carles,
+>
+> Thank you very much for your detailed review.
+
+[Carles] You are welcome!
+
+> We accept most of your suggestions.
+
+[Carles] Thanks!
+
+> Meanwhile, items that need further
+> discussion are posted below.
+>
+> 1. This specification provides a brief overview of PLC technologies.
+>      Some of them have LLN characteristics, i.e. limited power
+>
+> Just a weak suggestion: LLN is a recognized term in many domains.
+> Nevertheless, feel free to consider using "Constrained-Node Network (CNN)
+> (see RFC 7228).
+> [Remy] Maybe LLN is a better choice since it is used in many RFCs in IOT
+> domain as well. Thank you for your suggestion though.
+
+[Carles] Feel free to use the term that you prefer.
+
+> 2.   RPL (Routing Protocol for Low-Power and Lossy Networks) [RFC6550]
+>         is a layer 3 routing protocol.  AODV-RPL [I-D.ietf-roll-aodv-rpl]
+>         updates RPL to include reactive, point-to-point, and asymmetric
+>         routing.  IEEE 1901.2 specifies Information Elements (IEs) with
+>         MAC layer metrics, which can be provided to L3 routing protocol
+>         for parent selection.  For IPv6-addressable PLC networks, a
+>         layer-3 routing protocol such as RPL and/or AODV-RPL SHOULD be
+>         supported in the standard.
+>
+> Why "SHOULD"?  And if "SHOULD" is the right term here, perhaps add some
+> clarification on reasons or circumstances motivating using a protocol
+> different from RPL and/or AODV-RPL?
+> [Remy] Yes, this sentence makes people confused. The reason why "SHOULD"
+> is used is that we have other options like L2-routing and LOADng. But this
+> sentence looks redundant now, because the whole section is talking about
+> the three options. Do you think it is OK to remove this sentence?
+
+[Carles] Yes, I agree to remove this sentence.
+
+> 3. IEEE 1901.1 supports 12-bit and 48-bit addresses. Header compression
+> over IEEE 1901.1 will need some form of adaptation, since RFC 6282 refers
+> to 16-bit and 64-bit addresses.
+> [Remy] Yes, we need adaptation. How to generate IID from 12-bit (1901.1),
+> 16-bit (G.9903 and 1901.2) and 48-bit address is defined in section 4.1
+> (Stateless Address Autoconfiguration). And using the same method, the
+> original IPv6 address can be recovered from the L2 address. Thus that's
+> where the adaptation is defined. It may be not explicit enough. Actually,
+> the encoding format defined in RFC6282 applies to all the PLC technologies
+> mentioned in this draft. The only difference is: for 1901.1, when the SAM
+> or DAM in RFC6282 is set to 2, it means the source or destination IPv6
+> address is compressed to 12 bits instead of 16bits.
+
+[Carles] In my opinion, adding some more explicit note would be helpful.
+
+> 4. PAN Coordinator (PANC) and PAN Device.  The PANC is the primary
+>    coordinator of the PLC subnet and can be seen as a master node; PAN
+>    Devices are typically PLC meters and sensors.  The PANC also serves
+>    as the Routing Registrar for proxy registration and DAD procedures,
+>    making use of the updated registration procedures in [RFC8505].  IPv6
+>    over PLC networks are built as tree, mesh or star according to the
+>    use cases.  Every network requires at least one PANC to communicate
+>    with each PAN Device.
+>
+> The last sentence was unclear. Who/What communicates with each PAN
+> Device?
+> [Remy] We meant "the PANC communicates with the PAN devices". We try to
+> rephrase: Generally, each PLC network has one PANC. In some cases, the PLC
+> network can have alternate coordinators to replace the PANC when the PANC
+> leaves the network for some reason.
+
+[Carles] Your new proposed text looks good to me.
+
+> 5. What is the subnet model for the scenarios illustrated in this
+> section?
+> For example, is the "PLC subnet" a multilink subnet? Is each link in the
+> "PLC subnet" a subnet?
+> [Remy] It is a multilink subnet, instead of "each link is a subnet".
+
+[Carles] Thanks. Please add some text on this feature to the document.
+
+Best regards,
+
+Carles
+
+
+> Best regards,
+> Remy
+
+
+
+From nobody Wed Sep  2 03:19:33 2020
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id C3C143A0E69 for <6lo@ietfa.amsl.com>; Wed,  2 Sep 2020 03:19:31 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.897
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.897 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id hi9kHnbRGO7H for <6lo@ietfa.amsl.com>; Wed,  2 Sep 2020 03:19:30 -0700 (PDT)
+Received: from violet.upc.es (violet.upc.es [147.83.2.51]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id CC5F83A0E5E for <6lo@ietf.org>; Wed,  2 Sep 2020 03:19:29 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.39.4]) by violet.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 082AJ9Sm033216; Wed, 2 Sep 2020 12:19:10 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id 731331D53C1; Wed,  2 Sep 2020 12:19:08 +0200 (CEST)
+Received: from 83.53.65.249 by webmail.entel.upc.edu with HTTP; Wed, 2 Sep 2020 12:19:09 +0200
+Message-ID: <717d315f59be0fe75090722b53c7e74c.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <lesa3ak6z6nh.lesa3ak5uf7k.g1@dooray.com>
+References: <159824929785.26020.10457336375288592164@ietfa.amsl.com> <lesa3ak6z6nh.lesa3ak5uf7k.g1@dooray.com>
+Date: Wed, 2 Sep 2020 12:19:09 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: =?iso-8859-1?Q?=22=EC=B5=9C=EC=98=81=ED=99=98=22?= <yhc@etri.re.kr>
+Cc: 6lo@ietf.org, ek.ietf@gmail.com
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at violet
+X-Virus-Status: Clean
+X-Greylist: Delayed for 00:24:45 by milter-greylist-4.3.9 (violet.upc.es [147.83.2.51]); Wed, 02 Sep 2020 12:19:10 +0200 (CEST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/AhBIztBvdAqNES0JezleuaOpnjI>
+Subject: Re: [6lo] New Version Notification for draft-ietf-6lo-nfc-17.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 02 Sep 2020 10:19:32 -0000
+
+Hi Younghwan,
+
+Sorry for the late reply.
+
+Thanks for addressing my comments!
+
+Best regards,
+
+Carles
+
+
+
+> Hi all,
+>
+> I have submitted the draft-17 (like the followings), which had reflected
+> all the comments about draft-16  from Carles.
+> Thanks a lot.
+>
+> Best regards,
+> Younghwan
+> --------------------------------------------------
+> 최 영 환  공학박사/선임연구원
+> YOUNGHWAN CHOI, Ph.D./Senior Researcher
+> ETRI 표준연구본부 지능정보표준연구실
+> (34129) 대전시 유성구 가정로 218
+> Tel +82-42-860-1429, Fax +82-42-860-5404 
+> Email  yhc@etri.re.kr
+
+
+
+From nobody Wed Sep  2 18:14:52 2020
+Return-Path: <yhc@etri.re.kr>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0AA143A0C24 for <6lo@ietfa.amsl.com>; Wed,  2 Sep 2020 18:14:46 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: 1.4
+X-Spam-Level: *
+X-Spam-Status: No, score=1.4 tagged_above=-999 required=5 tests=[BAYES_05=-0.5, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, MISSING_MIMEOLE=1.899, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=no autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=dooray.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id FGU5K2HEBcIZ for <6lo@ietfa.amsl.com>; Wed,  2 Sep 2020 18:14:43 -0700 (PDT)
+Received: from mscreen.etri.re.kr (mscreen.etri.re.kr [129.254.9.16]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id EED593A0C0E for <6lo@ietf.org>; Wed,  2 Sep 2020 18:14:41 -0700 (PDT)
+Received: from unknown (HELO send002-relay.gov-dooray.com) (211.180.235.153) by 129.254.9.16 with ESMTP; 3 Sep 2020 10:14:34 +0900
+X-Original-SENDERIP: 211.180.235.153
+X-Original-MAILFROM: yhc@etri.re.kr
+X-Original-RCPTTO: 6lo@ietf.org
+Received: from [10.162.225.109] (HELO send002.gov-dooray.com) ([10.162.225.109]) by send002-relay.gov-dooray.com with SMTP id 3d889c6c5f50437e; Thu, 03 Sep 2020 10:14:38 +0900
+DKIM-Signature: a=rsa-sha256; b=Cl1p811Mv+b5TT+KPnI+yL2hcnSmoqXn9Ir0w/SaejofJxi9ndGSz3ZzMKDsqR9qW8Cs3II4Oc 7ku1dTa7fOWC5GFagD6ago2MwpLoUyMebJyRoGBUDqz+zMIiSfYhRx2V0CTf1da53pWTvbug8RHu ESz6YrdzOaUEkNZ5E8v7RiTtKLaFlmBgFwuRSAVeBUZK3t3jqXkwcExWhTthAkpXzhLAoJ13O3Vb RyX2w62eiCmy/qOkEAUbKCrheFuWZs6FWmLZO9V+vlnLBj1Xr4Vrn1WdfN2MgawurZRCgjuKxF11 AgzsBxVmb2PYnAiXJ+3Pn1dSlXhvE8kMfmDetaeQ==; c=relaxed/relaxed; s=selector; d=dooray.com; v=1; bh=c8gMNDfmuw6jQBLn2nm3gB5sIWwGuiTx+woBsTXEgxY=; h=From:To:Subject:Message-ID;
+From: =?UTF-8?B?7LWc7JiB7ZmY?= <yhc@etri.re.kr>
+To: Carles Gomez Montenegro <carlesgo@entel.upc.edu>
+Cc: 6lo@ietf.org, ek.ietf@gmail.com
+Message-ID: <lgq6i7xucb56.lgq6i7xwf3mw.g1@dooray.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+X-Dsn-Request: true
+X-Dooray-Agent: mail-api
+Importance: Normal
+X-Priority: Normal
+X-MSMail-Priority: Normal
+Date: Thu, 03 Sep 2020 10:14:37 +0900 (KST)
+Sender: yhc@etri.re.kr
+References: <159824929785.26020.10457336375288592164@ietfa.amsl.com> <lesa3ak6z6nh.lesa3ak5uf7k.g1@dooray.com> <717d315f59be0fe75090722b53c7e74c.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <717d315f59be0fe75090722b53c7e74c.squirrel@webmail.entel.upc.edu>
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/Llt4jqachWOvjCX1cPVTtQ8AzB4>
+Subject: Re: [6lo] New Version Notification for draft-ietf-6lo-nfc-17.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 03 Sep 2020 01:14:50 -0000
+
+SGkgQ2FybGVzLAoKVGhhbmtzIGZvciB5b3VyIHJlc3BvbnNlLiAKQmVzdCBSZWdhcmRzLAoKWW91
+bmdod2FuCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+Cuy1nCDsmIEg7ZmYwqAg6rO17ZWZ67CV7IKsL+yEoOyehOyXsOq1rOybkApZT1VOR0hXQU4gQ0hP
+SSwgUGguRC4vU2VuaW9yIFJlc2VhcmNoZXIKRVRSScKg7ZGc7KSA7Jew6rWs67O467aAwqDsp4Dr
+iqXsoJXrs7TtkZzspIDsl7Dqtazsi6QKKDM0MTI5KSDrjIDsoITsi5wg7Jyg7ISx6rWsIOqwgOyg
+leuhnCAyMTgKVGVsICs4Mi00Mi04NjAtMTQyOSzCoEZheCArODItNDItODYwLTU0MDTCoApFbWFp
+bMKgIHloY0BldHJpLnJlLmtyCgotLS0tLU9yaWdpbmFsIE1lc3NhZ2UtLS0tLQpGcm9tOiAgIkNh
+cmxlcyBHb21leiBNb250ZW5lZ3JvIiA8Y2FybGVzZ29AZW50ZWwudXBjLmVkdT4KVG86ICAgICAi
+w6zCtcKcw6zCmMKBw63CmcKYIiA8eWhjQGV0cmkucmUua3I+OyAKQ2M6ICAgICAgPDZsb0BpZXRm
+Lm9yZz47ICAgPGVrLmlldGZAZ21haWwuY29tPjsgClNlbnQ6ICAyMDIwLTA5LTAyICjsiJgpIDE5
+OjE5OjI4IChVVEMrMDk6MDApClN1YmplY3Q6IFJlOiBbNmxvXSBOZXcgVmVyc2lvbiBOb3RpZmlj
+YXRpb24gZm9yIGRyYWZ0LWlldGYtNmxvLW5mYy0xNy50eHQKCkhpIFlvdW5naHdhbiwKClNvcnJ5
+IGZvciB0aGUgbGF0ZSByZXBseS4KClRoYW5rcyBmb3IgYWRkcmVzc2luZyBteSBjb21tZW50cyEK
+CkJlc3QgcmVnYXJkcywKCkNhcmxlcwoKCgo+IEhpIGFsbCwKPgo+IEkgaGF2ZSBzdWJtaXR0ZWQg
+dGhlIGRyYWZ0LTE3IChsaWtlIHRoZSBmb2xsb3dpbmdzKSwgd2hpY2ggaGFkIHJlZmxlY3RlZAo+
+IGFsbCB0aGUgY29tbWVudHMgYWJvdXQgZHJhZnQtMTYgIGZyb20gQ2FybGVzLgo+IFRoYW5rcyBh
+IGxvdC4KPgo+IEJlc3QgcmVnYXJkcywKPiBZb3VuZ2h3YW4KPiAtLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQo+IMOswrXCnCDDrMKYwoEgw63CmcKYw4LC
+oCDDqsKzwrXDrcKVwpnDq8KwwpXDrMKCwqwvw6zChMKgw6zCnsKEw6zCl8Kww6rCtcKsw6zCm8KQ
+Cj4gWU9VTkdIV0FOIENIT0ksIFBoLkQuL1NlbmlvciBSZXNlYXJjaGVyCj4gRVRSScOCwqDDrcKR
+wpzDrMKkwoDDrMKXwrDDqsK1wqzDq8KzwrjDq8K2woDDgsKgw6zCp8KAw6vCisKlw6zCoMKVw6vC
+s8K0w63CkcKcw6zCpMKAw6zCl8Kww6rCtcKsw6zCi8KkCj4gKDM0MTI5KSDDq8KMwoDDrMKgwoTD
+rMKLwpwgw6zCnMKgw6zChMKxw6rCtcKsIMOqwrDCgMOswqDClcOrwqHCnCAyMTgKPiBUZWwgKzgy
+LTQyLTg2MC0xNDI5LMOCwqBGYXggKzgyLTQyLTg2MC01NDA0w4LCoAo+IEVtYWlsw4LCoCB5aGNA
+ZXRyaS5yZS5rcgoKCgo=
+
+
+
+From nobody Mon Sep 21 05:38:53 2020
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id EE58B3A0DD1 for <6lo@ietfa.amsl.com>; Mon, 21 Sep 2020 05:38:51 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.917
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.917 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 3K0WR9xy2jTQ for <6lo@ietfa.amsl.com>; Mon, 21 Sep 2020 05:38:50 -0700 (PDT)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 2AD2F3A0DCA for <6lo@ietf.org>; Mon, 21 Sep 2020 05:38:49 -0700 (PDT)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.39.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 08LCcluB035780;  Mon, 21 Sep 2020 14:38:47 +0200
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.39.6]) by entelserver.upc.edu (Postfix) with ESMTP id A118A1D53C1; Mon, 21 Sep 2020 14:38:46 +0200 (CEST)
+Received: from 95.126.92.38 by webmail.entel.upc.edu with HTTP; Mon, 21 Sep 2020 14:38:47 +0200
+Message-ID: <4c0e8f69095c1d28cdbf14de9cacd6e4.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <CABONVQYewJT=cmnWwrLRfRc9Xp+4u+qTb8PLDH4TuCnyF3heKw@mail.gmail.com>
+References: <CABONVQYewJT=cmnWwrLRfRc9Xp+4u+qTb8PLDH4TuCnyF3heKw@mail.gmail.com>
+Date: Mon, 21 Sep 2020 14:38:47 +0200
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: "Laurent Toutain" <laurent.toutain@imt-atlantique.fr>
+Cc: 6lo@ietf.org
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Mon, 21 Sep 2020 14:38:48 +0200 (CEST)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/McNe9gqiyygzaTCDFAz6YEX4iLE>
+Subject: Re: [6lo] 6lo and SCHC
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 21 Sep 2020 12:38:52 -0000
+
+Hi Laurent,
+
+Thanks a lot for your comments!
+
+(And sorry for the late response.)
+
+Please find below my inline responses:
+
+> Hi Carles,
+>
+> Thank you for the draft, it shows that 6lo and SCHC can work together.
+> I've
+> few comments on the draft:
+>
+> - NALP
+>
+> I don't think we should impose the size of the ruleID in 6lo header, for
+> instance if a 6lo network is relaying a SCHC packet, it should know the
+> rule size to fill the field. if it does not care, it just copy the SCHC
+> packet after the NALP.
+>
+> I will be more in favor of a NALP of 1 byte long then the SCHC packet.
+
+Yes, I agree with your vision.
+
+I just updated the draft. As per this update (-01), a 1-byte Dispatch Type
+is (or would be) used for SCHC header compression:
+https://datatracker.ietf.org/doc/draft-gomez-6lo-schc-dispatch
+
+This approach exploits the RFC 8025 concept of pages. The current proposal
+is allocating a whole page as SCHC Dispatch Type, with the aim to minimize
+header overhead.
+
+> We can specify some recommendations at it is currently done for LoRaWAN,
+> Sigfox or PPP to carry SCHC packet over 6lo.
+
+Agreed!
+
+One consideration is that the draft focuses only on the use of SCHC header
+compression (i.e. not fragmentation), since 6LoWPAN fragmentation was
+designed taking into account a set of requirements that is different from
+those in LPWAN. In addition, 6LoWPAN fragmentation functionality is being
+extended with draft-ietf-6lo-fragment-recovery.
+
+Therefore, I understand that the document that you suggest (e.g. a profile
+for SCHC header compression over 802.15.4?) would only focus on the SCHC
+header compression part, Rule ID sizes, padding, etc., and not on SCHC
+fragmentation.
+
+And the LPWAN WG should probably be involved...
+
+Thoughts?
+
+> - HC
+>
+> Could be nice to have a HC_SCHC which keeps IPv6 header compression with
+> 6lo and allows route-over. Same as for NALP, the SCHC format decoding is
+> done by SCHC.
+
+Yes, that is also an interesting approach, probably for a separate document.
+
+Thanks,
+
+Carles (as a WG participant)
+
+
+From nobody Sat Sep 26 04:10:40 2020
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 205AC3A0138; Sat, 26 Sep 2020 04:10:38 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -9.6
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.6 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, HTML_MESSAGE=0.001, RCVD_IN_MSPIKE_H2=-0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com header.b=lMUi26pV; dkim=pass (1024-bit key) header.d=cisco.onmicrosoft.com header.b=FnIMqAO0
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id EG_tNdzyW2O7; Sat, 26 Sep 2020 04:10:36 -0700 (PDT)
+Received: from alln-iport-1.cisco.com (alln-iport-1.cisco.com [173.37.142.88]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id B3C533A011B; Sat, 26 Sep 2020 04:10:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=8280; q=dns/txt; s=iport; t=1601118635; x=1602328235; h=from:to:subject:date:message-id:references:in-reply-to: mime-version; bh=QbSUAz+jPdIwaSDn2rfH7KkHDSdZW8hNrZSUvnqUaEc=; b=lMUi26pV4KWk2JD+7yoZQHz7niQjamDrdZENRgKT9ZK6FtuQoHLbVMHV vFZ/bn5qd6qq19gZKP2/Ek22GeCUTIZGmLfQ30ikcWPT40E3UXdnVsJnA 1UeSOEQFPRq83eUdpfwrhEh56C3kxskQ3uNQMSu68jMD8FDq169G5NdEw Q=;
+IronPort-PHdr: =?us-ascii?q?9a23=3A4vQLdRLjrGnVEs/abtmcpTVXNCE6p7X5OBIU4Z?= =?us-ascii?q?M7irVIN76u5InmIFeGvK8/jVLVU8Pc8f0Xw+bVsqW1X2sG7N7BtX0Za5VDWl?= =?us-ascii?q?cDjtlehA0vBsOJSCiZZP7nZiA3BoJOAVli+XzoMEVJFoD5fVKB6nG35CQZTx?= =?us-ascii?q?P4Mwc9L+/pG4nU2sKw0e36+5DabwhSwjSnZrYnJxStpgKXvc4T0oY=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0BdBgBBIW9f/4sNJK1cAx4BPAwCC4F?= =?us-ascii?q?kgSMvUQcRAV5ZLyyEPINGA41/lAiEboEuFIERA1ULAQEBDQEBGAEKCgIEAQG?= =?us-ascii?q?ESwIXghcCJTQJDgIDAQELAQEFAQEBAgEGBG2FXAyFcgEBAQEDEhEKEwEBDCU?= =?us-ascii?q?HDwIBCBEEAQEoAwICAi8BFAcBAQUDAgQBBwsIEgMEAYMFgX5NAy4BDqsBAoE?= =?us-ascii?q?5iCw1doEygwEBAQWBNwSEAhiCEAMGgTiCcoNaAg2GUxuBQT+BEUOCHy4+glw?= =?us-ascii?q?EF4EHBTwVCgwJEYJQM4ItkzmHAJtNgT8KgmeIe4IVhy2IPIMNngYhkQaBYop?= =?us-ascii?q?pkQ2EFgIEAgQFAg4BAQWBVDqBV3AVO4JpUBcCDZIQhRSFQnQ3AgYBCQEBAwl?= =?us-ascii?q?8jnwBAQ?=
+X-IronPort-AV: E=Sophos;i="5.77,305,1596499200";  d="scan'208,217";a="548649196"
+Received: from alln-core-6.cisco.com ([173.36.13.139]) by alln-iport-1.cisco.com with ESMTP/TLS/DHE-RSA-SEED-SHA; 26 Sep 2020 11:10:34 +0000
+Received: from XCH-ALN-002.cisco.com (xch-aln-002.cisco.com [173.36.7.12]) by alln-core-6.cisco.com (8.15.2/8.15.2) with ESMTPS id 08QBAYbo026003 (version=TLSv1.2 cipher=AES256-SHA bits=256 verify=FAIL); Sat, 26 Sep 2020 11:10:34 GMT
+Received: from xhs-aln-003.cisco.com (173.37.135.120) by XCH-ALN-002.cisco.com (173.36.7.12) with Microsoft SMTP Server (TLS) id 15.0.1497.2; Sat, 26 Sep 2020 06:10:34 -0500
+Received: from xhs-rcd-003.cisco.com (173.37.227.248) by xhs-aln-003.cisco.com (173.37.135.120) with Microsoft SMTP Server (TLS) id 15.0.1497.2; Sat, 26 Sep 2020 06:10:34 -0500
+Received: from NAM11-CO1-obe.outbound.protection.outlook.com (72.163.14.9) by xhs-rcd-003.cisco.com (173.37.227.248) with Microsoft SMTP Server (TLS) id 15.0.1497.2 via Frontend Transport; Sat, 26 Sep 2020 06:10:34 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; b=i+RTZzorBVdAl85SMe8OiHBOa9NrvHYhxss5lCiRwyZ/0qP6VNhQBcRzYyBNct9X4nFbFQTRtzEwZca7MhgBmCsAFz9FfR+xWW/SiLlYazT3ni5fEAQFMoMfUF7+GaVPQ375rDyg181yLsKGBzz1jNp5juFnzBWYTd6odV6AAXqykzEcz5KMoniCJBh+9n+sHXXTxvunSDWuKVVs5a58LCB1bTeUo3/sZ3SkEqpHmXdIpvremIjuT35ABXJxiaS9Bj1OAIpVVDSIhU50BjfjyInhKw0tZoul9BgdeZMLHbsJR5mtcAW4BdNOyu1pHf/vxD4SrL54Y85YRznUMojsqQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;  s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=QbSUAz+jPdIwaSDn2rfH7KkHDSdZW8hNrZSUvnqUaEc=; b=MktLgYZAVpHcmxx/OeGJbcoS4rNtVlw/J4HB7KNMnPxwz42IoGHMC9nK7sKd7HE7ACxdXMD+tfNIGF3A+uU0o3oElxTMaM6U83dfhxYFHDkz1ySsROAbh48bN/HmAKSmBGQgysMs3yH7l41v57ujN98PB2wj69OnsBFWf+iO996Y6PfaCbdNS3fGImdIRZJOzuxokew+D5GV8QN9A+HxYbE5l3ATosyGDB+316QrabypvmbcufIURCd4tmdzAh9qehxAG8zjn5h4KXntNea+aOJ6PnzfXpakOZ/a6CqjoFiI17xnDdHzCiYUTeRwW9c1C0mOyB/nMagj4SdQzrWXJA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=cisco.com; dmarc=pass action=none header.from=cisco.com; dkim=pass header.d=cisco.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cisco.onmicrosoft.com;  s=selector2-cisco-onmicrosoft-com; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=QbSUAz+jPdIwaSDn2rfH7KkHDSdZW8hNrZSUvnqUaEc=; b=FnIMqAO0U/xaGVDZ1P6ZYm1h3mViYx1c6FRIKODD4Xe/UbQTUnx4kB+pl6kOek575a09um3c8eA9y6QxISgWTmc474znsXJHdi3gObDXWWOPawmy+t2iWj18Jy/db/QxeL+VvtvfjMZNiViKT0DVOh17jF7MDUtMtVczgMQ2Kfc=
+Received: from MN2PR11MB3565.namprd11.prod.outlook.com (2603:10b6:208:ea::31) by MN2PR11MB3776.namprd11.prod.outlook.com (2603:10b6:208:ee::28) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3412.20; Sat, 26 Sep 2020 11:10:30 +0000
+Received: from MN2PR11MB3565.namprd11.prod.outlook.com ([fe80::119:f851:5860:da95]) by MN2PR11MB3565.namprd11.prod.outlook.com ([fe80::119:f851:5860:da95%4]) with mapi id 15.20.3412.025; Sat, 26 Sep 2020 11:10:30 +0000
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: "6tisch@ietf.org" <6tisch@ietf.org>, "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: [802.15-ALL] Sad news about Dr. Robert F. Heile
+Thread-Index: AQHWk1baLgkEiTnpu0ak5ffgsMRxNal5j+sw
+Date: Sat, 26 Sep 2020 11:10:24 +0000
+Deferred-Delivery: Fri, 25 Sep 2020 16:48:50 +0000
+Message-ID: <MN2PR11MB35656C5041DD48E7D62AA86ED8370@MN2PR11MB3565.namprd11.prod.outlook.com>
+References: <95A4E3EE-0E0A-41F9-A1EB-369E2D021222@kinneyconsultingllc.com> <0D3F27C4-2705-4C7F-8D6D-A9C2D7601ACE@kinneyconsultingllc.com>
+In-Reply-To: <0D3F27C4-2705-4C7F-8D6D-A9C2D7601ACE@kinneyconsultingllc.com>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+authentication-results: ietf.org; dkim=none (message not signed) header.d=none;ietf.org; dmarc=none action=none header.from=cisco.com;
+x-originating-ip: [2a01:cb1d:4ec:2200:a873:272e:6e94:a6bf]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 0610e2fe-6f82-4e7f-554e-08d8620cc7fb
+x-ms-traffictypediagnostic: MN2PR11MB3776:
+x-microsoft-antispam-prvs: <MN2PR11MB37769B6D47BAA20584B6C360D8370@MN2PR11MB3776.namprd11.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:8273;
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: xnFoJlvLU0ynD2wS7pwPuJ3Zcj0YzeG1XHPUxDsCW+U+XBVRIrRI+dpmBb8vlqaWs5oVY9p1PxMPYrdu+NcswcZLqhHeCXD3fSLFM+aIqpBcKpMaNsUwYzW/io2a0nPSDQVVICdSGfimLfAqGNi2nDqnjjZFLGcEBPJdewS1rNb0VGgexNi8OEW3fd5P47ifk30Xq+kxevkzyMv/MoUQVWm0MpaywApwvFh3uZnE+VbqpS1a+DED/PewSuLizotlBYDc7iIinppOv4tLXwvpul5b1Uyz5w7KZQTxk3nAQlgUqTNgb3DnA3F1tXJ9w50J2MNDlJPh+KsRibKffIkE1j0zheLCxysHwHrWoJpKf6ko12RMX3MYvBT7N7jlKi+dKv5+lLXpGDddtRjvWMP9RUNRSymrBJZ7wBr0URkIkfAoaYv79XbqPs7anwtUWpde
+x-forefront-antispam-report: CIP:255.255.255.255; CTRY:; LANG:en; SCL:1; SRV:;  IPV:NLI; SFV:NSPM; H:MN2PR11MB3565.namprd11.prod.outlook.com; PTR:; CAT:NONE;  SFS:(366004)(376002)(346002)(396003)(39860400002)(136003)(8676002)(478600001)(316002)(110136005)(66476007)(86362001)(166002)(52536014)(76116006)(66946007)(966005)(66446008)(64756008)(66556008)(71200400001)(83380400001)(7696005)(6666004)(5660300002)(450100002)(2906002)(8936002)(33656002)(9686003)(55016002)(186003)(6506007)(53546011); DIR:OUT; SFP:1101; 
+x-ms-exchange-antispam-messagedata: ybbpXTFmozPqLHMrEqxl8NevUdEhUu8atEea1vMIPgyxWhKUTI+AxaKK/RVIRqq0qId2Q02bHxL2JOgyb4FLgpLLKhRJaM5ARcfcdtsKLEj2WqyJohHnc78gaatQ7NYFCz746z4hOPCXXdX6J1OFbZTt1pE+qXPHA8YgEdd6EpOPrCqTxOHTWh22Os3+xs+jPVLcQAmpHcAaVNI6U7grAnuKEuCasYBB3X8Bk2xLU0xI9HG35itu9o5C6Cg2AvaLqsi67HZIwW0kRGCYrxeB/1RKJ4jHrA2xEMr2guGW+hj4nHKzKyAymmuMGATxV7Bw3cQQ56PLRYTmSPlevL709tkBTiVffP5yiVHItCPENqEYDbHz6mEEBTxXVhOgBoTFsEL8bzOHwA8mFFp94BBpWPgdO8GFwqiwcRBDim1DkQeBVyc5ddiJ6Msk+TSh/NM2PcPxyMrtKYl/sW5MR7A6i2ljMn2Np6Tcu7/pbjSO5MzKp7/rKCmXbhVEp2ycKbZGz7ZMPiI4LkoKS2d1oqoR+d9cp0DBJ2fe2M0Aj7SvIv6XM+Q/zHbtrJChH8o9ZK2ojdjHmB/Vgb2DNNj/FVpNqE86kToMwDoB78NU37qKJtppiJQFyFLXvtFG0/oWgoyq/3dhQWXfoFkR5oBmZmrZast+0zaag+UId6uxWNqk762f9MdGg5ZLqwyVcLe36SPzb0bNpeA6tjK4Ll2KEsMu3w==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative; boundary="_000_MN2PR11MB35656C5041DD48E7D62AA86ED8370MN2PR11MB3565namp_"
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: MN2PR11MB3565.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 0610e2fe-6f82-4e7f-554e-08d8620cc7fb
+X-MS-Exchange-CrossTenant-originalarrivaltime: 26 Sep 2020 11:10:30.5742 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 5ae1af62-9505-4097-a69a-c1553ef7840e
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: guDslW5xn++kcYOp1j5nMihJC53DqjiwR6epSJkSJNJlLAtiz0kME3pJs/QveHseZyaBaLviQzukxuubMkkzig==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR11MB3776
+X-OriginatorOrg: cisco.com
+X-Outbound-SMTP-Client: 173.36.7.12, xch-aln-002.cisco.com
+X-Outbound-Node: alln-core-6.cisco.com
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/vb4QMQHZlahQFRYEoshfDj-hNC8>
+Subject: [6lo] FW: [802.15-ALL] Sad news about Dr. Robert F. Heile
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 26 Sep 2020 11:10:38 -0000
+
+--_000_MN2PR11MB35656C5041DD48E7D62AA86ED8370MN2PR11MB3565namp_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+RGVhciBhbGwsIEkgdGhvdWdodCB5b3Ugd2FudGVkIHRvIGtub3cuIEJvYiB3YXMgdGhlIGNoYWly
+IG9mIElFRUUgODAyLjE1IGZvciBhIGdyZWF0IG1hbnkgeWVhcnMuDQoNCkZyb206IHBhdC5raW5u
+ZXlAa2lubmV5Y29uc3VsdGluZ2xsYy5jb20gPHBhdC5raW5uZXlAS0lOTkVZQ09OU1VMVElOR0xM
+Qy5DT00+DQpTZW50OiB2ZW5kcmVkaSAyNSBzZXB0ZW1icmUgMjAyMCAxODoxMw0KVG86IFNURFMt
+ODAyLVdQQU5ATElTVFNFUlYuSUVFRS5PUkcNClN1YmplY3Q6IFs4MDIuMTUtQUxMXSBTYWQgbmV3
+cyBhYm91dCBEci4gUm9iZXJ0IEYuIEhlaWxlDQoNCkl0IGlzIHdpdGggbXkgZ3JlYXRlc3QgcmVn
+cmV0cyBhbmQgZGVlcGVzdCBzb3Jyb3cgdGhhdCBJIG11c3QgaW5mb3JtIHlvdSBvZiB0aGUgcGFz
+c2luZyBvZiBEciBSb2JlcnQgRiBIZWlsZeKAmXMgbGFzdCBuaWdodC4gIEFzIHlvdSBrbm93IEJv
+YuKAmXMgY29uZGl0aW9uIHdhcyBkZXRlcmlvcmF0aW5nIHJhcGlkbHkuICBIZSB3YXMgYXQgaG9t
+ZSwgaW4gbm8gcGFpbiwgYW5kIHdpdGggaGlzIHdpZmUsIEJvbm5pZSwgYW5kIHR3byBkYXVnaHRl
+cnMsIFNhcmFoIGFuZCBCZXRoLCB3aGVuIGhlIHBlYWNlZnVsbHkgcGFzc2VkIGF3YXkuDQoNCkF0
+IHRoaXMgdGltZSwgSSBoYXZlIG5vdCBoZWFyZCBvZiB0aGUgYXJyYW5nZW1lbnRzIG5vciBzZXJ2
+aWNlcywgSSB3aWxsIHNlbmQgb3V0IGFkZGl0aW9uYWwgaW5mb3JtYXRpb24gYXMgSSBmaW5kIG91
+dC4NCg0KU2luY2VyZWx5LCAgUGF0DQoNClBhdCBLaW5uZXkNCktpbm5leSBDb25zdWx0aW5nIExM
+Qw0KSUVFRSA4MDIuMTUgV0cgY2hhaXIsIElFRUUgODAyLjE1IFNDbSBjaGFpciwgSUVFRSA4MDIu
+MTUuMTIgY2hhaXINCklTQTEwMCBjby1jaGFpciwgSVNBMTAwLjIwIGNoYWlyDQpNOiArMS44NDcu
+OTk3LjM3NzUNCk86ICsxLjg0Ny45NjAuMzcxNQ0KcGF0Lmtpbm5leUBraW5uZXljb25zdWx0aW5n
+bGxjLmNvbTxtYWlsdG86cGF0Lmtpbm5leUBraW5uZXljb25zdWx0aW5nbGxjLmNvbT4NCl9fX19f
+X19fX19fX19fX19fX19fX19fX19fX19fX19fDQoNClRvIHVuc3Vic2NyaWJlIGZyb20gdGhlIFNU
+RFMtODAyLVdQQU4gbGlzdCwgY2xpY2sgdGhlIGZvbGxvd2luZyBsaW5rOiBodHRwczovL2xpc3Rz
+ZXJ2LmllZWUub3JnL2NnaS1iaW4vd2E/U1VCRUQxPVNURFMtODAyLVdQQU4mQT0xDQo=
+
+--_000_MN2PR11MB35656C5041DD48E7D62AA86ED8370MN2PR11MB3565namp_
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiIHhtbG5zOm89InVy
+bjpzY2hlbWFzLW1pY3Jvc29mdC1jb206b2ZmaWNlOm9mZmljZSIgeG1sbnM6dz0idXJuOnNjaGVt
+YXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6d29yZCIgeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMubWlj
+cm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+VFIvUkVDLWh0bWw0MCI+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIg
+Y29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjxtZXRhIG5hbWU9IkdlbmVyYXRv
+ciIgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUgKGZpbHRlcmVkIG1lZGl1bSkiPg0KPCEtLVtp
+ZiAhbXNvXT48c3R5bGU+dlw6KiB7YmVoYXZpb3I6dXJsKCNkZWZhdWx0I1ZNTCk7fQ0Kb1w6KiB7
+YmVoYXZpb3I6dXJsKCNkZWZhdWx0I1ZNTCk7fQ0Kd1w6KiB7YmVoYXZpb3I6dXJsKCNkZWZhdWx0
+I1ZNTCk7fQ0KLnNoYXBlIHtiZWhhdmlvcjp1cmwoI2RlZmF1bHQjVk1MKTt9DQo8L3N0eWxlPjwh
+W2VuZGlmXS0tPjxzdHlsZT48IS0tDQovKiBGb250IERlZmluaXRpb25zICovDQpAZm9udC1mYWNl
+DQoJe2ZvbnQtZmFtaWx5OiJDYW1icmlhIE1hdGgiOw0KCXBhbm9zZS0xOjIgNCA1IDMgNSA0IDYg
+MyAyIDQ7fQ0KQGZvbnQtZmFjZQ0KCXtmb250LWZhbWlseTpDYWxpYnJpOw0KCXBhbm9zZS0xOjIg
+MTUgNSAyIDIgMiA0IDMgMiA0O30NCi8qIFN0eWxlIERlZmluaXRpb25zICovDQpwLk1zb05vcm1h
+bCwgbGkuTXNvTm9ybWFsLCBkaXYuTXNvTm9ybWFsDQoJe21hcmdpbjowY207DQoJZm9udC1zaXpl
+OjExLjBwdDsNCglmb250LWZhbWlseToiQ2FsaWJyaSIsc2Fucy1zZXJpZjt9DQphOmxpbmssIHNw
+YW4uTXNvSHlwZXJsaW5rDQoJe21zby1zdHlsZS1wcmlvcml0eTo5OTsNCgljb2xvcjpibHVlOw0K
+CXRleHQtZGVjb3JhdGlvbjp1bmRlcmxpbmU7fQ0KLk1zb0NocERlZmF1bHQNCgl7bXNvLXN0eWxl
+LXR5cGU6ZXhwb3J0LW9ubHk7DQoJZm9udC1zaXplOjEwLjBwdDt9DQpAcGFnZSBXb3JkU2VjdGlv
+bjENCgl7c2l6ZTo2MTIuMHB0IDc5Mi4wcHQ7DQoJbWFyZ2luOjcwLjg1cHQgNzAuODVwdCA3MC44
+NXB0IDcwLjg1cHQ7fQ0KZGl2LldvcmRTZWN0aW9uMQ0KCXtwYWdlOldvcmRTZWN0aW9uMTt9DQot
+LT48L3N0eWxlPjwhLS1baWYgZ3RlIG1zbyA5XT48eG1sPg0KPG86c2hhcGVkZWZhdWx0cyB2OmV4
+dD0iZWRpdCIgc3BpZG1heD0iMTAyNiIgLz4NCjwveG1sPjwhW2VuZGlmXS0tPjwhLS1baWYgZ3Rl
+IG1zbyA5XT48eG1sPg0KPG86c2hhcGVsYXlvdXQgdjpleHQ9ImVkaXQiPg0KPG86aWRtYXAgdjpl
+eHQ9ImVkaXQiIGRhdGE9IjEiIC8+DQo8L286c2hhcGVsYXlvdXQ+PC94bWw+PCFbZW5kaWZdLS0+
+DQo8L2hlYWQ+DQo8Ym9keSBsYW5nPSJFTi1VUyIgbGluaz0iYmx1ZSIgdmxpbms9InB1cnBsZSI+
+DQo8ZGl2IGNsYXNzPSJXb3JkU2VjdGlvbjEiPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PGZvbnQg
+c2l6ZT0iMiIgZmFjZT0iQ2FsaWJyaSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMS4wcHQiPkRl
+YXIgYWxsLCBJIHRob3VnaHQgeW91IHdhbnRlZCB0byBrbm93LiBCb2Igd2FzIHRoZSBjaGFpciBv
+ZiBJRUVFIDgwMi4xNSBmb3IgYSBncmVhdCBtYW55IHllYXJzLg0KPG86cD48L286cD48L3NwYW4+
+PC9mb250PjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxmb250IHNpemU9IjIiIGZhY2U9IkNh
+bGlicmkiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTEuMHB0Ij48bzpwPiZuYnNwOzwvbzpwPjwv
+c3Bhbj48L2ZvbnQ+PC9wPg0KPGRpdj4NCjxkaXYgc3R5bGU9ImJvcmRlcjpub25lO2JvcmRlci10
+b3A6c29saWQgI0UxRTFFMSAxLjBwdDtwYWRkaW5nOjMuMHB0IDBjbSAwY20gMGNtIj4NCjxwIGNs
+YXNzPSJNc29Ob3JtYWwiPjxiPjxmb250IHNpemU9IjIiIGZhY2U9IkNhbGlicmkiPjxzcGFuIHN0
+eWxlPSJmb250LXNpemU6MTEuMHB0O2ZvbnQtd2VpZ2h0OmJvbGQiPkZyb206PC9zcGFuPjwvZm9u
+dD48L2I+IHBhdC5raW5uZXlAa2lubmV5Y29uc3VsdGluZ2xsYy5jb20gJmx0O3BhdC5raW5uZXlA
+S0lOTkVZQ09OU1VMVElOR0xMQy5DT00mZ3Q7DQo8YnI+DQo8Yj48c3BhbiBzdHlsZT0iZm9udC13
+ZWlnaHQ6Ym9sZCI+U2VudDo8L3NwYW4+PC9iPiB2ZW5kcmVkaSAyNSBzZXB0ZW1icmUgMjAyMCAx
+ODoxMzxicj4NCjxiPjxzcGFuIHN0eWxlPSJmb250LXdlaWdodDpib2xkIj5Ubzo8L3NwYW4+PC9i
+PiBTVERTLTgwMi1XUEFOQExJU1RTRVJWLklFRUUuT1JHPGJyPg0KPGI+PHNwYW4gc3R5bGU9ImZv
+bnQtd2VpZ2h0OmJvbGQiPlN1YmplY3Q6PC9zcGFuPjwvYj4gWzgwMi4xNS1BTExdIFNhZCBuZXdz
+IGFib3V0IERyLiBSb2JlcnQgRi4gSGVpbGU8bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPC9kaXY+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48Zm9udCBzaXplPSIyIiBmYWNlPSJDYWxpYnJpIj48c3Bh
+biBzdHlsZT0iZm9udC1zaXplOjExLjBwdCI+PG86cD4mbmJzcDs8L286cD48L3NwYW4+PC9mb250
+PjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxmb250IHNpemU9IjIiIGZhY2U9IkNhbGlicmki
+PjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTEuMHB0Ij5JdCBpcyB3aXRoIG15IGdyZWF0ZXN0IHJl
+Z3JldHMgYW5kJm5ic3A7ZGVlcGVzdCBzb3Jyb3cgdGhhdCBJIG11c3QgaW5mb3JtIHlvdSBvZiB0
+aGUgcGFzc2luZyBvZiBEciBSb2JlcnQgRiBIZWlsZeKAmXMgbGFzdCBuaWdodC4gJm5ic3A7QXMg
+eW91IGtub3cgQm9i4oCZcyBjb25kaXRpb24gd2FzIGRldGVyaW9yYXRpbmcgcmFwaWRseS4NCiAm
+bmJzcDtIZSB3YXMgYXQgaG9tZSwgaW4gbm8gcGFpbiwgYW5kIHdpdGggaGlzIHdpZmUsIEJvbm5p
+ZSwgYW5kIHR3byBkYXVnaHRlcnMsIFNhcmFoIGFuZCBCZXRoLCB3aGVuIGhlIHBlYWNlZnVsbHkg
+cGFzc2VkIGF3YXkuPG86cD48L286cD48L3NwYW4+PC9mb250PjwvcD4NCjxkaXY+DQo8cCBjbGFz
+cz0iTXNvTm9ybWFsIj48Zm9udCBzaXplPSIyIiBmYWNlPSJDYWxpYnJpIj48c3BhbiBzdHlsZT0i
+Zm9udC1zaXplOjExLjBwdCI+PG86cD4mbmJzcDs8L286cD48L3NwYW4+PC9mb250PjwvcD4NCjwv
+ZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxmb250IHNpemU9IjIiIGZhY2U9IkNh
+bGlicmkiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTEuMHB0Ij5BdCB0aGlzIHRpbWUsIEkgaGF2
+ZSBub3QgaGVhcmQgb2YgdGhlIGFycmFuZ2VtZW50cyBub3Igc2VydmljZXMsIEkgd2lsbCBzZW5k
+IG91dCBhZGRpdGlvbmFsIGluZm9ybWF0aW9uIGFzIEkgZmluZCBvdXQuPG86cD48L286cD48L3Nw
+YW4+PC9mb250PjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxmb250
+IHNpemU9IjIiIGZhY2U9IkNhbGlicmkiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTEuMHB0Ij48
+bzpwPiZuYnNwOzwvbzpwPjwvc3Bhbj48L2ZvbnQ+PC9wPg0KPGRpdj4NCjxkaXY+DQo8cCBjbGFz
+cz0iTXNvTm9ybWFsIj48Zm9udCBzaXplPSIyIiBjb2xvcj0iYmxhY2siIGZhY2U9IkNhbGlicmki
+PjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTEuMHB0O2NvbG9yOmJsYWNrIj5TaW5jZXJlbHksICZu
+YnNwO1BhdDxicj4NCjxicj4NClBhdCBLaW5uZXk8YnI+DQo8aT48c3BhbiBzdHlsZT0iZm9udC1z
+dHlsZTppdGFsaWMiPktpbm5leSBDb25zdWx0aW5nIExMQzwvc3Bhbj48L2k+PGJyPg0KSUVFRSA4
+MDIuMTUgV0cgY2hhaXIsIElFRUUgODAyLjE1Jm5ic3A7U0NtIGNoYWlyLCBJRUVFIDgwMi4xNS4x
+MiBjaGFpcjxicj4NCklTQTEwMCBjby1jaGFpciwgSVNBMTAwLjIwIGNoYWlyPGJyPg0KTTogKzEu
+ODQ3Ljk5Ny4zNzc1PGJyPg0KTzogKzEuODQ3Ljk2MC4zNzE1PGJyPg0KPGEgaHJlZj0ibWFpbHRv
+OnBhdC5raW5uZXlAa2lubmV5Y29uc3VsdGluZ2xsYy5jb20iPnBhdC5raW5uZXlAa2lubmV5Y29u
+c3VsdGluZ2xsYy5jb208L2E+PG86cD48L286cD48L3NwYW4+PC9mb250PjwvcD4NCjwvZGl2Pg0K
+PC9kaXY+DQo8L2Rpdj4NCjxkaXYgY2xhc3M9Ik1zb05vcm1hbCIgYWxpZ249ImNlbnRlciIgc3R5
+bGU9InRleHQtYWxpZ246Y2VudGVyIj48Zm9udCBzaXplPSIyIiBmYWNlPSJDYWxpYnJpIj48c3Bh
+biBzdHlsZT0iZm9udC1zaXplOjExLjBwdCI+DQo8aHIgc2l6ZT0iMiIgd2lkdGg9IjEwMCUiIGFs
+aWduPSJjZW50ZXIiPg0KPC9zcGFuPjwvZm9udD48L2Rpdj4NCjxwPjxmb250IHNpemU9IjIiIGZh
+Y2U9IkNhbGlicmkiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTEuMHB0Ij5UbyB1bnN1YnNjcmli
+ZSBmcm9tIHRoZSBTVERTLTgwMi1XUEFOIGxpc3QsIGNsaWNrIHRoZSBmb2xsb3dpbmcgbGluazoN
+CjxhIGhyZWY9Imh0dHBzOi8vbGlzdHNlcnYuaWVlZS5vcmcvY2dpLWJpbi93YT9TVUJFRDE9U1RE
+Uy04MDItV1BBTiZhbXA7QT0xIj5odHRwczovL2xpc3RzZXJ2LmllZWUub3JnL2NnaS1iaW4vd2E/
+U1VCRUQxPVNURFMtODAyLVdQQU4mYW1wO0E9MTwvYT4NCjxvOnA+PC9vOnA+PC9zcGFuPjwvZm9u
+dD48L3A+DQo8L2Rpdj4NCjwvYm9keT4NCjwvaHRtbD4NCg==
+
+--_000_MN2PR11MB35656C5041DD48E7D62AA86ED8370MN2PR11MB3565namp_--
+
+
+From nobody Tue Sep 29 00:55:38 2020
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 164DC3A09CD; Tue, 29 Sep 2020 00:55:37 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.097
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.097 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id WjtIcTBIYVbu; Tue, 29 Sep 2020 00:55:35 -0700 (PDT)
+Received: from mail-ed1-x52e.google.com (mail-ed1-x52e.google.com [IPv6:2a00:1450:4864:20::52e]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 8B6973A09C5; Tue, 29 Sep 2020 00:55:35 -0700 (PDT)
+Received: by mail-ed1-x52e.google.com with SMTP id w1so5324688edr.3; Tue, 29 Sep 2020 00:55:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:references:in-reply-to:from:date:message-id:subject:to :cc; bh=1LAdenZyXK3fmrgaPrgfioEZI7Qk8VCcz6VTBENL7xg=; b=lLvromYJeHCI/RQyNOAcRdA4VSwqlIriDdW+wiU18fydMpgob+owFNgqT62FkS5B8U BdXS1FxExMOp99fPWOEnG5de8PPe+nKI2p74K5/BM0rwyJq3ofwek4A+xZdXjAAdTnGp gMY/IDOph9GEjBEXKXSuBMrY3L2eMezx3l9LEn94KV+fLdJdywRVD47gmkVupjGKvWAv WLmODcaaQP3qucHnjC8fOT2QHKfTBE+CwXKlprZJYp+0kaH+o6WRaZJ0ohLwbZoyo/1h Do2yimdqgoltBuQfwPTVBgN0+KVeSOccxF0hyN65bsDGm+5VKax7wEuywtcrK9R5AKyQ LegQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:references:in-reply-to:from:date :message-id:subject:to:cc; bh=1LAdenZyXK3fmrgaPrgfioEZI7Qk8VCcz6VTBENL7xg=; b=M4OWRUWyzYTRiLoyzkZpPgmBXbPCw0WPcXYI5XTzhIoQ0puBQhyP/bNoShImkwq2ZZ 6dmOl1vUeBWuXhmi6hKQ2KIvAYMrggMMpZfMeptvikLzEOYXpm6N+/gyO6PZPC7oWXhC dhIj33q5+ysNQpc0IGbP61tt+f3Mum3g7gQ72vvUrT9lJw+z6gRzTcn2qjcGRAJx9pL7 9HUY8J/3uVNLh4KbbecVL9Kaiff8skV9spsFuV4VFr4+gidGi28U3emLxb7ja3KFQzTH gQz0y4yVtZGCD5OupktWec374KfcUmTEyYeHZ76xSrY8cSqnt7Yo2ctBOCQOyyEwG6GZ vhbQ==
+X-Gm-Message-State: AOAM532ueM7nK/LGF2WtySPKJitGVAy5Sy6V7nEsdvfTBXsm8YJ9HRXf L70owCuyNwwIhyM2pEjrRMPK9yrg10p5mWhg3tkXd0wS
+X-Google-Smtp-Source: ABdhPJyl99qzY2YfhT+IXYhnnvI0gd1LOgGN8Yjj//vVTdykNcYNAbHYt27JWihzWISUYTXvmfX64vKsY4iyG6m/e8w=
+X-Received: by 2002:aa7:c256:: with SMTP id y22mr1847778edo.16.1601366133878;  Tue, 29 Sep 2020 00:55:33 -0700 (PDT)
+MIME-Version: 1.0
+References: <95A4E3EE-0E0A-41F9-A1EB-369E2D021222@kinneyconsultingllc.com> <0D3F27C4-2705-4C7F-8D6D-A9C2D7601ACE@kinneyconsultingllc.com> <MN2PR11MB35656C5041DD48E7D62AA86ED8370@MN2PR11MB3565.namprd11.prod.outlook.com>
+In-Reply-To: <MN2PR11MB35656C5041DD48E7D62AA86ED8370@MN2PR11MB3565.namprd11.prod.outlook.com>
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+Date: Tue, 29 Sep 2020 00:55:21 -0700
+Message-ID: <CAKmdBpdfk5KwComHM46+ZB1oU_F+sSfGZX2D26NDx+9cjqnKMA@mail.gmail.com>
+To: "Pascal Thubert (pthubert)" <pthubert=40cisco.com@dmarc.ietf.org>
+Cc: 6tisch <6tisch@ietf.org>, lo <6lo@ietf.org>
+Content-Type: multipart/alternative; boundary="00000000000090ba3205b06f1bf6"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/lBRRVUyPJG-mg4fFlkQLO3iGPx0>
+Subject: Re: [6lo] FW: [802.15-ALL] Sad news about Dr. Robert F. Heile
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 29 Sep 2020 07:55:37 -0000
+
+--00000000000090ba3205b06f1bf6
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+This is a very sad news. Bob Heile used to attend 6lo wg meetings
+regularly. It was always a pleasure talking with him.
+May his soul rest in peace.
+-Samita
+
+On Sat, Sep 26, 2020, 4:10 AM Pascal Thubert (pthubert) <pthubert=3D
+40cisco.com@dmarc.ietf.org> wrote:
+
+> Dear all, I thought you wanted to know. Bob was the chair of IEEE 802.15
+> for a great many years.
+>
+>
+>
+> *From:* pat.kinney@kinneyconsultingllc.com <
+> pat.kinney@KINNEYCONSULTINGLLC.COM>
+> *Sent:* vendredi 25 septembre 2020 18:13
+> *To:* STDS-802-WPAN@LISTSERV.IEEE.ORG
+> *Subject:* [802.15-ALL] Sad news about Dr. Robert F. Heile
+>
+>
+>
+> It is with my greatest regrets and deepest sorrow that I must inform you
+> of the passing of Dr Robert F Heile=E2=80=99s last night.  As you know Bo=
+b=E2=80=99s
+> condition was deteriorating rapidly.  He was at home, in no pain, and wit=
+h
+> his wife, Bonnie, and two daughters, Sarah and Beth, when he peacefully
+> passed away.
+>
+>
+>
+> At this time, I have not heard of the arrangements nor services, I will
+> send out additional information as I find out.
+>
+>
+>
+> Sincerely,  Pat
+>
+> Pat Kinney
+> *Kinney Consulting LLC*
+> IEEE 802.15 WG chair, IEEE 802.15 SCm chair, IEEE 802.15.12 chair
+> ISA100 co-chair, ISA100.20 chair
+> M: +1.847.997.3775
+> O: +1.847.960.3715
+> pat.kinney@kinneyconsultingllc.com
+> ------------------------------
+>
+> To unsubscribe from the STDS-802-WPAN list, click the following link:
+> https://listserv.ieee.org/cgi-bin/wa?SUBED1=3DSTDS-802-WPAN&A=3D1
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+
+--00000000000090ba3205b06f1bf6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">This is a very sad news. Bob Heile used to attend 6lo wg =
+meetings regularly. It was always a pleasure talking with him.<div dir=3D"a=
+uto">May his soul rest in peace.</div><div dir=3D"auto">-Samita</div></div>=
+<br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Sat=
+, Sep 26, 2020, 4:10 AM Pascal Thubert (pthubert) &lt;pthubert=3D<a href=3D=
+"mailto:40cisco.com@dmarc.ietf.org">40cisco.com@dmarc.ietf.org</a>&gt; wrot=
+e:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;bo=
+rder-left:1px #ccc solid;padding-left:1ex">
+
+
+
+
+
+<div lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"m_-1364494247269076295WordSection1">
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11.0pt">Dear all, I thought you wanted to know. Bob was the chair of=
+ IEEE 802.15 for a great many years.
+<u></u><u></u></span></font></p>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11.0pt"><u></u>=C2=A0<u></u></span></font></p>
+<div>
+<div style=3D"border:none;border-top:solid #e1e1e1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><font size=3D"2" face=3D"Calibri"><span style=3D"=
+font-size:11.0pt;font-weight:bold">From:</span></font></b> <a href=3D"mailt=
+o:pat.kinney@kinneyconsultingllc.com" target=3D"_blank" rel=3D"noreferrer">=
+pat.kinney@kinneyconsultingllc.com</a> &lt;<a href=3D"mailto:pat.kinney@KIN=
+NEYCONSULTINGLLC.COM" target=3D"_blank" rel=3D"noreferrer">pat.kinney@KINNE=
+YCONSULTINGLLC.COM</a>&gt;
+<br>
+<b><span style=3D"font-weight:bold">Sent:</span></b> vendredi 25 septembre =
+2020 18:13<br>
+<b><span style=3D"font-weight:bold">To:</span></b> <a href=3D"mailto:STDS-8=
+02-WPAN@LISTSERV.IEEE.ORG" target=3D"_blank" rel=3D"noreferrer">STDS-802-WP=
+AN@LISTSERV.IEEE.ORG</a><br>
+<b><span style=3D"font-weight:bold">Subject:</span></b> [802.15-ALL] Sad ne=
+ws about Dr. Robert F. Heile<u></u><u></u></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11.0pt"><u></u>=C2=A0<u></u></span></font></p>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11.0pt">It is with my greatest regrets and=C2=A0deepest sorrow that =
+I must inform you of the passing of Dr Robert F Heile=E2=80=99s last night.=
+=C2=A0 As you know Bob=E2=80=99s condition was deteriorating rapidly.
+ =C2=A0He was at home, in no pain, and with his wife, Bonnie, and two daugh=
+ters, Sarah and Beth, when he peacefully passed away.<u></u><u></u></span><=
+/font></p>
+<div>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11.0pt"><u></u>=C2=A0<u></u></span></font></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11.0pt">At this time, I have not heard of the arrangements nor servi=
+ces, I will send out additional information as I find out.<u></u><u></u></s=
+pan></font></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11.0pt"><u></u>=C2=A0<u></u></span></font></p>
+<div>
+<div>
+<p class=3D"MsoNormal"><font size=3D"2" color=3D"black" face=3D"Calibri"><s=
+pan style=3D"font-size:11.0pt;color:black">Sincerely, =C2=A0Pat<br>
+<br>
+Pat Kinney<br>
+<i><span style=3D"font-style:italic">Kinney Consulting LLC</span></i><br>
+IEEE 802.15 WG chair, IEEE 802.15=C2=A0SCm chair, IEEE 802.15.12 chair<br>
+ISA100 co-chair, ISA100.20 chair<br>
+M: +1.847.997.3775<br>
+O: +1.847.960.3715<br>
+<a href=3D"mailto:pat.kinney@kinneyconsultingllc.com" target=3D"_blank" rel=
+=3D"noreferrer">pat.kinney@kinneyconsultingllc.com</a><u></u><u></u></span>=
+</font></p>
+</div>
+</div>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><font=
+ size=3D"2" face=3D"Calibri"><span style=3D"font-size:11.0pt">
+<hr size=3D"2" width=3D"100%" align=3D"center">
+</span></font></div>
+<p><font size=3D"2" face=3D"Calibri"><span style=3D"font-size:11.0pt">To un=
+subscribe from the STDS-802-WPAN list, click the following link:
+<a href=3D"https://listserv.ieee.org/cgi-bin/wa?SUBED1=3DSTDS-802-WPAN&amp;=
+A=3D1" target=3D"_blank" rel=3D"noreferrer">https://listserv.ieee.org/cgi-b=
+in/wa?SUBED1=3DSTDS-802-WPAN&amp;A=3D1</a>
+<u></u><u></u></span></font></p>
+</div>
+</div>
+
+_______________________________________________<br>
+6lo mailing list<br>
+<a href=3D"mailto:6lo@ietf.org" target=3D"_blank" rel=3D"noreferrer">6lo@ie=
+tf.org</a><br>
+<a href=3D"https://www.ietf.org/mailman/listinfo/6lo" rel=3D"noreferrer nor=
+eferrer" target=3D"_blank">https://www.ietf.org/mailman/listinfo/6lo</a><br=
+>
+</blockquote></div>
+
+--00000000000090ba3205b06f1bf6--
+
+
+From nobody Tue Sep 29 03:42:14 2020
+Return-Path: <diego.dujovne@mail.udp.cl>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 6A1F13A0B49 for <6lo@ietfa.amsl.com>; Tue, 29 Sep 2020 03:42:13 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.887
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.887 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, HTML_MESSAGE=0.001, SPF_HELO_NONE=0.001, T_SPF_PERMERROR=0.01, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=mail-udp-cl.20150623.gappssmtp.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id BE-2Z4rFINzK for <6lo@ietfa.amsl.com>; Tue, 29 Sep 2020 03:42:11 -0700 (PDT)
+Received: from mail-ed1-x52d.google.com (mail-ed1-x52d.google.com [IPv6:2a00:1450:4864:20::52d]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id C8FE83A0B5A for <6lo@ietf.org>; Tue, 29 Sep 2020 03:42:10 -0700 (PDT)
+Received: by mail-ed1-x52d.google.com with SMTP id e22so5801008edq.6 for <6lo@ietf.org>; Tue, 29 Sep 2020 03:42:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mail-udp-cl.20150623.gappssmtp.com; s=20150623; h=mime-version:references:in-reply-to:from:date:message-id:subject:to :cc; bh=b5mk+goUyI21gMA5HazeIz/lbHoCkgDSj/ci2ZX9Sc8=; b=pYTHUpV25Ii+0lZIh0322s0L+7/AZC0LqpkyYWc6DE02RZ3op7s0Z+h8hzt/GAwKAM 9qr3GphYF/9t5t07pEM8+4EyV0iUBiUCD+WRml9srnULywkzuHja+kWqeK6wIO98XAdB ZoD3CHtREuPFODW9GjFpJ0KnJApDX91EpmfWHoP+lEAeROalSrcqXsvdIdgA9bD7Z28X 4IEdZreFD0YJsi2dPDdCkpGS9CWUr59rIUyzVhq5yMydqEpsbCPEWn0SrXPm6dJYyxqa ootENkjCI1GjDWIsf8x86n7BPmNp0sJSA9P2dA1Pt0eJ66dGBo3BRqukrP06FTMPyXFf GnQA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:references:in-reply-to:from:date :message-id:subject:to:cc; bh=b5mk+goUyI21gMA5HazeIz/lbHoCkgDSj/ci2ZX9Sc8=; b=Z73WRmMCn2v7jrXrR6ICvSns/U7xryXHi+SdJNhTh0HQSdIe6vTXcB7EcbHF5GEwWA 6kKwzZTwi75hAo9duLaz0PrCuk+TKa3ifon3zOrj2HBpxwwEb4K2HkzZq86M+LMLGNi0 GOYPZ0+lhDE2EBBeTz9qP5mwIa4QPoKWtjaYpjRSkWc2Z+XI1PncdTNaW8/LgfRpaLrw SjlxA3IPjwaB6/Z/A0xNOv4+zFK4HCLCS4pdQnhX7zT5raV2vqz9XjiO5Z8k4mvWhO9a nR3seA567Pl7jZRz7etek5b6JHRyJ9oIQfPt7Xi4iMsXpOly0d9lxI7VACTeR2GWQ/JB zreQ==
+X-Gm-Message-State: AOAM530MpuYdKNJbeyexz4SKBRIpVmUZ3aSy+O9ecUsnkDIVeSUS4s8C +kyk2FLvEJHqbHzuDEUaizve50e5cpnJJAwdCN1xZg==
+X-Google-Smtp-Source: ABdhPJzF8jivD0sNU6H/h9ZI5KYHimnteLi1EK/HjNubMAIpKRMn4bYJI2ZEs3uTCMrbwZiM7m4mWsCXWCDwMTT+PJk=
+X-Received: by 2002:a05:6402:503:: with SMTP id m3mr2517228edv.45.1601376128797;  Tue, 29 Sep 2020 03:42:08 -0700 (PDT)
+MIME-Version: 1.0
+References: <95A4E3EE-0E0A-41F9-A1EB-369E2D021222@kinneyconsultingllc.com> <0D3F27C4-2705-4C7F-8D6D-A9C2D7601ACE@kinneyconsultingllc.com> <MN2PR11MB35656C5041DD48E7D62AA86ED8370@MN2PR11MB3565.namprd11.prod.outlook.com> <CAKmdBpdfk5KwComHM46+ZB1oU_F+sSfGZX2D26NDx+9cjqnKMA@mail.gmail.com>
+In-Reply-To: <CAKmdBpdfk5KwComHM46+ZB1oU_F+sSfGZX2D26NDx+9cjqnKMA@mail.gmail.com>
+From: "Prof. Diego Dujovne" <diego.dujovne@mail.udp.cl>
+Date: Tue, 29 Sep 2020 07:41:57 -0300
+Message-ID: <CAH7SZV_yxxoY5SM=pUz6iJF3sBFHM1pq-gw_s4VxtWqR1w6+Tw@mail.gmail.com>
+To: Samita Chakrabarti <samitac.ietf@gmail.com>
+Cc: "Pascal Thubert (pthubert)" <pthubert=40cisco.com@dmarc.ietf.org>, 6tisch <6tisch@ietf.org>, lo <6lo@ietf.org>
+Content-Type: multipart/alternative; boundary="0000000000004f2e0505b0716f40"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/hybbmBoKPYb-X5SrPz6qef3puUQ>
+Subject: Re: [6lo] FW: [802.15-ALL] Sad news about Dr. Robert F. Heile
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 29 Sep 2020 10:42:13 -0000
+
+--0000000000004f2e0505b0716f40
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Really sad, I had the chance to listen to his thoughtful comments
+and presentations at several of the WG meetings.
+Regards,
+
+                             Diego
+
+Le mar. 29 sept. 2020 =C3=A0 04:55, Samita Chakrabarti <samitac.ietf@gmail.=
+com>
+a =C3=A9crit :
+
+> This is a very sad news. Bob Heile used to attend 6lo wg meetings
+> regularly. It was always a pleasure talking with him.
+> May his soul rest in peace.
+> -Samita
+>
+> On Sat, Sep 26, 2020, 4:10 AM Pascal Thubert (pthubert) <pthubert=3D
+> 40cisco.com@dmarc.ietf.org> wrote:
+>
+>> Dear all, I thought you wanted to know. Bob was the chair of IEEE 802.15
+>> for a great many years.
+>>
+>>
+>>
+>> *From:* pat.kinney@kinneyconsultingllc.com <
+>> pat.kinney@KINNEYCONSULTINGLLC.COM>
+>> *Sent:* vendredi 25 septembre 2020 18:13
+>> *To:* STDS-802-WPAN@LISTSERV.IEEE.ORG
+>> *Subject:* [802.15-ALL] Sad news about Dr. Robert F. Heile
+>>
+>>
+>>
+>> It is with my greatest regrets and deepest sorrow that I must inform you
+>> of the passing of Dr Robert F Heile=E2=80=99s last night.  As you know B=
+ob=E2=80=99s
+>> condition was deteriorating rapidly.  He was at home, in no pain, and wi=
+th
+>> his wife, Bonnie, and two daughters, Sarah and Beth, when he peacefully
+>> passed away.
+>>
+>>
+>>
+>> At this time, I have not heard of the arrangements nor services, I will
+>> send out additional information as I find out.
+>>
+>>
+>>
+>> Sincerely,  Pat
+>>
+>> Pat Kinney
+>> *Kinney Consulting LLC*
+>> IEEE 802.15 WG chair, IEEE 802.15 SCm chair, IEEE 802.15.12 chair
+>> ISA100 co-chair, ISA100.20 chair
+>> M: +1.847.997.3775
+>> O: +1.847.960.3715
+>> pat.kinney@kinneyconsultingllc.com
+>> ------------------------------
+>>
+>> To unsubscribe from the STDS-802-WPAN list, click the following link:
+>> https://listserv.ieee.org/cgi-bin/wa?SUBED1=3DSTDS-802-WPAN&A=3D1
+>> _______________________________________________
+>> 6lo mailing list
+>> 6lo@ietf.org
+>> https://www.ietf.org/mailman/listinfo/6lo
+>>
+> _______________________________________________
+> 6lo mailing list
+> 6lo@ietf.org
+> https://www.ietf.org/mailman/listinfo/6lo
+>
+
+
+--=20
+DIEGO DUJOVNE
+Profesor Asociado
+Escuela de Inform=C3=A1tica y Telecomunicaciones
+Facultad de Ingenier=C3=ADa - Universidad Diego Portales - Chile
+www.ingenieria.udp.cl
+(56 2) 676 8125
+
+--0000000000004f2e0505b0716f40
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Really sad, I had the chance to listen to his thoughtful c=
+omments=C2=A0<div>and presentations at several of the WG meetings.</div><di=
+v>Regards,</div><div><br></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0Diego</di=
+v></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr=
+">Le=C2=A0mar. 29 sept. 2020 =C3=A0=C2=A004:55, Samita Chakrabarti &lt;<a h=
+ref=3D"mailto:samitac.ietf@gmail.com">samitac.ietf@gmail.com</a>&gt; a =C3=
+=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0=
+px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex"><=
+div dir=3D"auto">This is a very sad news. Bob Heile used to attend 6lo wg m=
+eetings regularly. It was always a pleasure talking with him.<div dir=3D"au=
+to">May his soul rest in peace.</div><div dir=3D"auto">-Samita</div></div><=
+br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Sat,=
+ Sep 26, 2020, 4:10 AM Pascal Thubert (pthubert) &lt;pthubert=3D<a href=3D"=
+mailto:40cisco.com@dmarc.ietf.org" target=3D"_blank">40cisco.com@dmarc.ietf=
+.org</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"mar=
+gin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1=
+ex">
+
+
+
+
+
+<div lang=3D"EN-US">
+<div>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11pt">Dear all, I thought you wanted to know. Bob was the chair of I=
+EEE 802.15 for a great many years.
+<u></u><u></u></span></font></p>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11pt"><u></u>=C2=A0<u></u></span></font></p>
+<div>
+<div style=3D"border-right:none;border-bottom:none;border-left:none;border-=
+top:1pt solid rgb(225,225,225);padding:3pt 0cm 0cm">
+<p class=3D"MsoNormal"><b><font size=3D"2" face=3D"Calibri"><span style=3D"=
+font-size:11pt;font-weight:bold">From:</span></font></b> <a href=3D"mailto:=
+pat.kinney@kinneyconsultingllc.com" rel=3D"noreferrer" target=3D"_blank">pa=
+t.kinney@kinneyconsultingllc.com</a> &lt;<a href=3D"mailto:pat.kinney@KINNE=
+YCONSULTINGLLC.COM" rel=3D"noreferrer" target=3D"_blank">pat.kinney@KINNEYC=
+ONSULTINGLLC.COM</a>&gt;
+<br>
+<b><span style=3D"font-weight:bold">Sent:</span></b> vendredi 25 septembre =
+2020 18:13<br>
+<b><span style=3D"font-weight:bold">To:</span></b> <a href=3D"mailto:STDS-8=
+02-WPAN@LISTSERV.IEEE.ORG" rel=3D"noreferrer" target=3D"_blank">STDS-802-WP=
+AN@LISTSERV.IEEE.ORG</a><br>
+<b><span style=3D"font-weight:bold">Subject:</span></b> [802.15-ALL] Sad ne=
+ws about Dr. Robert F. Heile<u></u><u></u></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11pt"><u></u>=C2=A0<u></u></span></font></p>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11pt">It is with my greatest regrets and=C2=A0deepest sorrow that I =
+must inform you of the passing of Dr Robert F Heile=E2=80=99s last night.=
+=C2=A0 As you know Bob=E2=80=99s condition was deteriorating rapidly.
+ =C2=A0He was at home, in no pain, and with his wife, Bonnie, and two daugh=
+ters, Sarah and Beth, when he peacefully passed away.<u></u><u></u></span><=
+/font></p>
+<div>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11pt"><u></u>=C2=A0<u></u></span></font></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11pt">At this time, I have not heard of the arrangements nor service=
+s, I will send out additional information as I find out.<u></u><u></u></spa=
+n></font></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><font size=3D"2" face=3D"Calibri"><span style=3D"fon=
+t-size:11pt"><u></u>=C2=A0<u></u></span></font></p>
+<div>
+<div>
+<p class=3D"MsoNormal"><font size=3D"2" color=3D"black" face=3D"Calibri"><s=
+pan style=3D"font-size:11pt;color:black">Sincerely, =C2=A0Pat<br>
+<br>
+Pat Kinney<br>
+<i><span style=3D"font-style:italic">Kinney Consulting LLC</span></i><br>
+IEEE 802.15 WG chair, IEEE 802.15=C2=A0SCm chair, IEEE 802.15.12 chair<br>
+ISA100 co-chair, ISA100.20 chair<br>
+M: +1.847.997.3775<br>
+O: +1.847.960.3715<br>
+<a href=3D"mailto:pat.kinney@kinneyconsultingllc.com" rel=3D"noreferrer" ta=
+rget=3D"_blank">pat.kinney@kinneyconsultingllc.com</a><u></u><u></u></span>=
+</font></p>
+</div>
+</div>
+</div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><font=
+ size=3D"2" face=3D"Calibri"><span style=3D"font-size:11pt">
+<hr size=3D"2" width=3D"100%" align=3D"center">
+</span></font></div>
+<p><font size=3D"2" face=3D"Calibri"><span style=3D"font-size:11pt">To unsu=
+bscribe from the STDS-802-WPAN list, click the following link:
+<a href=3D"https://listserv.ieee.org/cgi-bin/wa?SUBED1=3DSTDS-802-WPAN&amp;=
+A=3D1" rel=3D"noreferrer" target=3D"_blank">https://listserv.ieee.org/cgi-b=
+in/wa?SUBED1=3DSTDS-802-WPAN&amp;A=3D1</a>
+<u></u><u></u></span></font></p>
+</div>
+</div>
+
+_______________________________________________<br>
+6lo mailing list<br>
+<a href=3D"mailto:6lo@ietf.org" rel=3D"noreferrer" target=3D"_blank">6lo@ie=
+tf.org</a><br>
+<a href=3D"https://www.ietf.org/mailman/listinfo/6lo" rel=3D"noreferrer nor=
+eferrer" target=3D"_blank">https://www.ietf.org/mailman/listinfo/6lo</a><br=
+>
+</blockquote></div>
+_______________________________________________<br>
+6lo mailing list<br>
+<a href=3D"mailto:6lo@ietf.org" target=3D"_blank">6lo@ietf.org</a><br>
+<a href=3D"https://www.ietf.org/mailman/listinfo/6lo" rel=3D"noreferrer" ta=
+rget=3D"_blank">https://www.ietf.org/mailman/listinfo/6lo</a><br>
+</blockquote></div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr"=
+ class=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div>DIEG=
+O DUJOVNE<br>Profesor Asociado<br>Escuela de Inform=C3=A1tica y Telecomunic=
+aciones<br>Facultad de Ingenier=C3=ADa - Universidad Diego Portales - Chile=
+<br><a href=3D"http://www.ingenieria.udp.cl" target=3D"_blank">www.ingenier=
+ia.udp.cl</a><br>(56 2) 676 8125<br></div></div></div></div></div>
+
+--0000000000004f2e0505b0716f40--
+
+
+From nobody Tue Sep 29 06:38:26 2020
+Return-Path: <gabriel_montenegro_2000@yahoo.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0A66F3A0CC9 for <6lo@ietfa.amsl.com>; Tue, 29 Sep 2020 06:38:25 -0700 (PDT)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.848
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.848 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, FREEMAIL_ENVFROM_END_DIGIT=0.25, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_MSPIKE_H2=-0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=yahoo.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id WMavBu7QCyKb for <6lo@ietfa.amsl.com>; Tue, 29 Sep 2020 06:38:23 -0700 (PDT)
+Received: from sonic311-13.consmr.mail.bf2.yahoo.com (sonic311-13.consmr.mail.bf2.yahoo.com [74.6.131.123]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 5E5203A0CC1 for <6lo@ietf.org>; Tue, 29 Sep 2020 06:38:23 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1601386701; bh=I/zYPy+w/87PsMkeFkMIE+oH0BWjT3Dc7mBRXGeonWU=; h=From:To:Cc:References:In-Reply-To:Subject:Date:From:Subject; b=V4TgPvlCf8dLRIwXE3pRemk8FPBr7YMVwhVAawuheY5PTNxI5JcT7LH7uTHRL6WSLBziQFfE616HgZ+K3V96xK373AdnPk+ANWB8FGGnhRq1vRxhDM9RcENu0555d/VqHSfDeASW2+GMidKCgKRV5CxtyyyZYpCyGI+wtnY7PX8EiqYzLnmcGkhP3ZLY3SmPOvu7EkDwx77+f17mnSzBWoERZ+NuGKIxnlgr3/OQLGkynyg1GZqDF5ypgDDamePAHnBCg8vEPAQd/BYNUOnqHCRcWfMRRyRnKY10iXK6zHLxCmYwUhTOTOtqsTqW1fPIEAi1ttexkZeXxTIKpiB2Lw==
+X-YMail-OSG: q9sB41EVM1l8_u7kFhn7WX8SrFgEDcup6sI2J55xSl1wRfjYa8qqKwBeEST48lI 850pT8EcRDbkwPXgwCR261t.w6UJBgje9bj7KMfrrEn4RYJ8ekF5fyzeiN73dbvFW1e3BeMSxDW7 P0Qx.5gmJ9fOT4OO7PK0lvF33996KHeLOfUlSy_I_y89fp7a4VwIa0LQARI5ojKUZBYQt4cbgpD5 J6syjVp5obfi5UGtmVLyt52Mx9aLndseS_2jUK89_OO883a84OnOLLnY_LIOX1Aln6ihAg2r41o8 D3eAVLnpEpkXCN6F7ZQmp4dabghZwDkPb19BTGF3YN0iJHsWxbF6Qqyu3d9zW7lSkNGFIdrxLiTT E3EMhLOCz3WdGV6GviknKaOgWlq5DMfnqK8k556quDZpJ_tuI_ocIQGfVddVHndxI_ujt9TYEl24 GnbWh7IpvPjw16YnmokBqVKFL1TKgDb2VNkaVNFDLfV0yTGvgUuJScUz_ICPBg__1Nd6mZvQjyJY yE7TmTFjzF6PgFxn.1XQyn1gSGWxEXR2JwCyqFN50zg8TtL6vnFsBSb.mGcEIJzMb1qW0gFpkT37 xIZTmAoOsI80_6YEpK1ZDRuRHYHqa7xqka2BxcAAe1Cjkmt47uR7kooPWlR8su4jkB0riEBSGkp6 BOI17XRbpSDSavN2eiUkFBR7MmtwY.DvhH4itP.371ILpfCsMuoHZw03h57Z7f4jORinaxfUib81 XF1iLD1SIIiQ8B09EA_jG8dwIYBuszlSk4PVlnlaxSR898Pinz5O75PCtbAUSUsr4DNNYV8TctmZ PNnC8ChRo8JIpxHYqA8nrOkVTL2dcMxR4dXu0ZvS6F_g57_5_LWYueYk2Ezcrj6KTDXXLP_KITih gJFQTCibF2ZCv5duevNPfQVYwX7vmUfQOL1JLQYeQWwIkC6NNc4jhUcrJ9Qh39VGL8tFycDKkpXl xyyYtPEk.QN6zSziusVcj.PUQSCdZMR739ihEedF2LzqetH8cdIeTs.ZNdZC.oOHEtXbucDRKTLm VQYvCMbQvgIBFk8bBPFdTbFRhBexjin7WWH4U_F3cW642p630HfNqbt8TSKfUCU9_Nlx2XVcCi5X keM.qFf3duw3xXs8i2lP24yxPCIpNrWhubm4kF1.7gNR0lM59sEQiLsTvKKX3oNTCMWuPEgAEREC W5irwk0UOW6sUZAtaejTrldFi9dJWXxceIVkrQPciMQpMHI7ReR3eNWojr5nV226DSxezrkmtLxI DTE6girhTwOQ9prR5CGs6FqPVrZ5uI0ifKi0Yj4sfeNG_QGZ5jwsUVEPhEnT7jqY8BAZp.wOlBSz bWh40tPLV8YTFVth8ubROqlCiA9Xhh2QuZdlK6Pn54UwfVaLMui6ke5_BwWdE9DL6Owkxuw17mvU ep.jjv0.0pE_qLFl._jfbj4aSdrqJR3dyTAa6.JhMho0cL164oPFDYq.ZeI0oh7c6oXApyvpJl2W SsfKLvnwGq5gj4pB4Jst0RTQOtkDqVXmctpaCIOHnyh1gNjWPoMJEJzIkDvQUFXcc
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic311.consmr.mail.bf2.yahoo.com with HTTP; Tue, 29 Sep 2020 13:38:21 +0000
+Received: by smtp411.mail.bf1.yahoo.com (VZM Hermes SMTP Server) with ESMTPA ID d5ce2ee6a8a284659330d61e6a5fd673;  Tue, 29 Sep 2020 13:38:16 +0000 (UTC)
+From: <g_e_montenegro@yahoo.com>
+To: "'Prof. Diego Dujovne'" <diego.dujovne@mail.udp.cl>, "'Samita Chakrabarti'" <samitac.ietf@gmail.com>
+Cc: "'Pascal Thubert \(pthubert\)'" <pthubert=40cisco.com@dmarc.ietf.org>, "'6tisch'" <6tisch@ietf.org>, "'lo'" <6lo@ietf.org>
+References: <95A4E3EE-0E0A-41F9-A1EB-369E2D021222@kinneyconsultingllc.com> <0D3F27C4-2705-4C7F-8D6D-A9C2D7601ACE@kinneyconsultingllc.com> <MN2PR11MB35656C5041DD48E7D62AA86ED8370@MN2PR11MB3565.namprd11.prod.outlook.com> <CAKmdBpdfk5KwComHM46+ZB1oU_F+sSfGZX2D26NDx+9cjqnKMA@mail.gmail.com> <CAH7SZV_yxxoY5SM=pUz6iJF3sBFHM1pq-gw_s4VxtWqR1w6+Tw@mail.gmail.com>
+In-Reply-To: <CAH7SZV_yxxoY5SM=pUz6iJF3sBFHM1pq-gw_s4VxtWqR1w6+Tw@mail.gmail.com>
+Date: Tue, 29 Sep 2020 09:38:13 -0400
+Message-ID: <00c601d69665$c86565c0$59303140$@yahoo.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_NextPart_000_00C7_01D69644.41552550"
+X-Mailer: Microsoft Outlook 16.0
+Content-Language: en-us
+Thread-Index: AQFWvi2XQV574+EVNbciyM08fQjaogG5H1lEAqKlfI8A8r/lBAJDAc7XqkLCivA=
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/g6T0pTbLz60vV2wBX3c8jhZb0LM>
+Subject: Re: [6lo] FW: [802.15-ALL] Sad news about Dr. Robert F. Heile
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 29 Sep 2020 13:38:25 -0000
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_00C7_01D69644.41552550
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bob was a good friend of 6lo providing guidance with respect to 802.15 =
+and other topics. A pleasure to interact and coordinate with.
+
+Rest in peace, Bob.
+
+=20
+
+Gabriel
+
+=20
+
+From: 6lo <6lo-bounces@ietf.org> On Behalf Of Prof. Diego Dujovne
+Sent: Tuesday, 29 September, 2020 06:42
+To: Samita Chakrabarti <samitac.ietf@gmail.com>
+Cc: Pascal Thubert (pthubert) <pthubert=3D40cisco.com@dmarc.ietf.org>; =
+6tisch <6tisch@ietf.org>; lo <6lo@ietf.org>
+Subject: Re: [6lo] FW: [802.15-ALL] Sad news about Dr. Robert F. Heile
+
+=20
+
+Really sad, I had the chance to listen to his thoughtful comments=20
+
+and presentations at several of the WG meetings.
+
+Regards,
+
+=20
+
+                             Diego
+
+=20
+
+Le mar. 29 sept. 2020 =C3=A0 04:55, Samita Chakrabarti =
+<samitac.ietf@gmail.com <mailto:samitac.ietf@gmail.com> > a =C3=A9crit :
+
+This is a very sad news. Bob Heile used to attend 6lo wg meetings =
+regularly. It was always a pleasure talking with him.
+
+May his soul rest in peace.
+
+-Samita
+
+=20
+
+On Sat, Sep 26, 2020, 4:10 AM Pascal Thubert (pthubert) =
+<pthubert=3D40cisco.com@dmarc.ietf.org =
+<mailto:40cisco.com@dmarc.ietf.org> > wrote:
+
+Dear all, I thought you wanted to know. Bob was the chair of IEEE 802.15 =
+for a great many years.=20
+
+=20
+
+From: pat.kinney@kinneyconsultingllc.com =
+<mailto:pat.kinney@kinneyconsultingllc.com>  =
+<pat.kinney@KINNEYCONSULTINGLLC.COM =
+<mailto:pat.kinney@KINNEYCONSULTINGLLC.COM> >=20
+Sent: vendredi 25 septembre 2020 18:13
+To: STDS-802-WPAN@LISTSERV.IEEE.ORG =
+<mailto:STDS-802-WPAN@LISTSERV.IEEE.ORG>=20
+Subject: [802.15-ALL] Sad news about Dr. Robert F. Heile
+
+=20
+
+It is with my greatest regrets and deepest sorrow that I must inform you =
+of the passing of Dr Robert F Heile=E2=80=99s last night.  As you know =
+Bob=E2=80=99s condition was deteriorating rapidly.  He was at home, in =
+no pain, and with his wife, Bonnie, and two daughters, Sarah and Beth, =
+when he peacefully passed away.
+
+=20
+
+At this time, I have not heard of the arrangements nor services, I will =
+send out additional information as I find out.
+
+=20
+
+Sincerely,  Pat
+
+Pat Kinney
+Kinney Consulting LLC
+IEEE 802.15 WG chair, IEEE 802.15 SCm chair, IEEE 802.15.12 chair
+ISA100 co-chair, ISA100.20 chair
+M: +1.847.997.3775
+O: +1.847.960.3715
+pat.kinney@kinneyconsultingllc.com =
+<mailto:pat.kinney@kinneyconsultingllc.com>=20
+
+  _____ =20
+
+To unsubscribe from the STDS-802-WPAN list, click the following link: =
+https://listserv.ieee.org/cgi-bin/wa?SUBED1=3DSTDS-802-WPAN =
+<https://listserv.ieee.org/cgi-bin/wa?SUBED1=3DSTDS-802-WPAN&A=3D1> =
+&A=3D1=20
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org <mailto:6lo@ietf.org>=20
+https://www.ietf.org/mailman/listinfo/6lo
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org <mailto:6lo@ietf.org>=20
+https://www.ietf.org/mailman/listinfo/6lo
+
+
+
+
+=20
+
+--=20
+
+DIEGO DUJOVNE
+Profesor Asociado
+Escuela de Inform=C3=A1tica y Telecomunicaciones
+Facultad de Ingenier=C3=ADa - Universidad Diego Portales - Chile
+www.ingenieria.udp.cl <http://www.ingenieria.udp.cl>=20
+(56 2) 676 8125
+
+
+------=_NextPart_000_00C7_01D69644.41552550
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><meta =
+http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8"><meta =
+name=3DGenerator content=3D"Microsoft Word 15 (filtered medium)"><!--[if =
+!mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Yu Gothic";
+	panose-1:2 11 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@Yu Gothic";
+	panose-1:2 11 4 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3Dblue =
+vlink=3Dpurple><div class=3DWordSection1><p class=3DMsoNormal>Bob was a =
+good friend of 6lo providing guidance with respect to 802.15 and other =
+topics. A pleasure to interact and coordinate with.<o:p></o:p></p><p =
+class=3DMsoNormal>Rest in peace, Bob.<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal>Gabriel<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><div =
+style=3D'border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in'><p class=3DMsoNormal><b>From:</b> 6lo =
+&lt;6lo-bounces@ietf.org&gt; <b>On Behalf Of </b>Prof. Diego =
+Dujovne<br><b>Sent:</b> Tuesday, 29 September, 2020 06:42<br><b>To:</b> =
+Samita Chakrabarti &lt;samitac.ietf@gmail.com&gt;<br><b>Cc:</b> Pascal =
+Thubert (pthubert) &lt;pthubert=3D40cisco.com@dmarc.ietf.org&gt;; 6tisch =
+&lt;6tisch@ietf.org&gt;; lo &lt;6lo@ietf.org&gt;<br><b>Subject:</b> Re: =
+[6lo] FW: [802.15-ALL] Sad news about Dr. Robert F. =
+Heile<o:p></o:p></p></div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><div><p class=3DMsoNormal>Really =
+sad, I had the chance to listen to his thoughtful =
+comments&nbsp;<o:p></o:p></p><div><p class=3DMsoNormal>and presentations =
+at several of the WG meetings.<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>Regards,<o:p></o:p></p></div><div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p></div><div><p =
+class=3DMsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp;Diego<o:p></o:p></p></div></div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><div><div><p =
+class=3DMsoNormal>Le&nbsp;mar. 29 sept. 2020 =C3=A0&nbsp;04:55, Samita =
+Chakrabarti &lt;<a =
+href=3D"mailto:samitac.ietf@gmail.com">samitac.ietf@gmail.com</a>&gt; a =
+=C3=A9crit&nbsp;:<o:p></o:p></p></div><blockquote =
+style=3D'border:none;border-left:solid #CCCCCC 1.0pt;padding:0in 0in 0in =
+6.0pt;margin-left:4.8pt;margin-right:0in'><div><p class=3DMsoNormal>This =
+is a very sad news. Bob Heile used to attend 6lo wg meetings regularly. =
+It was always a pleasure talking with him.<o:p></o:p></p><div><p =
+class=3DMsoNormal>May his soul rest in =
+peace.<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>-Samita<o:p></o:p></p></div></div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><div><div><p class=3DMsoNormal>On =
+Sat, Sep 26, 2020, 4:10 AM Pascal Thubert (pthubert) &lt;pthubert=3D<a =
+href=3D"mailto:40cisco.com@dmarc.ietf.org" =
+target=3D"_blank">40cisco.com@dmarc.ietf.org</a>&gt; =
+wrote:<o:p></o:p></p></div><blockquote =
+style=3D'border:none;border-left:solid #CCCCCC 1.0pt;padding:0in 0in 0in =
+6.0pt;margin-left:4.8pt;margin-right:0in'><div><div><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>Dear all, I =
+thought you wanted to know. Bob was the chair of IEEE 802.15 for a great =
+many years. <o:p></o:p></p><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>&nbsp;<o:p><=
+/o:p></p><div><div style=3D'border:none;border-top:solid #E1E1E1 =
+1.0pt;padding:3.0pt 0in 0in 0in'><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b>From:</b>=
+ <a href=3D"mailto:pat.kinney@kinneyconsultingllc.com" =
+target=3D"_blank">pat.kinney@kinneyconsultingllc.com</a> &lt;<a =
+href=3D"mailto:pat.kinney@KINNEYCONSULTINGLLC.COM" =
+target=3D"_blank">pat.kinney@KINNEYCONSULTINGLLC.COM</a>&gt; =
+<br><b>Sent:</b> vendredi 25 septembre 2020 18:13<br><b>To:</b> <a =
+href=3D"mailto:STDS-802-WPAN@LISTSERV.IEEE.ORG" =
+target=3D"_blank">STDS-802-WPAN@LISTSERV.IEEE.ORG</a><br><b>Subject:</b> =
+[802.15-ALL] Sad news about Dr. Robert F. =
+Heile<o:p></o:p></p></div></div><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>&nbsp;<o:p><=
+/o:p></p><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>It is with =
+my greatest regrets and&nbsp;deepest sorrow that I must inform you of =
+the passing of Dr Robert F Heile=E2=80=99s last night.&nbsp; As you know =
+Bob=E2=80=99s condition was deteriorating rapidly. &nbsp;He was at home, =
+in no pain, and with his wife, Bonnie, and two daughters, Sarah and =
+Beth, when he peacefully passed away.<o:p></o:p></p><div><p =
+class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>&nbsp;<o:p><=
+/o:p></p></div><div><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>At this =
+time, I have not heard of the arrangements nor services, I will send out =
+additional information as I find out.<o:p></o:p></p></div><div><p =
+class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>&nbsp;<o:p><=
+/o:p></p><div><div><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span =
+style=3D'color:black'>Sincerely, &nbsp;Pat<br><br>Pat =
+Kinney<br><i>Kinney Consulting LLC</i><br>IEEE 802.15 WG chair, IEEE =
+802.15&nbsp;SCm chair, IEEE 802.15.12 chair<br>ISA100 co-chair, =
+ISA100.20 chair<br>M: +1.847.997.3775<br>O: +1.847.960.3715<br><a =
+href=3D"mailto:pat.kinney@kinneyconsultingllc.com" =
+target=3D"_blank">pat.kinney@kinneyconsultingllc.com</a></span><o:p></o:p=
+></p></div></div></div><div class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><hr size=3D1 width=3D"100%" =
+align=3Dcenter></div><p>To unsubscribe from the STDS-802-WPAN list, =
+click the following link: <a =
+href=3D"https://listserv.ieee.org/cgi-bin/wa?SUBED1=3DSTDS-802-WPAN&amp;A=
+=3D1" =
+target=3D"_blank">https://listserv.ieee.org/cgi-bin/wa?SUBED1=3DSTDS-802-=
+WPAN&amp;A=3D1</a> <o:p></o:p></p></div></div><p =
+class=3DMsoNormal>_______________________________________________<br>6lo =
+mailing list<br><a href=3D"mailto:6lo@ietf.org" =
+target=3D"_blank">6lo@ietf.org</a><br><a =
+href=3D"https://www.ietf.org/mailman/listinfo/6lo" =
+target=3D"_blank">https://www.ietf.org/mailman/listinfo/6lo</a><o:p></o:p=
+></p></blockquote></div><p =
+class=3DMsoNormal>_______________________________________________<br>6lo =
+mailing list<br><a href=3D"mailto:6lo@ietf.org" =
+target=3D"_blank">6lo@ietf.org</a><br><a =
+href=3D"https://www.ietf.org/mailman/listinfo/6lo" =
+target=3D"_blank">https://www.ietf.org/mailman/listinfo/6lo</a><o:p></o:p=
+></p></blockquote></div><p class=3DMsoNormal><br =
+clear=3Dall><o:p></o:p></p><div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p></div><p class=3DMsoNormal>-- =
+<o:p></o:p></p><div><div><div><div><div><p class=3DMsoNormal>DIEGO =
+DUJOVNE<br>Profesor Asociado<br>Escuela de Inform=C3=A1tica y =
+Telecomunicaciones<br>Facultad de Ingenier=C3=ADa - Universidad Diego =
+Portales - Chile<br><a href=3D"http://www.ingenieria.udp.cl" =
+target=3D"_blank">www.ingenieria.udp.cl</a><br>(56 2) 676 =
+8125<o:p></o:p></p></div></div></div></div></div></div></body></html>
+------=_NextPart_000_00C7_01D69644.41552550--
+

@@ -1,0 +1,831 @@
+
+From nobody Mon Jan 10 22:07:21 2022
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id B9D583A1892; Mon, 10 Jan 2022 22:06:49 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.42.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: 6lo@ietf.org
+Message-ID: <164188120968.27121.1124433133343624275@ietfa.amsl.com>
+Date: Mon, 10 Jan 2022 22:06:49 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/l0SD_h2HlAw_NSlbYxc1eqECS3M>
+Subject: [6lo] I-D Action: draft-ietf-6lo-plc-08.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 11 Jan 2022 06:06:50 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : Transmission of IPv6 Packets over PLC Networks
+        Authors         : Jianqiang Hou
+                          Bing Liu
+                          Yong-Geun Hong
+                          Xiaojun Tang
+                          Charles E. Perkins
+	Filename        : draft-ietf-6lo-plc-08.txt
+	Pages           : 23
+	Date            : 2022-01-10
+
+Abstract:
+   Power Line Communication (PLC), namely using the electric-power lines
+   for indoor and outdoor communications, has been widely applied to
+   support Advanced Metering Infrastructure (AMI), especially smart
+   meters for electricity.  The existing electricity infrastructure
+   facilitates the expansion of PLC deployments due to its potential
+   advantages in terms of cost and convenience.  Moreover, a wide
+   variety of accessible devices raises the potential demand of IPv6 for
+   future applications.  This document describes how IPv6 packets are
+   transported over constrained PLC networks, such as ITU-T G.9903, IEEE
+   1901.1 and IEEE 1901.2.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+There is also an htmlized version available at:
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-plc-08
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-plc-08
+
+
+Internet-Drafts are also available by rsync at rsync.ietf.org::internet-drafts
+
+
+
+From nobody Mon Jan 10 22:39:15 2022
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 5CADA3A1A60; Mon, 10 Jan 2022 22:39:13 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.42.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: 6lo@ietf.org
+Message-ID: <164188315330.17021.15290188231771127907@ietfa.amsl.com>
+Date: Mon, 10 Jan 2022 22:39:13 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/1w_tAqH-RM0n1RZwzYu3kgywO-Y>
+Subject: [6lo] I-D Action: draft-ietf-6lo-plc-09.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 11 Jan 2022 06:39:14 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : Transmission of IPv6 Packets over PLC Networks
+        Authors         : Jianqiang Hou
+                          Bing Liu
+                          Yong-Geun Hong
+                          Xiaojun Tang
+                          Charles E. Perkins
+	Filename        : draft-ietf-6lo-plc-09.txt
+	Pages           : 23
+	Date            : 2022-01-10
+
+Abstract:
+   Power Line Communication (PLC), namely using the electric-power lines
+   for indoor and outdoor communications, has been widely applied to
+   support Advanced Metering Infrastructure (AMI), especially smart
+   meters for electricity.  The existing electricity infrastructure
+   facilitates the expansion of PLC deployments due to its potential
+   advantages in terms of cost and convenience.  Moreover, a wide
+   variety of accessible devices raises the potential demand of IPv6 for
+   future applications.  This document describes how IPv6 packets are
+   transported over constrained PLC networks, such as ITU-T G.9903, IEEE
+   1901.1 and IEEE 1901.2.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+There is also an htmlized version available at:
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-plc-09
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-plc-09
+
+
+Internet-Drafts are also available by rsync at rsync.ietf.org::internet-drafts
+
+
+
+From nobody Mon Jan 10 23:04:24 2022
+Return-Path: <noreply@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 81F733A1B48; Mon, 10 Jan 2022 23:04:16 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+From: =?utf-8?q?=C3=89ric_Vyncke_via_Datatracker?= <noreply@ietf.org>
+To: "The IESG" <iesg@ietf.org>
+Cc: draft-ietf-6lo-plc@ietf.org, 6lo-chairs@ietf.org, 6lo@ietf.org, Carles Gomez <carlesgo@entel.upc.edu>, carlesgo@entel.upc.edu
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.42.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: =?utf-8?q?=C3=89ric_Vyncke?= <evyncke@cisco.com>
+Message-ID: <164188465572.3162.1197610132551681263@ietfa.amsl.com>
+Date: Mon, 10 Jan 2022 23:04:16 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/aenBWJQRwS_n6Ybgztmxi0ZDObk>
+Subject: [6lo] =?utf-8?q?=C3=89ric_Vyncke=27s_No_Objection_on_draft-ietf-?= =?utf-8?q?6lo-plc-09=3A_=28with_COMMENT=29?=
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 11 Jan 2022 07:04:17 -0000
+
+Éric Vyncke has entered the following ballot position for
+draft-ietf-6lo-plc-09: No Objection
+
+When responding, please keep the subject line intact and reply to all
+email addresses included in the To and CC lines. (Feel free to cut this
+introductory paragraph, however.)
+
+
+Please refer to https://www.ietf.org/blog/handling-iesg-ballot-positions/
+for more information about how to handle DISCUSS and COMMENT positions.
+
+
+The document, along with other ballot positions, can be found here:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-plc/
+
+
+
+----------------------------------------------------------------------
+COMMENT:
+----------------------------------------------------------------------
+
+Thank you for the work put into this document.
+
+Thank you also for addressing all my blocking points (except for the paywall
+for normative references) and most of my comments, either on the mailing list
+or in the document itself. I am therefore clearing up my DISCUSS ballot.
+
+Special thanks to Carles Gomez for his shepherd's write-up, which contains a
+good summary of the WG consensus *BUT* it does not mention that the IEEE
+normative references are not free. Strange that Carles' email address,
+carlesgo@entel.upc.edu, is not in the datatracker status page.
+
+Please find below some *archived* DISCUSS points, some non-blocking COMMENT
+points (but replies would be appreciated), and some nits.
+
+Please also address Dave Thaler's INT-DIR review at:
+https://datatracker.ietf.org/doc/review-ietf-6lo-plc-06-intdir-telechat-thaler-2021-08-06/
+(some of my DISCUSS points are coming from Dave's review)
+
+I hope that this helps to improve the document,
+
+Regards,
+
+-éric
+
+== DISCUSS (for archiving not more standing/blocking) ==
+
+Is there any reason why the IETF Last Call
+https://mailarchive.ietf.org/arch/msg/6lo/f59y8rMg-p_aCKYSSEtBzoJK4qQ/ did not
+mention that the two IEEE normative references were behind a paywall ? It
+prevented some more detailed reviews and is an important fact.
+
+How can a PLC node distinguish between an IPv6 PDU and a non-IPv6 PDU ? I.e.,
+is there the equivalent of a EtherType in a layer-2 PLC PDU ? Then, this should
+be mentioned in this document else some text explaining why it is not required
+would be welcome. Especially when the normative IEEE references are not freely
+available.
+
+-- Section 4.1 --
+I am repeating here Dave Thaler's point 1) as it is completely unclear to me
+how the shared secret/version number are shared and provisioned, this could
+prevent interoperation hence my DISCUSS.
+
+While I appreciate that the nodes are constrained, some warnings about having a
+*single global IPv6 address* should be written or if the spec supports more
+than one global IPv6 address per node, then the current text must be changed.
+
+== COMMENTS ==
+
+A generic and probably naive question of mine: how can a PLC node (which has
+access to electrical power) can be qualified as 'low power' ?
+
+-- Section 2 --
+
+Please add references to the IEEE references before using them in the table 1.
+
+-- Section 3.1 --
+
+Is the I-D limited to TCP & UDP only ? (based on figure 1 even if later RPL is
+mentioned)
+
+-- Section 3.4 --
+
+While not required, an expansion of "LOAD" as in "LOADng" will probably be
+welcome by readers.
+
+-- Section 4.1 --
+
+Strongly suggest to show the 48-bit pseudo MAC address before showing the
+generated 64-bit address, which looks like the old EUI-64 generation. Should
+there be some explanation about the lack of U/L bit flapping in this algorithm ?
+
+Same comment for the 12-bit address.
+
+Should there be some explanations about NID and TEI? Notably about how they are
+provisioned and how can collision be prevented.
+
+  "A PLC host SHOULD use
+   the IID derived from the link-layer short address to configure the
+   IPv6 address used for communication with the public network"
+Is the above text about how to provision the IP address ? E.g., via stateful
+DHCPv6 ?
+
+-- Section 4.3.1 --
+  "In order to avoid the possibility of duplicated IPv6 addresses, the
+   value of the NID MUST be chosen so that the 7th and 8th bits of the
+   first byte of the NID are both zero."
+I failed to understand the reasoning in the above text: how can a reduction of
+entropy decrease the risk of collision ?
+
+Please also specify the receiver's behavior when the padding is not 0 (probably
+'ignore').
+
+Rather than using "7th and 8th bits" please use "bits 6 and 7".
+
+-- Section 4.3.2 --
+Same comments as for section 4.3.1
+
+-- Section 4.4 --
+   "Although PLC devices are electrically powered, sleeping mode SHOULD
+   still be used for power saving."
+Suggest to add some justification for the "SHOULD" or at least explain when a
+PLC device may not use the sleeping mode.
+
+The logical flow is weird in §4 " Duplicate Address Detection (DAD) MUST NOT be
+utilized.  Otherwise, the DAD MUST", i.e., with a "MUST NOT" there should be no
+"Otherwise" :-) The "MUST NOT" is probably a "SHOULD NOT" ?
+
+-- Section 5 --
+Nice and interesting section, may I suggest to move it earlier in the document
+? Just after the introduction for example.
+
+Figure 6 does not have any node "A" or "B" while the § before mentions those
+node names.
+
+== NITS ==
+
+I find it strange that some acronyms are sometimes expanded in the text *and*
+in the terminology (e.g., MTU) while others are not (e.g., PANC).
+
+-- Section 3.3 --
+Is "adapt" the right word in "For this reason, fragmentation and reassembly is
+required for G.9903-based networks to adapt IPv6."
+
+-- Section 3.4 --
+My eyebrows raised when reading "L2 routing"... as "routing" for me is usually
+reserved for layer 3 and above.
+
+-- Section 4.4 --
+s/For IPv6 address prefix dissemination/For IPv6 network prefix dissemination/ ?
+
+
+
+
+From nobody Fri Jan 14 04:43:12 2022
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 06FFC3A23A5; Fri, 14 Jan 2022 04:43:11 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.895
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.895 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id gsbgeHKVeEx0; Fri, 14 Jan 2022 04:43:06 -0800 (PST)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id D636A3A236B; Fri, 14 Jan 2022 04:43:02 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 20ECgqM1043082;  Fri, 14 Jan 2022 13:42:52 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id DE5771D53C1; Fri, 14 Jan 2022 13:42:51 +0100 (CET)
+Received: from 2.138.70.102 by webmail.entel.upc.edu with HTTP; Fri, 14 Jan 2022 13:43:20 +0100
+Message-ID: <8691d358ea8c5b80ab4ffdbe8cd0b951.squirrel@webmail.entel.upc.edu>
+In-Reply-To: <C9ED0872-39CD-4DB0-B88D-C65270CD1895@gigix.net>
+References: <163947083158.6429.2357688889865772513@ietfa.amsl.com> <C9ED0872-39CD-4DB0-B88D-C65270CD1895@gigix.net>
+Date: Fri, 14 Jan 2022 13:43:20 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: "Luigi Iannone" <ggx@gigix.net>
+Cc: 6lo@ietf.org, draft-li-6lo-native-short-address@ietf.org, pthubert@cisco.com, dominique.barthel@orange.com
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at dash
+X-Virus-Status: Clean
+X-Greylist: ACL matched, not delayed by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Fri, 14 Jan 2022 13:42:53 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/V3EoCODf1Cq2hv9CEJcCfVLf0Cw>
+Subject: Re: [6lo] Fwd: I-D Action: draft-li-6lo-native-short-address-01.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 14 Jan 2022 12:43:11 -0000
+
+Hi Luigi, and rest of coauthors,
+
+(CC'ing Pascal and Dominique, who made relevant comments in IETF 111.)
+
+Thanks for the updated version of your draft.
+
+We have a question related with your first point below, and also with the
+scope of the document (and how it fits the scope of 6Lo):
+
+- Do you envision NSA nodes would need to run a routing protocol at all? 
+Would the forwarding techniques proposed in your draft be sufficient to
+allow multihop packet transmission within the NSA domain?
+
+On the other hand, in IETF 111 some concerns were expressed (based on an
+earlier version of your draft), regarding possible (e.g. renumbering)
+issues due to topology changes (e.g. due to the dynamics of wireless
+links, even if nodes might actually be static). We understand that more
+recent versions of the draft aim to address such issues.
+
+- What do the WG participants who had those concerns (e.g. Pascal,
+Dominique) think about the latest versions of the draft?  Would the issues
+be addressed now?
+
+- To the authors: perhaps a bit early at this stage, but do you have any
+sort of validation (e.g. by simulation or even running code on real
+devices) of your proposed mechanisms?
+
+Thanks,
+
+Shwetha and Carles
+
+
+
+
+> Hi All,
+>
+> We just submitted a new revision of the NSA document.
+> Thanks for all the received feedback.
+>
+> The main changes concern:
+>
+> - Revising the text throughout the whole document to make clear that we
+> talk about forwarding operation, not routing (previous text was
+> misleading), hence completely in the scope of 6lo WG.
+>
+> - Thanks lot  to Pascal T. (whom helped through a long private email
+> exchange) the applicability of NSA has been clarified by adding text.
+> Also, text has been added to clarify the properties of the allocation
+> function, namely the fact that the proposed function is simple but not
+> optimal and other optimized allocation functions can be developed in the
+> future (hence the request to IANA to set up a registry for this purpose).
+>
+> While we believe that the document is becoming mature, we still welcome
+> any feedback people can send us.
+>
+> Thanks
+>
+> Ciao
+>
+> L.
+> (On behalf of all authors)
+>
+>> Begin forwarded message:
+>>
+>> From: internet-drafts@ietf.org
+>> Subject: I-D Action: draft-li-6lo-native-short-address-01.txt
+>> Date: 14 December 2021 at 09:33:51 CET
+>> To: <i-d-announce@ietf.org>
+>> Reply-To: internet-drafts@ietf.org
+>>
+>>
+>> A New Internet-Draft is available from the on-line Internet-Drafts
+>> directories.
+>>
+>>
+>>        Title           : Native Short Addressing for Low power and Lossy
+>> Networks Expansion
+>>        Authors         : Guangpeng Li
+>>                          David Lou
+>>                          Luigi Iannone
+>>                          Peng Liu
+>>                          Rong Long
+>> 	Filename        : draft-li-6lo-native-short-address-01.txt
+>> 	Pages           : 22
+>> 	Date            : 2021-12-14
+>>
+>> Abstract:
+>>   This document specifies mechanisms of NSA (Native Short Address) that
+>>   enables IP packet transmission over links where the transmission of a
+>>   full length address may not be desirable.  This document focuses on
+>>   carrying IP packets across a LLN (Low power and Lossy Network), in
+>>   which the topology is relatively static where nodes' location is
+>>   fixed and the connection between nodes is rather stable.  The changes
+>>   in the logical topology are only caused by non-frequent disconnection
+>>   in the link due to some reasons.  The specifications details NSA
+>>   address allocation, forwarding mechanism, header format design,
+>>   including length-variable fields, and IPv6 interconnection support.
+>>
+>>
+>> The IETF datatracker status page for this draft is:
+>> https://datatracker.ietf.org/doc/draft-li-6lo-native-short-address/
+>>
+>> There is also an htmlized version available at:
+>> https://datatracker.ietf.org/doc/html/draft-li-6lo-native-short-address-01
+>>
+>> A diff from the previous version is available at:
+>> https://www.ietf.org/rfcdiff?url2=draft-li-6lo-native-short-address-01
+
+
+
+From nobody Fri Jan 14 05:25:49 2022
+Return-Path: <carlesgo@entel.upc.edu>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 8EDA93A24A4; Fri, 14 Jan 2022 05:25:42 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -6.896
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.896 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H3=0.001, RCVD_IN_MSPIKE_WL=0.001, SPF_HELO_NONE=0.001, SPF_NONE=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 8lVmgcnS9x2F; Fri, 14 Jan 2022 05:25:40 -0800 (PST)
+Received: from dash.upc.es (dash.upc.es [147.83.2.50]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id E23D13A24A3; Fri, 14 Jan 2022 05:25:39 -0800 (PST)
+Received: from entelserver.upc.edu (entelserver.upc.es [147.83.40.4]) by dash.upc.es (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id 20EDPZqs065051;  Fri, 14 Jan 2022 14:25:35 +0100
+Received: from webmail.entel.upc.edu (webmail.entel.upc.edu [147.83.40.6]) by entelserver.upc.edu (Postfix) with ESMTP id 2D00E1D53C1; Fri, 14 Jan 2022 14:25:35 +0100 (CET)
+Received: from 2.138.70.102 by webmail.entel.upc.edu with HTTP; Fri, 14 Jan 2022 14:26:33 +0100
+Message-ID: <024e5adb35110d2bc1e0152e0af1d9bc.squirrel@webmail.entel.upc.edu>
+Date: Fri, 14 Jan 2022 14:26:33 +0100
+From: "Carles Gomez Montenegro" <carlesgo@entel.upc.edu>
+To: dominique.barthel@orange.com
+Cc: 6lo@ietf.org, lp-wan@ietf.org, ana@ackl.io
+User-Agent: SquirrelMail/1.4.21-1.fc14
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+X-Virus-Scanned: clamav-milter 0.100.3 at dash
+X-Virus-Status: Clean
+X-Greylist: Delayed for 00:42:42 by milter-greylist-4.3.9 (dash.upc.es [147.83.2.50]); Fri, 14 Jan 2022 14:25:35 +0100 (CET)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/2SUWKZtyTh5zFnkA8cYJkK15Fq0>
+Subject: [6lo] RuleID size in SCHC compression over 802.15.4
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 14 Jan 2022 13:25:43 -0000
+
+Hi Dominique,
+
+(CC'ing both 6Lo and LPWAN.)
+
+In the 6Lo session of IETF 112 you made some comments on
+draft-gomez-6lo-schc-15dot4-01 (thanks!).
+
+One of them was a question regarding the RuleID size, since in -01 we had
+(still have) the following statement:
+
+  "The present specification defines a RuleID size of 8 bits."
+
+Based on your question (why specify a fixed size RuleID?), we are now
+considering use of a variable size RuleID, to be added in -02.
+
+In particular, we (the authors) are considering allowing a RuleID size
+between 1 bit and 8 bits. On the other hand, we are discussing whether it
+might make sense to allow a RuleID size greater than 8 bits as well.
+
+In this regard, did have any scenario in mind that would benefit from a
+RuleID size greater than 8 bits?
+
+Thanks,
+
+Carles and Ana
+
+
+From nobody Fri Jan 14 06:38:21 2022
+Return-Path: <ggx@gigix.net>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 000273A2620 for <6lo@ietfa.amsl.com>; Fri, 14 Jan 2022 06:38:18 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -0.195
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.195 tagged_above=-999 required=5 tests=[ADVANCE_FEE_3_NEW=1.704, BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, SPF_HELO_NONE=0.001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=no autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gigix-net.20210112.gappssmtp.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id tUvxLX8-6uuk for <6lo@ietfa.amsl.com>; Fri, 14 Jan 2022 06:38:15 -0800 (PST)
+Received: from mail-wr1-x436.google.com (mail-wr1-x436.google.com [IPv6:2a00:1450:4864:20::436]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id BE8AB3A261A for <6lo@ietf.org>; Fri, 14 Jan 2022 06:38:14 -0800 (PST)
+Received: by mail-wr1-x436.google.com with SMTP id k18so15920537wrg.11 for <6lo@ietf.org>; Fri, 14 Jan 2022 06:38:14 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gigix-net.20210112.gappssmtp.com; s=20210112; h=mime-version:subject:from:in-reply-to:date:cc :content-transfer-encoding:message-id:references:to; bh=ucgG0PX3dcX6ZvBaBJ6YrsTLyOUVoU2YrwpLV14UCPg=; b=ndFpS8/SrQxGRQSwrM4tAj2tMdfJoHGzU2+9QLeZ2W8Fo4NIKwfRi3u1eCT7ttR+dO NRFZscQVGSkn2NGnh+6VEFEBc8PPqLZJjdnRI2QJ7RBynXkg2RqvEp0zpkBMlxhPrXqO czO6nz2Ssd6nkccz3+oi4O9Og0SgPBxrZ2fZJP/4zlahW3cf09o3r/GBmj6NPE38k/UH lu7qNykx7RiFjExL6nfC8xBYzl/Tkx8SLF9PjEApBoUqj64/1Iu/yuy6Ng58wG2biiYv beiepTM6VOoHn4hBjLlVZGZoEq4AKauoMcVWvwdcuLPACajV63wNdOORzlSbZkCaeoVX KICQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20210112; h=x-gm-message-state:mime-version:subject:from:in-reply-to:date:cc :content-transfer-encoding:message-id:references:to; bh=ucgG0PX3dcX6ZvBaBJ6YrsTLyOUVoU2YrwpLV14UCPg=; b=iXUuSMXlskDK2RwaSV6g087bwWDjQ0p/4yovDbDMh5vGdOq4+o8hCxsnnmm3jQOHgy VtVnTt4bq/RpMefcCKq8bbcMtbfTT10HO1M2n9jrK5q7LiKXqs1vYPaCUAmDc7DmPAYT Y2iu3dzRkU/hKON+jd1HaQ3Fv+0L05LkADDjxkLHPgSvvjuYubCjvWliZZJDQBLXmf6T NjIUy94N61OofOFKVPae6licJlvk2sNoBTECrfFYmSi7yL8xK5BUprFbotolTQ+JtLg7 GeJ8GbJ90HUw+gAAep7spZA7wq36g5BBGZqmIwC72Ybk3dzc2MXyxPalPV155lhYLEsX hNDg==
+X-Gm-Message-State: AOAM533pNvebNKryQ+afvkSo3iLUyum9/oRbFmfxPps4ISOtVR/Y+9yV zFT/3Kn6alSM4luvycAwCU2oAA==
+X-Google-Smtp-Source: ABdhPJx6v24skv18OvRxXovsnb9R4kA5YXxoriOZyeMGVSD1e4xtMmaV3wEDAQl65hj2TPsD8y9W+g==
+X-Received: by 2002:adf:f14d:: with SMTP id y13mr8338252wro.4.1642171091255; Fri, 14 Jan 2022 06:38:11 -0800 (PST)
+Received: from smtpclient.apple ([2a01:e0a:1ec:470:609f:ba0d:fb76:5abe]) by smtp.gmail.com with ESMTPSA id bh26sm11078754wmb.3.2022.01.14.06.38.10 (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128); Fri, 14 Jan 2022 06:38:10 -0800 (PST)
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0 (Mac OS X Mail 15.0 \(3693.40.0.1.81\))
+From: Luigi Iannone <ggx@gigix.net>
+X-Priority: 3 (Normal)
+In-Reply-To: <8691d358ea8c5b80ab4ffdbe8cd0b951.squirrel@webmail.entel.upc.edu>
+Date: Fri, 14 Jan 2022 15:38:09 +0100
+Cc: 6lo@ietf.org, draft-li-6lo-native-short-address@ietf.org, pthubert@cisco.com, dominique.barthel@orange.com
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <51C513A8-0B1D-44D9-8CBA-D14B0134056A@gigix.net>
+References: <163947083158.6429.2357688889865772513@ietfa.amsl.com> <C9ED0872-39CD-4DB0-B88D-C65270CD1895@gigix.net> <8691d358ea8c5b80ab4ffdbe8cd0b951.squirrel@webmail.entel.upc.edu>
+To: Carles Gomez Montenegro <carlesgo@entel.upc.edu>
+X-Mailer: Apple Mail (2.3693.40.0.1.81)
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/rmal0gUw9zodtY6-H9snEnYrgAI>
+Subject: Re: [6lo] I-D Action: draft-li-6lo-native-short-address-01.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 14 Jan 2022 14:38:19 -0000
+
+Hi Carles, Shwetha,=20
+=20
+Thank you for your email.
+Please find our answer inline.
+=20
+Ciao
+=20
+L.
+
+> On 14 Jan 2022, at 13:43, Carles Gomez Montenegro =
+<carlesgo@entel.upc.edu> wrote:
+>=20
+> Hi Luigi, and rest of coauthors,
+>=20
+> (CC'ing Pascal and Dominique, who made relevant comments in IETF 111.)
+>=20
+> Thanks for the updated version of your draft.
+>=20
+> We have a question related with your first point below, and also with =
+the
+> scope of the document (and how it fits the scope of 6Lo):
+>=20
+> - Do you envision NSA nodes would need to run a routing protocol at =
+all?=20
+[LI] No. NSA nodes do not need to run any routing protocol. If any =
+topology change happens a simple local repair is possible and it is done =
+as part of the discovery of the neighbors. Note that topology changes =
+are a very rare event (see more below).
+
+
+> Would the forwarding techniques proposed in your draft be sufficient =
+to
+> allow multihop packet transmission within the NSA domain?
+[LI] Yes, the allocation function proposed in the draft allow a simple =
+and stateless forwarding.
+
+=20
+>=20
+> On the other hand, in IETF 111 some concerns were expressed (based on =
+an
+> earlier version of your draft), regarding possible (e.g. renumbering)
+> issues due to topology changes (e.g. due to the dynamics of wireless
+> links, even if nodes might actually be static). We understand that =
+more
+> recent versions of the draft aim to address such issues.
+[LI] Absolutely right. Actually, the revision that we presented at IETF =
+112 already included a solution covering the rare case of topology =
+changes (renumbering). And in the very last revision post IETF 112,  =
+Pascal did help us in adding text that clarifies NSA applicability for =
+networks that are rather stable, like for instance  PLC wired networks =
+(where topology changes are part of a network maintenance  or upgrade, =
+which is planned and  handled by the admins).    =20
+=20
+
+> - What do the WG participants who had those concerns (e.g. Pascal,
+> Dominique) think about the latest versions of the draft?  Would the =
+issues
+> be addressed now?
+[LI] We hope so, but we are happy to solve any residual concern :-)
+=20
+>=20
+> - To the authors: perhaps a bit early at this stage, but do you have =
+any
+> sort of validation (e.g. by simulation or even running code on real
+> devices) of your proposed mechanisms?
+[LI] Short answer is =E2=80=9Calmost=E2=80=9D ;-)=20
+We are working on a simulation tool in order to validate the proposal =
+and quantify the benefits. Hopefully we will be able to show something =
+at IETF 113 (finger crossed).
+=20
+L.
+
+
+
+>=20
+> Thanks,
+>=20
+> Shwetha and Carles
+>=20
+>=20
+>=20
+>=20
+>> Hi All,
+>>=20
+>> We just submitted a new revision of the NSA document.
+>> Thanks for all the received feedback.
+>>=20
+>> The main changes concern:
+>>=20
+>> - Revising the text throughout the whole document to make clear that =
+we
+>> talk about forwarding operation, not routing (previous text was
+>> misleading), hence completely in the scope of 6lo WG.
+>>=20
+>> - Thanks lot  to Pascal T. (whom helped through a long private email
+>> exchange) the applicability of NSA has been clarified by adding text.
+>> Also, text has been added to clarify the properties of the allocation
+>> function, namely the fact that the proposed function is simple but =
+not
+>> optimal and other optimized allocation functions can be developed in =
+the
+>> future (hence the request to IANA to set up a registry for this =
+purpose).
+>>=20
+>> While we believe that the document is becoming mature, we still =
+welcome
+>> any feedback people can send us.
+>>=20
+>> Thanks
+>>=20
+>> Ciao
+>>=20
+>> L.
+>> (On behalf of all authors)
+>>=20
+>>> Begin forwarded message:
+>>>=20
+>>> From: internet-drafts@ietf.org
+>>> Subject: I-D Action: draft-li-6lo-native-short-address-01.txt
+>>> Date: 14 December 2021 at 09:33:51 CET
+>>> To: <i-d-announce@ietf.org>
+>>> Reply-To: internet-drafts@ietf.org
+>>>=20
+>>>=20
+>>> A New Internet-Draft is available from the on-line Internet-Drafts
+>>> directories.
+>>>=20
+>>>=20
+>>>       Title           : Native Short Addressing for Low power and =
+Lossy
+>>> Networks Expansion
+>>>       Authors         : Guangpeng Li
+>>>                         David Lou
+>>>                         Luigi Iannone
+>>>                         Peng Liu
+>>>                         Rong Long
+>>> 	Filename        : draft-li-6lo-native-short-address-01.txt
+>>> 	Pages           : 22
+>>> 	Date            : 2021-12-14
+>>>=20
+>>> Abstract:
+>>>  This document specifies mechanisms of NSA (Native Short Address) =
+that
+>>>  enables IP packet transmission over links where the transmission of =
+a
+>>>  full length address may not be desirable.  This document focuses on
+>>>  carrying IP packets across a LLN (Low power and Lossy Network), in
+>>>  which the topology is relatively static where nodes' location is
+>>>  fixed and the connection between nodes is rather stable.  The =
+changes
+>>>  in the logical topology are only caused by non-frequent =
+disconnection
+>>>  in the link due to some reasons.  The specifications details NSA
+>>>  address allocation, forwarding mechanism, header format design,
+>>>  including length-variable fields, and IPv6 interconnection support.
+>>>=20
+>>>=20
+>>> The IETF datatracker status page for this draft is:
+>>> https://datatracker.ietf.org/doc/draft-li-6lo-native-short-address/
+>>>=20
+>>> There is also an htmlized version available at:
+>>> =
+https://datatracker.ietf.org/doc/html/draft-li-6lo-native-short-address-01=
+
+>>>=20
+>>> A diff from the previous version is available at:
+>>> =
+https://www.ietf.org/rfcdiff?url2=3Ddraft-li-6lo-native-short-address-01
+>=20
+>=20
+
+
+From nobody Tue Jan 25 18:30:02 2022
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 3FF973A1CBB; Tue, 25 Jan 2022 18:30:01 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 7.43.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Reply-To: 6lo@ietf.org
+Message-ID: <164316420119.14633.918899547483690514@ietfa.amsl.com>
+Date: Tue, 25 Jan 2022 18:30:01 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/dGWlwao5ZkJP6O32BXoh4_Tuf4c>
+Subject: [6lo] I-D Action: draft-ietf-6lo-use-cases-12.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.29
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 26 Jan 2022 02:30:01 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : IPv6 over Constrained Node Networks (6lo) Applicability & Use cases
+        Authors         : Yong-Geun Hong
+                          Carles Gomez
+                          Younghwan Choi
+                          Abdur Rashid Sangi
+                          Samita Chakrabarti
+	Filename        : draft-ietf-6lo-use-cases-12.txt
+	Pages           : 29
+	Date            : 2022-01-25
+
+Abstract:
+   This document describes the applicability of IPv6 over constrained
+   node networks (6lo) and provides practical deployment examples.  In
+   addition to IEEE Std 802.15.4, various link layer technologies such
+   as ITU-T G.9959 (Z-Wave), Bluetooth Low Energy, DECT-ULE, MS/TP, NFC,
+   and PLC are used as examples.  The document targets an audience who
+   would like to understand and evaluate running end-to-end IPv6 over
+   the constrained node networks for local or Internet connectivity.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-use-cases/
+
+There is also an htmlized version available at:
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-use-cases-12
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-use-cases-12
+
+
+Internet-Drafts are also available by rsync at rsync.ietf.org::internet-drafts
+
+

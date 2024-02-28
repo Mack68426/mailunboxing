@@ -1,0 +1,2446 @@
+
+From nobody Sun Nov  5 13:44:05 2017
+Return-Path: <shwetha.bhandari@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 384D213FBCD; Sun,  5 Nov 2017 13:44:04 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.698
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.698 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_LOW=-0.7, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id gd3L47uzbXVS; Sun,  5 Nov 2017 13:44:02 -0800 (PST)
+Received: from mail-wm0-x22a.google.com (mail-wm0-x22a.google.com [IPv6:2a00:1450:400c:c09::22a]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id ED71813FBDB; Sun,  5 Nov 2017 13:44:01 -0800 (PST)
+Received: by mail-wm0-x22a.google.com with SMTP id y83so10573728wmc.4; Sun, 05 Nov 2017 13:44:01 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:in-reply-to:references:from:date:message-id:subject:to;  bh=tSq2O+qm/590ytnzVtKWVfuxyJDa0zJep6gzawtxJeM=; b=TBu3pidrm55MkYJlD/L8P0ulBB93nYkT+QOEGZ/uFDiDHMlWf3sdmQ0PsZnrRs73f+ u2WmaVOG/LKMo2gAbRyEXDZ/1yKhugDXcPbtUXql8QouXbj5FXrLW2aTGqf4HqXdl3xx qmypc6VYtdE3wTP4THSnp6/hgQrRC7CzxqsYJYCGj7O2P+AGpLblShhCTyxMH9ITyryS sEaepgo9RcS96hRxiZ9ieT27vbddO2K/9y3CgQjfWz0+knmoQ9Psknl+I7c7XE22t2le f5SMyqTjg3tjOOaR6wSfsRthLGeLttMowroxBZGhMMhuerysmTyhmjsCcGFrszgEdiLu UjXQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:in-reply-to:references:from:date :message-id:subject:to; bh=tSq2O+qm/590ytnzVtKWVfuxyJDa0zJep6gzawtxJeM=; b=SkPsHsmLKeieHMpO2bw++GwPLvhqrgpkQ7731oq0uoO5qKkjad6X+GezM2IwjsKPdN 6un1GOR9OcGkqjIdN0FmrPetZFOwHrTHvRsWOQG1BQh8y/e00OgpwFY+8DYipglS9IRV Dccvzq/J0VSGBOEreN0SH+6wjbWjChSQMPdQvzzUyAm/0t/vRGHOS8JeaSPSXULzMinG QBR+cFOKolmcFhJakUE5COuZUTZUpvvCKi405QziWI6K2dL0gFyJWwnVi5PNz8vP3Zn6 hqWc9p3+r9fdKr2vf3WYap9v6r51TdszC9UBiDgXIsVnCgKlU1oMHgUooBEur/ggZA19 DQ7A==
+X-Gm-Message-State: AMCzsaWgGyDgZWlh3LdEE05LPT0As9Ac2PhLz6AyA8ShZYMbFCmzs9Hc v2eyVLMZlS6V9uSlOJ4a6hBzBIs0WlgH31ndKkff8Q==
+X-Google-Smtp-Source: ABhQp+R6S5qo2pQDzPvtzFH/wckgo0jzuDQ/AEaWdV/Tj1L2Y1d77QZw3mDOU6X56R3G0vRKXwexSU/Ga1vZzezsIMM=
+X-Received: by 10.80.216.5 with SMTP id o5mr13804795edj.235.1509918240152; Sun, 05 Nov 2017 13:44:00 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.80.215.147 with HTTP; Sun, 5 Nov 2017 13:43:59 -0800 (PST)
+In-Reply-To: <005d01d34ca7$7ebcd3f0$7c367bd0$@cdac.in>
+References: <BY2PR21MB00817D3CC9BBE891BAC14F8595470@BY2PR21MB0081.namprd21.prod.outlook.com> <005d01d34ca7$7ebcd3f0$7c367bd0$@cdac.in>
+From: Shwetha <shwetha.bhandari@gmail.com>
+Date: Mon, 6 Nov 2017 03:13:59 +0530
+Message-ID: <CA+SnWFHOVFXSkkg=zVxCjB=BCtNHo5jMZHpJffn7qD=rD0GfXQ@mail.gmail.com>
+To: 6lo@ietf.org, draft-lijo-6lo-expiration-time@ietf.org,  Gabriel.Montenegro@microsoft.com, samitac.ietf@gmail.com
+Content-Type: multipart/alternative; boundary="089e0822335458248e055d433c43"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/SqhmpD5IW-9ZaN3kwb-kqMjnRZw>
+Subject: Re: [6lo] [6tisch] FW: Working Group call for adoption on draft-lijo-6lo-expiration-time
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sun, 05 Nov 2017 21:44:04 -0000
+
+--089e0822335458248e055d433c43
+Content-Type: text/plain; charset="UTF-8"
+
++1. I have been following the draft as part of usecases for
+draft-ippm-ioam-data and seen the reference implementation. I think it is
+relevant and the solution specified here is a good start for deadline
+driven routing in IOT.
+
+Thanks,
+Shwetha
+
+*From:* 6lo [mailto:6lo-bounces@ietf.org] *On Behalf Of *Gabriel Montenegro
+> *Sent:* 24 October 2017 06:10
+> *To:* 6lo@ietf.org; Samita Chakrabarti
+> *Cc:* draft-lijo-6lo-expiration-time@ietf.org
+> *Subject:* [6lo] Working Group call for adoption on
+> draft-lijo-6lo-expiration-time
+>
+>
+>
+> Hi Folks,
+>
+>
+>
+> This document has been discussed at face to face meetings as well as on
+> the list.
+>
+>
+>
+> https://datatracker.ietf.org/doc/draft-lijo-6lo-expiration-time/
+>
+>
+>
+> There is some reasonable interest and an implementation in OpenWSN. Per
+> the last meeting, after a revision we would issue a call for adoption, and
+> are pursuing now.
+>
+>
+>
+> Please send your opinion (for or against) to the mailing list on adopting
+> this document as a 6lo WG document. This call for adoption will end at
+> 00:00 UTC on November 6, 2017.
+>
+>
+>
+> Regards,
+>
+>
+>
+> Chairs
+>
+>
+>
+> ------------------------------------------------------------
+> -------------------------------------------------------------------
+> [ C-DAC is on Social-Media too. Kindly follow us at:
+> Facebook: https://www.facebook.com/CDACINDIA & Twitter: @cdacindia ]
+>
+> This e-mail is for the sole use of the intended recipient(s) and may
+> contain confidential and privileged information. If you are not the
+> intended recipient, please contact the sender by reply e-mail and destroy
+> all copies and the original message. Any unauthorized review, use,
+> disclosure, dissemination, forwarding, printing or copying of this email
+> is strictly prohibited and appropriate legal action will be taken.
+> ------------------------------------------------------------
+> -------------------------------------------------------------------
+>
+> _______________________________________________
+> 6tisch mailing list
+> 6tisch@ietf.org
+> https://www.ietf.org/mailman/listinfo/6tisch
+>
+>
+
+--089e0822335458248e055d433c43
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><div class=3D"gmail_extra">+1. I have been following t=
+he draft as part of usecases for draft-ippm-ioam-data and seen the referenc=
+e implementation. I think it is relevant and the solution specified here is=
+ a good start for deadline driven routing in IOT.</div><div class=3D"gmail_=
+extra"><br></div><div class=3D"gmail_extra">Thanks,</div><div class=3D"gmai=
+l_extra">Shwetha<br><div class=3D"gmail_quote"><br><blockquote class=3D"gma=
+il_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,2=
+04,204);padding-left:1ex"><div lang=3D"EN-IN"><div class=3D"gmail-m_9096435=
+045512055270WordSection1"><div><div style=3D"border-right:none;border-botto=
+m:none;border-left:none;border-top:1pt solid rgb(225,225,225);padding:3pt 0=
+cm 0cm"><p class=3D"MsoNormal"><b><span lang=3D"EN-US">From:</span></b><spa=
+n lang=3D"EN-US"> 6lo [mailto:<a href=3D"mailto:6lo-bounces@ietf.org" targe=
+t=3D"_blank">6lo-bounces@ietf.org</a>] <b>On Behalf Of </b>Gabriel Monteneg=
+ro<br><b>Sent:</b> 24 October 2017 06:10<br><b>To:</b> <a href=3D"mailto:6l=
+o@ietf.org" target=3D"_blank">6lo@ietf.org</a>; Samita Chakrabarti<br><b>Cc=
+:</b> <a href=3D"mailto:draft-lijo-6lo-expiration-time@ietf.org" target=3D"=
+_blank">draft-lijo-6lo-expiration-<wbr>time@ietf.org</a><br><b>Subject:</b>=
+ [6lo] Working Group call for adoption on draft-lijo-6lo-expiration-time<u>=
+</u><u></u></span></p></div></div><p class=3D"MsoNormal"><u></u>=C2=A0<u></=
+u></p><p class=3D"MsoNormal"><span lang=3D"EN-US">Hi Folks,<u></u><u></u></=
+span></p><p class=3D"MsoNormal"><span lang=3D"EN-US"><u></u>=C2=A0<u></u></=
+span></p><p class=3D"MsoNormal"><span lang=3D"EN-US">This document has been=
+ discussed at face to face meetings as well as on the list. <u></u><u></u><=
+/span></p><p class=3D"MsoNormal"><span lang=3D"EN-US"><u></u>=C2=A0<u></u><=
+/span></p><p class=3D"MsoNormal"><span lang=3D"EN-US"><a href=3D"https://da=
+tatracker.ietf.org/doc/draft-lijo-6lo-expiration-time/" target=3D"_blank">h=
+ttps://datatracker.ietf.org/<wbr>doc/draft-lijo-6lo-expiration-<wbr>time/</=
+a> <u></u><u></u></span></p><p class=3D"MsoNormal"><span lang=3D"EN-US"><u>=
+</u>=C2=A0<u></u></span></p><p class=3D"MsoNormal"><span lang=3D"EN-US">The=
+re is some reasonable interest and an implementation in OpenWSN. Per the la=
+st meeting, after a revision we would issue a call for adoption, and are pu=
+rsuing now.<u></u><u></u></span></p><p class=3D"MsoNormal"><span lang=3D"EN=
+-US"><u></u>=C2=A0<u></u></span></p><p class=3D"gmail-m_9096435045512055270=
+MsoPlainText"><span lang=3D"EN-US">Please send your opinion (for or against=
+) to the mailing list on adopting this document as a 6lo WG document. This =
+call for adoption will end at 00:00 UTC on November 6, 2017.<u></u><u></u><=
+/span></p><p class=3D"gmail-m_9096435045512055270MsoPlainText"><span lang=
+=3D"EN-US"><u></u>=C2=A0<u></u></span></p><p class=3D"gmail-m_9096435045512=
+055270MsoPlainText"><span lang=3D"EN-US">Regards,<u></u><u></u></span></p><=
+p class=3D"MsoNormal"><span lang=3D"EN-US"><u></u>=C2=A0<u></u></span></p><=
+p class=3D"MsoNormal"><span lang=3D"EN-US">Chairs<u></u><u></u></span></p><=
+p class=3D"MsoNormal"><span lang=3D"EN-US"><u></u>=C2=A0<u></u></span></p><=
+/div><br>------------------------------<wbr>------------------------------<=
+wbr>------------------------------<wbr>------------------------------<wbr>-=
+------
+<br>[ C-DAC is on Social-Media too. Kindly follow us at:=20
+<br>Facebook: <a href=3D"https://www.facebook.com/CDACINDIA" target=3D"_bla=
+nk">https://www.facebook.com/<wbr>CDACINDIA</a> &amp; Twitter: @cdacindia ]
+<br>
+<br>This e-mail is for the sole use of the intended recipient(s) and may
+<br>contain confidential and privileged information. If you are not the
+<br>intended recipient, please contact the sender by reply e-mail and destr=
+oy
+<br>all copies and the original message. Any unauthorized review, use,
+<br>disclosure, dissemination, forwarding, printing or copying of this emai=
+l
+<br>is strictly prohibited and appropriate legal action will be taken.
+<br>------------------------------<wbr>------------------------------<wbr>-=
+-----------------------------<wbr>------------------------------<wbr>------=
+-
+</div>
+<br>______________________________<wbr>_________________<br>
+6tisch mailing list<br>
+<a href=3D"mailto:6tisch@ietf.org">6tisch@ietf.org</a><br>
+<a href=3D"https://www.ietf.org/mailman/listinfo/6tisch" rel=3D"noreferrer"=
+ target=3D"_blank">https://www.ietf.org/mailman/<wbr>listinfo/6tisch</a><br=
+>
+<br></blockquote></div><br></div></div>
+
+--089e0822335458248e055d433c43--
+
+
+From nobody Mon Nov  6 05:39:54 2017
+Return-Path: <anitha.varghese@in.abb.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 0EB0513FAED for <6lo@ietfa.amsl.com>; Mon,  6 Nov 2017 05:39:53 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.02
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.02 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=in.abb.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id MudIivt9x_Yn for <6lo@ietfa.amsl.com>; Mon,  6 Nov 2017 05:39:50 -0800 (PST)
+Received: from EUR01-DB5-obe.outbound.protection.outlook.com (mail-db5eur01on0083.outbound.protection.outlook.com [104.47.2.83]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 3E28913FAD3 for <6lo@ietf.org>; Mon,  6 Nov 2017 05:39:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=in.abb.com; s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version; bh=LFMrogZ/GzycFuYw8fh3CcrBEGbmI3Cgj1twAH7KAus=; b=DcB68JLejFfrekyKcIDJG3UYu0QtQfOoyWsmCJ0LJD7ZCCalBrOF53JriRDNMg8lGYZT6Q8RnRVAwkwSKm3L+0cmxEnEaEdVT6gFX0/UfTZWx7qWdJRhnPhV+ydhEqm4Qsf6Bt8oe50dJhTKuSd0HskNXVH8PseKCvYIFKSbM5w=
+Received: from VI1PR06MB3022.eurprd06.prod.outlook.com (10.170.229.149) by VI1PR06MB3024.eurprd06.prod.outlook.com (10.170.229.151) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.20.197.13; Mon, 6 Nov 2017 13:39:48 +0000
+Received: from VI1PR06MB3022.eurprd06.prod.outlook.com ([fe80::d53c:cfaf:524a:530b]) by VI1PR06MB3022.eurprd06.prod.outlook.com ([fe80::d53c:cfaf:524a:530b%13]) with mapi id 15.20.0197.019; Mon, 6 Nov 2017 13:39:48 +0000
+From: Anitha Varghese <anitha.varghese@in.abb.com>
+To: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: RE: [6lo] Working Group call for adoption on draft-lijo-6lo-expiration-time
+Thread-Index: AdNXBFB4RefJpRHmRpSLZeABwW7+3A==
+Date: Mon, 6 Nov 2017 13:39:47 +0000
+Message-ID: <VI1PR06MB30227AE1E4E3971017362D92D1500@VI1PR06MB3022.eurprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=anitha.varghese@in.abb.com; 
+x-originating-ip: [27.59.47.67]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1; VI1PR06MB3024; 6:D4t+FxN7yiCUuPHN/Ug35bo+yPaU8otsbfGtp4vpLIaVBHIuVgsJVwcHe4VTLmfPiulgS8qtef53EzdVHRTwVzIMMMviOai9r2rR05Ux0xg5ZSgI5cu9XcQxRv3EeLMATKdnuPZKiWf8MZr1s4e5XRDNwoRzZVmYpjqWoWQ361jrkwG6htcV+GNUzsAJRpuvRwYM8gY9aQWd0TSHIEAcI4TQDb+K5IUI59uMevWHB1filR4nxtjFtb2AetiUCtdgRkJK6TFCXxgYxQEDoI5xJGPN45EGWu5wKk0c/5I0336J1NJrEwOTh2TSNx3jdGhIbUdwHSf1+h/b6RXTClvEkh8v4i2TgOYXPVMKdChBcQA=; 5:rQ1ZB0AopBVskaMkqPZHYIpvJ6H/LBYKBBOjj+VfCIbDswGEGVbz/fO8FWy0AJhRrRjsHOBN70yeb15hPjWUDed42lRNb/w0pnHNtXZBjNgcaDM+H/rzEueqaIGBH3KXb50qZbgbNuhU3bvKmii4UKrSi5tzP+A8WUHlOmTg51Q=; 24:DQZA7UYVr/MMimxgX1G+8sA0viQhY0Ru5FxQigcujnATwjvzLZhBbRxG6xShg83bdW9kJcQ+n9JA2I8z/8Lk4YVG0l9W4wP7VJIeldJ8Lg0=; 7:ZZKsCetyrzGUvYEQ3+jTDDYNnwoG81dWn7Ep4CjruQAlRrpHG346v0WR/irrQPz4kymU9kEhZ8oDkmLu+sst3sdgSja/DELWjqPeNZq9EYauL3Jcf/Wl5LeszbCvPU1NEEYgGOKxUDf9Cqc+qs1hO7rJI8D1bIphk394Vqjahww68iJc6wCir93x6jiCJ4uvhZjc7j99Zmw48mPq4MzQbUBlDr3Z9Ad4wgPjCD0QnC6vgbNpn2jwv6bhvT4cBxTs
+x-ms-exchange-antispam-srfa-diagnostics: SSOS;
+x-ms-office365-filtering-correlation-id: b6f70ea4-a0e0-4d02-b45e-08d5251bd922
+x-ms-office365-filtering-ht: Tenant
+x-microsoft-antispam: UriScan:; BCL:0; PCL:0; RULEID:(22001)(4534020)(4602075)(4627115)(201703031133081)(201702281549075)(48565401081)(2017052603249); SRVR:VI1PR06MB3024; 
+x-ms-traffictypediagnostic: VI1PR06MB3024:
+x-abb-o365-outbound: ABBOUTBOUND1
+x-exchange-antispam-report-test: UriScan:(278428928389397)(120809045254105)(21748063052155); 
+x-microsoft-antispam-prvs: <VI1PR06MB3024E81C95FB2F59B3364646D1500@VI1PR06MB3024.eurprd06.prod.outlook.com>
+x-exchange-antispam-report-cfa-test: BCL:0; PCL:0; RULEID:(100000700101)(100105000095)(100000701101)(100105300095)(100000702101)(100105100095)(6040450)(2401047)(8121501046)(5005006)(3002001)(10201501046)(3231021)(100000703101)(100105400095)(93006095)(93001095)(6055026)(6041248)(20161123558100)(20161123555025)(20161123560025)(201703131423075)(201702281528075)(201703061421075)(201703061406153)(20161123564025)(20161123562025)(6072148)(201708071742011)(100000704101)(100105200095)(100000705101)(100105500095); SRVR:VI1PR06MB3024; BCL:0; PCL:0; RULEID:(100000800101)(100110000095)(100000801101)(100110300095)(100000802101)(100110100095)(100000803101)(100110400095)(100000804101)(100110200095)(100000805101)(100110500095); SRVR:VI1PR06MB3024; 
+x-forefront-prvs: 048396AFA0
+x-forefront-antispam-report: SFV:NSPM; SFS:(10009020)(346002)(376002)(39860400002)(199003)(189002)(14454004)(99286004)(97736004)(966005)(8676002)(5640700003)(54896002)(102836003)(6116002)(6246003)(3846002)(3280700002)(6306002)(5630700001)(55016002)(790700001)(3660700001)(68736007)(2900100001)(5660300001)(74316002)(42882006)(25786009)(6916009)(2906002)(7736002)(606006)(81156014)(478600001)(8936002)(81166006)(7696004)(33656002)(54356999)(50986999)(66066001)(316002)(229853002)(53936002)(106356001)(2351001)(101416001)(6436002)(6506006)(189998001)(86362001)(236005)(9686003)(105586002)(2501003)(230783001)(5250100002); DIR:OUT; SFP:1101; SCL:1; SRVR:VI1PR06MB3024; H:VI1PR06MB3022.eurprd06.prod.outlook.com; FPR:; SPF:None; PTR:InfoNoRecords;  A:0; MX:1; LANG:en; 
+received-spf: None (protection.outlook.com: in.abb.com does not designate permitted sender hosts)
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative; boundary="_000_VI1PR06MB30227AE1E4E3971017362D92D1500VI1PR06MB3022eurp_"
+MIME-Version: 1.0
+X-OriginatorOrg: in.abb.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: b6f70ea4-a0e0-4d02-b45e-08d5251bd922
+X-MS-Exchange-CrossTenant-originalarrivaltime: 06 Nov 2017 13:39:47.8818 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 372ee9e0-9ce0-4033-a64a-c07073a91ecd
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1PR06MB3024
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/ArXZxdBDqsXJVxbFSEMHsyHcHTQ>
+Subject: Re: [6lo] Working Group call for adoption on draft-lijo-6lo-expiration-time
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Mon, 06 Nov 2017 13:39:53 -0000
+
+--_000_VI1PR06MB30227AE1E4E3971017362D92D1500VI1PR06MB3022eurp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+
++1
+The deadline-6LoRH can be very useful in IoT and factory automation applica=
+tions over wireless. This will enable deadline based routing and scheduling=
+, real time wireless networks etc. I support the adoption of this work.
+
+
+Regards,
+Anitha
+
+
+
+
+
+
+
+From: 6lo [mailto:6lo-bounces@ietf.org<mailto:6lo-bounces@ietf.org><mailto:=
+6lo-bounces@ietf.org<mailto:6lo-bounces@ietf.org>>] On Behalf Of Gabriel Mo=
+ntenegro
+Sent: Tuesday, October 24, 2017 8:40 AM
+To: 6lo@ietf.org<mailto:6lo@ietf.org><mailto:6lo@ietf.org<mailto:6lo@ietf.o=
+rg>>; Samita Chakrabarti
+Cc: draft-lijo-6lo-expiration-time@ietf.org<mailto:draft-lijo-6lo-expiratio=
+n-time@ietf.org><mailto:draft-lijo-6lo-expiration-time@ietf.org<mailto:draf=
+t-lijo-6lo-expiration-time@ietf.org>>
+Subject: [6lo] Working Group call for adoption on draft-lijo-6lo-expiration=
+-time
+
+Hi Folks,
+
+This document has been discussed at face to face meetings as well as on the=
+ list.
+
+https://datatracker.ietf.org/doc/draft-lijo-6lo-expiration-time/
+
+There is some reasonable interest and an implementation in OpenWSN. Per the=
+ last meeting, after a revision we would issue a call for adoption, and are=
+ pursuing now.
+
+
+Please send your opinion (for or against) to the mailing list on adopting t=
+his document as a 6lo WG document. This call for adoption will end at 00:00=
+ UTC on November 6, 2017.
+
+
+
+Regards,
+
+Chairs
+
+
+_______________________________________________
+6lo mailing list
+6lo@ietf.org<mailto:6lo@ietf.org><mailto:6lo@ietf.org<mailto:6lo@ietf.org>>
+https://www.ietf.org/mailman/listinfo/6lo
+
+--_000_VI1PR06MB30227AE1E4E3971017362D92D1500VI1PR06MB3022eurp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.il
+	{mso-style-name:il;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white"><o:p>&nbsp;</o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white">&#43;1<o:p></o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white">The deadline-6LoRH can =
+be very useful in IoT and factory automation applications over wireless. Th=
+is will enable deadline based routing and scheduling,
+ real time wireless networks etc. I support the adoption of this work.<o:p>=
+</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white"><o:p>&nbsp;</o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white"><o:p>&nbsp;</o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white">Regards,<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white">Anitha<o:p></o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white"><o:p>&nbsp;</o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white"><o:p>&nbsp;</o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white"><o:p>&nbsp;</o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white"><o:p>&nbsp;</o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white"><o:p>&nbsp;</o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white"><o:p>&nbsp;</o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white"><o:p>&nbsp;</o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#222222;background:white">From:<span class=3D"app=
+le-converted-space">&nbsp;</span><span class=3D"il">6lo</span><span class=
+=3D"apple-converted-space">&nbsp;</span>[mailto:</span><a href=3D"mailto:6l=
+o-bounces@ietf.org"><span class=3D"il"><span style=3D"font-size:9.5pt;font-=
+family:&quot;Arial&quot;,sans-serif;color:#1155CC;background:white;text-dec=
+oration:none">6lo</span></span><span style=3D"font-size:9.5pt;font-family:&=
+quot;Arial&quot;,sans-serif;color:#1155CC;background:white">-bounces@ietf.o=
+rg</span></a><span style=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,s=
+ans-serif;color:#222222;background:white">&lt;mailto:</span><a href=3D"mail=
+to:6lo-bounces@ietf.org"><span class=3D"il"><span style=3D"font-size:9.5pt;=
+font-family:&quot;Arial&quot;,sans-serif;color:#1155CC;background:white;tex=
+t-decoration:none">6lo</span></span><span style=3D"font-size:9.5pt;font-fam=
+ily:&quot;Arial&quot;,sans-serif;color:#1155CC;background:white">-bounces@i=
+etf.org</span></a><span style=3D"font-size:9.5pt;font-family:&quot;Arial&qu=
+ot;,sans-serif;color:#222222;background:white">&gt;]
+ On Behalf Of Gabriel Montenegro</span><span style=3D"font-size:9.5pt;font-=
+family:&quot;Arial&quot;,sans-serif;color:#222222"><br>
+<span style=3D"background:white">Sent: Tuesday, October 24, 2017 8:40 AM</s=
+pan><br>
+<span style=3D"background:white">To:<span class=3D"apple-converted-space">&=
+nbsp;</span></span></span><a href=3D"mailto:6lo@ietf.org"><span class=3D"il=
+"><span style=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;c=
+olor:#1155CC;background:white;text-decoration:none">6lo</span></span><span =
+style=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#11=
+55CC;background:white">@ietf.org</span></a><span style=3D"font-size:9.5pt;f=
+ont-family:&quot;Arial&quot;,sans-serif;color:#222222;background:white">&lt=
+;mailto:</span><a href=3D"mailto:6lo@ietf.org"><span class=3D"il"><span sty=
+le=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#1155C=
+C;background:white;text-decoration:none">6lo</span></span><span style=3D"fo=
+nt-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#1155CC;backgr=
+ound:white">@ietf.org</span></a><span style=3D"font-size:9.5pt;font-family:=
+&quot;Arial&quot;,sans-serif;color:#222222;background:white">&gt;;
+ Samita Chakrabarti</span><span style=3D"font-size:9.5pt;font-family:&quot;=
+Arial&quot;,sans-serif;color:#222222"><br>
+<span style=3D"background:white">Cc:<span class=3D"apple-converted-space">&=
+nbsp;</span></span></span><a href=3D"mailto:draft-lijo-6lo-expiration-time@=
+ietf.org"><span style=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,sans=
+-serif;color:#1155CC;background:white">draft-lijo-</span><span class=3D"il"=
+><span style=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;co=
+lor:#1155CC;background:white;text-decoration:none">6lo</span></span><span s=
+tyle=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#115=
+5CC;background:white">-expiration-time@ietf.org</span></a><span style=3D"fo=
+nt-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#222222;backgr=
+ound:white">&lt;mailto:</span><a href=3D"mailto:draft-lijo-6lo-expiration-t=
+ime@ietf.org"><span style=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,=
+sans-serif;color:#1155CC;background:white">draft-lijo-</span><span class=3D=
+"il"><span style=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,sans-seri=
+f;color:#1155CC;background:white;text-decoration:none">6lo</span></span><sp=
+an style=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:=
+#1155CC;background:white">-expiration-time@ietf.org</span></a><span style=
+=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#222222;=
+background:white">&gt;</span><span style=3D"font-size:9.5pt;font-family:&qu=
+ot;Arial&quot;,sans-serif;color:#222222"><br>
+<span style=3D"background:white">Subject: [<span class=3D"il">6lo</span>] W=
+orking Group call for adoption on draft-lijo-<span class=3D"il">6lo</span>-=
+expiration-time</span><br>
+<br>
+<span style=3D"background:white">Hi Folks,</span><br>
+<br>
+<span style=3D"background:white">This document has been discussed at face t=
+o face meetings as well as on the list.</span><br>
+<br>
+</span><a href=3D"https://datatracker.ietf.org/doc/draft-lijo-6lo-expiratio=
+n-time/" target=3D"_blank"><span style=3D"font-size:9.5pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:#1155CC;background:white">https://datatracker=
+.ietf.org/doc/draft-lijo-</span><span class=3D"il"><span style=3D"font-size=
+:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#1155CC;background:wh=
+ite;text-decoration:none">6lo</span></span><span style=3D"font-size:9.5pt;f=
+ont-family:&quot;Arial&quot;,sans-serif;color:#1155CC;background:white">-ex=
+piration-time/</span></a><span style=3D"font-size:9.5pt;font-family:&quot;A=
+rial&quot;,sans-serif;color:#222222"><br>
+<br>
+<span style=3D"background:white">There is some reasonable interest and an i=
+mplementation in OpenWSN. Per the last meeting, after a revision we would i=
+ssue a call for adoption, and are pursuing now.</span><br>
+<br>
+<br>
+<span style=3D"background:white">Please send your opinion (for or against) =
+to the mailing list on adopting this document as a<span class=3D"apple-conv=
+erted-space">&nbsp;</span><span class=3D"il">6lo</span><span class=3D"apple=
+-converted-space">&nbsp;</span>WG document. This call
+ for adoption will end at 00:00 UTC on November 6, 2017.</span><br>
+<br>
+<br>
+<br>
+<span style=3D"background:white">Regards,</span><br>
+<br>
+<span style=3D"background:white">Chairs</span><br>
+<br>
+<br>
+<span style=3D"background:white">__________________________________________=
+_____</span><br>
+<span class=3D"il"><span style=3D"background:white">6lo</span></span><span =
+class=3D"apple-converted-space"><span style=3D"background:white">&nbsp;</sp=
+an></span><span style=3D"background:white">mailing list</span><br>
+</span><a href=3D"mailto:6lo@ietf.org"><span class=3D"il"><span style=3D"fo=
+nt-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#1155CC;backgr=
+ound:white;text-decoration:none">6lo</span></span><span style=3D"font-size:=
+9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#1155CC;background:whi=
+te">@ietf.org</span></a><span style=3D"font-size:9.5pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#222222;background:white">&lt;mailto:</span><a h=
+ref=3D"mailto:6lo@ietf.org"><span class=3D"il"><span style=3D"font-size:9.5=
+pt;font-family:&quot;Arial&quot;,sans-serif;color:#1155CC;background:white;=
+text-decoration:none">6lo</span></span><span style=3D"font-size:9.5pt;font-=
+family:&quot;Arial&quot;,sans-serif;color:#1155CC;background:white">@ietf.o=
+rg</span></a><span style=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,s=
+ans-serif;color:#222222;background:white">&gt;</span><span style=3D"font-si=
+ze:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#222222"><br>
+</span><a href=3D"https://www.ietf.org/mailman/listinfo/6lo" target=3D"_bla=
+nk"><span style=3D"font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif=
+;color:#1155CC;background:white">https://www.ietf.org/mailman/listinfo/</sp=
+an><span class=3D"il"><span style=3D"font-size:9.5pt;font-family:&quot;Aria=
+l&quot;,sans-serif;color:#1155CC;background:white;text-decoration:none">6lo=
+</span></span></a><o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_VI1PR06MB30227AE1E4E3971017362D92D1500VI1PR06MB3022eurp_--
+
+
+From nobody Mon Nov  6 22:22:17 2017
+Return-Path: <samitac.ietf@gmail.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id CB67B13FB03 for <6lo@ietfa.amsl.com>; Mon,  6 Nov 2017 22:22:15 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -1.998
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.998 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id snR3xr6J58W5 for <6lo@ietfa.amsl.com>; Mon,  6 Nov 2017 22:22:14 -0800 (PST)
+Received: from mail-ua0-x230.google.com (mail-ua0-x230.google.com [IPv6:2607:f8b0:400c:c08::230]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id C1F0A13FAC5 for <6lo@ietf.org>; Mon,  6 Nov 2017 22:22:13 -0800 (PST)
+Received: by mail-ua0-x230.google.com with SMTP id w45so8115989uac.3 for <6lo@ietf.org>; Mon, 06 Nov 2017 22:22:13 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;  h=mime-version:from:date:message-id:subject:to; bh=RiNQaSfoybvZ0RkkNPgsHCX+ORAaLbW6eXlsqAbg7+s=; b=t/BPMqO23YJR0YR7vDI37Z+e75dwyCbJmh0COJqzBjKTsGtMCPfo8+83jp+do5cmqq VGemYlaoShTDnZzaLaIXHTSs8CdTxclY/J/BA9OYKYkkiUtGj7Ouyt6wecsPtZ9Xxdhj WjIXEGF56r5ydfSSyEajo6pUyOVYAswpPTYQrJcdZBlpk+0i71FDtv9ueJ4evXnI83+/ x5XemJlwPgXV81geUpHO9Rnir975ZJZTwshau8OtCgpRxhoEXepq7/7vKhrrJ+PL6kn4 JNVuxT0SFdk90QwE5kHKG96r02iwUsnGg1nD4CGblHAlEyLJZVqqZSWjHqnPLaEWYFHt fleQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=RiNQaSfoybvZ0RkkNPgsHCX+ORAaLbW6eXlsqAbg7+s=; b=r2cZQXGwG/5BBpvFLzkcZNg49FUcu5tch06UEiFvAwA7glU5/ba+xkUAoIFwRfdQhE zssHYTYf5J6V5o12FMn1VYDs+cj/TGJ4EC3TWsa+zMVfGRFbpioX3wdXpT28mboX7i0U 9uUzZ8IHPsOFO2Bnhr15qLgvEw1PT7tZ1y8DXHIcD5efe/Kcchm1Pmfq5rxGz0w3XAmr YjxA3Hs79bH//rcGI+vkiTgKu5We58bpvqhSCh2F7ejxd7eAEf+8f8Eg9sqRdUnLYJv+ twvBl7mIa/CcZiQRbBm2TDrSi6BLy0As6Amojl3rNpr0p785B/N5ylRv8Sw6JYigC9Qr Itrg==
+X-Gm-Message-State: AMCzsaVCDuZQ9GUfiiW9LYB/gOa6a8/VKDNRHbFSsClCk2FJ5MUs4gN6 bIalu83WnN+KdxFr/sh0UKIhNWrXdIvdD3CxTOlHpA==
+X-Google-Smtp-Source: ABhQp+QyDfZ3WXTx1lJHZCRrZXirorIBT62c+2F7vDkRDVhRUN7sm00pBs3FTeBLCaRwqH5PpnDtV232+lkMtOSz6Kw=
+X-Received: by 10.176.86.203 with SMTP id c11mr13823354uab.106.1510035732559;  Mon, 06 Nov 2017 22:22:12 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.31.133.73 with HTTP; Mon, 6 Nov 2017 22:22:12 -0800 (PST)
+From: Samita Chakrabarti <samitac.ietf@gmail.com>
+Date: Mon, 6 Nov 2017 22:22:12 -0800
+Message-ID: <CAKmdBpf4u5bVv0=BOXT3X5uiJbeXfvGcYbiav0wu87ic3Pc8Dw@mail.gmail.com>
+To: lo <6lo@ietf.org>
+Content-Type: multipart/alternative; boundary="94eb2c1b19906ffdc0055d5e975c"
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/DjfCyT4q_oWzXvDqPJE3Gmkcqoc>
+Subject: [6lo] IETF 100 6lo WG agenda
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 07 Nov 2017 06:22:16 -0000
+
+--94eb2c1b19906ffdc0055d5e975c
+Content-Type: text/plain; charset="UTF-8"
+
+Hello 6lo WG:
+
+We have uploaded the agenda based on the current requests.
+Please take a look and let the co-chairs know about any changes or updates:
+https://datatracker.ietf.org/meeting/100/materials/agenda-100-6lo/
+
+Note: Please volunteer for being minute takers and jabber scribe... ; we
+would also like new workgroup members to come forward and volunteer for
+document reviews and active participation on the document review process.
+
+
+Thanks,
+-Samita
+
+PS: As I am embarking on a new job, I will not be able to attend Singapore
+unfortunately but hope to see you at the next one.
+
+--94eb2c1b19906ffdc0055d5e975c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello 6lo WG:<div><br></div><div>We have uploaded the agen=
+da based on the current requests.</div><div>Please take a look and let the =
+co-chairs know about any changes or updates:</div><div><a href=3D"https://d=
+atatracker.ietf.org/meeting/100/materials/agenda-100-6lo/">https://datatrac=
+ker.ietf.org/meeting/100/materials/agenda-100-6lo/</a><br></div><div><br></=
+div><div>Note: Please volunteer for being minute takers and jabber scribe..=
+. ; we would also like new workgroup members to come forward and volunteer =
+for document reviews and active participation on the document review proces=
+s.</div><div><br></div><div><br></div><div>Thanks,</div><div>-Samita</div><=
+div><br></div><div>PS: As I am embarking on a new job, I will not be able t=
+o attend Singapore unfortunately but hope to see you at the next one.</div>=
+</div>
+
+--94eb2c1b19906ffdc0055d5e975c--
+
+
+From nobody Thu Nov  9 15:11:36 2017
+Return-Path: <Gabriel.Montenegro@microsoft.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id BAB1112941C; Thu,  9 Nov 2017 15:11:34 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -0.03
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.03 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, HTTPS_HTTP_MISMATCH=1.989, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H4=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=microsoft.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id uki1as0B5yVk; Thu,  9 Nov 2017 15:11:32 -0800 (PST)
+Received: from NAM03-BY2-obe.outbound.protection.outlook.com (mail-by2nam03on0125.outbound.protection.outlook.com [104.47.42.125]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 819B3128D8B; Thu,  9 Nov 2017 15:11:32 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version; bh=2m7tXWAGZP+jq6L6GRZuzOkkn/STBR+aFLwICXoVQ/Y=; b=SIyBEGT/27H3uypcXhlC+m8sgtVuMKCZ0kHWwVXZM/vdQZFPRdVTHlqS6LGj/oeixkIOzOCduiq65feTvPCojYp5dxQ4IN8hCL6V4cTpIcnz7ZpQ/AfaAFTehA+vMyarWbdOuaSsCUY3HOQGzYPxrJVUh5yDlOaV4/DumuZEwTg=
+Received: from BY2PR21MB0081.namprd21.prod.outlook.com (10.162.78.139) by BY2PR21MB0003.namprd21.prod.outlook.com (10.162.77.154) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id 15.20.239.0; Thu, 9 Nov 2017 23:11:30 +0000
+Received: from BY2PR21MB0081.namprd21.prod.outlook.com ([10.162.78.139]) by BY2PR21MB0081.namprd21.prod.outlook.com ([10.162.78.139]) with mapi id 15.20.0239.004; Thu, 9 Nov 2017 23:11:30 +0000
+From: Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>
+To: "6lo@ietf.org" <6lo@ietf.org>, Samita Chakrabarti <samitac.ietf@gmail.com>
+CC: "draft-lijo-6lo-expiration-time@ietf.org" <draft-lijo-6lo-expiration-time@ietf.org>
+Thread-Topic: Working Group call for adoption on draft-lijo-6lo-expiration-time
+Thread-Index: AdNMYG4ObUoDbcmTTrmI1H2vuEPaLQNTxULA
+Date: Thu, 9 Nov 2017 23:11:30 +0000
+Message-ID: <BY2PR21MB0081052D3028BA00DAD271B295570@BY2PR21MB0081.namprd21.prod.outlook.com>
+References: <BY2PR21MB00817D3CC9BBE891BAC14F8595470@BY2PR21MB0081.namprd21.prod.outlook.com>
+In-Reply-To: <BY2PR21MB00817D3CC9BBE891BAC14F8595470@BY2PR21MB0081.namprd21.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [2001:4898:80e8:4::510]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1; BY2PR21MB0003; 6:xLVRJPQvf66x9hJ+nI8PP7gFqHIsBajCeQIeaRZD5tEoBUR5yh3rAhHfmWAJest5dnNeEQSEnaNLzeViyWeHf0rbkzo/mSgRlFGwP8mIA353TjnIlJalQSYN2LC3azh2r3+JEC4J1nzWfWhdV87r9i2zaOCpnLUl0GS5DDyd34IPgfSnVUaG9vP+5M0M2mEMw5ak4xuTQvgQYOH0UW+/m+ExCOK49JLAAEPKV8y26heEVHyOfs3PmgKXBi5Unih3aum0WVWRoK/ICaGHcKo/XZpNEwxIJI1LIN96rOnQz+s8/4aSFWVqZK0mXSNszvFYbg5IrpCAvnREotgUvek5ELGVzHgUJveiu17QIWSb0aI=; 5:ALYolUonh9tmzUNBPxOjfE/VtKbWpPhfZu/czmQvAX2ILE6P+wkDwnnUmPmeNIVJMajvCTCSyBbQHnhAiHE4wZQD2mPjLGH/rgKVjAKyyYpjl/7f69HbXcSY5Mwq2jXCsjh0P+l5IscqkgQXtoWCT57BuiAcO9yoa5YT36V3KKY=; 24:aw0t/jpyxLEmB+RdbifwZplu60I+XjDZAQFvL9NuCQu2jOhqNvnaKkqJPCEuc2g61wcEfujxEi4FRtWM3RrUerupwg4/MjH/N/ZB962Faj0=; 7:clSp4EM+f0wYGHTtNJ8iOKIMPJR0KobRDvyGKKkx3XOJJPui5XwIyBdXNGJ/n3fudcNRwQwpI5RLdI2bHaYd9pT/HVOw/7jPnw1Jfhnzp3NZfpJjXiNn4sk7tQKLUx/6x921C70UBJJVZFDd7Txz+ZtOkZFiPz4zpv++KOO//qkDMKm9bPUZjhCTFJl6gKqP1/J2WhNYcvD0B9fuIZstnwNrsDYcckDPQ2NJ4SOqw0f9+bFjMM7quTpre0sTjNYu
+x-ms-exchange-antispam-srfa-diagnostics: SSOS;
+x-ms-office365-filtering-correlation-id: 6ec72b7d-86e7-439c-ba0e-08d527c7364f
+x-ms-office365-filtering-ht: Tenant
+x-microsoft-antispam: UriScan:; BCL:0; PCL:0; RULEID:(22001)(4534020)(4602075)(4627115)(201703031133081)(201702281549075)(48565401081)(2017052603253); SRVR:BY2PR21MB0003; 
+x-ms-traffictypediagnostic: BY2PR21MB0003:
+x-exchange-antispam-report-test: UriScan:(120809045254105)(189930954265078)(219752817060721)(21748063052155); 
+x-microsoft-antispam-prvs: <BY2PR21MB0003A780DF6AFBD4A9C1A4AF95570@BY2PR21MB0003.namprd21.prod.outlook.com>
+x-exchange-antispam-report-cfa-test: BCL:0; PCL:0; RULEID:(100000700101)(100105000095)(100000701101)(100105300095)(100000702101)(100105100095)(61425038)(6040450)(2401047)(5005006)(8121501046)(93006095)(93001095)(3002001)(3231021)(100000703101)(100105400095)(10201501046)(6055026)(61426038)(61427038)(6041248)(20161123562025)(20161123560025)(20161123564025)(20161123558100)(20161123555025)(201703131423075)(201702281528075)(201703061421075)(201703061406153)(6072148)(201708071742011)(100000704101)(100105200095)(100000705101)(100105500095); SRVR:BY2PR21MB0003; BCL:0; PCL:0; RULEID:(100000800101)(100110000095)(100000801101)(100110300095)(100000802101)(100110100095)(100000803101)(100110400095)(100000804101)(100110200095)(100000805101)(100110500095); SRVR:BY2PR21MB0003; 
+x-forefront-prvs: 0486A0CB86
+x-forefront-antispam-report: SFV:NSPM; SFS:(10019020)(39860400002)(376002)(346002)(47760400005)(54164003)(189002)(199003)(53546010)(2501003)(54896002)(3660700001)(106356001)(53936002)(7696004)(6116002)(102836003)(790700001)(74316002)(7736002)(105586002)(14454004)(3280700002)(10090500001)(81166006)(2900100001)(6306002)(8676002)(236005)(6246003)(81156014)(230783001)(99286004)(8936002)(55016002)(97736004)(2906002)(9686003)(8990500004)(39060400002)(33656002)(50986999)(86362001)(2950100002)(229853002)(72206003)(4326008)(606006)(478600001)(966005)(68736007)(77096006)(10290500003)(189998001)(6436002)(76176999)(5660300001)(86612001)(54356999)(316002)(6506006)(110136005)(25786009)(101416001)(22452003); DIR:OUT; SFP:1102; SCL:1; SRVR:BY2PR21MB0003; H:BY2PR21MB0081.namprd21.prod.outlook.com; FPR:; SPF:None; PTR:InfoNoRecords;  MX:1; A:1; LANG:en; 
+received-spf: None (protection.outlook.com: microsoft.com does not designate permitted sender hosts)
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=Gabriel.Montenegro@microsoft.com; 
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative; boundary="_000_BY2PR21MB0081052D3028BA00DAD271B295570BY2PR21MB0081namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: microsoft.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6ec72b7d-86e7-439c-ba0e-08d527c7364f
+X-MS-Exchange-CrossTenant-originalarrivaltime: 09 Nov 2017 23:11:30.5494 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 72f988bf-86f1-41af-91ab-2d7cd011db47
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY2PR21MB0003
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/WCAm-GrLAb-gQnAP4kLYTCepYSI>
+Subject: Re: [6lo] Working Group call for adoption on draft-lijo-6lo-expiration-time
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 09 Nov 2017 23:11:35 -0000
+
+--_000_BY2PR21MB0081052D3028BA00DAD271B295570BY2PR21MB0081namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Thanks to all the expressions of support. There seems to be some healthy le=
+vel of interest and even an implementation in OpenWSN.
+
+Authors: please submit the next version as an official working group docume=
+nt.
+
+Suggested name: draft-ietf-6lo-expiration-time
+
+Thanks,
+
+chairs
+
+From: 6lo [mailto:6lo-bounces@ietf.org] On Behalf Of Gabriel Montenegro
+Sent: 23 October, 2017 17:40
+To: 6lo@ietf.org; Samita Chakrabarti <samitac.ietf@gmail.com>
+Cc: draft-lijo-6lo-expiration-time@ietf.org
+Subject: [6lo] Working Group call for adoption on draft-lijo-6lo-expiration=
+-time
+
+Hi Folks,
+
+This document has been discussed at face to face meetings as well as on the=
+ list.
+
+https://datatracker.ietf.org/doc/draft-lijo-6lo-expiration-time/<https://na=
+01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fdatatracker.ietf.o=
+rg%2Fdoc%2Fdraft-lijo-6lo-expiration-time%2F&data=3D02%7C01%7CGabriel.Monte=
+negro%40microsoft.com%7Cda2f024577c84d52643b08d51a77b690%7C72f988bf86f141af=
+91ab2d7cd011db47%7C1%7C0%7C636444023832960844&sdata=3DE3UmRbJuYHlypP7GBRUaP=
+CgV%2BW%2F9TI0gBV8a62Hn27w%3D&reserved=3D0>
+
+There is some reasonable interest and an implementation in OpenWSN. Per the=
+ last meeting, after a revision we would issue a call for adoption, and are=
+ pursuing now.
+
+
+Please send your opinion (for or against) to the mailing list on adopting t=
+his document as a 6lo WG document. This call for adoption will end at 00:00=
+ UTC on November 6, 2017.
+
+
+
+Regards,
+
+Chairs
+
+
+--_000_BY2PR21MB0081052D3028BA00DAD271B295570BY2PR21MB0081namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:dt=3D"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:m=3D"http://sc=
+hemas.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-=
+html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Yu Gothic";
+	panose-1:2 11 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@Yu Gothic";
+	panose-1:2 11 4 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle21
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Thanks to all the expressions of support. There seem=
+s to be some healthy level of interest and even an implementation in OpenWS=
+N.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Authors: please submit the next version as an offici=
+al working group document.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Suggested name: draft-ietf-6lo-expiration-time<o:p><=
+/o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">chairs<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div style=3D"border:none;border-left:solid blue 1.5pt;padding:0in 0in 0in =
+4.0pt">
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b>From:</b> 6lo [mailto:6lo-bounces@ietf.org] <b>On=
+ Behalf Of
+</b>Gabriel Montenegro<br>
+<b>Sent:</b> 23 October, 2017 17:40<br>
+<b>To:</b> 6lo@ietf.org; Samita Chakrabarti &lt;samitac.ietf@gmail.com&gt;<=
+br>
+<b>Cc:</b> draft-lijo-6lo-expiration-time@ietf.org<br>
+<b>Subject:</b> [6lo] Working Group call for adoption on draft-lijo-6lo-exp=
+iration-time<o:p></o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hi Folks,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">This document has been discussed at face to face mee=
+tings as well as on the list.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><a href=3D"https://na01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fdatatracker.ietf.org%2Fdoc%2Fdraft-lijo-6lo-expir=
+ation-time%2F&amp;data=3D02%7C01%7CGabriel.Montenegro%40microsoft.com%7Cda2=
+f024577c84d52643b08d51a77b690%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C=
+636444023832960844&amp;sdata=3DE3UmRbJuYHlypP7GBRUaPCgV%2BW%2F9TI0gBV8a62Hn=
+27w%3D&amp;reserved=3D0">https://datatracker.ietf.org/doc/draft-lijo-6lo-ex=
+piration-time/</a>
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">There is some reasonable interest and an implementat=
+ion in OpenWSN. Per the last meeting, after a revision we would issue a cal=
+l for adoption, and are pursuing now.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Please send your opinion (for or against) to the =
+mailing list on adopting this document as a 6lo WG document. This call for =
+adoption will end at 00:00 UTC on November 6, 2017.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Regards,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Chairs<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</div>
+</body>
+</html>
+
+--_000_BY2PR21MB0081052D3028BA00DAD271B295570BY2PR21MB0081namp_--
+
+
+From nobody Sat Nov 11 07:09:16 2017
+Return-Path: <Gabriel.Montenegro@microsoft.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id A3F89129744 for <6lo@ietfa.amsl.com>; Sat, 11 Nov 2017 07:09:14 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -0.03
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.03 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, HTTPS_HTTP_MISMATCH=1.989, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=microsoft.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id bT1jh6HKrtWZ for <6lo@ietfa.amsl.com>; Sat, 11 Nov 2017 07:09:12 -0800 (PST)
+Received: from NAM01-SN1-obe.outbound.protection.outlook.com (mail-sn1nam01on0092.outbound.protection.outlook.com [104.47.32.92]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 9D68412956D for <6lo@ietf.org>; Sat, 11 Nov 2017 07:09:12 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version; bh=AZzSs5cv/sL5fmfMJNFgMOb8fLoin328deEnd4Vjdr4=; b=V8ltgz3f1Kg3Vy3oOxc0VUqPrGn7j4hLhpxM/XFpbRcQW3+k5kL38Fm12hBpwLo4Opdx+R47/hviNFVbYuAsiprfeN8WS9M/4NgOJNciwFUg7jiC1UFvq4To5GmDI45ySKqfTjqwoy/WuL6ua/qAr7gdkMbHkVGEFOZPFAxA84U=
+Received: from SN1PR21MB0096.namprd21.prod.outlook.com (10.161.254.16) by SN1PR21MB0095.namprd21.prod.outlook.com (10.161.254.156) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id 15.20.239.0; Sat, 11 Nov 2017 15:09:10 +0000
+Received: from SN1PR21MB0096.namprd21.prod.outlook.com ([10.161.254.16]) by SN1PR21MB0096.namprd21.prod.outlook.com ([10.161.254.16]) with mapi id 15.20.0239.004; Sat, 11 Nov 2017 15:09:10 +0000
+From: Gabriel Montenegro <Gabriel.Montenegro@microsoft.com>
+To: Samita Chakrabarti <samitac.ietf@gmail.com>, lo <6lo@ietf.org>
+Thread-Topic: [6lo] IETF 100 6lo WG agenda
+Thread-Index: AQHTV5DFO6nv1CRg9E2g9cqIfJdVo6MPTgfA
+Date: Sat, 11 Nov 2017 15:09:10 +0000
+Message-ID: <SN1PR21MB0096F49A932CB7C009A858B295550@SN1PR21MB0096.namprd21.prod.outlook.com>
+References: <CAKmdBpf4u5bVv0=BOXT3X5uiJbeXfvGcYbiav0wu87ic3Pc8Dw@mail.gmail.com>
+In-Reply-To: <CAKmdBpf4u5bVv0=BOXT3X5uiJbeXfvGcYbiav0wu87ic3Pc8Dw@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+msip_labels: MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_Enabled=True; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_SiteId=72f988bf-86f1-41af-91ab-2d7cd011db47; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_Owner=gmonte@ntdev.microsoft.com; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_SetDate=2017-11-11T15:09:05.8749413Z; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_Name=General; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_Application=Microsoft Azure Information Protection; MSIP_Label_f42aa342-8706-4288-bd11-ebb85995028c_Extended_MSFT_Method=Automatic; Sensitivity=General
+x-originating-ip: [31.133.148.71]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1; SN1PR21MB0095; 6:jtGel7MDi5u854nfz2WUfm9p4/xu3U9bMB0pvmbOi1QtLwhmkIqmZBHhufe9sxgwGsNKvK+ZlzxiL7tyRFJjG0sDeerhx/eJ/oY2G1wHOyYmIsUBoiyfrshPFBeEkfiEgnvUjjFBwdeMViYbU/fn5n7MyZ80bQLlP9z2Aq2GF5lvrj0ERH3/SeWLDpXwPpjvTfMXUTWe8U2jbLzDuAiun7UK9I2BzMTsFvzA5xo7rc4eHo0aFiMm6b3EMNX7UekCkIQCzh89WGSjGDMI/R/okGKMbQQ49u2nxenxqzOgiN8F2tsO5EAJSq5S5l7S497l+oVo5Upw9b1RXYLj7gTl+LWmGp2ODY4GXrQEg2H04Sc=; 5:KFyehq5M7xeEL3eUqrpH93wZUsuLcKGUkdbYOIAuWayrtoPtEu8fD1cCD4beGwIuU4O5fIMwP5PPtl76DO4UdiK6OgWN26PdrHxHeqgNne+wx/DIkwfpqInh6b+23Ht8X5KnfGROlZTnsZOruoTWVSiiRNQz+OEhg2O67weE3m8=; 24:WdoSh6NeysJhHYdxiBcHHkvLvRfe11DMkAdlUpij6kEytYEqdhB5Jr8TLVzRICqf3xn3/xCEC4CqRXCaL0YQDAa/G2c7iCTru43y6VMfqa0=; 7:KfPBkmyuUbC26aW1+yxZ73pwdbjo3QO/5DCNVA1Z8vqQajZOAjf+wLSPn/AB06KqCMHKFTZZ78nPLEuaprrFdkA+hA6cXVhm/tgCIurzOJRYcQBjwoHUXrzLoQ73cIvh4vWYByB4f7nvuCoDdV/vpvFyb0onpqOlZbX7uWHE0yFzoruP//f0gg8ihJFzLSpxCVDFW6jCn4y3E9v3oTaf1JM8gmz8P7Qqu5oQ2KWK1OUyjtHcZF94rjeehdLr8bJW
+x-ms-exchange-antispam-srfa-diagnostics: SSOS;
+x-ms-office365-filtering-correlation-id: a9c6bfa2-e615-4f8b-4322-08d5291629a7
+x-ms-office365-filtering-ht: Tenant
+x-microsoft-antispam: UriScan:; BCL:0; PCL:0; RULEID:(22001)(48565401081)(4534020)(4602075)(4627115)(201703031133081)(201702281549075)(2017052603258); SRVR:SN1PR21MB0095; 
+x-ms-traffictypediagnostic: SN1PR21MB0095:
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=Gabriel.Montenegro@microsoft.com; 
+x-microsoft-antispam-prvs: <SN1PR21MB0095E07B5B5F9D5040D43C1095550@SN1PR21MB0095.namprd21.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:(120809045254105)(189930954265078)(219752817060721)(21748063052155); 
+x-exchange-antispam-report-cfa-test: BCL:0; PCL:0; RULEID:(100000700101)(100105000095)(100000701101)(100105300095)(100000702101)(100105100095)(61425038)(6040450)(2401047)(5005006)(8121501046)(93006095)(93001095)(10201501046)(3002001)(3231022)(100000703101)(100105400095)(6055026)(61426038)(61427038)(6041248)(201703131423075)(201702281528075)(201703061421075)(201703061406153)(20161123560025)(20161123555025)(20161123564025)(20161123562025)(20161123558100)(6072148)(201708071742011)(100000704101)(100105200095)(100000705101)(100105500095); SRVR:SN1PR21MB0095; BCL:0; PCL:0; RULEID:(100000800101)(100110000095)(100000801101)(100110300095)(100000802101)(100110100095)(100000803101)(100110400095)(100000804101)(100110200095)(100000805101)(100110500095); SRVR:SN1PR21MB0095; 
+x-forefront-prvs: 0488C54DB4
+x-forefront-antispam-report: SFV:NSPM; SFS:(10019020)(346002)(376002)(47760400005)(189002)(199003)(229853002)(5660300001)(6436002)(66066001)(81156014)(9686003)(6116002)(102836003)(966005)(790700001)(3846002)(7696004)(7736002)(8936002)(2900100001)(6306002)(97736004)(55016002)(236005)(77096006)(54896002)(6506006)(74316002)(86612001)(8990500004)(53936002)(39060400002)(606006)(22452003)(19609705001)(10290500003)(68736007)(478600001)(33656002)(72206003)(316002)(2950100002)(101416001)(54356999)(3280700002)(76176999)(86362001)(6246003)(8676002)(25786009)(3660700001)(99286004)(110136005)(81166006)(189998001)(14454004)(50986999)(106356001)(10090500001)(53546010)(2906002)(105586002); DIR:OUT; SFP:1102; SCL:1; SRVR:SN1PR21MB0095; H:SN1PR21MB0096.namprd21.prod.outlook.com; FPR:; SPF:None; PTR:InfoNoRecords;  MX:1; A:1; LANG:en; 
+received-spf: None (protection.outlook.com: microsoft.com does not designate permitted sender hosts)
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative; boundary="_000_SN1PR21MB0096F49A932CB7C009A858B295550SN1PR21MB0096namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: microsoft.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: a9c6bfa2-e615-4f8b-4322-08d5291629a7
+X-MS-Exchange-CrossTenant-originalarrivaltime: 11 Nov 2017 15:09:10.5921 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 72f988bf-86f1-41af-91ab-2d7cd011db47
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN1PR21MB0095
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/w7_9hIcukv4pmYOVEIwVmK286cA>
+Subject: Re: [6lo] IETF 100 6lo WG agenda
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sat, 11 Nov 2017 15:09:15 -0000
+
+--_000_SN1PR21MB0096F49A932CB7C009A858B295550SN1PR21MB0096namp_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+Q291bGQgdGhlIGZvbGtzIGluIHRoZSBhZ2VuZGEgcGxlYXNlIHNlbmQgYW55IHNsaWRlcyB0aGV5
+IHdpc2ggdG8gcHJlc2VudCB0byA2bG8tY2hhaXJzQGlldGYub3JnPG1haWx0bzo2bG8tY2hhaXJz
+QGlldGYub3JnPiBieSBXZWQgbW9ybmluZyBhdCB0aGUgbGF0ZXN0Pw0KDQpUaGFua3MsDQoNCkdh
+YnJpZWwNCg0KRnJvbTogNmxvIFttYWlsdG86NmxvLWJvdW5jZXNAaWV0Zi5vcmddIE9uIEJlaGFs
+ZiBPZiBTYW1pdGEgQ2hha3JhYmFydGkNClNlbnQ6IDcgTm92ZW1iZXIsIDIwMTcgMTQ6MjINClRv
+OiBsbyA8NmxvQGlldGYub3JnPg0KU3ViamVjdDogWzZsb10gSUVURiAxMDAgNmxvIFdHIGFnZW5k
+YQ0KDQpIZWxsbyA2bG8gV0c6DQoNCldlIGhhdmUgdXBsb2FkZWQgdGhlIGFnZW5kYSBiYXNlZCBv
+biB0aGUgY3VycmVudCByZXF1ZXN0cy4NClBsZWFzZSB0YWtlIGEgbG9vayBhbmQgbGV0IHRoZSBj
+by1jaGFpcnMga25vdyBhYm91dCBhbnkgY2hhbmdlcyBvciB1cGRhdGVzOg0KaHR0cHM6Ly9kYXRh
+dHJhY2tlci5pZXRmLm9yZy9tZWV0aW5nLzEwMC9tYXRlcmlhbHMvYWdlbmRhLTEwMC02bG8vPGh0
+dHBzOi8vbmEwMS5zYWZlbGlua3MucHJvdGVjdGlvbi5vdXRsb29rLmNvbS8/dXJsPWh0dHBzJTNB
+JTJGJTJGZGF0YXRyYWNrZXIuaWV0Zi5vcmclMkZtZWV0aW5nJTJGMTAwJTJGbWF0ZXJpYWxzJTJG
+YWdlbmRhLTEwMC02bG8lMkYmZGF0YT0wMiU3QzAxJTdDR2FicmllbC5Nb250ZW5lZ3JvJTQwbWlj
+cm9zb2Z0LmNvbSU3QzE0MzA4YzZkMjdiYjQ4ZGFjMWNkMDhkNTI1YTdlNjExJTdDNzJmOTg4YmY4
+NmYxNDFhZjkxYWIyZDdjZDAxMWRiNDclN0MxJTdDMCU3QzYzNjQ1NjMyNTQxNjIzNzY5NSZzZGF0
+YT1sZnFwYklQbzczeWloZFNUcnVqNVpTR2htc2FSOURQVUZJVTVVTWJCQWlRJTNEJnJlc2VydmVk
+PTA+DQoNCk5vdGU6IFBsZWFzZSB2b2x1bnRlZXIgZm9yIGJlaW5nIG1pbnV0ZSB0YWtlcnMgYW5k
+IGphYmJlciBzY3JpYmUuLi4gOyB3ZSB3b3VsZCBhbHNvIGxpa2UgbmV3IHdvcmtncm91cCBtZW1i
+ZXJzIHRvIGNvbWUgZm9yd2FyZCBhbmQgdm9sdW50ZWVyIGZvciBkb2N1bWVudCByZXZpZXdzIGFu
+ZCBhY3RpdmUgcGFydGljaXBhdGlvbiBvbiB0aGUgZG9jdW1lbnQgcmV2aWV3IHByb2Nlc3MuDQoN
+Cg0KVGhhbmtzLA0KLVNhbWl0YQ0KDQpQUzogQXMgSSBhbSBlbWJhcmtpbmcgb24gYSBuZXcgam9i
+LCBJIHdpbGwgbm90IGJlIGFibGUgdG8gYXR0ZW5kIFNpbmdhcG9yZSB1bmZvcnR1bmF0ZWx5IGJ1
+dCBob3BlIHRvIHNlZSB5b3UgYXQgdGhlIG5leHQgb25lLg0K
+
+--_000_SN1PR21MB0096F49A932CB7C009A858B295550SN1PR21MB0096namp_
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiIHhtbG5zOm89InVy
+bjpzY2hlbWFzLW1pY3Jvc29mdC1jb206b2ZmaWNlOm9mZmljZSIgeG1sbnM6dz0idXJuOnNjaGVt
+YXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6d29yZCIgeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMubWlj
+cm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+VFIvUkVDLWh0bWw0MCI+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIg
+Y29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjxtZXRhIG5hbWU9IkdlbmVyYXRv
+ciIgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUgKGZpbHRlcmVkIG1lZGl1bSkiPg0KPHN0eWxl
+PjwhLS0NCi8qIEZvbnQgRGVmaW5pdGlvbnMgKi8NCkBmb250LWZhY2UNCgl7Zm9udC1mYW1pbHk6
+IkNhbWJyaWEgTWF0aCI7DQoJcGFub3NlLTE6MiA0IDUgMyA1IDQgNiAzIDIgNDt9DQpAZm9udC1m
+YWNlDQoJe2ZvbnQtZmFtaWx5OiJZdSBHb3RoaWMiOw0KCXBhbm9zZS0xOjIgMTEgNCAwIDAgMCAw
+IDAgMCAwO30NCkBmb250LWZhY2UNCgl7Zm9udC1mYW1pbHk6Q2FsaWJyaTsNCglwYW5vc2UtMToy
+IDE1IDUgMiAyIDIgNCAzIDIgNDt9DQpAZm9udC1mYWNlDQoJe2ZvbnQtZmFtaWx5OiZxdW90Ow0K
+CXBhbm9zZS0xOjAgMCAwIDAgMCAwIDAgMCAwIDA7fQ0KQGZvbnQtZmFjZQ0KCXtmb250LWZhbWls
+eToiXEBZdSBHb3RoaWMiOw0KCXBhbm9zZS0xOjIgMTEgNCAwIDAgMCAwIDAgMCAwO30NCi8qIFN0
+eWxlIERlZmluaXRpb25zICovDQpwLk1zb05vcm1hbCwgbGkuTXNvTm9ybWFsLCBkaXYuTXNvTm9y
+bWFsDQoJe21hcmdpbjowaW47DQoJbWFyZ2luLWJvdHRvbTouMDAwMXB0Ow0KCWZvbnQtc2l6ZTox
+MS4wcHQ7DQoJZm9udC1mYW1pbHk6IkNhbGlicmkiLHNhbnMtc2VyaWY7fQ0KYTpsaW5rLCBzcGFu
+Lk1zb0h5cGVybGluaw0KCXttc28tc3R5bGUtcHJpb3JpdHk6OTk7DQoJY29sb3I6Ymx1ZTsNCgl0
+ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lO30NCmE6dmlzaXRlZCwgc3Bhbi5Nc29IeXBlcmxpbmtG
+b2xsb3dlZA0KCXttc28tc3R5bGUtcHJpb3JpdHk6OTk7DQoJY29sb3I6cHVycGxlOw0KCXRleHQt
+ZGVjb3JhdGlvbjp1bmRlcmxpbmU7fQ0KcC5tc29ub3JtYWwwLCBsaS5tc29ub3JtYWwwLCBkaXYu
+bXNvbm9ybWFsMA0KCXttc28tc3R5bGUtbmFtZTptc29ub3JtYWw7DQoJbXNvLW1hcmdpbi10b3At
+YWx0OmF1dG87DQoJbWFyZ2luLXJpZ2h0OjBpbjsNCgltc28tbWFyZ2luLWJvdHRvbS1hbHQ6YXV0
+bzsNCgltYXJnaW4tbGVmdDowaW47DQoJZm9udC1zaXplOjExLjBwdDsNCglmb250LWZhbWlseToi
+Q2FsaWJyaSIsc2Fucy1zZXJpZjt9DQpzcGFuLkVtYWlsU3R5bGUxOA0KCXttc28tc3R5bGUtdHlw
+ZTpwZXJzb25hbC1yZXBseTsNCglmb250LWZhbWlseToiQ2FsaWJyaSIsc2Fucy1zZXJpZjsNCglj
+b2xvcjp3aW5kb3d0ZXh0O30NCi5Nc29DaHBEZWZhdWx0DQoJe21zby1zdHlsZS10eXBlOmV4cG9y
+dC1vbmx5Ow0KCWZvbnQtZmFtaWx5OiJDYWxpYnJpIixzYW5zLXNlcmlmO30NCkBwYWdlIFdvcmRT
+ZWN0aW9uMQ0KCXtzaXplOjguNWluIDExLjBpbjsNCgltYXJnaW46MS4waW4gMS4waW4gMS4waW4g
+MS4waW47fQ0KZGl2LldvcmRTZWN0aW9uMQ0KCXtwYWdlOldvcmRTZWN0aW9uMTt9DQotLT48L3N0
+eWxlPjwhLS1baWYgZ3RlIG1zbyA5XT48eG1sPg0KPG86c2hhcGVkZWZhdWx0cyB2OmV4dD0iZWRp
+dCIgc3BpZG1heD0iMTAyNiIgLz4NCjwveG1sPjwhW2VuZGlmXS0tPjwhLS1baWYgZ3RlIG1zbyA5
+XT48eG1sPg0KPG86c2hhcGVsYXlvdXQgdjpleHQ9ImVkaXQiPg0KPG86aWRtYXAgdjpleHQ9ImVk
+aXQiIGRhdGE9IjEiIC8+DQo8L286c2hhcGVsYXlvdXQ+PC94bWw+PCFbZW5kaWZdLS0+DQo8L2hl
+YWQ+DQo8Ym9keSBsYW5nPSJFTi1VUyIgbGluaz0iYmx1ZSIgdmxpbms9InB1cnBsZSI+DQo8ZGl2
+IGNsYXNzPSJXb3JkU2VjdGlvbjEiPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+Q291bGQgdGhlIGZv
+bGtzIGluIHRoZSBhZ2VuZGEgcGxlYXNlIHNlbmQgYW55IHNsaWRlcyB0aGV5IHdpc2ggdG8gcHJl
+c2VudCB0bw0KPGEgaHJlZj0ibWFpbHRvOjZsby1jaGFpcnNAaWV0Zi5vcmciPjxzcGFuIHN0eWxl
+PSJmb250LXNpemU6MTEuNXB0O2ZvbnQtZmFtaWx5OiZxdW90OyZhbXA7cXVvdCZxdW90OyxzZXJp
+Zjtjb2xvcjojM0QyMkIzO3RleHQtZGVjb3JhdGlvbjpub25lIj42bG8tY2hhaXJzQGlldGYub3Jn
+PC9zcGFuPjwvYT4gYnkgV2VkIG1vcm5pbmcgYXQgdGhlIGxhdGVzdD88bzpwPjwvbzpwPjwvcD4N
+CjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1z
+b05vcm1hbCI+VGhhbmtzLDxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86
+cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5HYWJyaWVsPG86cD48L286
+cD48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48YSBuYW1lPSJfTWFpbEVuZENvbXBvc2UiPjxv
+OnA+Jm5ic3A7PC9vOnA+PC9hPjwvcD4NCjxzcGFuIHN0eWxlPSJtc28tYm9va21hcms6X01haWxF
+bmRDb21wb3NlIj48L3NwYW4+DQo8ZGl2IHN0eWxlPSJib3JkZXI6bm9uZTtib3JkZXItbGVmdDpz
+b2xpZCBibHVlIDEuNXB0O3BhZGRpbmc6MGluIDBpbiAwaW4gNC4wcHQiPg0KPGRpdj4NCjxkaXYg
+c3R5bGU9ImJvcmRlcjpub25lO2JvcmRlci10b3A6c29saWQgI0UxRTFFMSAxLjBwdDtwYWRkaW5n
+OjMuMHB0IDBpbiAwaW4gMGluIj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxiPkZyb206PC9iPiA2
+bG8gW21haWx0bzo2bG8tYm91bmNlc0BpZXRmLm9yZ10gPGI+T24gQmVoYWxmIE9mDQo8L2I+U2Ft
+aXRhIENoYWtyYWJhcnRpPGJyPg0KPGI+U2VudDo8L2I+IDcgTm92ZW1iZXIsIDIwMTcgMTQ6MjI8
+YnI+DQo8Yj5Ubzo8L2I+IGxvICZsdDs2bG9AaWV0Zi5vcmcmZ3Q7PGJyPg0KPGI+U3ViamVjdDo8
+L2I+IFs2bG9dIElFVEYgMTAwIDZsbyBXRyBhZ2VuZGE8bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0K
+PC9kaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxkaXY+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5IZWxsbyA2bG8gV0c6PG86cD48L286cD48L3A+DQo8ZGl2
+Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8L2Rpdj4NCjxk
+aXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5XZSBoYXZlIHVwbG9hZGVkIHRoZSBhZ2VuZGEgYmFz
+ZWQgb24gdGhlIGN1cnJlbnQgcmVxdWVzdHMuPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+
+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj5QbGVhc2UgdGFrZSBhIGxvb2sgYW5kIGxldCB0aGUgY28t
+Y2hhaXJzIGtub3cgYWJvdXQgYW55IGNoYW5nZXMgb3IgdXBkYXRlczo8bzpwPjwvbzpwPjwvcD4N
+CjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxhIGhyZWY9Imh0dHBzOi8vbmEw
+MS5zYWZlbGlua3MucHJvdGVjdGlvbi5vdXRsb29rLmNvbS8/dXJsPWh0dHBzJTNBJTJGJTJGZGF0
+YXRyYWNrZXIuaWV0Zi5vcmclMkZtZWV0aW5nJTJGMTAwJTJGbWF0ZXJpYWxzJTJGYWdlbmRhLTEw
+MC02bG8lMkYmYW1wO2RhdGE9MDIlN0MwMSU3Q0dhYnJpZWwuTW9udGVuZWdybyU0MG1pY3Jvc29m
+dC5jb20lN0MxNDMwOGM2ZDI3YmI0OGRhYzFjZDA4ZDUyNWE3ZTYxMSU3QzcyZjk4OGJmODZmMTQx
+YWY5MWFiMmQ3Y2QwMTFkYjQ3JTdDMSU3QzAlN0M2MzY0NTYzMjU0MTYyMzc2OTUmYW1wO3NkYXRh
+PWxmcXBiSVBvNzN5aWhkU1RydWo1WlNHaG1zYVI5RFBVRklVNVVNYkJBaVElM0QmYW1wO3Jlc2Vy
+dmVkPTAiPmh0dHBzOi8vZGF0YXRyYWNrZXIuaWV0Zi5vcmcvbWVldGluZy8xMDAvbWF0ZXJpYWxz
+L2FnZW5kYS0xMDAtNmxvLzwvYT48bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNs
+YXNzPSJNc29Ob3JtYWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAg
+Y2xhc3M9Ik1zb05vcm1hbCI+Tm90ZTogUGxlYXNlIHZvbHVudGVlciBmb3IgYmVpbmcgbWludXRl
+IHRha2VycyBhbmQgamFiYmVyIHNjcmliZS4uLiA7IHdlIHdvdWxkIGFsc28gbGlrZSBuZXcgd29y
+a2dyb3VwIG1lbWJlcnMgdG8gY29tZSBmb3J3YXJkIGFuZCB2b2x1bnRlZXIgZm9yIGRvY3VtZW50
+IHJldmlld3MgYW5kIGFjdGl2ZSBwYXJ0aWNpcGF0aW9uIG9uIHRoZSBkb2N1bWVudCByZXZpZXcg
+cHJvY2Vzcy48bzpwPjwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNsYXNzPSJNc29Ob3Jt
+YWwiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPC9kaXY+DQo8ZGl2Pg0KPHAgY2xhc3M9Ik1zb05v
+cm1hbCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBjbGFzcz0iTXNv
+Tm9ybWFsIj5UaGFua3MsPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBjbGFzcz0i
+TXNvTm9ybWFsIj4tU2FtaXRhPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjxkaXY+DQo8cCBjbGFz
+cz0iTXNvTm9ybWFsIj48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjwvZGl2Pg0KPGRpdj4NCjxwIGNs
+YXNzPSJNc29Ob3JtYWwiPlBTOiBBcyBJIGFtIGVtYmFya2luZyBvbiBhIG5ldyBqb2IsIEkgd2ls
+bCBub3QgYmUgYWJsZSB0byBhdHRlbmQgU2luZ2Fwb3JlIHVuZm9ydHVuYXRlbHkgYnV0IGhvcGUg
+dG8gc2VlIHlvdSBhdCB0aGUgbmV4dCBvbmUuPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjwvZGl2
+Pg0KPC9kaXY+DQo8L2Rpdj4NCjwvYm9keT4NCjwvaHRtbD4NCg==
+
+--_000_SN1PR21MB0096F49A932CB7C009A858B295550SN1PR21MB0096namp_--
+
+
+From nobody Tue Nov 14 00:59:45 2017
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id B8964124B09; Tue, 14 Nov 2017 00:59:42 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.65.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <151064998266.5985.9284598650324202422@ietfa.amsl.com>
+Date: Tue, 14 Nov 2017 00:59:42 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/D7ICjU3jbCcd7SJI1yaDOxnmte4>
+Subject: [6lo] I-D Action: draft-ietf-6lo-deadline-time-00.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 14 Nov 2017 08:59:43 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : Packet Delivery Deadline time in 6LoWPAN Routing Header
+        Authors         : Lijo Thomas
+                          P.M. Akshay
+                          Satish Anamalamudi
+                          S.V.R Anand
+                          Malati Hegde
+                          Charles E. Perkins
+	Filename        : draft-ietf-6lo-deadline-time-00.txt
+	Pages           : 13
+	Date            : 2017-11-14
+
+Abstract:
+   This document specifies a new type for the 6LoWPAN routing header
+   containing the delivery deadline time for data packets.  The deadline
+   time enables forwarding and scheduling decisions for time critical
+   IoT M2M applications that need deterministic delay guarantees over
+   constrained networks and operate within time-synchronized networks.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-deadline-time/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-deadline-time-00
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-deadline-time-00
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Tue Nov 14 19:38:01 2017
+Return-Path: <internet-drafts@ietf.org>
+X-Original-To: 6lo@ietf.org
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1]) by ietfa.amsl.com (Postfix) with ESMTP id 5BAD3126CE8; Tue, 14 Nov 2017 19:37:57 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: internet-drafts@ietf.org
+To: <i-d-announce@ietf.org>
+Cc: 6lo@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 6.65.1
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <151071707735.25867.4383495344261566221@ietfa.amsl.com>
+Date: Tue, 14 Nov 2017 19:37:57 -0800
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/P3Cv7bwSz2sF_RA3eBKdci62Tmo>
+Subject: [6lo] I-D Action: draft-ietf-6lo-ap-nd-04.txt
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 15 Nov 2017 03:37:57 -0000
+
+A New Internet-Draft is available from the on-line Internet-Drafts directories.
+This draft is a work item of the IPv6 over Networks of Resource-constrained Nodes WG of the IETF.
+
+        Title           : Address Protected Neighbor Discovery for Low-power and Lossy Networks
+        Authors         : Behcet Sarikaya
+                          Pascal Thubert
+                          Mohit Sethi
+	Filename        : draft-ietf-6lo-ap-nd-04.txt
+	Pages           : 17
+	Date            : 2017-11-14
+
+Abstract:
+   This document defines an extension to 6LoWPAN Neighbor Discovery RFC
+   6775.  Nodes supporting this extension compute a cryptographic Owner
+   Unique Interface ID and associate it with one or more of their
+   Registered Addresses.  Once an address is registered with a
+   Cryptographic ID, only the owner of that ID can modify the anchor
+   state information of the Registered Address, and Source Address
+   Validation can be enforced.
+
+
+The IETF datatracker status page for this draft is:
+https://datatracker.ietf.org/doc/draft-ietf-6lo-ap-nd/
+
+There are also htmlized versions available at:
+https://tools.ietf.org/html/draft-ietf-6lo-ap-nd-04
+https://datatracker.ietf.org/doc/html/draft-ietf-6lo-ap-nd-04
+
+A diff from the previous version is available at:
+https://www.ietf.org/rfcdiff?url2=draft-ietf-6lo-ap-nd-04
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+Internet-Drafts are also available by anonymous FTP at:
+ftp://ftp.ietf.org/internet-drafts/
+
+
+From nobody Thu Nov 16 18:48:23 2017
+Return-Path: <houjianqiang@huawei.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 32CE1127B60 for <6lo@ietfa.amsl.com>; Thu, 16 Nov 2017 18:48:21 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.219
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.219 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id uNsHtfIP7Iaq for <6lo@ietfa.amsl.com>; Thu, 16 Nov 2017 18:48:17 -0800 (PST)
+Received: from huawei.com (lhrrgout.huawei.com [194.213.3.17]) by ietfa.amsl.com (Postfix) with ESMTP id 62D9F126B71 for <6lo@ietf.org>; Thu, 16 Nov 2017 18:48:14 -0800 (PST)
+Received: from lhreml704-cah.china.huawei.com (unknown [172.18.7.106]) by Forcepoint Email with ESMTP id ED7FEB4BD4B48 for <6lo@ietf.org>; Fri, 17 Nov 2017 02:48:11 +0000 (GMT)
+Received: from DGGEMM406-HUB.china.huawei.com (10.3.20.214) by lhreml704-cah.china.huawei.com (10.201.108.45) with Microsoft SMTP Server (TLS) id 14.3.361.1; Fri, 17 Nov 2017 02:48:12 +0000
+Received: from DGGEMM506-MBS.china.huawei.com ([169.254.4.18]) by DGGEMM406-HUB.china.huawei.com ([10.3.20.214]) with mapi id 14.03.0361.001; Fri, 17 Nov 2017 10:48:01 +0800
+From: "Houjianqiang (Derek)" <houjianqiang@huawei.com>
+To: "dthaler@microsoft.com" <dthaler@microsoft.com>, "Rahul Arvind Jadhav (Rahul Arvind Jadhav, 2012 Labs)" <rahul.jadhav@huawei.com>
+CC: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: About the IID construction in 6lo-WBAN
+Thread-Index: AdNfTlbvc08UcUWmQCOc0QjWVKlz2Q==
+Date: Fri, 17 Nov 2017 02:48:01 +0000
+Message-ID: <DD0A994E4D6B3F4080662703C8C7C086A9321C@DGGEMM506-MBS.china.huawei.com>
+Accept-Language: zh-CN, en-US
+Content-Language: zh-CN
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.52.37.182]
+Content-Type: multipart/alternative; boundary="_000_DD0A994E4D6B3F4080662703C8C7C086A9321CDGGEMM506MBSchina_"
+MIME-Version: 1.0
+X-CFilter-Loop: Reflected
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/D_GqqI2sH3XdFPMhUVw_rCy4zNU>
+Subject: [6lo] About the IID construction in 6lo-WBAN
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 17 Nov 2017 02:48:21 -0000
+
+--_000_DD0A994E4D6B3F4080662703C8C7C086A9321CDGGEMM506MBSchina_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Dave and Rahul,
+
+Thanks for your valuable comments on the IID construction in 6lo-WBAN. Sinc=
+e I am one of the co-authors, it is my pleasure to provide more information=
+ of the current IID construction in this draft:
+
+There are two kinds of nodes in a WBAN, namely BAN coordinator and BAN node=
+s (not sure whether I name them correctly). Each BAN coordinator holds an 8=
+-bit BAN ID. BAN nodes need to associate with the BAN coordinator using MAC=
+48 address, then the BAN coordinator allocates an 8-bit short address to ea=
+ch BAN node. When multiple BAN coordinators exist in a subnet, each BAN coo=
+rdinator holds an unique BAN ID after negotiations. So, the BAN ID and the =
+8-bit node address are not built-in constant addresses in a WBAN device, an=
+d the current IID construction method in the draft guarantees its uniquenes=
+s inside a subnet.
+
+Regards,
+Jianqiang Hou (Derek)
+
+draft-sajjad-6lo-wban-01
+https://datatracker.ietf.org/doc/draft-sajjad-6lo-wban/
+
+
+--_000_DD0A994E4D6B3F4080662703C8C7C086A9321CDGGEMM506MBSchina_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+/* Page Definitions */
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"ZH-CN" link=3D"#0563C1" vlink=3D"#954F72" style=3D"text-justi=
+fy-trim:punctuation">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Hi Dave and Rahul,<o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Thanks for your valuable commen=
+ts on the IID construction in 6lo-WBAN. Since I am one of the co-authors, i=
+t is my pleasure to provide more information of the current IID constructio=
+n in this draft:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">There are two kinds of nodes in=
+ a WBAN, namely BAN coordinator and BAN nodes (not sure whether I name them=
+ correctly). Each BAN coordinator holds an 8-bit BAN ID. BAN nodes need to =
+associate with the BAN coordinator using
+ MAC48 address, then the BAN coordinator allocates an 8-bit short address t=
+o each BAN node. When multiple BAN coordinators exist in a subnet, each BAN=
+ coordinator holds an unique BAN ID after negotiations. So, the BAN ID and =
+the 8-bit node address are not built-in
+ constant addresses in a WBAN device, and the current IID construction meth=
+od in the draft guarantees its uniqueness inside a subnet.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Regards,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Jianqiang Hou (Derek)<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">draft-sajjad-6lo-wban-01<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><a href=3D"https://datatracker.=
+ietf.org/doc/draft-sajjad-6lo-wban/">https://datatracker.ietf.org/doc/draft=
+-sajjad-6lo-wban/</a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_DD0A994E4D6B3F4080662703C8C7C086A9321CDGGEMM506MBSchina_--
+
+
+From nobody Thu Nov 16 22:20:55 2017
+Return-Path: <dthaler@microsoft.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id B1237126B72 for <6lo@ietfa.amsl.com>; Thu, 16 Nov 2017 22:20:53 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -0.03
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.03 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, HTTPS_HTTP_MISMATCH=1.989, RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=microsoft.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id og6_8gXdJ3kf for <6lo@ietfa.amsl.com>; Thu, 16 Nov 2017 22:20:51 -0800 (PST)
+Received: from NAM03-BY2-obe.outbound.protection.outlook.com (mail-by2nam03on0137.outbound.protection.outlook.com [104.47.42.137]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id 13EF61200C1 for <6lo@ietf.org>; Thu, 16 Nov 2017 22:20:51 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version; bh=NyYqMthldwv9POCAFhQ73ecenKCHc06bJnc0ruKsevg=; b=auJ5YSB7+4TJTKk2YZyS74AaR2uO7WtFMmC86D7EdZDXh3y/k/o1RXK+Q9Kd89H+cOedGj/TDzmdEhrmPtA1hJPdaqLsll/7inZIZKcORGlz2fjeG+sLSn6Y21UpyiYezY08w1f0U3NPRvB7fa0UCR/5RM7APL8wS7pv2HWmBFw=
+Received: from CY4PR21MB0856.namprd21.prod.outlook.com (10.173.192.145) by CY4PR21MB0741.namprd21.prod.outlook.com (10.173.189.7) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.20.260.0; Fri, 17 Nov 2017 06:20:49 +0000
+Received: from CY4PR21MB0856.namprd21.prod.outlook.com ([10.173.192.145]) by CY4PR21MB0856.namprd21.prod.outlook.com ([10.173.192.145]) with mapi id 15.20.0260.001; Fri, 17 Nov 2017 06:20:49 +0000
+From: Dave Thaler <dthaler@microsoft.com>
+To: "Houjianqiang (Derek)" <houjianqiang@huawei.com>, "Rahul Arvind Jadhav (Rahul Arvind Jadhav, 2012 Labs)" <rahul.jadhav@huawei.com>
+CC: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: About the IID construction in 6lo-WBAN
+Thread-Index: AdNfTlbvc08UcUWmQCOc0QjWVKlz2QAHXPSw
+Date: Fri, 17 Nov 2017 06:20:49 +0000
+Message-ID: <CY4PR21MB0856BB0031CD5E8C4C9ABFD5A32F0@CY4PR21MB0856.namprd21.prod.outlook.com>
+References: <DD0A994E4D6B3F4080662703C8C7C086A9321C@DGGEMM506-MBS.china.huawei.com>
+In-Reply-To: <DD0A994E4D6B3F4080662703C8C7C086A9321C@DGGEMM506-MBS.china.huawei.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [210.164.9.12]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1; CY4PR21MB0741; 6:gJTs5P1eWSkpeItHHqB4Pc8F2csEgoIefIOYM8RaPFRCX7PVMsfnQnMrvt9qxk6YH7KG85ta6DucL51GszQzuGRo6b/dcO8cne23RB/CGini3+iIxLM/nSBSFqM7swOOowO3TsfvajsnyiGtl++mxTn1S0hndPS61PgJKaPW9kWZx2kDGjkMa+mrPTSKT8+fb0MXvdnBBLaadV02vtlvr5MyeqbgQ3ESAyyJV3sYWbpJBNwZvsHeWtQHZpNoGJ7K2iQ0HK2Nj1HvrkhQVb4VrANzaSTJ6vC/b63SLjPbsVR5Sz/UCGvnZ+s9oYSatDiUJse3jJB1FvR8VmdK7RxW6NgLj10n6EJ7d4PDiD3HPQM=; 5:OgcKrZjitaPKKCwClOaDcs4qejCatQMVvVt6YTtVOV/ponjV61f0puRAsLWmouFA8kcQMO97aru9VvmAVP9XE/26D3nQB7gxUi9pMbxtlkHMPaNh4gfYy1PL9dz7b67mz65baJqs6OhGxoFqMx7hqcWRgkvidrw1jgHBMlM7C/8=; 24:iDsZ01PKuhVVrz5lIlTURxPrAJG7V4Y600i4ZuUi0+B0cB/YBHd+yy9H+RaT2nHR7qnkp94jco1YEwVxiupLol6tUdsneWLQQKzMgrfkUuU=; 7:R9clTAD9Mbu+MNRbOhgoggVYCiuIMcTPZzzVUqiNc7Updz0FgyBiR21rHJNRsD/GuVP+BASysSN6vtipkwRZ2tJY6IKzrEuf7akjjJEDOPcUd3rJskenuz9nQPNvYFZr1asosfUegZJHcS7YclbxnIQwxOFDi3/LoNmLr/oCAYpu+20x2TayNfB40Cubv0khgylA0Me/wrx0QyaEsDHgErdPhK01Wq1aJa2nx/IQ8tdVMwywvsmgYKqQ0WZDorCh
+x-ms-exchange-antispam-srfa-diagnostics: SSOS;
+x-ms-office365-filtering-correlation-id: ac8f179f-7d59-43f7-20d7-08d52d8358d0
+x-ms-office365-filtering-ht: Tenant
+x-microsoft-antispam: UriScan:; BCL:0; PCL:0; RULEID:(22001)(4534020)(4602075)(4627115)(201703031133081)(201702281549075)(48565401081)(2017052603258); SRVR:CY4PR21MB0741; 
+x-ms-traffictypediagnostic: CY4PR21MB0741:
+x-microsoft-antispam-prvs: <CY4PR21MB0741F4B7BDBFBF168E30E704A32F0@CY4PR21MB0741.namprd21.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:(89211679590171)(120809045254105)(189930954265078)(50582790962513)(227612066756510)(219752817060721)(21748063052155)(17755550239193);
+x-exchange-antispam-report-cfa-test: BCL:0; PCL:0; RULEID:(100000700101)(100105000095)(100000701101)(100105300095)(100000702101)(100105100095)(61425038)(6040450)(2401047)(5005006)(8121501046)(93006095)(93001095)(10201501046)(100000703101)(100105400095)(3231022)(3002001)(6055026)(61426038)(61427038)(6041248)(201703131423075)(201702281528075)(201703061421075)(201703061406153)(20161123564025)(20161123562025)(20161123560025)(20161123555025)(20161123558100)(6072148)(201708071742011)(100000704101)(100105200095)(100000705101)(100105500095); SRVR:CY4PR21MB0741; BCL:0; PCL:0; RULEID:(100000800101)(100110000095)(100000801101)(100110300095)(100000802101)(100110100095)(100000803101)(100110400095)(100000804101)(100110200095)(100000805101)(100110500095); SRVR:CY4PR21MB0741; 
+x-forefront-prvs: 049486C505
+x-forefront-antispam-report: SFV:NSPM; SFS:(10019020)(376002)(346002)(39860400002)(47760400005)(189002)(199003)(6246003)(53546010)(189998001)(110136005)(81156014)(4326008)(81166006)(606006)(53936002)(316002)(2900100001)(106356001)(229853002)(97736004)(2950100002)(105586002)(7696004)(3280700002)(99286004)(3660700001)(86612001)(8676002)(54896002)(66066001)(236005)(22452003)(9686003)(2906002)(68736007)(10090500001)(25786009)(86362001)(5660300001)(14454004)(8936002)(6306002)(55016002)(6436002)(6116002)(6506006)(10290500003)(102836003)(77096006)(790700001)(33656002)(3846002)(478600001)(50986999)(76176999)(966005)(8990500004)(54356999)(74316002)(7736002)(101416001)(564094006); DIR:OUT; SFP:1102; SCL:1; SRVR:CY4PR21MB0741; H:CY4PR21MB0856.namprd21.prod.outlook.com; FPR:; SPF:None; PTR:InfoNoRecords;  MX:1; A:1; LANG:en; 
+received-spf: None (protection.outlook.com: microsoft.com does not designate permitted sender hosts)
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=dthaler@microsoft.com; 
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative; boundary="_000_CY4PR21MB0856BB0031CD5E8C4C9ABFD5A32F0CY4PR21MB0856namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: microsoft.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: ac8f179f-7d59-43f7-20d7-08d52d8358d0
+X-MS-Exchange-CrossTenant-originalarrivaltime: 17 Nov 2017 06:20:49.5387 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 72f988bf-86f1-41af-91ab-2d7cd011db47
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR21MB0741
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/4a--a7SSAeJ9a_D2WDo4DBD0vT0>
+Subject: Re: [6lo] About the IID construction in 6lo-WBAN
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 17 Nov 2017 06:20:54 -0000
+
+--_000_CY4PR21MB0856BB0031CD5E8C4C9ABFD5A32F0CY4PR21MB0856namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Privacy is about making both predictability and correlation hard.
+Padding an 8-bit short address results in easy predictability as there's on=
+ly 256 possibilities to probe in an address scan.
+See RFC 8065 for more details on why this is bad.
+
+Dave
+
+From: 6lo [mailto:6lo-bounces@ietf.org] On Behalf Of Houjianqiang (Derek)
+Sent: Friday, November 17, 2017 11:48 AM
+To: Dave Thaler <dthaler@microsoft.com>; Rahul Arvind Jadhav (Rahul Arvind =
+Jadhav, 2012 Labs) <rahul.jadhav@huawei.com>
+Cc: 6lo@ietf.org
+Subject: [6lo] About the IID construction in 6lo-WBAN
+
+Hi Dave and Rahul,
+
+Thanks for your valuable comments on the IID construction in 6lo-WBAN. Sinc=
+e I am one of the co-authors, it is my pleasure to provide more information=
+ of the current IID construction in this draft:
+
+There are two kinds of nodes in a WBAN, namely BAN coordinator and BAN node=
+s (not sure whether I name them correctly). Each BAN coordinator holds an 8=
+-bit BAN ID. BAN nodes need to associate with the BAN coordinator using MAC=
+48 address, then the BAN coordinator allocates an 8-bit short address to ea=
+ch BAN node. When multiple BAN coordinators exist in a subnet, each BAN coo=
+rdinator holds an unique BAN ID after negotiations. So, the BAN ID and the =
+8-bit node address are not built-in constant addresses in a WBAN device, an=
+d the current IID construction method in the draft guarantees its uniquenes=
+s inside a subnet.
+
+Regards,
+Jianqiang Hou (Derek)
+
+draft-sajjad-6lo-wban-01
+https://datatracker.ietf.org/doc/draft-sajjad-6lo-wban/<https://na01.safeli=
+nks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fdatatracker.ietf.org%2Fdoc%=
+2Fdraft-sajjad-6lo-wban%2F&data=3D02%7C01%7Cdthaler%40microsoft.com%7Cd4ac2=
+2bda3314ac8ef1b08d52d65b507%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C63=
+6464837211941149&sdata=3DpaYF2DYV1Oq2SdriqBL2q%2F%2FtwNaMoICoz7EqKxCteNs%3D=
+&reserved=3D0>
+
+
+--_000_CY4PR21MB0856BB0031CD5E8C4C9ABFD5A32F0CY4PR21MB0856namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle18
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72" style=3D"text-justi=
+fy-trim:punctuation">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Privacy is about ma=
+king both predictability and correlation hard.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Padding an 8-bit sh=
+ort address results in easy predictability as there&#8217;s only 256 possib=
+ilities to probe in an address scan.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">See RFC 8065 for mo=
+re details on why this is bad.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Dave<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><a name=3D"_MailEndCompose"><span style=3D"font-size=
+:11.0pt"><o:p>&nbsp;</o:p></span></a></p>
+<span style=3D"mso-bookmark:_MailEndCompose"></span>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><b><span st=
+yle=3D"font-size:11.0pt">From:</span></b><span style=3D"font-size:11.0pt"> =
+6lo [mailto:6lo-bounces@ietf.org]
+<b>On Behalf Of </b>Houjianqiang (Derek)<br>
+<b>Sent:</b> Friday, November 17, 2017 11:48 AM<br>
+<b>To:</b> Dave Thaler &lt;dthaler@microsoft.com&gt;; Rahul Arvind Jadhav (=
+Rahul Arvind Jadhav, 2012 Labs) &lt;rahul.jadhav@huawei.com&gt;<br>
+<b>Cc:</b> 6lo@ietf.org<br>
+<b>Subject:</b> [6lo] About the IID construction in 6lo-WBAN<o:p></o:p></sp=
+an></p>
+</div>
+</div>
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><o:p>&nbsp;=
+</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN">Hi Dave a=
+nd Rahul,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN"><o:p>&nbs=
+p;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN">Thanks fo=
+r your valuable comments on the IID construction in 6lo-WBAN. Since I am on=
+e of the co-authors, it is my pleasure to provide more information of the c=
+urrent IID construction in this draft:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN"><o:p>&nbs=
+p;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN">There are=
+ two kinds of nodes in a WBAN, namely BAN coordinator and BAN nodes (not su=
+re whether I name them correctly). Each BAN coordinator holds an 8-bit BAN =
+ID. BAN nodes need to associate with
+ the BAN coordinator using MAC48 address, then the BAN coordinator allocate=
+s an 8-bit short address to each BAN node. When multiple BAN coordinators e=
+xist in a subnet, each BAN coordinator holds an unique BAN ID after negotia=
+tions. So, the BAN ID and the 8-bit
+ node address are not built-in constant addresses in a WBAN device, and the=
+ current IID construction method in the draft guarantees its uniqueness ins=
+ide a subnet.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN"><o:p>&nbs=
+p;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN">Regards,<=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN">Jianqiang=
+ Hou (Derek)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN"><o:p>&nbs=
+p;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN">draft-saj=
+jad-6lo-wban-01<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN"><a href=
+=3D"https://na01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fdata=
+tracker.ietf.org%2Fdoc%2Fdraft-sajjad-6lo-wban%2F&amp;data=3D02%7C01%7Cdtha=
+ler%40microsoft.com%7Cd4ac22bda3314ac8ef1b08d52d65b507%7C72f988bf86f141af91=
+ab2d7cd011db47%7C1%7C0%7C636464837211941149&amp;sdata=3DpaYF2DYV1Oq2SdriqBL=
+2q%2F%2FtwNaMoICoz7EqKxCteNs%3D&amp;reserved=3D0">https://datatracker.ietf.=
+org/doc/draft-sajjad-6lo-wban/</a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ZH-CN"><o:p>&nbs=
+p;</o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_CY4PR21MB0856BB0031CD5E8C4C9ABFD5A32F0CY4PR21MB0856namp_--
+
+
+From nobody Fri Nov 17 06:39:52 2017
+Return-Path: <houjianqiang@huawei.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 26FA7126B72 for <6lo@ietfa.amsl.com>; Fri, 17 Nov 2017 06:39:51 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -4.219
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.219 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-2.3, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=ham autolearn_force=no
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id nFJgG1qi8F33 for <6lo@ietfa.amsl.com>; Fri, 17 Nov 2017 06:39:49 -0800 (PST)
+Received: from huawei.com (lhrrgout.huawei.com [194.213.3.17]) by ietfa.amsl.com (Postfix) with ESMTP id C4BAC124B18 for <6lo@ietf.org>; Fri, 17 Nov 2017 06:39:48 -0800 (PST)
+Received: from lhreml704-cah.china.huawei.com (unknown [172.18.7.106]) by Forcepoint Email with ESMTP id 856051EFA8808 for <6lo@ietf.org>; Fri, 17 Nov 2017 14:39:45 +0000 (GMT)
+Received: from DGGEMM405-HUB.china.huawei.com (10.3.20.213) by lhreml704-cah.china.huawei.com (10.201.108.45) with Microsoft SMTP Server (TLS) id 14.3.361.1; Fri, 17 Nov 2017 14:39:47 +0000
+Received: from DGGEMM506-MBS.china.huawei.com ([169.254.4.18]) by DGGEMM405-HUB.china.huawei.com ([10.3.20.213]) with mapi id 14.03.0361.001; Fri, 17 Nov 2017 22:39:23 +0800
+From: "Houjianqiang (Derek)" <houjianqiang@huawei.com>
+To: Dave Thaler <dthaler@microsoft.com>, "Rahul Arvind Jadhav (Rahul Arvind Jadhav, 2012 Labs)" <rahul.jadhav@huawei.com>
+CC: "6lo@ietf.org" <6lo@ietf.org>
+Thread-Topic: About the IID construction in 6lo-WBAN
+Thread-Index: AdNfsM4sH63h9bJBSdqkQ0QjBw1deQ==
+Date: Fri, 17 Nov 2017 14:39:22 +0000
+Message-ID: <DD0A994E4D6B3F4080662703C8C7C086A9339C@DGGEMM506-MBS.china.huawei.com>
+Accept-Language: zh-CN, en-US
+Content-Language: zh-CN
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.52.40.128]
+Content-Type: multipart/alternative; boundary="_000_DD0A994E4D6B3F4080662703C8C7C086A9339CDGGEMM506MBSchina_"
+MIME-Version: 1.0
+X-CFilter-Loop: Reflected
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/RgBDSzUxlkJ2qj0owzMNNyy8ueY>
+Subject: Re: [6lo] About the IID construction in 6lo-WBAN
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 17 Nov 2017 14:39:51 -0000
+
+--_000_DD0A994E4D6B3F4080662703C8C7C086A9339CDGGEMM506MBSchina_
+Content-Type: text/plain; charset="gb2312"
+Content-Transfer-Encoding: base64
+
+TWFueSB0aGFua3MgZm9yIHlvdXIgc3VnZ2VzdGlvbi4NCg0KSSBkaWRuoa90IG1lYW4gdG8gYXJn
+dWUgb24gdGhlIElJRCBmb3JtYXRpb24uIEkgdG90YWxseSBhZ3JlZSB0aGF0IHByaXZhY3kgaXNz
+dWVzIG11c3QgYmUgY29uc2lkZXJlZC4gUGFkZGluZyBhbiA4LWJpdCBCQU4gSUQgdG9nZXRoZXIg
+d2l0aCBhbiA4LWJpdCBzaG9ydCBhZGRyZXNzIGlzIHByb2JhYmx5IG5vdCBwcml2YXRlIGVub3Vn
+aCBpbiBtYW55IGNhc2VzLiBXZSB3aWxsIHJlZmxlY3QgeW91ciBjb21tZW50IGluIHRoZSBuZXh0
+IHZlcnNpb24uDQoNClRoYW5rcywNCkppYW5xaWFuZyBIb3UgKERlcmVrKQ0KDQq3orz+yMs6IERh
+dmUgVGhhbGVyIFttYWlsdG86ZHRoYWxlckBtaWNyb3NvZnQuY29tXQ0Kt6LLzcqxvOQ6IDIwMTfE
+6jEx1MIxN8jVIDE0OjIxDQrK1bz+yMs6IEhvdWppYW5xaWFuZyAoRGVyZWspIDxob3VqaWFucWlh
+bmdAaHVhd2VpLmNvbT47IFJhaHVsIEFydmluZCBKYWRoYXYgKFJhaHVsIEFydmluZCBKYWRoYXYs
+IDIwMTIgTGFicykgPHJhaHVsLmphZGhhdkBodWF3ZWkuY29tPg0Ks63LzTogNmxvQGlldGYub3Jn
+DQrW98ziOiBSRTogQWJvdXQgdGhlIElJRCBjb25zdHJ1Y3Rpb24gaW4gNmxvLVdCQU4NCg0KUHJp
+dmFjeSBpcyBhYm91dCBtYWtpbmcgYm90aCBwcmVkaWN0YWJpbGl0eSBhbmQgY29ycmVsYXRpb24g
+aGFyZC4NClBhZGRpbmcgYW4gOC1iaXQgc2hvcnQgYWRkcmVzcyByZXN1bHRzIGluIGVhc3kgcHJl
+ZGljdGFiaWxpdHkgYXMgdGhlcmWhr3Mgb25seSAyNTYgcG9zc2liaWxpdGllcyB0byBwcm9iZSBp
+biBhbiBhZGRyZXNzIHNjYW4uDQpTZWUgUkZDIDgwNjUgZm9yIG1vcmUgZGV0YWlscyBvbiB3aHkg
+dGhpcyBpcyBiYWQuDQoNCkRhdmUNCg0KRnJvbTogNmxvIFttYWlsdG86NmxvLWJvdW5jZXNAaWV0
+Zi5vcmddIE9uIEJlaGFsZiBPZiBIb3VqaWFucWlhbmcgKERlcmVrKQ0KU2VudDogRnJpZGF5LCBO
+b3ZlbWJlciAxNywgMjAxNyAxMTo0OCBBTQ0KVG86IERhdmUgVGhhbGVyIDxkdGhhbGVyQG1pY3Jv
+c29mdC5jb208bWFpbHRvOmR0aGFsZXJAbWljcm9zb2Z0LmNvbT4+OyBSYWh1bCBBcnZpbmQgSmFk
+aGF2IChSYWh1bCBBcnZpbmQgSmFkaGF2LCAyMDEyIExhYnMpIDxyYWh1bC5qYWRoYXZAaHVhd2Vp
+LmNvbTxtYWlsdG86cmFodWwuamFkaGF2QGh1YXdlaS5jb20+Pg0KQ2M6IDZsb0BpZXRmLm9yZzxt
+YWlsdG86NmxvQGlldGYub3JnPg0KU3ViamVjdDogWzZsb10gQWJvdXQgdGhlIElJRCBjb25zdHJ1
+Y3Rpb24gaW4gNmxvLVdCQU4NCg0KSGkgRGF2ZSBhbmQgUmFodWwsDQoNClRoYW5rcyBmb3IgeW91
+ciB2YWx1YWJsZSBjb21tZW50cyBvbiB0aGUgSUlEIGNvbnN0cnVjdGlvbiBpbiA2bG8tV0JBTi4g
+U2luY2UgSSBhbSBvbmUgb2YgdGhlIGNvLWF1dGhvcnMsIGl0IGlzIG15IHBsZWFzdXJlIHRvIHBy
+b3ZpZGUgbW9yZSBpbmZvcm1hdGlvbiBvZiB0aGUgY3VycmVudCBJSUQgY29uc3RydWN0aW9uIGlu
+IHRoaXMgZHJhZnQ6DQoNClRoZXJlIGFyZSB0d28ga2luZHMgb2Ygbm9kZXMgaW4gYSBXQkFOLCBu
+YW1lbHkgQkFOIGNvb3JkaW5hdG9yIGFuZCBCQU4gbm9kZXMgKG5vdCBzdXJlIHdoZXRoZXIgSSBu
+YW1lIHRoZW0gY29ycmVjdGx5KS4gRWFjaCBCQU4gY29vcmRpbmF0b3IgaG9sZHMgYW4gOC1iaXQg
+QkFOIElELiBCQU4gbm9kZXMgbmVlZCB0byBhc3NvY2lhdGUgd2l0aCB0aGUgQkFOIGNvb3JkaW5h
+dG9yIHVzaW5nIE1BQzQ4IGFkZHJlc3MsIHRoZW4gdGhlIEJBTiBjb29yZGluYXRvciBhbGxvY2F0
+ZXMgYW4gOC1iaXQgc2hvcnQgYWRkcmVzcyB0byBlYWNoIEJBTiBub2RlLiBXaGVuIG11bHRpcGxl
+IEJBTiBjb29yZGluYXRvcnMgZXhpc3QgaW4gYSBzdWJuZXQsIGVhY2ggQkFOIGNvb3JkaW5hdG9y
+IGhvbGRzIGFuIHVuaXF1ZSBCQU4gSUQgYWZ0ZXIgbmVnb3RpYXRpb25zLiBTbywgdGhlIEJBTiBJ
+RCBhbmQgdGhlIDgtYml0IG5vZGUgYWRkcmVzcyBhcmUgbm90IGJ1aWx0LWluIGNvbnN0YW50IGFk
+ZHJlc3NlcyBpbiBhIFdCQU4gZGV2aWNlLCBhbmQgdGhlIGN1cnJlbnQgSUlEIGNvbnN0cnVjdGlv
+biBtZXRob2QgaW4gdGhlIGRyYWZ0IGd1YXJhbnRlZXMgaXRzIHVuaXF1ZW5lc3MgaW5zaWRlIGEg
+c3VibmV0Lg0KDQpSZWdhcmRzLA0KSmlhbnFpYW5nIEhvdSAoRGVyZWspDQoNCmRyYWZ0LXNhamph
+ZC02bG8td2Jhbi0wMQ0KaHR0cHM6Ly9kYXRhdHJhY2tlci5pZXRmLm9yZy9kb2MvZHJhZnQtc2Fq
+amFkLTZsby13YmFuLzxodHRwczovL25hMDEuc2FmZWxpbmtzLnByb3RlY3Rpb24ub3V0bG9vay5j
+b20vP3VybD1odHRwcyUzQSUyRiUyRmRhdGF0cmFja2VyLmlldGYub3JnJTJGZG9jJTJGZHJhZnQt
+c2FqamFkLTZsby13YmFuJTJGJmRhdGE9MDIlN0MwMSU3Q2R0aGFsZXIlNDBtaWNyb3NvZnQuY29t
+JTdDZDRhYzIyYmRhMzMxNGFjOGVmMWIwOGQ1MmQ2NWI1MDclN0M3MmY5ODhiZjg2ZjE0MWFmOTFh
+YjJkN2NkMDExZGI0NyU3QzElN0MwJTdDNjM2NDY0ODM3MjExOTQxMTQ5JnNkYXRhPXBhWUYyRFlW
+MU9xMlNkcmlxQkwycSUyRiUyRnR3TmFNb0lDb3o3RXFLeEN0ZU5zJTNEJnJlc2VydmVkPTA+DQoN
+Cg==
+
+--_000_DD0A994E4D6B3F4080662703C8C7C086A9339CDGGEMM506MBSchina_
+Content-Type: text/html; charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dgb2312">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:=CB=CE=CC=E5;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:=CB=CE=CC=E5;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@=CB=CE=CC=E5";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:=CE=A2=C8=ED=D1=C5=BA=DA;
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"\@=CE=A2=C8=ED=D1=C5=BA=DA";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle18
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"ZH-CN" link=3D"#0563C1" vlink=3D"#954F72" style=3D"text-justi=
+fy-trim:punctuation">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Many th=
+anks for your suggestion.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">I didn=
+=A1=AFt mean to argue on the IID formation. I totally agree that privacy is=
+sues must be considered. Padding an 8-bit BAN ID together with an 8-bit sho=
+rt address is probably not private enough in
+ many cases. We will reflect your comment in the next version.<o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Thanks,=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D">Jianqia=
+ng Hou (Derek)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"color:#1F497D"><o:p>&n=
+bsp;</o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><b><span st=
+yle=3D"font-size:11.0pt;font-family:&quot;=CE=A2=C8=ED=D1=C5=BA=DA&quot;,sa=
+ns-serif">=B7=A2=BC=FE=C8=CB<span lang=3D"EN-US">:</span></span></b><span l=
+ang=3D"EN-US" style=3D"font-size:11.0pt;font-family:&quot;=CE=A2=C8=ED=D1=
+=C5=BA=DA&quot;,sans-serif"> Dave Thaler [mailto:dthaler@microsoft.com]
+<br>
+</span><b><span style=3D"font-size:11.0pt;font-family:&quot;=CE=A2=C8=ED=D1=
+=C5=BA=DA&quot;,sans-serif">=B7=A2=CB=CD=CA=B1=BC=E4<span lang=3D"EN-US">:<=
+/span></span></b><span lang=3D"EN-US" style=3D"font-size:11.0pt;font-family=
+:&quot;=CE=A2=C8=ED=D1=C5=BA=DA&quot;,sans-serif"> 2017</span><span style=
+=3D"font-size:11.0pt;font-family:&quot;=CE=A2=C8=ED=D1=C5=BA=DA&quot;,sans-=
+serif">=C4=EA<span lang=3D"EN-US">11</span>=D4=C2<span lang=3D"EN-US">17</s=
+pan>=C8=D5<span lang=3D"EN-US">
+ 14:21<br>
+</span><b>=CA=D5=BC=FE=C8=CB<span lang=3D"EN-US">:</span></b><span lang=3D"=
+EN-US"> Houjianqiang (Derek) &lt;houjianqiang@huawei.com&gt;; Rahul Arvind =
+Jadhav (Rahul Arvind Jadhav, 2012 Labs) &lt;rahul.jadhav@huawei.com&gt;<br>
+</span><b>=B3=AD=CB=CD<span lang=3D"EN-US">:</span></b><span lang=3D"EN-US"=
+> 6lo@ietf.org<br>
+</span><b>=D6=F7=CC=E2<span lang=3D"EN-US">:</span></b><span lang=3D"EN-US"=
+> RE: About the IID construction in 6lo-WBAN<o:p></o:p></span></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><span lang=
+=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:11.0pt">Priv=
+acy is about making both predictability and correlation hard.<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:11.0pt">Padd=
+ing an 8-bit short address results in easy predictability as there=A1=AFs o=
+nly 256 possibilities to probe in an address scan.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:11.0pt">See =
+RFC 8065 for more details on why this is bad.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:11.0pt"><o:p=
+>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:11.0pt">Dave=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><a name=3D"_MailEndCompose"><span lang=3D"EN-US" sty=
+le=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></span></a></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><b><span la=
+ng=3D"EN-US" style=3D"font-size:11.0pt">From:</span></b><span lang=3D"EN-US=
+" style=3D"font-size:11.0pt"> 6lo [<a href=3D"mailto:6lo-bounces@ietf.org">=
+mailto:6lo-bounces@ietf.org</a>]
+<b>On Behalf Of </b>Houjianqiang (Derek)<br>
+<b>Sent:</b> Friday, November 17, 2017 11:48 AM<br>
+<b>To:</b> Dave Thaler &lt;<a href=3D"mailto:dthaler@microsoft.com">dthaler=
+@microsoft.com</a>&gt;; Rahul Arvind Jadhav (Rahul Arvind Jadhav, 2012 Labs=
+) &lt;<a href=3D"mailto:rahul.jadhav@huawei.com">rahul.jadhav@huawei.com</a=
+>&gt;<br>
+<b>Cc:</b> <a href=3D"mailto:6lo@ietf.org">6lo@ietf.org</a><br>
+<b>Subject:</b> [6lo] About the IID construction in 6lo-WBAN<o:p></o:p></sp=
+an></p>
+</div>
+</div>
+<p class=3D"MsoNormal" align=3D"left" style=3D"text-align:left"><span lang=
+=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Hi Dave and Rahul,<o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Thanks for your valuable commen=
+ts on the IID construction in 6lo-WBAN. Since I am one of the co-authors, i=
+t is my pleasure to provide more information of the current IID constructio=
+n in this draft:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">There are two kinds of nodes in=
+ a WBAN, namely BAN coordinator and BAN nodes (not sure whether I name them=
+ correctly). Each BAN coordinator holds an 8-bit BAN ID. BAN nodes need to =
+associate with the BAN coordinator using
+ MAC48 address, then the BAN coordinator allocates an 8-bit short address t=
+o each BAN node. When multiple BAN coordinators exist in a subnet, each BAN=
+ coordinator holds an unique BAN ID after negotiations. So, the BAN ID and =
+the 8-bit node address are not built-in
+ constant addresses in a WBAN device, and the current IID construction meth=
+od in the draft guarantees its uniqueness inside a subnet.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Regards,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Jianqiang Hou (Derek)<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">draft-sajjad-6lo-wban-01<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><a href=3D"https://na01.safelin=
+ks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fdatatracker.ietf.org%2Fdoc%2=
+Fdraft-sajjad-6lo-wban%2F&amp;data=3D02%7C01%7Cdthaler%40microsoft.com%7Cd4=
+ac22bda3314ac8ef1b08d52d65b507%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7=
+C636464837211941149&amp;sdata=3DpaYF2DYV1Oq2SdriqBL2q%2F%2FtwNaMoICoz7EqKxC=
+teNs%3D&amp;reserved=3D0">https://datatracker.ietf.org/doc/draft-sajjad-6lo=
+-wban/</a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_DD0A994E4D6B3F4080662703C8C7C086A9339CDGGEMM506MBSchina_--
+
+
+From nobody Thu Nov 30 05:51:31 2017
+Return-Path: <pthubert@cisco.com>
+X-Original-To: 6lo@ietfa.amsl.com
+Delivered-To: 6lo@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by ietfa.amsl.com (Postfix) with ESMTP id 8AFD112947C for <6lo@ietfa.amsl.com>; Thu, 30 Nov 2017 05:51:29 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -14.52
+X-Spam-Level: 
+X-Spam-Status: No, score=-14.52 tagged_above=-999 required=5 tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, SPF_PASS=-0.001, USER_IN_DEF_DKIM_WL=-7.5] autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key) header.d=cisco.com
+Received: from mail.ietf.org ([4.31.198.44]) by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id oMspNAYKV9zj for <6lo@ietfa.amsl.com>; Thu, 30 Nov 2017 05:51:10 -0800 (PST)
+Received: from alln-iport-2.cisco.com (alln-iport-2.cisco.com [173.37.142.89]) (using TLSv1.2 with cipher DHE-RSA-SEED-SHA (128/128 bits)) (No client certificate requested) by ietfa.amsl.com (Postfix) with ESMTPS id F117612947B for <6lo@ietf.org>; Thu, 30 Nov 2017 05:51:09 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cisco.com; i=@cisco.com; l=34372; q=dns/txt; s=iport; t=1512049870; x=1513259470; h=from:to:cc:subject:date:message-id:mime-version; bh=yiIYTS8ZfxkVrFOlqm7wRIPtTCthFkjd9hUW/SeQpYE=; b=gP4Tyfgn3if8M2mGEytrpT6aNh/h+PHsZvH24/UtylbYLwuzYAvNtUml PUc6MRSF9vlmSTv9cpNPgGejS2cI+UDNcVuGZ9eOwsSW7JpERQsBOR0QI nnPtTJPEkRfOA+bUivZdn11vzVi1gId8LRTmyegPN70kkLhimUvb8hyrU w=;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0DDAACXCyBa/5JdJa1cGQEBAQEBAQEBA?= =?us-ascii?q?QEBAQcBAQEBAYJKRC5mbi6DeIogjnGYcxCCAQqFOxyFBz8YAQEBAQEBAQEBayi?= =?us-ascii?q?FSQQGTBIBQAEJAgQwJgEEAQ0NiTZkpl+BbTqKZAEBAQEBAQEBAQEBAQEBAQEBA?= =?us-ascii?q?QEBAR2DQYEOe4FWgWmIE0+CfoJjBYpBmBoClQaTXJYYAhEZAYE5AR85gVFvFYJ?= =?us-ascii?q?kglEcgWeJZ4EUAQEB?=
+X-IronPort-AV: E=Sophos; i="5.45,341,1508803200"; d="scan'208,217"; a="38441303"
+Received: from rcdn-core-10.cisco.com ([173.37.93.146]) by alln-iport-2.cisco.com with ESMTP/TLS/DHE-RSA-AES256-GCM-SHA384; 30 Nov 2017 13:51:09 +0000
+Received: from XCH-RCD-003.cisco.com (xch-rcd-003.cisco.com [173.37.102.13]) by rcdn-core-10.cisco.com (8.14.5/8.14.5) with ESMTP id vAUDp9iD006500 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=FAIL); Thu, 30 Nov 2017 13:51:09 GMT
+Received: from xch-rcd-001.cisco.com (173.37.102.11) by XCH-RCD-003.cisco.com (173.37.102.13) with Microsoft SMTP Server (TLS) id 15.0.1320.4; Thu, 30 Nov 2017 07:51:08 -0600
+Received: from xch-rcd-001.cisco.com ([173.37.102.11]) by XCH-RCD-001.cisco.com ([173.37.102.11]) with mapi id 15.00.1320.000; Thu, 30 Nov 2017 07:51:08 -0600
+From: "Pascal Thubert (pthubert)" <pthubert@cisco.com>
+To: "6lo@ietf.org" <6lo@ietf.org>, Rene Struik <rstruik.ext@gmail.com>
+CC: "mohit.m.sethi@ericsson.com" <mohit.m.sethi@ericsson.com>, "sarikaya@ieee.org" <sarikaya@ieee.org>
+Thread-Topic: proposed changes to draft-ietf-6lo-ap-nd before WGLC
+Thread-Index: AdNp4ZkMTjkUS8qGSbaj2H6robUSwQ==
+Date: Thu, 30 Nov 2017 13:50:07 +0000
+Deferred-Delivery: Thu, 30 Nov 2017 13:47:21 +0000
+Message-ID: <dd4fbe547a8440b3a9507358b6ca66e0@XCH-RCD-001.cisco.com>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [10.55.22.4]
+Content-Type: multipart/alternative; boundary="_000_dd4fbe547a8440b3a9507358b6ca66e0XCHRCD001ciscocom_"
+MIME-Version: 1.0
+Archived-At: <https://mailarchive.ietf.org/arch/msg/6lo/NXsoWlrBj6WznejUsLS8buL2wQg>
+Subject: [6lo] proposed changes to draft-ietf-6lo-ap-nd before WGLC
+X-BeenThere: 6lo@ietf.org
+X-Mailman-Version: 2.1.22
+Precedence: list
+List-Id: "Mailing list for the 6lo WG for Internet Area issues in IPv6 over constrained node networks." <6lo.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/6lo>, <mailto:6lo-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/6lo/>
+List-Post: <mailto:6lo@ietf.org>
+List-Help: <mailto:6lo-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/6lo>, <mailto:6lo-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Thu, 30 Nov 2017 13:51:29 -0000
+
+--_000_dd4fbe547a8440b3a9507358b6ca66e0XCHRCD001ciscocom_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+RGVhciBXRw0KDQoNCg0KSSByZWFsaXplIHRoYXQgdGhlIHRleHQgb24gdGhlIHByb29mIHRpbWUg
+aXMgc29tZXdoYXQgbGFja2luZy4NCg0KDQoNCg0KDQoNCg0KDQoNCiAgICAgICAgICB8PC0tLS0t
+LS0tLS0gTkEgd2l0aCBBUk8gKHN0YXR1cz1wcm9vZiByZXF1ZXN0ZWQpIC18DQoNCiAgICAgICAg
+ICB8LS0tLS0tLS0tLS0gTlMgd2l0aCBBUk8gYW5kIENyeXB0by1JRCAtLS0tLS0tLS0tLT58DQoN
+Cg0KDQoNCg0KVGhlIHRleHQgc2hvdWxkIGluZGljYXRlIHRoYXQgdGhlIE5BIGhhcyBhIG5vbmNl
+IG9wdGlvbiwgdGhhdCB0aGUgTlMgaGFzIHRoZSBDSVBPIGFuZCBlY2hvZXMgdGhlIG5vbmNlLCBh
+bmQgdGhlIE5TIGlzIHNpZ25lZCB3aXRoIHRoZSBwdWJsaWMga2V5Lg0KDQpUaGVyZSBpcyB0ZXh0
+IGluIHNlY3Rpb24gMyBhYm91dCB0aGlzIGJ1dCBJIGZpbmQgIGl0IGluY29tcGxldGUuIFdlIG5l
+ZWQgbW9yZSB0ZXh0IGhlcmUgYW5kIG1heWJlIHRvIHRha2Ugc29tZSBvZmYgc2VjdGlvbiAzLg0K
+DQoNCg0KICAgICAgICAgICAgICAgICAgICAgICAgfDwtLS0tIE5BIHdpdGggQVJPIChzdGF0dXM9
+cHJvb2YgcmVxdWVzdGVkKSBhbmQgTm9uY2UgLXwNCg0KICAgICAgICAgIHwtLS0tLSBOUyB3aXRo
+IEFSTywgQ0lQTyBhbmQgTm9uY2Ugb3B0aW9ucywgc2lnbmVkIC0tLT58DQoNCg0KDQpEbyBJIG1p
+c3Mgc29tZXRoaW5nPw0KDQoNCg0KDQoNCklOIDUuMy4gIE11bHRpaG9wIE9wZXJhdGlvbg0KDQoN
+Cg0KVGV4dCBzYXlzDQoNCg0KICAgQmVjYXVzZSBvZiB0aGlzIHRoZSBjb250ZW50IHRoYXQgdGhl
+IHNvdXJjZSBzaWducyBhbmQgdGhlDQogICBzaWduYXR1cmUgbmVlZHMgdG8gYmUgcHJvcGFnYXRl
+ZCB0byB0aGUgNkxCUiBpbiB0aGUgREFSIG1lc3NhZ2UuICBGb3INCiAgIHRoaXMgcHVycG9zZSB0
+aGUgREFSIG1lc3NhZ2Ugc2VudCBieSA2TFIgdG8gNkxCUiBNVVNUIGNvbnRhaW4gdGhlDQogICBD
+SVBPIG9wdGlvbi4gIFRoZSBEQVIgbWVzc2FnZSBhbHNvIGNvbnRhaW5zIEFSTy4NCg0KDQoNClRo
+aXMgaXMgaW5jb3JyZWN0OyBUaGUgQ0lQTyBkb2VzIG5vdCBjb250YWluIHRoZSBzaWduYXR1cmUg
+YW5kIGFueXdheSB0aGUgTEJSIGNhbm5vdCBjaGFsbGVuZ2UgdGhlIG5vZGUuIEl0IGNhbiBvbmx5
+IHRlbGwgdGhlIDZMUiB0byBkbyBzby4NCg0KSSB0aGluayB0aGUgcmVzdCBvZiB0aGUgdGV4dCBp
+cyBjb3JyZWN0IGFib3V0IHRoYXQuIFRoZSA2TEJSIHJlamVjdHMgYSBEQVIgbWVzc2FnZSBpbiBj
+YXNlIG9mIGEgZGlmZmVyZW50IE9VSUQgYW5kIGFza3MgZm9yIGEgY2hhbGxlbmdlIGluIGNhc2Ug
+b2YgYSBkaWZmZXJlbnQgYW5jaG9yIChzYW1lIE9VSUQgYnV0IG5vZGUgaGFzIG1vdmVkIHRvIGEg
+ZGlmZmVyZW50IDZMUikuIFdlIG5lZWQgdG8gYWxpZ24gdG8gc2VjdGlvbiAzIGFuZCB0aGVuIGFn
+YWluIG1vdmUgdGV4dCBvZmYgc2VjdGlvbiAzIHRvIGhlcmUuDQoNCg0KDQpEbyB3ZSBhZ3JlZT8N
+Cg0KDQoNCg0KDQpUaGUgY3J5cHRvIHRva2VuIGlzIHN1cHBvc2VkIHRvIHdvcmsgZm9yIG11bHRp
+cGxlIGFkZHJlc3Nlcy4gVGhlIGNvbXB1dGF0aW9uIHdhcyBjaGFuZ2VkIHRvIHVzZSB0aGUgTUFD
+IGFkZHJlc3MgYXMgb3Bwb3NlZCB0byB0aGUgcHJlZml4LiBCdXQgdGhlIENJUE8gc3RpbGwgaW5k
+aWNhdGVzIHRoZSBwcmVmaXggYW5kIHRoYXQgc2hvdWxkIGJlIG1vZGlmaWVkIHRvby4gSSBzdWdn
+ZXN0Og0KDQoNCg0KDQoNCiAgICAgICAwICAgICAgICAgICAgICAgICAgIDEgICAgICAgICAgICAg
+ICAgICAgMiAgICAgICAgICAgICAgICAgICAzDQogICAgICAgIDAgMSAyIDMgNCA1IDYgNyA4IDkg
+MCAxIDIgMyA0IDUgNiA3IDggOSAwIDEgMiAzIDQgNSA2IDcgOCA5IDAgMQ0KICAgICAgKy0rLSst
+Ky0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0r
+LSsNCiAgICAgIHwgICAgIFR5cGUgICAgICB8ICAgIExlbmd0aCAgICAgfCAgIFBhZCBMZW5ndGgg
+IHwgIENyeXB0byBUeXBlICB8DQogICAgICArLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0r
+LSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKw0KICAgICAgfCAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwNCiAgICAg
+ICsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICArDQogICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgfA0KICAgICAgKyAgICAgICAgICAgICAgICAgICAgICBN
+b2RpZmllciAoMTYgb2N0ZXRzKSAgICAgICAgICAgICAgICAgICAgICsNCiAgICAgIHwgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8
+DQogICAgICArICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgKw0KICAgICAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwNCiAgICAgICstKy0rLSstKy0rLSstKy0r
+LSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rDQogICAgICB8
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgfA0KDQogICAgICArICAgICAgICAgIEVVSS02NCBmcm9tIGRldmljZSBNQUMgYWRkcmVz
+cyAgICg4IG9jdGV0cykgICAgICAgICAgKw0KICAgICAgfCAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwNCiAgICAgICstKy0rLSst
+Ky0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0r
+DQogICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgfA0KICAgICAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwNCiAgICAgICsgICAgICAgICAgICAgICAg
+ICBQdWJsaWMgS2V5ICh2YXJpYWJsZSBsZW5ndGgpICAgICAgICAgICAgICAgICArDQogICAgICB8
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgfA0KICAgICAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgIHwNCiAgICAgICstKy0rLSstKy0rLSstKy0rLSstKy0rLSst
+Ky0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rDQogICAgICB8ICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfA0K
+ICAgICAgLiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgIC4NCiAgICAgIC4gICAgICAgICAgICAgICAgICAgICAgICAgICBQYWRkaW5n
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuDQogICAgICAuICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLg0KICAgICAgfCAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgIHwNCiAgICAgICstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSstKy0rLSst
+Ky0rLSstKy0rLSstKy0rLSstKy0rDQoNCg0KDQpJcyB0aGF0IGEgcHJvYmxlbT8NCg0KDQoNCg0K
+DQoNCg0KUmVuw6kgd2FzIHRvIHByb3Bvc2UgYWRkaXRpb25zIGFuZCB3ZSB3ZXJlIHRvIGFkZCBo
+aW0gYXMgY29hdXRob3IuIEFyZSB5b3Ugc3RpbGwgd2l0aCB1cyBSZW7DqT8NCg0KDQoNCkNoZWVy
+cywNCg0KDQoNClBhc2NhbA0K
+
+--_000_dd4fbe547a8440b3a9507358b6ca66e0XCHRCD001ciscocom_
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiIHhtbG5zOm89InVy
+bjpzY2hlbWFzLW1pY3Jvc29mdC1jb206b2ZmaWNlOm9mZmljZSIgeG1sbnM6dz0idXJuOnNjaGVt
+YXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6d29yZCIgeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMubWlj
+cm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+VFIvUkVDLWh0bWw0MCI+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIg
+Y29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjxtZXRhIG5hbWU9IkdlbmVyYXRv
+ciIgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUgKGZpbHRlcmVkIG1lZGl1bSkiPg0KPHN0eWxl
+PjwhLS0NCi8qIEZvbnQgRGVmaW5pdGlvbnMgKi8NCkBmb250LWZhY2UNCgl7Zm9udC1mYW1pbHk6
+IkNhbWJyaWEgTWF0aCI7DQoJcGFub3NlLTE6MiA0IDUgMyA1IDQgNiAzIDIgNDt9DQpAZm9udC1m
+YWNlDQoJe2ZvbnQtZmFtaWx5OkNhbGlicmk7DQoJcGFub3NlLTE6MiAxNSA1IDIgMiAyIDQgMyAy
+IDQ7fQ0KQGZvbnQtZmFjZQ0KCXtmb250LWZhbWlseTpDb25zb2xhczsNCglwYW5vc2UtMToyIDEx
+IDYgOSAyIDIgNCAzIDIgNDt9DQovKiBTdHlsZSBEZWZpbml0aW9ucyAqLw0KcC5Nc29Ob3JtYWws
+IGxpLk1zb05vcm1hbCwgZGl2Lk1zb05vcm1hbA0KCXttYXJnaW46MGNtOw0KCW1hcmdpbi1ib3R0
+b206LjAwMDFwdDsNCglmb250LXNpemU6MTIuMHB0Ow0KCWZvbnQtZmFtaWx5OiJUaW1lcyBOZXcg
+Um9tYW4iLHNlcmlmO30NCmE6bGluaywgc3Bhbi5Nc29IeXBlcmxpbmsNCgl7bXNvLXN0eWxlLXBy
+aW9yaXR5Ojk5Ow0KCWNvbG9yOmJsdWU7DQoJdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTt9DQph
+OnZpc2l0ZWQsIHNwYW4uTXNvSHlwZXJsaW5rRm9sbG93ZWQNCgl7bXNvLXN0eWxlLXByaW9yaXR5
+Ojk5Ow0KCWNvbG9yOnB1cnBsZTsNCgl0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lO30NCnAuTXNv
+UGxhaW5UZXh0LCBsaS5Nc29QbGFpblRleHQsIGRpdi5Nc29QbGFpblRleHQNCgl7bXNvLXN0eWxl
+LXByaW9yaXR5Ojk5Ow0KCW1zby1zdHlsZS1saW5rOiJQbGFpbiBUZXh0IENoYXIiOw0KCW1hcmdp
+bjowY207DQoJbWFyZ2luLWJvdHRvbTouMDAwMXB0Ow0KCWZvbnQtc2l6ZToxMS4wcHQ7DQoJZm9u
+dC1mYW1pbHk6IkNhbGlicmkiLHNhbnMtc2VyaWY7fQ0KcA0KCXttc28tc3R5bGUtcHJpb3JpdHk6
+OTk7DQoJbXNvLW1hcmdpbi10b3AtYWx0OmF1dG87DQoJbWFyZ2luLXJpZ2h0OjBjbTsNCgltc28t
+bWFyZ2luLWJvdHRvbS1hbHQ6YXV0bzsNCgltYXJnaW4tbGVmdDowY207DQoJZm9udC1zaXplOjEy
+LjBwdDsNCglmb250LWZhbWlseToiVGltZXMgTmV3IFJvbWFuIixzZXJpZjt9DQpwcmUNCgl7bXNv
+LXN0eWxlLXByaW9yaXR5Ojk5Ow0KCW1zby1zdHlsZS1saW5rOiJIVE1MIFByZWZvcm1hdHRlZCBD
+aGFyIjsNCgltYXJnaW46MGNtOw0KCW1hcmdpbi1ib3R0b206LjAwMDFwdDsNCglmb250LXNpemU6
+MTAuMHB0Ow0KCWZvbnQtZmFtaWx5OiJDb3VyaWVyIE5ldyI7fQ0Kc3Bhbi5IVE1MUHJlZm9ybWF0
+dGVkQ2hhcg0KCXttc28tc3R5bGUtbmFtZToiSFRNTCBQcmVmb3JtYXR0ZWQgQ2hhciI7DQoJbXNv
+LXN0eWxlLXByaW9yaXR5Ojk5Ow0KCW1zby1zdHlsZS1saW5rOiJIVE1MIFByZWZvcm1hdHRlZCI7
+DQoJZm9udC1mYW1pbHk6Q29uc29sYXM7fQ0KcC5tc29ub3JtYWwwLCBsaS5tc29ub3JtYWwwLCBk
+aXYubXNvbm9ybWFsMA0KCXttc28tc3R5bGUtbmFtZTptc29ub3JtYWw7DQoJbXNvLXN0eWxlLXBy
+aW9yaXR5Ojk5Ow0KCW1zby1tYXJnaW4tdG9wLWFsdDphdXRvOw0KCW1hcmdpbi1yaWdodDowY207
+DQoJbXNvLW1hcmdpbi1ib3R0b20tYWx0OmF1dG87DQoJbWFyZ2luLWxlZnQ6MGNtOw0KCWZvbnQt
+c2l6ZToxMi4wcHQ7DQoJZm9udC1mYW1pbHk6IlRpbWVzIE5ldyBSb21hbiIsc2VyaWY7fQ0Kc3Bh
+bi5QbGFpblRleHRDaGFyDQoJe21zby1zdHlsZS1uYW1lOiJQbGFpbiBUZXh0IENoYXIiOw0KCW1z
+by1zdHlsZS1wcmlvcml0eTo5OTsNCgltc28tc3R5bGUtbGluazoiUGxhaW4gVGV4dCI7DQoJZm9u
+dC1mYW1pbHk6IkNhbGlicmkiLHNhbnMtc2VyaWY7fQ0Kc3Bhbi5FbWFpbFN0eWxlMjMNCgl7bXNv
+LXN0eWxlLXR5cGU6cGVyc29uYWw7DQoJZm9udC1mYW1pbHk6IkNhbGlicmkiLHNhbnMtc2VyaWY7
+DQoJY29sb3I6IzFGNDk3RDt9DQpzcGFuLkVtYWlsU3R5bGUyNA0KCXttc28tc3R5bGUtdHlwZTpw
+ZXJzb25hbC1jb21wb3NlO30NCi5Nc29DaHBEZWZhdWx0DQoJe21zby1zdHlsZS10eXBlOmV4cG9y
+dC1vbmx5Ow0KCWZvbnQtc2l6ZToxMC4wcHQ7fQ0KQHBhZ2UgV29yZFNlY3Rpb24xDQoJe3NpemU6
+NjEyLjBwdCA3OTIuMHB0Ow0KCW1hcmdpbjo3MC44NXB0IDcwLjg1cHQgNzAuODVwdCA3MC44NXB0
+O30NCmRpdi5Xb3JkU2VjdGlvbjENCgl7cGFnZTpXb3JkU2VjdGlvbjE7fQ0KLS0+PC9zdHlsZT48
+IS0tW2lmIGd0ZSBtc28gOV0+PHhtbD4NCjxvOnNoYXBlZGVmYXVsdHMgdjpleHQ9ImVkaXQiIHNw
+aWRtYXg9IjEwMjYiIC8+DQo8L3htbD48IVtlbmRpZl0tLT48IS0tW2lmIGd0ZSBtc28gOV0+PHht
+bD4NCjxvOnNoYXBlbGF5b3V0IHY6ZXh0PSJlZGl0Ij4NCjxvOmlkbWFwIHY6ZXh0PSJlZGl0IiBk
+YXRhPSIxIiAvPg0KPC9vOnNoYXBlbGF5b3V0PjwveG1sPjwhW2VuZGlmXS0tPg0KPC9oZWFkPg0K
+PGJvZHkgbGFuZz0iRU4tVVMiIGxpbms9ImJsdWUiIHZsaW5rPSJwdXJwbGUiPg0KPGRpdiBjbGFz
+cz0iV29yZFNlY3Rpb24xIj4NCjxwIGNsYXNzPSJNc29QbGFpblRleHQiPkRlYXIgV0c8bzpwPjwv
+bzpwPjwvcD4NCjxwIGNsYXNzPSJNc29QbGFpblRleHQiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0K
+PHAgY2xhc3M9Ik1zb1BsYWluVGV4dCI+SSByZWFsaXplIHRoYXQgdGhlIHRleHQgb24gdGhlIHBy
+b29mIHRpbWUgaXMgc29tZXdoYXQgbGFja2luZy48bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJN
+c29QbGFpblRleHQiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPGRpdiBzdHlsZT0iYm9yZGVyOm5v
+bmU7Ym9yZGVyLWJvdHRvbTpzb2xpZCB3aW5kb3d0ZXh0IDEuMHB0O3BhZGRpbmc6MGNtIDBjbSAx
+LjBwdCAwY20iPg0KPHAgY2xhc3M9Ik1zb1BsYWluVGV4dCI+PG86cD4mbmJzcDs8L286cD48L3A+
+DQo8L2Rpdj4NCjxwIGNsYXNzPSJNc29QbGFpblRleHQiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0K
+PHAgY2xhc3M9Ik1zb1BsYWluVGV4dCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0i
+TXNvUGxhaW5UZXh0Ij48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6Q29uc29sYXMiPiZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyAmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDt8Jmx0Oy0tLS0t
+LS0tLS0gTkEgd2l0aCBBUk8gKHN0YXR1cz1wcm9vZiByZXF1ZXN0ZWQpIC18PG86cD48L286cD48
+L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb1BsYWluVGV4dCI+PHNwYW4gc3R5bGU9ImZvbnQtZmFt
+aWx5OkNvbnNvbGFzIj4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsgfC0tLS0tLS0tLS0tIE5TIHdpdGggQVJPIGFuZCBDcnlwdG8tSUQgLS0tLS0t
+LS0tLS0mZ3Q7fDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29QbGFpblRleHQi
+PjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb1BsYWluVGV4dCI+PG86cD4mbmJz
+cDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvUGxhaW5UZXh0Ij5UaGUgdGV4dCBzaG91bGQgaW5k
+aWNhdGUgdGhhdCB0aGUgTkEgaGFzIGEgbm9uY2Ugb3B0aW9uLCB0aGF0IHRoZSBOUyBoYXMgdGhl
+IENJUE8gYW5kIGVjaG9lcyB0aGUgbm9uY2UsIGFuZCB0aGUgTlMgaXMgc2lnbmVkIHdpdGggdGhl
+IHB1YmxpYyBrZXkuPG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvUGxhaW5UZXh0Ij5UaGVy
+ZSBpcyB0ZXh0IGluIHNlY3Rpb24gMyBhYm91dCB0aGlzIGJ1dCBJIGZpbmQmbmJzcDsgaXQgaW5j
+b21wbGV0ZS4gV2UgbmVlZCBtb3JlIHRleHQgaGVyZSBhbmQgbWF5YmUgdG8gdGFrZSBzb21lIG9m
+ZiBzZWN0aW9uIDMuPG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvUGxhaW5UZXh0Ij48bzpw
+PiZuYnNwOzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29QbGFpblRleHQiPiZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyA8c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6Q29uc29sYXMiPg0KfCZsdDstLS0t
+IE5BIHdpdGggQVJPIChzdGF0dXM9cHJvb2YgcmVxdWVzdGVkKSBhbmQgTm9uY2UgLXw8bzpwPjwv
+bzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvUGxhaW5UZXh0Ij48c3BhbiBzdHlsZT0iZm9u
+dC1mYW1pbHk6Q29uc29sYXMiPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyB8LS0tLS0gTlMgd2l0aCBBUk8sIENJUE8gYW5kIE5vbmNlIG9wdGlv
+bnMsIHNpZ25lZCAtLS0mZ3Q7fDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxkaXYgc3R5bGU9ImJv
+cmRlcjpub25lO2JvcmRlci1ib3R0b206c29saWQgd2luZG93dGV4dCAxLjBwdDtwYWRkaW5nOjBj
+bSAwY20gMS4wcHQgMGNtIj4NCjxwIGNsYXNzPSJNc29QbGFpblRleHQiPjxvOnA+Jm5ic3A7PC9v
+OnA+PC9wPg0KPHAgY2xhc3M9Ik1zb1BsYWluVGV4dCI+RG8gSSBtaXNzIHNvbWV0aGluZz88bzpw
+PjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29QbGFpblRleHQiPjxvOnA+Jm5ic3A7PC9vOnA+PC9w
+Pg0KPC9kaXY+DQo8cCBjbGFzcz0iTXNvUGxhaW5UZXh0Ij48bzpwPiZuYnNwOzwvbzpwPjwvcD4N
+CjxwIGNsYXNzPSJNc29QbGFpblRleHQiPklOIDUuMy4mbmJzcDsgTXVsdGlob3AgT3BlcmF0aW9u
+PG86cD48L286cD48L3A+DQo8cCBjbGFzcz0iTXNvUGxhaW5UZXh0Ij48bzpwPiZuYnNwOzwvbzpw
+PjwvcD4NCjxwIGNsYXNzPSJNc29QbGFpblRleHQiPlRleHQgc2F5czxvOnA+PC9vOnA+PC9wPg0K
+PHAgY2xhc3M9Ik1zb1BsYWluVGV4dCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0i
+TXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVv
+dDtDb3VyaWVyIE5ldyZxdW90OyI+Jm5ic3A7Jm5ic3A7IEJlY2F1c2Ugb2YgdGhpcyB0aGUgY29u
+dGVudCB0aGF0IHRoZSBzb3VyY2Ugc2lnbnMgYW5kIHRoZTxvOnA+PC9vOnA+PC9zcGFuPjwvcD4N
+CjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQt
+ZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJzcDsgc2lnbmF0dXJlIG5l
+ZWRzIHRvIGJlIHByb3BhZ2F0ZWQgdG8gdGhlIDZMQlIgaW4gdGhlIERBUiBtZXNzYWdlLiZuYnNw
+OyBGb3I8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBz
+dHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90
+OyI+Jm5ic3A7Jm5ic3A7IHRoaXMgcHVycG9zZSB0aGUgREFSIG1lc3NhZ2Ugc2VudCBieSA2TFIg
+dG8gNkxCUiBNVVNUIGNvbnRhaW4gdGhlPG86cD48L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9
+Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1
+b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyBDSVBPIG9wdGlvbi4mbmJzcDsgVGhl
+IERBUiBtZXNzYWdlIGFsc28gY29udGFpbnMgQVJPLjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxw
+IGNsYXNzPSJNc29QbGFpblRleHQiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1z
+b1BsYWluVGV4dCI+VGhpcyBpcyBpbmNvcnJlY3Q7IFRoZSBDSVBPIGRvZXMgbm90IGNvbnRhaW4g
+dGhlIHNpZ25hdHVyZSBhbmQgYW55d2F5IHRoZSBMQlIgY2Fubm90IGNoYWxsZW5nZSB0aGUgbm9k
+ZS4gSXQgY2FuIG9ubHkgdGVsbCB0aGUgNkxSIHRvIGRvIHNvLjxvOnA+PC9vOnA+PC9wPg0KPHAg
+Y2xhc3M9Ik1zb1BsYWluVGV4dCI+SSB0aGluayB0aGUgcmVzdCBvZiB0aGUgdGV4dCBpcyBjb3Jy
+ZWN0IGFib3V0IHRoYXQuIFRoZSA2TEJSIHJlamVjdHMgYSBEQVIgbWVzc2FnZSBpbiBjYXNlIG9m
+IGEgZGlmZmVyZW50IE9VSUQgYW5kIGFza3MgZm9yIGEgY2hhbGxlbmdlIGluIGNhc2Ugb2YgYSBk
+aWZmZXJlbnQgYW5jaG9yIChzYW1lIE9VSUQgYnV0IG5vZGUgaGFzIG1vdmVkIHRvIGEgZGlmZmVy
+ZW50IDZMUikuIFdlIG5lZWQgdG8gYWxpZ24NCiB0byBzZWN0aW9uIDMgYW5kIHRoZW4gYWdhaW4g
+bW92ZSB0ZXh0IG9mZiBzZWN0aW9uIDMgdG8gaGVyZS48bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNz
+PSJNc29QbGFpblRleHQiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb1BsYWlu
+VGV4dCI+RG8gd2UgYWdyZWU/PG86cD48L286cD48L3A+DQo8ZGl2IHN0eWxlPSJib3JkZXI6bm9u
+ZTtib3JkZXItYm90dG9tOnNvbGlkIHdpbmRvd3RleHQgMS4wcHQ7cGFkZGluZzowY20gMGNtIDEu
+MHB0IDBjbSI+DQo8cCBjbGFzcz0iTXNvUGxhaW5UZXh0Ij48bzpwPiZuYnNwOzwvbzpwPjwvcD4N
+CjwvZGl2Pg0KPHAgY2xhc3M9Ik1zb1BsYWluVGV4dCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8
+cCBjbGFzcz0iTXNvUGxhaW5UZXh0Ij5UaGUgY3J5cHRvIHRva2VuIGlzIHN1cHBvc2VkIHRvIHdv
+cmsgZm9yIG11bHRpcGxlIGFkZHJlc3Nlcy4gVGhlIGNvbXB1dGF0aW9uIHdhcyBjaGFuZ2VkIHRv
+IHVzZSB0aGUgTUFDIGFkZHJlc3MgYXMgb3Bwb3NlZCB0byB0aGUgcHJlZml4LiBCdXQgdGhlIENJ
+UE8gc3RpbGwgaW5kaWNhdGVzIHRoZSBwcmVmaXggYW5kIHRoYXQgc2hvdWxkIGJlIG1vZGlmaWVk
+IHRvby4gSSBzdWdnZXN0OjxvOnA+PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb1BsYWluVGV4dCI+
+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBjbGFzcz0iTXNvUGxhaW5UZXh0Ij48bzpwPiZuYnNw
+OzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6
+MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij48bzpwPiZuYnNwOzwv
+bzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1z
+aXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90OyI+Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IDAmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgMSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyAyJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7IDM8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9y
+bWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3Vy
+aWVyIE5ldyZxdW90OyI+Jm5ic3A7ICZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OzAgMSAyIDMgNCA1IDYgNyA4IDkgMCAxIDIgMyA0IDUgNiA3IDggOSAwIDEgMiAzIDQgNSA2IDcg
+OCA5IDAgMTxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFu
+IHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1
+b3Q7Ij4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgJiM0MzstJiM0MzstJiM0MzstJiM0
+MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0Mzst
+JiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0
+MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0MzstJiM0Mzst
+JiM0Mzs8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBz
+dHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90
+OyI+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IHwmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsgVHlwZSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyB8Jm5ic3A7Jm5ic3A7Jm5ic3A7
+IExlbmd0aCZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyB8Jm5ic3A7Jm5ic3A7IFBhZCBMZW5ndGgm
+bmJzcDsgfCZuYnNwOyBDcnlwdG8gVHlwZSZuYnNwOyB8PG86cD48L286cD48L3NwYW4+PC9wPg0K
+PHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1m
+YW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyAmIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQz
+Oy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0m
+IzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQz
+Oy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOzxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxw
+IGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFt
+aWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsgfCZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyB8PG86cD48L286cD48L3NwYW4+PC9w
+Pg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9u
+dC1mYW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyAmIzQzOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyAmIzQzOzxvOnA+PC9v
+OnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNp
+emU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsgfCZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyB8PG86
+cD48L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZv
+bnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyAmIzQzOyZuYnNwOyZuYnNwOyAmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDtNb2RpZmllciAoMTYg
+b2N0ZXRzKSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyAmIzQzOzxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29O
+b3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0Nv
+dXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgfCZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyB8PG86cD48L286cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9
+Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1
+b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyAmIzQz
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyAmIzQzOzxvOnA+PC9vOnA+PC9zcGFuPjwv
+cD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2Zv
+bnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsgfCZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyAmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDt8PG86cD48L286cD48L3Nw
+YW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4w
+cHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyAmIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0m
+IzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQz
+Oy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0m
+IzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOzxvOnA+PC9vOnA+PC9zcGFu
+PjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0
+O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsgfCZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyB8PG86cD48L286cD48
+L3NwYW4+PC9wPg0KPHByZT4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgJiM0MzsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgJm5ic3A7Jm5ic3A7Jm5ic3A7RVVJLTY0
+IGZyb20gZGV2aWNlIE1BQyBhZGRyZXNzJm5ic3A7Jm5ic3A7ICg4IG9jdGV0cykmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgJm5ic3A7JiM0Mzs8bzpwPjwv
+bzpwPjwvcHJlPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTox
+MC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyB8Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7ICZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO3w8bzpwPjwv
+bzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1z
+aXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90OyI+Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7ICYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7
+LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYj
+NDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7
+LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7PG86cD48L286
+cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6
+ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyB8Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IHw8bzpw
+PjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9u
+dC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90OyI+Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IHwmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgJm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+fDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxl
+PSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4m
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgJiM0MzsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgUHVibGljIEtleSAodmFyaWFibGUgbGVuZ3RoKSZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyAmIzQzOzxvOnA+PC9vOnA+PC9zcGFu
+PjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0
+O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsgfCZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyB8PG86cD48L286cD48
+L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTox
+MC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyB8Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IHw8bzpwPjwv
+bzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1z
+aXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90OyI+Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7ICYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7
+LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYj
+NDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7
+LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7LSYjNDM7PG86cD48L286
+cD48L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6
+ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyB8Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IHw8bzpw
+PjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9u
+dC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtDb3VyaWVyIE5ldyZxdW90OyI+Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IC4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsg
+LjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxl
+PSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4m
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgLiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyBQYWRkaW5nJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7ICZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOy48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBjbGFzcz0i
+TXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVv
+dDtDb3VyaWVyIE5ldyZxdW90OyI+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IC4mbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgLjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxwIGNs
+YXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5
+OiZxdW90O0NvdXJpZXIgTmV3JnF1b3Q7Ij4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsg
+fCZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyB8PG86cD48L286cD48L3NwYW4+PC9wPg0K
+PHAgY2xhc3M9Ik1zb05vcm1hbCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1m
+YW1pbHk6JnF1b3Q7Q291cmllciBOZXcmcXVvdDsiPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyAmIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQz
+Oy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0m
+IzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQz
+Oy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOy0mIzQzOzxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjxw
+IGNsYXNzPSJNc29QbGFpblRleHQiPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpDb25zb2xhcyI+
+PG86cD4mbmJzcDs8L286cD48L3NwYW4+PC9wPg0KPGRpdiBzdHlsZT0iYm9yZGVyOm5vbmU7Ym9y
+ZGVyLWJvdHRvbTpzb2xpZCB3aW5kb3d0ZXh0IDEuMHB0O3BhZGRpbmc6MGNtIDBjbSAxLjBwdCAw
+Y20iPg0KPHAgY2xhc3M9Ik1zb1BsYWluVGV4dCI+SXMgdGhhdCBhIHByb2JsZW0/PG86cD48L286
+cD48L3A+DQo8cCBjbGFzcz0iTXNvUGxhaW5UZXh0Ij48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjwv
+ZGl2Pg0KPHAgY2xhc3M9Ik1zb1BsYWluVGV4dCI+PG86cD4mbmJzcDs8L286cD48L3A+DQo8cCBj
+bGFzcz0iTXNvUGxhaW5UZXh0Ij48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxwIGNsYXNzPSJNc29Q
+bGFpblRleHQiPlJlbsOpIHdhcyB0byBwcm9wb3NlIGFkZGl0aW9ucyBhbmQgd2Ugd2VyZSB0byBh
+ZGQgaGltIGFzIGNvYXV0aG9yLiBBcmUgeW91IHN0aWxsIHdpdGggdXMgUmVuw6k/PG86cD48L286
+cD48L3A+DQo8cCBjbGFzcz0iTXNvUGxhaW5UZXh0Ij48bzpwPiZuYnNwOzwvbzpwPjwvcD4NCjxw
+IGNsYXNzPSJNc29QbGFpblRleHQiPkNoZWVycyw8bzpwPjwvbzpwPjwvcD4NCjxwIGNsYXNzPSJN
+c29QbGFpblRleHQiPjxvOnA+Jm5ic3A7PC9vOnA+PC9wPg0KPHAgY2xhc3M9Ik1zb1BsYWluVGV4
+dCI+UGFzY2FsPG86cD48L286cD48L3A+DQo8L2Rpdj4NCjwvYm9keT4NCjwvaHRtbD4NCg==
+
+--_000_dd4fbe547a8440b3a9507358b6ca66e0XCHRCD001ciscocom_--
+
