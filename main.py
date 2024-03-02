@@ -3,12 +3,12 @@ import mailbox
 import os
 import csv
 import email
-import pathlib
-import re
 from chardet import detect
 from email.utils import parsedate_to_datetime
 from email.message import EmailMessage, Message
 from email.policy import *
+
+
 list_name = '6lo'
 resource_dir = "FTP" # store extracted data
 
@@ -42,20 +42,6 @@ def get_message_body(message: Message):
     return content.encode().decode()
 
 
-def get_message_body_v2(message: Message):
-    
-
-    if message.is_multipart():
-        content = "".join(part.get_payload(decode=True) for part in message.get_payload())
-    else:
-        content = message.get_payload(decode=True)
-    
-    print(message.get_content_maintype())
-    print(message.get_content_subtype())
-    print(message.get_content_type())
-    print()
-
-    return content
 # get the infomation from each message in single mail file
 def get_message_info(message: Message):
     mail_info = {}
