@@ -1,6 +1,7 @@
 #! /usr/bin/bash
 
-FILE="view-csv.py"
+LIST_NAME="6lo"
+FILE="$LIST_NAME.csv"
 
 if [ -f $FILE ]; then
 

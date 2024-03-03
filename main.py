@@ -54,8 +54,8 @@ def get_message_info(message: Message):
             "date": m.get("date"),
             "subject": m.get("subject"),
             "from": m.get("from"),
-            "to" : m.get("to", "[No Receiver]"),
-            "reply": m.get("in-reply-to", "[No parent message]"),
+            "to" : m.get("to"),
+            "reply": m.get("in-reply-to"),
             "content": text_content,
         }
     
