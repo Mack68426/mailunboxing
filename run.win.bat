@@ -8,6 +8,6 @@ if not exist %DATA_DIR% (
     echo:
 )
 
-python main.py
+python get_info.py
 echo Done.
 echo:

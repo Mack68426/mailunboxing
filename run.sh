@@ -8,7 +8,7 @@ if [ ! -d "FTP" ]; then
 
 fi
 
-python3 main.py
+python3 get_info.py
 echo Done
 echo
  
