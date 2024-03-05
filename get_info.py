@@ -12,10 +12,9 @@ from email.policy import *
 list_name = '6lo'
 resource_dir = "FTP" # store extracted data
 
-def _attr_structure(msg, fp=None, level=0, include_default=False):
+def _attr_structure(msg, level=0, include_default=False):
     """A handy debugging aid (customized by Mack)"""
-    if fp is None:
-        fp = None
+    
     tab = ' ' * (level * 4)
     print(tab + msg.get_content_type() + " | Date: " + msg["date"], end='')
     if include_default:
@@ -24,7 +23,7 @@ def _attr_structure(msg, fp=None, level=0, include_default=False):
         print()
     if msg.is_multipart():
         for subpart in msg.get_payload():
-            _attr_structure(subpart, fp, level+1, include_default)
+            _attr_structure(subpart, level+1, include_default)
 
 # get the body in the email message
 def get_message_body(message: Message):
